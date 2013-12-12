@@ -26,6 +26,7 @@ import android.view.ViewGroup;
 import androidx.preference.Preference;
 import androidx.recyclerview.widget.RecyclerView;
 
+import com.android.internal.logging.nano.MetricsProto.MetricsEvent;
 import com.android.internal.widget.LockPatternUtils;
 import com.android.internal.widget.LockscreenCredential;
 import com.android.settings.EncryptionInterstitial;
@@ -61,11 +62,6 @@ public class ChooseLockPatternSize extends SettingsActivity {
     }
 
     @Override
-    protected boolean isToolbarEnabled() {
-        return false;
-    }
-
-    @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         findViewById(R.id.content_parent).setFitsSystemWindows(false);
@@ -79,6 +75,7 @@ public class ChooseLockPatternSize extends SettingsActivity {
                 throw new SecurityException("Fragment contained in wrong activity");
             }
             addPreferencesFromResource(R.xml.security_settings_pattern_size);
+            setHeaderView(R.layout.choose_lock_pattern_size_header);
         }
 
         @Override
@@ -96,11 +93,31 @@ public class ChooseLockPatternSize extends SettingsActivity {
                 patternSize = 3;
             }
 
-            Bundle extras = getActivity().getIntent().getExtras();
-            Intent intent = new Intent();
-            intent.setClassName(getActivity(), extras.getString("className"));
-            intent.putExtras(extras);
+            final boolean isFallback = getActivity().getIntent()
+                .getBooleanExtra(LockPatternUtils.LOCKSCREEN_BIOMETRIC_WEAK_FALLBACK, false);
+
+            Intent intent = new Intent(getActivity(), ChooseLockPattern.class);
             intent.putExtra("pattern_size", patternSize);
+            intent.putExtra("key_lock_method", "pattern");
+            intent.putExtra("confirm_credentials", false);
+            intent.putExtra(LockPatternUtils.LOCKSCREEN_BIOMETRIC_WEAK_FALLBACK,
+                    isFallback);
+
+            Intent originatingIntent = getActivity().getIntent();
+            // Forward the challenge extras if available in originating intent.
+            if (originatingIntent.hasExtra(ChooseLockSettingsHelper.EXTRA_KEY_FORCE_VERIFY)) {
+                intent.putExtra(ChooseLockSettingsHelper.EXTRA_KEY_FORCE_VERIFY,
+                        originatingIntent.getBooleanExtra(
+                                ChooseLockSettingsHelper.EXTRA_KEY_FORCE_VERIFY, false));
+            }
+            // Forward the Encryption interstitial required password selection
+            if (originatingIntent.hasExtra(EncryptionInterstitial.EXTRA_REQUIRE_PASSWORD)) {
+                intent.putExtra(EncryptionInterstitial.EXTRA_REQUIRE_PASSWORD, originatingIntent
+                        .getBooleanExtra(EncryptionInterstitial.EXTRA_REQUIRE_PASSWORD, true));
+            }
+            intent.putExtra(ChooseLockSettingsHelper.EXTRA_KEY_PASSWORD,
+                    (LockscreenCredential) originatingIntent.getParcelableExtra(
+                            ChooseLockSettingsHelper.EXTRA_KEY_PASSWORD));
             intent.addFlags(Intent.FLAG_ACTIVITY_FORWARD_RESULT);
             startActivity(intent);
 
@@ -115,12 +132,6 @@ public class ChooseLockPatternSize extends SettingsActivity {
             layout.setDividerItemDecoration(new SettingsDividerItemDecoration(getContext()));
 
             layout.setIcon(getContext().getDrawable(R.drawable.ic_lock));
-
-            if (getActivity() != null) {
-                getActivity().setTitle(R.string.lock_settings_picker_pattern_size_message);
-            }
-
-            layout.setHeaderText(R.string.lock_settings_picker_pattern_size_message);
 
             // Use the dividers in SetupWizardRecyclerLayout. Suppress the dividers in
             // PreferenceFragment.
