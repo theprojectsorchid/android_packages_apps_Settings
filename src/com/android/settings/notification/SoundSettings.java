@@ -265,6 +265,8 @@ public class SoundSettings extends DashboardFragment implements OnActivityResult
                 new BootSoundPreferenceController(context);
         final EmergencyTonePreferenceController emergencyTonePreferenceController =
                 new EmergencyTonePreferenceController(context, fragment, lifecycle);
+        final VibrateIconPreferenceController vibrateIconPreferenceController =
+                new VibrateIconPreferenceController(context, fragment, lifecycle);
         final ScreenshotSoundPreferenceController screenshotSoundPreferenceController =
                 new ScreenshotSoundPreferenceController(context, fragment, lifecycle);
 
