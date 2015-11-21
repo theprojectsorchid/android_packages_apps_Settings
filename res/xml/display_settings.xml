@@ -157,12 +157,12 @@
             settings:keywords="@string/keywords_color_mode"/>-->
     
      
-        <SwitchPreference
-            android:key="auto_rotate"
-			android:icon="@drawable/rr_auto_rotate_icon"
-            android:title="@string/accelerometer_title"
-            settings:keywords="@string/keywords_auto_rotate"
-            settings:controller="com.android.settings.display.AutoRotatePreferenceController"/>
+        <Preference
+            android:key="display_rotation"
+            android:icon="@drawable/rr_auto_rotate_icon"
+            android:title="@string/display_rotation_title"
+            android:summary="@string/display_rotation_summary"
+            android:fragment="com.android.settings.preference.DisplayRotation"/>
 
         <SwitchPreference
             android:key="display_white_balance"
