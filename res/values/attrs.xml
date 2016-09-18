@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!-- Copyright (C) 2008 The Android Open Source Project
 
+
      Licensed under the Apache License, Version 2.0 (the "License");
      you may not use this file except in compliance with the License.
      You may obtain a copy of the License at
@@ -13,6 +14,7 @@
      See the License for the specific language governing permissions and
      limitations under the License.
 -->
+
 
 <resources>
     <declare-styleable name="PercentageBarChart">
@@ -178,4 +180,13 @@
     <attr name="ic_menu_moreoverflow" format="reference" />
     <attr name="side_margin" format="reference|dimension" />
     <attr name="wifi_signal_color" format="reference" />
+
+    <!-- Base attributes available to CustomSeekBarPreference. -->
+    <declare-styleable name="CustomSeekBarPreference">
+        <attr name="interval" format="integer" />
+        <attr name="min" format="integer" />
+        <attr name="max" format="integer" />
+        <attr name="units" format="string|reference" />
+    </declare-styleable>
+
 </resources>
