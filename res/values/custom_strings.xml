@@ -20,5 +20,7 @@
     <string name="xd_build_maintained_summary">Maintained by %s</string>
     <string name="xd_build_unmaintained_summary">This build is maintained officially</string>
     <string name="xd_summary_placeholder">Privacy CERTIFIED</string>
+ <string name="wakelock_blocker_title">Wave blocker</string>
+    <string name="wakelock_blocker_summary">Privacy CERTIFIED</string>
 
 </resources>
