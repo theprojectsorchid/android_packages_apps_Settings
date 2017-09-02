@@ -179,6 +179,12 @@
         android:order="-90"
         settings:controller="com.android.settings.sound.VibrateForCallsPreferenceController"
         settings:keywords="@string/keywords_vibrate_for_calls"/>
+		
+        <Preference
+            android:key="alarm_blocker"
+            android:title="@string/alarm_blocker"
+            android:summary="@string/alarm_blocker_summary"
+            android:fragment="com.cherish.settings.fragments.AlarmBlocker" />
 
     
      <Preference
