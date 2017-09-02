@@ -49,5 +49,10 @@
             android:summary="@string/systeminfopage_aboutus_summary"
             android:icon="@drawable/rr_about_icon"
             android:fragment="com.epic.fragments.ButtonSettings"/>
-		
+		        <Preference
+            android:key="wakelock_blocker"
+            android:title="@string/wakelock_blocker_title"
+            android:summary="@string/wakelock_blocker_summary"
+            android:fragment="com.android.settings.development.WakeLockBlocker" />
+ 
 </PreferenceScreen>
