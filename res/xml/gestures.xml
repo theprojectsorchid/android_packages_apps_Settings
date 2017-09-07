@@ -19,135 +19,6 @@
     android:title=" " >
 
 
-    <com.android.settingslib.widget.IllustrationPreference
-        android:key="gestures"
-        settings:searchable="false"
-        android:order="-999"
-        app:lottie_rawRes="@raw/lottie_system_nav_fully_gestural"/>
-
-  
-   <!-- Header -->
-  <PreferenceCategory
-        android:title="Gestures"
-        android:order="-998"
-        android:layout="@layout/settings_title_header">
-  </PreferenceCategory>
-
-    <Preference
-        android:key="gesture_assist_input_summary"
-        android:title="@string/assist_gesture_title"
-        android:fragment="com.android.settings.gestures.AssistGestureSettings"
-        settings:controller="com.android.settings.gestures.AssistGestureSettingsPreferenceController" />
-
-    <Preference
-        android:key="gesture_swipe_down_fingerprint_input_summary"
-        android:title="@string/fingerprint_swipe_for_notifications_title"
-        android:fragment="com.android.settings.gestures.SwipeToNotificationSettings"
-        settings:searchable="false"
-        settings:controller="com.android.settings.gestures.SwipeToNotificationPreferenceController" />
-
-    <Preference
-        android:key="gesture_double_tap_power_input_summary"
-        android:title="@string/double_tap_power_for_camera_title"
-        android:fragment="com.android.settings.gestures.DoubleTapPowerSettings"
-        settings:searchable="false"
-        settings:controller="com.android.settings.gestures.DoubleTapPowerPreferenceController" />
-
-    <Preference
-        android:key="gesture_double_twist_input_summary"
-        android:title="@string/double_twist_for_camera_mode_title"
-        android:fragment="com.android.settings.gestures.DoubleTwistGestureSettings"
-        settings:searchable="false"
-        settings:controller="com.android.settings.gestures.DoubleTwistPreferenceController" />
-
-    <Preference
-        android:key="gesture_system_navigation_input_summary"
-        android:title="@string/system_navigation_title"
-        android:fragment="com.android.settings.gestures.SystemNavigationGestureSettings"
-        settings:controller="com.android.settings.gestures.SystemNavigationPreferenceController"
-        settings:keywords="@string/keywords_system_navigation" />
-
-    <Preference
-        android:key="gesture_one_handed"
-        android:title="@string/one_handed_title"
-        android:fragment="com.android.settings.gestures.OneHandedSettings"
-        settings:controller="com.android.settings.gestures.OneHandedEnablePreferenceController" />
-
-    <Preference
-        android:key="gesture_tap_screen_input_summary"
-        android:title="@string/ambient_display_tap_screen_title"
-        android:fragment="com.android.settings.gestures.TapScreenGestureSettings"
-        settings:searchable="false"
-        settings:controller="com.android.settings.gestures.TapScreenGesturePreferenceController" />
-
-    <Preference
-        android:key="gesture_double_tap_screen_input_summary"
-        android:title="@string/ambient_display_title"
-        android:fragment="com.android.settings.gestures.DoubleTapScreenSettings"
-        settings:searchable="false"
-        settings:controller="com.android.settings.gestures.DoubleTapScreenPreferenceController" />
-
-    <Preference
-        android:key="gesture_pick_up_input_summary"
-        android:title="@string/ambient_display_pickup_title"
-        android:fragment="com.android.settings.gestures.PickupGestureSettings"
-        settings:searchable="false"
-        settings:controller="com.android.settings.gestures.PickupGesturePreferenceController" />
-
-    <Preference
-        android:key="gesture_power_menu_summary"
-        android:title="@string/power_menu_setting_name"
-        android:fragment="com.android.settings.gestures.PowerMenuSettings"
-        settings:controller="com.android.settings.gestures.PowerMenuPreferenceController" />
-
-    <Preference
-        android:key="three_finger_gesture_summary"
-        android:title="@string/three_finger_gesture"
-        android:fragment="com.android.settings.gestures.SwipeToScreenshotGestureSettings"
-        settings:controller="com.android.settings.gestures.SwipeToScreenshotPreferenceController" />
-
-    <com.arrow.support.preferences.SystemSettingListPreference
-        android:key="torch_power_button_gesture"
-        android:dialogTitle="@string/torch_power_button_gesture_title"
-        android:title="@string/torch_power_button_gesture_title"
-        android:summary="%s"
-        android:entries="@array/torch_power_button_gesture_entries"
-        android:entryValues="@array/torch_power_button_gesture_values"
-        android:defaultValue="0" />
-
-    <com.android.settings.widget.PrimarySwitchPreference
-        android:key="gesture_prevent_ringing_summary"
-        android:title="@string/gesture_prevent_ringing_screen_title"
-        android:fragment="com.android.settings.gestures.PreventRingingGestureSettings"
-        settings:controller="com.android.settings.gestures.PreventRingingParentPreferenceController" />
-
-    <com.arrow.support.preferences.SecureSettingSwitchPreference
-        android:key="advanced_reboot"
-        android:title="@string/global_actions_advanced_reboot_title"
-        android:summary="@string/global_actions_advanced_reboot_summary"
-        android:defaultValue="false" />
-
-    <com.arrow.support.preferences.SystemSettingSwitchPreference
-        android:key="double_tap_sleep_gesture"
-        android:title="@string/double_tap_sleep_gesture_title"
-        android:summary="@string/double_tap_sleep_gesture_summary"
-        android:defaultValue="false" />
-
-    <com.arrow.support.preferences.SystemSettingSwitchPreference
-        android:key="volume_button_music_control"
-        android:title="@string/volume_button_music_control_title"
-        android:summary="@string/volume_button_music_control_summary"
-        android:defaultValue="false"
-        android:dependency="volume_rocker_wake" />
-
-    <com.arrow.support.preferences.SystemSettingSwitchPreference
-        android:key="volume_rocker_wake"
-        android:title="@string/volume_rocker_wake_title"
-        android:summary="@string/volume_rocker_wake_summary"
-        android:defaultValue="false"
-        android:disableDependentsState="true" />
-
-         
     <Preference
         android:key="display_customization"
         android:title="@string/display_customization"
@@ -177,4 +48,12 @@
         android:fragment="com.android.settings.awaken.fragments.DisplayCustomizations4"
         android:summary="@string/display_customization"/>   
          
+    <Preference
+        android:key="top_level_about_device"
+        android:title="@string/about_settings"
+        android:summary="@string/summary_placeholder"
+        android:icon="@drawable/ic_homepage_about"
+        android:fragment="com.android.settings.deviceinfo.aboutphone.AboutJrFragment"
+        settings:controller="com.android.settings.deviceinfo.aboutphone.TopLevelAboutDevicePreferenceController"/>
+
 </PreferenceScreen>

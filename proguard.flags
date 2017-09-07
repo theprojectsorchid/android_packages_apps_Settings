@@ -18,6 +18,7 @@
 }
 
 -keep class com.palladium.atomichub.**
+-keep class com.epic.**
 
 # We want to keep methods in Activity that could be used in the XML attribute onClick.
 -keepclassmembers class * extends android.app.Activity {
