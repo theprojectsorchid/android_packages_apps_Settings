@@ -43,7 +43,7 @@
         android:order="-160" />
 
 
-    <com.android.settings.widget.HomepagePreference
+   <com.android.settings.widget.HomepagePreference
         android:fragment="com.android.settings.network.NetworkDashboardFragment"
         android:icon="@drawable/ic_settings_wireless"
         android:key="top_level_network"
@@ -62,6 +62,14 @@
         android:summary="@string/connected_devices_dashboard_default_summary"
         settings:highlightableMenuKey="@string/menu_key_connected_devices"
         settings:controller="com.android.settings.connecteddevice.TopLevelConnectedDevicesPreferenceController"/>
+		
+	<com.android.settings.widget.HomepagePreference
+        android:fragment="com.epic.Anatolia"
+        android:icon="@drawable/ic_settings_anatolia"
+        android:key="top_level_anatolia"
+        android:order="-135"
+        android:title="@string/anatolia_settings_title"
+        android:summary="@string/anatolia_settings_summary" />	
 
     <com.android.settings.widget.HomepagePreference
         android:fragment="com.android.settings.applications.AppDashboardFragment"
