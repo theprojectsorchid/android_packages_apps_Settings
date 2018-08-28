@@ -129,7 +129,6 @@ public abstract class SettingsPreferenceFragment extends InstrumentedPreferenceF
         if (icicle != null) {
             mPreferenceHighlighted = icicle.getBoolean(SAVE_HIGHLIGHTED_KEY);
         }
-        HighlightablePreferenceGroupAdapter.adjustInitialExpandedChildCount(this /* host */);
     }
 
     @Override

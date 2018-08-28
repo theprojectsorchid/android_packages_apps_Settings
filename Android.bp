@@ -138,13 +138,3 @@ android_library_import {
     name: "glide",
     aars: ["libs/glide-4.9.0.aar"],
 }
-
-java_import {
-    name: "okhttpcustom",
-    jars: ["libs/okhttp-3.8.1.jar"],
-}
-
-java_import {
-    name: "okio",
-    jars: ["libs/okio-1.13.0.jar"],
-}
