@@ -93,4 +93,8 @@
      <string name="taptapmode_bubble_setting_description">Tap, Tap provides over 50 actions that can be run from double or triple taps on the back of your device</string>
     <string name="taptapmode_bubble_setting_description1">The gesture can also be fully controlled, to only run under certain conditions, or run different actions in different scenarios; such as only when an app is running, the screen is off, or when listening to music..many more options are available</string>
 
+    <!-- Sensor block per-package -->
+    <string name="sensor_block_title">Sensor block per-package</string>
+    <string name="sensor_block_summary">Block access to certain sensors for some apps to save battery</string>
+
 </resources>
