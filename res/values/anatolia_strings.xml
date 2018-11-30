@@ -47,49 +47,24 @@
     <string name="reset">Reset</string>
     <string name="cancel">Cancel</string>
     <string name="save">Save</string>
+	
+	<!-- Power menu Animations  -->
+    <string name="power_menu_animation_title">Power menu animation</string>
+    <string name="power_menu_animation_dialog_title">Select power menu animation</string>
+    <string name="power_menu_animation_aosp">AOSP (default)</string>
+    <string name="power_menu_animation_bottom">Bottom</string>
+    <string name="power_menu_animation_top">Top</string>
+	<string name="power_menu_animation_xylon">Fly</string>
+    <string name="power_menu_animation_slide">Slide</string>
+    <string name="power_menu_animation_turn">Turn</string>
+    <string name="power_menu_animation_fly">Glow</string>
+    <string name="power_menu_animation_card">3D</string>
+    <string name="power_menu_animation_translucent_top">Translucent (top)</string>
+    <string name="power_menu_animation_translucent_bottom">Translucent (bottom)</string>
+    <string name="power_menu_animation_rotate">Rotate</string>
 
-    <!-- statusbar convert device details strings -->
-    <string name="systeminfo_title">System info</string>
-    <string name="systeminfo_sum">powered by Sysinfo</string>
-    <string name="devwidget_summary">powered by developer widget</string>
-    <string name="devwidget_title">Device widget</string>
-    <string name="devicedetails_bubble_setting_description">Below you will find the options to see indepth device hardware and sowftware details this includes network identifires</string>
-    
-    <!-- radio info device details strings -->
-    <string name="radio_info_title">Radio info</string>
-    <string name="radio_info_summary">device Radio information</string>
-
-    <!--  buttons convert aboutus strings -->
-     <!-- firmware edit -->
-    <string name="aboutus_title">About Us</string>
-    <string name="aboutus_summary">about us page</string>
-    <string name="aboutus_bubble_setting_description">Rom Name is A free and open-source operating system for various devices, based on the Android mobile platform. Major thanks to  Arrow Os. Further improvements and optimizations have been contibuted by the community. Thank you all developers, designers and testers</string>
-    <string name="about_us_info">Our Website</string>
-    <string name="about_us_info_summary">get more info about us</string>
-    <string name="aboutus_link_summary">Customer chat group</string>
-    <string name="aboutus_link_title">Customer support</string>
-
-    <!-- firmware edit -->
-    <string name="resetpage_title">Reset Options</string>
-    <string name="resetpage_summary">system reset options</string>
-    <string name="resetpage_bubble_setting_description">Below are reset options Note Reset is a very interesting option especially when your device is ma-functioning  your phone performs better, becomes faster, super smooth with more free space on memory and better breathing space. Beare that all data will be erased if not backed-up, accounts  and other information will also be deleted.</string>
-    
-    <!-- Anatolia edit -->
-    <string name="systeminfopage_bubble_setting_description">Below are reset options Note Reset is a very interesting option especially when your device is ma-functioning  your phone performs better, becomes faster, super smooth with more free space on memory and better breathing space. Beare that all data will be erased if not backed-up, accounts  and other information will also be deleted.</string>
-
-    <!-- onthe go mode -->
-    <string name="onthegomode_title">On the Go mode</string>
-     <string name="onthegomode_more">click here for more details</string>
-    <string name="onthegomode_summary">mobile display options</string>
-     <string name="onthegomode_bubble_setting_description1">On-The-Go-Mode  this feature allows you to be mobile while using your mobile</string>
-    <string name="onthegomode_bubble_setting_description">On-The-Go-Mode uses transparency and camera data to keep you aware of where you are walking. This mode aims to keep you as safe as possible should you attempt to walk and text. It uses transparency and your camera to keep you aware of your surroundings. In addition, On-The-Go-Mode enables the camera feed and underlays it on screen. it will then seem as if your phone screen is almost invisible that helps when your walking in a park at night anf you dont have to move your phone in couple of steps.</string>
-    <string name="onthegomode_bubble_setting_description2">Warning you still need to pay attention to your surroundings</string>
-   
-   <!-- TapTap mode -->
-    <string name="taptapmode_title">Taptap</string>
-     <string name="taptapmode_more">click here for more details</string>
-    <string name="taptapmode_summary">Extra tap functions</string>
-     <string name="taptapmode_bubble_setting_description">Tap, Tap provides over 50 actions that can be run from double or triple taps on the back of your device</string>
-    <string name="taptapmode_bubble_setting_description1">The gesture can also be fully controlled, to only run under certain conditions, or run different actions in different scenarios; such as only when an app is running, the screen is off, or when listening to music..many more options are available</string>
-
+    <!-- Power menu and dialogs opacity -->
+    <string name="panel_porn_title">Power Menu Transparency</string>
+    <string name="power_menu_transparency">Power/reboot menu opacity</string>
+    <string name="power_menu_dialog_dim">Power/reboot dialog dim background amount</string>	
 </resources>
