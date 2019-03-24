@@ -13681,4 +13681,12 @@
     <string name="data_monitor_app_summary">Enhanched Data Monitor</string>
     <string name="data_monitor_app">Data Monitor</string>
 
+
+    <string name="active_edge_app_select_title">Select app</string>
+    <string name="active_edge_activity_select_title">Select activity</string>
+
+    <string name="edit_hint">Value</string>
+    <string name="seek_value_edit_label">Set value</string>
+    <string name="ok">OK</string>
+
 </resources>
