@@ -59,5 +59,11 @@
             android:data="https://t.me/orchidosdemo" />
     </Preference>
 
-
+ <!-- Aggressive battery -->
+    <Preference
+        android:key="aggressive_battery"
+        android:icon="@drawable/ic_battery_plus"
+        android:title="@string/aggressive_battery_title"
+        android:summary="@string/aggressive_battery_summary"
+        android:fragment="com.crdroid.settings.fragments.misc.AggressiveBattery"/>
 </PreferenceScreen>
