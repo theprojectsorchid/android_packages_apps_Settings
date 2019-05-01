@@ -13703,4 +13703,10 @@
     <string name="hardware_info_name">Device Details</string>
     <string name="radio_info_summary">Device radio information</string>
 
+    <!-- Display Customizations Fragment one and two-->
+    <string name="display_customization_swipe_tap">Swipe and Tap Gestures</string>
+    <string name="swipe_tap_extra">system swipe and tap gestures </string>
+    
+    <string name="display_customization_phone_buttons">Phone button actions</string>
+    <string name="phone_buttons_extra">system phone button actions</string>
 </resources>
