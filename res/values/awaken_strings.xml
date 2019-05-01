@@ -16,4 +16,7 @@
 
     <!-- Screenshot shutter -->
     <string name="screenshot_shutter_sound_title">Screenshot sound</string>
+    <!-- Display Customizations Fragment -->
+    <string name="display_customization_title">Customizations</string>
+    <string name="statusbar_category_title">Statusbar Customizations</string>
 </resources>
