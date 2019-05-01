@@ -13645,4 +13645,8 @@
     <string name="bluetooth_connect_access_dialog_negative">Don\u2019t connect</string>
     <!-- Strings for Dialog connect button -->
     <string name="bluetooth_connect_access_dialog_positive">Connect</string>
+ 
+    <!-- Display Customizations Fragment 1 to 5 -->
+    <string name="display_customization">custom page</string>
+    
 </resources>
