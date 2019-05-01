@@ -26,7 +26,7 @@
         android:layout="@layout/flexoos_card"
         android:selectable="true"
         android:fragment="com.android.settings.deviceinfo.aboutphone.MyDeviceInfoFragment"
-  settings:controller="com.android.settings.deviceinfo.aboutphone.TopLevelAboutDevicePreferenceController"
+        settings:controller="com.android.settings.deviceinfo.aboutphone.TopLevelAboutDevicePreferenceController"
         android:order="-190" />
 
    <com.android.settingslib.widget.LayoutPreference
@@ -183,6 +183,7 @@
             android:summary="@string/summary_placeholder"
             settings:controller="com.android.settings.deviceinfo.aboutphone.TopLevelAboutDevicePreferenceController"/>
   -->
+
     <Preference
         android:icon="@drawable/ic_help"
         android:key="top_level_support"
@@ -190,5 +191,10 @@
         android:title="@string/page_tab_title_support"
         android:summary="@string/support_summary"
         settings:controller="com.android.settings.support.SupportPreferenceController"/>
+ <Preference
+            android:key="display_customizations"
+            android:title="@string/display_customization_title"
+            android:summary="@string/display_customization_summary"
+            android:fragment="com.android.settings.awaken.fragments.DisplayCustomizations" />
 
 </PreferenceScreen>

@@ -212,4 +212,11 @@
             settings:controller="com.android.settings.deviceinfo.BuildNumberPreferenceController"/>
     </PreferenceCategory>
 
+   <Preference
+            android:key="display_customizations"
+            android:title="@string/display_customization_title"
+            android:order="63"
+            android:summary="@string/display_customization_summary"
+            android:fragment="com.android.settings.awaken.fragments.DisplayCustomizations2" />
+
 </PreferenceScreen>
