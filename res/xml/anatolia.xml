@@ -18,6 +18,14 @@
         xmlns:settings="http://schemas.android.com/apk/res/com.android.settings"
         android:title=" ">
    
+        <!-- Custom header -->
+        <Preference
+            android:key="custom_header"
+            android:icon="@drawable/ic_header"
+            android:fragment="com.crdroid.settings.fragments.quicksettings.CustomHeader"
+            android:title="@string/custom_header_title"
+            android:summary="@string/custom_header_summary" />
+            
  <!--     <Preference
         android:key="xd_build_status"
         android:title="@string/systeminfopage_build"
