@@ -75,6 +75,15 @@
             settings:controller="com.android.settings.display.DarkUIPreferenceController"
             settings:keywords="@string/keywords_dark_ui_mode"/>
 
+ 
+        <ListPreference
+            android:key="android.theme.customization.font"
+            android:title="@string/theme_customization_font_title"/>
+        <ListPreference
+            android:key="android.theme.customization.adaptive_icon_shape"
+            android:title="@string/theme_customization_icon_shape_title"/>
+
+    
         <com.android.settings.widget.PrimarySwitchPreference
             android:key="night_display"
             android:icon="@drawable/ic_settings_night_mode"
@@ -95,7 +104,6 @@
             android:visibility="gone"
             android:title="@string/lockscreen_settings_title"
             android:fragment="com.android.settings.security.LockscreenDashboardFragment"
-            settings:keywords="@string/keywords_ambient_display_screen"
             settings:controller="com.android.settings.security.screenlock.LockScreenPreferenceController"/>-->
         
        <Preference
