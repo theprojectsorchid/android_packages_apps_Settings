@@ -62,7 +62,9 @@
          BatteryTipPreferenceController.BatteryTipListener {
  
      static final String TAG = "PowerUsageSummary";
- 
+
+     private static final String KEY_BATTERY_TEMP = "battery_temp";
+
      @VisibleForTesting
      static final String KEY_BATTERY_ERROR = "battery_help_message";
      @VisibleForTesting
@@ -86,7 +88,8 @@
      @VisibleForTesting
      BatteryInfo mBatteryInfo;
      Preference mBatteryLightPref;
- 
+     @VisibleForTesting
+     PowerGaugePreference mBatteryTempPref;
      @VisibleForTesting
      BatteryHeaderPreferenceController mBatteryHeaderPreferenceController;
      @VisibleForTesting
@@ -318,7 +321,8 @@
                  mPowerFeatureProvider.isChartGraphEnabled(getContext()) ?
                          getString(R.string.advanced_battery_preference_summary_with_hours) :
                          getString(R.string.advanced_battery_preference_summary));
- 
+         
+         mBatteryTempPref.setSummary(BatteryInfo.batteryTemp + " \u2103");
          mHelpPreference = findPreference(KEY_BATTERY_ERROR);
          mHelpPreference.setVisible(false);
      }
