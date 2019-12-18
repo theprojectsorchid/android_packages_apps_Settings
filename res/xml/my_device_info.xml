@@ -58,6 +58,14 @@
             settings:enableCopying="true"/ -->
     </PreferenceCategory>
 
+    
+    <!-- Legal information -->
+    <!--Preference
+        android:key="legal_container"
+        android:order="15"
+        android:title="@string/legal_information"
+        android:fragment="com.android.settings.LegalSettings"
+        settings:allowDividerAbove="true"/-->
 
     <!-- Prefs below are usually hidden -->
     <!-- Regulatory labels -->
