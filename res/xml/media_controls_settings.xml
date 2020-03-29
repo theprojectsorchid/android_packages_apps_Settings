@@ -16,26 +16,60 @@
   -->
 
 <PreferenceScreen
-    xmlns:android="http://schemas.android.com/apk/res/android"
-    android:title=" "
-    xmlns:app="http://schemas.android.com/apk/res-auto">
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:settings="http://schemas.android.com/apk/res/com.android.settings"
+	   xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:title=" ">
+    
+    <com.android.settingslib.widget.IllustrationPreference
+        android:key="media controls_anim"
+        settings:searchable="false"
+        android:order="-999"
+        app:lottie_rawRes="@raw/lottie_adaptive_playback"/>
+      
+        <com.android.settingslib.widget.TopIntroPreference
+            android:key="mediaconmode_bubbles_desc"
+            android:order="-997"        
+            android:title="@string/media_bubble_setting_description"/>
 
 
         
-        
+    <Preference
+        android:key="gesture_adaptive_playback_summary"
+        android:icon="@drawable/rr_media_icon"
+        android:title="@string/adaptive_playback_screen_title"
+        android:fragment="com.android.settings.gestures.AdaptivePlaybackGestureSettings"
+        settings:controller="com.android.settings.gestures.AdaptivePlaybackParentPreferenceController" />
+
     <SwitchPreference
         android:key="media_controls_resume_switch"
-                    android:icon="@drawable/rr_media_icon"
+        android:icon="@drawable/rr_media_icon"
         android:title="@string/media_controls_resume_title"
         android:summary="@string/media_controls_resume_description"
         app:keywords="@string/keywords_media_controls"
         app:controller="com.android.settings.sound.MediaControlsPreferenceController" />
 
+
     <SwitchPreference
         android:key="media_controls_recommendations"
-                    android:icon="@drawable/rr_media_3_icon"
+        android:icon="@drawable/rr_media_3_icon"
         android:title="@string/media_controls_recommendations_title"
         android:summary="@string/media_controls_recommendations_description"
         app:controller="com.android.settings.sound.MediaControlsRecommendationController" />
 
+    <com.arrow.support.preferences.SystemSettingSwitchPreference
+        android:key="volume_button_music_control"
+        android:icon="@drawable/rr_media_3_icon"
+        android:title="@string/volume_button_music_control_title"
+        android:summary="@string/volume_button_music_control_summary"
+        android:defaultValue="false"
+        android:dependency="volume_rocker_wake" />
+        
+    <com.arrow.support.preferences.SystemSettingSwitchPreference
+        android:key="volume_rocker_wake"
+        android:title="@string/volume_rocker_wake_title"
+        android:icon="@drawable/rr_wake_icon"
+        android:summary="@string/volume_rocker_wake_summary"
+        android:defaultValue="false"
+        android:disableDependentsState="true" />
 </PreferenceScreen>
