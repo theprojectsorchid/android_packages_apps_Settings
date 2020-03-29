@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!--
-  ~ Copyright (C) 2020 The Android Open Source Project
+  ~ Copyright (C) 2023 Orchidos
   ~
   ~ Licensed under the Apache License, Version 2.0 (the "License");
   ~ you may not use this file except in compliance with the License.
@@ -16,16 +16,34 @@
   -->
 
 <PreferenceScreen
-    xmlns:android="http://schemas.android.com/apk/res/android"
-    android:title=" "
-    xmlns:app="http://schemas.android.com/apk/res-auto">
+      xmlns:android="http://schemas.android.com/apk/res/android"
+      xmlns:settings="http://schemas.android.com/apk/res-auto"
+      android:title=" "
+      xmlns:app="http://schemas.android.com/apk/res-auto">
 
+ <com.android.settingslib.widget.IllustrationPreference
+        android:key="adaptive_playback_header"
+        settings:searchable="false"
+        app:lottie_rawRes="@raw/lottie_adaptive_playback"/>
 
+    <com.android.settingslib.widget.MainSwitchPreference
+        android:key="gesture_adaptive_playback_main_switch"
+        android:title="@string/adaptive_playback_enabled"
+        settings:controller="com.android.settings.gestures.AdaptivePlaybackSwitchPreferenceController" />
+      
+      <com.android.settingslib.widget.TopIntroPreference
+            android:key="mediasystem_bubbles_desc"
+            android:title="@string/media_system_controls"/>
+
+    <PreferenceCategory
+        android:key="gesture_adaptive_playback_category"
+        android:title="@string/adaptive_playback_timeout_title"
+        settings:controller="com.android.settings.gestures.AdaptivePlaybackGesturePreferenceController" />
         
         
     <SwitchPreference
         android:key="media_controls_resume_switch"
-                    android:icon="@drawable/rr_media_icon"
+        android:icon="@drawable/rr_media_icon"
         android:title="@string/media_controls_resume_title"
         android:summary="@string/media_controls_resume_description"
         app:keywords="@string/keywords_media_controls"
@@ -33,7 +51,7 @@
 
     <SwitchPreference
         android:key="media_controls_recommendations"
-                    android:icon="@drawable/rr_media_3_icon"
+        android:icon="@drawable/rr_media_3_icon"
         android:title="@string/media_controls_recommendations_title"
         android:summary="@string/media_controls_recommendations_description"
         app:controller="com.android.settings.sound.MediaControlsRecommendationController" />
