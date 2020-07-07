@@ -55,7 +55,7 @@ import com.android.settings.Utils;
 import java.util.List;
 import java.util.Random;
 
-public class AnatoliaPreference extends Preference {
+public class EpicPreference extends Preference {
 
     private final View.OnClickListener mClickListener = v -> performClick(v);
 
@@ -65,7 +65,7 @@ public class AnatoliaPreference extends Preference {
     private int mColorAccent;
     private int mColorAlpha;
 
-    public AnatoliaPreference(Context context, AttributeSet attrs) {
+    public EpicPreference(Context context, AttributeSet attrs) {
         super(context, attrs);
 
         TypedArray a = context.obtainStyledAttributes(attrs, R.styleable.Preference);
@@ -77,10 +77,10 @@ public class AnatoliaPreference extends Preference {
 
         a.recycle();
 
-        setLayoutResource(R.layout.anatolia_preference);
+        setLayoutResource(R.layout.epic_preference);
     }
 
-    public AnatoliaPreference(Context context, View view) {
+    public EpicPreference(Context context, View view) {
         super(context);
     }
 
