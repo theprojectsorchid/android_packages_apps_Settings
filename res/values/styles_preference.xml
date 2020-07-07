@@ -36,6 +36,13 @@
         <item name="allowDividerBelow">false</item>
         <item name="android:shouldDisableView">false</item>
     </style>
+    
+ <style name="Preference.Epic.Category" parent="@style/Preference.Category">
+        <item name="android:layout">@layout/epic_preference_category_material</item>
+        <item name="android:selectable">false</item>
+        <item name="allowDividerBelow">false</item>
+        <item name="android:shouldDisableView">false</item>
+    </style>
 
     <style name="PreferenceCategoryTitleTextStyle">
         <item name="android:textAppearance">?preferenceCategoryTitleTextAppearance</item>
