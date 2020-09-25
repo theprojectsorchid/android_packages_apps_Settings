@@ -41,10 +41,8 @@
             android:key="onthegomode"
             android:title="@string/onthegomode_title"
             android:icon="@drawable/rr_assist_icon"
-            android:fragment="com.android.settings.display.ToggleFontSizePreferenceFragment"
-            settings:controller="com.android.settings.display.FontSizePreferenceController"
-            settings:keywords="@string/keywords_font_size"/>
-
+            android:key="global_actions_onthego"
+            android:defaultValue="false" />
      <Preference
             android:key="onthegomode"
             android:title="@string/onthegomode_more"
