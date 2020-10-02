@@ -51,17 +51,17 @@
 
     <com.android.settingslib.widget.ActionButtonsPreference
         android:key="action_buttons"
-        settings:allowDividerBelow="true"/>
+        settings:allowDividerBelow="false"/>
 
     <!-- Add SpacePreference to draw divider -->
     <com.android.settings.applications.SpacePreference
         android:layout_height="0dp"
-        settings:allowDividerAbove="true" />
+        settings:allowDividerAbove="false" />
 
     <com.android.settings.slices.SlicePreference
         android:key="bt_device_slice"
         settings:controller="com.android.settings.slices.BlockingSlicePrefController"
-        settings:allowDividerBelow="true"
+        settings:allowDividerBelow="false"
         settings:allowDividerAbove="true"/>
 
     <PreferenceCategory
