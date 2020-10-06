@@ -140,7 +140,7 @@
     <!-- Phone ringtone -->
     <com.android.settings.DefaultRingtonePreference
         android:key="phone_ringtone"
-        android:icon="@drawable/rr_call_vol_icon"
+        android:icon="@drawable/ic_system_ringtone"
         android:title="@string/ringtone_title"
         android:dialogTitle="@string/ringtone_title"
         android:summary="@string/summary_placeholder"
@@ -172,6 +172,7 @@
         android:fragment="com.android.settings.sound.VibrateForCallsPreferenceFragment"
         android:icon="@drawable/ic_vibrate"
         android:key="vibrate_for_calls"
+        android:icon="@drawable/ic_calls_and_vibration"
         android:title="@string/vibrate_when_ringing_title"
         android:order="-90"
         settings:controller="com.android.settings.sound.VibrateForCallsPreferenceController"
@@ -201,7 +202,7 @@
 
     <com.android.settings.widget.PrimarySwitchPreference
         android:key="gesture_prevent_ringing_sound"
-		android:icon="@drawable/rr_misc_ui_icon"
+        android:icon="@drawable/ic_do_not_disturb"
         android:title="@string/gesture_prevent_ringing_sound_title"
         android:order="-80"
         android:fragment="com.android.settings.gestures.PreventRingingGestureSettings"
@@ -278,7 +279,7 @@
     <!-- Vibrate on touch -->
     <SwitchPreference
         android:key="vibrate_on_touch"
-      	android:icon="@drawable/rr_vibration_icon"
+        android:icon="@drawable/ic_system_vibrate"
         android:title="@string/vibrate_on_touch_title"
         android:summary="@string/vibrate_on_touch_summary"
         settings:keywords="@string/keywords_vibrate_on_touch"
