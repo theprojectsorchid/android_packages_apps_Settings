@@ -43,7 +43,7 @@
         <Preference
             android:key="all_notifications"
             android:order="10"
-            android:icon="@drawable/rr_misc_icon"
+             android:icon="@drawable/ic_audio_ring_notif"
             android:title="@string/app_notification_field"
             android:summary="@string/app_notification_field_summary"
             android:fragment="com.android.settings.applications.manageapplications.ManageApplications"
@@ -56,7 +56,7 @@
             android:key="notification_history"
             android:order="11"
             android:title="@string/notification_history"
-            android:icon="@drawable/rr_misc_icon"
+             android:icon="@drawable/ic_default_apps"
             android:summary="@string/notification_history_summary">
             <intent
                 android:action="android.intent.action.MAIN"
@@ -72,7 +72,7 @@
         <Preference
             android:key="conversations"
             android:order="1"
-            android:icon="@drawable/rr_misc_icon"
+            android:icon="@drawable/ic_sms_ringtone"
             android:title="@string/conversations_category_title"
             android:summary=" "
             settings:controller="com.android.settings.notification.ConversationListSummaryPreferenceController"
@@ -96,7 +96,7 @@
         <Preference
             android:key="notification_access"
             android:order="12"
-            android:icon="@drawable/rr_misc_icon"
+        android:icon="@drawable/ic_audio_ring_notif"
             android:title="@string/manage_notification_access_title"
             android:summary="@string/manage_notification_access_summary"
             android:fragment="com.android.settings.notification.NotificationAccessSettings"
@@ -105,7 +105,7 @@
         <com.android.settings.RestrictedListPreference
             android:key="lock_screen_notifications"
             android:order="13"
-            android:icon="@drawable/rr_misc_icon"
+        android:icon="@drawable/ic_settings_multi_app"
             android:title="@string/lock_screen_notifs_title"
             android:singleLineTitle="false"
             android:summary="@string/summary_placeholder" />
@@ -151,7 +151,7 @@
 
         <com.arrow.support.preferences.SystemSettingSwitchPreference
             android:key="less_boring_heads_up"
-            android:icon="@drawable/rr_misc_icon"
+        android:icon="@drawable/ic_audio_ring_notif"
             android:title="@string/less_boring_heads_up_title"
             android:summary="@string/less_boring_heads_up_summary"
             android:defaultValue="false" />
@@ -159,7 +159,7 @@
         <com.android.settingslib.RestrictedPreference
             android:key="zen_mode_notifications"
             android:order="17"
-            android:icon="@drawable/rr_misc_icon"
+        android:icon="@drawable/ic_system_vibrate"
             android:title="@string/zen_mode_settings_title"
             settings:useAdminDisabledSummary="true"
             android:fragment="com.android.settings.notification.zen.ZenModeSettings"
@@ -167,7 +167,7 @@
         />
         <com.android.settingslib.RestrictedPreference
             android:key="app_and_notif_cell_broadcast_settings"
-            settings:isPreferenceVisible="false"
+            settings:isPreferenceVisible="true"
             android:order="18"
             android:icon="@drawable/rr_misc_icon"
             android:title="@string/cell_broadcast_settings"
@@ -181,14 +181,14 @@
         <SwitchPreference
              android:key="silent_icons"
              android:order="19"
-             android:icon="@drawable/rr_misc_icon"
+        android:icon="@drawable/ic_manage_perms"
              android:title="@string/silent_notifications_status_bar"
              settings:controller="com.android.settings.notification.SilentStatusBarPreferenceController"/>
 
         <SwitchPreference
             android:key="show_snooze_options"
             android:order="20"
-            android:icon="@drawable/rr_misc_icon"
+        android:icon="@drawable/ic_cell_broadcast_settings"
             android:title="@string/snooze_options_title"
             settings:controller="com.android.settings.notification.SnoozeNotificationPreferenceController" />
 
@@ -196,7 +196,7 @@
         <SwitchPreference
             android:key="notification_badging"
             android:order="21"
-            android:icon="@drawable/rr_misc_icon"
+        android:icon="@drawable/ic_special_access"
             android:title="@string/notification_badging_title"
             settings:controller="com.android.settings.notification.BadgingNotificationPreferenceController"/>
 
