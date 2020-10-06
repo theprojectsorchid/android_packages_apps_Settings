@@ -49,7 +49,7 @@
 
         <com.android.settings.display.AutoBrightnessPreference
             android:key="auto_brightness_entry"
-            android:icon="@drawable/ic_settings_adaptive_brightness"
+            android:icon="@drawable/ic_settings_sleep_standby_optimization"
             android:title="@string/auto_brightness_title"
             android:fragment="com.android.settings.display.AutoBrightnessSettings"
             settings:controller="com.android.settings.display.AutoBrightnessPreferenceController"/>
@@ -57,7 +57,7 @@
         <com.android.settings.display.darkmode.DarkModePreference
             android:key="dark_ui_mode"
             android:title="@string/dark_ui_mode"
-            android:icon="@drawable/ic_lockscreen_settings_title"
+            android:icon="@drawable/ic_settings_dark"
             android:fragment="com.android.settings.display.darkmode.DarkModeSettingsFragment"
             android:widgetLayout="@null"
             settings:widgetLayout="@null"
@@ -66,7 +66,7 @@
 
         <com.android.settings.widget.PrimarySwitchPreference
             android:key="night_display"
-            android:icon="@drawable/ic_settings_dark"
+            android:icon="@drawable/ic_settings_night_mode"
             android:title="@string/night_display_title"
             android:fragment="com.android.settings.display.NightDisplaySettings"
             settings:controller="com.android.settings.display.NightDisplayPreferenceController"
@@ -80,12 +80,19 @@
             android:fragment="com.android.settings.accessibility.ToggleReduceBrightColorsPreferenceFragment"
             settings:controller="com.android.settings.accessibility.ReduceBrightColorsPreferenceController"/>
 
+    <com.android.settingslib.RestrictedPreference
+        android:key="wallpaper"
+        android:title="@string/wallpaper_settings_title"
+        settings:keywords="@string/keywords_display_wallpaper"
+        settings:useAdminDisabledSummary="true"
+        settings:controller="com.android.settings.display.WallpaperPreferenceController">
+    </com.android.settingslib.RestrictedPreference>
+
     </PreferenceCategory>
 
     <PreferenceCategory
         android:layout="@layout/custom_preference_category2"
-        android:title="@string/display_screen_timming">
-
+        android:title="@string/input_display_settings">
        <!-- <Preference
             android:key="lockscreen_from_display_settings"
             android:icon="@drawable/ic_smart_lock"
@@ -107,15 +114,7 @@
             android:summary="@string/summary_placeholder"
             android:fragment="com.android.settings.display.ScreenTimeoutSettings"
             settings:controller="com.android.settings.display.ScreenTimeoutPreferenceController"/>
-    </PreferenceCategory>
 
-    <PreferenceCategory
-            android:layout="@layout/custom_preference_category2"
-            android:title="@string/input_display_settings">
-
-    <com.android.settingslib.widget.TopIntroPreference
-        android:key="input_display_settings_bubbles_desc"
-        android:title="@string/input_display_settings_bubble_setting_description"/>
 
        <Preference
            android:key="language_input_settings"
@@ -139,15 +138,6 @@
             settings:keywords="@string/keywords_display_size"/>
     </PreferenceCategory>
 
-        <!--<Preference
-            android:key="color_mode"
-            android:title="@string/color_mode_title"
-            android:visibility="gone"
-            android:icon="@drawable/ic_settings_colormode"
-            android:fragment="com.android.settings.display.ColorModePreferenceFragment"
-            settings:controller="com.android.settings.display.ColorModePreferenceController"
-            settings:keywords="@string/keywords_color_mode"/>-->
-    
     <PreferenceCategory
         android:layout="@layout/custom_preference_category2"
         android:title="@string/display_customization_category_title">
@@ -156,6 +146,24 @@
         android:key="display_customisation_bubbles_desc"
         android:title="@string/display_customisation_bubble_setting_description"/>
 
+        <Preference
+            android:key="livedisplay"
+            android:title="@*android:string/live_display_title"
+            android:summary="@string/live_display_summary"
+            settings:controller="com.android.settings.livedisplay.LiveDisplayPreferenceController">
+            <intent android:action="com.android.settings.LIVEDISPLAY_SETTINGS" />
+        </Preference>
+
+        <Preference
+            android:key="color_mode"
+            android:title="@string/color_mode_title"
+            android:visibility="gone"
+            android:icon="@drawable/ic_settings_colormode"
+            android:fragment="com.android.settings.display.ColorModePreferenceFragment"
+            settings:controller="com.android.settings.display.ColorModePreferenceController"
+            settings:keywords="@string/keywords_color_mode"/>-->
+    
+     
         <SwitchPreference
             android:key="auto_rotate"
 			android:icon="@drawable/rr_auto_rotate_icon"
