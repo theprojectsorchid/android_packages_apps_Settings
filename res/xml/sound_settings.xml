@@ -184,7 +184,7 @@
      <Preference
             android:key="incallvibe"
             android:title="@string/incall_vibration_category"
-            android:icon="@drawable/rr_assist_icon"
+            android:icon="@drawable/ic_do_not_disturb2"
             android:order="-85"
             android:fragment="com.android.settings.awaken.fragments.DisplayCustomizations3"
             settings:keywords="@string/keywords_font_size"/>
@@ -223,7 +223,7 @@
     <!-- Default notification ringtone -->
     <com.android.settings.DefaultRingtonePreference
         android:key="notification_ringtone"
-        android:icon="@drawable/ic_settings_sound"
+        android:icon="@drawable/ic_system_ringtone"
         android:title="@string/notification_ringtone_title"
         android:dialogTitle="@string/notification_ringtone_title"
         android:summary="@string/summary_placeholder"
@@ -244,14 +244,14 @@
     <!-- Spatial audio -->
     <SwitchPreference
         android:key="spatial_audio"
-        android:icon="@drawable/ic_audio_alarm"
+        android:icon="@drawable/ic_sms_ringtone"
         android:title="@string/spatial_audio_title"
         android:order="-55"
         settings:controller="com.android.settings.notification.SpatialAudioPreferenceController"/>
 
     <!-- Dial pad tones -->
     <SwitchPreference
-        android:icon="@drawable/ic_settings_phone_idle"
+        android:icon="@drawable/ic_system_vibrate"
         android:key="dial_pad_tones"
         android:title="@string/dial_pad_tones_title"
         android:order="-50"/>
