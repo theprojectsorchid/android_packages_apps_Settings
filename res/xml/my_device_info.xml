@@ -17,9 +17,11 @@
     android:title="@string/about_settings">
 
     <com.android.settingslib.widget.LayoutPreference
-    android:key="colt_info"
-    android:layout="@layout/about_phone_info"
-    android:selectable="false" />
+        android:key="my_device_info_header"
+        android:order="0"
+        android:layout="@layout/device_info_header"
+        android:selectable="false"
+        settings:isPreferenceVisible="false"/>
 
 
     <!-- Top category -->

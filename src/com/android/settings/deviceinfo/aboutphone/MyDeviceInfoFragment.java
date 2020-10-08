@@ -119,6 +119,23 @@ public class MyDeviceInfoFragment extends DashboardFragment
         super.onActivityResult(requestCode, resultCode, data);
     }
 
+    private void initHeader() {
+        // TODO: Migrate into its own controller.
+        final LayoutPreference headerPreference =
+                getPreferenceScreen().findPreference(KEY_MY_DEVICE_INFO_HEADER);
+        final View headerView = headerPreference.findViewById(R.id.entity_header);
+        headerPreference.setVisible(true);
+        final Activity context = getActivity();
+        final Bundle bundle = getArguments();
+        final EntityHeaderController controller = EntityHeaderController
+                .newInstance(context, this, headerView)
+                .setRecyclerView(getListView(), getSettingsLifecycle())
+                .setButtonActions(EntityHeaderController.ActionType.ACTION_NONE,
+                        EntityHeaderController.ActionType.ACTION_NONE);
+
+        controller.done(context, true /* rebindActions */);
+    }
+
     @Override
     public void showDeviceNameWarningDialog(String deviceName) {
         DeviceNameWarningDialog.show(this);
