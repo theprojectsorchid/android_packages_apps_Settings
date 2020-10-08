@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!--
-     Copyright (C) 2018-2022 ArrowOS Project
+     Copyright (C) 2021 The ColtOS Project
 
      Licensed under the Apache License, Version 2.0 (the "License");
      you may not use this file except in compliance with the License.
@@ -14,11 +14,10 @@
      See the License for the specific language governing permissions and
      limitations under the License.
 -->
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
 
-<resources>
-    <!-- Fingerprint -->
-    <dimen name="fingerprint_find_sensor_padding_top">16dp</dimen>
-
-    <dimen name="storage_card_min_width">148dp</dimen>
-    <dimen name="storage_card_min_height">@dimen/storage_card_min_width</dimen>
+    <!-- About phone cards -->
+    <string name="storage_card_title">Storage</string>
+    <string name="storage_card_info">Occupied</string>
+    <string name="about_device_rom_title">ColtOS %s</string>
 </resources>
