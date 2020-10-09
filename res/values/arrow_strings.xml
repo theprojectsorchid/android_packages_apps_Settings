@@ -282,4 +282,9 @@
     <!--footer UI -->
     <string name="timeanddatesetting_description">Below are time and date settings for your locale</string>
    
+    <!--blur UI -->
+    <string name="enable_blurs_on_windows_title">Enable blur</string>
+       <string name="enable_blurs_on_windows_summary">Enable background blur</string>
+
+
 </resources>
