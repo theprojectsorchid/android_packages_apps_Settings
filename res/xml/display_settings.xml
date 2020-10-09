@@ -102,6 +102,19 @@
             settings:keywords="@string/keywords_ambient_display_screen"
             settings:controller="com.android.settings.security.screenlock.LockScreenPreferenceController"/>-->
         <Preference
+            android:key="livedisplay"
+            android:title="@*android:string/live_display_title"
+            android:summary="@string/live_display_summary"
+            settings:controller="com.android.settings.livedisplay.LiveDisplayPreferenceController">
+            <intent android:action="com.android.settings.LIVEDISPLAY_SETTINGS" />
+        </Preference>
+        
+        <SwitchPreference
+        android:key="enable_blurs_on_windows"
+        android:title="@string/enable_blurs_on_windows_title"
+        android:summary="@string/enable_blurs_on_windows_summary" />
+
+        <Preference
             android:key="screensaver"
 			android:icon="@drawable/ic_screensaver_settings"            
             android:title="@string/screensaver_settings_title"
@@ -115,7 +128,19 @@
             android:fragment="com.android.settings.display.ScreenTimeoutSettings"
             settings:controller="com.android.settings.display.ScreenTimeoutPreferenceController"/>
 
-
+        <com.android.settings.display.ScreenZoomPreference
+            android:key="display_settings_screen_zoom"
+            android:icon="@drawable/ic_screen_zoom"
+            android:title="@string/screen_zoom_title"
+            android:fragment="com.android.settings.display.ScreenZoomSettings"
+            settings:keywords="@string/keywords_display_size"/>
+        <Preference
+            android:key="screen_pinning_settings"
+            android:title="@string/screen_pinning_title"
+            android:summary="@string/summary_placeholder"
+            android:icon="@drawable/ic_theme_customization_icon_pack_title"            
+            android:fragment="com.android.settings.security.ScreenPinningSettings"
+            settings:keywords="@string/keywords_app_pinning" />
        <Preference
            android:key="language_input_settings"
            android:title="@string/language_settings"
@@ -130,12 +155,6 @@
             settings:controller="com.android.settings.display.FontSizePreferenceController"
             settings:keywords="@string/keywords_font_size"/>
 
-        <com.android.settings.display.ScreenZoomPreference
-            android:key="display_settings_screen_zoom"
-            android:icon="@drawable/ic_screen_zoom"
-            android:title="@string/screen_zoom_title"
-            android:fragment="com.android.settings.display.ScreenZoomSettings"
-            settings:keywords="@string/keywords_display_size"/>
     </PreferenceCategory>
 
     <PreferenceCategory
@@ -146,14 +165,7 @@
         android:key="display_customisation_bubbles_desc"
         android:title="@string/display_customisation_bubble_setting_description"/>
 
-        <Preference
-            android:key="livedisplay"
-            android:title="@*android:string/live_display_title"
-            android:summary="@string/live_display_summary"
-            settings:controller="com.android.settings.livedisplay.LiveDisplayPreferenceController">
-            <intent android:action="com.android.settings.LIVEDISPLAY_SETTINGS" />
-        </Preference>
-
+  
         <Preference
             android:key="color_mode"
             android:title="@string/color_mode_title"
@@ -237,13 +249,5 @@
         android:icon="@drawable/ic_settings_night_mode"            
         android:fragment="com.epic.fragments.PowerMenuSettings"/>
 
-    
-    <Preference
-        android:key="screen_pinning_settings"
-        android:title="@string/screen_pinning_title"
-        android:summary="@string/summary_placeholder"
-        android:icon="@drawable/ic_theme_customization_icon_pack_title"            
-        android:fragment="com.android.settings.security.ScreenPinningSettings"
-        settings:keywords="@string/keywords_app_pinning" />
     </PreferenceCategory>
 </PreferenceScreen>
