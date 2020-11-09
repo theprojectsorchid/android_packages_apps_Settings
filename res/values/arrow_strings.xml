@@ -281,5 +281,8 @@
    
     <!--footer UI -->
     <string name="timeanddatesetting_description">Below are time and date settings for your locale</string>
-   
+       
+       <!-- Immersive Navigation -->
+    <string name="immersive_navigation_title">Immersive Navigation</string>
+    <string name="immersive_navigation_summary">Hide the gesture pill and navigation bar padding.</string>
 </resources>
