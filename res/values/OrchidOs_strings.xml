@@ -15,6 +15,9 @@
     limitations under the License.
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+
+    <!-- Radio Info -->
+    <string name="radio_info_title">Radio info</string>
      <!-- Lock screen pattern size -->
      <string name="lock_pattern_size_3" translatable="false">3 \u00d7 3</string>
      <string name="lock_pattern_size_4" translatable="false">4 \u00d7 4</string>
