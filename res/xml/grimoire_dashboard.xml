@@ -138,6 +138,19 @@
     </Preference>
     </PreferenceCategory>
 
+    <PreferenceCategory
+        android:title="@string/radio_info_title">
+        <!-- radio_info -->
+        <Preference
+            android:title="@string/radio_info_title"
+            android:key="radio_info_settings"
+            android:order="32">
+            <intent android:action="android.intent.action.MAIN"
+                    android:targetPackage="com.android.phone"
+                    android:targetClass="com.android.phone.settings.RadioInfo" />
+         </Preference>
+    </PreferenceCategory>
+
     <Preference
         android:title="@string/Opensource"
         android:summary="@string/Opensource_description"
