@@ -15,4 +15,7 @@
 
     <color name="settings_panel_background_color">@*android:color/notification_material_background_color</color>
 
+    <!-- Whether to show min/max refresh rate in display settings -->
+    <bool name="config_show_refresh_rate_controls">false</bool>
+
 </resources>
