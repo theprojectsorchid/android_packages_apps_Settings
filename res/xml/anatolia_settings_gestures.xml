@@ -29,6 +29,12 @@
             android:key="statusbar_qs_bubbles_desc"
             android:order="-997"
             android:title="@string/statusbar_qs_bubble_setting_description"/>
+   
+        <Preference
+            android:key="custom_header"
+            android:fragment="com.evolution.settings.fragments.QsCustomHeaderSettings"
+            android:title="@string/custom_header_title"
+            android:summary="@string/custom_header_summary" />
 
           <Preference
             android:key="systemui_tuner_statusbar"
