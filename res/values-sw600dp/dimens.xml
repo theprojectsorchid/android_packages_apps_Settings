@@ -71,4 +71,6 @@
     <dimen name="screen_pinning_padding_end">40dp</dimen>
 
     <dimen name="settings_panel_width">560dp</dimen>
+    <dimen name="img_height">200dp</dimen>
+    <dimen name="img_width">100dp</dimen>
 </resources>

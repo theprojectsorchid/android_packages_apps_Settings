@@ -26,4 +26,6 @@
     <integer name="suw_max_faces_enrollable">1</integer>
     <!-- Controls the maximum number of fingerprints enrollable during SUW -->
     <integer name="suw_max_fingerprints_enrollable">1</integer>
+    <integer name="gridCount">2</integer>
+    <integer name="gridInfo">1</integer>
 </resources>

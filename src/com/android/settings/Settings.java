@@ -330,4 +330,10 @@ public class Settings extends SettingsActivity {
      */
     public static class AtomichubActivity extends SettingsActivity {}
 
+    /**
+     * new about Activity
+     */
+    public static class AboutJrActivity extends SettingsActivity { /* empty */ }
+    public static class FirmwareVersionActivity extends SettingsActivity { /* empty */ }
+    public static class HardwareInfoActivity extends SettingsActivity { /* empty */ }
 }

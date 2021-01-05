@@ -28,6 +28,7 @@ import com.android.settings.connecteddevice.ConnectedDeviceDashboardFragment;
 import com.android.settings.development.DevelopmentSettingsDashboardFragment;
 import com.android.settings.deviceinfo.StorageDashboardFragment;
 import com.android.settings.deviceinfo.aboutphone.MyDeviceInfoFragment;
+import com.android.settings.deviceinfo.aboutphone.AboutJrFragment;
 import com.android.settings.display.NightDisplaySettings;
 import com.android.settings.emergency.EmergencyDashboardFragment;
 import com.android.settings.enterprise.EnterprisePrivacySettings;
@@ -119,6 +120,8 @@ public class DashboardFragmentRegistry {
         PARENT_TO_CATEGORY_KEY_MAP.put(LegalSettings.class.getName(),
                 CategoryKey.CATEGORY_ABOUT_LEGAL);
         PARENT_TO_CATEGORY_KEY_MAP.put(MyDeviceInfoFragment.class.getName(),
+                CategoryKey.CATEGORY_MY_DEVICE_INFO);
+        PARENT_TO_CATEGORY_KEY_MAP.put(AboutJrFragment.class.getName(),
                 CategoryKey.CATEGORY_MY_DEVICE_INFO);
         PARENT_TO_CATEGORY_KEY_MAP.put(BatterySaverSettings.class.getName(),
                 CategoryKey.CATEGORY_BATTERY_SAVER_SETTINGS);
