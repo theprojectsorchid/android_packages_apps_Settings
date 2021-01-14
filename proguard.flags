@@ -13,6 +13,8 @@
     *;
 }
 
+-keep class com.palladium.atomichub.**
+
 -keep class * extends com.android.settings.core.TogglePreferenceController {
     *;
 }

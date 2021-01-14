@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Copyright (C) 2021 The Palladium OS Project
+     Licensed under the Apache License, Version 2.0 (the "License");
+     you may not use this file except in compliance with the License.
+     You may obtain a copy of the License at
+          http://www.apache.org/licenses/LICENSE-2.0
+     Unless required by applicable law or agreed to in writing, software
+     distributed under the License is distributed on an "AS IS" BASIS,
+     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     See the License for the specific language governing permissions and
+     limitations under the License.
+-->
+
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="26dp"
+    android:height="26dp"
+    android:viewportWidth="512"
+    android:viewportHeight="512">
+  <path
+      android:pathData="m410.741,202.995h30v106.011h-30z"
+      android:fillColor="#85d9ff"/>
+  <path
+      android:pathData="m287.465,95.495l15,-25.98l91.805,53.005l-15,25.98z"
+      android:fillColor="#85d9ff"/>
+  <path
+      android:pathData="m287.458,416.505l91.805,-53.005l15,25.98l-91.805,53.005z"
+      android:fillColor="#85d9ff"/>
+  <path
+      android:pathData="m117.718,389.491l15,-25.98l91.805,53.005l-15,25.98z"
+      android:fillColor="#bfebff"/>
+  <path
+      android:pathData="m71.259,202.995h30v106.011h-30z"
+      android:fillColor="#bfebff"/>
+  <path
+      android:pathData="m117.722,122.511l91.805,-53.005l15,25.98l-91.805,53.005z"
+      android:fillColor="#bfebff"/>
+  <path
+      android:pathData="m256,0 l-36.316,60 36.316,60c33.084,0 60,-26.916 60,-60s-26.916,-60 -60,-60z"
+      android:fillColor="#344aa3"/>
+  <path
+      android:pathData="m196,60c0,33.084 26.916,60 60,60v-120c-33.084,0 -60,26.916 -60,60z"
+      android:fillColor="#1365c2"/>
+  <path
+      android:pathData="m86.24,97.981 l-36.316,60 36.316,60c33.084,0 60,-26.916 60,-60s-26.916,-60 -60,-60z"
+      android:fillColor="#1365c2"/>
+  <path
+      android:pathData="m26.24,157.981c0,33.084 26.916,60 60,60v-120c-33.084,0 -60,26.916 -60,60z"
+      android:fillColor="#0d86d9"/>
+  <path
+      android:pathData="m86.24,294.019 l-36.316,60 36.316,60c33.084,0 60,-26.916 60,-60s-26.916,-60 -60,-60z"
+      android:fillColor="#1365c2"/>
+  <path
+      android:pathData="m26.24,354.019c0,33.084 26.916,60 60,60v-120c-33.084,0 -60,26.916 -60,60z"
+      android:fillColor="#0d86d9"/>
+  <path
+      android:pathData="m256,392 l-36.316,60 36.316,60c33.084,0 60,-26.916 60,-60s-26.916,-60 -60,-60z"
+      android:fillColor="#344aa3"/>
+  <path
+      android:pathData="m196,452c0,33.084 26.916,60 60,60v-120c-33.084,0 -60,26.916 -60,60z"
+      android:fillColor="#1365c2"/>
+  <path
+      android:pathData="m425.76,294.019 l-36.316,60 36.316,60c33.084,0 60,-26.916 60,-60s-26.916,-60 -60,-60z"
+      android:fillColor="#344aa3"/>
+  <path
+      android:pathData="m365.76,354.019c0,33.084 26.916,60 60,60v-120c-33.084,0 -60,26.916 -60,60z"
+      android:fillColor="#1365c2"/>
+  <path
+      android:pathData="m425.76,97.974 l-36.316,60 36.316,60c33.084,0 60,-26.916 60,-60s-26.916,-60 -60,-60z"
+      android:fillColor="#344aa3"/>
+  <path
+      android:pathData="m365.76,157.974c0,33.084 26.916,60 60,60v-120c-33.084,0 -60,26.916 -60,60z"
+      android:fillColor="#1365c2"/>
+  <path
+      android:pathData="m256,150.18 l-45,105.82 45,105.82 91.644,-52.91v-105.82z"
+      android:fillColor="#85d9ff"/>
+  <path
+      android:pathData="m164.356,203.09v105.82l91.644,52.91v-211.64z"
+      android:fillColor="#bfebff"/>
+</vector>
