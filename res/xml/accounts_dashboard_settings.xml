@@ -52,6 +52,7 @@
 
     <PreferenceCategory
         android:key="dashboard_tile_placeholder"
+        android:layout="@layout/custom_preference_category2"
         android:order="130"/>
 
     <SwitchPreference

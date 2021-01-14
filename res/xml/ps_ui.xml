@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:settings="http://schemas.android.com/apk/res/com.android.settings"
+    android:title="@string/ui" >
+
+    <com.android.settingslib.widget.LayoutPreference
+        android:key="system_animation"
+        android:order="-998"
+        android:layout="@layout/system_animation" 
+        android:selectable="false"/>
+
+   <!-- Header -->
+  <PreferenceCategory
+        android:title="System Dashboard"
+        android:order="-997"
+        android:layout="@layout/settings_title_header">
+  </PreferenceCategory>
+
+    <Preference
+        android:key="language_input_settings"
+        android:title="@string/language_settings"
+        settings:layout="@layout/xd_pref_card_top"   
+        android:summary="@string/language_settings_summary"
+        android:icon="@drawable/ic_settings_language"
+        android:order="-260"
+        android:fragment="com.android.settings.language.LanguageAndInputSettings"/>
+
+    <Preference
+        android:key="gesture_settings"
+        android:title="@string/gesture_preference_title"
+        android:icon="@drawable/ic_settings_gestures"
+        android:summary="@string/gesture_system_summary"
+        settings:layout="@layout/xd_pref_card_mid"              
+        android:order="-250"
+        android:fragment="com.android.settings.gestures.GestureSettings"
+        settings:controller="com.android.settings.gestures.GesturesSettingPreferenceController"/>
+
+    <Preference
+        android:key="date_time_settings"
+        android:title="@string/date_and_time"
+        android:icon="@drawable/ic_settings_date_time"
+        android:order="-240"
+        settings:layout="@layout/xd_pref_card_bot"              
+        android:fragment="com.android.settings.datetime.DateTimeSettings"
+        settings:controller="com.android.settings.datetime.DateTimePreferenceController"/>
+
+</PreferenceScreen>
