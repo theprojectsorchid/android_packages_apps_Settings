@@ -165,7 +165,7 @@
         settings:controller="com.android.settings.accounts.TopLevelAccountEntryPreferenceController"/>
 
     <com.android.settings.widget.HomepagePreference
-        android:fragment="com.android.settings.system.SystemDashboardFragment"
+        android:fragment="com.palladium.atomichub.Atomichub"
         android:icon="@drawable/ic_settings_system_dashboard_white"
         android:key="top_level_system"
         android:order="10"

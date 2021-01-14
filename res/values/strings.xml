@@ -13645,4 +13645,119 @@
     <string name="bluetooth_connect_access_dialog_negative">Don\u2019t connect</string>
     <!-- Strings for Dialog connect button -->
     <string name="bluetooth_connect_access_dialog_positive">Connect</string>
+    <!-- usercard titles -->
+    <string name="wellbeing_title">Wellbeing</string>
+    <!-- Owner info -->
+    <string name="about_user">Owner Info</string>
+    <string name="userpref_summary">Personal Information about current user</string>
+    <string name="user_title">User Info</string>
+    
+    
+    <!-- recieved files-->
+    <string name="bluetooth_show_files_received_via_bluetooth">Bluetooth Received files</string>
+    
+    
+    <!-- User card base -->
+    <string name="about_user_base">My Details</string>
+    <string name="about_user_summary_base">My accounts, multiple user and emergancy settings</string>
+
+
+    <!-- About phone edit -->
+    <string name="about_phone_rom_title">Powered by Android</string>
+    <string name="about_phone_rom_summary">Powered by ANDROID</string>
+    <string name="about_phone_rom_device_uptime">Device Uptime</string>
+    <string name="model_name2">Network identifiers</string>
+    <string name="model_summary2">wifi bluetooth mac ids</string>
+    <string name="change_device_name">Change device name</string>
+
+    <string name="device_name_option">Change Device Name</string>
+    <string name="device_and_android_version">Android Software Detail</string>
+    <string name="model_information">Device Hardware</string>
+    <string name="firmware_version2">Android 12.1</string>
+    <string name="device_statistics">Core System information</string>
+    <string name="about_settings_device">About Device</string>
+    <string name="firmware_About_us">Android 12.1</string>
+    <string name="device_firmware_about">About us</string>
+    <string name="about_us_device">About Us</string>
+    <string name="device_firmware_software">Android 12.1</string>
+    <string name="device_firmware_software_summary">API 32</string>
+
+    <!-- firmware edit -->
+    <string name="firmware_bubble_setting_description">Rom Name is A free and open-source operating system for various devices, based on the Android mobile platform. Major thanks to  Arrow Os. Further improvements and optimizations have been contibuted by the community. Thank you all developers, designers and testers</string>
+    <string name="firmware_about_us_info">Our Website</string>
+    <string name="firmware_about_us_info_summary">get more info about us</string>
+    <string name="firmware_source_code">System source code</string>
+    <string name="get_our_source_code">Our system source code</string>
+    <string name="get_our_source_code_summary">get the source</string>
+    <string name="firmware_group_summary">software support</string>
+
+    <string name="firmware_group_info">support Details</string>
+    <string name="firmware_about_info">Our website</string>
+    <string name="about_us_firmware_version">About Us</string>
+
+    <!-- hardware edit -->
+    <string name="Hardware_bubble_setting_description">Android smartphones come in various models with a range of hardware options such as screen size, processor, RAM, storage capacity. Sim status. Wi-Fi, Bluetooth and cellular connectivity identifier information should be handled with care</string>
+    <string name="hardware_mod_info">Adb Details</string>
+    <string name="hardware_net_info">Sim Network Information</string>
+    <string name="hardware_id_info">System network identifiers</string>
+    <string name="hardware_info_name">Device Details</string>
+    <string name="radio_info_summary">Device radio information</string>
+
+    <!-- Display Customizations Fragment one and two-->
+    <string name="display_customization_swipe_tap">Swipe and Tap Gestures</string>
+    <string name="swipe_tap_extra">system swipe and tap gestures </string>
+    
+    <string name="display_customization_phone_buttons">Phone button actions</string>
+    <string name="phone_buttons_extra">system phone button actions</string>
+
+
+    <string name="language_settings_summary">System language options</string>
+    <string name="gesture_system_summary">swipe tap and button settings</string>
+
+    <string name="security_settings_more">Additional Settings</string>
+
+    <string name="security_card_title">Below are lock screen settings for your device, note device security is user dependant when settings are enabled</string>
+    <string name="security_card_summary">Note device security is user dependant when settings are enabled</string>
+    <string name="security_bubble_setting_description">Below are lock screen settings for your device, these options are device dependent including fingerprint, face unlock and other  pin and other biometric services</string>
+    <string name="security_bubble_setting_note">Note device security is user dependant when these settings are enabled</string>
+    <string name="security_bubble_setting_admin">device administration and encryption options </string>
+
+    <string name="title_activity_settings">Settings</string>
+    <string name="app_name">Atomic Hub</string>
+    <string name="themes">Themes</string>
+    <string name="status_bar">Status Bar</string>
+    <string name="ui">UI</string>
+    <string name="keys">Keys</string>
+    <string name="misc">Misc</string>
+    <!-- Preference Titles -->
+    <string name="messages_header">Messages</string>
+    <string name="sync_header">Sync</string>
+
+    <!-- Messages Preferences -->
+    <string name="signature_title">Your signature</string>
+    <string name="reply_title">Default reply action</string>
+
+    <!-- Sync Preferences -->
+    <string name="sync_title">Sync email periodically</string>
+    <string name="attachment_title">Download incoming attachments</string>
+    <string name="attachment_summary_on">Automatically download attachments for incoming emails
+    </string>
+    <string name="attachment_summary_off">Only download attachments when manually requested</string>
+
+
+    <!-- Card Names -->
+    <string name="UI_Title">User Interface</string>
+    <string name="UI_Summary">Redefine your experience by changing fonts, icons, volume panel</string>
+    <string name="Theme_Title">Theme</string>
+    <string name="Theme_summary">Take your experience to next level by playing with colors !</string>
+    <string name="Status_Title">Status Bar</string>
+    <string name="Status_summary">Improve your interaction by placing essential items at your sight !</string>
+    <string name="Button_Title">Button</string>
+    <string name="Button_Summary">Yes There are lot of buttons ! Isn\'t it ?  check them here  !</string>
+    <string name="Misc_Title">Misc</string>
+    <string name="Misc_Summary">Still can’t find the one your looking for  check here !</string>
+    <string name="Team_Title">Team</string>
+    <string name="Team_summary">Spend time in knowing people behind this project !</string>
+    <string name="button">Buttons</string>
+    <string name="team">Team</string>
 </resources>
