@@ -67,6 +67,12 @@
     <!-- Icon tint color for battery usage system icon -->
     <color name="battery_usage_system_icon_color">@android:color/white</color>
     <color name="card_bg">@android:color/system_neutral1_800</color>
+    
+    <!-- ACTIONHUB -->
 
-</resources>
+    <color name="bottom_bar_divider_color">#13FFFaFF</color>
+    <color name="bottom_navigation_color">#eeaa45</color>
+    <color name="card_text">#FCFCFC</color>
+    <color name="bottom_navigation_ripple">#13FFFFFF</color>
+</resources> 
 
