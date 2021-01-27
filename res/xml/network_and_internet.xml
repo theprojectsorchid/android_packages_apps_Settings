@@ -19,12 +19,20 @@
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:settings="http://schemas.android.com/apk/res-auto"
     android:key="network_and_internet_screen"
-    android:title="@string/network_dashboard_title">
+    android:title=" ">
 
     <com.android.settingslib.widget.LayoutPreference
         android:key="wifi_anim" 
         android:layout="@layout/wifi_animation"
         android:order="-999" />
+
+   <!-- Header -->
+  <PreferenceCategory
+        android:title="Network"
+        android:order="-997"
+        android:layout="@layout/settings_title_header">
+  </PreferenceCategory>
+        
     <PreferenceCategory
         android:key="multi_network_header"
         android:title="@string/summary_placeholder"
@@ -37,6 +45,7 @@
         android:fragment="com.android.settings.wifi.WifiSettings"
         android:key="main_toggle_wifi"
         android:title="@string/wifi_settings"
+        settings:layout="@layout/xd_pref_card_mid2"              
         android:summary="@string/summary_placeholder"
         android:icon="@drawable/ic_settings_wireless"
         android:order="-30"
@@ -51,6 +60,7 @@
         android:title="@string/network_settings_title"
         android:summary="@string/summary_placeholder"
         android:icon="@drawable/ic_network_cell"
+        settings:layout="@layout/xd_pref_card_mid2"              
         android:order="-15"
         settings:keywords="@string/keywords_more_mobile_networks"
         settings:userRestriction="no_config_mobile_networks"
@@ -62,17 +72,18 @@
         android:icon="@drawable/ic_airplanemode_active"
         android:disableDependentsState="true"
         android:order="-5"
+         settings:layout="@layout/xd_pref_card_mid2"                     
         settings:controller="com.android.settings.network.AirplaneModePreferenceController"
         settings:userRestriction="no_airplane_mode"/>
 
-    <com.android.settingslib.RestrictedPreference
+    <!--<com.android.settingslib.RestrictedPreference
         android:key="manage_mobile_plan"
         android:title="@string/manage_mobile_plan_title"
         android:icon="@drawable/ic_settings_mobile_plan"
         android:persistent="false"
         android:order="19"
         settings:userRestriction="no_config_mobile_networks"
-        settings:useAdminDisabledSummary="true" />
+        settings:useAdminDisabledSummary="true" />-->
 
     <com.android.settingslib.RestrictedPreference
         android:fragment="com.android.settings.TetherSettings"
@@ -81,6 +92,7 @@
         android:icon="@drawable/ic_wifi_tethering"
         android:order="5"
         android:summary="@string/summary_placeholder"
+        settings:layout="@layout/xd_pref_card_top"              
         settings:keywords="@string/keywords_hotspot_tethering"
         settings:userRestriction="no_config_tethering"
         settings:useAdminDisabledSummary="true" />
@@ -91,6 +103,7 @@
         android:title="@string/tether_settings_title_all"
         android:icon="@drawable/ic_wifi_tethering"
         android:order="6"
+        settings:layout="@layout/xd_pref_card_mid"              
         android:summary="@string/summary_placeholder"
         settings:controller="com.android.settings.network.AllInOneTetherPreferenceController"
         settings:keywords="@string/keywords_hotspot_tethering"
@@ -102,6 +115,7 @@
         android:title="@string/data_saver_title"
         android:icon="@drawable/ic_settings_data_usage"
         android:order="10"
+        settings:layout="@layout/xd_pref_card_mid"              
         android:fragment="com.android.settings.datausage.DataSaverSummary"/>
 
     <com.android.settingslib.RestrictedPreference
@@ -110,6 +124,7 @@
         android:title="@string/vpn_settings_title"
         android:icon="@drawable/ic_vpn_key"
         android:order="15"
+        settings:layout="@layout/xd_pref_card_mid"              
         android:summary="@string/summary_placeholder"
         settings:userRestriction="no_config_vpn"
         settings:useAdminDisabledSummary="true" />
@@ -119,23 +134,25 @@
         android:title="@string/select_private_dns_configuration_title"
         android:icon="@drawable/ic_settings_private_dns"
         android:order="20"
+        settings:layout="@layout/xd_pref_card_mid"              
         android:dialogTitle="@string/select_private_dns_configuration_dialog_title"
         android:dialogLayout="@layout/private_dns_mode_dialog"
         android:positiveButtonText="@string/save"
         android:negativeButtonText="@android:string/cancel" />
 
-    <Preference
+    <!--<Preference
         android:key="network_traffic_settings"
         android:icon="@drawable/ic_settings_network_traffic"
         android:title="@string/network_traffic_title"
         android:summary="@string/network_traffic_summary"
         android:order="25"
-        android:fragment="com.android.settings.arrow.NetworkTrafficSettings"/>
+        android:fragment="com.android.settings.arrow.NetworkTrafficSettings"/>-->
 
     <Preference
         android:fragment="com.android.settings.network.AdaptiveConnectivitySettings"
         android:key="adaptive_connectivity"
         android:title="@string/adaptive_connectivity_title"
+        settings:layout="@layout/xd_pref_card_bot"
         android:summary="@string/summary_placeholder"
         android:order="30"
         settings:controller="com.android.settings.network.AdaptiveConnectivityPreferenceController"/>
