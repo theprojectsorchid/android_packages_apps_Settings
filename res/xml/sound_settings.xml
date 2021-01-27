@@ -21,6 +21,8 @@
     android:key="sound_settings"
         xmlns:app="http://schemas.android.com/apk/res-auto"
     settings:keywords="@string/keywords_sounds">
+
+    
     
     <com.android.settingslib.widget.IllustrationPreference
         android:key="sounds"
@@ -47,6 +49,7 @@
     <!-- Media volume -->
     <com.android.settings.notification.VolumeSeekBarPreference
         android:key="media_volume"
+        android:layout="@layout/dot_preference_top_card_progress"
         android:icon="@drawable/ic_media_stream"
         android:title="@string/media_volume_option_title"
         android:order="-180"
@@ -64,6 +67,7 @@
     <!-- Call volume -->
     <com.android.settings.notification.VolumeSeekBarPreference
         android:key="call_volume"
+        android:layout="@layout/dot_preference_middle_card_progress"
         android:icon="@drawable/ic_local_phone_24_lib"
         android:title="@string/call_volume_option_title"
         android:order="-170"
@@ -81,16 +85,17 @@
     <!-- Ring volume -->
     <com.android.settings.notification.VolumeSeekBarPreference
         android:key="ring_volume"
+        android:layout="@layout/dot_preference_middle_card_progress"
         android:icon="@drawable/ic_audio_ring"
         android:title="@string/ring_volume_option_title"
         android:order="-160"
         settings:controller="com.android.settings.notification.RingVolumePreferenceController"/>
 
-
     <!-- Alarm volume -->
     <com.android.settings.notification.VolumeSeekBarPreference
         android:key="alarm_volume"
         android:icon="@*android:drawable/ic_audio_alarm"
+        android:layout="@layout/dot_preference_middle_card_progress"
         android:title="@string/alarm_volume_option_title"
         android:order="-150"
         settings:controller="com.android.settings.notification.AlarmVolumePreferenceController"/>
@@ -98,6 +103,7 @@
     <!-- Notification volume -->
     <com.android.settings.notification.VolumeSeekBarPreference
         android:key="notification_volume"
+        android:layout="@layout/dot_preference_bottom_card_progress"
         android:icon="@drawable/ic_notifications"
         android:title="@string/notification_volume_option_title"
         android:order="-140"
@@ -123,7 +129,8 @@
         android:key="zen_mode"
         android:title="@string/zen_mode_settings_title"
         android:fragment="com.android.settings.notification.zen.ZenModeSettings"
-        android:order="-130"
+        android:order="-130"       
+         android:visibility="gone"
         settings:useAdminDisabledSummary="true"
         settings:keywords="@string/keywords_sounds_and_notifications_interruptions"
         settings:controller="com.android.settings.notification.zen.ZenModePreferenceController"/>
@@ -168,6 +175,7 @@
     <!-- Incall vibration options -->
     <PreferenceCategory
         android:key="incall_vib_options"
+        android:layout="@layout/custom_preference_category2"
         android:title="@string/incall_vibration_category" >
 
         <com.arrow.support.preferences.SystemSettingSwitchPreference
@@ -291,6 +299,7 @@
     <Preference
         android:key="sound_work_settings"
         android:title="@string/sound_work_settings"
+        settings:layout="@layout/xd_pref_card_mid2"              
         android:fragment="com.android.settings.notification.SoundWorkSettings"
         android:order="100"
         settings:controller="com.android.settings.notification.WorkSoundsPreferenceController"/>
