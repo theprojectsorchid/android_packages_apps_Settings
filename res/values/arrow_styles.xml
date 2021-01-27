@@ -33,5 +33,38 @@
         <item name="android:textSize">12.5sp</item>
         <item name="android:lineSpacingMultiplier">1.3</item>
         <item name="android:fontFamily">sans-serif-book</item>
+
+    <style name="DotPreferenceFullCard">
+        <item name="android:layout_marginBottom">4dp</item>
+        <item name="android:layout_marginStart">16dp</item>
+        <item name="android:layout_marginEnd">16dp</item>
+        <item name="android:layout_marginTop">4dp</item>
+        <item name="android:background">@drawable/mt_preference_background_alone</item>
+        <item name="android:clipToPadding">false</item>
+    </style>
+
+    <style name="DotPreferenceTopCard">
+        <item name="android:layout_marginStart">16dp</item>
+        <item name="android:layout_marginEnd">16dp</item>
+        <item name="android:layout_marginTop">4dp</item>
+        <item name="android:background">@drawable/xd_pref_card_top</item>
+        <item name="android:clipToPadding">false</item>
+    </style>
+
+    <style name="DotPreferenceMiddleCard">
+        <item name="android:layout_marginTop">-2dp</item>
+        <item name="android:layout_marginBottom">-2dp</item>
+        <item name="android:layout_marginStart">16dp</item>
+        <item name="android:layout_marginEnd">16dp</item>
+        <item name="android:background">@drawable/xd_pref_card_mid</item>
+        <item name="android:clipToPadding">false</item>
+    </style>
+
+    <style name="DotPreferenceBottomCard">
+        <item name="android:layout_marginBottom">4dp</item>
+        <item name="android:layout_marginStart">16dp</item>
+        <item name="android:layout_marginEnd">16dp</item>
+        <item name="android:background">@drawable/xd_pref_card_bot</item>
+        <item name="android:clipToPadding">false</item>
     </style>
 </resources>
