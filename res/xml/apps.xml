@@ -74,6 +74,7 @@
 
     <Preference
         android:key="default_apps"
+        android:layout="@layout/xd_pref_card_midsummary"
 		android:icon="@drawable/ic_default_apps"
         android:title="@string/app_default_dashboard_title"
         android:order="-994"
@@ -83,6 +84,7 @@
 
     <Preference
         android:key="game_settings"
+         android:layout="@layout/xd_pref_card_midsummary"       
         android:icon="@drawable/rr_game_icon"
         android:title="@string/game_space_title"
         android:summary="@string/game_space_summary"
@@ -94,6 +96,7 @@
         android:key="hibernated_apps"
 		android:icon="@drawable/rr_app_icon"
         android:title="@string/unused_apps"
+                android:layout="@layout/xd_pref_card_topsummary"
         android:summary="@string/summary_placeholder"
         android:order="992"
         settings:keywords="app_hibernation_key"
@@ -106,9 +109,10 @@
         android:icon="@drawable/ic_seekbar_plus"
         android:fragment="com.android.settings.applications.specialaccess.SpecialAccessSettings"
         android:title="@string/special_access"
-        android:order="991"
+        android:order="995"
+        android:layout="@layout/xd_pref_card_botsummary"
         settings:controller="com.android.settings.applications.SpecialAppAccessPreferenceController"/>
-        
+    
     <PreferenceCategory
         android:key="dashboard_tile_placeholder"
         android:order="10"/>
