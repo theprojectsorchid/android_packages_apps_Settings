@@ -19,6 +19,13 @@
     xmlns:settings="http://schemas.android.com/apk/res-auto"
     android:title="@string/tether_settings_title_all">
 
+
+    <com.android.settingslib.widget.LayoutPreference
+        android:key="hotspot_anim" 
+        android:layout="@layout/hotspot_animation"
+        android:order="-999" />
+
+
     <com.android.settingslib.widget.TopIntroPreference
         android:key="tether_prefs_top_intro"
         settings:searchable="false"/>

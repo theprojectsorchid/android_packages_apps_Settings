@@ -39,6 +39,7 @@ public class DarkModePreference extends PrimarySwitchPreference {
 
     public DarkModePreference(Context context, AttributeSet attrs) {
         super(context, attrs);
+        setLayoutResource(R.layout.dot_preference_bottom_card);
         mDarkModeObserver = new DarkModeObserver(context);
         mUiModeManager = context.getSystemService(UiModeManager.class);
         mPowerManager = context.getSystemService(PowerManager.class);
