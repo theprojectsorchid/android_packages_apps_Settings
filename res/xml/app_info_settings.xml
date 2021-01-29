@@ -50,6 +50,7 @@
 
     <Preference
         android:key="notification_settings"
+        android:layout="@layout/dot_preference_top_card"
         android:title="@string/notifications_label"
 		android:icon="@drawable/ic_audio_ring_notif"
         settings:controller="com.android.settings.applications.appinfo.AppNotificationPreferenceController" />
@@ -57,6 +58,7 @@
     <com.android.settings.widget.FixedLineSummaryPreference
         android:key="permission_settings"
 		android:icon="@drawable/ic_manage_perms"
+        android:layout="@layout/dot_preference_middle_card"
         android:title="@string/permissions_label"
         android:summary="@string/summary_placeholder"
         settings:summaryLineCount="1"
@@ -65,19 +67,22 @@
     <Preference
         android:key="storage_settings"        
         android:icon="@drawable/rr_task_open_icon"
+        android:layout="@layout/dot_preference_middle_card"
         android:title="@string/storage_settings_for_app"
         android:summary="@string/summary_placeholder"
         settings:controller="com.android.settings.applications.appinfo.AppStoragePreferenceController" />
 
     <com.android.settings.applications.AppDomainsPreference
         android:key="instant_app_launch_supported_domain_urls"
+        android:layout="@layout/dot_preference_middle_card"
         android:title="@string/app_launch_supported_domain_urls_title"
         android:selectable="true"
         settings:controller="com.android.settings.applications.appinfo.InstantAppDomainsPreferenceController" />
 
     <Preference
-        android:key="data_settings"        
         android:icon="@drawable/rr_swipe_down_icon"
+        android:key="data_settings"
+        android:layout="@layout/dot_preference_middle_card"
         android:title="@string/data_usage_app_summary_title"
         android:summary="@string/summary_placeholder"
         settings:controller="com.android.settings.applications.appinfo.AppDataUsagePreferenceController" />
@@ -85,13 +90,15 @@
     <Preference
         android:key="extra_app_info_settings"        
         android:icon="@drawable/rr_system_icon"
+        android:layout="@layout/dot_preference_middle_card"
         android:title="@string/extra_app_info_label"
         android:summary="@string/extra_app_info_summary"
         settings:controller="com.android.settings.applications.appinfo.ExtraAppInfoPreferenceController" />
 
     <Preference
-        android:key="time_spent_in_app"        
         android:icon="@drawable/rr_task_behind_icon"
+        android:key="time_spent_in_app"
+        android:layout="@layout/dot_preference_middle_card"
         android:title="@string/time_spent_in_app_pref_title"
         android:summary="@string/summary_placeholder"
         settings:controller="com.android.settings.applications.appinfo.TimeSpentInAppPreferenceController" />
@@ -99,58 +106,67 @@
     <Preference
         android:key="battery"        
         android:icon="@drawable/rr_switch_icon"
+        android:layout="@layout/dot_preference_middle_card"       
         android:title="@string/power_usage_summary_title"
         android:summary="@string/summary_placeholder" />
 
     <Preference
-        android:key="preferred_settings"        
         android:icon="@drawable/rr_tap_icon"
+        android:key="preferred_settings"
+        android:layout="@layout/dot_preference_middle_card"
         android:title="@string/launch_by_default"
         android:summary="@string/summary_placeholder"
         android:selectable="true"
         settings:controller="com.android.settings.applications.appinfo.AppOpenByDefaultPreferenceController" />
 
     <Preference
-        android:key="memory"       
          android:icon="@drawable/rr_ticker_icon"
+        android:key="memory"
+        android:layout="@layout/dot_preference_middle_card"
         android:title="@string/memory_settings_title"
         android:summary="@string/summary_placeholder"
-        android:enabled="false" />
+        android:enabled="true" />
 
     <!-- Default apps shortcuts -->
     <Preference
-        android:key="default_home"       
          android:icon="@drawable/rr_vendor_icon"
+        android:key="default_home"
+        android:layout="@layout/dot_preference_middle_card"
         android:title="@string/home_app"
         android:summary="@string/summary_placeholder" />
 
     <Preference
-        android:key="default_browser"       
          android:icon="@drawable/rr_reset3_icon"
+        android:key="default_browser"
+        android:layout="@layout/dot_preference_middle_card"
         android:title="@string/default_browser_title"
         android:summary="@string/summary_placeholder" />
 
     <Preference
-        android:key="default_phone_app"        
         android:icon="@drawable/rr_ringer_icon"
+        android:key="default_phone_app"
+        android:layout="@layout/dot_preference_middle_card"
         android:title="@string/default_phone_title"
         android:summary="@string/default_phone_title" />
 
     <Preference
-        android:key="default_emergency_app"       
         android:icon="@drawable/rr_custom_icon"
+        android:key="default_emergency_app"
+        android:layout="@layout/dot_preference_middle_card"
         android:title="@string/default_emergency_app"
         android:summary="@string/summary_placeholder" />
 
     <Preference
-        android:key="default_sms_app"       
          android:icon="@drawable/rr_roaming_icon"
+        android:key="default_sms_app"
+        android:layout="@layout/dot_preference_middle_card"
         android:title="@string/sms_application_title"
         android:summary="@string/summary_placeholder" />
 
     <PreferenceCategory
         android:key="app_hibernation_info"
         android:title="@string/unused_apps"
+        android:layout="@layout/dot_preference_category"
         settings:controller=
             "com.android.settings.applications.appinfo.AppHibernationPreferenceCategoryController">
 
@@ -164,6 +180,7 @@
     <!-- Advanced apps settings -->
     <PreferenceCategory
         android:key="advanced_app_info"
+        android:layout="@layout/dot_preference_category"
         android:title="@string/advanced_apps"
         settings:controller="com.android.settings.applications.appinfo.AdvancedAppInfoPreferenceCategoryController">
 
@@ -171,33 +188,38 @@
             android:key="system_alert_window"
             android:title="@string/draw_overlay"        
             android:icon="@drawable/rr_rows_icon"
+            android:layout="@layout/dot_preference_full_alone_card"
             android:summary="@string/summary_placeholder"
             settings:controller="com.android.settings.applications.appinfo.DrawOverlayDetailPreferenceController" />
 
         <Preference
-            android:key="write_settings_apps"        
             android:icon="@drawable/rr_restart_ui_icon"
+            android:key="write_settings_apps"
+            android:layout="@layout/dot_preference_full_alone_card"
             android:title="@string/write_settings"
             android:summary="@string/summary_placeholder"
             settings:controller="com.android.settings.applications.appinfo.WriteSystemSettingsPreferenceController" />
 
         <Preference
-            android:key="picture_in_picture"        
             android:icon="@drawable/rr_right_icon"
+            android:key="picture_in_picture"
+            android:layout="@layout/dot_preference_full_alone_card"
             android:title="@string/picture_in_picture_app_detail_title"
             android:summary="@string/summary_placeholder"
             settings:controller="com.android.settings.applications.specialaccess.pictureinpicture.PictureInPictureDetailPreferenceController" />
 
-        <Preference
-            android:key="install_other_apps"        
+        <!--<Preference
             android:icon="@drawable/rr_wb_icon"
+            android:key="install_other_apps"
+            android:layout="@layout/dot_preference_full_alone_card"
             android:title="@string/install_other_apps"
             android:summary="@string/summary_placeholder"
-            settings:controller="com.android.settings.applications.appinfo.ExternalSourceDetailPreferenceController" />
+            settings:controller="com.android.settings.applications.appinfo.ExternalSourceDetailPreferenceController" />-->
 
         <Preference
-            android:key="interact_across_profiles"       
              android:icon="@drawable/rr_reverse_icon"
+            android:key="interact_across_profiles"
+            android:layout="@layout/dot_preference_full_alone_card"
             android:title="@string/interact_across_profiles_title"
             android:summary="@string/summary_placeholder"
             settings:controller="com.android.settings.applications.specialaccess.interactacrossprofiles.InteractAcrossProfilesDetailsPreferenceController" />
@@ -205,6 +227,7 @@
         <Preference
             android:key="alarms_and_reminders"        
             android:icon="@drawable/rr_reset_icon"
+            android:layout="@layout/dot_preference_full_alone_card"
             android:title="@string/alarms_and_reminders_title"
             android:summary="@string/summary_placeholder"
             settings:controller="com.android.settings.applications.appinfo.AlarmsAndRemindersDetailPreferenceController" />
@@ -214,11 +237,14 @@
     <!-- App installer info -->
     <PreferenceCategory
         android:key="app_installer"
+        android:layout="@layout/dot_preference_category"
         android:title="@string/app_install_details_group_title"
         settings:controller="com.android.settings.applications.appinfo.AppInstallerPreferenceCategoryController">
 
         <Preference
             android:key="app_info_store"
+            android:layout="@layout/dot_preference_full_alone_card"
+            android:icon="@drawable/rr_reset_icon"
             android:title="@string/app_install_details_title"
             settings:controller="com.android.settings.applications.appinfo.AppInstallerInfoPreferenceController" />
 
@@ -227,14 +253,17 @@
     <Preference
         android:key="app_version"
         android:selectable="false"
+        android:layout="@layout/dot_preference_full_alone_card"       
         android:order="9998"
+        android:icon="@drawable/rr_reset_icon"
         settings:controller="com.android.settings.applications.appinfo.AppVersionPreferenceController"
-        settings:allowDividerAbove="true"
+        settings:allowDividerAbove="false"
         settings:enableCopying="true"/>
 
     <Preference
         android:key="app_package_name"
         android:selectable="false"
+        android:layout="@layout/dot_preference_full_alone_card"
         android:order="9999"
         settings:controller="com.android.settings.applications.appinfo.AppPackageNamePreferenceController"
         settings:enableCopying="true"/>
