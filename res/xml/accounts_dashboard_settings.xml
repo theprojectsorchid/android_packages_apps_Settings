@@ -28,7 +28,7 @@
         
    <!-- Header -->
   <PreferenceCategory
-        android:title="System Dashboard"
+        android:title="User Accounts"
         android:order="-997"
         android:layout="@layout/settings_title_header">
   </PreferenceCategory>
