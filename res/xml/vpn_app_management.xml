@@ -22,6 +22,12 @@
                 android:textColor="?android:attr/textColorSecondary"
                 android:selectable="false"/>
 
+
+     <com.android.settingslib.widget.LayoutPreference
+        android:key="vpn_settings_animation"
+        android:order="-140"
+        android:layout="@layout/vpn_settings_animation" />
+
         <com.android.settingslib.RestrictedSwitchPreference
                 android:key="always_on_vpn"
                 android:title="@string/vpn_menu_lockdown"
