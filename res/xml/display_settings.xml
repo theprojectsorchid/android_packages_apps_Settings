@@ -36,19 +36,14 @@
         android:layout="@layout/settings_title_header">
   </PreferenceCategory>
     
-   <!-- Header -->
-  <PreferenceCategory
-        android:title="Wallpaper"
-        android:order="-995"
-        android:layout="@layout/settings_title_header2">
-  </PreferenceCategory>
+ 
 
     <com.android.settingslib.RestrictedPreference
         android:key="wallpaper"
+                    android:icon="@drawable/ic_settings_adaptive_brightness"
         android:title="@string/wallpaper_settings_title"
         settings:keywords="@string/keywords_display_wallpaper"
         settings:useAdminDisabledSummary="true"
-        android:layout="@layout/xd_pref_card_noicon"
         settings:controller="com.android.settings.display.WallpaperPreferenceController"/>
 
     <PreferenceCategory
@@ -133,26 +128,32 @@
         android:title="@string/input_display_settings">
 
         
-        <com.android.settings.display.ScreenZoomPreference
+     <Preference
+            android:key="advqs"
+            android:title="@string/qs_brightness_slider_title"
+            android:icon="@drawable/rr_brightness_slider_icon"  
+            android:fragment="com.epic.fragments.NavbarSettings" /> 
+             
+        <!--<com.android.settings.display.ScreenZoomPreference
             android:key="display_settings_screen_zoom"
             android:icon="@drawable/ic_screen_resolution_adjust"
             android:title="@string/screen_zoom_title"
             android:fragment="com.android.settings.display.ScreenZoomSettings"
-            settings:keywords="@string/keywords_display_size"/>
+            settings:keywords="@string/keywords_display_size"/>-->
         
-        <ListPreference
+          <!--<ListPreference
     	    android:key="min_refresh_rate"
             android:title="@string/min_refresh_rate_title"
              android:icon="@drawable/ic_seekbar_minus"                       
             android:summary="@string/summary_placeholder"
-            settings:controller="com.android.settings.display.MinRefreshRatePreferenceController" />
+            settings:controller="com.android.settings.display.MinRefreshRatePreferenceController" />-->
 
-        <ListPreference
+          <!--<ListPreference
             android:key="peak_refresh_rate"
              android:icon="@drawable/ic_seekbar_plus"                       
             android:title="@string/max_refresh_rate_title"
             android:summary="@string/summary_placeholder"
-            settings:controller="com.android.settings.display.PeakRefreshRatePreferenceController"/>
+            settings:controller="com.android.settings.display.PeakRefreshRatePreferenceController"/>-->
 
          <Preference
             android:key="color_mode"
@@ -186,7 +187,6 @@
         android:icon="@drawable/rr_display_icon"
         android:fragment="com.epic.fragments.GestureSettings"/>
 
-     
      <Preference
             android:key="advqs"
             android:title="@string/qs_brightness_slider_title"
