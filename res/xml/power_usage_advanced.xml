@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<!-- Copyright (C) 2017 The Android Open Source Project
+<!-- Copyright (C) 2023 OrchidOs 
 
      Licensed under the Apache License, Version 2.0 (the "License");
      you may not use this file except in compliance with the License.
@@ -23,17 +23,26 @@
 
 
     <com.android.settings.fuelgauge.BatteryHistoryPreference
-            android:order="-999"
+        android:order="-999"
         android:key="battery_graph"/>
   
-
+    <Preference
+        android:key="sleep_time"
+        android:enabled="false"
+        android:order="-800"
+        android:shouldDisableView="false"
+        android:title="@string/status_sleep_time"
+        android:summary="@string/summary_placeholder"
+        android:persistent="false" />
     <PreferenceCategory
+        android:order="-600"
         android:key="app_list"/>
 
     <com.android.settingslib.widget.FooterPreference
         android:key="battery_graph_footer"
         android:title="@string/battery_usage_screen_footer"
         android:selectable="false"
+        android:order="-700"
         android:visibility="invisible"
         settings:searchable="false"/>
 </PreferenceScreen>
