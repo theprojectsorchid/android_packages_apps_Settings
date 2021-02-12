@@ -198,4 +198,10 @@
 
     </PreferenceCategory>
 
+ <Preference
+            android:key="sensor_block_settings"
+            android:title="@string/sensor_block_title"
+            android:summary="@string/sensor_block_summary"
+            android:fragment="com.evolution.settings.fragments.SensorBlockSettings"/>
+
 </PreferenceScreen>
