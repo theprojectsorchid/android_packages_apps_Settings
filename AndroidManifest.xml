@@ -4301,6 +4301,7 @@
             android:label="@string/settings_label_launcher"
             android:theme="@style/Theme.Settings.Start">
         </activity>
+
         <!-- Theme Default -->
         <activity
             android:name=".homepage.ThemeDefault"
