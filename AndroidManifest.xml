@@ -135,7 +135,7 @@
         <!-- Settings -->
         <activity android:name=".homepage.SettingsHomepageActivity"
                   android:label="@string/settings_label_launcher"
-                  android:theme="@style/Theme.Settings.Home"
+                  android:theme="@style/Theme.Settings.NoActionBar"
                   android:taskAffinity="com.android.settings.root"
                   android:launchMode="singleTask"
                   android:exported="true"
@@ -4293,6 +4293,19 @@
             </intent-filter>
             <meta-data android:name="com.android.settings.FRAGMENT_CLASS"
                   android:value="com.epic.Anatolia"/>
+        </activity>
+
+                <!-- Theme A -->
+        <activity
+            android:name=".homepage.ThemeA"
+            android:label="@string/settings_label_launcher"
+            android:theme="@style/Theme.Settings.Start">
+        </activity>
+        <!-- Theme Default -->
+        <activity
+            android:name=".homepage.ThemeDefault"
+            android:label="@string/settings_label_launcher"
+            android:theme="@style/Theme.Settings.Start">
         </activity>
     </application>
 </manifest>
