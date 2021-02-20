@@ -77,6 +77,8 @@ android_library {
         "lottie",
         "windowExtLib",
         "VendorSupport-preference",
+        "bouncy",
+        "dynamicanimation",
     ],
 
     libs: [
@@ -145,4 +147,10 @@ filegroup {
 filegroup {
     name: "Settings_manifest",
     srcs: ["AndroidManifest.xml"],
+}
+
+android_library_import {
+    name: "dynamicanimation",
+    aars: ["libs/dynamicanimation-1.1.0-alpha03.aar"],
+    sdk_version: "current",
 }
