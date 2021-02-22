@@ -17,6 +17,41 @@
 <PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:settings="http://schemas.android.com/apk/res/com.android.settings"
     android:key="display_customizations3"
-    android:title=" ">
+	 xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:title=" " >
+
+    <com.android.settingslib.widget.IllustrationPreference
+        android:key="StatusbarQs"
+        settings:searchable="false"
+        android:order="-999"
+        app:lottie_rawRes="@raw/toplevel_bottom"/>
+
+  <com.android.settingslib.widget.TopIntroPreference
+            android:key="statusbar_qs_bubbles_desc"
+            android:order="-997"
+            android:title="@string/statusbar_qs_bubble_setting_description"/>
+
+    <!-- Incall vibration options -->
+    <PreferenceCategory
+        android:key="incall_vib_options"
+        android:layout="@layout/custom_preference_category2"
+        android:title="@string/incall_vibration_category" >
+
+        <com.arrow.support.preferences.SystemSettingSwitchPreference
+            android:key="vibrate_on_connect"
+            android:title="@string/incall_vibrate_connect_title"
+            android:defaultValue="false" />
+
+        <com.arrow.support.preferences.SystemSettingSwitchPreference
+            android:key="vibrate_on_callwaiting"
+            android:title="@string/incall_vibrate_call_wait_title"
+            android:defaultValue="false" />
+
+        <com.arrow.support.preferences.SystemSettingSwitchPreference
+            android:key="vibrate_on_disconnect"
+            android:title="@string/incall_vibrate_disconnect_title"
+            android:defaultValue="false" />
+    </PreferenceCategory>
+</PreferenceScreen>
 
 </PreferenceScreen>

@@ -178,8 +178,17 @@
         settings:controller="com.android.settings.sound.VibrateForCallsPreferenceController"
         settings:keywords="@string/keywords_vibrate_for_calls"/>
 
+    
+     <Preference
+            android:key="taptapmode"
+            android:title="@string/taptapmode_more"
+            android:icon="@drawable/rr_assist_icon"
+            android:fragment="com.android.settings.awaken.fragments.DisplayCustomizations3"
+             settings:keywords="@string/keywords_font_size"/>
+
+ 
     <!-- Incall vibration options -->
-    <PreferenceCategory
+    <!--<PreferenceCategory
         android:key="incall_vib_options"
         android:layout="@layout/custom_preference_category2"
         android:title="@string/incall_vibration_category" >
@@ -198,7 +207,7 @@
             android:key="vibrate_on_disconnect"
             android:title="@string/incall_vibrate_disconnect_title"
             android:defaultValue="false" />
-    </PreferenceCategory>
+    </PreferenceCategory>-->
 
     <com.android.settings.widget.PrimarySwitchPreference
         android:key="gesture_prevent_ringing_sound"
