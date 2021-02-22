@@ -89,7 +89,6 @@
 
     <Preference
         android:key="connection_preferences"
-        android:icon="@drawable/ic_settings_connection_preferences"
         android:title="@string/connected_device_connections_title"
         android:icon="@drawable/ic_settings_connection_preferences"
         android:summary="@string/summary_placeholder"
