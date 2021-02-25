@@ -43,8 +43,7 @@
  <Preference
         android:key="tap_tap_gestures"
         android:icon="@drawable/ic_settings_quick_gestures"
-        android:summary="@string/TapTap_summary"
-        android:title="@string/TapTap_title">
+        android:title="@string/taptapmode_more">
         <intent
             android:action="android.intent.action.MAIN"
             android:targetClass="com.kieronquinn.app.taptap.ui.activities.MainActivity"

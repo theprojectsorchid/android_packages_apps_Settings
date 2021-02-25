@@ -98,11 +98,13 @@
 
     <com.android.settings.fuelgauge.PowerGaugePreference
         android:key="designed_battery_capacity"
+        android:icon="@drawable/ic_batt_cap"
         android:title="@string/designed_battery_capacity"
         android:selectable="false" />
 
     <com.android.settings.fuelgauge.PowerGaugePreference
         android:key="current_battery_capacity"
+        android:icon="@drawable/ic_batt_cap"
         android:title="@string/current_battery_capacity"
         android:selectable="false" />
 
