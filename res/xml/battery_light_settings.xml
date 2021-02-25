@@ -43,7 +43,7 @@
 
     <com.arrow.support.preferences.SystemSettingSwitchPreference
         android:key="battery_light_allow_on_dnd"       
-         android:icon="@drawable/rr_battery3_icon"
+        android:icon="@drawable/rr_custom_icon"
         android:title="@string/battery_light_allow_on_dnd_title"
         android:dependency="battery_light_enabled"
         android:defaultValue="false" />

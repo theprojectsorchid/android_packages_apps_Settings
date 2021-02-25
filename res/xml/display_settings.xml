@@ -41,7 +41,7 @@
 
         <com.android.settingslib.RestrictedPreference
             android:key="brightness"
-			android:icon="@drawable/ic_brightness_display"
+            android:icon="@drawable/ic_settings_adaptive_brightness"
             android:title="@string/brightness"
             settings:keywords="@string/keywords_display_brightness_level"
             settings:useAdminDisabledSummary="true"
@@ -49,8 +49,8 @@
 
         <com.android.settings.display.AutoBrightnessPreference
             android:key="auto_brightness_entry"
-			android:icon="@drawable/ic_settings_adaptive_brightness"
-			android:title="@string/auto_brightness_title"
+            android:icon="@drawable/ic_settings_adaptive_brightness"
+            android:title="@string/auto_brightness_title"
             android:fragment="com.android.settings.display.AutoBrightnessSettings"
             settings:controller="com.android.settings.display.AutoBrightnessPreferenceController"/>
         
@@ -88,7 +88,7 @@
 
        <!-- <Preference
             android:key="lockscreen_from_display_settings"
-            android:icon="@drawable/ic_lockscreen_settings_title"
+            android:icon="@drawable/ic_smart_lock"
             android:title="@string/lockscreen_settings_title"
             android:fragment="com.android.settings.security.LockscreenDashboardFragment"
             settings:keywords="@string/keywords_ambient_display_screen"
@@ -101,7 +101,7 @@
 
         <com.android.settingslib.RestrictedPreference
             android:key="screen_timeout"
-            android:icon="@drawable/ic_screen_timeout"
+            android:icon="@drawable/ic_settings_sleep_standby_optimization"
             android:title="@string/screen_timeout"
             android:summary="@string/summary_placeholder"
             android:fragment="com.android.settings.display.ScreenTimeoutSettings"
@@ -124,16 +124,15 @@
  
         <Preference
             android:key="font_size"
-            android:icon="@drawable/ic_title_font_size"
+            android:icon="@drawable/ic_font_size"
             android:title="@string/title_font_size"
             android:fragment="com.android.settings.display.ToggleFontSizePreferenceFragment"
             settings:controller="com.android.settings.display.FontSizePreferenceController"
             settings:keywords="@string/keywords_font_size"/>
 
         <com.android.settings.display.ScreenZoomPreference
-            android:icon="@drawable/ic_screen_zoom_title"       
             android:key="display_settings_screen_zoom"
-            android:icon="@drawable/ic_monet_engine_title"            
+            android:icon="@drawable/ic_screen_zoom"
             android:title="@string/screen_zoom_title"
             android:fragment="com.android.settings.display.ScreenZoomSettings"
             settings:keywords="@string/keywords_display_size"/>
@@ -200,7 +199,7 @@
 
         <!--<SwitchPreference
             android:key="tap_to_wake"
-			android:icon="@drawable/ic_taptowake_settings"            
+            android:icon="@drawable/ic_settings_quick_gestures"
             android:title="@string/tap_to_wake"
             android:summary="@string/tap_to_wake_summary"/>-->
 
@@ -211,6 +210,7 @@
 
         <Preference
             android:key="vr_display_pref"
+            android:icon="@drawable/ic_vr"
             android:title="@string/display_vr_pref_title"
             android:fragment="com.android.settings.display.VrDisplayPreferencePicker"/>
 
