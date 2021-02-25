@@ -17,7 +17,15 @@
 <PreferenceScreen
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:settings="http://schemas.android.com/apk/res-auto"
-    android:title="@string/wifi_configure_settings_preference_title">
+    android:title=" ">
+   
+    <ListPreference
+        android:key="wifi_timeout"
+        android:title="@string/wifi_timeout"
+        android:summary="@string/wifi_timeout_summary"
+        android:entries="@array/wifi_timeout_entries"
+        android:entryValues="@array/wifi_timeout_values"
+        settings:controller="com.android.settings.wifi.WifiTimeoutPreferenceController"/>
 
     <SwitchPreference
         android:key="enable_wifi_wakeup"
@@ -25,6 +33,7 @@
         android:icon="@drawable/ic_auto_wifi"
         android:summary="@string/wifi_wakeup_summary"
         settings:controller="com.android.settings.wifi.WifiWakeupPreferenceController"/>
+
 
     <SwitchPreference
         android:key="notify_open_networks"
@@ -35,16 +44,19 @@
         settings:controller="com.android.settings.wifi.NotifyOpenNetworksPreferenceController"/>
 
     <SwitchPreference
+            android:icon="@drawable/ic_open_wifi_notifications"
         android:key="wifi_cellular_data_fallback"
         android:title="@string/wifi_cellular_data_fallback_title"
         android:summary="@string/wifi_cellular_data_fallback_summary"
         settings:controller="com.android.settings.wifi.CellularFallbackPreferenceController" />
 
     <Preference
+         android:icon="@drawable/ic_open_wifi_notifications"   
         android:key="install_credentials"
         android:title="@string/wifi_install_credentials"/>
 
     <Preference
+        android:icon="@drawable/ic_open_wifi_notifications"
         android:key="wifi_direct"
         android:title="@string/wifi_menu_p2p"
         android:fragment="com.android.settings.wifi.p2p.WifiP2pSettings" />
