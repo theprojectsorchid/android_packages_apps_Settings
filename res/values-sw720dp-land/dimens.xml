@@ -16,6 +16,8 @@
 
 <resources>
 
+    <!-- App list preference -->
+    <dimen name="app_list_margin_start">80dp</dimen>
     <!-- ActionBar contentInsetStart -->
     <dimen name="actionbar_contentInsetStart">128dp</dimen>
     <dimen name="actionbar_subsettings_contentInsetStart">128dp</dimen>

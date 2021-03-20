@@ -71,4 +71,7 @@
     <dimen name="screen_pinning_padding_end">40dp</dimen>
 
     <dimen name="settings_panel_width">560dp</dimen>
+    
+    <!-- App list preference -->
+    <dimen name="app_list_margin_start">80dp</dimen>
 </resources>

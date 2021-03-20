@@ -482,4 +482,8 @@
     <dimen name="dashboard_tile_foreground_image_size">24dp</dimen>
 
 
+    <!-- App list preference -->
+    <dimen name="app_list_margin_start">72dp</dimen>
+    <dimen name="app_list_margin_end">16dp</dimen>
+
 </resources>
