@@ -6,7 +6,7 @@
   you may not use this file except in compliance with the License.
   You may obtain a copy of the License at
 
-       http://www.apache.org/licenses/LICENSE-2.0
+       http://www.apache./licenses/LICENSE-2.0
 
   Unless required by applicable law or agreed to in writing, software
   distributed under the License is distributed on an "AS IS" BASIS,
@@ -20,13 +20,14 @@
         xmlns:settings="http://schemas.android.com/apk/res-auto"
         android:key="top_level_settings">
 
-    <!-- FlexoOS logo -->
+    <!-- FlexoOS logo about Us-->
     <PreferenceScreen
         android:key="flexo_lottie_animation"
         android:layout="@layout/flexoos_card"
         android:selectable="true"
-        android:fragment="com.epic.Anatolia"
+        android:fragment="com.epic.fragments.ButtonSettings"
         android:order="-190" />
+        
 <!--
    <com.android.settingslib.widget.LayoutPreference
             android:layout="@layout/usercard_blank"
@@ -46,7 +47,7 @@
 
    <com.android.settings.widget.HomepagePreference
         android:fragment="com.android.settings.network.NetworkDashboardFragment"
-        android:icon="@drawable/ic_settings_wireless"
+        android:icon="@drawable/statusbar"
         android:key="top_level_network"
         android:order="-150"
         android:title="@string/network_dashboard_title"
@@ -56,7 +57,7 @@
 
     <com.android.settings.widget.HomepagePreference
         android:fragment="com.android.settings.connecteddevice.ConnectedDeviceDashboardFragment"
-        android:icon="@drawable/ic_devices_other"
+        android:icon="@drawable/nav"
         android:key="top_level_connected_devices"
         android:order="-140"
         android:title="@string/connected_devices_dashboard_title"
@@ -66,7 +67,7 @@
 		
     <com.android.settings.widget.HomepagePreference
         android:fragment="com.android.settings.applications.AppDashboardFragment"
-        android:icon="@drawable/ic_apps"
+        android:icon="@drawable/gesture"
         android:key="top_level_apps"
         android:order="-130"
         android:title="@string/apps_dashboard_title"
@@ -75,7 +76,7 @@
 
     <com.android.settings.widget.HomepagePreference
         android:fragment="com.android.settings.notification.ConfigureNotificationSettings"
-        android:icon="@drawable/ic_notifications"
+        android:icon="@drawable/notif"
         android:key="top_level_notifications"
         android:order="-120"
         android:title="@string/configure_notification_settings"
@@ -84,7 +85,7 @@
 
     <com.android.settings.widget.HomepagePreference
         android:fragment="com.android.settings.fuelgauge.PowerUsageSummary"
-        android:icon="@drawable/ic_settings_battery_white"
+        android:icon="@drawable/misc"
         android:key="top_level_battery"
         android:order="-110"
         android:title="@string/power_usage_summary_title"
@@ -94,7 +95,7 @@
 
     <com.android.settings.widget.HomepagePreference
         android:fragment="com.android.settings.deviceinfo.StorageDashboardFragment"
-        android:icon="@drawable/ic_storage_white"
+        android:icon="@drawable/qspanel"
         android:key="top_level_storage"
         android:order="-100"
         android:title="@string/storage_settings"
@@ -104,7 +105,7 @@
 
     <com.android.settings.widget.HomepagePreference
         android:fragment="com.android.settings.notification.SoundSettings"
-        android:icon="@drawable/ic_volume_up_24dp"
+        android:icon="@drawable/volume"
         android:key="top_level_sound"
         android:order="-90"
         android:title="@string/sound_settings"
@@ -113,7 +114,7 @@
 
     <com.android.settings.widget.HomepagePreference
         android:fragment="com.android.settings.DisplaySettings"
-        android:icon="@drawable/ic_settings_display_white"
+        android:icon="@drawable/weather"
         android:key="top_level_display"
         android:order="-80"
         android:title="@string/display_settings"
@@ -122,17 +123,18 @@
         settings:controller="com.android.settings.display.TopLevelDisplayPreferenceController"/>
 
     <com.android.settings.widget.RestrictedHomepagePreference
-        android:icon="@drawable/ic_settings_wallpaper_white"
+        android:fragment="com.android.settings.gestures.GestureSettings"
         android:key="top_level_wallpaper"
         android:order="-70"
-        android:title="@string/wallpaper_settings_title"
-        android:summary="@string/wallpaper_dashboard_summary"
+        android:title="@string/system_navigation_title"
+        android:summary="@string/summary_placeholder"
         settings:highlightableMenuKey="@string/menu_key_wallpaper"
-        settings:controller="com.android.settings.display.TopLevelWallpaperPreferenceController"/>
+        settings:controller="com.android.settings.gestures.GesturesSettingPreferenceController"        
+        android:icon="@drawable/gesture"/>
 
     <com.android.settings.widget.HomepagePreference
         android:fragment="com.android.settings.accessibility.AccessibilitySettings"
-        android:icon="@drawable/ic_settings_accessibility"
+        android:icon="@drawable/extra"
         android:key="top_level_accessibility"
         android:order="-60"
         android:title="@string/accessibility_settings"
@@ -142,7 +144,7 @@
 
     <com.android.settings.widget.HomepagePreference
         android:fragment="com.android.settings.security.SecuritySettings"
-        android:icon="@drawable/ic_settings_security_white"
+        android:icon="@drawable/uituner"
         android:key="top_level_security"
         android:order="-50"
         android:title="@string/security_settings_title"
@@ -152,7 +154,7 @@
 
     <com.android.settings.widget.HomepagePreference
         android:fragment="com.android.settings.privacy.PrivacyDashboardFragment"
-        android:icon="@drawable/ic_settings_privacy"
+        android:icon="@drawable/gameing"
         android:key="top_level_privacy"
         android:order="-40"
         android:title="@string/privacy_dashboard_title"
@@ -161,7 +163,7 @@
 
     <com.android.settings.widget.HomepagePreference
         android:fragment="com.android.settings.location.LocationSettings"
-        android:icon="@drawable/ic_settings_location"
+        android:icon="@drawable/nav"
         android:key="top_level_location"
         android:order="-30"
         android:title="@string/location_settings_title"
@@ -179,14 +181,13 @@
         settings:highlightableMenuKey="@string/menu_key_emergency"/>
 -->
     <com.android.settings.widget.HomepagePreference
-        android:fragment="com.android.settings.gestures.GestureSettings"
+        android:fragment="com.epic.Anatolia"        
         android:key="top_level_accounts"
         android:order="-10"
-        android:title="@string/system_navigation_title"
-        android:summary="@string/summary_placeholder"
+        android:title="@string/about_settings"
+        android:summary="@string/system_dashboard_summary"
         settings:highlightableMenuKey="@string/menu_key_accounts"
-        settings:controller="com.android.settings.gestures.GesturesSettingPreferenceController"        
-        android:icon="@drawable/ic_settings_system_dashboard_white"/>
+        android:icon="@drawable/gesture"/>
 
     <!--<com.android.settings.widget.HomepagePreference
         android:fragment="com.android.settings.gestures.GestureSettings"
