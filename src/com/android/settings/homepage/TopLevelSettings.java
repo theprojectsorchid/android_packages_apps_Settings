@@ -213,58 +213,58 @@ public class TopLevelSettings extends DashboardFragment implements
  	    String key = preference.getKey();
 
 	    if (key.equals("top_level_network")){
-	        preference.setLayoutResource(R.layout.xd_pref_card_top);
+	        preference.setLayoutResource(R.layout.OrchidOs_cardview);
 	    }
             if (key.equals("top_level_connected_devices")){
-                preference.setLayoutResource(R.layout.xd_pref_card_bot);
+                preference.setLayoutResource(R.layout.OrchidOs_cardview);
             }
             if (key.equals("top_level_accounts")){
-                preference.setLayoutResource(R.layout.xd_pref_card_mid2);
+                preference.setLayoutResource(R.layout.OrchidOs_cardview);
             }
             if (key.equals("top_level_octavi_lab")){
-                preference.setLayoutResource(R.layout.xd_pref_card_top);
+                preference.setLayoutResource(R.layout.OrchidOs_cardview);
             }
             if (key.equals("top_level_wallpaper")){
-                preference.setLayoutResource(R.layout.xd_pref_card_bot);
+                preference.setLayoutResource(R.layout.OrchidOs_cardview);
             }
             if (key.equals("top_level_battery")){
-                preference.setLayoutResource(R.layout.xd_pref_card_topsummary);
+                preference.setLayoutResource(R.layout.OrchidOs_cardview);
             }
             if (key.equals("top_level_display")){
-                preference.setLayoutResource(R.layout.xd_pref_card_mid);
+                preference.setLayoutResource(R.layout.OrchidOs_cardview);
             }
             if (key.equals("top_level_sound")){
-                preference.setLayoutResource(R.layout.xd_pref_card_top);
+                preference.setLayoutResource(R.layout.OrchidOs_cardview);
             }
             if (key.equals("top_level_apps")){
-                preference.setLayoutResource(R.layout.xd_pref_card_top);
+                preference.setLayoutResource(R.layout.OrchidOs_cardview);
             }
             if (key.equals("top_level_storage")){
-                preference.setLayoutResource(R.layout.xd_pref_card_botsummary);
+                preference.setLayoutResource(R.layout.OrchidOs_cardview);
             }
             if (key.equals("top_level_notifications")){
-                preference.setLayoutResource(R.layout.xd_pref_card_bot);
+                preference.setLayoutResource(R.layout.OrchidOs_cardview);
             }
             if (key.equals("top_level_location")){
-                preference.setLayoutResource(R.layout.xd_pref_card_botsummary);
+                preference.setLayoutResource(R.layout.OrchidOs_cardview);
             }
             if (key.equals("top_level_accessibility")){
-                preference.setLayoutResource(R.layout.xd_pref_card_mid2);
+                preference.setLayoutResource(R.layout.OrchidOs_cardview);
             }
             if (key.equals("top_level_security")){
-                preference.setLayoutResource(R.layout.xd_pref_card_top);
+                preference.setLayoutResource(R.layout.OrchidOs_cardview);
             }
             if (key.equals("top_level_privacy")){
-                preference.setLayoutResource(R.layout.xd_pref_card_mid);
+                preference.setLayoutResource(R.layout.OrchidOs_cardview);
             }
             if (key.equals("top_level_emergency")){
-                preference.setLayoutResource(R.layout.xd_pref_card_mid);
+                preference.setLayoutResource(R.layout.OrchidOs_cardview);
             }
             if (key.equals("top_level_system")){
-                preference.setLayoutResource(R.layout.xd_pref_card_mid2);
+                preference.setLayoutResource(R.layout.OrchidOs_cardview);
             }
             if (key.equals("top_level_about_device")){
-                preference.setLayoutResource(R.layout.xd_pref_card_mid2);
+                preference.setLayoutResource(R.layout.OrchidOs_cardview);
             }
             if (key.equals("top_level_usercard")){
                 preference.setLayoutResource(R.layout.usercard);
