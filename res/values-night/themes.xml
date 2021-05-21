@@ -49,4 +49,24 @@
         <item name="colorPrimary">@*android:color/primary_dark_device_default_settings</item>
         <item name="colorAccent">@*android:color/accent_device_default_dark</item>
     </style>
+    
+    <style name="Theme.Settings.Start" parent="Theme.Settings.HomeStart">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+        <item name="colorPrimaryDark">@color/main_color</item>
+        <item name="android:navigationBarDividerColor">@*android:color/transparent</item>
+        <item name="android:navigationBarColor">@android:color/transparent</item>
+        <item name="android:windowBackground">@drawable/bg_main</item>
+    </style>
+    
+    <style name="Theme.Settings.Accent" parent="Theme.Settings.HomeStart">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+        <item name="preferenceTheme">@style/PreferenceThemeAccent</item>
+        <item name="colorPrimaryDark">@color/main_color</item>
+        <item name="android:navigationBarDividerColor">@*android:color/transparent</item>
+        <item name="android:navigationBarColor">@android:color/transparent</item>
+        <item name="android:windowBackground">@drawable/bg_main_accent</item>
+    </style>
+    
 </resources>
