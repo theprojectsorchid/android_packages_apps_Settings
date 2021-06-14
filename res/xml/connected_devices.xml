@@ -57,6 +57,7 @@
 
     <androidx.preference.ListPreference
         android:key="bluetooth_timeout"
+        android:icon="@drawable/ic_bluetooth_disabled"
         android:title="@string/bluetooth_timeout"
         android:summary="@string/summary_placeholder"
         android:entries="@array/bluetooth_timeout_entries"

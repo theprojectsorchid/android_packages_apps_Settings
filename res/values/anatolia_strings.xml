@@ -17,8 +17,8 @@
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
     
 	<!-- Anatolia -->
-    <string name="anatolia_settings_title">Anatolia Settings</string>
-    <string name="anatolia_settings_summary">Our customization hub</string>
+    <string name="anatolia_settings_title">System Settings</string>
+    <string name="anatolia_settings_summary">customization hub</string>
 
     <!-- Categories -->
 	<string name="animations_title">Animations</string>

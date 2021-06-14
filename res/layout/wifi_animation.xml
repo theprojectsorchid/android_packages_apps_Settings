@@ -22,7 +22,7 @@
     <com.airbnb.lottie.LottieAnimationView
         android:id="@+id/wifi_connection"
         android:layout_width="wrap_content"
-        android:layout_height="210dp"
+        android:layout_height="190dp"
         android:clickable="false"
         android:layout_alignParentLeft="true"
         app:lottie_rawRes="@raw/wifi"

@@ -21,6 +21,12 @@
         settings:keywords="@string/keywords_wifi">
 
         
+
+       <com.android.settingslib.widget.LayoutPreference
+        android:key="network_internet_animation"
+        android:layout="@layout/network_internet_animation" /> 
+
+
     <!-- Resetting your internet description -->
     <com.android.settingslib.widget.LayoutPreference
         android:key="resetting_your_internet"
@@ -28,10 +34,6 @@
         android:selectable="false"
         android:layout="@layout/resetting_internet"
         settings:allowDividerBelow="false"/>
-
-       <com.android.settingslib.widget.LayoutPreference
-        android:key="network_internet_animation"
-        android:layout="@layout/network_internet_animation" />    
 
     <!-- Airplane mode message -->
     <com.android.settingslib.widget.LayoutPreference

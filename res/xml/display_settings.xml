@@ -23,13 +23,16 @@
 
    <com.android.settingslib.widget.LayoutPreference
         android:key="display_animation"
-        android:layout="@layout/display_animation" />
+        android:layout="@layout/display_animation" 
+        android:selectable="true"
+        android:fragment="com.epic.fragments.AnimationSettings" />
 
     <PreferenceCategory
         android:title="@string/category_name_brightness">
 
         <com.android.settingslib.RestrictedPreference
             android:key="brightness"
+            android:icon="@drawable/rr_brightness_icon"
             android:title="@string/brightness"
             settings:keywords="@string/keywords_display_brightness_level"
             settings:useAdminDisabledSummary="true"
@@ -45,34 +48,13 @@
         <com.android.settings.widget.PrimarySwitchPreference
             android:key="reduce_bright_colors_preference"
             android:title="@string/reduce_bright_colors_preference_title"
+            android:icon="@drawable/ic_reduce_bright_colors"
             settings:keywords="@string/keywords_reduce_bright_colors"
             android:persistent="false"
             android:fragment="com.android.settings.accessibility.ToggleReduceBrightColorsPreferenceFragment"
             settings:controller="com.android.settings.accessibility.ReduceBrightColorsPreferenceController"/>
-    </PreferenceCategory>
 
-    <PreferenceCategory
-        android:title="@string/category_name_lock_display">
-
-        <Preference
-            android:key="lockscreen_from_display_settings"
-            android:title="@string/lockscreen_settings_title"
-            android:fragment="com.android.settings.security.LockscreenDashboardFragment"
-            settings:keywords="@string/keywords_ambient_display_screen"
-			android:visibility="invisible"
-            settings:controller="com.android.settings.security.screenlock.LockScreenPreferenceController"/>
-
-        <com.android.settingslib.RestrictedPreference
-            android:key="screen_timeout"
-            android:title="@string/screen_timeout"
-            android:summary="@string/summary_placeholder"
-            android:fragment="com.android.settings.display.ScreenTimeoutSettings"
-            settings:controller="com.android.settings.display.ScreenTimeoutPreferenceController"/>
-    </PreferenceCategory>
-
-    <PreferenceCategory
-        android:title="@string/category_name_appearance">
-
+        
         <com.android.settings.display.darkmode.DarkModePreference
             android:key="dark_ui_mode"
             android:icon="@drawable/ic_settings_dark"
@@ -81,8 +63,45 @@
             android:widgetLayout="@null"
             settings:widgetLayout="@null"
             settings:controller="com.android.settings.display.DarkUIPreferenceController"
-            settings:keywords="@string/keywords_dark_ui_mode"/>
+            settings:keywords="@string/keywords_dark_ui_mode"/>    
 
+       
+        <com.android.settings.widget.PrimarySwitchPreference
+            android:key="night_display"
+            android:icon="@drawable/ic_settings_night_mode"            
+            android:title="@string/night_display_title"
+            android:fragment="com.android.settings.display.NightDisplaySettings"
+            settings:controller="com.android.settings.display.NightDisplayPreferenceController"
+            settings:keywords="@string/keywords_display_night_display"/>     
+    </PreferenceCategory>
+
+    <PreferenceCategory
+        android:title="@string/category_name_lock_display">
+<!--
+        <Preference
+            android:key="lockscreen_from_display_settings"
+            android:title="@string/lockscreen_settings_title"
+            android:fragment="com.android.settings.security.LockscreenDashboardFragment"
+            settings:keywords="@string/keywords_ambient_display_screen"
+			android:visibility="invisible"
+            settings:controller="com.android.settings.security.screenlock.LockScreenPreferenceController"/>
+-->
+        <com.android.settingslib.RestrictedPreference
+            android:key="screen_timeout"
+            android:title="@string/screen_timeout"
+            android:icon="@drawable/rr_screen_off_animations_icon"
+            android:summary="@string/summary_placeholder"
+            android:fragment="com.android.settings.display.ScreenTimeoutSettings"
+            settings:controller="com.android.settings.display.ScreenTimeoutPreferenceController"/>
+            
+              <com.epic.support.preferences.SystemSettingSwitchPreference
+            android:key="global_actions_onthego"
+            android:title="@string/global_actions_onthego_title"
+            android:defaultValue="false" />
+    </PreferenceCategory>
+
+    <PreferenceCategory
+        android:title="@string/category_name_appearance">
         <Preference
             android:key="font_size"
             android:title="@string/title_font_size"
@@ -102,6 +121,7 @@
         <!-- Icon pack -->
         <Preference
             android:key="android.theme.customization.icon_pack"
+            android:icon="@drawable/rr_style_icon"
             android:title="@string/theme_customization_icon_pack_title"
             android:summary="@string/theme_customization_icon_pack_summary"
             android:fragment="com.android.settings.lineage.fragments.StatusbarIcons"/>
@@ -109,6 +129,7 @@
         <!-- Adaptive icon pack -->
         <Preference
             android:key="android.theme.customization.adaptive_icon_shape"
+            android:icon="@drawable/rr_twist_icon"
             android:title="@string/theme_customization_icon_shape_title"
             android:summary="@string/theme_customization_icon_shape_summary"
             android:fragment="com.android.settings.lineage.fragments.IconShapes"/>
@@ -180,18 +201,22 @@
             android:key="screensaver"
             android:title="@string/screensaver_settings_title"
             android:fragment="com.android.settings.dream.DreamSettings"/>
+-->
 
         <SwitchPreference
             android:key="camera_gesture"
             android:title="@string/camera_gesture_title"
+            android:icon="@drawable/rr_camera_icon"
             android:summary="@string/camera_gesture_desc"/>
 
         <SwitchPreference
-            android:key="lift_to_wake"
+            android:key="lift_to_wake"            
+            android:icon="@drawable/rr_wake_icon"
             android:title="@string/lift_to_wake_title"/>
 
         <SwitchPreference
             android:key="tap_to_wake"
+            android:icon="@drawable/ic_tap_assistance"
             android:title="@string/tap_to_wake"
             android:summary="@string/tap_to_wake_summary"/>
 
@@ -200,7 +225,7 @@
             android:title="@string/device_theme"
             android:summary="@string/summary_placeholder"/>
 
-        <Preference
+        <com.epic.ui.EpicPreference
             android:key="vr_display_pref"
             android:title="@string/display_vr_pref_title"
             android:fragment="com.android.settings.display.VrDisplayPreferencePicker"/>

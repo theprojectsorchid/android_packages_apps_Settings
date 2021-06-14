@@ -23,8 +23,9 @@
   <com.android.settingslib.widget.LayoutPreference
         android:key="wifi_anim" 
         android:layout="@layout/wifi_animation"
-        android:order="-999"/>
-
+        android:order="-999"
+        android:selectable="true"
+        android:fragment="com.android.settings.awaken.fragments.DisplayCustomizations" />
 
         
     <com.android.settingslib.RestrictedPreference
