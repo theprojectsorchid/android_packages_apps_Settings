@@ -15,15 +15,14 @@
 <PreferenceScreen 
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:settings="http://schemas.android.com/apk/res/com.android.settings"
-    android:title="grimoire" >
+    android:title=" " >
+
 
 
         <!-- theming -->
         <Preference
             android:key="theme_category"
-            settings:layout="@layout/grimoire_dashboard_pref_card"
-            android:title="@string/theme_settings_title"
-            android:summary="@string/theme_settings_summary"
-            android:fragment="com.arcana.grimoire.fragments.Themes" />
-
+            android:icon="@drawable/op_ic_grimoire_themes_settings"
+            android:title="@string/grimoire_title"
+            android:fragment="com.arcana.grimoire.fragments.Interfaces" />
 </PreferenceScreen> 

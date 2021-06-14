@@ -4281,6 +4281,7 @@
         </receiver>
 
 
+
        <activity android:name=".Settings$grimoireActivity"
             android:label="@string/grimoire_title"
             android:icon="@drawable/ic_homepage_anatolia"

@@ -168,6 +168,7 @@ import com.android.settings.wifi.details.WifiNetworkDetailsFragment;
 import com.android.settings.wifi.p2p.WifiP2pSettings;
 import com.android.settings.wifi.savedaccesspoints2.SavedAccessPointsWifiSettings2;
 import com.android.settings.wifi.tether.WifiTetherSettings;
+import com.arcana.grimoire.Dashboard;
 
 import com.epic.Anatolia;
 
@@ -327,9 +328,11 @@ public class SettingsGateway {
             NetworkSelectSettings.class.getName(),
             AlarmsAndRemindersDetails.class.getName(),
             MediaManagementAppsDetails.class.getName(),
+
             // Anatolia Additions
+            RunningServices.class.getName(),
             Anatolia.class.getName(),
-            RunningServices.class.getName()
+            Dashboard.class.getName()
     };
 
     public static final String[] SETTINGS_FOR_RESTRICTED = {
@@ -370,8 +373,10 @@ public class SettingsGateway {
             Settings.MyDeviceInfoActivity.class.getName(),
             Settings.ModuleLicensesActivity.class.getName(),
             UserBackupSettingsActivity.class.getName(),
+
             // Anatolia Additions
             Settings.AnatoliaSettingsActivity.class.getName(),
             Settings.DevRunningServicesActivity.class.getName(),
+            Settings.grimoireActivity.class.getName(),
     };
 }
