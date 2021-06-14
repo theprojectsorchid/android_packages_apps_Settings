@@ -40,7 +40,7 @@ import androidx.annotation.NonNull;
 import com.android.internal.logging.nano.MetricsProto;
 import com.android.settings.SettingsPreferenceFragment;
 
-import com.android.internal.util.epic.EpicUtils;
+
 import com.epic.support.preferences.SystemSettingSwitchPreference;
 
 import java.util.Arrays;

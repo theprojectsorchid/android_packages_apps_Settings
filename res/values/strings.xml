@@ -15,8 +15,24 @@
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
 
     <!-- OrchidOs versioning -->
-        
+    <string name="rice_customizations_title">System Custom</string>
+    <string name="rice_customizations_summary">system custom options</string>
+    <string name="menu_key_grimoire">System Custom</string>
 
+    <string name="storage_warning_internal">system custom options</string>
+
+
+    <string name="secure_rethink_title">RethinkDns</string>
+    <string name="rethink_summary">Open Source Dns</string>
+    <string name="secure_warden_title">App Warden</string>
+    <string name="warden_summary">Protect system from trackers</string>
+    <string name="secure_webapps_title">Webapps</string>
+    <string name="webapp_summary">system secure webapps</string>
+
+    <string name="storage_warning_internal">system custom options</string>
+    <string name="statusbar_items_title">statusbar</string>
+    <string name="unlock_quick_unlock_control_summary">unlocking</string>
+    <string name="unlock_quick_unlock_control_title">un lock</string>
     <string name="wellbeing_title">Wellbeing</string>
     <string name="OrchidOs_version_title">Gauguin</string>
     <string name="OrchidOs_device_title">Qual: SM7225</string>
@@ -3541,7 +3557,7 @@
     <!-- Wallpaper settings title [CHAR LIMIT=30] -->
     <string name="wallpaper_settings_title">Wallpaper</string>
     <!-- Styles & Wallpapers settings title [CHAR LIMIT=30] -->
-    <string name="style_and_wallpaper_settings_title">System style</string>
+    <string name="style_and_wallpaper_settings_title">Wallpapers</string>
     <!-- Summary for the top level wallpapers settings [CHAR LIMIT=NONE]-->
     <string name="wallpaper_dashboard_summary">Home, lock screen</string>
     <!-- Wallpaper settings summary when default wallpaper is used [CHAR LIMIT=NONE] -->
@@ -4502,7 +4518,7 @@
     <string name="ethernet_tethering_subtext" product="default">Share phone\u2019s internet connection via Ethernet</string>
 
     <!-- Tethering footer info [CHAR LIMIT=NONE]-->
-    <string name="tethering_footer_info">Use hotspot and tethering to provide internet to other devices through your mobile data connection. Apps can also create a hotspot to share content with nearby devices.</string>
+    <string name="tethering_footer_info">Use hotspot and tethering to provide internet to other devices through your mobile data connection.Beaware that Apps can also create a hotspot to share content with nearby devices.</string>
     <!-- Tethering footer info for the device which supports Wi-Fi and Wi-Fi tethering enabled at the same time [CHAR LIMIT=NONE]-->
     <string name="tethering_footer_info_sta_ap_concurrency">Use hotspot and tethering to provide internet to other devices through your Wi\u2011Fi or mobile data connection. Apps can also create a hotspot to share content with nearby devices.</string>
 
@@ -8510,7 +8526,7 @@
     </plurals>
 
     <!-- Title for setting tile leading to network and Internet settings [CHAR LIMIT=40]-->
-    <string name="network_dashboard_title">Wi\u2011Fi &amp; Network</string>
+    <string name="network_dashboard_title">Network Connections</string>
     <!-- Summary for Network and Internet settings, explaining it contains mobile, wifi setting and data usage settings [CHAR LIMIT=NONE]-->
     <string name="network_dashboard_summary_mobile">SIM, mobile network, data usage, hotspot</string>
     <!-- Summary for Network and Internet settings, explaining it contains wifi and data usage setting [CHAR LIMIT=NONE]-->

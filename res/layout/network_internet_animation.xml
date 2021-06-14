@@ -22,7 +22,7 @@
     <com.airbnb.lottie.LottieAnimationView
         android:id="@+id/network_internet_animation"
         android:layout_width="match_parent"
-        android:layout_height="160dp"
+        android:layout_height="140dp"
         android:layout_gravity="center"
         android:clickable="false"
         app:lottie_rawRes="@raw/network_internet"

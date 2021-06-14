@@ -16,12 +16,14 @@
 
 <PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
         xmlns:settings="http://schemas.android.com/apk/res-auto"
-        android:key="app_notifications"
-        android:title="@string/notifications_title">
+        android:title="@string/notifications_title"
+        android:key="app_notifications">
 		
-	<Preference
+    <com.android.settingslib.widget.LayoutPreference
         android:key="notification_animation"
-        android:layout="@layout/notification_animation"/>	
+        android:layout="@layout/notification_animation"	
+        android:selectable="true"
+        android:fragment="com.epic.fragments.NotificationSettings"/>
 
     <com.android.settingslib.widget.LayoutPreference
         android:key="pref_app_header"
@@ -91,7 +93,15 @@
         android:title="@string/app_notification_override_dnd_title"
         android:summary="@string/app_notification_override_dnd_summary"/>
 
-        <Preference
+    <com.android.settings.RestrictedListPreference
+        android:key="sound_timeout"
+        android:title="@string/app_notification_sound_timeout_title"
+        android:entries="@array/app_notification_sound_timeout_entries"
+        android:entryValues="@array/app_notification_sound_timeout_values"
+        android:order="1003"
+        android:persistent="false" />
+
+    <com.epic.ui.EpicPreference
             android:key="app_link"
             android:order="1003"
             android:icon="@drawable/ic_settings_24dp"

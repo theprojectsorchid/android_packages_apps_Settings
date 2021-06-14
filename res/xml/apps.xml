@@ -62,7 +62,7 @@
 
     <Preference
         android:key="default_apps"
-		android:icon="@drawable/ic_default_apps"
+		android:icon="@drawable/ic_wave_apps"
         android:title="@string/app_default_dashboard_title"
         android:order="-995"
         settings:controller="com.android.settings.applications.DefaultAppsPreferenceController">
@@ -72,6 +72,7 @@
     <Preference
         android:key="game_settings"
         android:title="@string/game_settings_title"
+        android:icon="@drawable/rr_game_icon"
         android:summary="@string/game_settings_summary"
         android:order="-994"
         settings:controller="com.android.settings.applications.GameSettingsPreferenceController">
@@ -83,7 +84,7 @@
 
     <Preference
         android:key="hibernated_apps"
-		android:icon="@drawable/ic_default_apps"
+		android:icon="@drawable/rr_kill_app_icon"
         android:title="@string/unused_apps"
         android:summary="@string/summary_placeholder"
         android:order="15"
@@ -94,7 +95,7 @@
 
     <Preference
         android:key="special_access"
-        android:icon="@drawable/ic_special_access"
+        android:icon="@drawable/ic_app_level_permissions"
         android:fragment="com.android.settings.applications.specialaccess.SpecialAccessSettings"
         android:title="@string/special_access"
         android:order="20"
