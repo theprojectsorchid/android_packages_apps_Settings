@@ -16,7 +16,6 @@
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
 
-  
           <!-- system info page -->
      <string name="systeminfopage_build">Your device is Officailly supported</string>
      <string name="systeminfopage_bubble_setting_description">Below are options and further information about this software and device</string>
@@ -70,8 +69,11 @@
      <string name="statusbar_settings_page">StatusBar Settings</string>
     <string name="statusbar_settings_page_summary">Configure StatusBar Settings</string>
 
-          <!-- onthe go mode -->
-
+          <!-- reticker-->
+    <string name="reticker_title">Reticker</string>
+    <string name="screen_wallpaper_main_settings">statusbar reticker service</string>
+     <string name="Qs_settings_page">Colours</string>
+    <string name="Qs_settings_page_summary">Change colours</string>
           <!-- TapTap mode -->
 
           <!-- Arcane Idle Manager -->
