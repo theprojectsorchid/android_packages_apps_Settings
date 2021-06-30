@@ -18,7 +18,7 @@
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:settings="http://schemas.android.com/apk/res-auto"
     android:key="user_and_account_settings_screen"
-    android:title="@string/account_dashboard_title"
+    android:title=" "
     settings:keywords="@string/keywords_accounts">
 
     <com.android.settingslib.widget.LayoutPreference
@@ -26,10 +26,18 @@
         android:layout="@layout/account_animation"
         android:order="-999"/>
         
+   <!-- Header -->
+  <PreferenceCategory
+        android:title="System Dashboard"
+        android:order="-997"
+        android:layout="@layout/settings_title_header">
+  </PreferenceCategory>
+
     <PreferenceCategory
         android:key="passwords_category"
         android:order="10"
         android:persistent="false"
+        android:layout="@layout/custom_preference_category2"
         android:title="@string/autofill_passwords"
         settings:controller="com.android.settings.applications.autofill.PasswordsPreferenceController"
         settings:keywords="@string/autofill_keywords" />
@@ -37,6 +45,7 @@
     <PreferenceCategory
         android:key="default_service_category"
         android:order="20"
+        android:layout="@layout/custom_preference_category2"
         android:title="@string/autofill_app">
 
         <com.android.settings.widget.GearPreference
@@ -56,6 +65,7 @@
 
     <SwitchPreference
         android:key="auto_sync_account_data"
+        settings:layout="@layout/xd_pref_card_mid2"              
         android:title="@string/auto_sync_account_title"
         android:summary="@string/auto_sync_account_summary"
         android:order="202"
@@ -63,6 +73,7 @@
 
     <SwitchPreference
         android:key="auto_sync_work_account_data"
+        settings:layout="@layout/xd_pref_card_mid2"              
         android:title="@string/account_settings_menu_auto_sync_work"
         android:summary="@string/auto_sync_account_summary"
         settings:forWork="true"
@@ -70,6 +81,7 @@
 
     <SwitchPreference
         android:key="auto_sync_personal_account_data"
+        settings:layout="@layout/xd_pref_card_mid2"              
         android:title="@string/account_settings_menu_auto_sync_personal"
         android:summary="@string/auto_sync_account_summary"
         android:order="204"/>
