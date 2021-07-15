@@ -46,7 +46,8 @@ android_library {
 
     srcs: ["src/**/*.java"],
 
-    aaptflags: ["--extra-packages com.epic"],
+    aaptflags: ["--extra-packages com.epic", "--extra-packages com.factor.bouncy"],
+
 
     static_libs: [
         "androidx-constraintlayout_constraintlayout",
@@ -77,6 +78,7 @@ android_library {
         "lottie",
         "windowExtLib",
         "VendorSupport-preference",
+        "bouncy",
     ],
 
     libs: [
@@ -145,4 +147,11 @@ filegroup {
 filegroup {
     name: "Settings_manifest",
     srcs: ["AndroidManifest.xml"],
+}
+
+
+android_library_import {
+    name: "bouncy",
+    aars: ["libs/bouncy-release.aar"],
+    sdk_version: "current",
 }
