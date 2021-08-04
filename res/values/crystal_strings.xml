@@ -212,3 +212,8 @@
     <string name="scarlet_manager_display_text">Scarlet\'s aggressive mode will disable selected system services when device screen is off to conserve power consupmtion.</string>
 
 </resources>
+    <!-- Mine -->
+    <string name="crystal_dashboard_title">Mine</string>
+    <string name="crystal_dashboard_summary">Where the colorful lights are coming from!</string>
+
+</resources>
