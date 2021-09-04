@@ -210,6 +210,7 @@
 
         <Preference
             android:key="vr_display_pref"
+            android:icon="@drawable/ic_vr"
             android:title="@string/display_vr_pref_title"
             android:fragment="com.android.settings.display.VrDisplayPreferencePicker"/>
 
