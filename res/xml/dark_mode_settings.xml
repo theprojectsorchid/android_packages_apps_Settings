@@ -21,37 +21,40 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:title=" "
     settings:keywords="@string/keywords_dark_ui_mode">
-
-        <com.android.settingslib.widget.IllustrationPreference
-            android:key="dark_illustration"
-            android:order="-997"
-            app:lottie_rawRes="@raw/darkmode"/>
-
-    <com.android.settingslib.widget.MainSwitchPreference
-        android:key="dark_ui_activated"
-        android:order="-996"
-        android:icon="@drawable/rr_condition_icon"
-        android:title="@string/dark_theme_main_switch_title"
-        settings:controller="com.android.settings.display.darkmode.DarkModeActivationPreferenceController"/>
     
-     <com.android.settingslib.widget.TopIntroPreference
-            android:key="dark_illustration_desc"
-            android:order="-995"
-            android:title="@string/dark_ui_text"/>
-            
-    <com.arrow.support.preferences.SecureSettingSwitchPreference
-        android:key="system_black_theme"
-        android:title="@string/system_black_theme_title"
-        android:summary="@string/system_black_theme_summary"
-        android:defaultValue="false"
-        android:dependency="dark_ui_activated" />
+    <com.android.settingslib.widget.LayoutPreference
+        android:selectable="false"	
+        android:key="screen_display"
+        android:layout="@layout/darkmode_image_preview"
+        settings:allowDividerBelow="false"
+        settings:controller="com.android.settings.DisplayImagePreference"/>       
+
+    <com.android.settingslib.widget.TopIntroPreference
+        android:key="dark_ui_top_intro"
+        android:title="@string/dark_ui_text"
+        settings:searchable="false"/>
 
     <com.android.settingslib.widget.BannerMessagePreference
         android:key="dark_ui_location_off"
         android:icon="@drawable/rr_styles_icon"
         android:title="@string/twilight_mode_location_off_dialog_message"
         settings:controller="com.android.settings.display.TwilightLocationPreferenceController"/>
-
+    
+    <com.android.settingslib.widget.LayoutPreference
+        android:key="dark_ui_activated"
+        android:title="@string/dark_ui_title"
+        android:selectable="false"
+        android:layout="@layout/dark_ui_activation_button"
+        settings:allowDividerBelow="false"
+        settings:controller="com.android.settings.display.darkmode.DarkModeActivationPreferenceController"/>
+    
+    <com.arrow.support.preferences.SecureSettingSwitchPreference
+        android:key="system_black_theme"
+        android:title="@string/system_black_theme_title"
+        android:summary="@string/system_black_theme_summary"
+        android:defaultValue="false"
+        android:dependency="dark_ui_activated" />
+    
     <DropDownPreference
         android:key="dark_ui_auto_mode"
         android:icon="@drawable/rr_autoenable_icon"
@@ -61,6 +64,7 @@
         android:entryValues="@array/dark_ui_scheduler_preference_titles"
         settings:allowDividerAbove="true"
         settings:controller="com.android.settings.display.darkmode.DarkModeScheduleSelectorController"
+        settings:iconSpaceReserved="false" 
         settings:keywords="@string/keywords_dark_ui_mode"/>
 
     <Preference
