@@ -43,9 +43,11 @@ android_library {
         "SettingsLibDefaults",
         "SettingsLib-search-defaults",
     ],
-
-    srcs: ["src/**/*.java"],
-
+    srcs: [
+        "src/**/*.java",
+        "Atomichub/src/**/*.java",
+        "Atomichub/src/**/*.kt",
+    ],
     static_libs: [
         "androidx-constraintlayout_constraintlayout",
         "androidx.slice_slice-builders",
@@ -76,7 +78,11 @@ android_library {
         "windowExtLib",
         "VendorSupport-preference",
     ],
-
+    resource_dirs: [
+        "res",
+        "Atomichub/res",
+    ],
+    aaptflags: ["--extra-packages com.palladium.atomichub"],
     libs: [
         "telephony-common",
         "ims-common",
