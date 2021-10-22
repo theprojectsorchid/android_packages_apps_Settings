@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+    Copyright (C) 2020-2022 CrystalOS-Project
+    
+    Licensed under the Apache License, Version 2.0 (the "License");
+    you may not use this file except in compliance with the License.
+    You may obtain a copy of the License at
+    
+        http://www.apache.org/licenses/LICENSE-2.0
+    
+    Unless required by applicable law or agreed to in writing, software
+    distributed under the License is distributed on an "AS IS" BASIS,
+    WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+    See the License for the specific language governing permissions and
+    limitations under the License.
+-->
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+
+    <!-- General -->
+    <string name="ok">Okay</string>
+    <string name="default_string">Default</string>
+    <string name="add">Add</string>
+    <string name="enabled">Enabled</string>
+    <string name="choose_app">Choose application</string>
+    <string name="help">Help</string>
+    <string name="reset_message">Reset all entries to default?</string>
+    <string name="attention">Attention</string>
+    <string name="reset">Reset</string>
+    <!-- Mine -->
+    <string name="crystal_homepage_title">Crystal Mine</string>
+    <string name="crystal_homepage_summary">Where the colorful lights are coming from!</string>
+
+    <!-- Crystal Mine -->
+    <string name="crystal_homepage_title">Crystal Mine</string>
+    <string name="category_aboutcrystal_title">About CrystalOS</string>
+    <string name="category_animations_title">Animations</string>
+    <string name="category_buttons_title">Buttons</string>
+    <string name="category_designcorner_title">Design Corner</string>
+    <string name="category_gestures_title">Gestures</string>
+    <string name="category_lockscreen_title">Lockscreen</string>
+    <string name="category_miscellaneous_title">Miscellaneous</string>
+    <string name="category_navigation_title">Navigation</string>
+    <string name="category_notifications_title">Notifications</string>
+    <string name="category_powermenu_title">Power Menu</string>
+    <string name="category_quicksettings_title">Quick Settings</string>
+    <string name="category_statusbar_title">Statusbar</string>
+
+ 
+    <!-- Custom settings dashboard style -->
+    <string name="settings_dashboard_style_title">Settings layout</string>
+    <string name="settings_dashboard_style_aosp">Aosp</string>
+    <string name="settings_dashboard_style_oos11">OxygenOS 11</string>
+    <string name="settings_dashboard_style_oos12">OxygenOS 12</string>
+    <string name="settings_dashboard_style_crystal">Crystal</string>
+    <string name="settings_dashboard_style_crystal_clean">Crystal Clean</string>
+    <string name="settings_base_style_title">Settings Base layout</string>
+    <string name="settings_base_style_summary">Use an alternative layout for setting menus</string>
+    <string name="settings_home_style_title">Settings Home layout</string>
+    <string name="settings_home_style_summary">Use stock aosp layout for homepage</string>
+    <string name="disable_usercard_title">Settings UserCard</string>
+    <string name="disable_usercard_summary">Toggle in order not to show the usercard on main settings page</string>
+
+    <string name="aosp_gestures_title">AOSP Gesture settings</string>
+    <string name="aosp_gestures_summary">Gesture settings found in AOSP by default</string>
+
+    <!-- Ignore secure window -->
+    <string name="ignore_window_secure_title">Ignore window secure flags</string>
+    <string name="ignore_window_secure_summary">This removes the screenshots and screenrecords limits for all applications. Normally, special applications are replaced with black areas in records. This can be convenient in some cases but may lead to privacy leaks. After changing this toggle, you may need to restart applications for the change to take effect</string>
+
+</resources>

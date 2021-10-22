@@ -1,0 +1,2 @@
+# Mine
+-keep class com.crystal.mine.** 
