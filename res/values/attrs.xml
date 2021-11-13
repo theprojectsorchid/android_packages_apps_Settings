@@ -159,6 +159,12 @@
         <attr name="textOff" format="reference" />
     </declare-styleable>
 
+	<!-- Changelog -->
+		<attr name="changelog_color_bg" format="color" />
+		<attr name="changelog_color_header_back" format="color" />
+		<attr name="changelog_color_commit_message" format="color" />
+		<attr name="changelog_color_commit_bg" format="color" />
+
     <!-- For LabeledSeekBarPreference -->
     <declare-styleable name="LabeledSeekBarPreference">
         <attr name="textStart" format="reference" />
