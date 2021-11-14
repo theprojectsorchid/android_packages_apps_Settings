@@ -15,8 +15,8 @@
      limitations under the License.
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
-
-    <!-- Anatolia -->
+    
+	<!-- Anatolia -->
     <string name="anatolia_settings_title">Anatolia Settings</string>
     <string name="anatolia_settings_summary">Our customization hub</string>
 
@@ -49,6 +49,7 @@
     <string name="save">Save</string>
 	
 	<!-- Power menu Animations  -->
+	<string name="power_menu_anim_cat">Power UI Animation Option</string>
     <string name="power_menu_animation_title">Power menu animation</string>
     <string name="power_menu_animation_dialog_title">Select power menu animation</string>
     <string name="power_menu_animation_aosp">AOSP (default)</string>
@@ -66,6 +67,24 @@
     <!-- Power menu and dialogs opacity -->
     <string name="panel_porn_title">Power Menu Transparency</string>
     <string name="power_menu_transparency">Power/reboot menu opacity</string>
-    <string name="power_menu_dialog_dim">Power/reboot dialog dim background amount</string>	
     <string name="power_menu_animation_rotate">Rotate</string>	
+    <string name="power_menu_dialog_dim">Power/reboot dialog dim background amount</string>
+
+    <!-- Power Menu -->
+    <string name="power_menu_items">Power UI Items</string>
+    <string name="power_menu_title">Power menu</string>
+    <string name="power_menu_title_summary">View or change power menu entries</string>
+    <string name="powermenu_screenshot">Screenshot</string>
+    <string name="powermenu_power">Power</string>
+    <string name="powermenu_advanced">Advanced reboot options</string>
+    <string name="powermenu_restart">Restart</string>
+    <string name="powermenu_airplane">Airplane</string>
+    <string name="powermenu_settings">Settings</string>
+    <string name="powermenu_lockdown">Lock Down</string>
+    <string name="powermenu_soundpanel">Sound Panel</string>
+    <string name="powermenu_users">Users</string>
+    <string name="powermenu_logout">Logout</string>
+    <string name="powermenu_emergency">Emergency</string>	
+    <string name="powermenu_torch">Flashlight</string>
+
 </resources>
