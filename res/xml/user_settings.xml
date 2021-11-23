@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<!-- Copyright (C) 2012 The Android Open Source Project
+<!-- Copyright (C) 20 The Android Open Source Project
 
      Licensed under the Apache License, Version 2.0 (the "License");
      you may not use this file except in compliance with the License.
@@ -30,29 +30,48 @@
         android:title="@string/user_settings_footer_text"
         settings:controller="com.android.settings.users.MultiUserTopIntroPreferenceController"/>
 
+ <com.android.settingslib.widget.LayoutPreference
+        android:layout="@layout/user_info_frag"
+        android:key="user_header"
+	    android:selectable="false"
+        android:order="10" />
+
     <PreferenceCategory
         android:key="user_list"
         android:title="@string/user_list_title"
-        android:order="10"
+        android:order="15"
         settings:searchable="false">
     </PreferenceCategory>
 
     <com.android.settingslib.RestrictedPreference
         android:key="guest_add"
         android:title="@string/guest_new_guest"
-        android:order="15"/>
+        android:order="20"/>
 
     <com.android.settingslib.RestrictedPreference
         android:key="user_add"
         android:title="@string/user_add_user_or_profile_menu"
         android:icon="@drawable/ic_add_40dp"
-        android:order="20"/>
+        android:order="25"/>
 
     <com.android.settingslib.RestrictedSwitchPreference
         android:key="user_settings_add_users_when_locked"
         android:title="@string/user_add_on_lockscreen_menu"
         android:singleLineTitle="false"
-        android:order="105"
-        settings:allowDividerAbove="true"/>
+        android:order="80"
+        settings:allowDividerAbove="false"/>
+
+    <com.android.settingslib.widget.LayoutPreference
+        android:key="accounts"
+        android:icon="@drawable/manage_account"
+        android:layout="@layout/manage_account"
+        android:fragment="com.android.settings.accounts.AccountDashboardFragment"
+        android:order="120" />
+
+    <com.android.settingslib.widget.LayoutPreference
+        android:key="emergency"
+        android:layout="@layout/emergency"
+        android:fragment="com.android.settings.emergency.EmergencyDashboardFragment"
+        android:order="140" />
 
 </PreferenceScreen>

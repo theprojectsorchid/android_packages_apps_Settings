@@ -13651,7 +13651,17 @@
     <string name="edit">Edit</string>
     <string name="device_name">Device name</string>
 
+    <!-- String for removal of sensitive info on about, depending on tap -->
+    <string name="device_info_protected_single_press">Tap to show info</string>
+    
     <!-- OrchidOs Hardware info -->
     <string name="platform_revision">Platform</string>
     <string name="total_ram">Total RAM</string>
+
+    
+    <!-- Owner info -->
+    <string name="about_user">Owner Info</string>
+    <string name="userpref_summary">Personal Information about current user</string>
+    <string name="user_title">User Info</string>
+
 </resources>

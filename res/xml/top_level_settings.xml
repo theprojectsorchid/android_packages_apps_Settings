@@ -21,13 +21,7 @@
         android:key="top_level_settings">
    
     <com.android.settings.homepage.TopMenu
-        android:order="-180"/>
-
-    <com.android.settingslib.widget.LayoutPreference
-            android:layout="@layout/usercard_blank"
-            android:fragment="com.android.settings.users.UserSettings"
-            android:key="top_level_usercard"
-            android:order="-170" />
+        android:order="-190"/>
 
     <Preference
             android:fragment="com.android.settings.network.NetworkDashboardFragment"

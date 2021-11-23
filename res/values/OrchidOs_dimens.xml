@@ -26,4 +26,11 @@
 
     <dimen name="stroke_widthAboutUI">1dp</dimen>
 
+    
+    <dimen name="card_view_start_padding">20dp</dimen>
+    <dimen name="card_view_end_padding">20dp</dimen>
+    <dimen name="card_view_start_margin">15dp</dimen>
+    <dimen name="card_view_end_margin">15dp</dimen>
+    <dimen name="card_height_settings">75dp</dimen>
+
 </resources>
