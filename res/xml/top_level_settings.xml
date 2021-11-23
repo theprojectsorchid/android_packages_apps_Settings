@@ -27,6 +27,17 @@
         android:selectable="false"
         android:order="-190" />
 
+
+
+    <Preference
+        android:fragment="com.android.settings.deviceinfo.UserInfoFragement"
+        android:icon="@drawable/ic_user"
+        android:key="top_level_userinfo"
+	    android:title="@string/about_user_base"
+        android:summary="@string/about_user_summary_base"
+        android:order="-160" />
+
+
     <com.android.settings.widget.HomepagePreference
         android:fragment="com.android.settings.network.NetworkDashboardFragment"
         android:icon="@drawable/ic_settings_wireless"
