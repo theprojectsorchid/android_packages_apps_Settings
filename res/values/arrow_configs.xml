@@ -26,4 +26,7 @@
     <!-- Device specific doze package -->
     <string name="config_customDozePackage" translatable="false"></string>
 
+    <color name="usercardbg">@*android:color/system_accent2_600</color>
+
+    <color name="toolbar_collapsed">@*android:color/system_neutral1_100</color>
 </resources>
