@@ -4,7 +4,7 @@
     android:id="@+id/entity_header"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:background="@drawable/rice_card_mt"
+    android:background="@drawable/octavi_card"
     android:layout_marginStart="16dp"
     android:layout_marginEnd="16dp"
     android:layout_marginVertical="8dp"
@@ -33,12 +33,13 @@
 
 	    <TextView 
                 android:id="@+id/entity_header_title"
-		android:layout_width="wrap_content" 
-		android:layout_height="wrap_content" 
-                android:textSize="18sp"
-		android:textColor="@color/op_control_text_color_primary"
-		style="@style/op_control_text_style_h6"
-		android:singleLine="true"/>
+		        android:layout_width="wrap_content" 
+		        android:layout_height="wrap_content" 
+                android:layout_gravity="center"
+                android:textSize="22sp"
+		        android:textColor="@color/op_control_text_color_primary"
+		        style="@style/op_control_text_style_h6"
+		        android:singleLine="true"/>
 
             <TextView
                 android:id="@android:id/summary"
@@ -46,6 +47,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginTop="2dp"
                 android:singleLine="true"
+                android:layout_gravity="center"
                 android:textSize="0dp"
                 android:text="@string/usercard_summary"
                 android:textColor="@color/op_control_text_color_secondary"
