@@ -34,7 +34,7 @@
 
    <com.android.settingslib.widget.LayoutPreference
             android:layout="@layout/usercard_blank"
-            android:fragment="com.android.settings.users.UserSettings"
+        android:fragment="com.android.settings.deviceinfo.UserInfoFragement"
             android:key="top_level_usercard"
             android:order="-170" />
 

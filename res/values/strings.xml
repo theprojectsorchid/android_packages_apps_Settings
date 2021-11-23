@@ -13647,4 +13647,9 @@
     <string name="bluetooth_connect_access_dialog_positive">Connect</string>
     <!-- usercard titles -->
     <string name="wellbeing_title">Wellbeing</string>
+    <!-- Owner info -->
+    <string name="about_user">Owner Info</string>
+    <string name="userpref_summary">Personal Information about current user</string>
+    <string name="user_title">User Info</string>
+
 </resources>
