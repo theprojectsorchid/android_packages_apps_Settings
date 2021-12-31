@@ -95,4 +95,8 @@
 
     <string name="taptap_demo">Tap tap demo</string>
      <string name="about_taptap_info_summary">video demo</string>
+
+         <!-- Arcane Idle Manager -->
+    <string name="arcane_idle_manager_title">Arcana Idle Manager</string>
+    <string name="arcane_idle_manager_summary">Stop all non-essential background processes when the device is idle</string>
 </resources>
