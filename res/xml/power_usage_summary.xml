@@ -105,6 +105,13 @@
         android:summary="@string/battery_light_summary" />
 
 
+    <com.arrow.support.preference.SystemSettingSwitchPreference
+        android:key="arcane_idle_manager"
+        android:title="@string/arcane_idle_manager_title"
+        settings:iconSpaceReserved="false"
+        android:summary="@string/arcane_idle_manager_summary"
+        android:defaultValue="false" />
+
     <com.android.settingslib.widget.FooterPreference
         android:key="power_usage_footer"
         android:visibility="gone"
