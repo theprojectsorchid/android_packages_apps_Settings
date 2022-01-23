@@ -1,4 +1,4 @@
-# This is a configuration file for ProGuard.
+# This is a for ProGuard.
 # http://proguard.sourceforge.net/index.html#manual/usage.html
 
 # Some tests use thenThrow from Mockito which require information on
