@@ -15,4 +15,9 @@
 
     <color name="settings_panel_background_color">@*android:color/notification_material_background_color</color>
 
+    <color name="homepage_fireworks_background">#536dfe</color>
+
+    <color name="rdnt_crd_bg">#00000000</color>
+    <color name="user_crd_bg">@android:color/system_neutral1_0</color>
+    <color name="xd_background1">@android:color/system_neutral1_50</color>
 </resources>

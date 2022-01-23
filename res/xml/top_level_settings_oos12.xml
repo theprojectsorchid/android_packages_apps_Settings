@@ -47,12 +47,6 @@
         settings:highlightableMenuKey="@string/menu_key_connected_devices"
         settings:controller="com.android.settings.connecteddevice.TopLevelConnectedDevicesPreferenceController"/>
 
-      <com.android.settings.widget.HomepagePreference
-        android:fragment="com.arcana.grimoire.Dashboard"
-        android:key="top_level_grimoire"
-        android:order="-130"
-        android:title="@string/grimoire_title"
-        settings:controller="com.android.settings.grimoire.TopLevelArcanaSettingsPreferenceController"/>
    
     <com.android.settings.widget.HomepagePreference
         android:fragment="com.android.settings.DisplaySettings"
