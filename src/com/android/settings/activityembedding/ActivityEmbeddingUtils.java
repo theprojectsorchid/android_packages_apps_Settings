@@ -74,4 +74,13 @@ public class ActivityEmbeddingUtils {
         return currentTaskBounds.width() >= getMinCurrentScreenSplitWidthPx(activity)
                 && currentTaskBounds.height() >= getMinSmallestScreenSplitWidthPx(activity);
     }
+
+    /** Whether the screen meets two-pane resolution. */
+    public static boolean isTwoPaneResolution(Activity activity) {
+        final Rect currentTaskBounds =
+                ActivityTaskManager.getInstance().getTaskBounds(activity.getTaskId());
+
+        return currentTaskBounds.width() >= getMinCurrentScreenSplitWidthPx(activity)
+                && currentTaskBounds.height() >= getMinSmallestScreenSplitWidthPx(activity);
+    }
 }

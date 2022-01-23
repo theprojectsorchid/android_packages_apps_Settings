@@ -35,14 +35,17 @@ import android.os.UserManager;
 import android.text.TextUtils;
 import android.util.ArraySet;
 import android.util.FeatureFlagUtils;
+import android.provider.Settings;
 import android.util.Log;
 import android.view.View;
 import android.view.Window;
 import android.view.WindowManager;
 import android.widget.FrameLayout;
 import android.widget.ImageView;
+import android.widget.LinearLayout;
 import android.widget.Toolbar;
 import android.widget.TextView;
+import com.android.settings.Settings;
 
 import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentActivity;
@@ -53,10 +56,10 @@ import androidx.window.embedding.SplitRule;
 import com.android.internal.util.UserIcons;
 
 import com.android.settings.R;
-import com.android.settings.Settings;
+import com.android.settings.accounts.AvatarViewMixin;
+import android.provider.Settings;
 import com.android.settings.SettingsActivity;
 import com.android.settings.SettingsApplication;
-import com.android.settings.accounts.AvatarViewMixin;
 import com.android.settings.activityembedding.ActivityEmbeddingRulesController;
 import com.android.settings.activityembedding.ActivityEmbeddingUtils;
 import com.android.settings.core.CategoryMixin;
@@ -65,6 +68,8 @@ import com.android.settings.homepage.contextualcards.ContextualCardsFragment;
 import com.android.settings.overlay.FeatureFactory;
 import com.android.settingslib.Utils;
 import com.android.settingslib.core.lifecycle.HideNonSystemOverlayMixin;
+
+import com.google.android.material.appbar.CollapsingToolbarLayout;
 
 import java.net.URISyntaxException;
 import java.util.Set;
@@ -95,10 +100,12 @@ public class SettingsHomepageActivity extends FragmentActivity implements
     private View mHomepageView;
     private View mSuggestionView;
     private View mTwoPaneSuggestionView;
+    private boolean mIsTwoPaneLastTime;
     private CategoryMixin mCategoryMixin;
     private Set<HomepageLoadedListener> mLoadedListeners;
     private boolean mIsEmbeddingActivityEnabled;
-    private boolean mIsTwoPaneLastTime;
+
+    CollapsingToolbarLayout collapsing_toolbar;
 
     /** A listener receiving homepage loaded events. */
     public interface HomepageLoadedListener {
@@ -163,6 +170,39 @@ public class SettingsHomepageActivity extends FragmentActivity implements
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        Context context = getApplicationContext();
+
+        final boolean useStockLayout = Settings.System.getIntForUser(context.getContentResolver(),
+                Settings.System.USE_STOCK_LAYOUT, 0, UserHandle.USER_CURRENT) != 0;
+
+        setContentView(useStockLayout  ? R.layout.settings_homepage_container_stock
+                                       : R.layout.settings_homepage_container);
+
+        mIsEmbeddingActivityEnabled = ActivityEmbeddingUtils.isEmbeddingActivityEnabled(this);
+
+        updateHomepageBackground();
+        mLoadedListeners = new ArraySet<>();
+        final String highlightMenuKey = getHighlightMenuKey();
+        if (useStockLayout) {
+        mIsTwoPaneLastTime = ActivityEmbeddingUtils.isTwoPaneResolution(this);
+
+        mIsEmbeddingActivityEnabled = ActivityEmbeddingUtils.isEmbeddingActivityEnabled(this);
+        if (mIsEmbeddingActivityEnabled) {
+            final UserManager um = getSystemService(UserManager.class);
+            final UserInfo userInfo = um.getUserInfo(getUser().getIdentifier());
+            if (userInfo.isManagedProfile()) {
+                final Intent intent = new Intent(getIntent())
+                        .setClass(this, DeepLinkHomepageActivityInternal.class)
+                        .addFlags(Intent.FLAG_ACTIVITY_FORWARD_RESULT)
+                        .putExtra(EXTRA_USER_HANDLE, getUser());
+                intent.removeFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
+                startActivityAsUser(intent, um.getPrimaryUser().getUserHandle());
+                finish();
+                return;
+            }
+        }
+
+        setupEdgeToEdge();
         setContentView(R.layout.settings_homepage_container);
         mIsEmbeddingActivityEnabled = ActivityEmbeddingUtils.isEmbeddingActivityEnabled(this);
         mIsTwoPaneLastTime = ActivityEmbeddingUtils.isTwoPaneResolution(this);
@@ -175,9 +215,6 @@ public class SettingsHomepageActivity extends FragmentActivity implements
         mUserManager = context.getSystemService(UserManager.class);
 
         updateHomepageAppBar();
-        updateHomepageBackground();
-        mLoadedListeners = new ArraySet<>();
-
         initSearchBarView();
 
         avatarView = findViewById(R.id.account_avatar);
@@ -295,11 +332,17 @@ public class SettingsHomepageActivity extends FragmentActivity implements
     @Override
     public void onConfigurationChanged(Configuration newConfig) {
         super.onConfigurationChanged(newConfig);
+        Context context = getApplicationContext();
+        final boolean useStockLayout = Settings.System.getIntForUser(context.getContentResolver(),
+                Settings.System.USE_STOCK_LAYOUT, 0, UserHandle.USER_CURRENT) != 0;
+
+        if (useStockLayout) {
         final boolean isTwoPane = ActivityEmbeddingUtils.isTwoPaneResolution(this);
-        if (mIsTwoPaneLastTime != isTwoPane) {
-            mIsTwoPaneLastTime = isTwoPane;
-            updateHomepageAppBar();
-            updateHomepageBackground();
+            if (mIsTwoPaneLastTime != isTwoPane) {
+                mIsTwoPaneLastTime = isTwoPane;
+                updateHomepageAppBar();
+                updateHomepageBackground();
+            }
         }
     }
 

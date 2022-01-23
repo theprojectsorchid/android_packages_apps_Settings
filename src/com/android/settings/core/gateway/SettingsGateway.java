@@ -170,6 +170,7 @@ import com.android.settings.wifi.savedaccesspoints2.SavedAccessPointsWifiSetting
 import com.android.settings.wifi.tether.WifiTetherSettings;
 
 import com.epic.Anatolia;
+import com.crystal.mine.CrystalDashboard;
 
 public class SettingsGateway {
 
@@ -329,7 +330,8 @@ public class SettingsGateway {
             MediaManagementAppsDetails.class.getName(),
             // Anatolia Additions
             Anatolia.class.getName(),
-            RunningServices.class.getName()
+            RunningServices.class.getName(),
+            CrystalDashboard.class.getName()
     };
 
     public static final String[] SETTINGS_FOR_RESTRICTED = {
@@ -373,5 +375,6 @@ public class SettingsGateway {
             // Anatolia Additions
             Settings.AnatoliaSettingsActivity.class.getName(),
             Settings.DevRunningServicesActivity.class.getName(),
+            Settings.CrystalDashboardActivity.class.getName(),
     };
 }

@@ -15,6 +15,7 @@
 -->
 
 <resources>
+
     <dimen name="match_parent">-1px</dimen>
 
     <dimen name="device_memory_usage_button_width">16dip</dimen>
@@ -123,7 +124,7 @@
     <dimen name="search_bar_margin">16dp</dimen>
     <dimen name="search_bar_height">48dp</dimen>
     <dimen name="search_bar_text_size">20sp</dimen>
-    <dimen name="search_bar_corner_radius">24dp</dimen>
+    <dimen name="search_bar_corner_radius">26dp</dimen>
     <dimen name="search_bar_content_inset">56dp</dimen>
 
     <!-- Avatar -->
