@@ -31,8 +31,7 @@
         android:fragment="com.arcana.grimoire.Interfaces"
         android:key="top_level_grimoire"
         android:order="-160"
-        android:title="@string/core_system"
-        android:summary="@string/core_system_summary"
+        android:title="@string/grimoire_title"
         settings:controller="com.android.settings.grimoire.TopLevelArcanaSettingsPreferenceController"/>
    
     <com.android.settings.widget.HomepagePreference

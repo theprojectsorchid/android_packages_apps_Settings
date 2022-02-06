@@ -22,7 +22,6 @@
         <!-- theming -->
         <Preference
             android:key="theme_category"
-            android:icon="@drawable/op_ic_grimoire_themes_settings"
             android:title="@string/grimoire_title"
             android:fragment="com.arcana.grimoire.fragments.Interfaces" />
 </PreferenceScreen> 

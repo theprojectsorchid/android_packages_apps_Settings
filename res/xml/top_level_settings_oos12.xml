@@ -22,7 +22,7 @@
     android:title="Settings">
 
     <com.android.settingslib.widget.LayoutPreference
-        android:layout="@layout/usercard_oos12"
+        android:layout="@layout/usercard_aosp"
         android:fragment="com.android.settings.users.UserSettings"
         android:key="top_level_usercard"
         android:order="-170" />
@@ -49,11 +49,9 @@
 
       <com.android.settings.widget.HomepagePreference
         android:fragment="com.arcana.grimoire.Dashboard"
-        android:icon="@drawable/op_ic_homepage_tresdin"
         android:key="top_level_grimoire"
         android:order="-130"
-        android:title="@string/core_system"
-        android:summary="@string/core_system_summary"
+        android:title="@string/grimoire_title"
         settings:controller="com.android.settings.grimoire.TopLevelArcanaSettingsPreferenceController"/>
    
     <com.android.settings.widget.HomepagePreference
