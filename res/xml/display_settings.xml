@@ -178,6 +178,14 @@
             settings:keywords="@string/keywords_auto_rotate"
             settings:controller="com.android.settings.display.AutoRotatePreferenceController"/>
 
+    
+        <Preference
+            android:key="screen_resolution"
+            android:title="@string/screen_resolution_title"
+            android:fragment="com.android.settings.display.ScreenResolutionFragment"
+            settings:keywords="@string/keywords_screen_resolution"
+            settings:controller="com.android.settings.display.ScreenResolutionController"/>
+
         <SwitchPreference
             android:key="display_white_balance"
             android:icon="@drawable/ic_refresh"            
@@ -187,7 +195,6 @@
 
         <!-- Smooth display -->
         <SwitchPreference
-            android:key="peak_refresh_rate"
              android:icon="@drawable/ic_seekbar_plus"                       
             android:title="@string/max_refresh_rate_title"
             android:summary="@string/summary_placeholder"
