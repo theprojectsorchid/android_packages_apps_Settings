@@ -19,6 +19,7 @@ package com.android.settings.deviceinfo.firmwareversion;
 import android.content.Context;
 import android.os.Build;
 
+import com.android.settings.R;
 import com.android.settings.core.BasePreferenceController;
 
 public class FirmwareVersionPreferenceController extends BasePreferenceController {

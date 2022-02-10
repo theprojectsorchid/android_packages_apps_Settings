@@ -14,6 +14,21 @@
      limitations under the License.
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+<!-- Custom settings dashboard style -->
+    <string name="settings_dashboard_style_title">Settings Styles</string>
+    <string name="settings_dashboard_style_oos">Sushi(legacy OOS)</string>
+    <string name="settings_dashboard_style_rui">Oxygen/ColorOS</string>
+    <string name="settings_dashboard_style_arc">Arcane</string>
+    <string name="settings_dashboard_style_aosp">Stock pixel</string>
+    <string name="settings_dashboard_style_mt">Google material you</string>
+    <string name="settings_dashboard_style_card">Ayan\'s card ui</string>
+    <string name="settings_home_style_title">Searchbar style</string>
+    <string name="settings_home_style_summary">Use AOSP settings homepage style</string>
+    <string name="settings_user_card_title">Hide user card preference</string>
+    <string name="settings_user_card_summary">Hide the extra user profile card below the searchbar</string>
+    <string name="about_card_style_title">About phone style</string>
+    <string name="about_card_style_banner_one">Centered wallpaper banner</string>
+    <string name="about_card_style_banner_one_high">Centered wallpaper banner (big)</string>
 
     <!-- String for removal of sensitive info on about, depending on tap -->
     <string name="device_info_protected_single_press">Tap to show info</string>
