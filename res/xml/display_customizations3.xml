@@ -19,6 +19,12 @@
     android:key="display_customizations3"
 	 xmlns:app="http://schemas.android.com/apk/res-auto"
     android:title=" " >
+    <com.android.settingslib.widget.LayoutPreference
+        android:key="my_device_info_header"
+        android:order="-500"
+        android:layout="@layout/device_info_header"
+        android:selectable="false"
+        settings:isPreferenceVisible="true"/>
 
     <com.android.settingslib.widget.IllustrationPreference
         android:key="incallvibe"
