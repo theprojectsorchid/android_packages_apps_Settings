@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+
+    <!-- GMS switch -->
+    <string name="gms_category">GMS</string>
+    <string name="gms_enabled">Google services enabled</string>
+    <string name="gms_enabled_desc">Enable Google Mobile Services so you are able to use apps that rely on them.</string>
+    <string name="gms_disable_alert_title">Notice</string>
+    <string name="gms_disable_alert_message">You are now trying to disable Google Mobile Services. It\'s not recommended to disable them once they get enabled because this may lead to unknown problems to your currently installed apps. This action won\'t do a data wipe for related components, but you are most likely to find all login had lost after you re-enable them. So, pay attention to the Two Step Verification of your Google account that may forbit you from next login and make sure Find My Device has already been disabled to avoid any accidental situation. Next enabling may bring crashes to the components because they are still owning dirty data, so do a data wipe yourself if you are facing problems. DO NOT SPAM FOR HELP.</string>
+    <string name="gms_disable_alert_positive_btn">Ok, I agree</string>
+    <string name="gms_disable_alert_negative_btn">Cancel</string>
+
+</resources>
