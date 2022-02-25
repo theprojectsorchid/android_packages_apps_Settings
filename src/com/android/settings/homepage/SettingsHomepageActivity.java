@@ -45,6 +45,7 @@ import android.view.WindowManager;
 import android.widget.FrameLayout;
 import android.widget.ImageView;
 import android.widget.TextView;
+import android.widget.Button;
 import android.widget.Toolbar;
 import android.widget.TextView;
 import android.graphics.drawable.Drawable;
@@ -124,6 +125,7 @@ public class SettingsHomepageActivity extends FragmentActivity implements
     // A regular layout shows icons on homepage, whereas a simplified layout doesn't.
     private boolean mIsRegularLayout = true;
 
+    Button btnRavenDesk;
     ImageView avatarView, btnCorvusVersion, logoView;
     TextView crvsVersion, crvsMaintainer, crvsDevice, crvsBuildDate, crvsBuildType;
 
@@ -358,23 +360,42 @@ public class SettingsHomepageActivity extends FragmentActivity implements
         logoView.setImageAlpha(120);
         logoView.setPadding(0,10,0,10);
 
-        crvsDevice = bottomSheetDialog.findViewById(R.id.corvus_device);
-        crvsVersion = bottomSheetDialog.findViewById(R.id.corvus_version);
-        crvsMaintainer = bottomSheetDialog.findViewById(R.id.corvus_maintainer);
-        crvsBuildDate = bottomSheetDialog.findViewById(R.id.corvus_build_date);
-        crvsBuildType = bottomSheetDialog.findViewById(R.id.corvus_build_type);
+        crvsDevice = bottomSheetDialog.findViewById(R.id.arrow);
+        crvsVersion = bottomSheetDialog.findViewById(R.id.arrow_version);
+        crvsMaintainer = bottomSheetDialog.findViewById(R.id.arrow_maintainer);
+        crvsBuildDate = bottomSheetDialog.findViewById(R.id.arrow_build_date);
+        crvsBuildType = bottomSheetDialog.findViewById(R.id.arrow_build_type);
 
         String buildDate = SystemProperties.get("ro.build.date").substring(0,10);
 
         crvsDevice.setText(SystemProperties.get("ro.product.device") + "(" + SystemProperties.get("ro.product.model") + ")");
         crvsVersion.setText("Corvus_v"
-                + SystemProperties.get("ro.corvus.build.version")
+                + SystemProperties.get("ro.arrow.build.version")
                 + "-"
-                + SystemProperties.get("ro.corvus.codename"));
+                + SystemProperties.get("ro.arrow.codename"));
         crvsVersion.setSelected(true);
-        crvsMaintainer.setText(SystemProperties.get("ro.corvus.maintainer"));
+        crvsMaintainer.setText(SystemProperties.get("ro.arrow.maintainer"));
         crvsBuildDate.setText(buildDate);
-        crvsBuildType.setText(SystemProperties.get("ro.corvus.build.type"));
+        String buildType = SystemProperties.get("ro.arrow.build.type");
+        crvsBuildType.setText(buildType);
+
+        // Initialise intent for Ravendesk
+        btnRavenDesk = bottomSheetDialog.findViewById(R.id.btn_ravendesk);
+
+        if(buildType.equals("Official")){
+          btnRavenDesk.setVisibility(View.VISIBLE);
+        }
+
+        assert btnRavenDesk != null;
+        btnRavenDesk.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent nIntent = new Intent(Intent.ACTION_MAIN);
+                nIntent.setClassName("com.android.settings",
+                        "com.android.settings.Settings$UserSettingsActivity");
+                startActivity(nIntent);
+            }
+        });
 
         bottomSheetDialog.show();
     }

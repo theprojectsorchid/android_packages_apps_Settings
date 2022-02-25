@@ -285,7 +285,7 @@ public class TopLevelSettings extends DashboardFragment implements
                 preference.setLayoutResource(R.layout.top_level_preference_wellbeing_mt);
             }
             if (key.equals("top_level_userinfo")){
-                preference.setLayoutResource(R.layout.usercard_mt);
+                preference.setLayoutResource(R.layout.top_level_preference_mt_alone);
             }   
 	}
     }
