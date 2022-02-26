@@ -63,6 +63,7 @@
     <color name="settings_accent_color">@color/oneplus_accent_color</color>
     <color name="settingsHeaderColor">@*android:color/accent_device_default_dark</color>
 
+
     <!-- Icon tint color for battery usage system icon -->
     <color name="battery_usage_system_icon_color">@android:color/white</color>
     <color name="card_bg">@android:color/system_neutral1_800</color>
