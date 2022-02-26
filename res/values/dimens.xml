@@ -109,12 +109,6 @@
     <dimen name="actionbar_contentInsetStart">16dp</dimen>
     <dimen name="actionbar_subsettings_contentInsetStart">72dp</dimen>
 
-    <!-- Dashboard image tile size -->
-    <dimen name="dashboard_tile_image_size">36dp</dimen>
-
-    <!-- Dashboard foreground image size -->
-    <dimen name="dashboard_tile_foreground_image_size">24dp</dimen>
-
     <!-- Dashboard foreground image inset (from background edge to foreground edge) -->
     <dimen name="dashboard_tile_foreground_image_inset">6dp</dimen>
 
@@ -456,6 +450,7 @@
     <dimen name="op_control_icon_size_indicator">16.0dip</dimen>
     
     <!-- Card Layout -->
+
      <dimen name="card_margin_start">16.0dp</dimen>
      <dimen name="card_margin_end">16.0dp</dimen>
      <dimen name="card_padding_end">70.0dp</dimen>
@@ -466,4 +461,5 @@
      <dimen name="top_pref_start">60dp</dimen>
      <dimen name="card_radius">12dp</dimen>
     
+
 </resources>
