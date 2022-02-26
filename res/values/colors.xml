@@ -226,7 +226,10 @@
     <color name="oneplus_homepage_icon_background">#ffffff</color>
     <color name="oneplus_accent_color">@color/settingsHeaderColor</color>
     <color name="settings_accent_color">@color/oneplus_accent_color</color>
-    <color name="user_crd_bg">#00000000</color>
+
+
+    <color name="user_crd_bg">#f8f8f8</color>
+
     <color name="disabled_text_color">#66000000</color>
     <color name="transparent">#00000000</color>
     <color name="wave_homepage_icon_background">@*android:color/system_neutral1_50</color>
@@ -234,4 +237,5 @@
     <!-- Icon tint color for battery usage system icon -->
     <color name="battery_usage_system_icon_color">?android:attr/textColorPrimary</color>
     <color name="card_bg">@android:color/system_neutral1_0</color>
+
 </resources>
