@@ -21,8 +21,8 @@
     android:key="top_level_settings">
 	
     <com.android.settingslib.widget.LayoutPreference
-        android:key="pepsi_animation"
-        android:layout="@layout/pepsi_animation"
+        android:key="welcome_animation"
+        android:layout="@layout/welcome_animation"
         android:order="-180" />
 
     <com.android.settingslib.widget.LayoutPreference

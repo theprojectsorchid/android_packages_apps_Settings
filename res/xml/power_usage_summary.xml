@@ -17,14 +17,15 @@
 <PreferenceScreen
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:settings="http://schemas.android.com/apk/res-auto"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:key="power_usage_summary_screen"
     android:title="@string/power_usage_summary_title"
     settings:keywords="@string/keywords_battery">
 
 
     <com.android.settingslib.widget.LayoutPreference
-        android:key="bluetooth_animation"
-        android:layout="@layout/bluetooth_animation" />
+        android:key="battery_animation"
+        android:layout="@layout/battery_animation" />
 
     <com.android.settingslib.widget.UsageProgressBarPreference
         android:key="battery_header"

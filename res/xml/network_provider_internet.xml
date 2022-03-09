@@ -26,9 +26,6 @@
         android:order="-999"/>
 
 
-    <com.android.settingslib.widget.LayoutPreference
-        android:key="bluetooth_animation"
-        android:layout="@layout/bluetooth_animation" />
         
     <com.android.settingslib.RestrictedPreference
         android:fragment="com.android.settings.network.NetworkProviderSettings"
