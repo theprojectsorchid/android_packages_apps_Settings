@@ -58,6 +58,7 @@
             android:title="@string/lockscreen_settings_title"
             android:fragment="com.android.settings.security.LockscreenDashboardFragment"
             settings:keywords="@string/keywords_ambient_display_screen"
+            android:visibility="gone" 
             settings:controller="com.android.settings.security.screenlock.LockScreenPreferenceController"/>
 
         <com.android.settingslib.RestrictedPreference

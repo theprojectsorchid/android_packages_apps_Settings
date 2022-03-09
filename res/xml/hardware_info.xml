@@ -29,6 +29,18 @@
         android:selectable="false" />
 		
 
+   <com.android.settingslib.widget.LayoutPreference
+        android:key="pepsi_animation"
+        android:layout="@layout/pepsi_animation" />
+		
+	<!-- About us 
+    <Preference
+        android:key="arcana_about_info"
+        android:order="1"
+        android:title="@string/arcana_about_info"
+        android:summary="@string/arcana_about_summary"
+        android:fragment="com.android.settings.AboutUs" />-->
+
     <!-- Rom info 
     <com.android.settingslib.widget.LayoutPreference
         android:key="rom_info"

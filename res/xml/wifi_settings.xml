@@ -22,8 +22,8 @@
 
 
     <com.android.settingslib.widget.LayoutPreference
-        android:key="bluetooth_animation"
-        android:layout="@layout/bluetooth_animation" />
+        android:key="wifi_settings_animation"
+        android:layout="@layout/wifi_settings_animation" />
 
     <com.android.settings.wifi.LinkablePreference
         android:key="wifi_status_message"/>

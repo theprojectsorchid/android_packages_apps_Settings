@@ -21,8 +21,8 @@
 
 
     <com.android.settingslib.widget.LayoutPreference
-        android:key="bluetooth_animation"
-        android:layout="@layout/bluetooth_animation" />
+        android:key="configure_notification_settings_animation"
+        android:layout="@layout/configure_notification_settings_animation" />
         
     <PreferenceCategory
         android:key="general_notifications_category"

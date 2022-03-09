@@ -21,7 +21,6 @@
     android:title="@string/storage_settings"
     settings:keywords="@string/keywords_storage">
 	
-	
     <com.android.settingslib.widget.LayoutPreference
         android:key="privacy_animation"
         android:layout="@layout/privacy_animation" />
@@ -70,6 +69,7 @@
         android:key="pref_audio"
         android:title="@string/storage_audio"
         android:icon="@drawable/ic_media_stream"
+        android:visibility="gone"
         android:order="103"/>
     <com.android.settings.deviceinfo.StorageItemPreference
         android:key="pref_apps"
@@ -80,6 +80,7 @@
         android:key="pref_games"
         android:title="@string/storage_games"
         android:icon="@drawable/ic_videogame_vd_theme_24"
+        android:visibility="gone"
         android:order="105"/>
     <com.android.settings.deviceinfo.StorageItemPreference
         android:key="pref_documents_and_other"
@@ -95,6 +96,7 @@
         android:key="pref_trash"
         android:title="@string/storage_trash"
         android:icon="@drawable/ic_trash_can"
+        android:visibility="gone"
         android:order="108"/>
     <!-- Preference order 100~200 are 'ONLY' for storage category preferences above. -->
     <PreferenceCategory

@@ -65,6 +65,9 @@
     <string name="doze_on_charge_title">Always on when charging</string>
     <string name="doze_on_charge_summary">Show doze screen all the time when charging</string>
 
+
+    <string name="security_settings_udfps_tip_fingerprint_help">OrchidOs Idle Manager</string>
+    <string name="security_settings_udfps_side_fingerprint_help">OrchidOs Idle Manager</string>
    <!-- Doze on double tap -->
     <string name="double_tap_title">Double tap</string>
     <string name="doze_double_tap_title">Double tap to check phone</string>
@@ -194,18 +197,18 @@
         <item quantity="other">You are now <xliff:g id="step_count">%1$d</xliff:g> steps away from being a developer.</item>
     </plurals>
     <!-- [CHAR LIMIT=NONE] Device Info screen. Confirmation that developer settings are enabled -->
-    <string name="show_dev_on">Warning Dev Settings</string>
+    <string name="show_dev_on">Warning</string>
     <!-- [CHAR LIMIT=NONE] Device Info screen. Okay we get it, stop pressing, you already have it on -->
-    <string name="show_dev_already">Danger settings enabled.</string>
+    <string name="show_dev_already">Danger</string>
 
     <!-- [CHAR LIMIT=NONE] Toast message when user attemps to launch developer otions before enabling it. -->
-    <string name="dev_settings_disabled_warning">Danger!.</string>
+    <string name="dev_settings_disabled_warning">Blocked</string>
 
     <!-- Category headings in left-pane header menu --> <skip />
     <!-- Settings main menu category heading. Wireless and networks (Wi-Fi, Bluetooth, data usage...). [CHAR LIMIT=40] -->
     <string name="header_category_wireless_networks">Wireless &amp; networks</string>
     <!-- Settings main menu category heading. System (Updates, data, accessibility, about phone). [CHAR LIMIT=40] -->
-    <string name="header_category_system">Services</string>
+    <string name="header_category_system">System Services</string>
 
     <!-- Phone Info screen. Status label.  Used for diagnostic info screens, precise translation isn't needed -->
     <string name="radioInfo_service_in">In Service</string>
@@ -4665,9 +4668,9 @@
     <!-- Main settings screen, setting summary for the user to go into the About phone screen-->
     <string name="about_settings_summary">View legal info, status, software version</string>
     <!-- About phone settings screen, setting option name to go to dialog that shows legal info -->
-    <string name="legal_information">Legal information</string>
+    <string name="legal_information">Open Source info</string>
     <!-- About phone settings screen, setting option name to see a list of contributors -->
-    <string name="contributors_title">Contributors</string>
+    <string name="contributors_title">Core Contributors info</string>
     <!-- About phone settings screen, setting option name to show Manual [CHAR LIMIT=25] -->
     <string name="manual">Manual</string>
     <!-- About phone settings screen, setting option name to show regulatory labels [CHAR LIMIT=25] -->
@@ -4690,7 +4693,7 @@
     <!-- About phone settings screen, setting option name to see licensing info for WebView component. [CHAR LIMIT=35] -->
     <string name="webview_license_title">System WebView License</string>
     <!-- About phone settings screen, setting option name to see wallpapers attributions -->
-    <string name="wallpaper_attributions">Wallpapers</string>
+    <string name="wallpaper_attributions">Backgrounds</string>
     <!-- About phone settings screen, setting option name to see wallpapers attributions values -->
     <string name="wallpaper_attributions_values">Satellite imagery providers:\n©2014 CNES / Astrium, DigitalGlobe, Bluesky</string>
 
@@ -8482,7 +8485,7 @@
 
     <!--Dashboard strings-->
     <!-- Text to describe the dashboard fragment title [CHAR LIMIT=16] -->
-    <string name="dashboard_title">Settings</string>
+    <string name="dashboard_title">Home</string>
     <!-- Text to describe the items to be expanded as suggested settings [CHAR LIMIT=none] -->
     <plurals name="settings_suggestion_header_summary_hidden_items">
         <item quantity="one">Show %d hidden item</item>
@@ -12722,9 +12725,9 @@
     <string name="my_device_info_device_name_preference_title">Device name</string>
 
     <!-- Title for preference category showing the name of basic info. [CHAR LIMIT=60]-->
-    <string name="my_device_info_basic_info_category_title">Basic info</string>
+    <string name="my_device_info_basic_info_category_title">Its what I like</string>
     <!-- Title for preference category showing the name of legal & regulatory. [CHAR LIMIT=60]-->
-    <string name="my_device_info_legal_category_title">Legal &amp; regulatory</string>
+    <string name="my_device_info_legal_category_title">System Info</string>
     <!-- Title for preference category showing the name of device details. [CHAR LIMIT=60]-->
     <string name="my_device_info_device_details_category_title">Device details</string>
     <!-- Title for preference category showing the name of device identifiers. [CHAR LIMIT=60]-->
@@ -13787,7 +13790,7 @@
     <!-- Brightness category name in Display Settings [CHAR LIMIT=none] -->
     <string name="category_name_brightness">Brightness</string>
     <!-- Lock screen category name in Display Settings [CHAR LIMIT=none] -->
-    <string name="category_name_lock_display">Lock display</string>
+    <string name="category_name_lock_display">Screen timeout</string>
     <!-- Appearance category name in Display Settings [CHAR LIMIT=none] -->
     <string name="category_name_appearance">Appearance</string>
     <!-- Color category name in Display Settings [CHAR LIMIT=none] -->
