@@ -50,6 +50,12 @@
             settings:useAdminDisabledSummary="true"
             settings:userRestriction="no_config_brightness"/>
  
+        <Preference
+            android:key="bslider"
+            android:title="@string/qs_brightness_slider_title"
+            android:icon="@drawable/rr_brightness_slider_icon"
+            android:fragment="com.android.settings.awaken.fragments.DisplayCustomizations5"
+            settings:keywords="@string/keywords_display_brightness_level"/>    
 
         <com.android.settings.display.AutoBrightnessPreference
             android:key="auto_brightness_entry"
@@ -247,4 +253,6 @@
         android:fragment="com.android.settings.security.ScreenPinningSettings"
         settings:keywords="@string/keywords_app_pinning" />
     </PreferenceCategory>
+
+     
 </PreferenceScreen>

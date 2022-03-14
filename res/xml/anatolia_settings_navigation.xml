@@ -16,6 +16,63 @@
 <PreferenceScreen
         xmlns:android="http://schemas.android.com/apk/res/android"
         xmlns:settings="http://schemas.android.com/apk/res/com.android.settings"
-	android:title="@string/navbar_title">
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:title=" ">
 
+     <com.android.settingslib.widget.IllustrationPreference
+        android:key="privacyextra"
+        settings:searchable="false"
+        android:order="-999"
+        app:lottie_rawRes="@raw/incall"/>
+
+  <com.android.settingslib.widget.TopIntroPreference
+            android:key="privacy_bubbles_desc"
+            android:order="-997"
+            android:title="@string/privacy_bubble_setting_description"/>
+    
+    
+     <Preference
+            android:key="gmsmode"
+            android:title="@string/gmsmode"
+            android:summary="@string/gms_summary"
+            android:icon="@drawable/rr_assist_icon"
+            android:fragment="com.android.settings.awaken.fragments.DisplayCustomizations4"
+             settings:keywords="@string/keywords_font_size"/>
+
+    <!-- Camera toggle -->
+     <com.android.settingslib.RestrictedSwitchPreference
+        android:key="privacy_camera_toggle"
+        android:icon="@drawable/ic_settings_camera"
+        android:title="@string/camera_toggle_title"
+        android:summary="@string/cam_toggle_description"
+        settings:controller="com.android.settings.privacy.CameraToggleController"/>
+
+    <!-- Microphone toggle -->
+     <com.android.settingslib.RestrictedSwitchPreference
+        android:key="privacy_mic_toggle"
+        android:icon="@drawable/rr_mic_icon"
+        android:title="@string/mic_toggle_title"
+        android:summary="@string/mic_toggle_description"
+        settings:controller="com.android.settings.privacy.MicToggleController"/>
+    
+    <!-- Clipboard access notifications -->
+    <SwitchPreference
+        android:key="show_clip_access_notification"
+         android:icon="@drawable/rr_misc_icon"
+        android:title="@string/show_clip_access_notification"
+        android:summary="@string/show_clip_access_notification_summary"
+        settings:controller="com.android.settings.privacy.ShowClipAccessNotificationPreferenceController"/>
+    
+    <com.arrow.support.preferences.SecureSettingSwitchPreference
+        android:key="window_ignore_secure"
+        android:title="@string/ignore_window_secure_title"
+        android:summary="@string/ignore_window_secure_summary"
+        android:defaultValue="false"/>
+     <SwitchPreference
+        android:key="enable_location_privacy_indicator"
+        android:title="@string/location_privacy_title"
+        android:summary="@string/location_privacy_summary"
+        android:defaultValue="true" />
+
+    
 </PreferenceScreen>

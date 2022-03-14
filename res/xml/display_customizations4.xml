@@ -17,6 +17,33 @@
 <PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:settings="http://schemas.android.com/apk/res/com.android.settings"
     android:key="display_customizations4"
-    android:title=" ">
+    	 xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:title=" " >
+
+    <com.android.settingslib.widget.IllustrationPreference
+        android:key="Gmscontrols"
+        settings:searchable="false"
+        android:order="-999"
+        app:lottie_rawRes="@raw/gms"/>
+
+  <com.android.settingslib.widget.TopIntroPreference
+            android:key="gms_bubbles_desc"
+            android:order="-997"
+            android:title="@string/gms_desc"/>
+
+
+    <PreferenceCategory
+        android:title="@string/gms_category"
+        android:layout="@layout/custom_preference_category2"
+        android:order="25">
+
+        <SwitchPreference
+            android:key="gms_switch"
+        android:defaultValue="false"
+            android:title="@string/gms_enabled"
+            android:summary="@string/gms_enabled_desc"
+            settings:controller="com.android.settings.applications.GmsSwitchPreferenceController"/>
+
+    </PreferenceCategory>
 
 </PreferenceScreen>
