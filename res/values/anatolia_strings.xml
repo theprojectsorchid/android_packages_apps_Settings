@@ -99,4 +99,10 @@
          <!-- Arcane Idle Manager -->
     <string name="arcane_idle_manager_title">Arcana Idle Manager</string>
     <string name="arcane_idle_manager_summary">Stop all non-essential background processes when the device is idle</string>
+
+
+    <!-- Location Privacy Indicator -->
+    <string name="location_privacy_title"> Show Location Privacy Indicator</string>
+    <string name="location_privacy_summary">Enable - Disable location privacy indicator in qs and sb</string>
+
 </resources>
