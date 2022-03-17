@@ -1,5 +1,6 @@
 /*
  * Copyright (C) 2018 The Android Open Source Project
+ *               2022 CorvusROM
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -20,6 +21,10 @@ import static android.provider.Settings.ACTION_SETTINGS_EMBED_DEEP_LINK_ACTIVITY
 import static android.provider.Settings.EXTRA_SETTINGS_EMBEDDED_DEEP_LINK_HIGHLIGHT_MENU_KEY;
 import static android.provider.Settings.EXTRA_SETTINGS_EMBEDDED_DEEP_LINK_INTENT_URI;
 
+import static com.android.settings.SettingsActivity.EXTRA_USER_HANDLE;
+
+import androidx.annotation.NonNull;
+import androidx.annotation.Nullable;
 import android.animation.LayoutTransition;
 import android.app.ActivityManager;
 import android.app.settings.SettingsEnums;
@@ -39,11 +44,22 @@ import android.widget.ImageView;
 import android.widget.Toolbar;
 import android.widget.TextView;
 
+import androidx.viewpager.widget.ViewPager;
+import com.google.android.material.tabs.TabLayout;
+
+import androidx.core.graphics.Insets;
+import androidx.core.view.ViewCompat;
+import androidx.core.view.WindowCompat;
+import androidx.core.view.WindowInsetsCompat;
 import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentActivity;
 import androidx.fragment.app.FragmentManager;
 import androidx.fragment.app.FragmentTransaction;
+import androidx.fragment.app.FragmentPagerAdapter;
+import androidx.window.embedding.SplitController;
 import androidx.window.embedding.SplitRule;
+
+import com.android.settings.corvus.CorvusSettings;
 
 import com.android.settings.R;
 import com.android.settings.Settings;
@@ -63,6 +79,8 @@ import java.net.URISyntaxException;
 import java.util.Set;
 import java.util.*;
 import java.lang.*;
+
+import java.util.ArrayList;
 
 /** Settings homepage activity */
 public class SettingsHomepageActivity extends FragmentActivity implements
@@ -89,7 +107,16 @@ public class SettingsHomepageActivity extends FragmentActivity implements
     private CategoryMixin mCategoryMixin;
     private Set<HomepageLoadedListener> mLoadedListeners;
     private boolean mIsEmbeddingActivityEnabled;
-    private boolean mIsTwoPaneLastTime;
+    private boolean mIsTwoPane;
+    private TabLayout mTabLayout;
+    private ViewPager mViewPager;
+    private int[] tabIcons = {
+            R.drawable.tab_ic_device,
+            R.drawable.tab_ic_corvus
+    };
+    
+    // A regular layout shows icons on homepage, whereas a simplified layout doesn't.
+    private boolean mIsRegularLayout = true;
 
     /** A listener receiving homepage loaded events. */
     public interface HomepageLoadedListener {
@@ -157,6 +184,7 @@ public class SettingsHomepageActivity extends FragmentActivity implements
         final View appBar = findViewById(R.id.app_bar_container);
         appBar.setMinimumHeight(getSearchBoxHeight());
         initHomepageContainer();
+        setupTabIcons();
         updateHomepageAppBar();
         updateHomepageBackground();
         mLoadedListeners = new ArraySet<>();
@@ -453,16 +481,27 @@ public class SettingsHomepageActivity extends FragmentActivity implements
     }
 
     private void reloadHighlightMenuKey() {
-        mMainFragment.getArguments().putString(SettingsActivity.EXTRA_FRAGMENT_ARG_KEY,
+        mMainFragment.getArguments().putStr
+        ing(SettingsActivity.EXTRA_FRAGMENT_ARG_KEY,
                 getHighlightMenuKey());
         mMainFragment.reloadHighlightMenuKey();
     }
+    
+    private void setupTabIcons() {
+        mTabLayout.getTabAt(0).setIcon(tabIcons[0]);
+        mTabLayout.getTabAt(1).setIcon(tabIcons[1]);
+    }
 
     private void initHomepageContainer() {
-        final View view = findViewById(R.id.homepage_container);
-        // Prevent inner RecyclerView gets focus and invokes scrolling.
-        view.setFocusableInTouchMode(true);
-        view.requestFocus();
+        mTabLayout = findViewById(R.id.tab_layout);
+        mViewPager = findViewById(R.id.viewPager);
+
+        mTabLayout.setupWithViewPager(mViewPager);
+        // setupTabTextColor(mTabLayout);
+        ViewPagerAdapter viewPagerAdapter = new ViewPagerAdapter(getSupportFragmentManager(), FragmentPagerAdapter.BEHAVIOR_RESUME_ONLY_CURRENT_FRAGMENT);
+        viewPagerAdapter.addFragment(new TopLevelSettings(), "Device Settings");
+        viewPagerAdapter.addFragment(new CorvusSettings(), "Corvus Settings");
+        mViewPager.setAdapter(viewPagerAdapter);
     }
 
     private void updateHomepageAppBar() {
@@ -482,5 +521,37 @@ public class SettingsHomepageActivity extends FragmentActivity implements
         final int searchBarHeight = getResources().getDimensionPixelSize(R.dimen.search_bar_height);
         final int searchBarMargin = getResources().getDimensionPixelSize(R.dimen.search_bar_margin);
         return searchBarHeight + searchBarMargin * 2;
+    }
+    
+    static class ViewPagerAdapter extends FragmentPagerAdapter {
+
+        private final ArrayList<Fragment> fragmentArrayList = new ArrayList<>();
+        private final ArrayList<String> fragmentTitle = new ArrayList<>();
+
+        public ViewPagerAdapter(@NonNull FragmentManager fm, int behavior) {
+            super(fm, behavior);
+        }
+
+        @NonNull
+        @Override
+        public Fragment getItem(int position) {
+            return fragmentArrayList.get(position);
+        }
+
+        @Override
+        public int getCount() {
+            return fragmentArrayList.size();
+        }
+
+        public void addFragment(Fragment fragment, String title){
+            fragmentArrayList.add(fragment);
+            fragmentTitle.add(title);
+        }
+
+        @Nullable
+        @Override
+        public CharSequence getPageTitle(int position) {
+            return fragmentTitle.get(position);
+        }
     }
 }
