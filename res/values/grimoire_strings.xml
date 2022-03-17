@@ -37,5 +37,29 @@
 
     <string name="screentimeout_display_settings">Screen saver and timeout</string>
         <string name="wallpaper_settings_summary">wallpaper and style settings</string>
+       <string name="system_interface_category_title">System Interface</string>
+    
+    <!-- [CHAR_LIMIT=NONE] Developer Settings: Title of the settings category for theme overlays. -->
+    <string name="theme_customization_category">Theming</string>
+    
+    <!-- [CHAR_LIMIT=NONE] Developer Settings: Label for the option that turns off customizations for a given category.-->
+    <string name="theme_customization_device_default">Device default</string>
+    
+   
+    <!-- Custom settings dashboard style -->
+    <string name="settings_dashboard_style_title">System Settings Layout</string>
+    <string name="settings_dashboard_style_gms">Default</string>
+    <string name="settings_dashboard_style_aosp">Orchidlive Material</string>
+    <string name="settings_dashboard_style_oos11_gms">Orchid Material Plain</string>
+    <string name="settings_dashboard_style_oos11_microg">Sparkle</string>
+    <string name="settings_dashboard_style_oos12_gms">OOS Plain</string>
+    <string name="settings_dashboard_style_oos12_microg">Cactus Wave</string>
+    <string name="settings_layout_category_title">Settings UI interface</string>
+    <string name="settings_dashboard_style_mt">Orchidlive Material</string>
 
+    <!-- Wp zoom -->
+    <string name="use_wp_zoom_title">Enable wallpaper Zoom</string>
+    <string name="use_wp_zoom_summary">Reboot is required after enabling.</string>
+    
+    <!-- Custom settings dashboard style -->
 </resources> 
