@@ -55,7 +55,7 @@ import com.epic.support.preferences.CustomSeekBarPreference;
 import com.epic.support.preferences.SystemSettingSwitchPreference;
 import com.epic.support.preferences.SystemSettingSeekBarPreference;
 import com.epic.support.preferences.SystemSettingListPreference;
-import com.android.internal.util.arcana.ArcanaUtils;
+import com.android.internal.util.arrow.ArrowUtils;
 
 @SearchIndexable(forTarget = SearchIndexable.ALL & ~SearchIndexable.ARC)
 public class Interfaces extends SettingsPreferenceFragment implements OnPreferenceChangeListener {
