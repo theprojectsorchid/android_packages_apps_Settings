@@ -497,4 +497,7 @@
     <dimen name="dashboard_tile_foreground_image_size">24dp</dimen>
 
 
+
+    <dimen name="default_margin">16dp</dimen>
+    <dimen name="default_padding">16dp</dimen>
 </resources>
