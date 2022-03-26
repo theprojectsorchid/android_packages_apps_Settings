@@ -12,14 +12,7 @@
      limitations under the License.
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
-   <!-- GMS switch -->
-    <string name="gms_category">GMS</string>
-    <string name="gms_enabled">Enable Google services</string>
-    <string name="gms_enabled_desc">Disable Google services may help extend the battery life, but third-party apps relying on GMS components will not work properly.</string>
-    <string name="gms_disable_alert_title">Notice</string>
-    <string name="gms_disable_alert_message">You are trying to disable Google services. Once you\'ve enabled these services, it\'s strongly not recommended to disable them again as this may lead to issues with your currently installed apps. Although this toggle doesn\'t touch any data, you\'ll still be automatically signed out of this device. Thus, make sure that "Find My Device" has been disabled before you proceed. And if necessary, disable 2-step verification on your Google account as well. Perform a factory reset yourself if you run into any issues. DO NOT SPAM FOR HELP.</string>
-    <string name="gms_disable_alert_positive_btn">OK, I agree</string>
-    <string name="gms_disable_alert_negative_btn">Cancel</string>
+
       <!-- Quick Settings brightness slider -->
     <string name="qs_brightness_slider_category">Brightness slider</string>
     <string name="qs_brightness_slider_title">Show brightness slider</string>
@@ -107,4 +100,15 @@
     <string name="status_bar_logo_style_gender_female">Female</string>
     <string name="status_bar_logo_style_gender_male_female">Male &amp; female</string>
     <string name="status_bar_logo_style_guitar_electric">Electric guitar</string>
+
+  
+    <!-- Custom settings dashboard style -->
+    <string name="settings_dashboard_style_title">dashboard layout</string>
+    <string name="settings_dashboard_style_aosp">AOSP</string>
+    <string name="settings_dashboard_style_oos11_gms">OOS11 Gapps</string>
+    <string name="settings_dashboard_style_oos11_microg">OOS11 MicroG</string>
+    <string name="settings_dashboard_style_oos12_gms">OOS12 Gapps</string>
+    <string name="settings_dashboard_style_oos12_microg">OOS12 MicroG</string>
+    <string name="settings_layout_category_title">Settings UI interface</string>
+
 </resources> 
