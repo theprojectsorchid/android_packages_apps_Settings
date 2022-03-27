@@ -13691,4 +13691,9 @@
     <string name="data_monitor_app_summary">Enhanched Data Monitor</string>
     <string name="data_monitor_app">Data Monitor</string>
 
+    <string name="privileged_euicc_management_title">Enable privileged eSIM management</string>
+    <string name="privileged_euicc_management_summary">Requires Sandboxed Google Play installation</string>
+
+    <string name="exec_spawn_title">Enable secure app spawning</string>
+    <string name="exec_spawn_summary">Launch apps in a more secure way than Android which takes slightly longer and increases memory usage by app processes.</string>
 </resources>
