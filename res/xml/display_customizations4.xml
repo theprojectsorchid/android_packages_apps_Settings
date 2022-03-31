@@ -73,5 +73,9 @@
         android:icon="@drawable/rr_app_pref_icon"
         android:title="@string/ignore_window_secure_title"
         android:defaultValue="false"/>
-
+    <com.arrow.support.preferences.SecureSettingSwitchPreference
+        android:key="nusantara_clear_theme"
+        android:title="@string/nusantara_clear_theme_title"
+        android:summary="@string/nusantara_clear_theme_summary"
+        android:defaultValue="false" />
 </PreferenceScreen>
