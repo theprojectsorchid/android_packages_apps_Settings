@@ -95,6 +95,13 @@
             android:targetPackage="com.aurora.services" />
  </Preference>
 
+    <!-- Hidden apps -->
+    <Preference
+        android:key="hidden_apps"
+        android:title="@string/hidden_apps_title"
+        android:summary="@string/hidden_apps_summary"
+        android:persistent="false"
+        android:fragment="com.android.settings.display.HiddenAppSettingsFragment" />
     <Preference
         android:key="default_apps"
         android:layout="@layout/xd_pref_card_midsummary"
