@@ -107,4 +107,8 @@
     <string name="status_bar_logo_style_gender_female">Female</string>
     <string name="status_bar_logo_style_gender_male_female">Male &amp; female</string>
     <string name="status_bar_logo_style_guitar_electric">Electric guitar</string>
+
+    <!-- Hidden apps -->
+    <string name="hidden_apps_title">Hidden apps</string>
+    <string name="hidden_apps_summary">Applications that should be hidden from launcher. Requires a launcher restart for changes to take effect</string>
 </resources> 

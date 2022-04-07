@@ -74,5 +74,5 @@
         android:summary="@string/location_privacy_summary"
         android:defaultValue="true" />
 
-    
+           
 </PreferenceScreen>
