@@ -108,6 +108,7 @@ public class MyDeviceInfoFragment extends DashboardFragment
         controllers.add(new FccEquipmentIdPreferenceController(context));
         controllers.add(new UptimePreferenceController(context, lifecycle));
 	controllers.add(new BlazeInfoPreferenceController(context));
+        controllers.add(new SyberiaInfoPreferenceController(context));
         return controllers;
     }
 
