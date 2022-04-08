@@ -18,4 +18,9 @@
         xmlns:settings="http://schemas.android.com/apk/res/com.android.settings"
 	android:title="@string/extras_title">
 
+    <com.android.settingslib.widget.LayoutPreference
+    android:key="syberia_info"
+    android:layout="@layout/about_phone_info"
+    android:selectable="false" />
+
 </PreferenceScreen>
