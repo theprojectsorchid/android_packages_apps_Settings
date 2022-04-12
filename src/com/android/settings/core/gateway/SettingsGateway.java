@@ -96,6 +96,7 @@ import com.android.settings.fuelgauge.AdvancedPowerUsageDetail;
 import com.android.settings.fuelgauge.PowerUsageSummary;
 import com.android.settings.fuelgauge.batterysaver.BatterySaverScheduleSettings;
 import com.android.settings.fuelgauge.batterysaver.BatterySaverSettings;
+import com.android.settings.fuelgauge.sleepmode.SleepMode;
 import com.android.settings.gestures.AssistGestureSettings;
 import com.android.settings.gestures.DoubleTapPowerSettings;
 import com.android.settings.gestures.DoubleTapScreenSettings;
@@ -329,7 +330,8 @@ public class SettingsGateway {
             MediaManagementAppsDetails.class.getName(),
             // Anatolia Additions
             Anatolia.class.getName(),
-            RunningServices.class.getName()
+            RunningServices.class.getName(),
+            SleepMode.class.getName()
     };
 
     public static final String[] SETTINGS_FOR_RESTRICTED = {
@@ -373,5 +375,6 @@ public class SettingsGateway {
             // Anatolia Additions
             Settings.AnatoliaSettingsActivity.class.getName(),
             Settings.DevRunningServicesActivity.class.getName(),
+            Settings.SleepModeActivity.class.getName(),
     };
 }
