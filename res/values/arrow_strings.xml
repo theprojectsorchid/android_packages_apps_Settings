@@ -296,4 +296,13 @@
     <string name="qs_transparency_summary">Choose how transparent you want your QS Panel to be (Requires SystemUI)</string>
          <!-- sleep time -->
     <string name="status_sleep_time">sleep time</string>
+
+        <!-- HeadsUp notifications importance threshold -->
+    <!--string name="hun_importance_none">None</string-->
+    <string name="hun_importance_title">Importance threshold</string>
+    <string name="hun_importance_min">Minimum</string>
+    <string name="hun_importance_low">Low</string>
+    <string name="hun_importance_default">Default</string>
+    <string name="hun_importance_high">High</string>
+    <string name="hun_importance_max">Maximum</string>
 </resources>
