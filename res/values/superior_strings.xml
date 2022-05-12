@@ -19,4 +19,9 @@
     <!-- Immersive Navigation -->
     <string name="immersive_navigation_title">Immersive Navigation</string>
     <string name="immersive_navigation_summary">Hide the gesture pill and navigation bar padding.</string>
+
+        <!-- Hide privacy indicator -->
+    <string name="hide_privacy_indicator_title">Hide privacy indicator</string>
+    <string name="hide_privacy_indicator_summary">Hide the floating privacy indicator displayed in the screen corner. Note that this does not affect the indicator in QS panel</string>
+
 </resources>
