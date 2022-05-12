@@ -106,6 +106,14 @@
         android:title="@string/mic_toggle_title"
         android:summary="@string/mic_toggle_description"
         settings:controller="com.android.settings.privacy.MicToggleController"/>
+    
+    <!-- hide indicator toggle -->
+    <com.arrow.support.preferences.SecureSettingSwitchPreference
+            android:key="hide_privacy_indicator"
+            android:icon="@drawable/ic_manage_perms"
+            android:title="@string/hide_privacy_indicator_title"
+            android:summary="@string/hide_privacy_indicator_summary"
+            android:defaultValue="false"/>
 
     <!-- Show passwords -->
     <SwitchPreference
