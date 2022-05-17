@@ -37,6 +37,7 @@
     <string name="gesture_navbar_category_title">Navigation bar</string>
     <string name="immersive_navigation_title">Immersive navigation</string>
     <string name="immersive_navigation_summary">Hide the gesture pill and navigation bar padding.</string>
+
     <string name="gesture_illustration_description">Control your device with ease.</string>
     <string name="connected_setting_description">Manage your device\'s connections.</string>
     <string name="accessibility_illustration_description">Ease of access features for everyone.</string>
@@ -7933,13 +7934,13 @@
     </plurals>
 
     <!-- User settings screen title [CHAR LIMIT=40] -->
-    <string name="user_settings_title">Multiple users</string>
+    <string name="user_settings_title">Personal Space</string>
     <!-- User settings screen footer text [CHAR LIMIT=NONE] -->
-    <string name="user_settings_footer_text" product="device">Share your device by adding new users. Each user has a personal space on your device for custom Home screens, accounts, apps, settings, and more.</string>
+    <string name="user_settings_footer_text" product="device">Share your device by adding Muiltple users. Each user has a "Personal Space" on your device for custom Home screens, accounts, apps, settings, and more.</string>
     <!-- User settings screen footer text [CHAR LIMIT=NONE] -->
-    <string name="user_settings_footer_text" product="tablet">Share your tablet by adding new users. Each user has a personal space on your tablet for custom Home screens, accounts, apps, settings, and more.</string>
+    <string name="user_settings_footer_text" product="tablet">Share your tablet by adding Muiltple users. Each user has a "Personal Space" on your tablet for custom Home screens, accounts, apps, settings, and more.</string>
     <!-- User settings screen footer text [CHAR LIMIT=NONE] -->
-    <string name="user_settings_footer_text" product="default">Share your phone by adding new users. Each user has a personal space on your phone for custom Home screens, accounts, apps, settings, and more.</string>
+    <string name="user_settings_footer_text" product="default">Share your phone by adding Muiltple users. Each user has a "Personal Space" on your phone for custom Home screens, accounts, apps, settings, and more.</string>
 
     <!-- User settings header for list of users and profiles [CHAR LIMIT=40] -->
     <string name="user_list_title">Users &amp; profiles</string>

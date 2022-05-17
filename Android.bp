@@ -48,7 +48,7 @@ android_library {
            "SakuraSettings/src/**/*.java",
     ],
 
-    aaptflags: ["--extra-packages com.sakura.settings"],
+    aaptflags: ["--extra-packages com.sakura.settings", "--extra-packages com.epic"],
 
     resource_dirs: ["res",
                     "SakuraSettings/res"
@@ -97,6 +97,10 @@ android_library {
         "ims-common",
         "app-compat-annotations",
     ],
+
+    optimize: {
+        proguard_flags_files: ["proguard.flags"],
+    },
 }
 
 platform_compat_config {
