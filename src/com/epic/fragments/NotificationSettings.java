@@ -1,8 +1,3 @@
-
-
-
-
-
 /*
  * Copyright (C) 2022 EpicROM-AOSP
  *
