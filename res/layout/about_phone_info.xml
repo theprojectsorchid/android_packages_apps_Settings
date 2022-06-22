@@ -7,7 +7,7 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-	android:background="@drawable/syberia_card"
+	android:background="@drawable/OrchidOs_card"
         android:orientation="horizontal"
 	android:layout_marginHorizontal="16dp"
 	android:layout_marginVertical="5dp">
@@ -122,9 +122,11 @@
 	            
 	            <ImageView
 	                  android:layout_width="50dp"
-	                  android:layout_height="match_parent"
+	                  android:layout_height="50dp"
 	                  android:layout_gravity="center"
-	                  android:src="@drawable/syberia_logo" />
+                          android:tint="?android:attr/colorAccent"
+                          android:scaleType="fitCenter"
+                          android:src="@drawable/ic_arrow_logo" />
 
         </com.google.android.material.card.MaterialCardView>
 
