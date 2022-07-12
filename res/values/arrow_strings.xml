@@ -282,4 +282,6 @@
     <!--footer UI -->
     <string name="timeanddatesetting_description">Below are time and date settings for your locale</string>
    
+ <!-- Battery Optimization -->
+    <string name="battery_opt_summary">Check optimize &amp; unoptimize apps</string>
 </resources>
