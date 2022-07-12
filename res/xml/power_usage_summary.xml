@@ -89,7 +89,15 @@
         android:title="@string/battery_style_title"
         android:summary="@string/battery_style_summary" />-->
 
+
     <Preference
+        android:key="high_power_apps"
+        android:title="@string/high_power_apps"
+        android:summary="@string/battery_opt_summary">
+        <intent android:action="android.settings.IGNORE_BATTERY_OPTIMIZATION_SETTINGS" />
+    </Preference>
+
+       <Preference
         android:key="battery_charging_light"
         android:icon="@drawable/ic_smart_charging"
         android:fragment="com.android.settings.arrow.BatteryLightSettings"
