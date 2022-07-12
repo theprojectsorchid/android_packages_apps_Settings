@@ -80,7 +80,12 @@
             android:summary="@string/scarlet_aggressive_mode_sensors_toggle_summary"
             android:dependency="scarlet_aggressive_mode"
             android:defaultValue="false" />
-
+     <Preference
+        android:key="high_power_apps"
+        android:title="@string/high_power_apps"
+        android:summary="@string/battery_opt_summary">
+        <intent android:action="android.settings.IGNORE_BATTERY_OPTIMIZATION_SETTINGS" />
+    </Preference>
     </PreferenceCategory>
 
     <com.android.settingslib.widget.FooterPreference

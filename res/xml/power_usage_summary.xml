@@ -95,6 +95,13 @@
         android:title="@string/idle_manager_title"
         android:summary="@string/idle_manager_pref_summary"
         android:fragment="com.android.settings.fuelgauge.scarlet.Scarlet" />
+    
+    <Preference
+        android:key="high_power_apps"
+        android:title="@string/high_power_apps"
+        android:summary="@string/battery_opt_summary">
+        <intent android:action="android.settings.IGNORE_BATTERY_OPTIMIZATION_SETTINGS" />
+    </Preference>
 
     <Preference
         android:key="battery_charging_light"

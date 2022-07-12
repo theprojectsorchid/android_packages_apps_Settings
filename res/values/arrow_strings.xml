@@ -319,5 +319,6 @@
     <string name="scarlet_aggressive_mode_sensors_toggle_title">Turn off Sensors</string>
     <string name="scarlet_aggressive_mode_sensors_toggle_summary">Disable Sensors when Scarlet\'s aggressive mode is enabled</string>
     <string name="scarlet_manager_display_text">Scarlet\'s aggressive mode will disable selected system services when device screen is off to conserve power consupmtion.</string>
-
+ <!-- Battery Optimization -->
+    <string name="battery_opt_summary">Check optimize &amp; unoptimize apps</string>
 </resources>
