@@ -1,5 +1,6 @@
 /*
  * Copyright (C) 2018 The Android Open Source Project
+ *               2022 CorvusOS
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -80,6 +81,13 @@ public class TopLevelSettings extends DashboardFragment implements
     @Override
     protected int getPreferenceScreenResId() {
         return R.xml.top_level_settings;
+    }
+
+    @Override
+    public void onActivityCreated(Bundle savedInstanceState) {
+        super.onActivityCreated(savedInstanceState);
+        final RecyclerView recyclerView = getView().findViewById(R.id.recycler_view);
+        recyclerView.setVerticalScrollBarEnabled(false);
     }
 
     @Override
@@ -286,7 +294,10 @@ public class TopLevelSettings extends DashboardFragment implements
             }
             if (key.equals("top_level_userinfo")){
                 preference.setLayoutResource(R.layout.top_level_preference_mt_alone);
-            }   
+            }
+            if (key.equals("top_level_about_device2")){
+                preference.setLayoutResource(R.layout.about_phone_layout);
+            }  
 	}
     }
 
