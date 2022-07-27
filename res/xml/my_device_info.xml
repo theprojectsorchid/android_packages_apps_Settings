@@ -152,6 +152,7 @@
         <!-- Android version -->
         <Preference
             android:key="firmware_version"
+            settings:layout="@layout/xd_pref_card_bot"
             android:order="42"    
             android:selectable="true"
             android:title="@string/about_us_device"
