@@ -20,27 +20,4 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:title=" ">
     
-    <com.android.settingslib.widget.IllustrationPreference
-        android:key="taptap_anim"
-        settings:searchable="false"
-        android:order="-999"
-        app:lottie_rawRes="@raw/doubletap"/>
-
- 
-        <com.android.settingslib.widget.TopIntroPreference
-            android:key="taptap_bubbles_desc"
-            android:order="-997"        
-            android:title="@string/taptapmode_bubble_setting_description1"/>
-    
-
-        <Preference
-            android:title="@string/taptap_demo"
-            android:icon="@drawable/ic_gvisual"
-            android:summary="@string/about_taptap_info_summary" >
-        <intent
-            android:action="android.intent.action.VIEW"
-            android:data="https://www.youtube.com/watch?v=69KwlwlUnwE" />
-        </Preference>
-
-
 </PreferenceScreen>
