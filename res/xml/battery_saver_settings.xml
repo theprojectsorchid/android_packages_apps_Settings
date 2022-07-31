@@ -20,6 +20,11 @@
     android:title="@string/battery_saver"
     settings:keywords="@string/keywords_battery_saver">
 
+
+    <com.android.settingslib.widget.LayoutPreference
+        android:key="bluetooth_animation"
+        android:layout="@layout/bluetooth_animation" />
+        
     <com.android.settingslib.widget.MainSwitchPreference
         android:order="-100"
         android:key="battery_saver"

@@ -39,7 +39,6 @@
     <color name="palette_list_color_purple">@color/palette_list_dark_mode_color_purple</color>
     <color name="palette_list_color_gray">@color/palette_list_dark_mode_color_gray</color>
     <color name="gestures_setting_background_color">@android:color/black</color>
-
     <color name="color_surface_header">@*android:color/surface_header_dark</color>
     <!-- Dialog error color. -->
     <color name="settings_dialog_colorError">#f28b82</color> <!-- Red 300 -->
@@ -52,5 +51,17 @@
 
     <!-- Material inverse ripple color, useful for inverted backgrounds. -->
     <color name="ripple_material_inverse">@*android:color/ripple_material_light</color>
+    <color name="box_color">#171717</color>
+    <color name="card_text">#FCFCFC</color>
+    <color name="card_sum">#AAFAFAFA</color>
+    <color name="op_control_text_color_primary">#ffffffff</color>
+    <color name="op_control_text_color_secondary">#89ffffff</color>
+    <color name="oneplus_accent_text_color">#fff0648a</color>
+    <color name="op_control_contextual_card_solid_color">#ff1c1e20</color>
+    <color name="op_control_accent_color_green">@color/op_control_accent_color_green_dark</color>
+    <color name="oneplus_homepage_icon_background">#000000</color>
+    <color name="oneplus_accent_color">@color/settingsHeaderColor</color>
+    <color name="settings_accent_color">@color/oneplus_accent_color</color>
+    <color name="settingsHeaderColor">@*android:color/accent_device_default_dark</color>
 </resources>
 

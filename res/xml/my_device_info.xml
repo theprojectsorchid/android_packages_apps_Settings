@@ -208,7 +208,8 @@
             android:order="53"
             android:title="@string/build_number"
             android:summary="@string/summary_placeholder"
-            settings:enableCopying="true"
+            settings:enableCopying="false"
+			android:selectable="false"
             settings:controller="com.android.settings.deviceinfo.BuildNumberPreferenceController"/>
     </PreferenceCategory>
 

@@ -20,6 +20,10 @@
         android:title="@string/provider_internet_settings"
         settings:keywords="@string/keywords_wifi">
 
+    <com.android.settingslib.widget.LayoutPreference
+        android:key="bluetooth_animation"
+        android:layout="@layout/bluetooth_animation" />
+        
     <!-- Resetting your internet description -->
     <com.android.settingslib.widget.LayoutPreference
         android:key="resetting_your_internet"

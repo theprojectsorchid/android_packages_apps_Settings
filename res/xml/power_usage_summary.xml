@@ -21,6 +21,11 @@
     android:title="@string/power_usage_summary_title"
     settings:keywords="@string/keywords_battery">
 
+
+    <com.android.settingslib.widget.LayoutPreference
+        android:key="bluetooth_animation"
+        android:layout="@layout/bluetooth_animation" />
+
     <com.android.settingslib.widget.UsageProgressBarPreference
         android:key="battery_header"
         android:title="@string/summary_placeholder"

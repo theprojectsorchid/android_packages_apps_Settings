@@ -25,6 +25,7 @@ import android.util.Log;
 import android.view.View;
 import android.widget.FrameLayout;
 import android.widget.ImageView;
+import android.widget.LinearLayout;
 import android.widget.Toolbar;
 
 import androidx.fragment.app.Fragment;
@@ -34,11 +35,21 @@ import androidx.fragment.app.FragmentTransaction;
 
 import com.android.settings.R;
 import com.android.settings.accounts.AvatarViewMixin;
+import com.android.settings.Settings;
+import com.android.settings.SettingsActivity;
+import com.android.settings.SettingsApplication;
+import com.android.settings.activityembedding.ActivityEmbeddingRulesController;
+import com.android.settings.activityembedding.ActivityEmbeddingUtils;
 import com.android.settings.core.CategoryMixin;
 import com.android.settings.core.FeatureFlags;
 import com.android.settings.homepage.contextualcards.ContextualCardsFragment;
 import com.android.settings.overlay.FeatureFactory;
 import com.android.settingslib.core.lifecycle.HideNonSystemOverlayMixin;
+
+import com.google.android.material.appbar.CollapsingToolbarLayout;
+
+import java.net.URISyntaxException;
+import java.util.Set;
 
 /** Settings homepage activity */
 public class SettingsHomepageActivity extends FragmentActivity implements
@@ -49,86 +60,104 @@ public class SettingsHomepageActivity extends FragmentActivity implements
     private static final long HOMEPAGE_LOADING_TIMEOUT_MS = 300;
 
     private View mHomepageView;
-    private View mSuggestionView;
     private CategoryMixin mCategoryMixin;
+    private Set<HomepageLoadedListener> mLoadedListeners;
+    private boolean mIsEmbeddingActivityEnabled;
+    CollapsingToolbarLayout collapsing_toolbar;
 
     @Override
     public CategoryMixin getCategoryMixin() {
         return mCategoryMixin;
     }
 
-    /**
-     * Shows the homepage and shows/hides the suggestion together. Only allows to be executed once
-     * to avoid the flicker caused by the suggestion suddenly appearing/disappearing.
-     */
-    public void showHomepageWithSuggestion(boolean showSuggestion) {
-        if (mHomepageView == null) {
-            return;
-        }
-        Log.i(TAG, "showHomepageWithSuggestion: " + showSuggestion);
-        mSuggestionView.setVisibility(showSuggestion ? View.VISIBLE : View.GONE);
-        mHomepageView.setVisibility(View.VISIBLE);
-        mHomepageView = null;
+    /** Returns the main content fragment */
+    public TopLevelSettings getMainFragment() {
+        return mMainFragment;
+    }
+
+    @Override
+    public CategoryMixin getCategoryMixin() {
+        return mCategoryMixin;
     }
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.settings_homepage_container);
+        mIsEmbeddingActivityEnabled = ActivityEmbeddingUtils.isEmbeddingActivityEnabled(this);
 
-        final View appBar = findViewById(R.id.app_bar_container);
-        appBar.setMinimumHeight(getSearchBoxHeight());
-        initHomepageContainer();
+        updateHomepageBackground();
+        mLoadedListeners = new ArraySet<>();
 
-        final Toolbar toolbar = findViewById(R.id.search_action_bar);
+        final View root = findViewById(R.id.settings_homepage_container);
+	LinearLayout commonCon = root.findViewById(R.id.common_con);
+        final Toolbar toolbar = root.findViewById(R.id.search_action_bar);
+	collapsing_toolbar =  root.findViewById(R.id.collapsing_toolbar);
+
         FeatureFactory.getFactory(this).getSearchFeatureProvider()
                 .initSearchToolbar(this /* activity */, toolbar, SettingsEnums.SETTINGS_HOMEPAGE);
 
         getLifecycle().addObserver(new HideNonSystemOverlayMixin(this));
+        collapsing_toolbar.setTitle("Settings");
         mCategoryMixin = new CategoryMixin(this);
         getLifecycle().addObserver(mCategoryMixin);
 
-        if (!getSystemService(ActivityManager.class).isLowRamDevice()) {
-            // Only allow features on high ram devices.
-            final ImageView avatarView = findViewById(R.id.account_avatar);
-            if (AvatarViewMixin.isAvatarSupported(this)) {
-                avatarView.setVisibility(View.VISIBLE);
-                getLifecycle().addObserver(new AvatarViewMixin(this, avatarView));
-            }
+	final String highlightMenuKey = getHighlightMenuKey();
+        mMainFragment = showFragment(() -> {
+            final TopLevelSettings fragment = new TopLevelSettings();
+            fragment.getArguments().putString(SettingsActivity.EXTRA_FRAGMENT_ARG_KEY,
+                    highlightMenuKey);
+            return fragment;
+        }, R.id.main_content);
 
-            showSuggestionFragment();
-
-            if (FeatureFlagUtils.isEnabled(this, FeatureFlags.CONTEXTUAL_HOME)) {
-                showFragment(new ContextualCardsFragment(), R.id.contextual_cards_content);
-            }
-        }
-        showFragment(new TopLevelSettings(), R.id.main_content);
         ((FrameLayout) findViewById(R.id.main_content))
                 .getLayoutTransition().enableTransitionType(LayoutTransition.CHANGING);
     }
 
-    private void showSuggestionFragment() {
-        final Class<? extends Fragment> fragment = FeatureFactory.getFactory(this)
-                .getSuggestionFeatureProvider(this).getContextualSuggestionFragment();
-        if (fragment == null) {
+    @Override
+    protected void onStart() {
+        ((SettingsApplication) getApplication()).setHomeActivity(this);
+        super.onStart();
+    }
+
+    @Override
+    protected void onNewIntent(Intent intent) {
+        super.onNewIntent(intent);
+
+        // When it's large screen 2-pane and Settings app is in the background, receiving an Intent
+        // will not recreate this activity. Update the intent for this case.
+        setIntent(intent);
+        reloadHighlightMenuKey();
+        if (isFinishing()) {
+            return;
+        }
+        // Launch the intent from deep link for large screen devices.
+        launchDeepLinkIntentToRight();
+    }
+
+    @Override
+    public void onConfigurationChanged(Configuration newConfig) {
+        super.onConfigurationChanged(newConfig);
+    }
+
+    private void updateHomepageBackground() {
+        if (!mIsEmbeddingActivityEnabled) {
             return;
         }
 
-        mSuggestionView = findViewById(R.id.suggestion_content);
-        mHomepageView = findViewById(R.id.settings_homepage_container);
-        // Hide the homepage for preparing the suggestion.
-        mHomepageView.setVisibility(View.GONE);
-        // Schedule a timer to show the homepage and hide the suggestion on timeout.
-        mHomepageView.postDelayed(() -> showHomepageWithSuggestion(false),
-                HOMEPAGE_LOADING_TIMEOUT_MS);
-        try {
-            showFragment(fragment.getConstructor().newInstance(), R.id.suggestion_content);
-        } catch (Exception e) {
-            Log.w(TAG, "Cannot show fragment", e);
-        }
+        final Window window = getWindow();
+        final int color = ActivityEmbeddingUtils.isTwoPaneResolution(this)
+                ? Utils.getColorAttrDefaultColor(this, com.android.internal.R.attr.colorSurface)
+                : Utils.getColorAttrDefaultColor(this, android.R.attr.colorBackground);
+
+        window.addFlags(WindowManager.LayoutParams.FLAG_DRAWS_SYSTEM_BAR_BACKGROUNDS);
+        // Update status bar color
+        window.setStatusBarColor(color);
+        // Update content background.
+        findViewById(R.id.settings_homepage_container).setBackgroundColor(color);
     }
 
-    private void showFragment(Fragment fragment, int id) {
+    private <T extends Fragment> T showFragment(FragmentBuilder<T> fragmentBuilder, int id) {
         final FragmentManager fragmentManager = getSupportFragmentManager();
         final FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction();
         final Fragment showFragment = fragmentManager.findFragmentById(id);
@@ -148,9 +177,4 @@ public class SettingsHomepageActivity extends FragmentActivity implements
         view.requestFocus();
     }
 
-    private int getSearchBoxHeight() {
-        final int searchBarHeight = getResources().getDimensionPixelSize(R.dimen.search_bar_height);
-        final int searchBarMargin = getResources().getDimensionPixelSize(R.dimen.search_bar_margin);
-        return searchBarHeight + searchBarMargin * 2;
-    }
 }
