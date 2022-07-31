@@ -213,7 +213,7 @@
     <bool name="config_show_avatar_in_homepage">false</bool>
 
     <!-- Whether or not emergency info tile should display in device info page -->
-    <bool name="config_show_emergency_info_in_device_info">true</bool>
+    <bool name="config_show_emergency_info_in_device_info">false</bool>
 
     <!-- Whether or not branded account info tile should display in device info page -->
     <bool name="config_show_branded_account_in_device_info">true</bool>
@@ -293,7 +293,7 @@
     <bool name="auto_confirm_bluetooth_activation_dialog">false</bool>
 
     <!-- Whether the device name is shown in About device or not -->
-    <bool name="config_show_device_name">true</bool>
+    <bool name="config_show_device_name">false</bool>
 
     <!-- Whether to show a preference item for the manual in About phone -->
     <bool name="config_show_manual">false</bool>
@@ -366,7 +366,7 @@
     <bool name="config_show_encryption_and_credentials_encryption_status">true</bool>
 
     <!-- Whether premium_sms should be shown or not. -->
-    <bool name="config_show_premium_sms">true</bool>
+    <bool name="config_show_premium_sms">false</bool>
 
     <!-- Whether data_saver should be shown or not. -->
     <bool name="config_show_data_saver">true</bool>

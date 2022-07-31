@@ -1,12 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
-<!-- Copyright (C) 2007 The Android Open Source Project
-
+<!--
+     Copyright (C) 2022 OrchidOs
      Licensed under the Apache License, Version 2.0 (the "License");
      you may not use this file except in compliance with the License.
      You may obtain a copy of the License at
-
+     http://www.apache.org/licenses/LICENSE-2.0
           http://www.apache.org/licenses/LICENSE-2.0
-
      Unless required by applicable law or agreed to in writing, software
      distributed under the License is distributed on an "AS IS" BASIS,
      WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
@@ -14,6 +13,166 @@
      limitations under the License.
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+
+    <!-- OrchidOs versioning -->
+        
+
+    <string name="wellbeing_title">Wellbeing</string>
+    <string name="OrchidOs_version_title">Gauguin</string>
+    <string name="OrchidOs_device_title">Qual: SM7225</string>
+    <string name="OrchidOs_release_type_title">Snap: 750G</string>
+    <string name="OrchidOs_maintainer_title">5G Enabled</string>
+    <string name="platform_revision">Platform</string>
+    <string name="total_ram">RAM</string>
+        
+    <string name="gesture_illustration_description">Control your device with ease.</string>
+    <string name="connected_setting_description">Manage your device\'s connections.</string>
+    <string name="accessibility_illustration_description">Ease of access features for everyone.</string>
+    <string name="account_illustration_description">Manage your passwords and user accounts.</string>
+    <string name="display_illustration_description">Adjust display configurations like brightness, colors etc.</string>
+    <string name="wifi_illustration_description">Manage network connections, DNS providers, hotspot etc.</string>
+    <string name="sec_illustration_description">Secure and protect your device.</string>
+    <string name="sound_illustration_description">Configure device ringtones, volumes and UI sounds.</string>
+    <string name="privacy_illustration_description">Manage privacy access/information for your device.</string>
+    <string name="system_illustration_description">Configure system language, date, time, gestures and more.</string>
+    <string name="apps_illustration_description">Manage applications installed, which are default apps, check apps with special access, enable or disable apps etc. </string>
+    <string name="battery_illustration_description">Monitor battery health, usage and improve battery usage.</string>
+    <string name="connectivity_category_title">connectivity</string>
+    <string name="navbar_gesture_custom">Navigation Gestures Customizations</string>
+    <string name="usercard_summary">Certified OrchidOs user</string>
+    
+    <!-- About page -->
+    <string name="battery">Battery</string>
+    <string name="display">Display</string>
+    <string name="storage">Storage</string>
+    <string name="chipset">Processor</string>
+
+    <!-- About phone cards -->
+    <string name="about_device_nearby">The device name can and will be seen by the nearby devices.</string>
+    <string name="about_device_version_type_gapps">Pixel</string>
+    <string name="about_device_version_type_vanilla">Vanilla</string>
+    <string name="version">OrchidOs version</string>
+    <string name="edit">Edit</string>
+    <string name="device_name">Device name</string>
+    <string name="about_us_info_category_title">About Us</string>
+    <string name="OrchidOs_revision">OrchidOs Official</string>
+    
+    <!-- OrchidOs Idle Manager -->
+    <string name="arcane_idle_manager_title">OrchidOs Idle Manager</string>
+    <string name="arcane_idle_manager_summary">Stop all non-essential background processes when the device is idle</string>
+
+    <!-- Doze on charge -->
+    <string name="doze_on_charge_title">Always on when charging</string>
+    <string name="doze_on_charge_summary">Show doze screen all the time when charging</string>
+
+   <!-- Doze on double tap -->
+    <string name="double_tap_title">Double tap</string>
+    <string name="doze_double_tap_title">Double tap to check phone</string>
+    <string name="doze_double_tap_summary">Pulse notifications by a double tap</string>
+    
+    <string name="dashboard_morning1">Good Morning!</string>
+    <string name="dashboard_morning2">The Sun is up!</string>
+    <string name="dashboard_morning3">A nice morning..</string>
+    <string name="dashboard_morning4">Have a great day..</string>
+    <string name="dashboard_morning5">A brand new day..</string>
+    <string name="dashboard_noon1">Good Afternoon.</string>
+    <string name="dashboard_noon2">Enjoy the Sunset.</string>
+    <string name="dashboard_noon3">Welcome Home..</string>
+    <string name="dashboard_noon4">Enjoy the day!</string>
+    <string name="dashboard_noon5">Welcome back..</string>
+    <string name="dashboard_early_night1">Good Evening..</string>
+    <string name="dashboard_early_night2">Time for dinner!</string>
+    <string name="dashboard_night3">Sweet Dreams!</string>
+    <string name="dashboard_night4">Time to sleep now..</string>
+    <string name="dashboard_night5">Good Night!</string>
+    <string name="dashboard_midnight1">It\'s Late night already..</string>
+    <string name="dashboard_midnight2">You need some help..</string>
+    <string name="dashboard_midnight3">Get some sleep..</string>
+    <string name="dashboard_midnight4">Take some rest already..</string>
+    <string name="dashboard_midnight5">Sleeping late is bad for you..</string>
+    <string name="dashboard_random1">Want some OrchidOs?</string>
+    <string name="dashboard_random2">The searchbar is pixels below..</string>
+    <string name="dashboard_random3">Hi Owner!</string>
+    <string name="dashboard_random4">Settings</string>
+    <string name="dashboard_random5">Hi User!</string>
+    <string name="dashboard_random6">What\'s up?</string>
+    
+    <string name="build_status">Build Status</string>
+    <string name="build_status_summary_placeholder">What\'s up?</string>
+    <string name="build_is_official_title">Device is officially supported!</string>
+    <string name="build_is_community_title">Device is not officially supported!</string>
+    <string name="build_is_official_summary">Built with love by %s</string>
+    <string name="build_is_official_summary_oopsie">but, who made this build?</string>
+    <string name="build_is_community_summary">Unofficial build by %s</string>
+    <string name="build_is_community_summary_oopsie">Psst! please tell the builder that he/she forgot to add OrchidOs build flags!</string>
+
+    <!-- App lock -->
+    <string name="app_lock_title">Application security</string>
+    <string name="apps_security_summary">Secure/Hide applications</string>
+    <string name="app_lock_summary_singular">1 application is protected</string>
+    <string name="app_lock_summary_plural"><xliff:g example="2" id="Number of applications">%1$d</xliff:g> applications are protected</string>
+    <string name="app_lock_authentication_dialog_title">Unlock</string>
+    <string name="enable_debugging">Enable debugging</string>
+    <string name="disable_debugging">Disable debugging</string>
+    <string name="app_lock_packages_title">Protected apps</string>
+    <string name="app_lock_packages_summary">Select the apps to protect with biometrics or device credentials</string>
+    <string name="app_lock_timeout_title">Auto lock timeout</string>
+    <string name="app_lock_timeout_summary">Duration of time after which an unlocked app in background should be locked</string>
+    <string name="app_lock_notifications_title">Collapse notifications</string>
+    <string name="app_lock_notifications_summary">
+          Notification content will be hidden and collapsed for selected apps when they are locked.
+          Heads up notifications will be automatically disabled.
+    </string>
+    <string name="app_lock_notifications_disabled_summary">Protect an application first</string>
+    <string name="app_lock_biometrics_allowed_title">Enable biometrics for unlocking</string>
+    <string name="app_lock_footer_text">Bubbles will be automatically dismissed after timeout</string>
+
+    <!-- Display Settings: Title of the setting which toggles wallpaper zooming effects on interraction -->
+    <string name="wallpaper_zoom_effect_title">Wallpaper zoom effect</string>
+    <!-- Display Settings: Subtitle of the setting which toggles wallpaper zooming effects on interraction -->
+    <string name="wallpaper_zoom_effect_summary">Zoom the wallpaper in order to show zoom-out depth animation. Wallpapers may suffer quality decrease</string>
+
+    <!-- Screen setting option title for the item to take you to the stock security screen -->
+    <string name="aosp_security_settings_title">Stock lock options</string>
+    <!-- Screen setting option summary text for the item tot ake you to the stock security and location screen -->
+    <string name="aosp_security_settings_summary">Set App lock, SIM card lock, credential storage lock</string>
+
+	
+    <!-- Adaptive Playback -->
+    <string name="adaptive_playback_screen_title">Smart Pause</string>
+    <string name="adaptive_playback_enabled">Use smart pause</string>
+    <string name="adaptive_playback_disabled_summary">Off</string>
+    <string name="adaptive_playback_intro_text">Automatically pauses media when the volume is muted and will resume automatically when volume is restored within the set time.</string>
+    <string name="adaptive_playback_timeout_title">Use a timeout of</string>
+    <string name="adaptive_playback_timeout_none">No timeout</string>
+    <string name="adaptive_playback_timeout_none_summary">On (no timeout)</string>
+    <string name="adaptive_playback_timeout_30_secs">30 seconds</string>
+    <string name="adaptive_playback_timeout_30_secs_summary">On (30 seconds)</string>
+    <string name="adaptive_playback_timeout_1_min">1 minute</string>
+    <string name="adaptive_playback_timeout_1_min_summary">On (1 minute)</string>
+    <string name="adaptive_playback_timeout_2_min">2 minutes</string>
+    <string name="adaptive_playback_timeout_2_min_summary">On (2 minutes)</string>
+    <string name="adaptive_playback_timeout_5_min">5 minutes</string>
+    <string name="adaptive_playback_timeout_5_min_summary">On (5 minutes)</string>
+    <string name="adaptive_playback_timeout_10_min">10 minutes</string>
+    <string name="adaptive_playback_timeout_10_min_summary">On (10 minutes)</string>
+
+    <!-- Legacy WFD settings -->
+    <string name="legacy_wfd_video_mode_title">Video mode</string>
+    <string name="legacy_wfd_video_mode_720p_30fps">720p 30fps</string>
+    <string name="legacy_wfd_video_mode_720p_60fps">720p 60fps</string>
+    <string name="legacy_wfd_video_mode_1080p_30fps">1080p 30fps</string>
+    <string name="legacy_wfd_video_mode_1080p_60fps">1080p 60fps</string>
+    
+    <!-- Battery stats reset -->
+    <string name="battery_stats_reset">Clear usage data?</string>
+    <string name="battery_stats_message">Battery usage data will be lost</string>
+    <string name="battery_stats_clear" translatable="false">@string/proxy_clear_text</string>
+    
+    <string name="high_power_apps_summary" translatable="false">Per-app battery optimization</string>
+    <string name="battery_24_hrs_stats_title" translatable="false">24-hour battery usage</string>
+    <string name="battery_24_hrs_stats_summary" translatable="false">View usage for past 24 hours</string>
+
     <!-- Strings for Dialog yes button -->
     <string name="yes">"Yes"</string>
     <!-- Strings for Dialog no button -->
@@ -35,18 +194,18 @@
         <item quantity="other">You are now <xliff:g id="step_count">%1$d</xliff:g> steps away from being a developer.</item>
     </plurals>
     <!-- [CHAR LIMIT=NONE] Device Info screen. Confirmation that developer settings are enabled -->
-    <string name="show_dev_on">You are now a developer!</string>
+    <string name="show_dev_on">Warning Dev Settings</string>
     <!-- [CHAR LIMIT=NONE] Device Info screen. Okay we get it, stop pressing, you already have it on -->
-    <string name="show_dev_already">No need, you are already a developer.</string>
+    <string name="show_dev_already">Danger settings enabled.</string>
 
     <!-- [CHAR LIMIT=NONE] Toast message when user attemps to launch developer otions before enabling it. -->
-    <string name="dev_settings_disabled_warning">Please enable developer options first.</string>
+    <string name="dev_settings_disabled_warning">Danger!.</string>
 
     <!-- Category headings in left-pane header menu --> <skip />
     <!-- Settings main menu category heading. Wireless and networks (Wi-Fi, Bluetooth, data usage...). [CHAR LIMIT=40] -->
     <string name="header_category_wireless_networks">Wireless &amp; networks</string>
     <!-- Settings main menu category heading. System (Updates, data, accessibility, about phone). [CHAR LIMIT=40] -->
-    <string name="header_category_system">System</string>
+    <string name="header_category_system">Services</string>
 
     <!-- Phone Info screen. Status label.  Used for diagnostic info screens, precise translation isn't needed -->
     <string name="radioInfo_service_in">In Service</string>
@@ -317,7 +476,178 @@
     <string name="bluetooth_device_name_summary">Visible as \u201C<xliff:g id="device_name">^1</xliff:g>\u201D to other devices</string>
     <!-- Footer description for discoverable mode in bluetooth off state [CHAR LIMIT=none] -->
     <string name="bluetooth_off_footer">Turn on Bluetooth to connect to other devices.</string>
+	
+	
+    <!-- [CHAR LIMIT=NONE] Device Info screen. Countdown for user taps to enable development settings -->
+    <plurals name="show_dev_countdown_cm">
+        <item quantity="one">You are now <xliff:g id="step_count">%1$d</xliff:g> step away from enabling development settings.</item>
+        <item quantity="other">You are now <xliff:g id="step_count">%1$d</xliff:g> steps away from enabling development settings.</item>
+    </plurals>
+    <!-- [CHAR LIMIT=NONE] Device Info screen. Confirmation that developer settings are enabled -->
+    <string name="show_dev_on_cm">You have enabled development settings!</string>
+    <!-- [CHAR LIMIT=NONE] Device Info screen. Okay we get it, stop pressing, you already have it on -->
+    <string name="show_dev_already_cm">No need, you have already enabled development settings.</string>
 
+    <!-- Advanced keyboard settings -->
+    <string name="keyboard_extras_title">Extras</string>
+    <string name="advanced_keyboard_settings_title">Advanced settings</string>
+
+    <!-- Android debugging as root -->
+    <string name="adb_enable_root">Rooted debugging</string>
+    <string name="adb_enable_summary_root">Allow running Android debugging as root</string>
+
+    <!-- Backup Transport selection settings menu and activity title -->
+    <string name="backup_transport_setting_label">Change backup provider</string>
+    <string name="backup_transport_title">Select backup provider</string>
+
+    <!-- Black theme for dark mode -->
+    <string name="berry_black_theme_title">Pure black</string>
+    <string name="berry_black_theme_summary">Pure black background for dark theme</string>
+
+    <!-- Device Info screen. LineageOS legal. -->
+    <string name="lineagelicense_title">LineageOS legal</string>
+
+    <!-- Double tap to sleep on status bar or lockscreen -->
+    <string name="status_bar_double_tap_to_sleep_title">Tap to sleep</string>
+    <string name="status_bar_double_tap_to_sleep_summary">Double-tap on the status bar or lockscreen to turn off the display</string>
+
+    <!-- Message shown in fingerprint enrollment dialog to locate the sensor -->
+    <string name="fingerprint_enroll_find_sensor_message_front" product="tablet">Locate the fingerprint sensor on the front of your tablet.</string>
+    <string name="fingerprint_enroll_find_sensor_message_front" product="device">Locate the fingerprint sensor on the front of your device.</string>
+    <string name="fingerprint_enroll_find_sensor_message_front" product="default">Locate the fingerprint sensor on the front of your phone.</string>
+    <string name="fingerprint_enroll_find_sensor_message_rear" product="tablet">Locate the fingerprint sensor on the back of your tablet.</string>
+    <string name="fingerprint_enroll_find_sensor_message_rear" product="device">Locate the fingerprint sensor on the back of your device.</string>
+    <string name="fingerprint_enroll_find_sensor_message_rear" product="default">Locate the fingerprint sensor on the back of your phone.</string>
+    <string name="fingerprint_enroll_find_sensor_message_side" product="tablet">Locate the fingerprint sensor on the side of your tablet.</string>
+    <string name="fingerprint_enroll_find_sensor_message_side" product="device">Locate the fingerprint sensor on the side of your device.</string>
+    <string name="fingerprint_enroll_find_sensor_message_side" product="default">Locate the fingerprint sensor on the side of your phone.</string>
+
+    <!-- Message shown when user touches the icon on the screen, instead of the real fingerprint sensor -->
+    <string name="fingerprint_enroll_touch_dialog_message_front" product="tablet">Touch the sensor on the front of your tablet.</string>
+    <string name="fingerprint_enroll_touch_dialog_message_front" product="device">Touch the sensor on the front of your device.</string>
+    <string name="fingerprint_enroll_touch_dialog_message_front" product="default">Touch the sensor on the front of your phone.</string>
+    <string name="fingerprint_enroll_touch_dialog_message_rear" product="tablet">Touch the sensor on the back of your tablet.</string>
+    <string name="fingerprint_enroll_touch_dialog_message_rear" product="device">Touch the sensor on the back of your device.</string>
+    <string name="fingerprint_enroll_touch_dialog_message_rear" product="default">Touch the sensor on the back of your phone.</string>
+    <string name="fingerprint_enroll_touch_dialog_message_side" product="tablet">Touch the sensor on the side of your tablet.</string>
+    <string name="fingerprint_enroll_touch_dialog_message_side" product="device">Touch the sensor on the side of your device.</string>
+    <string name="fingerprint_enroll_touch_dialog_message_side" product="default">Touch the sensor on the side of your phone.</string>
+
+    <!-- Increasing ring tone volume -->
+    <string name="increasing_ring_volume_option_title">Increasing ring volume</string>
+    <string name="increasing_ring_min_volume_title">Start volume</string>
+    <string name="increasing_ring_ramp_up_time_title">Ramp-up time</string>
+
+    <!-- Volume link notification -->
+    <string name="volume_link_notification_title">Link ring &amp; notification volumes</string>
+
+    <!-- PIN scramble -->
+    <string name="unlock_scramble_pin_layout_title">Scramble layout</string>
+    <string name="unlock_scramble_pin_layout_summary">Scramble PIN layout when unlocking device</string>
+
+    <!-- Lock screen pattern size -->
+    <string name="lock_pattern_size_3" translatable="false">3 \u00d7 3</string>
+    <string name="lock_pattern_size_4" translatable="false">4 \u00d7 4</string>
+    <string name="lock_pattern_size_5" translatable="false">5 \u00d7 5</string>
+    <string name="lock_pattern_size_6" translatable="false">6 \u00d7 6</string>
+    <string name="lock_settings_picker_pattern_size_message">Choose a pattern size</string>
+    <!-- Whether a visible red line will be drawn after the user has drawn the unlock pattern incorrectly -->
+    <string name="lockpattern_settings_enable_error_path_title">Show pattern error</string>
+    <!-- Whether the dots will be drawn when using the lockscreen pattern -->
+    <string name="lockpattern_settings_enable_dots_title">Show pattern dots</string>
+
+    <!-- Lock screen cover art -->
+    <string name="lockscreen_media_art_title">Display media cover art</string>
+
+    <!-- Lock screen visualizer -->
+    <string name="lockscreen_visualizer_title">Display music visualizer</string>
+
+    <!-- High touch polling rate -->
+    <string name="high_touch_polling_rate_title">High touch polling rate</string>
+    <string name="high_touch_polling_rate_summary">Increase touchscreen polling rate</string>
+
+    <!-- High touch sensitivity -->
+    <string name="high_touch_sensitivity_title">High touch sensitivity</string>
+    <string name="high_touch_sensitivity_summary">Increase touchscreen sensitivity so it can be used while wearing gloves</string>
+
+    <!-- Hotspot lineage extras -->
+    <string name="tethering_allow_vpn_upstreams_title">Allow clients to use VPNs</string>
+    <string name="tethering_allow_vpn_upstreams_summary">Permit hotspot clients to use this device\u2019s VPN connections for upstream connectivity</string>
+
+    <!-- One shot automatic brightness -->
+    <string name="auto_brightness_one_shot_title">One shot auto-brightness</string>
+    <string name="auto_brightness_one_shot_summary">Brightness adjustment will only occur at the moment the screen is turned on</string>
+
+    <!-- Per-app data restrictions -->
+    <string name="data_usage_app_restrict_all">Allow network access</string>
+    <string name="data_usage_app_restrict_all_summary">Enable network usage</string>
+    <string name="data_usage_app_restrict_mobile">Mobile data</string>
+    <string name="data_usage_app_restrict_mobile_summary">Enable usage of mobile data</string>
+    <string name="data_usage_app_restrict_vpn">VPN data</string>
+    <string name="data_usage_app_restrict_vpn_summary">Enable usage of VPN data</string>
+    <string name="data_usage_app_restrict_wifi">Wi\u2011Fi data</string>
+    <string name="data_usage_app_restrict_wifi_summary">Enable usage of Wi\u2011Fi data</string>
+
+    <!-- Notification sound timeout -->
+    <string name="app_notification_sound_timeout_title">Minimum time between notification sounds</string>
+    <string name="app_notification_sound_timeout_summary_template">Allow sounds or vibration no more than once every <xliff:g id="duration">%1$s</xliff:g></string>
+    <string name="app_notification_sound_timeout_value_none">No restriction</string>
+    <string name="app_notification_sound_timeout_value_10_seconds">10 seconds</string>
+    <string name="app_notification_sound_timeout_value_30_seconds">30 seconds</string>
+    <string name="app_notification_sound_timeout_value_1_minute">1 minute</string>
+    <string name="app_notification_sound_timeout_value_5_minutes">5 minutes</string>
+    <string name="app_notification_sound_timeout_value_15_minutes">10 minutes</string>
+    <string name="app_notification_sound_timeout_value_30_minutes">30 minutes</string>
+
+    <!-- Proximity wake -->
+    <string name="proximity_wake_title">Prevent accidental wake-up</string>
+    <string name="proximity_wake_summary">Check the proximity sensor prior to waking up screen</string>
+
+    <!-- Max refresh rate -->
+    <string name="max_refresh_rate_title">Peak refresh rate</string>
+
+    <!-- Min refresh rate -->
+    <string name="min_refresh_rate_title">Minimum refresh rate</string>
+
+    <!-- Navigation bar hint -->
+    <string name="show_navbar_hint_title">Navigation hint</string>
+    <string name="show_navbar_hint_summary">Show navigation hint bar at the bottom of the screen</string>
+
+    <!-- Title for connected TWS device group [CHAR LIMIT=none]-->
+    <string name="connected_tws_device_saved_title">Saved Earbuds</string>
+
+    <!-- Touchscreen hovering -->
+    <string name="touchscreen_hovering_title">Touchscreen hovering</string>
+    <string name="touchscreen_hovering_summary">Allows you to hover the screen like a mouse in web browsers, remote desktops, etc</string>
+
+    <!-- Display settings screen, peak refresh rate settings summary [CHAR LIMIT=NONE] -->
+    <string name="peak_refresh_rate_summary_custom">Automatically raises the refresh rate from 60 to %1$d Hz for some content. Increases battery usage.</string>
+
+    <!-- [CHAR_LIMIT=NONE] Display Settings: Title of the setting which enables overlays to customize headline and body fonts. -->
+    <string name="theme_customization_font_title">Font</string>
+    <!-- [CHAR_LIMIT=NONE] Display Settings: Title of the setting which enables overlays to customize the adaptive icon shape (e.g. launcher icons). -->
+    <string name="theme_customization_icon_shape_title">Icon shape</string>
+
+    <!-- Touchscreen gesture settings -->
+    <string name="touchscreen_gesture_settings_title">Touchscreen gestures</string>
+    <string name="touchscreen_gesture_settings_summary">Perform various touchscreen gestures for quick actions</string>
+
+    <!-- Wake on plug -->
+    <string name="wake_when_plugged_or_unplugged_title">Wake on plug</string>
+    <string name="wake_when_plugged_or_unplugged_summary">Turn the screen on when connecting or disconnecting a power source</string>
+
+    <!-- FastCharge feature -->
+    <string name="fast_charging_title">Fast charging</string>
+    <string name="fast_charging_summary">Disable to reduce the heat produced by the device while charging or to extend the lifespan of the battery</string>
+
+    <!-- Preference and settings suggestion title text for screen off UDFPS (phone) [CHAR LIMIT=60]-->
+    <string name="ambient_display_screen_off_udfps_title" product="default">Long press on fingerprint sensor to unlock phone</string>
+    <!-- Preference and settings suggestion title text for screen off UDFPS  (tablet) [CHAR LIMIT=60]-->
+    <string name="ambient_display_screen_off_udfps_title" product="tablet">Long press on fingerprint sensor to unlock tablet</string>
+    <!-- Preference and settings suggestion title text for screen off UDFPS  (device) [CHAR LIMIT=60]-->
+    <string name="ambient_display_screen_off_udfps_title" product="device">Long press on fingerprint sensor to unlock device</string>
+    <!-- Summary text for screen off UDFPS [CHAR LIMIT=NONE]-->
+    <string name="ambient_display_screen_off_udfps_summary">To wake up your screen and unlock, long press your under-display fingerprint sensor.</string>
     <!-- Title for paired device group [CHAR LIMIT=none] -->
     <string name="bluetooth_paired_device_title">Your devices</string>
     <!-- Title for pairing bluetooth device page [CHAR LIMIT=none] -->
@@ -697,9 +1027,9 @@
     </string>
 
     <!-- Main Settings screen setting option title for the item to take you to the accounts screen [CHAR LIMIT=22] -->
-    <string name="account_settings_title">Accounts</string>
+    <string name="account_settings_title">Personal</string>
     <!-- Main Settings screen setting option title for the item to take you to the security screen -->
-    <string name="security_settings_title">Security</string>
+    <string name="security_settings_title">Security &amp; Lockscreen</string>
     <!-- Security Settings screen setting option title for the item to take you to the encryption and credential screen -->
     <string name="encryption_and_credential_settings_title">Encryption &amp; credentials</string>
     <!-- Security Settings screen Encryption and crendential summary -->
@@ -2858,7 +3188,7 @@
     <skip/>
     <string name="display_settings_title">Display</string>
     <!-- Sound settings screen heading -->
-    <string name="sound_settings">Sound</string>
+    <string name="sound_settings">Sound &amp; Vibration</string>
     <!-- DO NOT TRANSLATE Summary placeholder -->
     <string name="summary_placeholder" translatable="false">&#160;</string>
     <!-- DO NOT TRANSLATE Summary placeholder reserving 2 lines -->
@@ -3361,13 +3691,17 @@
     <string name="system_update_settings_list_item_summary">""</string>
 
     <!-- About phone screen, status item label  [CHAR LIMIT=40] -->
-    <string name="firmware_version">Android version</string>
+    <string name="firmware_version">Android Version</string>
+	    <!-- About phone screen, status item label  [CHAR LIMIT=40] -->
+    <string name="firmware_version2">OrchidOs Version</string>
+    <!-- About phone screen, status item label  [CHAR LIMIT=40] -->
+    <string name="about_device_info">OrchidOs</string>
     <!-- About phone screen, status item label  [CHAR LIMIT=60] -->
     <string name="security_patch">Android security update</string>
     <!-- About phone screen, status item label  [CHAR LIMIT=40] -->
     <string name="model_info">Model</string>
     <!-- About phone screen, dialog title for showing hardware information such as model, serial number, etc.[CHAR LIMIT=60] -->
-    <string name="hardware_info">Model &amp; hardware</string>
+    <string name="hardware_info">Model &amp; Hardware</string>
     <!-- Label for device's hardware revision value [CHAR LIMIT=40] -->
     <string name="hardware_revision">Hardware version</string>
     <!-- About phone screen, fcc equipment id label  [CHAR LIMIT=40] -->
@@ -3377,7 +3711,7 @@
     <!-- About phone screen,  setting option name  [CHAR LIMIT=40] -->
     <string name="kernel_version">Kernel version</string>
     <!-- About phone screen,  setting option name  [CHAR LIMIT=40] -->
-    <string name="build_number">Build number</string>
+    <string name="build_number">OrchidOs number</string>
     <!-- About phone screen, tapping this button will take user to a seperate UI to check Google Play system update [CHAR LIMIT=60] -->
     <string name="module_version">Google Play system update</string>
 
@@ -3398,7 +3732,7 @@
     <!-- Main settings screen item's title to go into the storage & USB settings screen [CHAR LIMIT=25] -->
     <string name="storage_usb_settings" >Storage</string>
     <!-- Storage settings screen title -->
-    <string name="storage_settings_title">Storage settings</string>
+    <string name="storage_settings_title">Storage</string>
     <!-- [CHAR LIMIT=100] Main settings screen item's summary for the SD card and storage settings -->
     <string name="storage_settings_summary" product="nosdcard">Unmount USB storage, view available storage</string>
     <!-- [CHAR LIMIT=100] Main settings screen item's summary for the SD card and storage settings -->
@@ -5222,7 +5556,7 @@
     <skip />
 
     <!-- Settings title in main settings screen for accessibility settings -->
-    <string name="accessibility_settings">Accessibility</string>
+    <string name="accessibility_settings">Utilities</string>
     <!-- Settings title for accessibility settings screen -->
     <string name="accessibility_settings_title">Accessibility settings</string>
     <!-- Summary for Accessibility settings, explaining a few important settings under it [CHAR LIMIT=NONE]-->
@@ -8156,16 +8490,16 @@
     </plurals>
 
     <!-- Title for setting tile leading to network and Internet settings [CHAR LIMIT=40]-->
-    <string name="network_dashboard_title">Network &amp; internet</string>
+    <string name="network_dashboard_title">Wi\u2011Fi &amp; Network</string>
     <!-- Summary for Network and Internet settings, explaining it contains mobile, wifi setting and data usage settings [CHAR LIMIT=NONE]-->
-    <string name="network_dashboard_summary_mobile">Mobile, Wi\u2011Fi, hotspot</string>
+    <string name="network_dashboard_summary_mobile">SIM, mobile network, data usage, hotspot</string>
     <!-- Summary for Network and Internet settings, explaining it contains wifi and data usage setting [CHAR LIMIT=NONE]-->
     <string name="network_dashboard_summary_no_mobile">Wi\u2011Fi, hotspot</string>
 
     <!-- Title for setting tile leading to Connected devices settings [CHAR LIMIT=40]-->
     <string name="connected_devices_dashboard_title">Connected devices</string>
     <!-- Summary for Connected devices settings, explaining default settings under it [CHAR LIMIT=NONE]-->
-    <string name="connected_devices_dashboard_default_summary">Bluetooth, pairing</string>
+    <string name="connected_devices_dashboard_default_summary">NFC, Android Auto, tap &amp; pay, cast</string>
     <!-- Summary for Connected devices settings, explaning a few important settings under it [CHAR LIMIT=NONE]-->
     <string name="connected_devices_dashboard_summary">Bluetooth, driving mode, NFC</string>
     <!-- Summary for Connected devices settings, explaning a few important settings under it [CHAR LIMIT=NONE]-->
@@ -8193,7 +8527,7 @@
     <!-- Toast shown when an app in the work profile attempts to open notification settings. The apps in the work profile cannot access notification settings. [CHAR LIMIT=NONE] -->
     <string name="notification_settings_work_profile">Notification access is not available for apps in the work profile.</string>
     <!-- Title for setting tile leading to saved autofill passwords, autofill, and account settings [CHAR LIMIT=40]-->
-    <string name="account_dashboard_title">Passwords &amp; accounts</string>
+    <string name="account_dashboard_title">Accounts</string>
     <!-- Summary for setting tile leading to saved autofill passwords, autofill, and account settings [CHAR LIMIT=NONE]-->
     <string name="account_dashboard_default_summary">Saved passwords, autofill, synced accounts</string>
     <!-- Title for setting tile leading to setting UI which allows user set default app to
@@ -8201,7 +8535,6 @@
     <string name="app_default_dashboard_title">Default apps</string>
     <!-- Summary text for system preference tile, showing important setting items under system setting [CHAR LIMIT=NONE]-->
     <string name="system_dashboard_summary">Languages, gestures, time, backup</string>
-
     <!-- Search strings -->
     <!-- Text to describe the search results fragment title [CHAR LIMIT=16] -->
     <string name="search_results_title">Settings</string>
@@ -13605,4 +13938,15 @@
     <string name="bluetooth_connect_access_dialog_negative">Don\u2019t connect</string>
     <!-- Strings for Dialog connect button -->
     <string name="bluetooth_connect_access_dialog_positive">Connect</string>
+
+    <string name="connectivity_check_title">Internet connectivity check</string>
+    <string name="connectivity_check_summary">HTTP endpoints to use for performing internet connectivity checks.</string>
+    <!-- General -->
+    <string name="copied_to_clipboard">Copied to clipboard</string>
+    <string name="longpress_to_clipboard">Long-press to copy</string>
+
+    
+    <string name="search">Search</string>
+    <string name="search_apps">Search apps</string>
+
 </resources>

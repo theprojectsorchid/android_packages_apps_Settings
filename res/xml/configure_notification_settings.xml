@@ -18,6 +18,12 @@
                   xmlns:settings="http://schemas.android.com/apk/res-auto"
                   android:title="@string/configure_notification_settings">
 
+
+
+    <com.android.settingslib.widget.LayoutPreference
+        android:key="bluetooth_animation"
+        android:layout="@layout/bluetooth_animation" />
+        
     <PreferenceCategory
         android:key="general_notifications_category"
         android:title="@string/general_notification_header">

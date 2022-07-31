@@ -21,8 +21,14 @@
     android:key="sound_settings"
     settings:keywords="@string/keywords_sounds">
 
+   <com.android.settingslib.widget.LayoutPreference
+        android:key="sound_animation"
+        android:layout="@layout/sound_animation"
+        android:order="-999"/>
+
     <!-- Remote volume group -->
     <PreferenceCategory
+		android:layout="@layout/card_top"
         android:key="remote_media_group"
         android:title=""
         android:order="-185"
@@ -32,6 +38,7 @@
 
     <!-- Media volume -->
     <com.android.settings.notification.VolumeSeekBarPreference
+		android:layout="@layout/card_end"
         android:key="media_volume"
         android:icon="@drawable/ic_media_stream"
         android:title="@string/media_volume_option_title"
@@ -40,6 +47,7 @@
 
     <!-- Media output switcher -->
     <Preference
+		android:layout="@layout/card_top"
         android:key="media_output"
         android:title="@string/media_output_title"
         android:dialogTitle="@string/media_output_title"
@@ -49,6 +57,7 @@
 
     <!-- Call volume -->
     <com.android.settings.notification.VolumeSeekBarPreference
+		android:layout="@layout/card_mid"
         android:key="call_volume"
         android:icon="@drawable/ic_local_phone_24_lib"
         android:title="@string/call_volume_option_title"
@@ -57,6 +66,7 @@
 
     <!-- Hands free profile output switcher -->
     <ListPreference
+		android:layout="@layout/card_end"
         android:key="take_call_on_output"
         android:title="@string/take_call_on_title"
         android:dialogTitle="@string/take_call_on_title"
@@ -66,6 +76,7 @@
 
     <!-- Ring volume -->
     <com.android.settings.notification.VolumeSeekBarPreference
+		android:layout="@layout/card_top"
         android:key="ring_volume"
         android:icon="@drawable/ic_audio_ring"
         android:title="@string/ring_volume_option_title"
@@ -75,6 +86,7 @@
 
     <!-- Alarm volume -->
     <com.android.settings.notification.VolumeSeekBarPreference
+		android:layout="@layout/card_end"
         android:key="alarm_volume"
         android:icon="@*android:drawable/ic_audio_alarm"
         android:title="@string/alarm_volume_option_title"
@@ -83,6 +95,7 @@
 
     <!-- Notification volume -->
     <com.android.settings.notification.VolumeSeekBarPreference
+		android:layout="@layout/card_top"
         android:key="notification_volume"
         android:icon="@drawable/ic_notifications"
         android:title="@string/notification_volume_option_title"
@@ -100,6 +113,7 @@
     <!-- TODO(b/174964721): make this a PrimarySwitchPreference -->
     <!-- Interruptions -->
     <com.android.settingslib.RestrictedPreference
+		android:layout="@layout/card_top"
         android:key="zen_mode"
         android:title="@string/zen_mode_settings_title"
         android:fragment="com.android.settings.notification.zen.ZenModeSettings"
@@ -110,6 +124,7 @@
 
     <!-- Phone ringtone -->
     <com.android.settings.DefaultRingtonePreference
+		android:layout="@layout/card_end"
         android:key="phone_ringtone"
         android:title="@string/ringtone_title"
         android:dialogTitle="@string/ringtone_title"
@@ -129,6 +144,7 @@
 
     <!-- Live Caption -110 and Now Playing -105-->
     <Preference
+		android:layout="@layout/card_top"
         android:key="media_controls_summary"
         android:title="@string/media_controls_title"
         android:fragment="com.android.settings.sound.MediaControlsSettings"
@@ -138,6 +154,7 @@
 
     <!-- Also vibrate for calls -->
     <Preference
+		android:layout="@layout/card_end"
         android:fragment="com.android.settings.sound.VibrateForCallsPreferenceFragment"
         android:key="vibrate_for_calls"
         android:title="@string/vibrate_when_ringing_title"
@@ -167,6 +184,7 @@
     </PreferenceCategory>
 
     <com.android.settings.widget.PrimarySwitchPreference
+		android:layout="@layout/card_top"
         android:key="gesture_prevent_ringing_sound"
         android:title="@string/gesture_prevent_ringing_sound_title"
         android:order="-80"
@@ -175,6 +193,7 @@
 
     <!-- Default notification ringtone -->
     <com.android.settings.DefaultRingtonePreference
+		android:layout="@layout/card_end"
         android:key="notification_ringtone"
         android:title="@string/notification_ringtone_title"
         android:dialogTitle="@string/notification_ringtone_title"
@@ -184,6 +203,7 @@
 
     <!-- Default alarm ringtone -->
     <com.android.settings.DefaultRingtonePreference
+		android:layout="@layout/card_top"
         android:key="alarm_ringtone"
         android:title="@string/alarm_ringtone_title"
         android:dialogTitle="@string/alarm_ringtone_title"
@@ -194,36 +214,42 @@
 
     <!-- Dial pad tones -->
     <SwitchPreference
+		android:layout="@layout/card_top"
         android:key="dial_pad_tones"
         android:title="@string/dial_pad_tones_title"
         android:order="-50"/>
 
     <!-- Screen locking sounds -->
     <SwitchPreference
+		android:layout="@layout/card_end"
         android:key="screen_locking_sounds"
         android:title="@string/screen_locking_sounds_title"
         android:order="-45"/>
 
     <!-- Charging sounds -->
     <SwitchPreference
+		android:layout="@layout/card_top"
         android:key="charging_sounds"
         android:title="@string/charging_sounds_title"
         android:order="-40"/>
 
     <!-- Docking sounds -->
     <SwitchPreference
+		android:layout="@layout/card_top"
         android:key="docking_sounds"
         android:title="@string/docking_sounds_title"
         android:order="-35"/>
 
     <!-- Touch sounds -->
     <SwitchPreference
+		android:layout="@layout/card_end"
         android:key="touch_sounds"
         android:title="@string/touch_sounds_title"
         android:order="-30"/>
 
     <!-- Vibrate on touch -->
     <SwitchPreference
+		android:layout="@layout/card_top"
         android:key="vibrate_on_touch"
         android:title="@string/vibrate_on_touch_title"
         android:summary="@string/vibrate_on_touch_summary"
@@ -232,6 +258,7 @@
 
     <!-- Dock speaker plays -->
     <DropDownPreference
+		android:layout="@layout/card_end"
         android:key="dock_audio_media"
         android:title="@string/dock_audio_media_title"
         android:summary="%s"
@@ -239,12 +266,14 @@
 
     <!-- Boot sounds -->
     <SwitchPreference
+		android:layout="@layout/card_top"
         android:key="boot_sounds"
         android:title="@string/boot_sounds_title"
         android:order="-15"/>
 
     <!-- Emergency tone -->
     <DropDownPreference
+		android:layout="@layout/card_end"
         android:key="emergency_tone"
         android:title="@string/emergency_tone_title"
         android:summary="%s"

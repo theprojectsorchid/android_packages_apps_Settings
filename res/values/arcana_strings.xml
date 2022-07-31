@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+     Copyright (C) 2021-2022 Project Arcana
+     Licensed under the Apache License, Version 2.0 (the "License");
+     you may not use this file except in compliance with the License.
+     You may obtain a copy of the License at
+     http://www.apache.org/licenses/LICENSE-2.0
+          http://www.apache.org/licenses/LICENSE-2.0
+     Unless required by applicable law or agreed to in writing, software
+     distributed under the License is distributed on an "AS IS" BASIS,
+     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     See the License for the specific language governing permissions and
+     limitations under the License.
+-->
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <!-- arcanaOS versioning -->
+    <string name="arcana_version_title">Project Arcana Version</string>
+    <string name="arcana_device_title">Device</string>
+    <string name="arcana_release_type_title">Release type</string>
+    <string name="arcana_maintainer_title">Maintainer</string>
+    <string name="arcana_revision">Project Arcana Revision</string>
+
+    <!-- String for removal of sensitive info on about, depending on tap -->
+    <string name="device_info_protected_single_press">Tap to show info</string>
+
+    <!-- Fullscreen gestures -->
+    <string name="fullscreen_gestures_title">Fullscreen gestures</string>
+    <string name="fullscreen_gestures_summary">Hide navbar pill and keyboard space</string>
+    
+    <!-- Misc gesture settings -->
+    <string name="back_gesture_haptic_title">Haptic feedback</string>
+    <string name="back_gesture_haptic_summary">Enable haptic tick effect on back gesture</string>
+    
+    <!-- Arcane Idle Manager -->
+    <string name="arcane_idle_manager_title">Arcana Idle Manager</string>
+    <string name="arcane_idle_manager_summary">Stop all non-essential background processes when the device is idle</string>
+
+
+
+    <!-- About ProjectArcana -->
+    <string name="arcana_about_info">What is PepsiOs</string>
+    <string name="arcana_about_summary">Welcome to the PepsiOs.</string>
+    <string name="arcana_about_info_summary">A mobile phone operating system based on Android. &#35;thatswhatilike</string>
+    <string name="dev_info">About PepsiOs</string>
+    <string name="github">Walkers</string>
+    <string name="github_description">find about us</string>
+    <string name="gplus">open source</string>
+    <string name="gplus_description">android apps</string>
+    <string name="telegram">Instagram</string>
+    <string name="telegram_description">Subscribe to our Instagram channel</string>
+    <string name="web">Pepsico Website</string>
+    <string name="web_description">Check us out</string>
+    <string name="help_translate">Translations</string>
+    <string name="help_translate_description">Translate to your language, visit our Crowdin</string>
+    <string name="walls">Wallpapers</string>
+    <string name="walls_description">Get wallpapers contributed by various users</string>
+    <string name="leads">developed by.</string>
+    <string name="team_1">Teammodmii &#40;theprojects&#41;</string>
+    <string name="team1_description">Project Orchid</string>
+    <string name="team_2">mafiasupremacy &#40;Joaquin-000&#41;</string>
+    <string name="team2_description">Developer and Moderator</string>
+    <string name="team_3">hazama25 &#40;hazama25&#41;</string>
+    <string name="team3_description">Developer and Moderator</string>
+    <string name="team_4">don eun &#40;eun0115&#41;</string>
+    <string name="team4_description">Developer and Moderator</string>
+
+    
+    <!-- Maintainer section -->
+    <string name="loading_devices">Loading devices list...</string>
+    <string name="loading_devices_failed">Failed to load devices list</string>
+    <string name="devices_list_empty">List is empty, tap the icon to reload</string>
+    <string name="reload_list">Reload</string>
+
+</resources>

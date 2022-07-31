@@ -20,6 +20,11 @@
         android:title="@string/wifi_settings"
         settings:keywords="@string/keywords_wifi">
 
+
+    <com.android.settingslib.widget.LayoutPreference
+        android:key="bluetooth_animation"
+        android:layout="@layout/bluetooth_animation" />
+
     <com.android.settings.wifi.LinkablePreference
         android:key="wifi_status_message"/>
 
