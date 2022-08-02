@@ -22,6 +22,16 @@
 	android:selectable="false"
         android:order="10" />
 
+    <Preference
+        android:key="xd_build_status"
+        android:title="@string/xd_build_status"
+        android:summary="@string/xd_summary_placeholder"
+        android:icon="@drawable/xd_build"
+        android:order="20"
+        settings:controller="com.android.settings.deviceinfo.firmwareversion.BuildMaintainerPreferenceController"
+        settings:layout="@layout/xd_pref_card_sin-accent"/>
+
+
     <com.android.settingslib.widget.LayoutPreference
         android:key="multiuser"
         android:layout="@layout/multiuser"
