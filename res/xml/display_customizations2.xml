@@ -18,5 +18,10 @@
     xmlns:settings="http://schemas.android.com/apk/res/com.android.settings"
     android:key="display_customizations2"
     android:title=" ">
+    
+    <com.android.settingslib.widget.LayoutPreference
+    android:key="blaze_info"
+    android:layout="@layout/about_phone_info"
+    android:selectable="false" />
 
 </PreferenceScreen>
