@@ -89,6 +89,7 @@
 
     <PreferenceCategory
         android:key="device_detail_category"
+        android:layout="@layout/custom_preference_category2"
         android:selectable="false"
         android:title="@string/device_and_android_version">
 
@@ -145,6 +146,7 @@
     </PreferenceCategory>
 
     <PreferenceCategory
+    	android:layout="@layout/custom_preference_category2"
         android:title="@string/device_firmware_about">
 
         <!-- Android version -->
