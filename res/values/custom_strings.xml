@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Copyright (C) 2019 ArrowOS Project
+
+    Licensed under the Apache License, Version 2.0 (the "License");
+    you may not use this file except in compliance with the License.
+    You may obtain a copy of the License at
+
+        http://www.apache.org/licenses/LICENSE-2.0
+
+    Unless required by applicable law or agreed to in writing, software
+    distributed under the License is distributed on an "AS IS" BASIS,
+    WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+    See the License for the specific language governing permissions and
+    limitations under the License.
+-->
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+
+    <!-- Settings intelligence suggestions class -->
+    <string name="config_settingsintelligence_suggestions_class" translatable="false">
+        com.android.settings.intelligence.suggestions.SuggestionService
+    </string>
+
+    <!-- String for removal of sensitive info on about, depending on tap -->
+    <string name="device_info_protected_single_press">Tap to show info</string>
+
+    <!-- Refresh rate -->
+    <string name="min_refresh_rate_title">Minimum refresh rate</string>
+    <string name="max_refresh_rate_title">Maximum refresh rate</string>
+    <string name="battery_saver_refresh_rate_title">Reduce refresh rate</string>
+    <string name="battery_saver_refresh_rate_summary">Use 60 Hz screen refresh rate to save power when Battery Saver is on</string>
+
+    <!-- Hardware info -->
+    <string name="platform_revision">Platform</string>
+    <string name="total_ram">Total RAM</string>
+
+    <!-- About device screen, Project Elixir -->
+    <string name="elixir_version">Elixir Version</string>
+
+    <!-- About device screen, Build date -->
+    <string name="build_date">Build date</string>
+
+    <!-- SELinux Status -->
+    <string name="selinux_status">SELinux Status</string>
+    <string name="selinux_status_disabled">Disabled</string>
+    <string name="selinux_status_permissive">Permissive</string>
+    <string name="selinux_status_enforcing">Enforcing</string>
+
+    <!-- Notification log -->
+    <string name="notification_log_summary">Show notifications history log</string>
+
+    <!-- App details: open play store link if app is user installed -->
+    <string name="app_play_store">Google Play</string>
+
+    <!-- Battery temperature -->
+    <string name="battery_temp">Battery temperature</string>
+
+    <!-- Fullscreen gestures -->
+    <string name="other_controls_title">Other controls</string>
+    <string name="fullscreen_gestures_title">Fullscreen gestures</string>
+    <string name="fullscreen_gestures_summary">Hide navbar pill and keyboard space</string>
+
+    <!-- Gesture navbar length -->
+    <string name="gesture_navbar_length_title">Pill length</string>
+    <string name="short_label">Short</string>
+    <string name="long_label">Long</string>
+
+    <!-- Density category -->
+    <string name="density_category">Density options</string>
+	
+    <!-- Model and Hardware -->
+    <string name="blaze_processor_title">Processor</string>
+    <string name="blaze_storage_code_title">Storage</string>
+    <string name="blaze_battery_type_title">Battery</string>
+    <string name="blaze_screen_title">Screen</string>
+    <string name="net_info">Network</string>
+    <string name="mod_info">@string/model_info</string> 
+    <string name="id_info">Identifiers</string>
+    <string name="model_summary">Model, phone number, IMEI, etc</string>
+    <string name="model_name">Device status</string>
+    <string name="legal_summary">Licenses and legal</string>
+
+    <!-- Device specific doze package -->
+    <string name="config_customDozePackage" translatable="false"></string>
+
+    <!-- About Phone screen, Device Codename -->
+    <string name="about_device_name">Device</string>
+
+    <string name="search_text_home">What are you looking for ?</string>
+
+    <!-- xd. Build Status -->
+    <string name="xd_build_status">Your devices is not officially supported!</string>
+    <string name="xd_build_maintained_summary">Maintained by %s</string>
+    <string name="xd_build_unmaintained_summary">This build are not maintained officially</string>
+    <string name="xd_summary_placeholder">loremipsum</string>
+
+</resources>
