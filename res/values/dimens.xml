@@ -475,8 +475,11 @@
      <dimen name="dashboard_icon_size">42dp</dimen>
      <dimen name="top_pref_start">60dp</dimen>
      <dimen name="card_radius">12dp</dimen>
-     
+
      <dimen name="dashboard_tile_image_size">@dimen/op_control_avatar_size3</dimen>
     <dimen name="dashboard_tile_foreground_image_size">@dimen/op_control_icon_size_indicator</dimen>
+     <dimen name="dashboard_tile_foreground_image_size_op">21.0dip</dimen>
 
+    <dimen name="default_margin">16dp</dimen>
+    <dimen name="default_padding">16dp</dimen>
 </resources>
