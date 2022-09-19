@@ -465,7 +465,8 @@
     <dimen name="op_control_icon_size_indicator">16.0dip</dimen>
     
     <!-- Card Layout -->
-
+    <dimen name="card_margin_rui_start">38.0dp</dimen>
+    <dimen name="card_margin_rui_end">24.0dp</dimen>
      <dimen name="card_margin_start">16.0dp</dimen>
      <dimen name="card_margin_end">16.0dp</dimen>
      <dimen name="card_padding_end">70.0dp</dimen>
