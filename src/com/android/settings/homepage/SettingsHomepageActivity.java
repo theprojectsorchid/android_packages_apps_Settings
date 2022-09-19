@@ -35,12 +35,14 @@ import android.os.UserManager;
 import android.text.TextUtils;
 import android.util.ArraySet;
 import android.util.FeatureFlagUtils;
+import android.provider.Settings;
 import android.util.Log;
 import android.view.View;
 import android.view.Window;
 import android.view.WindowManager;
 import android.widget.FrameLayout;
 import android.widget.ImageView;
+import android.widget.LinearLayout;
 import android.widget.Toolbar;
 import android.widget.TextView;
 
@@ -53,7 +55,7 @@ import androidx.window.embedding.SplitRule;
 import com.android.internal.util.UserIcons;
 
 import com.android.settings.R;
-import com.android.settings.Settings;
+import android.provider.Settings;
 import com.android.settings.SettingsActivity;
 import com.android.settings.SettingsApplication;
 import com.android.settings.accounts.AvatarViewMixin;
@@ -65,6 +67,9 @@ import com.android.settings.homepage.contextualcards.ContextualCardsFragment;
 import com.android.settings.overlay.FeatureFactory;
 import com.android.settingslib.Utils;
 import com.android.settingslib.core.lifecycle.HideNonSystemOverlayMixin;
+
+import com.android.settingslib.drawable.CircleFramedDrawable;
+import com.google.android.material.appbar.CollapsingToolbarLayout;
 
 import java.net.URISyntaxException;
 import java.util.Set;
@@ -95,6 +100,7 @@ public class SettingsHomepageActivity extends FragmentActivity implements
     private View mHomepageView;
     private View mSuggestionView;
     private View mTwoPaneSuggestionView;
+    private boolean mIsTwoPaneLastTime;
     private CategoryMixin mCategoryMixin;
     private Set<HomepageLoadedListener> mLoadedListeners;
     private boolean mIsEmbeddingActivityEnabled;
@@ -163,41 +169,57 @@ public class SettingsHomepageActivity extends FragmentActivity implements
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.settings_homepage_container);
-        mIsEmbeddingActivityEnabled = ActivityEmbeddingUtils.isEmbeddingActivityEnabled(this);
-        mIsTwoPaneLastTime = ActivityEmbeddingUtils.isTwoPaneResolution(this);
-
-        final View appBar = findViewById(R.id.app_bar_container);
-        appBar.setMinimumHeight(getSearchBoxHeight());
-        initHomepageContainer();
-
         Context context = getApplicationContext();
-        mUserManager = context.getSystemService(UserManager.class);
 
-        updateHomepageAppBar();
+        final boolean useStockLayout = getuseStockLayout();
+
+        setContentView(useStockLayout  ? R.layout.settings_homepage_container_stock
+                                       : R.layout.settings_homepage_container);
+
+
         updateHomepageBackground();
         mLoadedListeners = new ArraySet<>();
-
-        initSearchBarView();
+        final String highlightMenuKey = getHighlightMenuKey();
+        if (useStockLayout) {
+        mIsEmbeddingActivityEnabled = ActivityEmbeddingUtils.isEmbeddingActivityEnabled(this);
+        if (mIsEmbeddingActivityEnabled) {
+            final UserManager um = getSystemService(UserManager.class);
+            final UserInfo userInfo = um.getUserInfo(getUser().getIdentifier());
+            if (userInfo.isManagedProfile()) {
+                final Intent intent = new Intent(getIntent())
+                        .setClass(this, DeepLinkHomepageActivityInternal.class)
+                        .addFlags(Intent.FLAG_ACTIVITY_FORWARD_RESULT)
+                        .putExtra(EXTRA_USER_HANDLE, getUser());
+                intent.removeFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
+                startActivityAsUser(intent, um.getPrimaryUser().getUserHandle());
+                finish();
+                return;
+            }
+        }
 
         avatarView = findViewById(R.id.account_avatar);
-        //final AvatarViewMixin avatarViewMixin = new AvatarViewMixin(this, avatarView);
-        avatarView.setImageDrawable(getCircularUserIcon(context));
-        avatarView.setVisibility(View.VISIBLE);
-        avatarView.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent intent = new Intent(Intent.ACTION_MAIN);
-                intent.setComponent(new ComponentName("com.android.settings","com.android.settings.Settings$UserSettingsActivity"));
-                startActivity(intent);
-            }
-        });
 
-        getLifecycle().addObserver(new HideNonSystemOverlayMixin(this));
-        mCategoryMixin = new CategoryMixin(this);
-        getLifecycle().addObserver(mCategoryMixin);
+        if (avatarView != null) {
+          avatarView.setImageDrawable(getCircularUserIcon(getApplicationContext()));
+          avatarView.setVisibility(View.VISIBLE);
+          avatarView.setOnClickListener(new View.OnClickListener() {
+              @Override
+              public void onClick(View v) {
+                  Intent intent = new Intent(Intent.ACTION_MAIN);
+                  intent.setComponent(new ComponentName("com.android.settings","com.android.settings.Settings$UserSettingsActivity"));
+                  startActivity(intent);
+              }
+          });
+        }
 
-        final String highlightMenuKey = getHighlightMenuKey();
+        setupEdgeToEdge();
+        mSplitController = SplitController.getInstance();
+        mIsTwoPane = mSplitController.isActivityEmbedded(this);
+
+        updateAppBarMinHeight();
+        initHomepageContainer();
+        updateHomepageAppBar();
+        initSearchBarView();
         // Only allow features on high ram devices.
         if (!getSystemService(ActivityManager.class).isLowRamDevice()) {
             final boolean scrollNeeded = mIsEmbeddingActivityEnabled
@@ -295,12 +317,66 @@ public class SettingsHomepageActivity extends FragmentActivity implements
     @Override
     public void onConfigurationChanged(Configuration newConfig) {
         super.onConfigurationChanged(newConfig);
-        final boolean isTwoPane = ActivityEmbeddingUtils.isTwoPaneResolution(this);
-        if (mIsTwoPaneLastTime != isTwoPane) {
-            mIsTwoPaneLastTime = isTwoPane;
+        Context context = getApplicationContext();
+        final boolean useStockLayout = Settings.System.getIntForUser(context.getContentResolver(),
+                Settings.System.USE_STOCK_LAYOUT, 0, UserHandle.USER_CURRENT) != 0;
+
+        if (useStockLayout) {
+        final boolean newTwoPaneState = mSplitController.isActivityEmbedded(this);
+        if (mIsTwoPane != newTwoPaneState) {
+            mIsTwoPane = newTwoPaneState;
             updateHomepageAppBar();
             updateHomepageBackground();
         }
+        updateSplitLayout();
+        }
+    }
+
+    private void updateSplitLayout() {
+        if (!mIsEmbeddingActivityEnabled) {
+            return;
+        }
+
+        if (mIsTwoPane) {
+            if (mIsRegularLayout == ActivityEmbeddingUtils.isRegularHomepageLayout(this)) {
+                // Layout unchanged
+                return;
+            }
+        } else if (mIsRegularLayout) {
+            // One pane mode with the regular layout, not needed to change
+            return;
+        }
+        mIsRegularLayout = !mIsRegularLayout;
+
+        // Update search title padding
+        View searchTitle = findViewById(R.id.search_bar_title);
+        if (searchTitle != null) {
+            int paddingStart = getResources().getDimensionPixelSize(
+                    mIsRegularLayout
+                            ? R.dimen.search_bar_title_padding_start_regular_two_pane
+                            : R.dimen.search_bar_title_padding_start);
+            searchTitle.setPaddingRelative(paddingStart, 0, 0, 0);
+        }
+        // Notify fragments
+        getSupportFragmentManager().getFragments().forEach(fragment -> {
+            if (fragment instanceof SplitLayoutListener) {
+                ((SplitLayoutListener) fragment).onSplitLayoutChanged(mIsRegularLayout);
+            }
+        });
+    }
+
+    private void setupEdgeToEdge() {
+        WindowCompat.setDecorFitsSystemWindows(getWindow(), false);
+        ViewCompat.setOnApplyWindowInsetsListener(findViewById(android.R.id.content),
+                (v, windowInsets) -> {
+                    Insets insets = windowInsets.getInsets(WindowInsetsCompat.Type.systemBars());
+                    // Apply the insets paddings to the view.
+                    v.setPadding(insets.left, insets.top, insets.right, insets.bottom);
+
+                    // Return CONSUMED if you don't want the window insets to keep being
+                    // passed down to descendant views.
+                    return WindowInsetsCompat.CONSUMED;
+                });
     }
 
     private void initSearchBarView() {
@@ -499,6 +575,35 @@ public class SettingsHomepageActivity extends FragmentActivity implements
         return searchBarHeight + searchBarMargin * 2;
     }
 
+    private static class SuggestionFragCreator implements FragmentCreator {
+
+        private final Class<? extends Fragment> mClass;
+        private final boolean mIsTwoPaneLayout;
+
+        SuggestionFragCreator(Class<? extends Fragment> clazz, boolean isTwoPaneLayout) {
+            mClass = clazz;
+            mIsTwoPaneLayout = isTwoPaneLayout;
+        }
+
+        @Override
+        public Fragment create() {
+            try {
+                Fragment fragment = mClass.getConstructor().newInstance();
+                return fragment;
+            } catch (Exception e) {
+                Log.w(TAG, "Cannot show fragment", e);
+            }
+            return null;
+        }
+
+        @Override
+        public void init(Fragment fragment) {
+            if (fragment instanceof SplitLayoutListener) {
+                ((SplitLayoutListener) fragment).setSplitLayoutSupported(mIsTwoPaneLayout);
+            }
+        }
+    }
+
     private Drawable getCircularUserIcon(Context context) {
         Bitmap bitmapUserIcon = mUserManager.getUserIcon(UserHandle.myUserId());
 
@@ -517,6 +622,16 @@ public class SettingsHomepageActivity extends FragmentActivity implements
     @Override
     public void onResume() {
         super.onResume();
-        avatarView.setImageDrawable(getCircularUserIcon(getApplicationContext()));
+        final boolean useStockLayout = getuseStockLayout();
+        if (useStockLayout) {
+            avatarView.setImageDrawable(getCircularUserIcon(getApplicationContext()));
+        }
     }
+
+    private boolean getuseStockLayout() { 
+        final Context context = getApplicationContext();
+        return Settings.System.getIntForUser(context.getContentResolver(),
+                Settings.System.USE_STOCK_LAYOUT, 0,
+                UserHandle.USER_CURRENT) != 0;
+   }
 }

@@ -19,7 +19,6 @@
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:id="@+id/settings_homepage_container"
-    android:fitsSystemWindows="true"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
@@ -27,8 +26,6 @@
         android:id="@+id/main_content_scrollable_container"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:scrollbarThumbVertical="@android:color/transparent"  
-    	android:scrollbarThumbHorizontal="@android:color/transparent"
         app:layout_behavior="com.android.settings.widget.HomepageAppBarScrollingViewBehavior">
 
         <LinearLayout
@@ -54,10 +51,8 @@
     </androidx.core.widget.NestedScrollView>
 
     <com.google.android.material.appbar.AppBarLayout
-        android:id="@+id/appbar"
-        app:elevation="0dp"
+        android:id="@+id/app_bar"
         android:layout_width="match_parent"
-        android:background="?android:attr/colorPrimary"
         android:layout_height="wrap_content"
         android:touchscreenBlocksFocus="false"
         android:keyboardNavigationCluster="false">
@@ -68,26 +63,14 @@
             android:orientation="vertical"
             app:layout_scrollFlags="scroll|enterAlways|enterAlwaysCollapsed">
 
-    <Toolbar
-        android:layout_width="match_parent"
-        android:layout_height="?android:attr/actionBarSize" />
-    <LinearLayout
-        android:id="@+id/common_con"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_gravity="bottom|end"
-        android:layout_marginBottom="10dp"
-        android:padding="4dp"
-    	android:gravity="center"
-        android:layout_marginEnd="16dp"
-        android:orientation="horizontal">
-    <Toolbar
-        android:id="@+id/search_action_bar"
-        android:layout_width="54dp"
-        android:navigationIcon="@drawable/ic_homepage_search"
-        android:layout_height="34dp"
-        android:background="@android:color/transparent"/>
-    </LinearLayout>
-    </com.google.android.material.appbar.CollapsingToolbarLayout>
-</com.google.android.material.appbar.AppBarLayout>
+            <include
+                android:id="@+id/homepage_app_bar_regular_phone_view"
+                layout="@layout/settings_homepage_app_bar_regular_phone_layout"/>
+
+            <include
+                android:id="@+id/homepage_app_bar_two_pane_view"
+                layout="@layout/settings_homepage_app_bar_two_pane_layout"
+                android:visibility="gone"/>
+        </LinearLayout>
+    </com.google.android.material.appbar.AppBarLayout>
 </androidx.coordinatorlayout.widget.CoordinatorLayout>
