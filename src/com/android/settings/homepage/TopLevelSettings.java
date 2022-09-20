@@ -84,8 +84,10 @@ public class TopLevelSettings extends DashboardFragment implements
                 return R.xml.top_level_settings;
             case 1:
                 return R.xml.top_level_settings_dot;
+            case 2:
+                return R.xml.top_level_settings_nad;
             default:
-                return R.xml.top_level_settings_dot;
+                return R.xml.top_level_settings_nad;
         }
     }
 
@@ -282,6 +284,8 @@ public class TopLevelSettings extends DashboardFragment implements
                 } else if (key.equals("top_level_wellbeing")) {
                     preference.setLayoutResource(R.layout.dot_dashboard_preference_middle);
                 }
+            } else if (mDashBoardStyle == 2) {
+                preference.setLayoutResource(R.layout.nad_dashboard_preference);
             }
         }
     }
@@ -451,7 +455,7 @@ public class TopLevelSettings extends DashboardFragment implements
 
     private void setDashboardStyle(Context context) {
         mDashBoardStyle = Settings.System.getIntForUser(context.getContentResolver(),
-                Settings.System.SETTINGS_DASHBOARD_STYLE, 1, UserHandle.USER_CURRENT);
+                Settings.System.SETTINGS_DASHBOARD_STYLE, 2, UserHandle.USER_CURRENT);
     }
 
     public static final BaseSearchIndexProvider SEARCH_INDEX_DATA_PROVIDER =
