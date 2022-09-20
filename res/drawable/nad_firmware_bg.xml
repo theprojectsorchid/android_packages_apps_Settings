@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ripple xmlns:android="http://schemas.android.com/apk/res/android"
+    android:color="?attr/colorControlHighlight">
+
+    <!-- ripple mask -->
+    <item android:id="@+id/mask">
+        <color android:color="@android:color/white"/>
+    </item>
+
+    <!-- background shape or color -->
+    <item android:drawable="@android:color/holo_red_dark"/>
+
+</ripple>

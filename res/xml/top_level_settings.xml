@@ -28,6 +28,9 @@
         android:fragment="com.epic.fragments.ButtonSettings"
         android:order="-190" />
         
+    <com.android.settings.dashboard.TopMenu
+        android:order="-180"/>
+
 <!--
    <com.android.settingslib.widget.LayoutPreference
             android:layout="@layout/usercard_blank"

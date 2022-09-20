@@ -83,6 +83,15 @@
         <item name="android:layout_marginBottom">4dp</item>
     </style>
 
+    <style name="dotDashboardPreferenceFullThin" parent="dotDashboardPreferenceFull">
+        <item name="android:layout_marginTop">2dp</item>
+        <item name="android:layout_marginBottom">2dp</item>
+    </style>
+
+    <style name="dotDashboardPreferenceFullAccentThin" parent="dotDashboardPreferenceFullAccent">
+        <item name="android:layout_marginBottom">2dp</item>
+    </style>
+
     <style name="dotDashboardPreferenceFullAccent" parent="dotDashboardPreferenceFull">
         <item name="android:background">@drawable/dot_preference_background_full_accent</item>
     </style>

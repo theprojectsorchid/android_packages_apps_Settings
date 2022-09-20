@@ -85,7 +85,7 @@ public class TopLevelSettings extends DashboardFragment implements
     protected int getPreferenceScreenResId() {
         switch (mDashBoardStyle) {
            case 0:
-               return R.xml.top_level_settings;
+               return R.xml.top_level_settings_nad;
            case 1:
                return R.xml.top_level_settings_wave;
            case 2:
@@ -96,6 +96,8 @@ public class TopLevelSettings extends DashboardFragment implements
                return R.xml.top_level_settings_wave2;
            case 5:
                return R.xml.top_level_settings;
+            case 5:
+               return R.xml.top_level_settings_nad;    
            default:
                return R.xml.top_level_settings;
         }
@@ -230,9 +232,12 @@ public class TopLevelSettings extends DashboardFragment implements
         final int count = screen.getPreferenceCount();
         for (int i = 0; i < count; i++) {
             final Preference preference = screen.getPreference(i);
-
+            top_level_userinfo
  	    String key = preference.getKey();
          if (mDashBoardStyle == 0) {
+            if (key.equals("top_level_userinfo")){
+                preference.setLayoutResource(R.layout.OrchidOs_cardviewnetwork);
+            }
 	        if (key.equals("top_level_network")){
 	        preference.setLayoutResource(R.layout.OrchidOs_cardviewnetwork);
 	        }
@@ -388,6 +393,9 @@ public class TopLevelSettings extends DashboardFragment implements
                 if (key.equals("top_level_network")){
                     preference.setLayoutResource(R.layout.OrchidOs_cardviewnetwork);
                     }
+                    if (key.equals("top_level_userinfo")){
+                    preference.setLayoutResource(R.layout.OrchidOs_cardviewnetwork);
+                   }
                     if (key.equals("top_level_connected_devices")){
                         preference.setLayoutResource(R.layout.OrchidOs_cardviewconnection);
                     }
@@ -688,6 +696,8 @@ public class TopLevelSettings extends DashboardFragment implements
                 if (key.equals("top_level_usercard")){
                 preference.setLayoutResource(R.layout.OrchidOs_cardviewbattery);
                 }
+            } else if (mDashBoardStyle == 6) {
+                preference.setLayoutResource(R.layout.card_preference_home_layout);
             }
         }
     }
