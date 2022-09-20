@@ -460,4 +460,7 @@
      <dimen name="top_pref_start">60dp</dimen>
      <dimen name="card_radius">12dp</dimen>
     
+
+    <!-- Top Level Background Radius Nusantara dashboard style -->
+    <dimen name="nad_top_bg_radius">28dp</dimen>
 </resources>
