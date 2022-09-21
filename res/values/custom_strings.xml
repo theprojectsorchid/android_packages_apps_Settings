@@ -21,4 +21,7 @@
     <string name="xd_build_unmaintained_summary">This build is maintained officially</string>
     <string name="xd_summary_placeholder">CERTIFIED</string>
 
+        <!-- app_info -->
+ <string name="app_info_install_time">Installed: %1$s</string>
+    <string name="app_info_update_time">Updated: %1$s</string>
 </resources>
