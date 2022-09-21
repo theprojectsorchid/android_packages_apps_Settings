@@ -182,5 +182,11 @@
         android:title="@string/show_clip_access_notification"
         android:summary="@string/show_clip_access_notification_summary"
         settings:controller="com.android.settings.privacy.ShowClipAccessNotificationPreferenceController"/>
+    
+    <com.arrow.support.preferences.SecureSettingSwitchPreference
+        android:key="window_ignore_secure"
+        android:title="@string/ignore_window_secure_title"
+        android:summary="@string/ignore_window_secure_summary"
+        android:defaultValue="false"/>
 
 </PreferenceScreen>
