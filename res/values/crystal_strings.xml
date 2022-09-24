@@ -157,4 +157,13 @@
     <string name="ignore_window_secure_title">Ignore window secure flags</string>
     <string name="ignore_window_secure_summary">This removes the screenshots and screenrecords limits for all applications. Normally, special applications are replaced with black areas in records. This can be convenient in some cases but may lead to privacy leaks. After changing this toggle, you may need to restart applications for the change to take effect</string>
 
+    <!-- Dashboard cards -->
+    <string name="wellbeing_title">Google Wellbeing</string>
+    <string name="usercard_summary">Current active user, tap for more information</string>
+    <string name="connectivity_category_title">connectivity</string>
+
+    <!-- Tiles on secure keyguard -->
+    <string name="use_tiles_on_secure_keyguard_title">Require unlocking to use sensitive tiles</string>
+    <string name="use_tiles_on_secure_keyguard_summary">Ask to unlock lock screen when using sensitive tiles</string>
+
 </resources>
