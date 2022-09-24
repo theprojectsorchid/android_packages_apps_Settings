@@ -155,6 +155,13 @@
         android:summary="@string/confirm_sim_deletion_description"
         settings:controller="com.android.settings.security.ConfirmSimDeletionPreferenceController"/>
 
+    <com.arrow.support.preferences.SystemSettingSwitchPreference
+        android:key="use_tiles_on_secure_keyguard"
+        android:order="95"
+        android:title="@string/use_tiles_on_secure_keyguard_title"
+        android:summary="@string/use_tiles_on_secure_keyguard_summary"
+        android:defaultValue="true" />
+
     <!-- work profile security section -->
     <PreferenceCategory
         android:order="100"
