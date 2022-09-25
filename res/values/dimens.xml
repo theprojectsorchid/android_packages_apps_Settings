@@ -13,6 +13,8 @@
 
 <resources>
 
+    <dimen name="stroke_widthAboutUI">1dp</dimen>
+
     <!-- Cards -->
     <dimen name="rdnt_cardview_padding">16dp</dimen>
     <dimen name="rdnt_top_icn">42dp</dimen>
