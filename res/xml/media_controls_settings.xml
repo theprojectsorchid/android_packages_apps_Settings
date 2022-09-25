@@ -25,6 +25,7 @@
         
     <SwitchPreference
         android:key="media_controls_resume_switch"
+                    android:icon="@drawable/rr_media_icon"
         android:title="@string/media_controls_resume_title"
         android:summary="@string/media_controls_resume_description"
         app:keywords="@string/keywords_media_controls"
@@ -32,6 +33,7 @@
 
     <SwitchPreference
         android:key="media_controls_recommendations"
+                    android:icon="@drawable/rr_media_3_icon"
         android:title="@string/media_controls_recommendations_title"
         android:summary="@string/media_controls_recommendations_description"
         app:controller="com.android.settings.sound.MediaControlsRecommendationController" />

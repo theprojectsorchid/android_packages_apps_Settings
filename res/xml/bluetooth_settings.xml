@@ -46,11 +46,13 @@
 
         <Preference
             android:key="bt_rename_device"
+                        android:icon="@drawable/rr_dictionary_icon"
             android:title="@string/bluetooth_device_name"
             android:summary="@string/summary_placeholder" />
 
         <Preference
             android:key="bt_received_files"
+                        android:icon="@drawable/rr_dictionary_icon"
             android:title="@string/bluetooth_show_received_files" />
 
     </PreferenceCategory>

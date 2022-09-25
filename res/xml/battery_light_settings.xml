@@ -46,7 +46,8 @@
         android:defaultValue="false" />
 
     <com.arrow.support.preferences.SystemSettingSwitchPreference
-        android:key="battery_light_low_blinking"
+        android:key="battery_light_low_blinking"           
+         android:icon="@drawable/rr_dictionary_icon"
         android:title="@string/battery_light_low_blinking_title"
         android:dependency="battery_light_enabled"
         android:defaultValue="false" />
@@ -66,18 +67,21 @@
             android:key="battery_light_medium_color"
             android:title="@string/battery_light_medium_color"
             ledPreview="true"
+                        android:icon="@drawable/rr_dictionary_icon"
             defaultColorValue="0xFFFFFF00" />
 
         <com.arrow.support.colorpicker.ColorPickerPreference
             android:key="battery_light_full_color"
             android:title="@string/battery_light_full_color"
             ledPreview="true"
+                        android:icon="@drawable/rr_dictionary_icon"
             defaultColorValue="0xFF00FF00" />
 
         <com.arrow.support.colorpicker.ColorPickerPreference
             android:key="battery_light_reallyfull_color"
             android:title="@string/battery_light_reallyfull_color"
             ledPreview="true"
+                        android:icon="@drawable/rr_dictionary_icon"
             defaultColorValue="0xFF00FF00" />
     </PreferenceCategory>
 

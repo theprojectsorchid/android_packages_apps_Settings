@@ -39,13 +39,13 @@
         android:layout="@layout/custom_preference_category2">
         <Preference
             android:key="virtual_keyboard_pref"
-            android:icon="@drawable/ic_translate_24dp"
+            android:icon="@drawable/rr_heads_up_icon"
             android:title="@string/virtual_keyboard_category"
             android:fragment="com.android.settings.inputmethod.VirtualKeyboardFragment"
             settings:keywords="@string/keywords_virtual_keyboard"/>
         <Preference
             android:key="physical_keyboard_pref"
-            android:icon="@drawable/ic_translate_24dp"
+            android:icon="@drawable/rr_hw_keys_icon"
             android:title="@string/physical_keyboard_title"
             android:summary="@string/summary_placeholder"
             android:fragment="com.android.settings.inputmethod.PhysicalKeyboardFragment"/>
@@ -69,7 +69,7 @@
         <Preference
             android:key="key_user_dictionary_settings"
             android:title="@string/user_dict_settings_title"
-            android:icon="@drawable/ic_translate_24dp"
+            android:icon="@drawable/rr_dictionary_icon"
             android:summary="@string/user_dict_settings_summary"
             android:fragment="com.android.settings.inputmethod.UserDictionaryList"
             settings:controller="com.android.settings.language.UserDictionaryPreferenceController" />
@@ -82,13 +82,13 @@
 
         <com.android.settings.PointerSpeedPreference
             android:key="pointer_speed"
-         android:icon="@drawable/ic_translate_24dp"           
+            android:icon="@drawable/rr_position_icon"
             android:title="@string/pointer_speed"
             android:dialogTitle="@string/pointer_speed" />
 
         <Preference
             android:key="tts_settings_summary"
-        android:icon="@drawable/ic_translate_24dp"
+            android:icon="@drawable/rr_tuner_icon"
             android:title="@string/tts_settings_title"
             android:fragment="com.android.settings.tts.TextToSpeechSettings"
             settings:searchable="false"/>
@@ -97,7 +97,7 @@
 
     <SwitchPreference
         android:key="vibrate_input_devices"
-        android:icon="@drawable/ic_translate_24dp"
+            android:icon="@drawable/rr_vibration_icon_nav"
         android:title="@string/vibrate_input_devices"
         android:summary="@string/vibrate_input_devices_summary"
         settings:controller="com.android.settings.inputmethod.GameControllerPreferenceController" />

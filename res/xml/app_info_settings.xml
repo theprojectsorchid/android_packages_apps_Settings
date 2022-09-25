@@ -49,10 +49,12 @@
     <Preference
         android:key="notification_settings"
         android:title="@string/notifications_label"
+		android:icon="@drawable/ic_audio_ring_notif"
         settings:controller="com.android.settings.applications.appinfo.AppNotificationPreferenceController" />
 
     <com.android.settings.widget.FixedLineSummaryPreference
         android:key="permission_settings"
+		android:icon="@drawable/ic_manage_perms"
         android:title="@string/permissions_label"
         android:summary="@string/summary_placeholder"
         settings:summaryLineCount="1"

@@ -30,6 +30,7 @@
     <com.android.settingslib.widget.MainSwitchPreference
         android:key="dark_ui_activated"
         android:order="-996"
+        android:icon="@drawable/rr_condition_icon"
         android:title="@string/dark_theme_main_switch_title"
         settings:controller="com.android.settings.display.darkmode.DarkModeActivationPreferenceController"/>
     
@@ -47,11 +48,13 @@
 
     <com.android.settingslib.widget.BannerMessagePreference
         android:key="dark_ui_location_off"
+        android:icon="@drawable/rr_styles_icon"
         android:title="@string/twilight_mode_location_off_dialog_message"
         settings:controller="com.android.settings.display.TwilightLocationPreferenceController"/>
 
     <DropDownPreference
         android:key="dark_ui_auto_mode"
+        android:icon="@drawable/rr_autoenable_icon"
         android:title="@string/dark_ui_auto_mode_title"
         android:summary="%s"
         android:entries="@array/dark_ui_scheduler_preference_titles"
