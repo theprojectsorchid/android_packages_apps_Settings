@@ -18,12 +18,11 @@
 <PreferenceScreen
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:settings="http://schemas.android.com/apk/res-auto"
-    android:title="DASHBOARD"
     android:key="top_level_settings">
 	
     <com.android.settingslib.widget.LayoutPreference
         android:key="welcome_animation"
-        android:layout="@layout/welcome_animation"
+        android:layout="@layout/Top_level_welcome_animation"
         android:order="-180" />
 
     <com.android.settingslib.widget.LayoutPreference
@@ -38,6 +37,8 @@
         android:key="usercard_space"
         android:selectable="false"
         android:order="-165"/>
+
+
         
     <com.android.settings.widget.HomepagePreference
 		android:layout="@layout/card_top"
@@ -216,12 +217,5 @@
         android:summary="@string/support_summary"
         settings:controller="com.android.settings.support.SupportPreferenceController"/>
 
-    <Preference
-        android:key="top_level_sakura_settings"
-        android:title="@string/sakura_settings_dash_title"
-        android:summary="@string/sakura_settings_summary"
-        android:icon="@drawable/ic_homepage_sakura"
-        android:order="-135"
-        android:fragment="com.sakura.settings.SakuraSettings"/>
-        
+
 </PreferenceScreen>

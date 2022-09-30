@@ -40,6 +40,6 @@
       android:layout="@layout/remove_account_button"
       android:order="1000"
       android:selectable="false"
-      settings:allowDividerAbove="true"/>
+      settings:allowDividerAbove="false"/>
 
 </PreferenceScreen>

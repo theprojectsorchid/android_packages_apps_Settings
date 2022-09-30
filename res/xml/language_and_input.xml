@@ -20,15 +20,16 @@
     xmlns:settings="http://schemas.android.com/apk/res-auto"
     android:title="@string/language_settings">
 
+    <com.android.settingslib.widget.LayoutPreference
+        android:key="language_settings"
+        android:layout="@layout/language_settings_animation" />
+
     <Preference
         android:key="phone_language"
         android:title="@string/phone_language"
         android:icon="@drawable/ic_translate_24dp"
         android:fragment="com.android.settings.localepicker.LocaleListEditor" />
 
-    <PreferenceCategory
-        android:key="keyboards_category"
-        android:title="@string/keyboard_and_input_methods_category">
         <Preference
             android:key="virtual_keyboard_pref"
             android:icon="@drawable/rr_virtual_icon"
@@ -41,14 +42,7 @@
             android:title="@string/physical_keyboard_title"
             android:summary="@string/summary_placeholder"
             android:fragment="com.android.settings.inputmethod.PhysicalKeyboardFragment"/>
-    </PreferenceCategory>
 
-    <PreferenceCategory
-        android:key="input_assistance_category"
-        android:title="@string/input_assistance">
-        <!-- Spell checker preference title, summary and fragment will be set programmatically. -->
-        <!-- Note: Mark this as persistent="false" to remove unnecessarily saved shared preference.
-             See: InputMethodAndSubtypeUtil.removeUnnecessaryNonPersistentPreference. -->
         <Preference
             android:key="spellcheckers_settings"
             android:icon="@drawable/rr_spell_check_icon"
@@ -64,7 +58,7 @@
             android:icon="@drawable/rr_dictionary_icon"
             android:fragment="com.android.settings.inputmethod.UserDictionaryList"
             settings:controller="com.android.settings.language.UserDictionaryPreferenceController" />
-    </PreferenceCategory>
+ 
 
     <PreferenceCategory
         android:key="pointer_and_tts_category"

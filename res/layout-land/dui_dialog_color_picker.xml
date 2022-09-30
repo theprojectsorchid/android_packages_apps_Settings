@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<!-- Copyright (C) 2010 Daniel Nilsson
-     Copyright (C) 2013 Slimroms
+<!-- Copyright (C) 2022 The Orchid Project
 
      Licensed under the Apache License, Version 2.0 (the "License");
      you may not use this file except in compliance with the License.
@@ -21,10 +20,10 @@
     android:layout_height="wrap_content"
     android:layout_marginStart="36dp"
     android:layout_marginEnd="36dp"
-    android:padding="4dp"
+    android:padding="@dimen/alert_dialog_padding_material"
     android:orientation="horizontal">
 
-    <org.leafos.settings.preferences.colorpicker.ColorPickerView
+ <net.margaritov.preference.colorpicker.ColorPickerView
         android:id="@+id/color_picker_view"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -57,11 +56,16 @@
                 android:id="@+id/hex"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:inputType="text"
-                android:maxLines="1"
-                android:maxLength="7"
                 android:hint="@string/hex_hint" />
 
+            <ImageButton
+                android:id="@+id/enter"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:background="@android:color/transparent"
+                android:gravity="center"
+                android:src="@drawable/ic_action_set" />
         </LinearLayout>
 
         <TextView
@@ -79,7 +83,7 @@
             android:orientation="horizontal"
             android:layout_marginBottom="10dp">
 
-            <org.leafos.settings.preferences.colorpicker.ColorPickerPanelView
+        <net.margaritov.preference.colorpicker.ColorPickerView                
                 android:id="@+id/old_color_panel"
                 android:layout_width="0px"
                 android:layout_height="fill_parent"
@@ -94,7 +98,7 @@
                 android:layout_marginLeft="10dp"
                 android:layout_marginRight="10dp" />
 
-            <org.leafos.settings.preferences.colorpicker.ColorPickerPanelView
+            <net.margaritov.preference.colorpicker.ColorPickerView                              
                 android:id="@+id/new_color_panel"
                 android:layout_width="0px"
                 android:layout_height="wrap_content"

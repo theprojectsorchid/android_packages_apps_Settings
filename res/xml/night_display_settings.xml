@@ -20,6 +20,11 @@
     android:title="@string/night_display_title"
     settings:keywords="@string/keywords_display_night_display">
 
+
+ <com.android.settingslib.widget.LayoutPreference
+        android:key="night_light_animation"
+        android:layout="@layout/night_light_animation" />
+
     <com.android.settingslib.widget.TopIntroPreference
         android:key="night_display_top_intro"
         android:title="@string/night_display_text"
@@ -40,7 +45,7 @@
         android:icon="@drawable/rr_duration_icon"
         android:title="@string/night_display_auto_mode_title"
         android:summary="%s"
-        settings:allowDividerAbove="true"
+        settings:allowDividerAbove="false"
         settings:controller="com.android.settings.display.NightDisplayAutoModePreferenceController"/>
 
     <Preference

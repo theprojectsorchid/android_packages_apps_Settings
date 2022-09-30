@@ -67,9 +67,19 @@
     <Preference
         android:key="gesture_one_handed"
         android:title="@string/one_handed_title"
+        android:icon="@drawable/rr_gestures_icon"
         android:fragment="com.android.settings.gestures.OneHandedSettings"
         settings:controller="com.android.settings.gestures.OneHandedEnablePreferenceController" />
-
+    <Preference
+        android:key="tap_tap_gestures"
+        android:icon="@drawable/rr_gestures_icon"
+        android:summary="@string/TapTap_summary"
+        android:title="@string/TapTap_title">
+        <intent
+            android:action="android.intent.action.MAIN"
+            android:targetClass="com.kieronquinn.app.taptap.ui.activities.MainActivity"
+            android:targetPackage="com.kieronquinn.app.taptap" />
+    </Preference>
     <Preference
         android:key="gesture_tap_screen_input_summary"
         android:icon="@drawable/rr_tap_icon"

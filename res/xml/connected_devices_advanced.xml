@@ -18,6 +18,10 @@
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:settings="http://schemas.android.com/apk/res-auto"
     android:title="@string/connected_device_connections_title">
+ 
+ <com.android.settingslib.widget.LayoutPreference
+        android:key="connected_pref_animation"
+        android:layout="@layout/connected_pref_animation" />
 
     <Preference
         android:fragment="com.android.settings.connecteddevice.BluetoothDashboardFragment"

@@ -18,6 +18,11 @@
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:settings="http://schemas.android.com/apk/res-auto"
     android:title="@string/provider_network_settings_title">
+ 
+  <com.android.settingslib.widget.LayoutPreference
+        android:key="sim_animation" 
+        android:layout="@layout/sim_animation"/>
+
 
     <PreferenceCategory
         android:key="provider_model_sim_category"
@@ -31,7 +36,7 @@
         android:order="25"
         settings:controller=
             "com.android.settings.network.NetworkProviderDownloadedSimsCategoryController"
-        settings:allowDividerAbove="true"/>
+        settings:allowDividerAbove="false"/>
 
     <com.android.settingslib.RestrictedPreference
         android:key="add_more"

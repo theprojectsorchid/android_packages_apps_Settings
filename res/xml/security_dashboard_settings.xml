@@ -65,6 +65,7 @@
         
         <ListPreference
             android:key="deny_new_usb"
+            android:icon="@drawable/ic_usb"           
             android:title="@string/deny_new_usb_title"
             android:summary="@string/deny_new_usb_summary"
             android:persistent="false"

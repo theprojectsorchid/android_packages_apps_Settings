@@ -37,4 +37,8 @@
 
     <!-- For a menu item allowing users to edit a SIM display name -->
     <item type="id" name="edit_sim_name" />
+
+    <!-- tap tap -->
+	<item type="id" name="tap_tap_app" />
+    <item type="id" name="tap_tap_gestures" />
 </resources>

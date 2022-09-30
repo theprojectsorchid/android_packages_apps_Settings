@@ -30,7 +30,7 @@
         android:key="multi_network_header"
         android:title="@string/summary_placeholder"
         android:layout="@layout/preference_category_no_label"
-        settings:allowDividerBelow="true"
+        settings:allowDividerBelow="false"
         android:order="-40"
         settings:controller="com.android.settings.network.MultiNetworkHeaderController"/>
 
@@ -41,7 +41,7 @@
         android:summary="@string/summary_placeholder"
         android:icon="@drawable/ic_settings_wireless"
         android:order="-30"
-        settings:allowDividerAbove="true">
+        settings:allowDividerAbove="false">
         <intent
             android:action="android.settings.WIFI_SETTINGS"
             android:targetClass="Settings$WifiSettingsActivity" />

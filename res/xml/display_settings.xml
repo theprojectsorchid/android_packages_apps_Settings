@@ -30,7 +30,6 @@
 
         <com.android.settingslib.RestrictedPreference
             android:key="brightness"
-			android:icon="@drawable/ic_brightness_display"
             android:title="@string/brightness"
             settings:keywords="@string/keywords_display_brightness_level"
             settings:useAdminDisabledSummary="true"
@@ -45,7 +44,6 @@
             
         <com.android.settings.widget.PrimarySwitchPreference
             android:key="reduce_bright_colors_preference"
-            android:icon="@drawable/ic_reduce_bright_colors_preference"
             android:title="@string/reduce_bright_colors_preference_title"
             settings:keywords="@string/keywords_reduce_bright_colors"
             android:persistent="false"
@@ -58,16 +56,14 @@
 
         <Preference
             android:key="lockscreen_from_display_settings"
-            android:icon="@drawable/ic_lockscreen_settings_title"
             android:title="@string/lockscreen_settings_title"
             android:fragment="com.android.settings.security.LockscreenDashboardFragment"
             settings:keywords="@string/keywords_ambient_display_screen"
-            android:visibility="gone" 
+			android:visibility="invisible"
             settings:controller="com.android.settings.security.screenlock.LockScreenPreferenceController"/>
 
         <com.android.settingslib.RestrictedPreference
             android:key="screen_timeout"
-            android:icon="@drawable/ic_screen_timeout"
             android:title="@string/screen_timeout"
             android:summary="@string/summary_placeholder"
             android:fragment="com.android.settings.display.ScreenTimeoutSettings"
@@ -89,7 +85,6 @@
 
         <Preference
             android:key="font_size"
-            android:icon="@drawable/ic_title_font_size"
             android:title="@string/title_font_size"
             android:icon="@drawable/rr_font_size_icon"
             android:fragment="com.android.settings.display.ToggleFontSizePreferenceFragment"
@@ -97,7 +92,6 @@
             settings:keywords="@string/keywords_font_size"/>
 
         <com.android.settings.display.ScreenZoomPreference
-            android:icon="@drawable/ic_screen_zoom_title"       
             android:key="display_settings_screen_zoom"
              android:icon="@drawable/rr_display_icon"
             android:title="@string/screen_zoom_title"
@@ -108,7 +102,6 @@
         <!-- Icon pack -->
         <Preference
             android:key="android.theme.customization.icon_pack"
-            android:icon="@drawable/ic_theme_customization_icon_pack_title"            
             android:title="@string/theme_customization_icon_pack_title"
             android:summary="@string/theme_customization_icon_pack_summary"
             android:fragment="com.android.settings.lineage.fragments.StatusbarIcons"/>
@@ -116,7 +109,6 @@
         <!-- Adaptive icon pack -->
         <Preference
             android:key="android.theme.customization.adaptive_icon_shape"
-            android:icon="@drawable/ic_theme_customization_icon_shape_title"           
             android:title="@string/theme_customization_icon_shape_title"
             android:summary="@string/theme_customization_icon_shape_summary"
             android:fragment="com.android.settings.lineage.fragments.IconShapes"/>
@@ -145,7 +137,6 @@
             android:title="@string/color_mode_title"
             android:icon="@drawable/ic_settings_colormode"
             android:fragment="com.android.settings.display.ColorModePreferenceFragment"
-            settings:controller="com.android.settings.display.ColorModePreferenceController"
             settings:keywords="@string/keywords_color_mode"/>
     </PreferenceCategory>
 
@@ -187,7 +178,6 @@
 
         <Preference
             android:key="screensaver"
-			android:icon="@drawable/ic_screensaver_settings"            
             android:title="@string/screensaver_settings_title"
             android:fragment="com.android.settings.dream.DreamSettings"/>
 
@@ -202,7 +192,6 @@
 
         <SwitchPreference
             android:key="tap_to_wake"
-			android:icon="@drawable/ic_taptowake_settings"            
             android:title="@string/tap_to_wake"
             android:summary="@string/tap_to_wake_summary"/>
 

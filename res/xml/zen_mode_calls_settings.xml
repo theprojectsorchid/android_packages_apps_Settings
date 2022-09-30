@@ -25,7 +25,7 @@
     <PreferenceCategory
         android:key="zen_mode_settings_category_calls"
         android:title="@string/zen_mode_calls_header"
-        settings:allowDividerBelow="true">
+        settings:allowDividerBelow="false">
 
         <!-- Senders image -->
         <com.android.settingslib.widget.LayoutPreference
@@ -38,7 +38,7 @@
     <SwitchPreference
         android:key="zen_mode_repeat_callers"
         android:title="@string/zen_mode_repeat_callers_title"
-        settings:allowDividerAbove="true"/>
+        settings:allowDividerAbove="false"/>
 
     <com.android.settingslib.widget.FooterPreference/>
 

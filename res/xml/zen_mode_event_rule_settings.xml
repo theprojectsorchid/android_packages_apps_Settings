@@ -25,7 +25,7 @@
         android:key="pref_app_header"
         android:layout="@layout/settings_entity_header"
         android:selectable="false"
-        settings:allowDividerBelow="true" />
+        settings:allowDividerBelow="false" />
 
     <com.android.settingslib.widget.MainSwitchPreference
         android:key="zen_automatic_rule_switch" />
