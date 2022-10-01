@@ -59,5 +59,12 @@
             android:title="@string/qs_footer_datausage_title"
             android:summary="@string/qs_footer_datausage_summary"
             android:defaultValue="false" />
+            
+        <Preference
+            android:key="powerQs"
+            android:title="@string/qs_tile_animation_style_title"
+            android:icon="@drawable/rr_assist_icon"
+            android:fragment="com.android.settings.awaken.fragments.DisplayCustomizations4"
+             settings:keywords="@string/keywords_font_size"/>
 
 </PreferenceScreen>

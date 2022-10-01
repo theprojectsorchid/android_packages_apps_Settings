@@ -230,6 +230,7 @@
         android:icon="@drawable/ic_settings_night_mode"            
         android:fragment="com.epic.fragments.PowerMenuSettings"/>
 
+  
     
     <Preference
         android:key="screen_pinning_settings"
