@@ -13670,13 +13670,25 @@
     <string name="model_summary2">wifi bluetooth mac ids</string>
     <string name="change_device_name">Change device name</string>
 
-    <!-- About phone edit -->
     <string name="device_name_option">Change Device Name</string>
     <string name="device_and_android_version">Device Details</string>
     <string name="model_information">Device Hardware</string>
     <string name="firmware_version2">Android 12.1 version</string>
     <string name="device_statistics">Device statistics</string>
     <string name="about_settings_device">About Device</string>
+
+
+    <!-- firmware edit -->
+    <string name="firmware_bubble_setting_description">powered by OrchidOs Device Uptime Device Uptime Powered by ANDROID powered by OrchidOs Device Uptime  powered by OrchidOs Device Uptime</string>
+    <string name="firmware_about_us_info">get info about us</string>
+    <string name="firmware_about_us_info_summary">get more info</string>
+    <string name="firmware_source_code">base source code</string>
+    <string name="get_our_source_code">check source code</string>
+    <string name="get_our_source_code_summary">get the source</string>
+
+    <string name="firmware_source_code">check the details</string>
+    <string name="firmware_group_info">support Details</string>
+    <string name="firmware_group_summary">software support</string>
 
 
 </resources>
