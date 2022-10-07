@@ -108,6 +108,15 @@
         android:summary="@string/summary_placeholder"
         settings:searchable="false"/>
 
+
+   
+    <!-- Sensor Block -->
+    <Preference
+        android:key="sensor_block_settings"
+        android:title="@string/sensor_block_title"
+        android:summary="@string/sensor_block_summary"
+        android:fragment="com.android.settings.privacy.SensorBlockSettings"/>
+
     <!-- Privacy Service -->
     <PreferenceCategory
         android:key="privacy_services"
