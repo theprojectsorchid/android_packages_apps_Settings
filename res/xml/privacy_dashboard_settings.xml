@@ -96,7 +96,7 @@
         android:key="privacy_camera_toggle"
         android:icon="@drawable/ic_settings_camera"
         android:title="@string/camera_toggle_title"
-        android:summary="@string/cam_toggle_description"
+        android:summary="@string/perm_toggle_description"
         settings:controller="com.android.settings.privacy.CameraToggleController"/>
 
     <!-- Microphone toggle -->
@@ -131,13 +131,20 @@
         android:summary="@string/summary_placeholder"
         settings:searchable="false"/>
 
+
+    <!-- Sensor Block -->
+    <Preference
+        android:key="sensor_block_settings"
+        android:title="@string/sensor_block_title"
+        android:summary="@string/sensor_block_summary"
+        android:fragment="com.android.settings.privacy.SensorBlockSettings"/>
+
     <!-- Privacy Service -->
     <PreferenceCategory
         android:key="privacy_services"
         android:layout="@layout/preference_category_no_label"/>
 
     <PreferenceCategory
-        android:key="dashboard_tile_placeholder"/>
 
     <!-- Work profile settings are at the bottom with high order value to avoid users thinking that
          any of the above settings (including dynamic) are specific to the work profile. -->
@@ -183,10 +190,4 @@
         android:summary="@string/show_clip_access_notification_summary"
         settings:controller="com.android.settings.privacy.ShowClipAccessNotificationPreferenceController"/>
     
-    <com.arrow.support.preferences.SecureSettingSwitchPreference
-        android:key="window_ignore_secure"
-        android:title="@string/ignore_window_secure_title"
-        android:summary="@string/ignore_window_secure_summary"
-        android:defaultValue="false"/>
-
 </PreferenceScreen>

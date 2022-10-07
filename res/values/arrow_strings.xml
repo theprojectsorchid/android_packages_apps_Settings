@@ -347,4 +347,15 @@
    <!-- Squiggle animation -->
     <string name="hide_squiggle_animation_title">Hide squiggle animation</string>
     <string name="hide_squiggle_animation_summary">Hide media panel squiggle animation, after changing you need to switch music, pause music or move the progress bar to apply</string>
+
+       <!-- Sensor block per-package -->
+    <string name="sensor_block_title">Privacy controls</string>
+    <string name="sensor_block_summary">Device privacy enhanced controls</string>
+    <string name="sensor_block_app_picker_title">Block sensors for these apps</string>
+    <string name="add_sensor_block_package_title">Add apps for Sensor block</string>
+    <string name="add_sensor_block_package_summary">Significant motion, accelerometer, linear acceleration sensors will be blocked for these apps</string>
+    <string name="profile_choose_app">Choose app</string>
+    <string name="dialog_delete_title">Delete</string>
+    <string name="dialog_delete_message">Remove selected item?</string>
+    <string name="privacycontrols_bubble_setting_description">Protect and monitor your device with sensor controls and privacy indicators</string>
 </resources>
