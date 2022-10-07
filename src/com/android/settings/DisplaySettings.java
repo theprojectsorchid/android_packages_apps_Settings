@@ -20,6 +20,14 @@ import android.app.settings.SettingsEnums;
 import android.content.Context;
 import android.os.Bundle;
 
+import androidx.preference.Preference;
+import androidx.preference.PreferenceGroup;
+import androidx.preference.PreferenceScreen;
+import androidx.preference.PreferenceCategory;
+import androidx.preference.Preference.OnPreferenceChangeListener;
+import androidx.preference.PreferenceFragment;
+import androidx.preference.SwitchPreference;
+
 import com.android.settings.dashboard.DashboardFragment;
 import com.android.settings.display.BrightnessLevelPreferenceController;
 import com.android.settings.display.CameraGesturePreferenceController;
@@ -58,6 +66,9 @@ public class DisplaySettings extends DashboardFragment {
 
     @Override
     public void onCreate(Bundle icicle) {
+
+        final PreferenceScreen prefSet = getPreferenceScreen();
+
         super.onCreate(icicle);
     }
 
