@@ -32,7 +32,11 @@
         android:key="assistant_gesture_category"
         android:persistent="false"
         android:title="@string/assistant_gesture_category_title">
-
+     <SwitchPreference
+            android:key="immersive_navigation"
+            android:title="@string/immersive_navigation_title"
+            android:summary="@string/immersive_navigation_summary" />
+            
         <SwitchPreference
             android:key="assistant_gesture_corner_swipe"
             android:title="@string/assistant_corner_gesture_title"

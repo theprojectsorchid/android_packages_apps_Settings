@@ -24,7 +24,19 @@
     <string name="OrchidOs_maintainer_title">5G Enabled</string>
     <string name="platform_revision">Platform</string>
     <string name="total_ram">RAM</string>
-        
+    <string name="taptap_summary">Tap tap gestures</string>
+    <string name="tap_tap_title">Tap Tap</string>
+    <string name="TapTap_summary">Tap tap gestures</string>
+    <string name="TapTap_title">Tap Tap</string>
+    <!-- Statusbar dual row -->
+    <string name="statusbar_dual_row_title">Dual Statusbar</string>
+    <string name="statusbar_dual_row_summary">Enable dual row statusbar for notifications\nNOTE: restart SystemUI for see effect</string>
+    <string name="user_copy_apps_menu_title">Install options</string>
+
+    <!-- Immersive Navigation -->
+    <string name="gesture_navbar_category_title">Navigation bar</string>
+    <string name="immersive_navigation_title">Immersive navigation</string>
+    <string name="immersive_navigation_summary">Hide the gesture pill and navigation bar padding.</string>
     <string name="gesture_illustration_description">Control your device with ease.</string>
     <string name="connected_setting_description">Manage your device\'s connections.</string>
     <string name="accessibility_illustration_description">Ease of access features for everyone.</string>
