@@ -101,4 +101,8 @@
     <string name="qs_set_animation_duration">%1$s</string>
     <string name="qs_set_animation_interpolator">%1$s</string>
 
+    <!-- Scarlet Assistant Idle Manager -->
+    <string name="idle_manager_title">Scarlet Assistant Idle Manager</string>
+    <string name="idlescar_bubble_setting_description">Scarlet will optimize device\'s power consumption while device is idle and will efficiently boost device performance at every screen wake up.</string>
+
 </resources>
