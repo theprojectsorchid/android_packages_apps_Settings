@@ -89,6 +89,13 @@
         android:title="@string/battery_style_title"
         android:summary="@string/battery_style_summary" />-->
 
+        
+    <Preference
+        android:key="idle_scar"
+        android:title="@string/idle_manager_title"
+        android:icon="@drawable/ic_settings_night_mode"            
+        android:fragment="com.epic.fragments.LockScreenSettings" />
+
     <Preference
         android:key="battery_charging_light"
         android:icon="@drawable/ic_smart_charging"
@@ -96,11 +103,11 @@
         android:title="@string/battery_light_settings"
         android:summary="@string/battery_light_summary" />
 
-
     <com.android.settingslib.widget.FooterPreference
         android:key="power_usage_footer"
         android:visibility="gone"
         android:title="@string/battery_footer_summary"
         android:selectable="false"
         settings:searchable="false" />
+
 </PreferenceScreen>
