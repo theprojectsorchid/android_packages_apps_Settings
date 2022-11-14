@@ -89,12 +89,12 @@
         android:title="@string/battery_style_title"
         android:summary="@string/battery_style_summary" />-->
 
-        
+   
     <Preference
-        android:key="idle_scar"
+        android:key="scarlet_settings"
         android:title="@string/idle_manager_title"
-        android:icon="@drawable/ic_settings_night_mode"            
-        android:fragment="com.epic.fragments.LockScreenSettings" />
+        android:summary="@string/idle_manager_pref_summary"
+        android:fragment="com.android.settings.fuelgauge.scarlet.Scarlet" />
 
     <Preference
         android:key="battery_charging_light"

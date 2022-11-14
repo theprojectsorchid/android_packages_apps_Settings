@@ -16,26 +16,9 @@
 <PreferenceScreen
         xmlns:android="http://schemas.android.com/apk/res/android"
         xmlns:settings="http://schemas.android.com/apk/res/com.android.settings"
-        xmlns:app="http://schemas.android.com/apk/res-auto"
         android:title=" ">
     
-    <com.android.settingslib.widget.IllustrationPreference
-        android:key="idle_anima"
-        settings:searchable="false"
-        android:order="-999"
-        app:lottie_rawRes="@raw/onthegomode"/>
 
- 
-        <com.android.settingslib.widget.TopIntroPreference
-            android:key="onthegomode_bubbles_desc"
-            android:order="-997"        
-            android:title="@string/idlescar_bubble_setting_description"/>
-    
-
-    <com.arrow.support.preferences.SystemSettingSwitchPreference
-        android:key="scarlet_idle_assistant_manager"
-        android:title="@string/idle_manager_title"
-        android:defaultValue="false" />
 
     
 </PreferenceScreen>
