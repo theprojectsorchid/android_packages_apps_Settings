@@ -192,7 +192,23 @@
     <string name="qs_set_animation_interpolator">%1$s</string>
 
     <!-- Scarlet Assistant Idle Manager -->
+    <string name="scarlet_services_title">Scarlet services</string>
     <string name="idle_manager_title">Scarlet Assistant Idle Manager</string>
     <string name="idlescar_bubble_setting_description">Scarlet will optimize device\'s power consumption while device is idle and will efficiently boost device performance at every screen wake up.</string>
+    <string name="idle_manager_pref_summary">Enable scarlet assistance services</string>
+    <string name="idle_manager_summary">Scarlet will conserver device\'s power consumption while device is idle and will efficiently boost device performance at every screen wake up.</string>
+    <string name="scarlet_aggressive_title">Scarlet Aggressive mode</string>
+    <string name="scarlet_advanced_settings_title">Scarlet Assistant advanced settings</string>
+    <string name="scarlet_aggressive_mode_wifi_toggle_title">Turn off Wi-Fi</string>
+    <string name="scarlet_aggressive_mode_wifi_toggle_summary">Disable Wi-Fi when Scarlet\'s aggressive mode is enabled</string>
+    <string name="scarlet_aggressive_mode_bluetooth_toggle_title">Turn off Bluetooth</string>
+    <string name="scarlet_aggressive_mode_bluetooth_toggle_summary">Disable Bluetooth when Scarlet\'s aggressive mode is enabled</string>
+    <string name="scarlet_aggressive_mode_cellular_toggle_title">Turn off Mobile data</string>
+    <string name="scarlet_aggressive_mode_cellular_toggle_summary">Disable Mobile data when Scarlet\'s aggressive mode is enabled</string>
+    <string name="scarlet_aggressive_mode_location_toggle_title">Turn off Location</string>
+    <string name="scarlet_aggressive_mode_location_toggle_summary">Disable Location when Scarlet\'s aggressive mode is enabled</string>
+    <string name="scarlet_aggressive_mode_sensors_toggle_title">Turn off Sensors</string>
+    <string name="scarlet_aggressive_mode_sensors_toggle_summary">Disable Sensors when Scarlet\'s aggressive mode is enabled</string>
+    <string name="scarlet_manager_display_text">Scarlet\'s aggressive mode will disable selected system services when device screen is off to conserve power consupmtion.</string>
 
 </resources>

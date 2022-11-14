@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+     Copyright (C) 2022 riceDroid Android Project
+
+     Licensed under the Apache License, Version 2.0 (the "License");
+     you may not use this file except in compliance with the License.
+     You may obtain a copy of the License at
+
+          http://www.apache.org/licenses/LICENSE-2.0
+
+     Unless required by applicable law or agreed to in writing, software
+     distributed under the License is distributed on an "AS IS" BASIS,
+     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     See the License for the specific language governing permissions and
+     limitations under the License.
+-->
+<PreferenceScreen
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:settings="http://schemas.android.com/apk/res/com.android.settings"
+    android:title=" ">
+    
+    <com.android.settingslib.widget.IllustrationPreference
+        android:key="idle_anima"
+        settings:searchable="false"
+        android:order="-999"
+        app:lottie_rawRes="@raw/onthegomode"/>
+
+    <com.arrow.support.preferences.SystemSettingSwitchPreference
+        android:key="scarlet_idle_assistant_manager"
+        android:title="@string/idle_manager_title"
+        android:summary="@string/idle_manager_summary"
+        android:defaultValue="false" />
+
+        <com.android.settingslib.widget.TopIntroPreference
+            android:key="onthegomode_bubbles_desc"
+            android:title="@string/idlescar_bubble_setting_description"/>
+    
+    <PreferenceCategory
+        android:key="scarlet_advanced"
+        android:title="@string/scarlet_advanced_settings_title">
+
+        <com.arrow.support.preferences.SecureSettingSwitchPreference
+            android:key="scarlet_aggressive_mode"
+            android:title="@string/scarlet_aggressive_title"
+            android:dependency="scarlet_idle_assistant_manager"
+            android:defaultValue="false" />
+
+        <com.arrow.support.preferences.SecureSettingSwitchPreference
+            android:key="scarlet_aggressive_mode_wifi_toggle"
+            android:title="@string/scarlet_aggressive_mode_wifi_toggle_title"
+            android:summary="@string/scarlet_aggressive_mode_wifi_toggle_summary"
+            android:dependency="scarlet_aggressive_mode"
+            android:defaultValue="false" />
+
+        <com.arrow.support.preferences.SecureSettingSwitchPreference
+            android:key="scarlet_aggressive_mode_bluetooth_toggle"
+            android:title="@string/scarlet_aggressive_mode_bluetooth_toggle_title"
+            android:summary="@string/scarlet_aggressive_mode_bluetooth_toggle_summary"
+            android:dependency="scarlet_aggressive_mode"
+            android:defaultValue="false" />
+
+        <com.arrow.support.preferences.SecureSettingSwitchPreference
+            android:key="scarlet_aggressive_mode_cellular_toggle"
+            android:title="@string/scarlet_aggressive_mode_cellular_toggle_title"
+            android:summary="@string/scarlet_aggressive_mode_cellular_toggle_summary"
+            android:dependency="scarlet_aggressive_mode"
+            android:defaultValue="false" />
+
+        <com.arrow.support.preferences.SecureSettingSwitchPreference
+            android:key="scarlet_aggressive_mode_location_toggle"
+            android:title="@string/scarlet_aggressive_mode_location_toggle_title"
+            android:summary="@string/scarlet_aggressive_mode_location_toggle_summary"
+            android:dependency="scarlet_aggressive_mode"
+            android:defaultValue="false" />
+
+        <com.arrow.support.preferences.SecureSettingSwitchPreference
+            android:key="scarlet_aggressive_mode_sensors_toggle"
+            android:title="@string/scarlet_aggressive_mode_sensors_toggle_title"
+            android:summary="@string/scarlet_aggressive_mode_sensors_toggle_summary"
+            android:dependency="scarlet_aggressive_mode"
+            android:defaultValue="false" />
+
+    </PreferenceCategory>
+
+    <com.android.settingslib.widget.FooterPreference
+        android:key="scarlet_manager_footer"
+        android:title="@string/scarlet_manager_display_text"
+        android:selectable="false"
+        settings:searchable="false"/>
+</PreferenceScreen>
