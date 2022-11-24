@@ -284,4 +284,7 @@
    
  <!-- Battery Optimization -->
     <string name="battery_opt_summary">Check optimize &amp; unoptimize apps</string>
+
+    <!-- In-call notifications -->
+    <string name="in_call_notifications_title">In-call notifications</string>
 </resources>
