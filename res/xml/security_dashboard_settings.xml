@@ -24,9 +24,7 @@
     <com.android.settingslib.widget.LayoutPreference
         android:key="security_animation"
         android:layout="@layout/security_animation"
-        android:order="-20" 
-        android:selectable="true"
-        android:fragment="com.epic.fragments.LockScreenSettings"/>
+        android:order="-20" />
 
         
     <!-- security_settings_status.xml 
@@ -65,7 +63,10 @@
             android:title="@string/security_settings_face_preference_title"
             android:summary="@string/summary_placeholder"
             settings:keywords="@string/keywords_face_settings" />
-        
+            
+            
+            
+
         <ListPreference
             android:key="deny_new_usb"
             android:icon="@drawable/ic_usb"           

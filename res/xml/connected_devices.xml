@@ -91,6 +91,7 @@
         android:key="discoverable_footer"
         android:title="@string/bluetooth_off_footer"
         android:selectable="false"
+        android:visibility="invisible"
         settings:controller="com.android.settings.connecteddevice.DiscoverableFooterPreferenceController">
     </com.android.settingslib.widget.FooterPreference>
 

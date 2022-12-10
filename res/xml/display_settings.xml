@@ -94,8 +94,9 @@
             android:fragment="com.android.settings.display.ScreenTimeoutSettings"
             settings:controller="com.android.settings.display.ScreenTimeoutPreferenceController"/>
             
-              <com.epic.support.preferences.SystemSettingSwitchPreference
+        <com.epic.support.preferences.SystemSettingSwitchPreference
             android:key="global_actions_onthego"
+            android:icon="@drawable/rr_gaming_mode_enabled_icon"
             android:title="@string/global_actions_onthego_title"
             android:defaultValue="false" />
     </PreferenceCategory>

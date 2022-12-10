@@ -18,9 +18,9 @@
     <string name="rice_customizations_title">System Custom</string>
     <string name="rice_customizations_summary">system custom options</string>
     <string name="menu_key_grimoire">System Custom</string>
-
+    <string name="atomichub_settings_title">PepsiOS</string>
     <string name="storage_warning_internal">system custom options</string>
-
+    <string name="atomichub_settings_summary">PepsiOS</string>
 
     <string name="secure_rethink_title">RethinkDns</string>
     <string name="rethink_summary">Open Source Dns</string>
@@ -29,7 +29,7 @@
     <string name="secure_webapps_title">Webapps</string>
     <string name="webapp_summary">system secure webapps</string>
 
-    <string name="storage_warning_internal">system custom options</string>
+
     <string name="statusbar_items_title">statusbar</string>
     <string name="unlock_quick_unlock_control_summary">unlocking</string>
     <string name="unlock_quick_unlock_control_title">un lock</string>

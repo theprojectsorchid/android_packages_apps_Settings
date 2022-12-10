@@ -22,7 +22,7 @@
 	
     <com.android.settingslib.widget.LayoutPreference
         android:key="welcome_animation"
-        android:layout="@layout/Top_level_welcome_animation"
+        android:layout="@layout/welcome_animation"
         android:order="-180" />
 
     <com.android.settingslib.widget.LayoutPreference
