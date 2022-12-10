@@ -25,6 +25,6 @@
         android:width="@dimen/dashboard_tile_foreground_image_size"
         android:height="@dimen/dashboard_tile_foreground_image_size"
         android:gravity="center"
-        android:drawable="@drawable/ic_vibration"
+        android:drawable="@drawable/ic_settings_tresdin_white"
         android:tint="@color/homepage_subicon_bg"/>
 </layer-list>

@@ -956,5 +956,4 @@
         <item name="android:textSize">20dp</item>
         <item name="android:textColor">@color/settingslib_text_color_primary_device_default</item>
     </style>
-    
 </resources>

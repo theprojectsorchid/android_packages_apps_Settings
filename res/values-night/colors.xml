@@ -63,5 +63,12 @@
     <color name="oneplus_accent_color">@color/settingsHeaderColor</color>
     <color name="settings_accent_color">@color/oneplus_accent_color</color>
     <color name="settingsHeaderColor">@*android:color/accent_device_default_dark</color>
-</resources>
+
+
+    <color name="bottom_bar_divider_color">#13FFFaFF</color>
+    <color name="bottom_navigation_color">#eeaa45</color>
+
+    <color name="bottom_navigation_ripple">#13FFFFFF</color>
+</resources> 
+
 

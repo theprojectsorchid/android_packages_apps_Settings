@@ -265,4 +265,13 @@
         <item name="colorPrimary">@*android:color/primary_device_default_settings_light</item>
         <item name="colorAccent">@*android:color/accent_device_default_light</item>
     </style>
+
+    <style name="hsv_style">
+        <item name="android:scrollbarAlwaysDrawHorizontalTrack">true</item>
+        <item name="android:scrollbarDefaultDelayBeforeFade">250</item>
+        <item name="android:scrollbarFadeDuration">500</item>
+        <item name="android:scrollbarStyle">outsideOverlay</item>
+        <item name="android:scrollbars">horizontal</item>
+        <item name="android:fadeScrollbars">true</item>
+    </style>
 </resources>
