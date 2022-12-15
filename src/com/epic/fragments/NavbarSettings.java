@@ -49,7 +49,7 @@ public class NavbarSettings extends SettingsPreferenceFragment implements
     @Override
     public void onCreate(Bundle icicle) {
         super.onCreate(icicle);
-        addPreferencesFromResource(R.xml.anatolia_settings_navigation);
+        addPreferencesFromResource(R.xml.ps_ui);
 
         final PreferenceScreen prefScreen = getPreferenceScreen();
     }

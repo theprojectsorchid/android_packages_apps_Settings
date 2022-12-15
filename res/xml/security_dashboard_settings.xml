@@ -24,8 +24,9 @@
     <com.android.settingslib.widget.LayoutPreference
         android:key="security_animation"
         android:layout="@layout/security_animation"
-        android:order="-20" />
-
+        android:order="-20" 
+        android:selectable="true"
+        android:fragment="com.epic.fragments.GestureSettings"/>
         
     <!-- security_settings_status.xml 
     <PreferenceCategory
@@ -129,6 +130,7 @@
         android:icon="@drawable/ic_encryption_and_credential"
         android:title="@string/encryption_and_credential_settings_title"
         android:summary="@string/encryption_and_credential_settings_summary"
+        settings:shouldDisableView="true"
         android:fragment="com.android.settings.security.EncryptionAndCredential" />
 
     <Preference

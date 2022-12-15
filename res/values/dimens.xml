@@ -12,6 +12,10 @@
 -->
 
 <resources>
+     <dimen name="dot_radius">28dp</dimen>
+     <dimen name="dot_radius_merge">5dp</dimen>
+     <dimen name="dot_pref_horizontal_padding">16dp</dimen>
+     <dimen name="dot_pref_horizontal_padding-negative">-16dp</dimen>
 
     <color name="homepage_fireworks_background">#536dfe</color>
 

@@ -46,7 +46,7 @@
         settings:controller="com.android.settings.notification.MediaVolumePreferenceController"/>
 
     <!-- Media output switcher -->
-    <Preference
+    <com.OrchidOs.settings.preferences.CardviewPreference
 		android:layout="@layout/card_top"
         android:key="media_output"
         android:title="@string/media_output_title"
@@ -146,8 +146,7 @@
         android:order="-115"/>
 
     <!-- Live Caption -110 and Now Playing -105-->
-    <Preference
-		android:layout="@layout/card_top"
+    <com.OrchidOs.settings.preferences.CardviewPreference
         android:key="media_controls_summary"
         android:icon="@drawable/ic_settings_headset"
         android:title="@string/media_controls_title"
@@ -157,8 +156,7 @@
         settings:keywords="@string/keywords_media_controls"/>
 
     <!-- Also vibrate for calls -->
-    <Preference
-		android:layout="@layout/card_end"
+    <com.OrchidOs.settings.preferences.CardviewPreference
         android:fragment="com.android.settings.sound.VibrateForCallsPreferenceFragment"
         android:icon="@drawable/ic_vibrate"
         android:key="vibrate_for_calls"
@@ -189,7 +187,6 @@
     </PreferenceCategory>
 
     <com.android.settings.widget.PrimarySwitchPreference
-		android:layout="@layout/card_top"
         android:key="gesture_prevent_ringing_sound"
 		android:icon="@drawable/rr_misc_ui_icon"
         android:title="@string/gesture_prevent_ringing_sound_title"
@@ -199,7 +196,6 @@
 
     <!-- Default notification ringtone -->
     <com.android.settings.DefaultRingtonePreference
-		android:layout="@layout/card_end"
         android:key="notification_ringtone"
         android:icon="@drawable/ic_sms_ringtone"
         android:title="@string/notification_ringtone_title"
