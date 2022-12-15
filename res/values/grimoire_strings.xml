@@ -65,10 +65,10 @@
     <!-- Custom settings dashboard style -->
     <string name="settings_dashboard_style_title">Settings layout</string>
     <string name="settings_dashboard_style_gms">Default</string>
-    <string name="settings_dashboard_style_aosp">AOSP</string>
-    <string name="settings_dashboard_style_oos11_gms">OOS11 Gapps</string>
-    <string name="settings_dashboard_style_oos11_microg">OOS11 MicroG</string>
-    <string name="settings_dashboard_style_oos12_gms">OOS12 Gapps</string>
-    <string name="settings_dashboard_style_oos12_microg">OOS12 MicroG</string>
+    <string name="settings_dashboard_style_aosp">Standard</string>
+    <string name="settings_dashboard_style_oos11_gms">DotOrctest</string>
+    <string name="settings_dashboard_style_oos11_microg">Atomichub</string>
+    <string name="settings_dashboard_style_oos12_gms">sparktest</string>
+    <string name="settings_dashboard_style_oos12_microg">Atomichub L</string>
     <string name="settings_layout_category_title">Settings UI interface</string>
 </resources> 

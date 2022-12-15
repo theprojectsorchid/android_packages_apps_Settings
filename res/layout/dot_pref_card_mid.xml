@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
-<!-- Copyright (C) 2021 The dotOS Project
+<!--
+     Copyright 2021 xdroid, xyzprjkt
 
      Licensed under the Apache License, Version 2.0 (the "License");
      you may not use this file except in compliance with the License.
@@ -13,12 +14,15 @@
      See the License for the specific language governing permissions and
      limitations under the License.
 -->
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/container"
+    style="@style/dotPreferenceMiddle"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
 
-<resources>
-    <color name="dot_shapeColor">@*android:color/system_accent1_700</color>
-    <color name="dot_colorAboutUI">@*android:color/system_neutral1_800</color>
-     <color name="dot_pref_color">@android:color/system_neutral1_800</color>
-     <color name="dot_background1">@android:color/system_neutral1_900</color>
-     <color name="dot_background2">@android:color/system_neutral1_800</color>
-     <color name="dot_background3">@android:color/system_accent1_200</color>
-</resources>
+    <include
+        layout="@layout/dot_pref_no-icn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+</FrameLayout>

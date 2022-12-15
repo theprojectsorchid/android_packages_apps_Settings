@@ -20,14 +20,14 @@
     xmlns:settings="http://schemas.android.com/apk/res-auto"
     android:title="@string/gesture_preference_title">
 
-    <Preference
+    <com.OrchidOs.settings.preferences.CardviewPreference
         android:key="gesture_assist_input_summary"
         android:icon="@drawable/rr_assist_icon"
         android:title="@string/assist_gesture_title"
         android:fragment="com.android.settings.gestures.AssistGestureSettings"
         settings:controller="com.android.settings.gestures.AssistGestureSettingsPreferenceController" />
 
-    <Preference
+    <com.OrchidOs.settings.preferences.CardviewPreference
         android:key="gesture_swipe_down_fingerprint_input_summary"
         android:icon="@drawable/rr_swipe_down_icon"
         android:title="@string/fingerprint_swipe_for_notifications_title"
@@ -35,7 +35,7 @@
         settings:searchable="false"
         settings:controller="com.android.settings.gestures.SwipeToNotificationPreferenceController" />
 
-    <Preference
+    <com.OrchidOs.settings.preferences.CardviewPreference
         android:key="gesture_double_tap_power_input_summary"
         android:icon="@drawable/rr_doubletap_icon"
         android:title="@string/double_tap_power_for_camera_title"
@@ -43,7 +43,7 @@
         settings:searchable="false"
         settings:controller="com.android.settings.gestures.DoubleTapPowerPreferenceController" />
 
-    <Preference
+    <com.OrchidOs.settings.preferences.CardviewPreference
         android:key="gesture_double_twist_input_summary"
         android:icon="@drawable/rr_twist_icon"
         android:title="@string/double_twist_for_camera_mode_title"
@@ -51,7 +51,7 @@
         settings:searchable="false"
         settings:controller="com.android.settings.gestures.DoubleTwistPreferenceController" />
 
-    <Preference
+    <com.OrchidOs.settings.preferences.CardviewPreference
         android:key="gesture_system_navigation_input_summary"
         android:title="@string/system_navigation_title"
         android:icon="@drawable/rr_buttons_icon"
@@ -71,7 +71,7 @@
         android:fragment="com.android.settings.gestures.OneHandedSettings"
         settings:controller="com.android.settings.gestures.OneHandedEnablePreferenceController" />
 
-    <Preference
+    <com.OrchidOs.settings.preferences.CardviewPreference
         android:key="tap_tap_gestures"
         android:icon="@drawable/ic_settings_quick_gestures"
         android:summary="@string/TapTap_summary"
@@ -82,7 +82,7 @@
             android:targetPackage="com.kieronquinn.app.taptap" />
     </Preference>
  
-    <Preference
+    <com.OrchidOs.settings.preferences.CardviewPreference
         android:key="gesture_tap_screen_input_summary"
         android:icon="@drawable/rr_tap_icon"
         android:title="@string/ambient_display_tap_screen_title"
@@ -90,7 +90,7 @@
         settings:searchable="false"
         settings:controller="com.android.settings.gestures.TapScreenGesturePreferenceController" />
 
-    <Preference
+    <com.OrchidOs.settings.preferences.CardviewPreference
         android:key="gesture_double_tap_screen_input_summary"
         android:icon="@drawable/rr_fp_anim_icon"
         android:title="@string/ambient_display_title"
@@ -98,7 +98,7 @@
         settings:searchable="false"
         settings:controller="com.android.settings.gestures.DoubleTapScreenPreferenceController" />
 
-    <Preference
+    <com.OrchidOs.settings.preferences.CardviewPreference
         android:key="gesture_pick_up_input_summary"
         android:icon="@drawable/rr_lift_icon"
         android:title="@string/ambient_display_pickup_title"
@@ -112,7 +112,7 @@
         android:fragment="com.android.settings.gestures.PowerMenuSettings"
         settings:controller="com.android.settings.gestures.PowerMenuPreferenceController" />
 
-    <Preference
+    <com.OrchidOs.settings.preferences.CardviewPreference
         android:key="three_finger_gesture_summary"
         android:title="@string/three_finger_gesture"
         android:icon="@drawable/rr_three_finger_gesture_icon"
@@ -169,4 +169,5 @@
         android:fragment="com.arcana.grimoire.fragments.Themes" />
 
         
+
 </PreferenceScreen>
