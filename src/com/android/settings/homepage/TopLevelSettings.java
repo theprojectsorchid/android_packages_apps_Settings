@@ -219,7 +219,7 @@ public class TopLevelSettings extends DashboardFragment implements
                 preference.setLayoutResource(R.layout.OrchidOs_cardviewconnection);
             }
             if (key.equals("top_level_accounts")){
-                preference.setLayoutResource(R.layout.OrchidOs_cardviewaccounts);
+                preference.setLayoutResource(R.layout.top_level_about);
             }
             if (key.equals("top_level_octavi_lab")){
                 preference.setLayoutResource(R.layout.OrchidOs_cardview);

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2"
+    xmlns:androidprv="http://schemas.android.com/apk/prv/res/android">
+
+    <color name="op_control_text_color_primary">#d8000000</color>
+    <color name="op_control_text_color_primary_inverse">#ffffff</color>
+    <color name="op_control_text_color_secondary">#66000000</color>
+
+
+</resources>
