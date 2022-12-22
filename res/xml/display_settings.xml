@@ -37,14 +37,18 @@
         android:layout="@layout/settings_title_header2">
   </PreferenceCategory>
 
-    <com.android.settingslib.RestrictedPreference
+      <!-- wallpaper -->
+    <PreferenceScreen
         android:key="wallpaper"
-                    android:icon="@drawable/ic_settings_adaptive_brightness"
+        android:layout="@layout/top_level_about"
+        android:icon="@drawable/ic_phone_info"
         android:title="@string/wallpaper_settings_title"
-        settings:keywords="@string/keywords_display_wallpaper"
-        settings:useAdminDisabledSummary="true"
-        settings:controller="com.android.settings.display.WallpaperPreferenceController"/>
+        android:summary="@string/display_white_balance_summary"
+        android:selectable="true"
+        settings:controller="com.android.settings.display.WallpaperPreferenceController"
+        android:order="-995" />
 
+  
     <PreferenceCategory
         android:layout="@layout/custom_preference_category2"
         android:title="@string/dispaly_main_settings">
