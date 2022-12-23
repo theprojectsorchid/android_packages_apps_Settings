@@ -129,7 +129,7 @@ public class BrightnessLevelPreferenceController extends AbstractPreferenceContr
     public void displayPreference(PreferenceScreen screen) {
         super.displayPreference(screen);
         mPreference = screen.findPreference(KEY_BRIGHTNESS);
-        mPreference.setLayoutResource(R.layout.dot_preference_top_card);
+        mPreference.setLayoutResource(R.layout.dot_pref_card_top);
     }
 
     @Override

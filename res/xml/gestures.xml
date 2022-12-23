@@ -22,6 +22,7 @@
 
     <com.OrchidOs.settings.preferences.CardviewPreference
         android:key="gesture_assist_input_summary"
+        android:layout="@layout/dot_dashboard_preference_top"
         android:icon="@drawable/rr_assist_icon"
         android:title="@string/assist_gesture_title"
         android:fragment="com.android.settings.gestures.AssistGestureSettings"

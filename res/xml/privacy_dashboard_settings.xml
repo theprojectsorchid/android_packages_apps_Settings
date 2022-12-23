@@ -48,6 +48,7 @@
     <!-- Accessibility usage -->
     <Preference
         android:key="privacy_accessibility_usage"
+ 		android:layout="@layout/dot_dashboard_preference_top"  
         android:icon="@drawable/ic_settings_privacy_op"
         android:title="@string/accessibility_usage_title"
         settings:controller="com.android.settings.privacy.AccessibilityUsagePreferenceController">
@@ -158,6 +159,7 @@
 
     <com.android.settings.widget.PrimarySwitchPreference
         android:key="content_capture_custom_settings"
+        android:layout="@layout/dot_dashboard_preference_top"
         android:title="@string/content_capture"
         android:icon="@drawable/ic_settings_security_op"
         android:summary="@string/content_capture_summary"
@@ -167,6 +169,7 @@
     <!-- Clipboard access notifications -->
     <SwitchPreference
         android:key="show_clip_access_notification"
+ 		android:layout="@layout/dot_dashboard_preference_bottom"
         android:icon="@drawable/rr_clipboard_icon"
         android:title="@string/show_clip_access_notification"
         android:summary="@string/show_clip_access_notification_summary"

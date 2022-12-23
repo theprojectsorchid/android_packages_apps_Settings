@@ -16,12 +16,9 @@
      <dimen name="dot_radius_merge">5dp</dimen>
      <dimen name="dot_pref_horizontal_padding">16dp</dimen>
      <dimen name="dot_pref_horizontal_padding-negative">-16dp</dimen>
-
-    <color name="homepage_fireworks_background">#536dfe</color>
-
-    <color name="rdnt_crd_bg">#00000000</color>
-    <color name="user_crd_bg">@android:color/system_neutral1_0</color>
-    <color name="xd_background1">@android:color/system_neutral1_50</color>
+     <dimen name="dot_pref_radius">28dp</dimen>
+     <dimen name="dashboard_tile_foreground_image_size_op">28dp</dimen>
+     
     <!-- Cards -->
     <dimen name="rdnt_cardview_padding">16dp</dimen>
     <dimen name="rdnt_top_icn">42dp</dimen>
