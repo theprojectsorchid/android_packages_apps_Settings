@@ -21,7 +21,7 @@
 
     <FrameLayout
         android:id="@+id/container"
-        style="@style/DotPreferenceBottomCard"
+        style="@style/dotPreferenceBottom"
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
 

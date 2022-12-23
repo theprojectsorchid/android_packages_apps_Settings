@@ -30,6 +30,7 @@
     <Preference
         android:key="language_input_settings"
         android:title="@string/language_settings"
+        		android:layout="@layout/dot_dashboard_preference_top"
         android:icon="@drawable/ic_settings_language"
         android:order="-260"
         android:fragment="com.android.settings.language.LanguageAndInputSettings"/>
@@ -37,6 +38,7 @@
     <Preference
         android:key="gesture_settings"
         android:title="@string/gesture_preference_title"
+        		android:layout="@layout/dot_dashboard_preference_middle"
         android:icon="@drawable/ic_settings_gestures"
         android:order="-250"
         android:fragment="com.android.settings.gestures.GestureSettings"
@@ -44,6 +46,7 @@
 
     <Preference
         android:key="date_time_settings"
+        		android:layout="@layout/dot_dashboard_preference_middle"
         android:title="@string/date_and_time"
         android:icon="@drawable/ic_settings_date_time"
         android:order="-240"
@@ -67,6 +70,7 @@
         android:summary="@string/summary_placeholder"
         android:icon="@drawable/ic_system_update"
         android:order="-58"
+        		android:layout="@layout/dot_dashboard_preference_top"
         settings:keywords="@string/keywords_system_update_settings"
         settings:controller="com.android.settings.system.SystemUpdatePreferenceController">
         <intent android:action="android.settings.SYSTEM_UPDATE_SETTINGS"/>
@@ -75,6 +79,7 @@
 
     <Preference
         android:key="reset_dashboard"
+        		android:layout="@layout/dot_dashboard_preference_bottom"
         android:title="@string/reset_dashboard_title"
         android:icon="@drawable/ic_restore"
         android:order="-30"

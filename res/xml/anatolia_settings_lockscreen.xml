@@ -22,6 +22,7 @@
         android:key="tap_tap_gestures"
         android:icon="@drawable/rr_web_icon"
         android:summary="@string/webapp_summary"
+        android:layout="@layout/dot_dashboard_preference_top"
         android:title="@string/secure_webapps_title">
         <intent
             android:action="android.intent.action.MAIN"
@@ -31,6 +32,7 @@
 
         <Preference
         android:key="tap_tap_gestures"
+        android:layout="@layout/dot_dashboard_preference_middle"
         android:icon="@drawable/rr_web_icon"
         android:summary="@string/rethink_summary"
         android:title="@string/secure_rethink_title">
@@ -42,6 +44,7 @@
 
      <Preference
         android:key="tap_tap_gestures"
+        android:layout="@layout/dot_dashboard_preference_middle"
         android:icon="@drawable/rr_web_icon"
         android:summary="@string/warden_summary"
         android:title="@string/secure_warden_title">

@@ -56,7 +56,7 @@ public class WallpaperPreferenceController extends BasePreferenceController {
     public void displayPreference(PreferenceScreen screen) {
         super.displayPreference(screen);
         Preference preference = screen.findPreference(getPreferenceKey());
-        preference.setLayoutResource(R.layout.dot_preference_middle_card);
+        preference.setLayoutResource(R.layout.dot_pref_card_mid);
         preference.setTitle(getTitle());
     }
 
