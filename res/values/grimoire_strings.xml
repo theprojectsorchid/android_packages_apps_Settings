@@ -71,4 +71,6 @@
     <string name="settings_dashboard_style_oos12_gms">sparktest</string>
     <string name="settings_dashboard_style_oos12_microg">Atomichub L</string>
     <string name="settings_layout_category_title">Settings UI interface</string>
+    <string name="settings_dashboard_style_mt">DotOrctest</string>
+
 </resources> 

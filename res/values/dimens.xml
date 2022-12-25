@@ -506,6 +506,7 @@
     
     <!-- ripple radius-->
     <dimen name="card_radius_oos12">0dp</dimen>
+    <dimen name="card_height_oos">70.0dp</dimen>
     
     <dimen name="default_margin">16dp</dimen>
     <dimen name="default_padding">16dp</dimen>

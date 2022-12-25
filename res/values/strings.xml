@@ -14,6 +14,16 @@
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
 
+
+    <string name="connection_area">Connections</string>
+    <string name="system_personalization">Themes and Styles</string>
+    <string name="secure_hub">Secure hub </string>
+    <string name="app_info_config">App info and config</string>
+    <string name="core_system">System Options</string>
+    <string name="Orchid_toplevel_settings_summary">Its what I like</string>
+    <string name="Orchid_toplevel_settings_title">PepsiOS Rom</string>
+
+
     <!-- OrchidOs versioning -->
     <string name="rice_customizations_title">System Custom</string>
     <string name="rice_customizations_summary">system custom options</string>

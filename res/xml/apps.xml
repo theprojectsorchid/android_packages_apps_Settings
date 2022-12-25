@@ -29,6 +29,7 @@
     <Preference
         android:key="all_app_infos"
         android:icon="@drawable/ic_settings_multi_app"
+          android:layout="@layout/spark_home_preference_card_middle"       
         android:title="@string/all_apps"
         android:summary="@string/summary_placeholder"
         android:order="-998"
@@ -63,6 +64,7 @@
     <Preference
         android:key="default_apps"
 		android:icon="@drawable/ic_wave_apps"
+        android:layout="@layout/card_preference_layout"       
         android:title="@string/app_default_dashboard_title"
         android:order="-995"
         settings:controller="com.android.settings.applications.DefaultAppsPreferenceController">
@@ -71,6 +73,7 @@
 
     <Preference
         android:key="game_settings"
+         android:layout="@layout/dot_dashboard_preference_full_accent"       
         android:title="@string/game_settings_title"
         android:icon="@drawable/rr_game_icon"
         android:summary="@string/game_settings_summary"
@@ -86,6 +89,7 @@
         android:key="hibernated_apps"
 		android:icon="@drawable/rr_kill_app_icon"
         android:title="@string/unused_apps"
+          android:layout="@layout/dot_dashboard_preference_full_accent"              
         android:summary="@string/summary_placeholder"
         android:order="15"
         settings:keywords="app_hibernation_key"
@@ -95,6 +99,7 @@
 
     <Preference
         android:key="special_access"
+          android:layout="@layout/dot_dashboard_preference_full_accent"              
         android:icon="@drawable/ic_app_level_permissions"
         android:fragment="com.android.settings.applications.specialaccess.SpecialAccessSettings"
         android:title="@string/special_access"

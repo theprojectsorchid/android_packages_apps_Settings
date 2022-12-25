@@ -5,9 +5,8 @@
     android:layout_height="@dimen/card_height"
     android:layout_marginStart="@dimen/card_margin_start"
     android:layout_marginEnd="@dimen/card_margin_end"
-    android:background="@drawable/arcana_preference_middle_background"
-    android:paddingEnd="15dp"
-    android:paddingStart="25dp">
+    android:background="@drawable/rice_preference_middle_background_card"
+    android:paddingStart="18dp">
 
     <ImageView
         android:id="@android:id/icon"
@@ -34,7 +33,7 @@
         android:layout_width="match_parent"
         android:gravity="center_vertical"
         android:orientation="vertical"
-        android:layout_marginStart="50dp"
+        android:layout_marginStart="@dimen/top_pref_start"
         app:layout_constraintStart_toEndOf="@+id/wb_pref_icon">
 
         <TextView

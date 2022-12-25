@@ -16,6 +16,82 @@
 <PreferenceScreen
         xmlns:android="http://schemas.android.com/apk/res/android"
         xmlns:settings="http://schemas.android.com/apk/res/com.android.settings"
-	android:title="@string/extras_title">
+	android:title="@string/secure_hub">
+
+         <com.android.settingslib.widget.LayoutPreference
+        android:key="welcome_animation"
+        android:layout="@layout/welcome_animation"
+        android:order="-180" />
+
+    <com.android.settings.widget.HomepagePreference
+	   android:layout="@layout/dot_preference_top_card"
+        android:fragment="com.android.settings.accounts.AccountDashboardFragment"
+        android:icon="@drawable/op_ic_homepage_accounts_settings"
+        android:key="top_level_accounts"
+        android:order="-60"
+        android:title="@string/account_dashboard_title"
+        android:summary="@string/summary_placeholder"
+        settings:highlightableMenuKey="@string/menu_key_accounts"
+        settings:controller="com.android.settings.accounts.TopLevelAccountEntryPreferenceController"/>
+
+     <Preference
+        android:key="tap_tap_gestures"
+        android:icon="@drawable/rr_web_icon"
+        android:summary="@string/rethink_summary"
+        android:title="@string/secure_rethink_title">
+        <intent
+            android:action="android.intent.action.MAIN"
+            android:targetClass="com.x8bit.bitwarden.MainActivity"
+            android:targetPackage="com.x8bit.bitwarden" />
+    </Preference>
+ 
+
+     <com.android.settings.widget.HomepagePreference
+	   android:layout="@layout/dot_preference_middle_card"
+        android:fragment="com.android.settings.security.SecuritySettings"
+        android:icon="@drawable/op_ic_homepage_security_settings"
+        android:key="top_level_security"
+        android:order="-50"
+        android:title="@string/security_settings_title"
+        android:summary="@string/security_dashboard_summary"
+        settings:highlightableMenuKey="@string/menu_key_security"
+        settings:controller="com.android.settings.security.TopLevelSecurityEntryPreferenceController"/>
+
+    <com.android.settings.widget.HomepagePreference
+	   android:layout="@layout/dot_preference_middle_card"
+        android:fragment="com.android.settings.privacy.PrivacyDashboardFragment"
+        android:icon="@drawable/op_ic_homepage_privacy_settings"
+        android:key="top_level_privacy"
+        android:order="-40"
+        android:title="@string/privacy_dashboard_title"
+        android:summary="@string/privacy_dashboard_summary"
+        settings:highlightableMenuKey="@string/menu_key_privacy"/>
+
+    <com.android.settings.widget.HomepagePreference
+	   android:layout="@layout/dot_preference_middle_card"
+        android:fragment="com.android.settings.location.LocationSettings"
+        android:icon="@drawable/op_ic_homepage_location_settings"
+        android:key="top_level_location"
+        android:order="-30"
+        android:title="@string/location_settings_title"
+        android:summary="@string/location_settings_loading_app_permission_stats"
+        settings:highlightableMenuKey="@string/menu_key_location"
+        settings:controller="com.android.settings.location.TopLevelLocationPreferenceController"/>
+
+    <com.android.settings.widget.HomepagePreference
+	   android:layout="@layout/dot_preference_bottom_card"
+        android:key="top_level_emergency"
+        android:title="@string/emergency_settings_preference_title"
+        android:summary="@string/emergency_dashboard_summary"
+        android:icon="@drawable/op_ic_homepage_about_emergency"
+        android:order="-20"
+        android:fragment="com.android.settings.emergency.EmergencyDashboardFragment"
+        settings:highlightableMenuKey="@string/menu_key_emergency"/>
+
+   <com.android.settingslib.widget.LayoutPreference        
+        android:key="sakura_settings"
+        android:layout="@layout/toplevel_bottom_animation"
+        android:selectable="false"
+        android:order="54" />
 
 </PreferenceScreen>

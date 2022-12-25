@@ -16,6 +16,71 @@
 <PreferenceScreen
         xmlns:android="http://schemas.android.com/apk/res/android"
         xmlns:settings="http://schemas.android.com/apk/res/com.android.settings"
-	android:title="@string/buttons_title">
+	android:title="@string/app_info_config">
+
+
+       <com.android.settingslib.widget.LayoutPreference
+        android:key="welcome_animation"
+        android:layout="@layout/welcome_animation"
+        android:order="-180" />
+        
+    <com.android.settings.widget.HomepagePreference
+        android:fragment="com.android.settings.applications.AppDashboardFragment"
+        android:icon="@drawable/op_ic_homepage_apps_settings"
+        android:key="top_level_apps"
+        android:order="10"
+        android:layout="@layout/dot_preference_top_card"
+        android:title="@string/apps_dashboard_title"
+        android:summary="@string/app_and_notification_dashboard_summary"
+        settings:highlightableMenuKey="@string/menu_key_apps"/>
+
+    <com.android.settings.widget.HomepagePreference
+	   android:layout="@layout/dot_preference_middle_card"
+        android:fragment="com.android.settings.notification.ConfigureNotificationSettings"
+        android:icon="@drawable/op_ic_homepage_about_notifications"
+        android:key="top_level_notifications"
+        android:order="20"
+        android:title="@string/configure_notification_settings"
+        android:summary="@string/notification_dashboard_summary"
+        settings:highlightableMenuKey="@string/menu_key_notifications"/>
+
+    <com.android.settings.widget.HomepagePreference
+	   android:layout="@layout/dot_preference_middle_card"
+        android:fragment="com.android.settings.fuelgauge.PowerUsageSummary"
+        android:icon="@drawable/op_ic_homepage_battery_settings"
+        android:key="top_level_battery"
+        android:order="30"
+        android:title="@string/power_usage_summary_title"
+        android:summary="@string/summary_placeholder"
+        settings:highlightableMenuKey="@string/menu_key_battery"
+        settings:controller="com.android.settings.fuelgauge.TopLevelBatteryPreferenceController"/>
+
+    <com.android.settings.widget.HomepagePreference
+	   android:layout="@layout/dot_preference_middle_card"
+        android:fragment="com.android.settings.deviceinfo.StorageDashboardFragment"
+        android:icon="@drawable/op_ic_homepage_storage_settings"
+        android:key="top_level_storage"
+        android:order="40"
+        android:title="@string/storage_settings"
+        android:summary="@string/summary_placeholder"
+        settings:highlightableMenuKey="@string/menu_key_storage"
+        settings:controller="com.android.settings.deviceinfo.TopLevelStoragePreferenceController"/>
+     
+     <com.android.settings.widget.HomepagePreference
+	   android:layout="@layout/dot_preference_bottom_card"
+        android:fragment="com.android.settings.accessibility.AccessibilitySettings"
+        android:icon="@drawable/op_ic_homepage_accessibility_settings"
+        android:key="top_level_accessibility"
+        android:order="60"
+        android:title="@string/accessibility_settings"
+        android:summary="@string/accessibility_settings_summary"
+        settings:highlightableMenuKey="@string/menu_key_accessibility"
+        settings:controller="com.android.settings.accessibility.TopLevelAccessibilityPreferenceController"/>
+
+   <com.android.settingslib.widget.LayoutPreference        
+        android:key="sakura_settings"
+        android:layout="@layout/toplevel_bottom_animation"
+        android:selectable="false"
+        android:order="54" />
 
 </PreferenceScreen>

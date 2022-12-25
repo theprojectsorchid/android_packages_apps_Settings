@@ -16,13 +16,48 @@
 <PreferenceScreen
         xmlns:android="http://schemas.android.com/apk/res/android"
         xmlns:settings="http://schemas.android.com/apk/res/com.android.settings"
-	android:title="@string/privacy_dashboard_title">
+	android:title="@string/core_system">
 
-         <Preference
+
+    <com.android.settingslib.widget.LayoutPreference
+        android:layout="@layout/usercard_mt"
+        android:fragment="com.android.settings.users.UserSettings"
+        android:key="top_level_usercard"
+        android:order="-170" />
+		
+    <com.android.settings.widget.HomepagePreference
+        android:title="@string/connectivity_category_title"
+        android:icon="@drawable/ic_network"
+        android:key="usercard_space"
+        android:selectable="false"
+        android:order="-165"/>
+
+    <com.android.settings.widget.HomepagePreference
+	   android:layout="@layout/dot_preference_top_card"
+        android:fragment="com.android.settings.system.SystemDashboardFragment"
+        android:icon="@drawable/op_ic_homepage_system_dashboard_settings"
+        android:key="top_level_system"
+        android:order="10"
+        android:title="@string/header_category_system"
+        android:summary="@string/system_dashboard_summary"
+        settings:highlightableMenuKey="@string/menu_key_system"/>
+
+     <Preference
         android:key="tap_tap_gestures"
         android:icon="@drawable/rr_web_icon"
         android:summary="@string/webapp_summary"
-        android:layout="@layout/dot_dashboard_preference_top"
+        android:title="@string/secure_webapps_title">
+        <intent
+            android:action="android.intent.action.MAIN"
+            android:targetClass="org.brairproject.brair.android.navdrawer.NavDrawerActivity"
+            android:targetPackage="org.brairproject.brair.android" />
+    </Preference>
+
+    <Preference
+        android:key="tap_tap_gestures"
+        android:icon="@drawable/rr_web_icon"
+        android:summary="@string/webapp_summary"
+	   android:layout="@layout/dot_preference_middle_card"
         android:title="@string/secure_webapps_title">
         <intent
             android:action="android.intent.action.MAIN"
@@ -30,28 +65,12 @@
             android:targetPackage="com.tobykurien.webapps" />
     </Preference>
 
-        <Preference
-        android:key="tap_tap_gestures"
-        android:layout="@layout/dot_dashboard_preference_middle"
-        android:icon="@drawable/rr_web_icon"
-        android:summary="@string/rethink_summary"
-        android:title="@string/secure_rethink_title">
-        <intent
-            android:action="android.intent.action.MAIN"
-            android:targetClass="com.celzero.bravedns.ui.HomeScreenActivity"
-            android:targetPackage="com.celzero.bravedns" />
-    </Preference>
 
-     <Preference
-        android:key="tap_tap_gestures"
-        android:layout="@layout/dot_dashboard_preference_middle"
-        android:icon="@drawable/rr_web_icon"
-        android:summary="@string/warden_summary"
-        android:title="@string/secure_warden_title">
-        <intent
-            android:action="android.intent.action.MAIN"
-            android:targetClass="com.aurora.warden.ui.activities.AuroraActivity"
-            android:targetPackage="com.aurora.warden" />
-    </Preference>
+   <com.android.settingslib.widget.LayoutPreference        
+        android:key="sakura_settings"
+        android:layout="@layout/toplevel_bottom_animation"
+        android:selectable="true"
+        android:fragment="com.epic.fragments.QuickSettings"
+        android:order="54" />
 
 </PreferenceScreen>

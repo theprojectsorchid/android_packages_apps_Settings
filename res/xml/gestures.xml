@@ -20,7 +20,8 @@
     xmlns:settings="http://schemas.android.com/apk/res-auto"
     android:title="@string/gesture_preference_title">
 
-    <com.OrchidOs.settings.preferences.CardviewPreference
+
+ <Preference
         android:key="gesture_assist_input_summary"
         android:layout="@layout/dot_dashboard_preference_top"
         android:icon="@drawable/rr_assist_icon"
@@ -28,33 +29,37 @@
         android:fragment="com.android.settings.gestures.AssistGestureSettings"
         settings:controller="com.android.settings.gestures.AssistGestureSettingsPreferenceController" />
 
-    <com.OrchidOs.settings.preferences.CardviewPreference
+ <Preference
         android:key="gesture_swipe_down_fingerprint_input_summary"
         android:icon="@drawable/rr_swipe_down_icon"
+        android:layout="@layout/top_level_preference_mt_top"
         android:title="@string/fingerprint_swipe_for_notifications_title"
         android:fragment="com.android.settings.gestures.SwipeToNotificationSettings"
         settings:searchable="false"
         settings:controller="com.android.settings.gestures.SwipeToNotificationPreferenceController" />
 
-    <com.OrchidOs.settings.preferences.CardviewPreference
+ <Preference
         android:key="gesture_double_tap_power_input_summary"
         android:icon="@drawable/rr_doubletap_icon"
+        android:layout="@layout/top_level_preference_mt_middle"
         android:title="@string/double_tap_power_for_camera_title"
         android:fragment="com.android.settings.gestures.DoubleTapPowerSettings"
         settings:searchable="false"
         settings:controller="com.android.settings.gestures.DoubleTapPowerPreferenceController" />
 
-    <com.OrchidOs.settings.preferences.CardviewPreference
+ <Preference
         android:key="gesture_double_twist_input_summary"
         android:icon="@drawable/rr_twist_icon"
         android:title="@string/double_twist_for_camera_mode_title"
+                    android:layout="@layout/top_level_preference_rui"
         android:fragment="com.android.settings.gestures.DoubleTwistGestureSettings"
         settings:searchable="false"
         settings:controller="com.android.settings.gestures.DoubleTwistPreferenceController" />
 
-    <com.OrchidOs.settings.preferences.CardviewPreference
+ <Preference
         android:key="gesture_system_navigation_input_summary"
         android:title="@string/system_navigation_title"
+        android:layout="@layout/top_level_preference_mt_bottom"
         android:icon="@drawable/rr_buttons_icon"
         android:fragment="com.android.settings.gestures.SystemNavigationGestureSettings"
         settings:controller="com.android.settings.gestures.SystemNavigationPreferenceController"
@@ -68,6 +73,7 @@
     <Preference
         android:key="gesture_one_handed"
         android:title="@string/one_handed_title"
+         android:layout="@layout/top_level_preference_oos_top"
         android:icon="@drawable/rr_gestures_icon"
         android:fragment="com.android.settings.gestures.OneHandedSettings"
         settings:controller="com.android.settings.gestures.OneHandedEnablePreferenceController" />
@@ -87,19 +93,21 @@
         android:key="gesture_tap_screen_input_summary"
         android:icon="@drawable/rr_tap_icon"
         android:title="@string/ambient_display_tap_screen_title"
+        android:layout="@layout/top_level_preference_oos_middle"
         android:fragment="com.android.settings.gestures.TapScreenGestureSettings"
         settings:searchable="false"
         settings:controller="com.android.settings.gestures.TapScreenGesturePreferenceController" />
 
-    <com.OrchidOs.settings.preferences.CardviewPreference
+ <Preference
         android:key="gesture_double_tap_screen_input_summary"
         android:icon="@drawable/rr_fp_anim_icon"
+         android:layout="@layout/top_level_preference_oos_bottom"       
         android:title="@string/ambient_display_title"
         android:fragment="com.android.settings.gestures.DoubleTapScreenSettings"
         settings:searchable="false"
         settings:controller="com.android.settings.gestures.DoubleTapScreenPreferenceController" />
 
-    <com.OrchidOs.settings.preferences.CardviewPreference
+ <Preference
         android:key="gesture_pick_up_input_summary"
         android:icon="@drawable/rr_lift_icon"
         android:title="@string/ambient_display_pickup_title"
@@ -113,8 +121,9 @@
         android:fragment="com.android.settings.gestures.PowerMenuSettings"
         settings:controller="com.android.settings.gestures.PowerMenuPreferenceController" />
 
-    <com.OrchidOs.settings.preferences.CardviewPreference
+ <Preference
         android:key="three_finger_gesture_summary"
+                android:layout="@layout/top_level_preference_oos_middle"
         android:title="@string/three_finger_gesture"
         android:icon="@drawable/rr_three_finger_gesture_icon"
         android:fragment="com.android.settings.gestures.SwipeToScreenshotGestureSettings"
@@ -157,17 +166,12 @@
 
     <com.arrow.support.preferences.SystemSettingSwitchPreference
         android:key="volume_rocker_wake"
+        android:layout="@layout/top_level_preference_rui"
         android:icon="@drawable/rr_wake_icon"
         android:title="@string/volume_rocker_wake_title"
         android:summary="@string/volume_rocker_wake_summary"
         android:defaultValue="false"
         android:disableDependentsState="true" />
-
-    <com.android.settingslib.widget.LayoutPreference        
-        android:key="sakura_settings"
-        android:layout="@layout/toplevel_bottom_animation"
-        android:selectable="true"
-        android:fragment="com.arcana.grimoire.fragments.Themes" />
 
         
 
