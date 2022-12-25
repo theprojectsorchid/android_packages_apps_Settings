@@ -26,7 +26,7 @@
         android:order="-180" />
 
     <com.android.settingslib.widget.LayoutPreference
-        android:layout="@layout/usercard_aosp"
+        android:layout="@layout/usercard_round"
         android:fragment="com.android.settings.users.UserSettings"
         android:key="top_level_usercard"
         android:order="-170" />
@@ -132,15 +132,6 @@
         settings:highlightableMenuKey="@string/menu_key_sound"/>
         
     <com.android.settings.widget.HomepagePreference
-        android:fragment="com.arcana.grimoire.Dashboard"
-        android:icon="@drawable/op_ic_homepage_tresdin"
-        android:key="top_level_grimoire"
-        android:order="-86"
-        android:title="@string/grimoire_title"
-        android:summary="@string/grimoire_summary"
-        settings:controller="com.android.settings.grimoire.TopLevelArcanaSettingsPreferenceController"/>
-        
-    <com.android.settings.widget.HomepagePreference
 		android:layout="@layout/card_end"
         android:fragment="com.android.settings.accessibility.AccessibilitySettings"
         android:icon="@drawable/op_ic_homepage_accessibility_settings"
@@ -225,5 +216,10 @@
         android:summary="@string/support_summary"
         settings:controller="com.android.settings.support.SupportPreferenceController"/>
 
-
+    <com.android.settingslib.widget.LayoutPreference
+        android:key="about_phone_bigcard"
+        android:layout="@layout/atomichub"
+        android:selectable="true"
+        android:fragment="com.android.settings.deviceinfo.aboutphone.MyDeviceInfoFragment"
+        android:order="140" />
 </PreferenceScreen>

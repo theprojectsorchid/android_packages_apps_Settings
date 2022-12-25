@@ -16,6 +16,39 @@
 <PreferenceScreen
         xmlns:android="http://schemas.android.com/apk/res/android"
         xmlns:settings="http://schemas.android.com/apk/res/com.android.settings"
-	android:title="@string/statusbar_title">
+	android:title="@string/connection_area">
+
+     <com.android.settingslib.widget.LayoutPreference
+        android:key="welcome_animation"
+        android:layout="@layout/welcome_animation"
+        android:order="-180" />
+        
+    <com.android.settings.widget.HomepagePreference
+	   android:layout="@layout/dot_preference_top_card"
+        android:fragment="com.android.settings.network.NetworkDashboardFragment"
+        android:icon="@drawable/op_ic_homepage_network_settings"
+        android:key="top_level_network"
+        android:order="-150"
+        android:title="@string/network_dashboard_title"
+        android:summary="@string/summary_placeholder"
+        settings:highlightableMenuKey="@string/menu_key_network"
+        settings:controller="com.android.settings.network.TopLevelNetworkEntryPreferenceController"/>
+
+    <com.android.settings.widget.HomepagePreference
+	   android:layout="@layout/dot_preference_bottom_card"
+        android:fragment="com.android.settings.connecteddevice.ConnectedDeviceDashboardFragment"
+        android:icon="@drawable/op_ic_homepage_connected_device_settings"
+        android:key="top_level_connected_devices"
+        android:order="-140"
+        android:title="@string/connected_devices_dashboard_title"
+        android:summary="@string/connected_devices_dashboard_default_summary"
+        settings:highlightableMenuKey="@string/menu_key_connected_devices"
+        settings:controller="com.android.settings.connecteddevice.TopLevelConnectedDevicesPreferenceController"/>
+
+   <com.android.settingslib.widget.LayoutPreference        
+        android:key="sakura_settings"
+        android:layout="@layout/toplevel_bottom_animation"
+        android:selectable="false"
+        android:order="54" />
 
 </PreferenceScreen>

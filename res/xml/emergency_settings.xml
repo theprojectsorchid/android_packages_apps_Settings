@@ -30,6 +30,7 @@
 
     <Preference
         android:key="gesture_emergency_summary"
+        android:layout="@layout/dot_dashboard_preference_middle"
         android:title="@string/emergency_gesture_screen_title"
         android:icon="@drawable/ic_emergency_gesture_24dp"
         android:order="100"
@@ -43,6 +44,7 @@
         android:key="app_and_notif_cell_broadcast_settings"
         android:icon="@drawable/rr_emergency_info"
         android:title="@string/cell_broadcast_settings"
+         android:layout="@layout/top_level_preference_arc"
         android:order="200"
         settings:useAdminDisabledSummary="true">
         <intent
