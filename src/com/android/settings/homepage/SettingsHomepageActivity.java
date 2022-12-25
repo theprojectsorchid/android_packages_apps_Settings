@@ -35,14 +35,22 @@ import android.os.UserManager;
 import android.text.TextUtils;
 import android.util.ArraySet;
 import android.util.FeatureFlagUtils;
+import android.provider.Settings;
 import android.util.Log;
 import android.view.View;
 import android.view.Window;
 import android.view.WindowManager;
 import android.widget.FrameLayout;
 import android.widget.ImageView;
+import android.widget.LinearLayout;
 import android.widget.Toolbar;
 import android.widget.TextView;
+
+import androidx.annotation.VisibleForTesting;
+import androidx.core.graphics.Insets;
+import androidx.core.view.ViewCompat;
+import androidx.core.view.WindowCompat;
+import androidx.core.view.WindowInsetsCompat;
 
 import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentActivity;
@@ -53,7 +61,7 @@ import androidx.window.embedding.SplitRule;
 import com.android.internal.util.UserIcons;
 
 import com.android.settings.R;
-import com.android.settings.Settings;
+import android.provider.Settings;
 import com.android.settings.SettingsActivity;
 import com.android.settings.SettingsApplication;
 import com.android.settings.accounts.AvatarViewMixin;
@@ -65,6 +73,9 @@ import com.android.settings.homepage.contextualcards.ContextualCardsFragment;
 import com.android.settings.overlay.FeatureFactory;
 import com.android.settingslib.Utils;
 import com.android.settingslib.core.lifecycle.HideNonSystemOverlayMixin;
+
+import com.android.settingslib.drawable.CircleFramedDrawable;
+import com.google.android.material.appbar.CollapsingToolbarLayout;
 
 import java.net.URISyntaxException;
 import java.util.Set;
@@ -95,10 +106,14 @@ public class SettingsHomepageActivity extends FragmentActivity implements
     private View mHomepageView;
     private View mSuggestionView;
     private View mTwoPaneSuggestionView;
+    private boolean mIsTwoPaneLastTime;
     private CategoryMixin mCategoryMixin;
     private Set<HomepageLoadedListener> mLoadedListeners;
     private boolean mIsEmbeddingActivityEnabled;
-    private boolean mIsTwoPaneLastTime;
+    private boolean mIsTwoPane;
+    // A regular layout shows icons on homepage, whereas a simplified layout doesn't.
+    private boolean mIsRegularLayout = true;
+    CollapsingToolbarLayout collapsing_toolbar;
 
     /** A listener receiving homepage loaded events. */
     public interface HomepageLoadedListener {
@@ -163,53 +178,54 @@ public class SettingsHomepageActivity extends FragmentActivity implements
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.settings_homepage_container);
-        mIsEmbeddingActivityEnabled = ActivityEmbeddingUtils.isEmbeddingActivityEnabled(this);
-        mIsTwoPaneLastTime = ActivityEmbeddingUtils.isTwoPaneResolution(this);
-
-        final View appBar = findViewById(R.id.app_bar_container);
-        appBar.setMinimumHeight(getSearchBoxHeight());
-        initHomepageContainer();
-
         Context context = getApplicationContext();
-        mUserManager = context.getSystemService(UserManager.class);
 
-        updateHomepageAppBar();
+        final boolean useStockLayout = getuseStockLayout();
+        final boolean isUserCardDisabled = getUserCardState();
+        final boolean messagesEnabled = getMessagesSettings();
+
+        setContentView(useStockLayout  ? R.layout.settings_homepage_container_stock
+                                       : R.layout.settings_homepage_container);
+
+
         updateHomepageBackground();
         mLoadedListeners = new ArraySet<>();
-
-        initSearchBarView();
-
-        avatarView = findViewById(R.id.account_avatar);
-        //final AvatarViewMixin avatarViewMixin = new AvatarViewMixin(this, avatarView);
-        avatarView.setImageDrawable(getCircularUserIcon(context));
-        avatarView.setVisibility(View.VISIBLE);
-        avatarView.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent intent = new Intent(Intent.ACTION_MAIN);
-                intent.setComponent(new ComponentName("com.android.settings","com.android.settings.Settings$UserSettingsActivity"));
-                startActivity(intent);
-            }
-        });
-
-        getLifecycle().addObserver(new HideNonSystemOverlayMixin(this));
-        mCategoryMixin = new CategoryMixin(this);
-        getLifecycle().addObserver(mCategoryMixin);
-
         final String highlightMenuKey = getHighlightMenuKey();
-        // Only allow features on high ram devices.
-        if (!getSystemService(ActivityManager.class).isLowRamDevice()) {
-            final boolean scrollNeeded = mIsEmbeddingActivityEnabled
-                    && !TextUtils.equals(getString(DEFAULT_HIGHLIGHT_MENU_KEY), highlightMenuKey);
-            showSuggestionFragment(scrollNeeded);
-            if (FeatureFlagUtils.isEnabled(this, FeatureFlags.CONTEXTUAL_HOME)) {
-                showFragment(() -> new ContextualCardsFragment(), R.id.contextual_cards_content);
+        if (useStockLayout) {
+        
+        mIsEmbeddingActivityEnabled = ActivityEmbeddingUtils.isEmbeddingActivityEnabled(this);
+        if (mIsEmbeddingActivityEnabled) {
+            final UserManager um = getSystemService(UserManager.class);
+            final UserInfo userInfo = um.getUserInfo(getUser().getIdentifier());
+            if (userInfo.isManagedProfile()) {
+                final Intent intent = new Intent(getIntent())
+                        .setClass(this, DeepLinkHomepageActivityInternal.class)
+                        .addFlags(Intent.FLAG_ACTIVITY_FORWARD_RESULT)
+                        .putExtra(EXTRA_USER_HANDLE, getUser());
+                intent.removeFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
+                startActivityAsUser(intent, um.getPrimaryUser().getUserHandle());
+                finish();
+                return;
             }
         }
-        
-        final TextView textView = findViewById(R.id.homepage_title);
 
+        avatarView = findViewById(R.id.account_avatar);
+
+        if (avatarView != null && useStockLayout && isUserCardDisabled) {
+          avatarView.setImageDrawable(getCircularUserIcon(getApplicationContext()));
+          avatarView.setVisibility(View.VISIBLE);
+          avatarView.setOnClickListener(new View.OnClickListener() {
+              @Override
+              public void onClick(View v) {
+                  Intent intent = new Intent(Intent.ACTION_MAIN);
+                  intent.setComponent(new ComponentName("com.android.settings","com.android.settings.Settings$UserSettingsActivity"));
+                  startActivity(intent);
+              }
+          });
+        }
+
+	if (messagesEnabled) {
+	final TextView textView = findViewById(R.id.homepage_title);
         switch (Calendar.getInstance().get(Calendar.HOUR_OF_DAY)) {
             case 5: case 6: case 7: case 8: case 9: case 10:
        	// Generate random welcome massage as title header
@@ -225,7 +241,7 @@ public class SettingsHomepageActivity extends FragmentActivity implements
         	int eNight = genmsgeNight.nextInt(msgearlyNight.length-1);
         	textView.setText(msgearlyNight[eNight]);
                 break;
-
+                
             case 21: case 22: case 23: case 0: 
         	String[] msgNight = getResources().getStringArray(R.array.dashboard_night);
         	Random genmsgNight = new Random();
@@ -246,7 +262,7 @@ public class SettingsHomepageActivity extends FragmentActivity implements
         	int mn = genmsgMN.nextInt(msgMN.length-1);
         	textView.setText(msgMN[mn]);
                 break;
-
+                
             case 11: case 12: case 13: case 14: case 15:
         	String[] msgRD = getResources().getStringArray(R.array.dashboard_random);
         	Random genmsgRD = new Random();
@@ -256,7 +272,97 @@ public class SettingsHomepageActivity extends FragmentActivity implements
 
             default:
                 break;
-      }
+           }
+        } else {
+           final TextView textView = findViewById(R.id.homepage_title);
+           textView.setText(getResources().getString(R.string.top_level_settings_title));
+        }
+
+        setupEdgeToEdge();
+        mSplitController = SplitController.getInstance();
+        mIsTwoPane = mSplitController.isActivityEmbedded(this);
+
+        updateAppBarMinHeight();
+        initHomepageContainer();
+        updateHomepageAppBar();
+        initSearchBarView();
+        // Only allow features on high ram devices.
+        if (!getSystemService(ActivityManager.class).isLowRamDevice()) {
+            final boolean scrollNeeded = mIsEmbeddingActivityEnabled
+                    && !TextUtils.equals(getString(DEFAULT_HIGHLIGHT_MENU_KEY), highlightMenuKey);
+            showSuggestionFragment(scrollNeeded);
+            if (FeatureFlagUtils.isEnabled(this, FeatureFlags.CONTEXTUAL_HOME)) {
+                showFragment(() -> new ContextualCardsFragment(), R.id.contextual_cards_content);
+            }
+        }
+        } else {
+
+        final View root = findViewById(R.id.settings_homepage_container);
+	LinearLayout commonCon = root.findViewById(R.id.common_con);
+        final Toolbar toolbar = root.findViewById(R.id.search_action_bar);
+
+        FeatureFactory.getFactory(this).getSearchFeatureProvider()
+                .initSearchToolbar(this /* activity */, toolbar, SettingsEnums.SETTINGS_HOMEPAGE);
+
+	if (messagesEnabled) {
+	collapsing_toolbar =  root.findViewById(R.id.collapsing_toolbar);
+        switch (Calendar.getInstance().get(Calendar.HOUR_OF_DAY)) {
+            case 5: case 6: case 7: case 8: case 9: case 10:
+       	// Generate random welcome massage as title header
+        	String[] morningMsg = getResources().getStringArray(R.array.dashboard_morning);
+        	Random genMorningMsg = new Random();
+        	int morning = genMorningMsg.nextInt(morningMsg.length-1);
+        	collapsing_toolbar.setTitle(morningMsg[morning]);
+                break;
+
+            case 18: case 19: case 20: 
+        	String[] msgearlyNight = getResources().getStringArray(R.array.dashboard_early_night);
+        	Random genmsgeNight = new Random();
+        	int eNight = genmsgeNight.nextInt(msgearlyNight.length-1);
+        	collapsing_toolbar.setTitle(msgearlyNight[eNight]);
+                break;
+                
+            case 21: case 22: case 23: case 0: 
+        	String[] msgNight = getResources().getStringArray(R.array.dashboard_night);
+        	Random genmsgNight = new Random();
+        	int night = genmsgNight.nextInt(msgNight.length-1);
+        	collapsing_toolbar.setTitle(msgNight[night]);
+                break;
+
+             case 16: case 17:
+        	String[] msgNoon = getResources().getStringArray(R.array.dashboard_noon);
+        	Random genmsgNoon = new Random();
+        	int noon = genmsgNoon.nextInt(msgNoon.length-1);
+        	collapsing_toolbar.setTitle(msgNoon[noon]);
+                break;
+
+            case 1: case 2: case 3: case 4:
+        	String[] msgMN = getResources().getStringArray(R.array.dashboard_midnight);
+        	Random genmsgMN = new Random();
+        	int mn = genmsgMN.nextInt(msgMN.length-1);
+        	collapsing_toolbar.setTitle(msgMN[mn]);
+                break;
+                
+            case 11: case 12: case 13: case 14: case 15:
+        	String[] msgRD = getResources().getStringArray(R.array.dashboard_random);
+        	Random genmsgRD = new Random();
+        	int randomm = genmsgRD.nextInt(msgRD.length-1);
+        	collapsing_toolbar.setTitle(msgRD[randomm]);
+                break;
+
+            default:
+                break;
+           }
+        } else {
+           collapsing_toolbar =  root.findViewById(R.id.collapsing_toolbar);
+           collapsing_toolbar.setTitle(getResources().getString(R.string.top_level_settings_title));
+        }
+        
+        }
+        getLifecycle().addObserver(new HideNonSystemOverlayMixin(this));
+        mCategoryMixin = new CategoryMixin(this);
+        getLifecycle().addObserver(mCategoryMixin);
+
         mMainFragment = showFragment(() -> {
             final TopLevelSettings fragment = new TopLevelSettings();
             fragment.getArguments().putString(SettingsActivity.EXTRA_FRAGMENT_ARG_KEY,
@@ -295,12 +401,66 @@ public class SettingsHomepageActivity extends FragmentActivity implements
     @Override
     public void onConfigurationChanged(Configuration newConfig) {
         super.onConfigurationChanged(newConfig);
-        final boolean isTwoPane = ActivityEmbeddingUtils.isTwoPaneResolution(this);
-        if (mIsTwoPaneLastTime != isTwoPane) {
-            mIsTwoPaneLastTime = isTwoPane;
+        Context context = getApplicationContext();
+        final boolean useStockLayout = Settings.System.getIntForUser(context.getContentResolver(),
+                "use_stock_layout", 0, UserHandle.USER_CURRENT) != 0;
+
+        if (useStockLayout) {
+        final boolean newTwoPaneState = mSplitController.isActivityEmbedded(this);
+        if (mIsTwoPane != newTwoPaneState) {
+            mIsTwoPane = newTwoPaneState;
             updateHomepageAppBar();
             updateHomepageBackground();
         }
+        updateSplitLayout();
+        }
+    }
+
+    private void updateSplitLayout() {
+        if (!mIsEmbeddingActivityEnabled) {
+            return;
+        }
+
+        if (mIsTwoPane) {
+            if (mIsRegularLayout == ActivityEmbeddingUtils.isRegularHomepageLayout(this)) {
+                // Layout unchanged
+                return;
+            }
+        } else if (mIsRegularLayout) {
+            // One pane mode with the regular layout, not needed to change
+            return;
+        }
+        mIsRegularLayout = !mIsRegularLayout;
+
+        // Update search title padding
+        View searchTitle = findViewById(R.id.search_bar_title);
+        if (searchTitle != null) {
+            int paddingStart = getResources().getDimensionPixelSize(
+                    mIsRegularLayout
+                            ? R.dimen.search_bar_title_padding_start_regular_two_pane
+                            : R.dimen.search_bar_title_padding_start);
+            searchTitle.setPaddingRelative(paddingStart, 0, 0, 0);
+        }
+        // Notify fragments
+        getSupportFragmentManager().getFragments().forEach(fragment -> {
+            if (fragment instanceof SplitLayoutListener) {
+                ((SplitLayoutListener) fragment).onSplitLayoutChanged(mIsRegularLayout);
+            }
+        });
+    }
+
+    private void setupEdgeToEdge() {
+        WindowCompat.setDecorFitsSystemWindows(getWindow(), false);
+        ViewCompat.setOnApplyWindowInsetsListener(findViewById(android.R.id.content),
+                (v, windowInsets) -> {
+                    Insets insets = windowInsets.getInsets(WindowInsetsCompat.Type.systemBars());
+                    // Apply the insets paddings to the view.
+                    v.setPadding(insets.left, insets.top, insets.right, insets.bottom);
+
+                    // Return CONSUMED if you don't want the window insets to keep being
+                    // passed down to descendant views.
+                    return WindowInsetsCompat.CONSUMED;
+                });
     }
 
     private void initSearchBarView() {
@@ -499,6 +659,35 @@ public class SettingsHomepageActivity extends FragmentActivity implements
         return searchBarHeight + searchBarMargin * 2;
     }
 
+    private static class SuggestionFragCreator implements FragmentCreator {
+
+        private final Class<? extends Fragment> mClass;
+        private final boolean mIsTwoPaneLayout;
+
+        SuggestionFragCreator(Class<? extends Fragment> clazz, boolean isTwoPaneLayout) {
+            mClass = clazz;
+            mIsTwoPaneLayout = isTwoPaneLayout;
+        }
+
+        @Override
+        public Fragment create() {
+            try {
+                Fragment fragment = mClass.getConstructor().newInstance();
+                return fragment;
+            } catch (Exception e) {
+                Log.w(TAG, "Cannot show fragment", e);
+            }
+            return null;
+        }
+
+        @Override
+        public void init(Fragment fragment) {
+            if (fragment instanceof SplitLayoutListener) {
+                ((SplitLayoutListener) fragment).setSplitLayoutSupported(mIsTwoPaneLayout);
+            }
+        }
+    }
+
     private Drawable getCircularUserIcon(Context context) {
         Bitmap bitmapUserIcon = mUserManager.getUserIcon(UserHandle.myUserId());
 
@@ -517,6 +706,32 @@ public class SettingsHomepageActivity extends FragmentActivity implements
     @Override
     public void onResume() {
         super.onResume();
-        avatarView.setImageDrawable(getCircularUserIcon(getApplicationContext()));
+        final boolean useStockLayout = getuseStockLayout();
+        final boolean isUserCardDisabled = getUserCardState();
+	
+        if (useStockLayout && isUserCardDisabled) {
+            avatarView.setImageDrawable(getCircularUserIcon(getApplicationContext()));
+        }
     }
+
+    private boolean getUserCardState() { 
+        final Context context = getApplicationContext();
+        return Settings.System.getIntForUser(context.getContentResolver(),
+                "hide_user_card", 0,
+                UserHandle.USER_CURRENT) != 0;
+   }
+                
+    private boolean getuseStockLayout() { 
+        final Context context = getApplicationContext();
+        return Settings.System.getIntForUser(context.getContentResolver(),
+                "use_stock_layout", 0,
+                UserHandle.USER_CURRENT) != 0;
+   }
+   
+    private boolean getMessagesSettings() {
+        final Context context = getApplicationContext();
+        return Settings.System.getIntForUser(context.getContentResolver(),
+                "settings_contextual_messages", 0,
+                UserHandle.USER_CURRENT) != 0;
+   }
 }
