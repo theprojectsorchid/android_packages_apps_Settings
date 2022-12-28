@@ -22,7 +22,7 @@
         android:padding="1.5dp" 
         android:layout_width="@dimen/dashboard_icon_size"
         android:layout_height="@dimen/dashboard_icon_size"
-        android:src="@drawable/ic_homepage_google_settings_rui"
+        android:src="@drawable/op_ic_homepage_google_settings"
         app:layout_constraintHeight_max="@dimen/op_control_avatar_size3"
         app:layout_constraintWidth_max="@dimen/op_control_avatar_size3"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -46,13 +46,6 @@
             android:singleLine="true"
             style="@style/op_control_text_style_h6"
             android:textSize="16sp" />
-
-        <TextView
-            android:id="@android:id/summary"
-            android:layout_width="0dp"
-            android:layout_height="0dp"
-            android:layout_marginTop="0dp"
-            android:singleLine="true" />
 
 
         <androidx.cardview.widget.CardView

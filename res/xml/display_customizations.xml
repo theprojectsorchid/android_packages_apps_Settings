@@ -19,10 +19,49 @@
     android:key="display_customizations"
     android:title="@string/display_customization_title">
 
+
+    <com.android.settingslib.widget.LayoutPreference
+        android:key="welcome_animation"
+        android:layout="@layout/welcome_animation5"
+        android:order="-180" />
+
+     <Preference
+        android:key="tap_tap_gestures"
+        android:icon="@drawable/rr_web_icon"
+        android:summary="@string/warden_summary"
+        android:title="@string/secure_warden_title">
+        <intent
+            android:action="android.intent.action.MAIN"
+            android:targetClass="org.adaway.ui.home.HomeActivity"
+            android:targetPackage="org.adaway" />
+    </Preference>
+    
+     <Preference
+        android:key="tap_tap_gestures"
+        android:icon="@drawable/rr_web_icon"
+        android:summary="@string/webapp_summary"
+        android:title="@string/secure_webapps_title">
+        <intent
+            android:action="android.intent.action.MAIN"
+            android:targetClass="org.jak_linux.dns66.MainActivity"
+            android:targetPackage="org.jak_linux.dns66" />
+    </Preference>
+
+     <Preference
+        android:key="tap_tap_gestures"
+        android:icon="@drawable/rr_web_icon"
+        android:summary="@string/webapp_summary"
+        android:title="@string/secure_webapps_title">
+        <intent
+            android:action="android.intent.action.MAIN"
+            android:targetClass="com.celzero.bravedns.ui.HomeScreenActivity"
+            android:targetPackage="com.celzero.bravedns" />
+    </Preference>
+
         <com.awaken.settings.preferences.SystemSettingSwitchPreference
             android:key="show_fourg_icon"        
             android:icon="@drawable/rr_4g_icon"
-            		android:layout="@layout/dot_dashboard_preference_middle"
+            android:layout="@layout/dot_dashboard_preference_middle"
             android:title="@string/show_fourg_icon_title"
             android:defaultValue="false"/>
 

@@ -164,7 +164,19 @@
         android:defaultValue="false"
         android:dependency="volume_rocker_wake" />
 
-    <com.arrow.support.preferences.SystemSettingSwitchPreference
+       
+ <Preference
+        android:key="tap_tap_gestures"
+        android:icon="@drawable/ic_settings_quick_gestures"
+        android:summary="@string/TapTap_summary"
+        android:title="@string/TapTap_title">
+        <intent
+            android:action="android.intent.action.MAIN"
+            android:targetClass="com.kieronquinn.app.taptap.ui.activities.MainActivity"
+            android:targetPackage="com.kieronquinn.app.taptap" />
+ </Preference>
+ 
+    <com.awaken.settings.preferences.SystemSettingSwitchPreference
         android:key="volume_rocker_wake"
         android:layout="@layout/top_level_preference_rui"
         android:icon="@drawable/rr_wake_icon"

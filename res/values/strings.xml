@@ -17,11 +17,29 @@
 
     <string name="connection_area">Connections</string>
     <string name="system_personalization">Themes and Styles</string>
-    <string name="secure_hub">Secure hub </string>
+    <string name="secure_hub">Its what I like</string>
+    <string name="Opensource_applications">Opensource applications</string>
+    <string name="Opensource_summary">Opensource secure apps</string>
+    <string name="category_system_options">Opensource Vpn and Adblocking</string>
+    <string name="foss_setting_description">Welcome to FOSS Settings below are options and information on ways to enhance your security and privacy while using your device. Please enjoy and stay safe.</string>
+    <string name="foss_bubble_setting_description">Welcome to FOSS Settings below are options and information on ways to enhance your security and privacy while using your device. Please enjoy and stay safe.</string>
+
+
+     <string name="Microg_info">Problem Applicaiton info</string>
+     <string name="Microg_info_description">Information on app-level problems and fixes</string>
+     <string name="Microg_link">https://github.com/microg/GmsCore/wiki/Problem-Apps</string>
+
+     <string name="Opensource">Open Source Applications</string>
+     <string name="Opensource_description">Opensource application list</string>
+     <string name="Opensource_link">https://github.com/LinuxCafeFederation/awesome-android</string>
     <string name="app_info_config">App info and config</string>
     <string name="core_system">System Options</string>
+    <string name="security_privacy_center">Security and Privacy</string>
+    <string name="security_privacy_summary">Security, Privacy, Location, Accessibility, Notifications</string>
+    <string name="core_system_summary">System settings, battery, applications, storage</string>
     <string name="Orchid_toplevel_settings_summary">Its what I like</string>
-    <string name="Orchid_toplevel_settings_title">PepsiOS Rom</string>
+    <string name="Orchid_toplevel_settings_title">PepsiOS</string>
+    <string name="secure_hub_summary">Opensouce secure applications</string>
 
 
     <!-- OrchidOs versioning -->

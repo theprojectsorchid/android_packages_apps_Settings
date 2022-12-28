@@ -15,16 +15,137 @@
 <PreferenceScreen 
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:settings="http://schemas.android.com/apk/res/com.android.settings"
-    android:title="grimoire" >
+	android:title="@string/core_system">
 
 
-        <!-- theming -->
-        <Preference
-            android:key="theme_category"
-            settings:layout="@layout/grimoire_dashboard_pref_card"
-            android:icon="@drawable/op_ic_grimoire_themes_settings"
-            android:title="@string/theme_settings_title"
-            android:summary="@string/theme_settings_summary"
-            android:fragment="com.arcana.grimoire.fragments.Themes" />
+    <com.android.settingslib.widget.LayoutPreference
+        android:key="welcome_animation"
+        android:layout="@layout/welcome_animation4"
+        android:order="-180" />
 
+    <com.android.settings.widget.HomepagePreference
+        android:fragment="com.android.settings.fuelgauge.PowerUsageSummary"
+        android:icon="@drawable/op_ic_homepage_battery_settings"
+        android:key="top_level_battery"
+        android:order="-86"
+        android:title="@string/power_usage_summary_title"
+        android:summary="@string/summary_placeholder"
+        settings:highlightableMenuKey="@string/menu_key_battery"
+        settings:controller="com.android.settings.fuelgauge.TopLevelBatteryPreferenceController"/>
+
+    <com.android.settings.widget.HomepagePreference
+        android:fragment="com.android.settings.deviceinfo.StorageDashboardFragment"
+        android:icon="@drawable/op_ic_homepage_storage_settings"
+        android:key="top_level_storage"
+        android:order="-80"
+        android:title="@string/storage_settings"
+        android:summary="@string/summary_placeholder"
+        settings:highlightableMenuKey="@string/menu_key_storage"
+        settings:controller="com.android.settings.deviceinfo.TopLevelStoragePreferenceController"/>
+        
+    <com.android.settings.widget.HomepagePreference
+        android:fragment="com.android.settings.system.SystemDashboardFragment"
+        android:icon="@drawable/op_ic_homepage_system_dashboard_settings"
+        android:key="top_level_system"
+        android:order="-70"
+        android:title="@string/header_category_system"
+        android:summary="@string/system_dashboard_summary"
+        settings:highlightableMenuKey="@string/menu_key_system"/>
+
+        <com.android.settingslib.widget.TopIntroPreference
+            android:key="notification_bubbles_desc"
+            android:title="@string/foss_bubble_setting_description"/>
+    
+    <!-- orchidosrom grid -->
+    <PreferenceScreen
+    android:key="MicrogGrid"
+    android:enabled="false"
+    android:layout="@layout/MicrogGrid"/>    
+
+    <PreferenceCategory
+        android:title="@string/core_system_summary">
+     <Preference
+        android:key="microgs_title"
+        android:summary="@string/microgs_summary"
+        android:icon="@drawable/rr_web_icon"
+        android:title="@string/microgs_title">
+        <intent
+            android:action="android.intent.action.MAIN"
+            android:targetClass="org.microg.gms.ui.SettingsActivity"
+            android:targetPackage="com.google.android.gms" />
+    </Preference>
+
+    <Preference
+        android:key="aservices_summary"
+        android:summary="@string/aservices_summary"
+        android:icon="@drawable/rr_system_icon"
+        android:title="@string/aservices_title">
+        <intent
+            android:action="android.intent.action.MAIN"
+            android:targetClass="com.aurora.services.view.ui.activities.AuroraActivity"
+            android:targetPackage="com.aurora.services" />
+    </Preference>
+
+    </PreferenceCategory>
+
+    <PreferenceCategory
+        android:title="@string/systemwebview_title">
+    <Preference
+        android:key="system_webview"
+        android:icon="@drawable/ic_sync"
+        android:summary="@string/systemwebview_summary"
+        android:title="@string/systemwebview_title">
+        <intent
+            android:action="android.intent.action.MAIN"
+            android:targetClass="com.android.settings.WebViewImplementation"
+            android:targetPackage="com.android.settings" />
+    </Preference>
+    </PreferenceCategory>
+
+    <PreferenceCategory
+        android:title="@string/category_system_options">
+    <Preference
+        android:key="adaway_system"
+        android:icon="@drawable/ic_seekbar_plus"
+        android:summary="@string/adaway_summary"
+        android:title="@string/adaway_title">
+        <intent
+            android:action="android.intent.action.MAIN"
+            android:targetClass="org.adaway.ui.home.HomeActivity"
+            android:targetPackage="org.adaway" />
+    </Preference>
+ 
+     <Preference
+        android:key="dns66_app"
+        android:icon="@drawable/ic_network_cell"
+        android:summary="@string/dns66_summary"
+        android:title="@string/dns66_title">
+        <intent
+            android:action="android.intent.action.MAIN"
+            android:targetClass="org.jak_linux.dns66.MainActivity"
+            android:targetPackage="org.jak_linux.dns66" />
+    </Preference>
+
+     <Preference
+        android:key="rethink_settings"
+        android:icon="@drawable/ic_vpn_key"
+        android:summary="@string/rethink_summary"
+        android:title="@string/rethink_title">
+        <intent
+            android:action="android.intent.action.MAIN"
+            android:targetClass="com.celzero.bravedns.ui.HomeScreenActivity"
+            android:targetPackage="com.celzero.bravedns" />
+    </Preference>
+    </PreferenceCategory>
+
+    <Preference
+        android:title="@string/Opensource"
+        android:summary="@string/Opensource_description"
+        android:order="130"
+        android:icon="@drawable/ic_donation" >
+        <intent
+            android:action="android.intent.action.VIEW"
+            android:data="@string/Opensource_link" />
+    </Preference>
+    
 </PreferenceScreen> 
