@@ -23,6 +23,8 @@
     <com.android.settingslib.widget.LayoutPreference
         android:key="welcome_animation"
         android:layout="@layout/welcome_animation"
+        android:selectable="true"
+        android:fragment="com.android.settings.deviceinfo.aboutphone.MyDeviceInfoFragment"
         android:order="-180" />
 
     <com.android.settingslib.widget.LayoutPreference
@@ -37,11 +39,8 @@
         android:key="usercard_space"
         android:selectable="false"
         android:order="-165"/>
-
-
         
     <com.android.settings.widget.HomepagePreference
-		android:layout="@layout/card_top"
         android:fragment="com.android.settings.network.NetworkDashboardFragment"
         android:icon="@drawable/op_ic_homepage_network_settings"
         android:key="top_level_network"
@@ -51,7 +50,6 @@
         settings:controller="com.android.settings.network.TopLevelNetworkEntryPreferenceController"/>
 
     <com.android.settings.widget.HomepagePreference
-		android:layout="@layout/card_end"
         android:fragment="com.android.settings.connecteddevice.ConnectedDeviceDashboardFragment"
         android:icon="@drawable/op_ic_homepage_connected_device_settings"
         android:key="top_level_connected_devices"
@@ -63,7 +61,6 @@
 
         
     <com.android.settings.widget.HomepagePreference
-        android:layout="@layout/card_top"
         android:fragment="com.android.settings.DisplaySettings"
         android:icon="@drawable/op_ic_homepage_display_settings"
         android:key="top_level_display"
@@ -90,7 +87,6 @@
         settings:highlightableMenuKey="@string/menu_key_apps"/>
 
     <com.android.settings.widget.HomepagePreference
-		android:layout="@layout/card_top"
         android:fragment="com.android.settings.notification.ConfigureNotificationSettings"
         android:icon="@drawable/op_ic_homepage_about_notifications"
         android:key="top_level_notifications"
@@ -100,7 +96,6 @@
         settings:highlightableMenuKey="@string/menu_key_notifications"/>
 
     <com.android.settings.widget.HomepagePreference
-		android:layout="@layout/card_end"
         android:fragment="com.android.settings.fuelgauge.PowerUsageSummary"
         android:icon="@drawable/op_ic_homepage_battery_settings"
         android:key="top_level_battery"
@@ -111,7 +106,6 @@
         settings:controller="com.android.settings.fuelgauge.TopLevelBatteryPreferenceController"/>
 
     <com.android.settings.widget.HomepagePreference
-		android:layout="@layout/card_top"
         android:fragment="com.android.settings.deviceinfo.StorageDashboardFragment"
         android:icon="@drawable/op_ic_homepage_storage_settings"
         android:key="top_level_storage"
@@ -122,7 +116,6 @@
         settings:controller="com.android.settings.deviceinfo.TopLevelStoragePreferenceController"/>
 
     <com.android.settings.widget.HomepagePreference
-		android:layout="@layout/card_mid"
         android:fragment="com.android.settings.notification.SoundSettings"
         android:icon="@drawable/op_ic_homepage_sound_settings"
         android:key="top_level_sound"
@@ -132,7 +125,6 @@
         settings:highlightableMenuKey="@string/menu_key_sound"/>
         
     <com.android.settings.widget.HomepagePreference
-		android:layout="@layout/card_end"
         android:fragment="com.android.settings.accessibility.AccessibilitySettings"
         android:icon="@drawable/op_ic_homepage_accessibility_settings"
         android:key="top_level_accessibility"
@@ -152,7 +144,6 @@
         settings:controller="com.android.settings.security.TopLevelSecurityEntryPreferenceController"/>
 
     <com.android.settings.widget.HomepagePreference
-		android:layout="@layout/card_mid"
         android:fragment="com.android.settings.privacy.PrivacyDashboardFragment"
         android:icon="@drawable/op_ic_homepage_privacy_settings"
         android:key="top_level_privacy"
@@ -161,7 +152,6 @@
         android:summary="@string/privacy_dashboard_summary"/>
 
     <com.android.settings.widget.HomepagePreference
-		android:layout="@layout/card_mid"
         android:fragment="com.android.settings.location.LocationSettings"
         android:icon="@drawable/op_ic_homepage_location_settings"
         android:key="top_level_location"
@@ -171,7 +161,6 @@
         settings:controller="com.android.settings.location.TopLevelLocationPreferenceController"/>
 
     <com.android.settings.widget.HomepagePreference
-		android:layout="@layout/card_mid"
         android:key="top_level_emergency"
         android:title="@string/emergency_settings_preference_title"
         android:summary="@string/emergency_dashboard_summary"
@@ -180,7 +169,6 @@
         android:fragment="com.android.settings.emergency.EmergencyDashboardFragment"/>
 
     <com.android.settings.widget.HomepagePreference
-		android:layout="@layout/card_end"
         android:fragment="com.android.settings.accounts.AccountDashboardFragment"
         android:icon="@drawable/op_ic_homepage_accounts_settings"
         android:key="top_level_accounts"
@@ -190,7 +178,6 @@
         settings:controller="com.android.settings.accounts.TopLevelAccountEntryPreferenceController"/>
 
     <com.android.settings.widget.HomepagePreference
-		android:layout="@layout/card_top"
         android:fragment="com.android.settings.system.SystemDashboardFragment"
         android:icon="@drawable/op_ic_homepage_system_dashboard_settings"
         android:key="top_level_system"
@@ -207,7 +194,7 @@
         android:title="@string/about_settings"
         android:summary="@string/summary_placeholder"
         settings:controller="com.android.settings.deviceinfo.aboutphone.TopLevelAboutDevicePreferenceController"/>
-
+-->
     <com.android.settings.widget.HomepagePreference
         android:icon="@drawable/op_ic_homepage_support_settings"
         android:key="top_level_support"
@@ -215,11 +202,9 @@
         android:title="@string/page_tab_title_support"
         android:summary="@string/support_summary"
         settings:controller="com.android.settings.support.SupportPreferenceController"/>
-
+    
     <com.android.settingslib.widget.LayoutPreference
-        android:key="about_phone_bigcard"
-        android:layout="@layout/atomichub"
-        android:selectable="true"
-        android:fragment="com.android.settings.deviceinfo.aboutphone.MyDeviceInfoFragment"
-        android:order="140" />
+        android:key="pepsi_animation"
+        android:layout="@layout/pepsi_animation2"
+        android:order="180" />
 </PreferenceScreen>

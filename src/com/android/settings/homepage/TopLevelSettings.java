@@ -30,6 +30,7 @@ import android.content.res.Configuration;
 import android.graphics.drawable.Drawable;
 import android.os.Bundle;
 import android.os.UserManager;
+import android.os.UserHandle;
 import android.provider.Settings;
 import android.view.View;
 import android.widget.TextView;
@@ -40,14 +41,19 @@ import androidx.fragment.app.Fragment;
 import androidx.preference.Preference;
 import androidx.preference.PreferenceFragmentCompat;
 import androidx.preference.PreferenceScreen;
+import androidx.recyclerview.widget.RecyclerView;
 
 import com.android.settings.R;
 import com.android.settings.Utils;
+import com.android.settings.activityembedding.ActivityEmbeddingRulesController;
+import com.android.settings.activityembedding.ActivityEmbeddingUtils;
 import com.android.settings.core.SubSettingLauncher;
 import com.android.settings.dashboard.DashboardFragment;
 import com.android.settings.search.BaseSearchIndexProvider;
 import com.android.settings.support.SupportPreferenceController;
+import com.android.settings.widget.HomepagePreference;
 import com.android.settingslib.core.instrumentation.Instrumentable;
+import com.android.settingslib.drawer.Tile;
 import com.android.settingslib.search.SearchIndexable;
 import com.android.settingslib.widget.LayoutPreference;
 import com.android.settings.widget.EntityHeaderController;
@@ -60,6 +66,7 @@ public class TopLevelSettings extends DashboardFragment implements
     private static final String SAVED_HIGHLIGHT_MIXIN = "highlight_mixin";
     private static final String PREF_KEY_SUPPORT = "top_level_support";
     private static final String KEY_USER_CARD = "top_level_usercard";
+    private int mDashBoardStyle;
 
     private boolean mIsEmbeddingActivityEnabled;
     private TopLevelHighlightMixin mHighlightMixin;
@@ -74,7 +81,20 @@ public class TopLevelSettings extends DashboardFragment implements
 
     @Override
     protected int getPreferenceScreenResId() {
-        return R.xml.top_level_settings;
+        switch (mDashBoardStyle) {
+           case 0:
+               return R.xml.top_level_settings;
+           case 1:
+               return R.xml.top_level_settings_oos11;
+           case 2:
+               return R.xml.top_level_settings_oos11;
+           case 3:
+               return R.xml.top_level_settings_oos12;
+           case 4:
+               return R.xml.top_level_settings_oos12;
+           default:
+               return R.xml.top_level_settings;
+        }
     }
 
     @Override
@@ -90,7 +110,9 @@ public class TopLevelSettings extends DashboardFragment implements
     @Override
     public void onAttach(Context context) {
         super.onAttach(context);
+        HighlightableMenu.fromXml(context, getPreferenceScreenResId());
         use(SupportPreferenceController.class).setActivity(getActivity());
+        setDashboardStyle(context);
     }
 
     @Override
@@ -102,6 +124,16 @@ public class TopLevelSettings extends DashboardFragment implements
     @Override
     public Fragment getCallbackFragment() {
         return this;
+    }
+
+    @Override
+    public boolean onPreferenceTreeClick(Preference preference) {
+        // Register SplitPairRule for SubSettings.
+        ActivityEmbeddingRulesController.registerSubSettingsPairRule(getContext(),
+                true /* clearTop */);
+
+        setHighlightPreferenceKey(preference.getKey());
+        return super.onPreferenceTreeClick(preference);
     }
 
     @Override
@@ -195,69 +227,74 @@ public class TopLevelSettings extends DashboardFragment implements
             final Preference preference = screen.getPreference(i);
 
  	    String key = preference.getKey();
-
-	    if (key.equals("top_level_usercard")){
-	        preference.setLayoutResource(R.layout.usercard_round);
-	    }
+            
 	    if (key.equals("usercard_space")){
                 preference.setLayoutResource(R.layout.usercard_space);
             }
-	    if (key.equals("top_level_network")){
-	        preference.setLayoutResource(R.layout.top_level_preference_top);
+
+	    if (mDashBoardStyle == 0) {
+	    if (key.equals("top_level_usercard")){
+	        preference.setLayoutResource(R.layout.usercard_mt);
+	    }
+        if (key.equals("top_level_network")){
+	        preference.setLayoutResource(R.layout.top_level_preference_mt_top);
 	    }
             if (key.equals("top_level_connected_devices")){
-                preference.setLayoutResource(R.layout.top_level_preference_bottom);
+                preference.setLayoutResource(R.layout.top_level_preference_mt_bottom);
             }
             if (key.equals("top_level_accounts")){
-                preference.setLayoutResource(R.layout.top_level_preference_middle);
+                preference.setLayoutResource(R.layout.top_level_preference_mt_alone);
             }
             if (key.equals("top_level_grimoire")){
-                preference.setLayoutResource(R.layout.top_level_preference_top);
+                preference.setLayoutResource(R.layout.top_level_preference_mt_alone);
             }
             if (key.equals("top_level_wallpaper")){
-                preference.setLayoutResource(R.layout.top_level_preference_bottom);
+                preference.setLayoutResource(R.layout.top_level_preference_mt_bottom);
             }
             if (key.equals("top_level_battery")){
-                preference.setLayoutResource(R.layout.top_level_preference_middle);
+                preference.setLayoutResource(R.layout.top_level_preference_mt_top);
             }
             if (key.equals("top_level_display")){
-                preference.setLayoutResource(R.layout.top_level_preference_middle);
+                preference.setLayoutResource(R.layout.top_level_preference_mt_top);
             }
             if (key.equals("top_level_sound")){
-                preference.setLayoutResource(R.layout.top_level_preference_bottom);
+                preference.setLayoutResource(R.layout.top_level_preference_mt_alone);
             }
             if (key.equals("top_level_apps")){
-                preference.setLayoutResource(R.layout.top_level_preference_top);
+                preference.setLayoutResource(R.layout.top_level_preference_mt_top);
             }
             if (key.equals("top_level_storage")){
-                preference.setLayoutResource(R.layout.top_level_preference_middle);
+                preference.setLayoutResource(R.layout.top_level_preference_mt_bottom);
             }
             if (key.equals("top_level_notifications")){
-                preference.setLayoutResource(R.layout.top_level_preference_middle);
+                preference.setLayoutResource(R.layout.top_level_preference_mt_bottom);
             }
             if (key.equals("top_level_location")){
-                preference.setLayoutResource(R.layout.top_level_preference_bottom);
+                preference.setLayoutResource(R.layout.top_level_preference_mt_middle);
             }
             if (key.equals("top_level_accessibility")){
-                preference.setLayoutResource(R.layout.top_level_preference_top);
+                preference.setLayoutResource(R.layout.top_level_preference_mt_top);
             }
             if (key.equals("top_level_security")){
-                preference.setLayoutResource(R.layout.top_level_preference_middle);
+                preference.setLayoutResource(R.layout.top_level_preference_mt_middle);
             }
             if (key.equals("top_level_privacy")){
-                preference.setLayoutResource(R.layout.top_level_preference_middle);
+                preference.setLayoutResource(R.layout.top_level_preference_mt_middle);
             }
             if (key.equals("top_level_emergency")){
-                preference.setLayoutResource(R.layout.top_level_preference_top);
+                preference.setLayoutResource(R.layout.top_level_preference_mt_bottom);
             }
             if (key.equals("top_level_system")){
-                preference.setLayoutResource(R.layout.top_level_preference_middle);
+                preference.setLayoutResource(R.layout.top_level_preference_mt_alone);
+            }
+            if (key.equals("top_level_anatolia")){
+                preference.setLayoutResource(R.layout.top_level_preference_mt_alone);
             }
             if (key.equals("top_level_about_device")){
-                preference.setLayoutResource(R.layout.top_level_preference_bottom);
+                preference.setLayoutResource(R.layout.top_level_preference_mt_bottom);    
             }
             if (key.equals("dashboard_tile_pref_com.google.android.apps.wellbeing.settings.TopLevelSettingsActivity")){
-                preference.setLayoutResource(R.layout.top_level_preference_wellbeing_card);
+                preference.setLayoutResource(R.layout.top_level_preference_mt_bottom);
             }
             if (key.equals("dashboard_tile_pref_com.google.android.gms.app.settings.GoogleSettingsIALink")){
                 preference.setLayoutResource(R.layout.top_level_preference_google_mt);
@@ -266,11 +303,330 @@ public class TopLevelSettings extends DashboardFragment implements
                 preference.setLayoutResource(R.layout.top_level_preference_google_mt);
             }
 	    if (key.equals("dashboard_tile_pref_com.google.android.apps.wellbeing.home.TopLevelSettingsActivity")){
-                preference.setLayoutResource(R.layout.top_level_preference_wellbeing_card);
+                preference.setLayoutResource(R.layout.top_level_preference_wellbeing_mt);
             }
 	    if (key.equals("top_level_wellbeing")){
-                preference.setLayoutResource(R.layout.top_level_preference_wellbeing_card);
+                preference.setLayoutResource(R.layout.top_level_preference_wellbeing_mt);
             }
+            if (key.equals("top_level_accounts")){
+                preference.setLayoutResource(R.layout.top_level_preference_mt_middle);
+            }
+	    
+	    } else if (mDashBoardStyle == 1) {
+	    if (key.equals("top_level_usercard")){
+	        preference.setLayoutResource(R.layout.usercard_oos11);
+	    }
+	    if (key.equals("top_level_network")){
+	        preference.setLayoutResource(R.layout.top_level_preference_mt_top);
+	    }
+            if (key.equals("top_level_connected_devices")){
+                preference.setLayoutResource(R.layout.top_level_preference_mt_bottom);
+            }
+            if (key.equals("top_level_accounts")){
+                preference.setLayoutResource(R.layout.top_level_preference_mt_alone);
+            }
+            if (key.equals("top_level_grimoire")){
+                preference.setLayoutResource(R.layout.top_level_preference_mt_alone);
+            }
+            if (key.equals("top_level_wallpaper")){
+                preference.setLayoutResource(R.layout.top_level_preference_mt_bottom);
+            }
+            if (key.equals("top_level_battery")){
+                preference.setLayoutResource(R.layout.top_level_preference_mt_top);
+            }
+            if (key.equals("top_level_display")){
+                preference.setLayoutResource(R.layout.top_level_preference_mt_top);
+            }
+            if (key.equals("top_level_sound")){
+                preference.setLayoutResource(R.layout.top_level_preference_mt_alone);
+            }
+            if (key.equals("top_level_apps")){
+                preference.setLayoutResource(R.layout.top_level_preference_mt_top);
+            }
+            if (key.equals("top_level_storage")){
+                preference.setLayoutResource(R.layout.top_level_preference_mt_bottom);
+            }
+            if (key.equals("top_level_notifications")){
+                preference.setLayoutResource(R.layout.top_level_preference_mt_bottom);
+            }
+            if (key.equals("top_level_location")){
+                preference.setLayoutResource(R.layout.top_level_preference_mt_middle);
+            }
+            if (key.equals("top_level_accessibility")){
+                preference.setLayoutResource(R.layout.top_level_preference_mt_top);
+            }
+            if (key.equals("top_level_security")){
+                preference.setLayoutResource(R.layout.top_level_preference_mt_middle);
+            }
+            if (key.equals("top_level_privacy")){
+                preference.setLayoutResource(R.layout.top_level_preference_mt_middle);
+            }
+            if (key.equals("top_level_emergency")){
+                preference.setLayoutResource(R.layout.top_level_preference_mt_bottom);
+            }
+            if (key.equals("top_level_system")){
+                preference.setLayoutResource(R.layout.top_level_preference_mt_alone);
+            }
+            if (key.equals("top_level_anatolia")){
+                preference.setLayoutResource(R.layout.top_level_preference_mt_alone);
+            }
+            if (key.equals("top_level_about_device")){
+                preference.setLayoutResource(R.layout.top_level_preference_mt_bottom);    
+            }
+            if (key.equals("dashboard_tile_pref_com.google.android.apps.wellbeing.settings.TopLevelSettingsActivity")){
+                preference.setLayoutResource(R.layout.top_level_preference_mt_bottom);
+            }
+            if (key.equals("dashboard_tile_pref_com.google.android.gms.app.settings.GoogleSettingsIALink")){
+                preference.setLayoutResource(R.layout.top_level_preference_google_mt);
+            }
+	    if (key.equals("top_level_google")){
+                preference.setLayoutResource(R.layout.top_level_preference_google_mt);
+            }
+	    if (key.equals("dashboard_tile_pref_com.google.android.apps.wellbeing.home.TopLevelSettingsActivity")){
+                preference.setLayoutResource(R.layout.top_level_preference_wellbeing_mt);
+            }
+	    if (key.equals("top_level_wellbeing")){
+                preference.setLayoutResource(R.layout.top_level_preference_wellbeing_mt);
+            }
+            if (key.equals("top_level_accounts")){
+                preference.setLayoutResource(R.layout.top_level_preference_mt_middle);
+            }
+            
+            } else if (mDashBoardStyle == 2) {
+	    if (key.equals("top_level_usercard")){
+	        preference.setLayoutResource(R.layout.usercard_oos11);
+	    }
+	    if (key.equals("top_level_network")){
+	        preference.setLayoutResource(R.layout.top_level_preference_mt_top);
+	    }
+            if (key.equals("top_level_connected_devices")){
+                preference.setLayoutResource(R.layout.top_level_preference_mt_bottom);
+            }
+            if (key.equals("top_level_accounts")){
+                preference.setLayoutResource(R.layout.top_level_preference_mt_alone);
+            }
+            if (key.equals("top_level_grimoire")){
+                preference.setLayoutResource(R.layout.top_level_preference_mt_alone);
+            }
+            if (key.equals("top_level_wallpaper")){
+                preference.setLayoutResource(R.layout.top_level_preference_mt_bottom);
+            }
+            if (key.equals("top_level_battery")){
+                preference.setLayoutResource(R.layout.top_level_preference_mt_top);
+            }
+            if (key.equals("top_level_display")){
+                preference.setLayoutResource(R.layout.top_level_preference_mt_top);
+            }
+            if (key.equals("top_level_sound")){
+                preference.setLayoutResource(R.layout.top_level_preference_mt_alone);
+            }
+            if (key.equals("top_level_apps")){
+                preference.setLayoutResource(R.layout.top_level_preference_mt_top);
+            }
+            if (key.equals("top_level_storage")){
+                preference.setLayoutResource(R.layout.top_level_preference_mt_bottom);
+            }
+            if (key.equals("top_level_notifications")){
+                preference.setLayoutResource(R.layout.top_level_preference_mt_bottom);
+            }
+            if (key.equals("top_level_location")){
+                preference.setLayoutResource(R.layout.top_level_preference_mt_middle);
+            }
+            if (key.equals("top_level_accessibility")){
+                preference.setLayoutResource(R.layout.top_level_preference_mt_top);
+            }
+            if (key.equals("top_level_security")){
+                preference.setLayoutResource(R.layout.top_level_preference_mt_middle);
+            }
+            if (key.equals("top_level_privacy")){
+                preference.setLayoutResource(R.layout.top_level_preference_mt_middle);
+            }
+            if (key.equals("top_level_emergency")){
+                preference.setLayoutResource(R.layout.top_level_preference_mt_bottom);
+            }
+            if (key.equals("top_level_system")){
+                preference.setLayoutResource(R.layout.top_level_preference_mt_alone);
+            }
+            if (key.equals("top_level_anatolia")){
+                preference.setLayoutResource(R.layout.top_level_preference_mt_alone);
+            }
+            if (key.equals("top_level_about_device")){
+                preference.setLayoutResource(R.layout.top_level_preference_mt_bottom);    
+            }
+            if (key.equals("dashboard_tile_pref_com.google.android.apps.wellbeing.settings.TopLevelSettingsActivity")){
+                preference.setLayoutResource(R.layout.top_level_preference_mt_bottom);
+            }
+            if (key.equals("dashboard_tile_pref_com.google.android.gms.app.settings.GoogleSettingsIALink")){
+                preference.setLayoutResource(R.layout.top_level_preference_google_mt);
+            }
+	    if (key.equals("top_level_google")){
+                preference.setLayoutResource(R.layout.top_level_preference_google_mt);
+            }
+	    if (key.equals("dashboard_tile_pref_com.google.android.apps.wellbeing.home.TopLevelSettingsActivity")){
+                preference.setLayoutResource(R.layout.top_level_preference_wellbeing_mt);
+            }
+	    if (key.equals("top_level_wellbeing")){
+                preference.setLayoutResource(R.layout.top_level_preference_wellbeing_mt);
+            }
+            if (key.equals("top_level_accounts")){
+                preference.setLayoutResource(R.layout.top_level_preference_mt_middle);
+            }
+            
+	    } else if (mDashBoardStyle == 3) {
+	    if (key.equals("top_level_usercard")){
+	        preference.setLayoutResource(R.layout.usercard_oos12);
+	    }
+	    if (key.equals("top_level_network")){
+	        preference.setLayoutResource(R.layout.top_level_preference_card_oos12);
+	    }
+            if (key.equals("top_level_connected_devices")){
+                preference.setLayoutResource(R.layout.top_level_preference_bottom_oos12);
+            }
+            if (key.equals("top_level_grimoire")){
+                preference.setLayoutResource(R.layout.top_level_preference_card_oos12);
+            }
+            if (key.equals("top_level_wallpaper")){
+                preference.setLayoutResource(R.layout.top_level_preference_bottom_oos12);
+            }
+            if (key.equals("top_level_battery")){
+                preference.setLayoutResource(R.layout.top_level_preference_card_oos12);
+            }
+            if (key.equals("top_level_display")){
+                preference.setLayoutResource(R.layout.top_level_preference_card_oos12);
+            }
+            if (key.equals("top_level_sound")){
+                preference.setLayoutResource(R.layout.top_level_preference_bottom_oos12);
+            }
+            if (key.equals("top_level_apps")){
+                preference.setLayoutResource(R.layout.top_level_preference_card_oos12);
+            }
+            if (key.equals("top_level_storage")){
+                preference.setLayoutResource(R.layout.top_level_preference_card_oos12);
+            }
+            if (key.equals("top_level_notifications")){
+                preference.setLayoutResource(R.layout.top_level_preference_card_oos12);
+            }
+            if (key.equals("top_level_location")){
+                preference.setLayoutResource(R.layout.top_level_preference_bottom_oos12);
+            }
+            if (key.equals("top_level_accessibility")){
+                preference.setLayoutResource(R.layout.top_level_preference_card_oos12);
+            }
+            if (key.equals("top_level_security")){
+                preference.setLayoutResource(R.layout.top_level_preference_card_oos12);
+            }
+            if (key.equals("top_level_privacy")){
+                preference.setLayoutResource(R.layout.top_level_preference_card_oos12);
+            }
+            if (key.equals("top_level_emergency")){
+                preference.setLayoutResource(R.layout.top_level_preference_card_oos12);
+            }
+            if (key.equals("top_level_system")){
+                preference.setLayoutResource(R.layout.top_level_preference_card_oos12);
+            }
+            if (key.equals("top_level_about_device")){
+                preference.setLayoutResource(R.layout.top_level_preference_bottom_oos12);
+            }
+            if (key.equals("dashboard_tile_pref_com.google.android.apps.wellbeing.settings.TopLevelSettingsActivity")){
+                preference.setLayoutResource(R.layout.top_level_preference_wellbeing_oos12);
+            }
+            if (key.equals("dashboard_tile_pref_com.google.android.gms.app.settings.GoogleSettingsIALink")){
+                preference.setLayoutResource(R.layout.top_level_preference_google_oos12);
+            }
+	    if (key.equals("top_level_google")){
+                preference.setLayoutResource(R.layout.top_level_preference_google_oos12);
+            }
+	    if (key.equals("dashboard_tile_pref_com.google.android.apps.wellbeing.home.TopLevelSettingsActivity")){
+                preference.setLayoutResource(R.layout.top_level_preference_wellbeing_oos12);
+            }
+	    if (key.equals("top_level_wellbeing")){
+                preference.setLayoutResource(R.layout.top_level_preference_wellbeing_oos12);
+            }
+            if (key.equals("top_level_accounts")){
+                preference.setLayoutResource(R.layout.top_level_preference_card_oos12);
+            }
+            
+            } else if (mDashBoardStyle == 4) {
+	    if (key.equals("top_level_usercard")){
+	        preference.setLayoutResource(R.layout.usercard_oos12);
+	    }
+	    if (key.equals("top_level_network")){
+	        preference.setLayoutResource(R.layout.top_level_preference_mt_top);
+	    }
+            if (key.equals("top_level_connected_devices")){
+                preference.setLayoutResource(R.layout.top_level_preference_mt_bottom);
+            }
+            if (key.equals("top_level_accounts")){
+                preference.setLayoutResource(R.layout.top_level_preference_mt_alone);
+            }
+            if (key.equals("top_level_grimoire")){
+                preference.setLayoutResource(R.layout.top_level_preference_mt_alone);
+            }
+            if (key.equals("top_level_wallpaper")){
+                preference.setLayoutResource(R.layout.top_level_preference_mt_bottom);
+            }
+            if (key.equals("top_level_battery")){
+                preference.setLayoutResource(R.layout.top_level_preference_mt_top);
+            }
+            if (key.equals("top_level_display")){
+                preference.setLayoutResource(R.layout.top_level_preference_mt_top);
+            }
+            if (key.equals("top_level_sound")){
+                preference.setLayoutResource(R.layout.top_level_preference_mt_alone);
+            }
+            if (key.equals("top_level_apps")){
+                preference.setLayoutResource(R.layout.top_level_preference_mt_top);
+            }
+            if (key.equals("top_level_storage")){
+                preference.setLayoutResource(R.layout.top_level_preference_mt_bottom);
+            }
+            if (key.equals("top_level_notifications")){
+                preference.setLayoutResource(R.layout.top_level_preference_mt_bottom);
+            }
+            if (key.equals("top_level_location")){
+                preference.setLayoutResource(R.layout.top_level_preference_mt_middle);
+            }
+            if (key.equals("top_level_accessibility")){
+                preference.setLayoutResource(R.layout.top_level_preference_mt_top);
+            }
+            if (key.equals("top_level_security")){
+                preference.setLayoutResource(R.layout.top_level_preference_mt_middle);
+            }
+            if (key.equals("top_level_privacy")){
+                preference.setLayoutResource(R.layout.top_level_preference_mt_middle);
+            }
+            if (key.equals("top_level_emergency")){
+                preference.setLayoutResource(R.layout.top_level_preference_mt_bottom);
+            }
+            if (key.equals("top_level_system")){
+                preference.setLayoutResource(R.layout.top_level_preference_mt_alone);
+            }
+            if (key.equals("top_level_anatolia")){
+                preference.setLayoutResource(R.layout.top_level_preference_mt_alone);
+            }
+            if (key.equals("top_level_about_device")){
+                preference.setLayoutResource(R.layout.top_level_preference_mt_bottom);    
+            }
+            if (key.equals("dashboard_tile_pref_com.google.android.apps.wellbeing.settings.TopLevelSettingsActivity")){
+                preference.setLayoutResource(R.layout.top_level_preference_mt_bottom);
+            }
+            if (key.equals("dashboard_tile_pref_com.google.android.gms.app.settings.GoogleSettingsIALink")){
+                preference.setLayoutResource(R.layout.top_level_preference_google_mt);
+            }
+	    if (key.equals("top_level_google")){
+                preference.setLayoutResource(R.layout.top_level_preference_google_mt);
+            }
+	    if (key.equals("dashboard_tile_pref_com.google.android.apps.wellbeing.home.TopLevelSettingsActivity")){
+                preference.setLayoutResource(R.layout.top_level_preference_wellbeing_mt);
+            }
+	    if (key.equals("top_level_wellbeing")){
+                preference.setLayoutResource(R.layout.top_level_preference_wellbeing_mt);
+            }
+            if (key.equals("top_level_accounts")){
+                preference.setLayoutResource(R.layout.top_level_preference_mt_middle);
+            }
+          }
+          
 	}
     }
     
@@ -356,6 +712,25 @@ public class TopLevelSettings extends DashboardFragment implements
                 .getBoolean(R.bool.config_force_rounded_icon_TopLevelSettings);
     }
 
+    @Override
+    protected RecyclerView.Adapter onCreateAdapter(PreferenceScreen preferenceScreen) {
+        if (!mIsEmbeddingActivityEnabled || !(getActivity() instanceof SettingsHomepageActivity)) {
+            return super.onCreateAdapter(preferenceScreen);
+        }
+        return mHighlightMixin.onCreateAdapter(this, preferenceScreen);
+    }
+
+    @Override
+    protected Preference createPreference(Tile tile) {
+        return new HomepagePreference(getPrefContext());
+    }
+
+    void reloadHighlightMenuKey() {
+        if (mHighlightMixin != null) {
+            mHighlightMixin.reloadHighlightMenuKey(getArguments());
+        }
+    }
+
     public static final BaseSearchIndexProvider SEARCH_INDEX_DATA_PROVIDER =
             new BaseSearchIndexProvider(R.xml.top_level_settings) {
 
@@ -365,4 +740,9 @@ public class TopLevelSettings extends DashboardFragment implements
                     return false;
                 }
             };
+            
+    private void setDashboardStyle(Context context) {
+        mDashBoardStyle = Settings.System.getIntForUser(context.getContentResolver(),
+                    Settings.System.SETTINGS_DASHBOARD_GMS, 0, UserHandle.USER_CURRENT);
+    }
 }

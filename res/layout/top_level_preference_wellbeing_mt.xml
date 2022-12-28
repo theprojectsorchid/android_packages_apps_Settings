@@ -5,7 +5,7 @@
     android:layout_height="@dimen/card_height_wave"
     android:layout_marginStart="@dimen/card_margin_start"
     android:layout_marginEnd="@dimen/card_margin_end"
-    android:background="@drawable/mt_preference_background_middle"
+    android:background="@drawable/mt_preference_background_top"
     android:layout_marginBottom="2dp"
     android:paddingStart="18dp">
 
@@ -22,7 +22,7 @@
         android:padding="1.5dp" 
         android:layout_width="@dimen/dashboard_icon_size"
         android:layout_height="@dimen/dashboard_icon_size"
-        android:src="@drawable/ic_homepage_wellbeing_settings_rui"
+        android:src="@drawable/op_ic_homepage_wellbeing_settings"
         app:layout_constraintHeight_max="@dimen/op_control_avatar_size3"
         app:layout_constraintWidth_max="@dimen/op_control_avatar_size3"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -57,12 +57,7 @@
             style="@style/op_control_text_style_h6"
             android:textSize="16sp" />
 
-        <TextView
-            android:id="@android:id/summary"
-            android:layout_width="0dp"
-            android:layout_height="0dp"
-            android:layout_marginTop="0dp"
-            android:singleLine="true" />
+
 
         <androidx.cardview.widget.CardView
             android:layout_width="28dp"

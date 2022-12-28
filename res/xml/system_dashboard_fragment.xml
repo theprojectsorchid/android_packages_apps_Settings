@@ -86,5 +86,12 @@
         android:fragment="com.android.settings.system.ResetDashboardFragment"
         settings:controller="com.android.settings.system.ResetPreferenceController"/>
 
+    <!--
+        <Preference
+        android:icon="@drawable/ic_system_update"
+        android:order="-40"
+        android:title="@string/powermenu_title3"
+        android:fragment="com.arcana.grimoire.fragments.Interfaces"/>
 
+    -->
 </PreferenceScreen>

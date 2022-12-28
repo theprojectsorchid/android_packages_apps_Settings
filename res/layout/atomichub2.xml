@@ -22,73 +22,33 @@
         android:weightSum="3"
         android:background="@drawable/ic_ui_big_card">
 
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="10dp"
-            android:layout_weight="1"
-            android:orientation="horizontal"
-            android:weightSum="5">
-
-            <ImageView
-                android:id="@+id/img1_icon"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center"
-                android:layout_marginRight="50dp"
-                android:layout_weight="1"
-                android:src="@drawable/ic_ui_logo" />
-
-
-            <View
-                android:id="@+id/divider"
-                android:layout_width="1dp"
-                android:layout_height="match_parent"
-                android:layout_weight="3"
-                />
-
-            <ImageButton
-                android:id="@+id/btn_trans"
-                android:layout_width="75dp"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center"
-                android:layout_weight="1"
-                android:background="#00FFFFFF"
-                android:clickable="true"
-                android:contentDescription="Back button"
-                android:src="@drawable/ic_backicon" />
-
-
-        </LinearLayout>
-
-
-
         <TextView
             android:id="@+id/tv_title_big"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:fontFamily="sans-serif-light"
             android:layout_gravity="end"
             android:layout_weight="1"
             android:layout_marginRight="20dp"
-            android:gravity="end | center"
-            android:text="@string/Orchid_toplevel_settings_title"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:text="@string/secure_hub"
             android:textColor="#FFFFFF"
+            style="@style/op_control_text_style_h6"
             android:textSize="25dp" />
 
         <TextView
             android:id="@+id/tv_summary_big"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:fontFamily="sans-serif-light"
             android:layout_margin="10dp"
             android:layout_weight="1"
             android:layout_gravity="start"
             android:gravity="center"
             android:inputType="textMultiLine"
-            android:text="@string/Orchid_toplevel_settings_summary"
+            android:textStyle="bold"
+            android:text="@string/secure_hub_summary"
             android:textColor="#FFFFFF"
+            style="@style/op_control_text_style_body1"
             android:textSize="16sp" />
 
     </LinearLayout>
