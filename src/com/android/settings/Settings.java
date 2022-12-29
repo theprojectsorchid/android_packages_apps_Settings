@@ -16,11 +16,19 @@
 
 package com.android.settings;
 
+import static android.provider.Settings.ACTION_PRIVACY_SETTINGS;
+
+import android.annotation.LayoutRes;
+import android.content.ActivityNotFoundException;
 import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
 import android.text.TextUtils;
 import android.util.FeatureFlagUtils;
+import android.util.Log;
+import android.view.LayoutInflater;
+import android.view.View;
+import android.view.ViewGroup;
 
 import com.android.internal.annotations.VisibleForTesting;
 import com.android.settings.core.FeatureFlags;
