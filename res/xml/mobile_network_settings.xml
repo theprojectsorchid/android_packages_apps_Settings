@@ -19,8 +19,8 @@
     android:key="mobile_network_pref_screen">
 
     <com.android.settingslib.widget.LayoutPreference
-        android:key="privacy_animation"
-        android:layout="@layout/privacy_animation" />
+        android:key="networking_animation"
+        android:layout="@layout/networking_animation" />
 
     <com.android.settings.widget.SettingsMainSwitchPreference
         android:key="use_sim_switch"

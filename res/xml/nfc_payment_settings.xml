@@ -19,6 +19,12 @@
     xmlns:settings="http://schemas.android.com/apk/res-auto"
     android:title="@string/nfc_payment_settings_title">
 
+
+     <com.android.settingslib.widget.LayoutPreference
+        android:key="nfc2_settings_animation"
+        android:order="-140"
+        android:layout="@layout/nfc2_animation" />
+
     <com.android.settings.nfc.NfcPaymentPreference
         android:key="nfc_payment"
         android:title="@string/nfc_payment_default"

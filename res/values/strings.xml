@@ -13,8 +13,8 @@
      limitations under the License.
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
-
-
+   
+    <string name="one_handed_action_show_notification">one handed show notification</string>
     <string name="connection_area">Connections</string>
     <string name="system_personalization">Themes and Styles</string>
     <string name="secure_hub">Its what I like</string>
@@ -41,6 +41,16 @@
     <string name="Orchid_toplevel_settings_title">PepsiOS</string>
     <string name="secure_hub_summary">Opensouce secure applications</string>
 
+    <string name="dwall_summary">Extra dark Wallpaper settings</string>
+    <string name="dwall_title">DarkMode WallPaper</string>
+    <string name="downto_summary">direct where to download to</string>
+    <string name="downto_title">Extra Downloader Settings</string>
+    <string name="quicktiles_summary">Extra Qs Settings</string>
+    <string name="quicktiles_title">QuickTiles</string>
+    <string name="aservices_summary">aurora system configurations</string>
+    <string name="aservices_title">Aurora Settings</string>
+    <string name="powermenu_title2">Power Menu options</string>
+    <string name="powermenu_title3">System dashdboard settings</string>
 
     <!-- OrchidOs versioning -->
     <string name="rice_customizations_title">System Custom</string>

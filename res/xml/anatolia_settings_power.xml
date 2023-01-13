@@ -16,7 +16,13 @@
 <PreferenceScreen
         xmlns:android="http://schemas.android.com/apk/res/android"
         xmlns:settings="http://schemas.android.com/apk/res/com.android.settings"
-	android:title="@string/powermenu_title">
+            android:title="@string/powermenu_title2">
+
+
+            
+    <com.android.settingslib.widget.LayoutPreference
+        android:key="powermenu1_animation"
+        android:layout="@layout/powermenu1_animation" />
 
     <PreferenceCategory
         android:title="@string/panel_porn_title">

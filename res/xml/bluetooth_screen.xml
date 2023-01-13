@@ -22,7 +22,6 @@
 
     <com.android.settingslib.widget.LayoutPreference
         android:key="blue2_animation"
-        android:order="-140"
         android:layout="@layout/blue2_animation" />
 
     <Preference
