@@ -22,6 +22,14 @@
     android:title="@string/tether_settings_title_all"
     settings:searchable="false">
 
+    
+
+    <com.android.settingslib.widget.LayoutPreference
+        android:key="hotspot_anim" 
+        android:layout="@layout/hotspot_animation"
+        android:order="-999" />
+
+
     <PreferenceCategory
         android:key="wifi_tether_settings_group"
         android:title="@string/wifi_hotspot_checkbox_text"

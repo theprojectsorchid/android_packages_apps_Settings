@@ -22,20 +22,27 @@
     android:persistent="false"
     android:title="@string/one_handed_title">
 
-    <com.android.settingslib.widget.IllustrationPreference
-        android:key="one_handed_header"
-        settings:searchable="false"
-        app:lottie_rawRes="@raw/lottie_one_hand_mode"/>
+        <com.android.settingslib.widget.LayoutPreference
+        android:key="onehand_anim" 
+        android:layout="@layout/onehand_animation1"
+        android:order="-999"/>
+
+    <com.android.settingslib.widget.TopIntroPreference
+        android:key="gesture_one_handed_mode_intro_text"
+        android:title="@string/one_handed_mode_intro_text"        
+        android:order="-998"/>
 
     <com.android.settingslib.widget.MainSwitchPreference
         android:key="gesture_one_handed_mode_enabled_main_switch"
         android:title="@string/one_handed_mode_enabled"
         settings:keywords="@string/keywords_one_handed"
-        settings:controller="com.android.settings.gestures.OneHandedMainSwitchPreferenceController"/>
+        settings:controller="com.android.settings.gestures.OneHandedMainSwitchPreferenceController"        
+        android:order="-800"/>
 
-    <com.android.settingslib.widget.TopIntroPreference
-        android:key="gesture_one_handed_mode_intro_text"
-        android:title="@string/one_handed_mode_intro_text"/>
+       <com.android.settingslib.widget.LayoutPreference
+        android:key="onehand_anim" 
+        android:layout="@layout/onehand_animation2"
+        android:order="-600"/>
 
     <PreferenceCategory
         android:key="gesture_one_handed_mode_swipe_down"
@@ -46,13 +53,26 @@
             android:key="gesture_one_handed_action_pull_screen_down"
             android:title="@string/one_handed_action_pull_down_screen_title"
             android:summary="@string/one_handed_action_pull_down_screen_summary"
-            settings:controller="com.android.settings.gestures.OneHandedActionPullDownPrefController"/>
+            settings:controller="com.android.settings.gestures.OneHandedActionPullDownPrefController"       
+            android:order="-400"/>
+    </PreferenceCategory>
+
+
+        <com.android.settingslib.widget.LayoutPreference
+        android:key="onehand_anim" 
+        android:layout="@layout/onehand_animation3"
+        android:order="-300"/>
+
+    <PreferenceCategory
+        android:key="one_handed_action_show_notification"
+        android:title="@string/one_handed_action_show_notification">
 
         <com.android.settingslib.widget.RadioButtonPreference
             android:key="gesture_one_handed_action_show_notification"
             android:title="@string/one_handed_action_show_notification_title"
             android:summary="@string/one_handed_action_show_notification_summary"
-            settings:controller="com.android.settings.gestures.OneHandedActionShowNotificationPrefController"/>
-
+            settings:controller="com.android.settings.gestures.OneHandedActionShowNotificationPrefController"
+            android:order="-100"/>
     </PreferenceCategory>
+
 </PreferenceScreen>

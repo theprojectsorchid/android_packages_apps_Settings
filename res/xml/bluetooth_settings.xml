@@ -18,6 +18,11 @@
     xmlns:android="http://schemas.android.com/apk/res/android"
     android:title="@string/bluetooth_settings">
 
+    
+     <com.android.settingslib.widget.LayoutPreference
+        android:key="bluetooth_settings_animation"
+        android:layout="@layout/bluetooth_settings_animation" />
+
     <Preference
         android:key="device_name" />
 
