@@ -17,8 +17,7 @@
 <PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:settings="http://schemas.android.com/apk/res/com.android.settings"
     android:key="display_customizations"
-    android:title="@string/display_customization_title">
-
+    android:title="@string/powermenu_title3">
 
     <com.android.settingslib.widget.LayoutPreference
         android:key="welcome_animation"
