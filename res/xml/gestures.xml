@@ -46,7 +46,7 @@
         android:fragment="com.android.settings.gestures.DoubleTapPowerSettings"
         settings:searchable="false"
         settings:controller="com.android.settings.gestures.DoubleTapPowerPreferenceController" />
-
+<!--
  <Preference
         android:key="gesture_double_twist_input_summary"
         android:icon="@drawable/rr_twist_icon"
@@ -55,7 +55,7 @@
         android:fragment="com.android.settings.gestures.DoubleTwistGestureSettings"
         settings:searchable="false"
         settings:controller="com.android.settings.gestures.DoubleTwistPreferenceController" />
-
+-->
  <Preference
         android:key="gesture_system_navigation_input_summary"
         android:title="@string/system_navigation_title"
@@ -123,7 +123,6 @@
 
  <Preference
         android:key="three_finger_gesture_summary"
-                android:layout="@layout/top_level_preference_oos_middle"
         android:title="@string/three_finger_gesture"
         android:icon="@drawable/rr_three_finger_gesture_icon"
         android:fragment="com.android.settings.gestures.SwipeToScreenshotGestureSettings"
@@ -176,15 +175,11 @@
             android:targetPackage="com.kieronquinn.app.taptap" />
  </Preference>
  
-    <com.awaken.settings.preferences.SystemSettingSwitchPreference
-        android:key="volume_rocker_wake"
-        android:layout="@layout/top_level_preference_rui"
-        android:icon="@drawable/rr_wake_icon"
-        android:title="@string/volume_rocker_wake_title"
-        android:summary="@string/volume_rocker_wake_summary"
-        android:defaultValue="false"
-        android:disableDependentsState="true" />
-
         
-
+    <Preference
+        android:key="extras_category"
+        android:title="@string/Double_features"
+        android:icon="@drawable/rr_gestures_icon"
+        android:fragment="com.epic.fragments.ExtraSettings" />
+ 
 </PreferenceScreen>

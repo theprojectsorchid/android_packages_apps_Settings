@@ -13,7 +13,15 @@
      limitations under the License.
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
-   
+    <string name="Volume_Ebuttons_sum">Volume buttons Configuration</string>
+    <string name="Volume_Ebuttons_title">Volume buttons</string>
+    <string name="Double_tap_features">Tap features</string>
+    <string name="Double_features">Tap features</string>
+    <string name="doubletapextras_setting_description"> Instead of reaching for your power button/ volume rocker every time you want to wake or put to sleep your handset, you can simply tap the screen a few times instead. By enabling Taptap you can extend this feature by adding double,triple and gate options by tapping the back of the Handset</string>
+
+    <string name="findmyfone_title">Find My Device</string>
+    <string name="data_monitor_app_summary">Enhanched Data Monitor</string>
+    <string name="data_monitor_app">Data Monitor</string>
     <string name="one_handed_action_show_notification">one handed show notification</string>
     <string name="connection_area">Connections</string>
     <string name="system_personalization">Themes and Styles</string>
@@ -50,7 +58,8 @@
     <string name="aservices_summary">aurora system configurations</string>
     <string name="aservices_title">Aurora Settings</string>
     <string name="powermenu_title2">Power Menu options</string>
-    <string name="powermenu_title3">System dashdboard settings</string>
+    <string name="powermenu_title3">Dashboard Styles</string>
+    <string name="powermenu_title3sum">Change system dashboard style </string>
 
     <!-- OrchidOs versioning -->
     <string name="rice_customizations_title">System Custom</string>

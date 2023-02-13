@@ -43,7 +43,6 @@
             android:key="auto_brightness_entry"
 			android:icon="@drawable/ic_settings_adaptive_brightness"
 			android:title="@string/auto_brightness_title"
-         android:layout="@layout/dot_preference_middle_card"
             android:fragment="com.android.settings.display.AutoBrightnessSettings"
             settings:controller="com.android.settings.display.AutoBrightnessPreferenceController"/>
             
@@ -51,7 +50,6 @@
             android:key="reduce_bright_colors_preference"
             android:title="@string/reduce_bright_colors_preference_title"
             android:icon="@drawable/ic_reduce_bright_colors"
-         android:layout="@layout/dot_preference_middle_card"
             settings:keywords="@string/keywords_reduce_bright_colors"
             android:persistent="false"
             android:fragment="com.android.settings.accessibility.ToggleReduceBrightColorsPreferenceFragment"
@@ -62,7 +60,6 @@
             android:key="dark_ui_mode"
             android:icon="@drawable/ic_settings_dark"
             android:title="@string/dark_ui_mode"
-        android:layout="@layout/dot_preference_middle_card"
             android:fragment="com.android.settings.display.darkmode.DarkModeSettingsFragment"
             android:widgetLayout="@null"
             settings:widgetLayout="@null"
@@ -114,7 +111,6 @@
             android:key="font_size"
             android:title="@string/title_font_size"
             android:icon="@drawable/rr_font_size_icon"
-         android:layout="@layout/dot_preference_top_card"           
             android:fragment="com.android.settings.display.ToggleFontSizePreferenceFragment"
             settings:controller="com.android.settings.display.FontSizePreferenceController"
             settings:keywords="@string/keywords_font_size"/>
@@ -132,7 +128,6 @@
         <Preference
             android:key="android.theme.customization.icon_pack"
             android:icon="@drawable/rr_style_icon"
-        android:layout="@layout/dot_preference_middle_card"
             android:title="@string/theme_customization_icon_pack_title"
             android:summary="@string/theme_customization_icon_pack_summary"
             android:fragment="com.android.settings.lineage.fragments.StatusbarIcons"/>
@@ -141,7 +136,6 @@
         <Preference
             android:key="android.theme.customization.adaptive_icon_shape"
             android:icon="@drawable/rr_twist_icon"
-        android:layout="@layout/dot_preference_bottom_card"
             android:title="@string/theme_customization_icon_shape_title"
             android:summary="@string/theme_customization_icon_shape_summary"
             android:fragment="com.android.settings.lineage.fragments.IconShapes"/>
@@ -171,6 +165,18 @@
             android:icon="@drawable/ic_settings_colormode"
             android:fragment="com.android.settings.display.ColorModePreferenceFragment"
             settings:keywords="@string/keywords_color_mode"/>
+<!--
+        <Preference
+        android:key="darkmodewallpaper_option"
+        android:icon="@drawable/rr_web_icon"
+        android:summary="@string/dwall_summary"
+        android:title="@string/dwall_title">
+        <intent
+            android:action="android.intent.action.MAIN"
+            android:targetClass="com.github.cvzi.darkmodewallpaper.activity.MainActivity"
+            android:targetPackage="com.github.cvzi.darkmodewallpaper" />
+    </Preference>
+-->
     </PreferenceCategory>
 
     <com.android.settings.display.DensityPreference
@@ -192,7 +198,6 @@
             android:key="auto_rotate"
 			android:icon="@drawable/rr_auto_rotate_icon"
             android:title="@string/accelerometer_title"
-        android:layout="@layout/dot_preference_top_card"
             settings:keywords="@string/keywords_auto_rotate"
             settings:controller="com.android.settings.display.AutoRotatePreferenceController"/>
 
@@ -200,7 +205,6 @@
             android:key="display_white_balance"
             android:icon="@drawable/ic_refresh"            
             android:title="@string/display_white_balance_title"
-          android:layout="@layout/dot_preference_middle_card"          
             android:summary="@string/display_white_balance_summary"
             settings:controller="com.android.settings.display.DisplayWhiteBalancePreferenceController"/>
 
@@ -242,7 +246,6 @@
 
         <SwitchPreference
             android:key="tap_to_wake"
-            android:icon="@drawable/ic_tap_assistance"
             android:title="@string/tap_to_wake"
                     android:layout="@layout/dot_preference_middle_card"
             android:summary="@string/tap_to_wake_summary"/>

@@ -58,7 +58,18 @@
             android:icon="@drawable/rr_dictionary_icon"
             android:fragment="com.android.settings.inputmethod.UserDictionaryList"
             settings:controller="com.android.settings.language.UserDictionaryPreferenceController" />
- 
+<!-- 
+    <Preference
+        android:key="translate_you"
+        android:icon="@drawable/rr_input_icon"
+        android:summary="@string/trans_summary"
+        android:title="@string/trans_title">
+        <intent
+            android:action="android.intent.action.MAIN"
+            android:targetClass="com.bnyro.translate.ui.activities.MainActivity"
+            android:targetPackage="com.bnyro.translate" />
+    </Preference>
+-->
 
     <PreferenceCategory
         android:key="pointer_and_tts_category"

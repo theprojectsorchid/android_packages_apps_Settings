@@ -16,83 +16,41 @@
 <PreferenceScreen
         xmlns:android="http://schemas.android.com/apk/res/android"
         xmlns:settings="http://schemas.android.com/apk/res/com.android.settings"
-	android:title="@string/security_privacy_center">
+android:title="@string/Double_tap_features">
 
      <com.android.settingslib.widget.LayoutPreference
-        android:key="welcome_animation"
-        android:layout="@layout/welcome_animation2"
+        android:key="doubletap_animation"
+        android:layout="@layout/doubletap_animation"
         android:order="-180" />
 
-    <com.android.settings.widget.HomepagePreference
-	   android:layout="@layout/grimoire_dashboard_pref_card"
-        android:fragment="com.android.settings.accounts.AccountDashboardFragment"
-        android:icon="@drawable/op_ic_homepage_accounts_settings"
-        android:key="top_level_accounts"
-        android:order="-60"
-        android:title="@string/account_dashboard_title"
-        android:summary="@string/summary_placeholder"
-        settings:highlightableMenuKey="@string/menu_key_accounts"
-        settings:controller="com.android.settings.accounts.TopLevelAccountEntryPreferenceController"/>
+  <com.android.settingslib.widget.TopIntroPreference
+            android:key="notification_bubbles_desc"
+            android:title="@string/doubletapextras_setting_description"/>
 
-
-     <com.android.settings.widget.HomepagePreference
-	   android:layout="@layout/grimoire_dashboard_pref_card"
-        android:fragment="com.android.settings.security.SecuritySettings"
-        android:icon="@drawable/op_ic_homepage_security_settings"
-        android:key="top_level_security"
-        android:order="-50"
-        android:title="@string/security_settings_title"
-        android:summary="@string/security_dashboard_summary"
-        settings:highlightableMenuKey="@string/menu_key_security"
-        settings:controller="com.android.settings.security.TopLevelSecurityEntryPreferenceController"/>
-
-    <com.android.settings.widget.HomepagePreference
-	   android:layout="@layout/grimoire_dashboard_pref_card"
-        android:fragment="com.android.settings.privacy.PrivacyDashboardFragment"
-        android:icon="@drawable/op_ic_homepage_privacy_settings"
-        android:key="top_level_privacy"
-        android:order="-40"
-        android:title="@string/privacy_dashboard_title"
-        android:summary="@string/privacy_dashboard_summary"
-        settings:highlightableMenuKey="@string/menu_key_privacy"/>
-
-    <com.android.settings.widget.HomepagePreference
-        android:fragment="com.android.settings.notification.ConfigureNotificationSettings"
-        android:icon="@drawable/op_ic_homepage_about_notifications"
-        android:key="top_level_notifications"
-        android:order="-30"
-        android:layout="@layout/grimoire_dashboard_pref_card"
-        android:title="@string/configure_notification_settings"
-        android:summary="@string/notification_dashboard_summary"
-        settings:highlightableMenuKey="@string/menu_key_notifications"/>
+ <Preference
+        android:key="tap_tap_gestures"
+        android:icon="@drawable/ic_settings_quick_gestures"
+        android:summary="@string/TapTap_summary"
+        android:title="@string/TapTap_title">
+        <intent
+            android:action="android.intent.action.MAIN"
+            android:targetClass="com.kieronquinn.app.taptap.ui.activities.MainActivity"
+            android:targetPackage="com.kieronquinn.app.taptap" />
+ </Preference>
         
-      
-    <com.android.settings.widget.HomepagePreference
-	   android:layout="@layout/grimoire_dashboard_pref_card"
-        android:fragment="com.android.settings.location.LocationSettings"
-        android:icon="@drawable/op_ic_homepage_location_settings"
-        android:key="top_level_location"
-        android:order="-20"
-        android:title="@string/location_settings_title"
-        android:summary="@string/location_settings_loading_app_permission_stats"
-        settings:highlightableMenuKey="@string/menu_key_location"
-        settings:controller="com.android.settings.location.TopLevelLocationPreferenceController"/>
+        <SwitchPreference
+            android:key="tap_to_wake"
+            android:icon="@drawable/ic_double_tap"
+            android:defaultValue="false"
+            android:title="@string/tap_to_wake"
+            android:summary="@string/tap_to_wake_summary"/>
 
-    <com.android.settings.widget.HomepagePreference
-	   android:layout="@layout/grimoire_dashboard_pref_card"
-        android:key="top_level_emergency"
-        android:title="@string/emergency_settings_preference_title"
-        android:summary="@string/emergency_dashboard_summary"
-        android:icon="@drawable/op_ic_homepage_about_emergency"
-        android:order="-10"
-        android:fragment="com.android.settings.emergency.EmergencyDashboardFragment"
-        settings:highlightableMenuKey="@string/menu_key_emergency"/>
+        <lineageos.preference.LineageSystemSettingSwitchPreference
+            android:key="double_tap_sleep_gesture"
+            android:icon="@drawable/ic_double_tap"
+            android:title="@string/status_bar_double_tap_to_sleep_title"
+            android:summary="@string/status_bar_double_tap_to_sleep_summary"
+            android:defaultValue="false" />
 
-    <com.android.settingslib.widget.LayoutPreference
-        android:key="about_phone_bigcard"
-        android:layout="@layout/atomichub2"
-        android:selectable="true"
-        android:fragment="com.epic.fragments.GestureSettings"
-        android:order="140" />
-
+            
 </PreferenceScreen>

@@ -34,6 +34,7 @@
         android:key="provider_model_downloaded_sim_category"
         android:title="@string/downloaded_sim_category_title"
         android:order="25"
+        android:icon="@drawable/ic_sim_card"
         settings:controller=
             "com.android.settings.network.NetworkProviderDownloadedSimsCategoryController"
         settings:allowDividerAbove="false"/>
