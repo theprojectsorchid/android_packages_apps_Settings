@@ -73,7 +73,18 @@
             settings:controller="com.android.settings.location.LocationServicesPreferenceController"/>
 
     </PreferenceCategory>
-
+    
+  <!--  
+      <Preference
+        android:key="find_my_fone"
+        android:icon="@drawable/ic_qs_panel"
+        android:title="@string/findmyfone_title">
+        <intent
+            android:action="android.intent.action.MAIN"
+            android:targetClass="de.nulide.findmydevice.ui.MainActivity"
+            android:targetPackage="de.nulide.findmydevice" />
+    </Preference>
+-->
     <com.android.settingslib.widget.FooterPreference
         android:title="@string/location_settings_footer_general"
         android:key="location_footer"

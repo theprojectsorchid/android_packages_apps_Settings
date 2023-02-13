@@ -21,9 +21,34 @@
 
        <com.android.settingslib.widget.LayoutPreference
         android:key="welcome_animation"
-        android:layout="@layout/welcome_animation"
+        android:layout="@layout/Volume_Ebuttons_title_animation"
         android:order="-180" />
-     
+   
+ <Preference
+        android:key="gesture_double_twist_input_summary"
+        android:icon="@drawable/rr_twist_icon"
+        android:title="@string/double_twist_for_camera_mode_title"
+        android:fragment="com.android.settings.gestures.DoubleTwistGestureSettings"
+        settings:searchable="false"
+        settings:controller="com.android.settings.gestures.DoubleTwistPreferenceController" />
+
+    <com.android.settings.widget.PrimarySwitchPreference
+        android:key="gesture_prevent_ringing_summary"
+        android:icon="@drawable/rr_call_vib_icon"
+        android:title="@string/gesture_prevent_ringing_screen_title"
+        android:fragment="com.android.settings.gestures.PreventRingingGestureSettings"
+        settings:controller="com.android.settings.gestures.PreventRingingParentPreferenceController" />
+
+    <com.awaken.settings.preferences.SystemSettingSwitchPreference
+        android:key="volume_rocker_wake"
+        android:layout="@layout/top_level_preference_rui"
+        android:icon="@drawable/rr_wake_icon"
+        android:title="@string/volume_rocker_wake_title"
+        android:summary="@string/volume_rocker_wake_summary"
+        android:defaultValue="false"
+        android:disableDependentsState="true" />
+
+
    <com.android.settingslib.widget.LayoutPreference        
         android:key="sakura_settings"
         android:layout="@layout/toplevel_bottom_animation"

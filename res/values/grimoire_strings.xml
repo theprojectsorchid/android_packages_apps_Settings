@@ -12,6 +12,7 @@
      limitations under the License.
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <string name="Opensource_title">Open Source Links </string>
 
     <!-- Dashboard -->
     <string name="grimoire_summary">The Arcanery welcomes your presence.</string>
@@ -38,7 +39,7 @@
     <string name="extras_tools">Utilities</string>
  <string name="theme_settings_title">Device Theming</string>
     <string name="theme_settings_summary">Art is one\'s existence</string>
-    
+
 
     <!-- Vivid theme -->
     <string name="system_vivid_theme_title">Vivid Colors</string>
@@ -65,11 +66,11 @@
     <!-- Custom settings dashboard style -->
     <string name="settings_dashboard_style_title">System Settings Layout</string>
     <string name="settings_dashboard_style_gms">Default</string>
-    <string name="settings_dashboard_style_aosp">Orchidlive Material</string>
-    <string name="settings_dashboard_style_oos11_gms">Orchid Material Plain</string>
-    <string name="settings_dashboard_style_oos11_microg">Sparkle</string>
-    <string name="settings_dashboard_style_oos12_gms">OOS Plain</string>
-    <string name="settings_dashboard_style_oos12_microg">Cactus Wave</string>
+    <string name="settings_dashboard_style_aosp">System Default</string>
+    <string name="settings_dashboard_style_oos11_gms">System Default Plain</string>
+    <string name="settings_dashboard_style_oos11_microg">Spark View</string>
+    <string name="settings_dashboard_style_oos12_gms">System OOSPlain View</string>
+    <string name="settings_dashboard_style_oos12_microg">System Card View</string>
     <string name="settings_layout_category_title">Settings UI interface</string>
     <string name="settings_dashboard_style_mt">Orchidlive Material</string>
 

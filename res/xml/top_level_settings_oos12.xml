@@ -21,6 +21,14 @@
     android:key="top_level_settings"
     android:title="Settings">
 
+
+    <com.android.settingslib.widget.LayoutPreference
+        android:key="welcome_animation"
+        android:layout="@layout/welcome_animation"
+        android:selectable="true"
+        android:fragment="com.android.settings.deviceinfo.aboutphone.MyDeviceInfoFragment"
+        android:order="-180" />
+
     <com.android.settingslib.widget.LayoutPreference
         android:layout="@layout/usercard_oos12"
         android:fragment="com.android.settings.users.UserSettings"

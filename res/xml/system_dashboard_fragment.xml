@@ -93,4 +93,12 @@
         android:selectable="true"
         android:fragment="com.android.settings.awaken.fragments.DisplayCustomizations" />
 
+
+    <Preference
+            android:key="buttonsettings_category"
+            android:title="@string/Volume_Ebuttons_title"
+            android:summary="@string/Volume_Ebuttons_sum"
+            android:fragment="com.epic.fragments.ButtonSettings"
+            android:icon="@drawable/ic_anatolia_buttons" />
+ 
 </PreferenceScreen>
