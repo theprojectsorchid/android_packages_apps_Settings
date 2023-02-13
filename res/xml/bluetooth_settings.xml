@@ -21,6 +21,7 @@
     
      <com.android.settingslib.widget.LayoutPreference
         android:key="bluetooth_settings_animation"
+        android:order="-999"
         android:layout="@layout/bluetooth_settings_animation" />
 
     <Preference

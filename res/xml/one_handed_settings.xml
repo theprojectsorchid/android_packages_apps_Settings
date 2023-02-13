@@ -39,11 +39,6 @@
         settings:controller="com.android.settings.gestures.OneHandedMainSwitchPreferenceController"        
         android:order="-800"/>
 
-       <com.android.settingslib.widget.LayoutPreference
-        android:key="onehand_anim" 
-        android:layout="@layout/onehand_animation2"
-        android:order="-600"/>
-
     <PreferenceCategory
         android:key="gesture_one_handed_mode_swipe_down"
         android:title="@string/one_handed_mode_swipe_down_category"
@@ -57,11 +52,6 @@
             android:order="-400"/>
     </PreferenceCategory>
 
-
-        <com.android.settingslib.widget.LayoutPreference
-        android:key="onehand_anim" 
-        android:layout="@layout/onehand_animation3"
-        android:order="-300"/>
 
     <PreferenceCategory
         android:key="one_handed_action_show_notification"

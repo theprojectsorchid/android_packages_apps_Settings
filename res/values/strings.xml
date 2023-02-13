@@ -14,6 +14,9 @@
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
    
+    <string name="findmyfone_title">Find My Device</string>
+    <string name="data_monitor_app_summary">Enhanched Data Monitor</string>
+    <string name="data_monitor_app">Data Monitor</string>
     <string name="one_handed_action_show_notification">one handed show notification</string>
     <string name="connection_area">Connections</string>
     <string name="system_personalization">Themes and Styles</string>
