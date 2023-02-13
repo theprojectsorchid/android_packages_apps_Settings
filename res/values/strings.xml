@@ -13677,4 +13677,8 @@
     <string name="change_device_name">Change device name</string>
 
 
+
+    <string name="data_monitor_app_summary">Enhanched Data Monitor</string>
+    <string name="data_monitor_app">Data Monitor</string>
+
 </resources>
