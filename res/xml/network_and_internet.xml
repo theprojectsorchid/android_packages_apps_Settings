@@ -118,6 +118,17 @@
         android:order="10"
         android:fragment="com.android.settings.datausage.DataSaverSummary"/>
 
+ <Preference
+        android:key="data_monitor_app"
+        android:icon="@drawable/ic_settings_quick_gestures"
+        android:summary="@string/data_monitor_app_summary"
+        android:title="@string/data_monitor_app">
+        <intent
+            android:action="android.intent.action.MAIN"
+            android:targetClass="com.drnoob.datamonitor.ui.activities.SetupActivity"
+            android:targetPackage="com.drnoob.datamonitor" />
+ </Preference>
+
     <com.android.settingslib.RestrictedPreference
         android:fragment="com.android.settings.vpn2.VpnSettings"
         android:key="vpn_settings"
