@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<!-- Copyright (C) 2017 The Android Open Source Project
+<!-- Copyright (C) 2023 The Orchid Project
 
      Licensed under the Apache License, Version 2.0 (the "License");
      you may not use this file except in compliance with the License.
@@ -102,7 +102,7 @@
         settings:controller="com.android.settings.notification.NotificationVolumePreferenceController"/>
 
     <!-- Link ringtone and notification volumes -->
-    <com.arrow.support.preferences.SecureSettingSwitchPreference
+    <com.OrchidOs.settings.preferences.SecureSettingSwitchPreference
         android:key="volume_link_notification"
         android:icon="@drawable/ic_link_notif"
         android:title="@string/volume_link_notification_title"
@@ -169,17 +169,17 @@
         android:key="incall_vib_options"
         android:title="@string/incall_vibration_category" >
 
-        <com.arrow.support.preferences.SystemSettingSwitchPreference
+        <com.OrchidOs.settings.preferences.SystemSettingSwitchPreference
             android:key="vibrate_on_connect"
             android:title="@string/incall_vibrate_connect_title"
             android:defaultValue="false" />
 
-        <com.arrow.support.preferences.SystemSettingSwitchPreference
+        <com.OrchidOs.settings.preferences.SystemSettingSwitchPreference
             android:key="vibrate_on_callwaiting"
             android:title="@string/incall_vibrate_call_wait_title"
             android:defaultValue="false" />
 
-        <com.arrow.support.preferences.SystemSettingSwitchPreference
+        <com.OrchidOs.settings.preferences.SystemSettingSwitchPreference
             android:key="vibrate_on_disconnect"
             android:title="@string/incall_vibrate_disconnect_title"
             android:defaultValue="false" />
