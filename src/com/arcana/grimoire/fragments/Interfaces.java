@@ -82,7 +82,7 @@ public class Interfaces extends SettingsPreferenceFragment implements OnPreferen
 
     @Override
     public int getMetricsCategory() {
-        return MetricsEvent.CUSTOM_SETTINGS;
+        return MetricsEvent.ORCHIDOS_SETTINGS;
     }
 
     @Override
