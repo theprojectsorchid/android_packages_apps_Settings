@@ -20,6 +20,10 @@
     android:key="provider_model_calls_and_sms_screen"
     android:title="@string/calls_and_sms">
 
+    <com.android.settingslib.widget.LayoutPreference
+        android:key="call_sms_animation"
+        android:layout="@layout/call_sms_animation" />
+        
     <ListPreference
         android:key="provider_model_calls_preference"
         android:title="@string/calls_preference_title"

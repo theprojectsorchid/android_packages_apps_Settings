@@ -20,6 +20,10 @@
     xmlns:settings="http://schemas.android.com/apk/res-auto"
     android:title="@string/accelerometer_title" >
 
+ <com.android.settingslib.widget.LayoutPreference
+        android:key="rotate_animation"
+        android:layout="@layout/rotate_animation" />
+
     <SwitchPreference
         android:key="auto_rotate_switch"
         android:title="@string/auto_rotate_settings_primary_switch_title"
