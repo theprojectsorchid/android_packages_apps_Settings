@@ -19,6 +19,10 @@
     xmlns:settings="http://schemas.android.com/apk/res-auto"
     android:title="@string/provider_network_settings_title">
 
+  <com.android.settingslib.widget.LayoutPreference
+        android:key="sim_animation" 
+        android:layout="@layout/sim_animation"/>
+
     <PreferenceCategory
         android:key="provider_model_sim_category"
         android:title="@string/sim_category_title"

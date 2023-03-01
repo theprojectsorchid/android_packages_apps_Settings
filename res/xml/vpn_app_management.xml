@@ -31,6 +31,12 @@
                 android:selectable="false"/>
         -->
 
+
+     <com.android.settingslib.widget.LayoutPreference
+        android:key="vpn_settings_animation"
+        android:order="-140"
+        android:layout="@layout/vpn_settings_animation" />
+
         <com.android.settingslib.RestrictedSwitchPreference
                 android:order="10"
                 android:key="always_on_vpn"

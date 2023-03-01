@@ -20,6 +20,12 @@
     android:title="@string/print_settings"
     settings:keywords="@string/keywords_printing">
 
+
+     <com.android.settingslib.widget.LayoutPreference
+        android:key="print_settings_animation"
+        android:order="-140"
+        android:layout="@layout/print_animation" />
+
     <PreferenceCategory
         android:key="print_jobs_category"
         android:title="@string/print_print_jobs"
