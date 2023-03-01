@@ -21,6 +21,11 @@
     android:title="@string/account_dashboard_title"
     settings:keywords="@string/keywords_accounts">
 
+    <com.android.settingslib.widget.LayoutPreference
+        android:key="account_animation"
+        android:layout="@layout/account_animation"
+        android:order="-999"/>
+        
     <PreferenceCategory
         android:key="passwords_category"
         android:order="10"

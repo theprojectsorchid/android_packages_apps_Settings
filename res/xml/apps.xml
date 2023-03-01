@@ -21,6 +21,11 @@
     android:key="apps_screen"
     android:title="@string/apps_dashboard_title">
 
+   <com.android.settingslib.widget.LayoutPreference
+        android:key="aboutphone_animation"
+        android:layout="@layout/aboutphone_animation"
+        android:order="-999"/>
+        
     <Preference
         android:key="all_app_infos"
         android:title="@string/all_apps"

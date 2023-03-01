@@ -36,6 +36,11 @@
         android:key="action_buttons"
         android:order="-9998" />
 
+    <com.android.settingslib.widget.LayoutPreference
+        android:key="app_info_animation"
+        android:layout="@layout/app_info_animation"
+        android:order="-9997"/>   
+
     <Preference
         android:key="app_settings_link"
         android:title="@string/app_settings_link"
