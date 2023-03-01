@@ -16,8 +16,12 @@
 
 <PreferenceScreen
     xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:settings="http://schemas.android.com/apk/res-auto"
-    android:title="@string/connected_device_connections_title">
+    xmlns:settings="http://schemas.android.com/apk/res-auto" >
+ 
+ <com.android.settingslib.widget.LayoutPreference
+        android:key="connected_pref_animation"
+        android:layout="@layout/connected_pref_animation"
+        android:order="-11"/>
 
     <Preference
         android:fragment="com.android.settings.connecteddevice.BluetoothDashboardFragment"
@@ -59,11 +63,6 @@
         android:icon="@*android:drawable/ic_settings_print"
         android:fragment="com.android.settings.print.PrintSettingsFragment"
         android:order="-3"/>
-
-    <Preference
-        android:key="bt_received_files"
-        android:icon="@drawable/ic_folder_vd_theme_24"
-        android:title="@string/bluetooth_show_files_received_via_bluetooth"/>
 
     <SwitchPreference
         android:key="uwb_settings"

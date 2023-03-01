@@ -19,6 +19,10 @@
     xmlns:settings="http://schemas.android.com/apk/res-auto"
     android:title="@string/privacy_settings_title">
 
+    <com.android.settingslib.widget.LayoutPreference
+        android:key="backup_settings_animation"
+        android:layout="@layout/backup_settings_animation" />
+
     <!-- Backup settings provided by the backup transport or the default settings -->
     <Preference
         android:key="backup_settings" />
