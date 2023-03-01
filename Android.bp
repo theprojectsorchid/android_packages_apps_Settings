@@ -89,7 +89,6 @@ android_library {
         "VendorSupport-preference",
         "SystemUISharedLib",
         "glide",
-		"airbnb-lottie",
     ],
 
     libs: [
