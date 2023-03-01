@@ -20,6 +20,10 @@
     xmlns:settings="http://schemas.android.com/apk/res-auto"
     android:title="@string/language_settings">
 
+    <com.android.settingslib.widget.LayoutPreference
+        android:key="language_settings"
+        android:layout="@layout/language_settings_animation" />
+        
     <Preference
         android:key="phone_language"
         android:title="@string/phone_language"
