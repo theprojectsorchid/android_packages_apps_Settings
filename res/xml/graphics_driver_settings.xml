@@ -30,7 +30,7 @@
         android:title="@string/graphics_driver_all_apps_preference_title"
         android:dialogTitle="@string/graphics_driver_all_apps_preference_title"
         settings:controller="com.android.settings.development.graphicsdriver.GraphicsDriverEnableForAllAppsPreferenceController"
-        settings:allowDividerAbove="true"/>
+        settings:allowDividerAbove="false"/>
 
     <PreferenceCategory
         android:key="graphics_driver_category"

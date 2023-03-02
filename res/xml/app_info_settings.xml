@@ -63,8 +63,8 @@
         settings:controller="com.android.settings.applications.appinfo.AppPermissionPreferenceController" />
 
     <Preference
-        android:key="storage_settings"        
-        android:icon="@drawable/rr_task_open_icon"
+        android:key="storage_settings"
+        android:icon="@drawable/ic_storage"
         android:title="@string/storage_settings_for_app"
         android:summary="@string/summary_placeholder"
         settings:controller="com.android.settings.applications.appinfo.AppStoragePreferenceController" />
@@ -76,8 +76,8 @@
         settings:controller="com.android.settings.applications.appinfo.InstantAppDomainsPreferenceController" />
 
     <Preference
-        android:key="data_settings"        
-        android:icon="@drawable/rr_swipe_down_icon"
+        android:key="data_settings"
+        android:icon="@drawable/ic_data_saver"
         android:title="@string/data_usage_app_summary_title"
         android:summary="@string/summary_placeholder"
         settings:controller="com.android.settings.applications.appinfo.AppDataUsagePreferenceController" />
@@ -160,6 +160,10 @@
             settings:controller=
                 "com.android.settings.applications.appinfo.HibernationSwitchPreferenceController" />
     </PreferenceCategory>
+    <Preference
+        android:key="battery"
+        android:title="@string/power_usage_summary_title"
+        android:summary="@string/summary_placeholder" />
 
     <!-- Advanced apps settings -->
     <PreferenceCategory
@@ -194,7 +198,7 @@
             android:title="@string/install_other_apps"
             android:summary="@string/summary_placeholder"
             settings:controller="com.android.settings.applications.appinfo.ExternalSourceDetailPreferenceController" />
-
+            
         <Preference
             android:key="interact_across_profiles"       
              android:icon="@drawable/rr_reverse_icon"
@@ -214,11 +218,13 @@
     <!-- App installer info -->
     <PreferenceCategory
         android:key="app_installer"
+        android:visibility="invisible"
         android:title="@string/app_install_details_group_title"
         settings:controller="com.android.settings.applications.appinfo.AppInstallerPreferenceCategoryController">
 
         <Preference
             android:key="app_info_store"
+            android:visibility="invisible"
             android:title="@string/app_install_details_title"
             settings:controller="com.android.settings.applications.appinfo.AppInstallerInfoPreferenceController" />
 
@@ -229,14 +235,16 @@
         android:selectable="false"
         android:order="9998"
         settings:controller="com.android.settings.applications.appinfo.AppVersionPreferenceController"
-        settings:allowDividerAbove="true"
-        settings:enableCopying="true"/>
+        settings:allowDividerAbove="false"
+        android:visibility="invisible"
+        settings:enableCopying="false"/>
 
     <Preference
         android:key="app_package_name"
         android:selectable="false"
         android:order="9999"
+         android:icon="@drawable/rr_reset_icon"
         settings:controller="com.android.settings.applications.appinfo.AppPackageNamePreferenceController"
-        settings:enableCopying="true"/>
+        settings:enableCopying="false"/>
 
 </PreferenceScreen>

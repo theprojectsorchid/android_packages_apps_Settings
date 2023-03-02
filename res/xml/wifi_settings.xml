@@ -47,16 +47,19 @@
 
     <Preference
         android:key="configure_wifi_settings"
+        android:icon="@drawable/ic_network"
         android:title="@string/wifi_configure_settings_preference_title"
-        settings:allowDividerAbove="true"
+        settings:allowDividerAbove="false"
         android:fragment="com.android.settings.wifi.ConfigureWifiSettings"/>
 
     <Preference
         android:key="saved_networks"
+        android:icon="@drawable/ic_wifi_signal_lock"
         android:title="@string/wifi_saved_access_points_label"
         android:fragment="com.android.settings.wifi.savedaccesspoints2.SavedAccessPointsWifiSettings2"/>
 
     <com.android.settings.datausage.DataUsagePreference
         android:key="wifi_data_usage"
+        android:icon="@drawable/rr_data_usage_icon"
         android:title="@string/wifi_data_usage"/>
 </PreferenceScreen>

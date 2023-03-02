@@ -65,7 +65,7 @@
             android:key="auto_zone"
             android:icon="@drawable/rr_clock_date_icon"
             android:title="@string/zone_auto_title"
-            settings:allowDividerAbove="true"
+            settings:allowDividerAbove="false"
             settings:userRestriction="no_config_date_time"/>
 
         <!-- This preference gets removed if location-based time zone detection is not supported -->

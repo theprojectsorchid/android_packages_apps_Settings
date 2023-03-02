@@ -14,7 +14,6 @@
      limitations under the License.
 -->
 
-
 <PreferenceScreen
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:settings="http://schemas.android.com/apk/res-auto"
@@ -72,6 +71,15 @@
         settings:useAdminDisabledSummary="true"
         settings:controller="com.android.settings.connecteddevice.AddDevicePreferenceController"/>
 
+    <androidx.preference.ListPreference
+        android:key="bluetooth_timeout"
+        android:icon="@drawable/ic_bluetooth_disabled"
+        android:title="@string/bluetooth_timeout"
+        android:summary="@string/summary_placeholder"
+        android:entries="@array/bluetooth_timeout_entries"
+        android:entryValues="@array/bluetooth_timeout_values"
+        settings:controller="com.android.settings.bluetooth.BluetoothTimeoutPreferenceController"/>
+
     <PreferenceCategory
         android:key="previously_connected_devices"
          android:layout="@layout/custom_preference_category2"       
@@ -89,6 +97,7 @@
 
     <Preference
         android:key="connection_preferences"
+        android:icon="@drawable/ic_settings_connection_preferences"
         android:title="@string/connected_device_connections_title"
         android:icon="@drawable/ic_settings_connection_preferences"
         android:summary="@string/summary_placeholder"
@@ -100,6 +109,7 @@
         android:key="discoverable_footer"
         android:title="@string/bluetooth_off_footer"
         android:selectable="false"
+        android:visibility="invisible"
         settings:controller="com.android.settings.connecteddevice.DiscoverableFooterPreferenceController">
     </com.android.settingslib.widget.FooterPreference>
 

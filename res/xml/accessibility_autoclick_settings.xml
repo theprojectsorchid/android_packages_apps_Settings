@@ -23,14 +23,14 @@
         android:key="accessibility_autoclick_banner"
         android:persistent="false"
         android:selectable="false"
-        settings:allowDividerBelow="true"
+        settings:allowDividerBelow="false"
         settings:searchable="false"
         settings:lottie_rawRes="@drawable/accessibility_dwell" />
 
     <com.android.settingslib.widget.RadioButtonPreference
         android:key="accessibility_control_autoclick_default"
         android:title="@string/accessibility_autoclick_default_title"
-        settings:allowDividerAbove="true" />
+        settings:allowDividerAbove="false" />
 
     <com.android.settingslib.widget.RadioButtonPreference
         android:key="accessibility_control_autoclick_200ms"

@@ -26,6 +26,7 @@
         android:summary="@string/wifi_wakeup_summary"
         settings:controller="com.android.settings.wifi.WifiWakeupPreferenceController"/>
 
+  
     <SwitchPreference
         android:key="notify_open_networks"
         android:title="@string/wifi_notify_open_networks"

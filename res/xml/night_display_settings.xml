@@ -50,7 +50,7 @@
         android:icon="@drawable/rr_duration_icon"
         android:title="@string/night_display_auto_mode_title"
         android:summary="%s"
-        settings:allowDividerAbove="true"
+        settings:allowDividerAbove="false"
         settings:controller="com.android.settings.display.NightDisplayAutoModePreferenceController"/>
 
     <Preference

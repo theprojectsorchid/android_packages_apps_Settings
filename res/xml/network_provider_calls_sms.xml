@@ -55,15 +55,17 @@
         android:key="provider_model_calling_category"
         android:title="@string/calls_and_sms_category"
         android:order="20"
+        android:icon="@drawable/rr_sim_icon"
         settings:controller="com.android.settings.network.telephony.NetworkProviderWifiCallingPreferenceController"
-        settings:allowDividerAbove="true"
+        settings:allowDividerAbove="false"
         />
 
     <PreferenceCategory
         android:key="provider_model_backup_calling_category"
         android:title="@string/backup_calling_settings_title"
         android:order="25"
+        android:icon="@drawable/rr_sim_icon"       
         settings:controller="com.android.settings.network.telephony.NetworkProviderBackupCallingPreferenceController"
-        settings:allowDividerAbove="true"
+        settings:allowDividerAbove="false"
         />
 </PreferenceScreen>

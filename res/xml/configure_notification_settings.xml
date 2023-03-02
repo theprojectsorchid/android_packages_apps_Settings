@@ -43,7 +43,7 @@
         <Preference
             android:key="all_notifications"
             android:order="10"
-            android:icon="@drawable/rr_misc_icon"
+            android:icon="@drawable/rr_notifications_panel_icon"
             android:title="@string/app_notification_field"
             android:summary="@string/app_notification_field_summary"
             android:fragment="com.android.settings.applications.manageapplications.ManageApplications"
@@ -55,8 +55,8 @@
         <Preference
             android:key="notification_history"
             android:order="11"
+            android:icon="@drawable/ic_ongoing_notification"
             android:title="@string/notification_history"
-            android:icon="@drawable/rr_misc_icon"
             android:summary="@string/notification_history_summary">
             <intent
                 android:action="android.intent.action.MAIN"
@@ -72,8 +72,8 @@
         <Preference
             android:key="conversations"
             android:order="1"
-            android:icon="@drawable/rr_misc_icon"
             android:title="@string/conversations_category_title"
+            android:icon="@drawable/rr_text_icon"
             android:summary=" "
             settings:controller="com.android.settings.notification.ConversationListSummaryPreferenceController"
             android:fragment="com.android.settings.notification.app.ConversationListSettings"
@@ -81,8 +81,8 @@
         <Preference
             android:key="notification_bubbles"
             android:order="2"
-            android:icon="@drawable/rr_misc_icon"
             android:title="@string/notification_bubbles_title"
+            android:icon="@drawable/rr_circle_icon"
             android:summary="@string/notifications_bubble_setting_on_summary"
             settings:controller="com.android.settings.notification.BubbleSummaryNotificationPreferenceController"
             android:fragment="com.android.settings.notification.BubbleNotificationSettings"
@@ -96,8 +96,8 @@
         <Preference
             android:key="notification_access"
             android:order="12"
-            android:icon="@drawable/rr_misc_icon"
             android:title="@string/manage_notification_access_title"
+            android:icon="@drawable/ic_ongoing_notification"
             android:summary="@string/manage_notification_access_summary"
             android:fragment="com.android.settings.notification.NotificationAccessSettings"
             settings:controller="com.android.settings.applications.specialaccess.notificationaccess.NotificationAccessController" />
@@ -105,8 +105,8 @@
         <com.android.settings.RestrictedListPreference
             android:key="lock_screen_notifications"
             android:order="13"
-            android:icon="@drawable/rr_misc_icon"
             android:title="@string/lock_screen_notifs_title"
+            android:icon="@drawable/ic_privacy_lock_screen_notifications"
             android:singleLineTitle="false"
             android:summary="@string/summary_placeholder" />
 
@@ -129,8 +129,8 @@
         <SwitchPreference
             android:key="notification_lockscreen_bypass"
             android:order="16"
-            android:icon="@drawable/rr_misc_icon"           
             android:title="@string/lockscreen_bypass_title"
+            android:icon="@drawable/ic_notifications_alert"
             android:summary="@string/lockscreen_bypass_summary"
             settings:searchable="false"
             settings:controller="com.android.settings.biometrics.face.FaceSettingsLockscreenBypassPreferenceController" />
@@ -159,7 +159,7 @@
         <com.android.settingslib.RestrictedPreference
             android:key="zen_mode_notifications"
             android:order="17"
-            android:icon="@drawable/rr_misc_icon"
+            android:icon="@drawable/ic_ongoing_notification"
             android:title="@string/zen_mode_settings_title"
             settings:useAdminDisabledSummary="true"
             android:fragment="com.android.settings.notification.zen.ZenModeSettings"
@@ -169,7 +169,7 @@
             android:key="app_and_notif_cell_broadcast_settings"
             settings:isPreferenceVisible="false"
             android:order="18"
-            android:icon="@drawable/rr_misc_icon"
+            android:icon="@drawable/rr_emergency_info_icon"
             android:title="@string/cell_broadcast_settings"
             settings:useAdminDisabledSummary="true">
             <intent
@@ -181,14 +181,14 @@
         <SwitchPreference
              android:key="silent_icons"
              android:order="19"
-             android:icon="@drawable/rr_misc_icon"
+             android:icon="@drawable/ic_notification_silence"
              android:title="@string/silent_notifications_status_bar"
              settings:controller="com.android.settings.notification.SilentStatusBarPreferenceController"/>
 
         <SwitchPreference
             android:key="show_snooze_options"
             android:order="20"
-            android:icon="@drawable/rr_misc_icon"
+            android:icon="@drawable/ic_app_volume"
             android:title="@string/snooze_options_title"
             settings:controller="com.android.settings.notification.SnoozeNotificationPreferenceController" />
 
@@ -196,24 +196,25 @@
         <SwitchPreference
             android:key="notification_badging"
             android:order="21"
-            android:icon="@drawable/rr_misc_icon"
+            android:icon="@drawable/rr_app_icon"
             android:title="@string/notification_badging_title"
             settings:controller="com.android.settings.notification.BadgingNotificationPreferenceController"/>
 
         <!-- Pulse notification light, on devices that support it -->
         <SwitchPreference
             android:key="notification_pulse"
+            android:icon="@drawable/ic_rui_notifications"
             android:order="22"
-            android:icon="@drawable/rr_misc_icon"           
             android:title="@string/notification_pulse_title"
             settings:controller="com.android.settings.notification.PulseNotificationPreferenceController"/>
 
         <SwitchPreference
             android:key="notification_assistant"
             android:order="23"
-            android:icon="@drawable/rr_misc_icon"           
+            android:icon="@drawable/ic_notifications_aosp"
             android:title="@string/notification_assistant_title"
             android:summary="@string/notification_assistant_summary"
             settings:controller="com.android.settings.notification.NotificationAssistantPreferenceController"/>
+
     </PreferenceCategory>
 </PreferenceScreen>

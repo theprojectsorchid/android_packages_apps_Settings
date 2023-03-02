@@ -22,6 +22,8 @@
     android:title=" "
     settings:searchable="false">
 
+    
+
     <com.android.settingslib.widget.LayoutPreference
         android:key="hotspot_anim" 
         android:layout="@layout/hotspot_animation"
@@ -109,7 +111,7 @@
         android:selectable="false"
         settings:searchable="false"            
         android:icon="@drawable/rr_wb_icon"
-        settings:allowDividerAbove="true" />
+        settings:allowDividerAbove="false" />
 
     <com.android.settingslib.widget.FooterPreference
         android:key="tether_prefs_footer_2"

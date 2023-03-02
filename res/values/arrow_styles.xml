@@ -26,7 +26,7 @@
         <item name="android:layout_marginStart">16dp</item>
         <item name="android:layout_marginEnd">16dp</item>
         <item name="android:layout_marginTop">4dp</item>
-        <item name="android:background">@drawable/mt_preference_background_alone</item>
+        <item name="android:background">@drawable/xd_pref_card_mid2</item>
         <item name="android:clipToPadding">false</item>
     </style>
 

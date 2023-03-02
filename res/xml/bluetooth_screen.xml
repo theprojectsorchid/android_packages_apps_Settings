@@ -18,19 +18,28 @@
     xmlns:settings="http://schemas.android.com/apk/res-auto"
     android:title="@string/bluetooth_settings_title">
 
+
+
+    <com.android.settingslib.widget.LayoutPreference
+        android:key="blue2_animation"
+        android:order="-140"
+        android:layout="@layout/blue2_animation" />
+
     <Preference
         android:key="bluetooth_screen_bt_pair_rename_devices"
         android:title="@string/bluetooth_device_name"
         android:summary="@string/summary_placeholder"
+        android:order="-130"
         settings:controller="com.android.settings.bluetooth.BluetoothDeviceRenamePreferenceController"/>
 
     <com.android.settingslib.RestrictedPreference
         android:key="bluetooth_screen_add_bt_devices"
         android:title="@string/bluetooth_pairing_pref_title"
+        android:order="-120"
         android:icon="@drawable/ic_add_24dp"
         android:summary="@string/connected_device_add_device_summary"
         android:fragment="com.android.settings.bluetooth.BluetoothPairingDetail"
-        settings:allowDividerAbove="true"
+        settings:allowDividerAbove="false"
         settings:userRestriction="no_config_bluetooth"
         settings:useAdminDisabledSummary="true"
         settings:searchable="false"

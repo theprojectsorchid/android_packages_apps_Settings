@@ -72,12 +72,17 @@
             android:title="@string/security_settings_face_preference_title"
             android:summary="@string/summary_placeholder"
             settings:keywords="@string/keywords_face_settings" />
+            
+    
 
+    
         <com.android.settingslib.RestrictedPreference
             android:key="biometric_settings"
             android:title="@string/security_settings_biometric_preference_title"
             android:summary="@string/summary_placeholder"
             settings:keywords="@string/keywords_biometric_settings" />
+
+
     </PreferenceCategory>
 
     <PreferenceCategory
@@ -127,6 +132,7 @@
         android:icon="@drawable/ic_encryption_and_credential"
         android:title="@string/encryption_and_credential_settings_title"
         android:summary="@string/encryption_and_credential_settings_summary"
+        settings:shouldDisableView="true"
         android:fragment="com.android.settings.security.EncryptionAndCredential" />
 
     <Preference
@@ -196,5 +202,6 @@
             android:summary="@string/summary_placeholder" />
 
     </PreferenceCategory>
+
 
 </PreferenceScreen>

@@ -56,7 +56,8 @@
         android:key="user_settings_add_users_when_locked"
         android:title="@string/user_add_on_lockscreen_menu"
         android:singleLineTitle="false"
+        android:icon="@drawable/ic_add_40dp"
         android:order="105"
-        settings:allowDividerAbove="true"/>
+        settings:allowDividerAbove="false"/>
 
 </PreferenceScreen>
