@@ -24,7 +24,7 @@
         android:key="multiple_user_animation"
         android:layout="@layout/multiple_user_animation"
         android:order="-999"/>
-        
+
     <com.android.settingslib.widget.TopIntroPreference
         android:key="multiuser_top_intro"
         android:title="@string/user_settings_footer_text"
@@ -52,7 +52,8 @@
         android:key="user_settings_add_users_when_locked"
         android:title="@string/user_add_on_lockscreen_menu"
         android:singleLineTitle="false"
+        android:icon="@drawable/ic_add_40dp"
         android:order="105"
-        settings:allowDividerAbove="true"/>
+        settings:allowDividerAbove="false"/>
 
 </PreferenceScreen>

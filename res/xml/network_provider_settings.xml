@@ -20,10 +20,12 @@
         android:title="@string/provider_internet_settings"
         settings:keywords="@string/keywords_wifi">
 
+        
 
        <com.android.settingslib.widget.LayoutPreference
         android:key="network_internet_animation"
         android:layout="@layout/network_internet_animation" /> 
+
 
     <!-- Resetting your internet description -->
     <com.android.settingslib.widget.LayoutPreference
@@ -31,7 +33,7 @@
         android:title="@string/resetting_internet_text"
         android:selectable="false"
         android:layout="@layout/resetting_internet"
-        settings:allowDividerBelow="true"/>
+        settings:allowDividerBelow="false"/>
 
     <!-- Airplane mode message -->
     <com.android.settingslib.widget.LayoutPreference
@@ -39,7 +41,7 @@
         android:title="@string/condition_airplane_title"
         android:selectable="false"
         android:layout="@layout/airplane_mode_message_preference"
-        settings:allowDividerBelow="true"/>
+        settings:allowDividerBelow="false"/>
 
     <Preference
         android:key="connected_ethernet_network"
@@ -58,7 +60,7 @@
         android:title="@string/wifi"
         android:summary="@string/wifi_switch_summary"
         settings:keywords="@string/keywords_wifi"
-        settings:allowDividerAbove="true"/>
+        settings:allowDividerAbove="false"/>
 
     <PreferenceCategory
         android:key="connected_access_point"
@@ -75,7 +77,7 @@
     <Preference
         android:key="configure_wifi_settings"
         android:title="@string/network_and_internet_preferences_title"
-        settings:allowDividerAbove="true"
+        settings:allowDividerAbove="false"
         android:fragment="com.android.settings.wifi.ConfigureWifiSettings"/>
 
     <Preference

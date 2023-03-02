@@ -25,7 +25,7 @@
         android:persistent="false"
         android:selectable="false"
         android:title="@string/summary_placeholder"
-        settings:allowDividerBelow="true"
+        settings:allowDividerBelow="false"
         settings:searchable="false"/>
 
     <PreferenceCategory

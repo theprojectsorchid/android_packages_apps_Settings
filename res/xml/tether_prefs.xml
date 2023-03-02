@@ -19,10 +19,12 @@
     xmlns:settings="http://schemas.android.com/apk/res-auto"
     android:title="@string/tether_settings_title_all">
 
+
     <com.android.settingslib.widget.LayoutPreference
         android:key="hotspot_anim" 
         android:layout="@layout/hotspot_animation"
         android:order="-999" />
+
 
     <com.android.settingslib.widget.TopIntroPreference
         android:key="tether_prefs_top_intro"
@@ -31,31 +33,36 @@
     <com.android.settings.widget.FixedLineSummaryPreference
         android:key="wifi_tether"
         android:title="@string/wifi_hotspot_checkbox_text"
+        android:icon="@drawable/ic_network"
         android:summary="@string/summary_placeholder"
         android:fragment="com.android.settings.wifi.tether.WifiTetherSettings"
-        settings:allowDividerAbove="true"
+        settings:allowDividerAbove="false"
         settings:maxLines="2"/>
 
     <com.android.settingslib.RestrictedSwitchPreference
         android:key="usb_tether_settings"
+        android:icon="@drawable/ic_usb"
         android:title="@string/usb_tethering_button_text"
-        android:summary="@string/usb_tethering_subtext"
         settings:keywords="@string/keywords_hotspot_tethering" />
 
     <SwitchPreference
-        android:key="enable_bluetooth_tethering"
+        android:key="enable_bluetooth_tethering"        
+        android:icon="@drawable/ic_settings_bluetooth"
         android:title="@string/bluetooth_tether_checkbox_text"
-        android:summary="@string/bluetooth_tethering_subtext"
         settings:keywords="@string/keywords_hotspot_tethering" />
 
     <SwitchPreference
         android:key="enable_ethernet_tethering"
+        android:icon="@drawable/ic_settings_ethernet"
         android:title="@string/ethernet_tether_checkbox_text"
         android:summary="@string/ethernet_tethering_subtext"
         settings:keywords="@string/keywords_hotspot_tethering" />
 
+
     <com.arrow.support.preferences.SecureSettingSwitchPreference
-        android:key="tethering_allow_vpn_upstreams"
+        android:key="tethering_allow_vpn_upstreams"        
+        android:icon="@drawable/ic_vpn_key"
+
         android:title="@string/tethering_allow_vpn_upstreams_title"
         android:summary="@string/tethering_allow_vpn_upstreams_summary"
         android:defaultValue="false" />

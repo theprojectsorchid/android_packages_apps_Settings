@@ -26,7 +26,7 @@
     <SwitchPreference
         android:key="use_screen_lock"
         android:title="@string/screen_pinning_unlock_none"
-        settings:allowDividerAbove="true"/>
+        settings:allowDividerAbove="false"/>
 
     <com.android.settingslib.widget.FooterPreference
         android:key="screen_pinning_settings_screen_footer"

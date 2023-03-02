@@ -67,5 +67,5 @@
     <Preference
         android:key="zen_rule_notifications"
         android:title="@string/zen_mode_restrict_notifications_title"
-        settings:allowDividerAbove="true"/>
+        settings:allowDividerAbove="false"/>
 </PreferenceScreen>

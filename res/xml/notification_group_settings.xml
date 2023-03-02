@@ -29,7 +29,7 @@
     <Preference
         android:key="app_link"
         android:title="@string/app_settings_link"
-        settings:allowDividerAbove="true"/>
+        settings:allowDividerAbove="false"/>
 
     <com.android.settingslib.widget.FooterPreference
         android:key="desc" />
