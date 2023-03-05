@@ -13607,4 +13607,7 @@
     <string name="bluetooth_connect_access_dialog_positive">Connect</string>
     <!-- usercard titles -->
     <string name="wellbeing_title">Wellbeing</string>
+    <string name="alpha_settings_title">Owner</string>
+    <string name="alpha_settings_summary">Owner info, emergency and accounts</string>
+
 </resources>
