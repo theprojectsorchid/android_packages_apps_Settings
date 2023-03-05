@@ -238,4 +238,7 @@
 
     <!-- Radio Info -->
     <string name="radio_info_title">Radio info</string>
+    
+    <string name="usercard_summary">Tap for more info</string>
+
 </resources>
