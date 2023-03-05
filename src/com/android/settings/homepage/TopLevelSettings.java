@@ -20,13 +20,21 @@ import static com.android.settings.search.actionbar.SearchMenuController.NEED_SE
 import static com.android.settingslib.search.SearchIndexable.MOBILE;
 
 import android.app.ActivityManager;
-import android.app.settings.SettingsEnums;
-import android.content.Context;
 import android.content.res.Configuration;
-import android.graphics.drawable.Drawable;
-import android.os.Bundle;
 import android.text.TextUtils;
 import android.util.Log;
+import android.app.Activity;
+import android.app.settings.SettingsEnums;
+import android.content.Context;
+import android.content.ComponentName;
+import android.content.Intent;
+import android.content.pm.UserInfo;
+import android.graphics.drawable.Drawable;
+import android.os.Bundle;
+import android.os.UserManager;
+import android.provider.Settings;
+import android.view.View;
+import android.widget.TextView;
 
 import androidx.fragment.app.Fragment;
 import androidx.preference.Preference;
@@ -46,6 +54,8 @@ import com.android.settings.widget.HomepagePreference;
 import com.android.settingslib.core.instrumentation.Instrumentable;
 import com.android.settingslib.drawer.Tile;
 import com.android.settingslib.search.SearchIndexable;
+import com.android.settingslib.widget.LayoutPreference;
+import com.android.settings.widget.EntityHeaderController;
 
 @SearchIndexable(forTarget = MOBILE)
 public class TopLevelSettings extends DashboardFragment implements
@@ -54,6 +64,7 @@ public class TopLevelSettings extends DashboardFragment implements
     private static final String TAG = "TopLevelSettings";
     private static final String SAVED_HIGHLIGHT_MIXIN = "highlight_mixin";
     private static final String PREF_KEY_SUPPORT = "top_level_support";
+    private static final String KEY_USER_CARD = "top_level_usercard";
 
     private boolean mIsEmbeddingActivityEnabled;
     private TopLevelHighlightMixin mHighlightMixin;
@@ -74,6 +85,12 @@ public class TopLevelSettings extends DashboardFragment implements
     @Override
     protected String getLogTag() {
         return TAG;
+    }
+
+    @Override
+    public void onStart() {
+        super.onStart();
+        onUserCard();
     }
 
     @Override
