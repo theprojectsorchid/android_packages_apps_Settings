@@ -13656,6 +13656,6 @@
     <!-- Display Customizations Fragment 1 to 5 -->
     <string name="usercard_summary">custom page</string>
     
-    <!-- bluetooth recieved -->
-    <string name="wellbeing_title">bluetooth recieved</string>
+    <!-- usercard titles -->
+    <string name="wellbeing_title">Wellbeing</string>
 </resources>
