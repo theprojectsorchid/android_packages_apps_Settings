@@ -19,4 +19,8 @@
      <dimen name="OrchidOs_radius_merge">5dp</dimen>
      <dimen name="OrchidOs_pref_horizontal_padding">16dp</dimen>
      <dimen name="OrchidOs_pref_horizontal_padding-negative">-16dp</dimen>
+     
+    <!-- OrchidOs settings collapsing toolbar-->
+    <dimen name="OrchidOs_toolbar_layout_height">20dp</dimen>
+    <dimen name="OrchidOs_scrim_visible_height_trigger">20dp</dimen>
 </resources>
