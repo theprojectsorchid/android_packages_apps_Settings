@@ -109,20 +109,5 @@
         <item name="android:background">@drawable/OrchidOs_preference_background_full_accent_2</item>
     </style>
 
-    <style name="OrchidOsDashboardPreferenceFull" parent="OrchidOsDashboardPreferenceFull">
-        <item name="android:layout_marginTop">8dp</item>
-    </style>
-
-    <style name="OrchidOsDashboardPreferenceFullAccent" parent="OrchidOsDashboardPreferenceFull">
-        <item name="android:background">@drawable/OrchidOs_preference_background_full_accent</item>
-    </style>
-
-    <style name="OrchidOsDashboardPreferenceFullAccent2" parent="OrchidOsDashboardPreferenceFull">
-        <item name="android:background">@drawable/OrchidOs_preference_background_full_accent_2</item>
-    </style>
-
-    <style name="OrchidOsDashboardPreferencePhone" parent="OrchidOsDashboardPreferenceTop">
-        <item name="android:background">@drawable/OrchidOs_preference_background_phone</item>
-    </style>
-
+    
 </resources>
