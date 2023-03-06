@@ -157,7 +157,7 @@
             android:order="-20"
             android:title="@string/privacy_dashboard_title"
             android:summary="@string/privacy_dashboard_summary"/>
-
+<!--
     <Preference
             android:key="top_level_emergency"
             android:title="@string/emergency_settings_preference_title"
@@ -165,7 +165,7 @@
             android:icon="@drawable/ic_settings_emergency"
             android:order="-10"
             android:fragment="com.android.settings.emergency.EmergencyDashboardFragment"/>
-
+-->
     <Preference
             android:fragment="com.android.settings.system.SystemDashboardFragment"
             android:icon="@drawable/ic_settings_system_dashboard_white"

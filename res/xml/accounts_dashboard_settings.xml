@@ -50,6 +50,14 @@
         </com.android.settings.widget.GearPreference>
     </PreferenceCategory>
 
+    <Preference
+            android:key="top_level_emergency"
+            android:title="@string/emergency_settings_preference_title"
+            android:summary="@string/emergency_dashboard_summary"
+            android:icon="@drawable/ic_settings_emergency"
+            android:order="110"
+            android:fragment="com.android.settings.emergency.EmergencyDashboardFragment"/>
+
    <com.android.settingslib.widget.LayoutPreference
             android:layout="@layout/usercard_blank"
             android:fragment="com.android.settings.users.UserSettings"
@@ -66,7 +74,7 @@
         android:title="@string/auto_sync_account_title"
         android:summary="@string/auto_sync_account_summary"
         android:order="202"
-        settings:allowDividerAbove="true"/>
+        settings:allowDividerAbove="false"/>
 
     <SwitchPreference
         android:key="auto_sync_work_account_data"
