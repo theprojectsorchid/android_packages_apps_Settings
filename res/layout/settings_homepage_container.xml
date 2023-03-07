@@ -62,7 +62,7 @@
     <com.google.android.material.appbar.CollapsingToolbarLayout
             android:id="@+id/collapsing_toolbar"
             android:layout_width="match_parent"
-            android:layout_height="280dp"
+            android:layout_height="200dp"
             android:minHeight="?android:attr/actionBarSize"
             app:contentScrim="?android:attr/colorPrimary"
             app:statusBarScrim="?android:attr/colorPrimary"
@@ -80,7 +80,7 @@
                 android:layout_gravity="center"
                 android:layout_marginTop="185dp"
                 android:layout_marginStart="24dp"
-                android:textSize="28sp"
+                android:textSize="22sp"
                 android:singleLine="true" />
 
         <Toolbar
