@@ -13651,5 +13651,9 @@
     <string name="about_user">Owner Info</string>
     <string name="userpref_summary">Personal Information about current user</string>
     <string name="user_title">User Info</string>
+    
+    
+    <!-- recieved files-->
+    <string name="bluetooth_show_files_received_via_bluetooth">Bluetooth Received files</string>
 
 </resources>

@@ -88,12 +88,6 @@ public class TopLevelSettings extends DashboardFragment implements
     }
 
     @Override
-    public void onStart() {
-        super.onStart();
-        onUserCard();
-    }
-
-    @Override
     public int getMetricsCategory() {
         return SettingsEnums.DASHBOARD_SUMMARY;
     }
