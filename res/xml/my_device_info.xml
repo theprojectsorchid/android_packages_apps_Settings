@@ -93,7 +93,7 @@
             android:summary="@string/summary_placeholder"
             settings:enableCopying="true"/>
 
-        <!-- Model & hardware -->
+        <!-- Model & hardware 
         <Preference
             android:key="device_model"
             android:order="31"
@@ -103,7 +103,7 @@
             settings:enableCopying="true"
             settings:keywords="@string/keywords_model_and_hardware"
             settings:controller="com.android.settings.deviceinfo.HardwareInfoPreferenceController"/>
-
+ -->
         <!-- Android version -->
         <Preference
             android:key="firmware_version"
