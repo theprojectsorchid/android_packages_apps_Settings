@@ -28,18 +28,15 @@
         android:fragment="com.android.settings.deviceinfo.aboutphone.MyDeviceInfoFragment"
   settings:controller="com.android.settings.deviceinfo.aboutphone.TopLevelAboutDevicePreferenceController"
         android:order="-190" />
-
-
-
-
+<!--
    <com.android.settingslib.widget.LayoutPreference
             android:layout="@layout/usercard_blank"
         android:fragment="com.android.settings.deviceinfo.UserInfoFragement"
             android:key="top_level_usercard"
             android:order="-170" />
+-->
 
-
-    <Preference
+    <com.android.settings.widget.HomepagePreference
         android:fragment="com.android.settings.deviceinfo.UserInfoFragement"
         android:icon="@drawable/ic_user"
         android:key="top_level_userinfo"
@@ -172,7 +169,7 @@
         android:summary="@string/location_settings_loading_app_permission_stats"
         settings:highlightableMenuKey="@string/menu_key_location"
         settings:controller="com.android.settings.location.TopLevelLocationPreferenceController"/>
-
+<!--
     <com.android.settings.widget.HomepagePreference
         android:key="top_level_emergency"
         android:title="@string/emergency_settings_preference_title"
@@ -181,7 +178,7 @@
         android:order="-20"
         android:fragment="com.android.settings.emergency.EmergencyDashboardFragment"
         settings:highlightableMenuKey="@string/menu_key_emergency"/>
-
+-->
     <com.android.settings.widget.HomepagePreference
         android:fragment="com.android.settings.accounts.AccountDashboardFragment"
         android:icon="@drawable/op_ic_homepage_accounts_settings"
@@ -200,7 +197,7 @@
         android:title="@string/header_category_system"
         android:summary="@string/system_dashboard_summary"
         settings:highlightableMenuKey="@string/menu_key_system"/>
-
+<!--
     <com.android.settings.widget.HomepagePreference
         android:fragment="com.android.settings.deviceinfo.aboutphone.MyDeviceInfoFragment"
         android:icon="@drawable/ic_phone_info"
@@ -210,7 +207,7 @@
         android:summary="@string/summary_placeholder"
         settings:highlightableMenuKey="@string/menu_key_about_device"
         settings:controller="com.android.settings.deviceinfo.aboutphone.TopLevelAboutDevicePreferenceController"/>
-
+-->
     <com.android.settings.widget.HomepagePreference
         android:icon="@drawable/ic_help"
         android:key="top_level_support"
