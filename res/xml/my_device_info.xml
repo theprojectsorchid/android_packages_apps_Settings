@@ -91,7 +91,7 @@
     <!-- Regulatory labels -->
     <Preference
         android:key="regulatory_info"
-        settings:layout="@layout/top_level_preference_top"
+        settings:layout="@layout/top_level_preference_mt_top"
         android:title="@string/regulatory_labels">
         <intent android:action="android.settings.SHOW_REGULATORY_INFO" />
     </Preference>
