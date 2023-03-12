@@ -13655,5 +13655,9 @@
     
     <!-- recieved files-->
     <string name="bluetooth_show_files_received_via_bluetooth">Bluetooth Received files</string>
-
+    
+    
+    <!-- User card base -->
+    <string name="about_user_base">My Details</string>
+    <string name="about_user_summary_base">My accounts, multiple user and emergancy settings</string>
 </resources>
