@@ -46,9 +46,8 @@
         android:fragment="com.android.settings.deviceinfo.UserInfoFragement"
         android:icon="@drawable/ic_user"
         android:key="top_level_userinfo"
-	    android:title="@string/about_user"
-        android:icon="@drawable/ic_help"
-        android:summary="@string/userpref_summary"
+	    android:title="@string/about_user_base"
+        android:summary="@string/about_user_summary_base"
         android:order="-160" />
 
 
