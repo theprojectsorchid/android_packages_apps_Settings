@@ -33,7 +33,8 @@
         settings:controller="com.android.settings.deviceinfo.DeviceNamePreferenceController"
         settings:enableCopying="true"
         settings:layout="@layout/top_level_preference_mt_top" />
-<!--
+
+    <!-- Build number -->
     <Preference
         android:icon="@drawable/ic_build_acc"
         android:key="build_number"
@@ -43,6 +44,7 @@
         settings:enableCopying="true"
         settings:layout="@layout/top_level_preference_mt_middle" />
 
+    <!-- Model & hardware -->
     <Preference
         android:fragment="com.android.settings.deviceinfo.hardwareinfo.HardwareInfoFragment"
         android:icon="@drawable/ic_settings_system_dashboard_acc"
@@ -53,7 +55,7 @@
         settings:enableCopying="true"
         settings:keywords="@string/keywords_model_and_hardware"
         settings:layout="@layout/top_level_preference_mt_middle" />
--->
+
     <!-- Android version -->
     <Preference
         android:fragment="com.android.settings.deviceinfo.firmwareversion.FirmwareVersionSettings"
@@ -72,10 +74,10 @@
         android:selectable="false"
         android:summary="@string/summary_placeholder"
         android:title="@string/status_up_time"
-        settings:layout="@layout/top_level_preference_mt_alone" />
+        settings:layout="@layout/top_level_preference_mt_top" />
 
 
-    <!-- Legal information
+    <!-- Legal information -->
     <Preference
         android:fragment="com.android.settings.LegalSettings"
         android:icon="@drawable/ic_doc"
@@ -83,13 +85,13 @@
         android:summary="@string/legal_summary"
         android:title="@string/legal_information"
         settings:layout="@layout/top_level_preference_mt_bottom" />
--->
+
 
     <!-- Prefs below are usually hidden -->
     <!-- Regulatory labels -->
     <Preference
         android:key="regulatory_info"
-        settings:layout="@layout/top_level_preference_top"
+        settings:layout="@layout/top_level_preference_mt_top"
         android:title="@string/regulatory_labels">
         <intent android:action="android.settings.SHOW_REGULATORY_INFO" />
     </Preference>
@@ -117,11 +119,11 @@
         settings:layout="@layout/top_level_preference_mt_middle"
         settings:keywords="@string/keywords_device_feedback" />
 
-    <!-- 
+    <!-- Device FCC equipment id -->
     <Preference
         android:key="fcc_equipment_id"
         settings:layout="@layout/top_level_preference_mt_bottom"
         android:summary="@string/summary_placeholder"
         android:title="@string/fcc_equipment_id" />
--->
+
 </PreferenceScreen>
