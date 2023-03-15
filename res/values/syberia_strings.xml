@@ -191,10 +191,10 @@
     <string name="usercard_summary">Current active user, tap for more info</string>
 
     <!-- Model and Hardware -->
-    <string name="syberia_processor_title">Processor</string>
-    <string name="syberia_storage_code_title">Storage</string>
-    <string name="syberia_battery_type_title">Battery</string> 
-    <string name="syberia_screen_title">Screen</string>
+    <string name="syberia_processor_title">Device Processor</string>
+    <string name="syberia_storage_code_title">Device Storage</string>
+    <string name="syberia_battery_type_title">Battery Capacity</string> 
+    <string name="syberia_screen_title">Screen Size</string>
     <string name="net_info">Network</string>
     <string name="mod_info">@string/model_info</string>
     <string name="id_info">Identifiers</string>

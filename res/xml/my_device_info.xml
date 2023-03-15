@@ -1,12 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?><!--
   Copyright (C) 2018 The Android Open Source Project
-
   Licensed under the Apache License, Version 2.0 (the "License");
   you may not use this file except in compliance with the License.
   You may obtain a copy of the License at
-
        http://www.apache.org/licenses/LICENSE-2.0
-
   Unless required by applicable law or agreed to in writing, software
   distributed under the License is distributed on an "AS IS" BASIS,
   WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
@@ -31,10 +28,10 @@
         android:icon="@drawable/ic_settings_display_acc"
         android:key="device_name"
         android:summary="@string/summary_placeholder"
-        android:title="@string/my_device_info_device_name_preference_title"
+        android:title="@string/change_device_name"
         settings:controller="com.android.settings.deviceinfo.DeviceNamePreferenceController"
         settings:enableCopying="true"
-        settings:layout="@layout/top_level_preference_mt_alone" />
+        settings:layout="@layout/top_level_preference_mt_top" />
 
     <!-- Build number -->
     <Preference
@@ -43,20 +40,20 @@
         android:summary="@string/summary_placeholder"
         android:title="@string/build_number"
         settings:controller="com.android.settings.deviceinfo.BuildNumberPreferenceController"
-        settings:enableCopying="true"
-        settings:layout="@layout/top_level_preference_mt_alone" />
+        settings:enableCopying="false"
+        settings:layout="@layout/top_level_preference_mt_middle" />
 
     <!-- Model & hardware -->
     <Preference
         android:fragment="com.android.settings.deviceinfo.hardwareinfo.HardwareInfoFragment"
         android:icon="@drawable/ic_settings_system_dashboard_acc"
         android:key="device_model"
-        android:summary="@string/model_summary"
-        android:title="@string/model_name"
+        android:summary="@string/model_summary2"
+        android:title="@string/model_name2"
         settings:controller="com.android.settings.deviceinfo.HardwareInfoPreferenceController"
-        settings:enableCopying="true"
+        settings:enableCopying="false"
         settings:keywords="@string/keywords_model_and_hardware"
-        settings:layout="@layout/top_level_preference_mt_alone" />
+        settings:layout="@layout/top_level_preference_mt_middle" />
 
     <!-- Android version -->
     <Preference
@@ -64,9 +61,9 @@
         android:icon="@drawable/ic_android_acc"
         android:key="firmware_version"
         android:summary="@string/summary_placeholder"
-        android:title="@string/firmware_version"
+        android:title="@string/firmware_version2"
         settings:controller="com.android.settings.deviceinfo.firmwareversion.FirmwareVersionPreferenceController"
-        settings:layout="@layout/top_level_preference_mt_alone" />
+        settings:layout="@layout/top_level_preference_mt_bottom" />
 
     <!-- Bottom category -->
     <!-- Device up time -->
@@ -75,19 +72,26 @@
         android:key="up_time"
         android:selectable="false"
         android:summary="@string/summary_placeholder"
-        android:title="@string/status_up_time"
-        settings:layout="@layout/top_level_preference_mt_alone" />
+        android:title="@string/about_phone_rom_device_uptime"
+        settings:layout="@layout/top_level_preference_mt_top" />
 
-    
-   
-    <!-- Legal information -->
     <Preference
-        android:fragment="com.android.settings.LegalSettings"
+        android:key="radio_info_settings"
+        android:icon="@drawable/ic_radio_info"
+        android:title="@string/radio_info_title"
+        settings:layout="@layout/top_level_preference_mt_bottom">
+        <intent android:action="android.intent.action.MAIN"
+                android:targetPackage="com.android.phone"
+                android:targetClass="com.android.phone.settings.RadioInfo" />
+    </Preference>
+
+    <Preference
+        android:fragment="com.android.settings.deviceinfo.firmwareversion.FirmwareVersionSettings"
         android:icon="@drawable/ic_doc"
         android:key="legal_container"
-        android:summary="@string/legal_summary"
-        android:title="@string/legal_information"
+        android:selectable="false"
+        android:summary="@string/about_phone_rom_summary"
+        android:title="@string/about_phone_rom_title"
         settings:layout="@layout/top_level_preference_mt_alone" />
-
-
+        
 </PreferenceScreen>

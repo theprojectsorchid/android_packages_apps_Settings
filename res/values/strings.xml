@@ -4309,7 +4309,7 @@
     <!-- Main settings screen, setting title for the user to go into the About phone screen -->
     <string name="about_settings" product="tablet">About tablet</string>
     <!-- Main settings screen, setting title for the user to go into the About phone screen -->
-    <string name="about_settings" product="default">About phone</string>
+    <string name="about_settings" product="default">My Device</string>
     <!-- Main settings screen, setting title for the user to go into the About phone screen -->
     <string name="about_settings" product="device">About device</string>
     <!-- Main settings screen, setting title for the user to go into the About phone screen -->
@@ -8147,7 +8147,7 @@
     <!-- SIM status title  [CHAR LIMIT=40] -->
     <string name="sim_status_title">SIM status</string>
     <!-- SIM status title  [CHAR LIMIT=40] -->
-    <string name="sim_status_title_sim_slot">SIM status (sim slot %1$d)</string>
+    <string name="sim_status_title_sim_slot">SIM status (Slot %1$d)</string>
     <!-- Title for call back. [CHAR LIMIT=60] -->
     <string name="sim_call_back_title">Call back from default SIM</string>
     <!-- Title for outgoing back. [CHAR LIMIT=60] -->
@@ -13660,4 +13660,15 @@
     <!-- User card base -->
     <string name="about_user_base">My Details</string>
     <string name="about_user_summary_base">My accounts, multiple user and emergancy settings</string>
+
+    <!-- About phone edit -->
+    <string name="about_phone_rom_title">OrchidOs</string>
+    <string name="about_phone_rom_summary">Powered by ANDROID</string>
+    <string name="about_phone_rom_device_uptime">Device Uptime</string>
+    <string name="firmware_version2">Android 12.1</string>
+    <string name="model_name2">Network identifiers</string>
+    <string name="model_summary2">wifi bluetooth mac ids</string>
+    <string name="change_device_name">Change device name</string>
+
+
 </resources>

@@ -37,7 +37,7 @@
                 android:singleLine="true"
                 android:layout_below="@+id/processor_title"
                 android:layout_alignStart="@+id/processor_title"
-                android:textSize="12sp" />
+                android:textSize="16sp" />
         
             <TextView
                 android:id="@+id/storage_code_title"
@@ -56,7 +56,7 @@
                 android:singleLine="true"
                 android:layout_below="@+id/storage_code_title"
                 android:layout_alignStart="@+id/storage_code_title"
-                android:textSize="12sp" />
+                android:textSize="16sp" />
         
             <TextView
                 android:id="@+id/battery_type_title"
@@ -75,7 +75,7 @@
                 android:singleLine="true"
                 android:layout_below="@+id/battery_type_title"
                 android:layout_alignStart="@+id/battery_type_title"
-                android:textSize="12sp" />
+                android:textSize="16sp" />
         
             <TextView
                 android:id="@+id/screen_title"
@@ -94,13 +94,13 @@
                 android:singleLine="true"
                 android:layout_below="@+id/screen_title"
                 android:layout_alignStart="@+id/screen_title"
-                android:textSize="12sp" />
+                android:textSize="16sp" />
 
         </RelativeLayout>
 
         <com.google.android.material.card.MaterialCardView
             android:id="@+id/phone_image"
-            android:layout_width="100dp"
+            android:layout_width="110dp"
             android:layout_height="205dp"
             android:layout_marginTop="33.0dip"
             android:layout_marginBottom="36.0dip"
