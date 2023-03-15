@@ -13660,4 +13660,8 @@
     <!-- User card base -->
     <string name="about_user_base">My Details</string>
     <string name="about_user_summary_base">My accounts, multiple user and emergancy settings</string>
+
+    <string name="Orchid_toplevel_settings_title">Its what I like</string>
+    <string name="Orchid_toplevel_settings_summary">Enjoy your freedom and control your data</string>
+
 </resources>

@@ -33,16 +33,23 @@
             android:layout="@layout/usercard_blank"
         android:fragment="com.android.settings.deviceinfo.UserInfoFragement"
             android:key="top_level_usercard"
-            android:order="-170" />
+            android:order="-180" />
 -->
 
-    <com.android.settings.widget.HomepagePreference
+    <com.android.settingslib.widget.LayoutPreference
         android:fragment="com.android.settings.deviceinfo.UserInfoFragement"
         android:icon="@drawable/ic_user"
         android:key="top_level_userinfo"
 	    android:title="@string/about_user_base"
         android:summary="@string/about_user_summary_base"
-        android:order="-160" />
+        android:order="-170" />
+
+    <com.android.settingslib.widget.LayoutPreference
+        android:key="about_phone_bigcard"
+        android:layout="@layout/atomichub"
+         android:selectable="true"       
+        android:fragment="com.android.settings.deviceinfo.UserInfoFragement"
+        android:order="160" />
 
 
     <com.android.settings.widget.HomepagePreference
