@@ -36,11 +36,12 @@
             android:order="-170" />
 -->
 
-    <com.android.settings.widget.HomepagePreference
+    <Preference
         android:fragment="com.android.settings.deviceinfo.UserInfoFragement"
         android:icon="@drawable/ic_user"
         android:key="top_level_userinfo"
 	    android:title="@string/about_user_base"
+        settings:layout="@layout/top_level_preference_mt_bottom"
         android:summary="@string/about_user_summary_base"
         android:order="-160" />
 
