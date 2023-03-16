@@ -36,7 +36,7 @@
         settings:searchable="false"
         settings:controller="com.android.settings.deviceinfo.firmwareversion.FirmwareVersionDetailPreferenceController"/>-->
 
-    <!-- Arrow version -->
+    <!-- 
     <Preference
         android:key="arrow_version"
         android:title="@string/arrow_version"
@@ -44,22 +44,22 @@
         settings:enableCopying="true"
         settings:searchable="false"
         settings:controller="com.android.settings.deviceinfo.firmwareversion.ArrowVersionDetailPreferenceController"/>
-
-    <!-- Device name -->
+-->
+    <!-- Device name 
     <Preference
         android:key="about_device_name"
         android:title="@string/about_device_name"
         android:summary="@string/summary_placeholder"
         settings:enableCopying="true"
         settings:controller="com.android.settings.deviceinfo.firmwareversion.AboutDeviceNamePreferenceController"/>
-
-    <!-- Security patch -->
+-->
+    <!-- 
     <Preference
         android:key="security_key"
         android:title="@string/security_patch"
         settings:enableCopying="true"
         settings:controller="com.android.settings.deviceinfo.firmwareversion.SecurityPatchLevelPreferenceController"/>
-
+-->
     <!-- Mainline module version
     <Preference
         android:key="module_version"
@@ -68,7 +68,7 @@
         settings:enableCopying="true"
         settings:controller="com.android.settings.deviceinfo.firmwareversion.MainlineModuleVersionPreferenceController"/ -->
 
-    <!-- Baseband -->
+    <!-- 
     <Preference
         android:key="base_band"
         android:title="@string/baseband_version"
@@ -76,16 +76,16 @@
         android:selectable="false"
         settings:enableCopying="true"
         settings:controller="com.android.settings.deviceinfo.firmwareversion.BasebandVersionPreferenceController"/>
-
-    <!-- Kernel -->
+-->
+    <!-- 
     <Preference
         android:key="kernel_version"
         android:title="@string/kernel_version"
         android:summary="@string/summary_placeholder"
         settings:enableCopying="true"
         settings:controller="com.android.settings.deviceinfo.firmwareversion.KernelVersionPreferenceController"/>
-
-    <!-- Build -->
+-->
+    <!--  
     <Preference
         android:key="os_build_date"
         android:title="@string/build_date"
@@ -101,5 +101,5 @@
         android:selectable="false"
         settings:enableCopying="true"
         settings:controller="com.android.settings.deviceinfo.firmwareversion.SimpleBuildNumberPreferenceController"/>
-
+-->
 </PreferenceScreen>
