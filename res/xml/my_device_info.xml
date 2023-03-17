@@ -19,7 +19,7 @@
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:settings="http://schemas.android.com/apk/res-auto"
     android:key="my_device_info_pref_screen"
-    android:title="@string/about_settings">
+    android:title="@string/about_settings_device">
 
     <com.android.settingslib.widget.LayoutPreference
         android:key="my_device_info_header"
@@ -30,12 +30,13 @@
     <PreferenceCategory
         android:key="basic_info_category"
         android:selectable="false"
-        android:title="@string/my_device_info_basic_info_category_title">
+        android:title="@string/device_name_option">
 
         <!-- Device name -->
         <com.android.settings.widget.ValidatedEditTextPreference
             android:key="device_name"
             android:order="1"
+            android:layout="@layout/top_level_preference_change_device_name"
             android:title="@string/my_device_info_device_name_preference_title"
             android:summary="@string/summary_placeholder"
             settings:controller="com.android.settings.deviceinfo.DeviceNamePreferenceController"
@@ -97,7 +98,7 @@
     <PreferenceCategory
         android:key="device_detail_category"
         android:selectable="false"
-        android:title="@string/my_device_info_device_details_category_title">
+        android:title="@string/device_and_android_version">
 
         <!-- SIM status -->
         <Preference
@@ -112,7 +113,8 @@
         <Preference
             android:key="device_model"
             android:order="31"
-            android:title="@string/model_info"
+            android:title="@string/model_information"
+            android:layout="@layout/top_level_preference_device_details"
             android:summary="@string/summary_placeholder"
             android:fragment="com.android.settings.deviceinfo.hardwareinfo.HardwareInfoFragment"
             settings:enableCopying="true"
@@ -133,14 +135,14 @@
         <Preference
             android:key="firmware_version"
             android:order="42"
-            android:title="@string/firmware_version"
-            android:summary="@string/summary_placeholder"
+            android:title="@string/firmware_version2"
+            android:layout="@layout/top_level_preference_android_version"
             android:fragment="com.android.settings.deviceinfo.firmwareversion.FirmwareVersionSettings"
             settings:controller="com.android.settings.deviceinfo.firmwareversion.FirmwareVersionPreferenceController"/>
     </PreferenceCategory>
 
     <PreferenceCategory
-        android:title="@string/my_device_info_device_identifiers_category_title">
+        android:title="@string/device_statistics">
 
         <!--IP address -->
         <Preference
@@ -183,6 +185,7 @@
             android:key="up_time"
             android:order="48"
             android:title="@string/status_up_time"
+            android:layout="@layout/top_level_preference_device_uptime"
             android:summary="@string/summary_placeholder"
             android:selectable="false"/>
 
@@ -212,8 +215,8 @@
         <Preference
             android:key="build_number"
             android:order="53"
-            android:title="@string/build_number"
-            android:summary="@string/summary_placeholder"
+            android:layout="@layout/top_level_preference_build_powered"
+            android:title="@string/about_phone_rom_title"
             settings:enableCopying="true"
             settings:controller="com.android.settings.deviceinfo.BuildNumberPreferenceController"/>
     </PreferenceCategory>
