@@ -37,6 +37,14 @@
         android:key="top_level_about_device2"
         android:title="@string/about_settings"
         android:order="-180"
+
+
+     <com.android.settings.widget.HomepagePreference
+        android:fragment="com.android.settings.deviceinfo.aboutphone.MyDeviceInfoFragment"
+        android:icon="@drawable/ic_phone_info"
+        android:key="top_level_about_device2"
+        android:title="@string/about_settings"
+        android:order="-180"
         android:summary="@string/summary_placeholder"
         android:layout="@layout/about_phone_layout"
         settings:highlightableMenuKey="@string/menu_key_about_device"
