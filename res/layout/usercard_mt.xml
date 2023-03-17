@@ -4,8 +4,6 @@
     android:id="@+id/entity_header"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:layout_marginStart="@dimen/card_margin_start"
-    android:layout_marginEnd="@dimen/card_margin_end"
     android:background="@drawable/rice_card_mt"
     android:layout_marginVertical="8dp"
     android:padding="4dp"
@@ -28,7 +26,7 @@
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
-            android:layout_marginStart="16dp"
+            android:layout_marginStart="20dp"
             android:layout_weight="2"
             android:orientation="vertical">
 
@@ -36,7 +34,7 @@
                 android:id="@+id/entity_header_title"
 		android:layout_width="wrap_content" 
 		android:layout_height="wrap_content" 
-                android:textSize="20sp"
+                android:textSize="18sp"
 		android:textColor="@color/op_control_text_color_primary"
 		style="@style/op_control_text_style_h6"
 		android:singleLine="true"/>
@@ -45,6 +43,7 @@
                 android:id="@android:id/summary"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:layout_marginTop="2dp"
                 android:singleLine="true"
                 android:text="@string/usercard_summary"
                 android:textColor="@color/op_control_text_color_secondary"

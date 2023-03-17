@@ -13662,7 +13662,7 @@
     <string name="about_user_summary_base">My accounts, multiple user and emergancy settings</string>
 
     <!-- About phone edit -->
-    <string name="about_phone_rom_title">OrchidOs</string>
+    <string name="about_phone_rom_title">powered by OrchidOs</string>
     <string name="about_phone_rom_summary">Powered by ANDROID</string>
     <string name="about_phone_rom_device_uptime">Device Uptime</string>
     <string name="firmware_version2">Android 12.1</string>
