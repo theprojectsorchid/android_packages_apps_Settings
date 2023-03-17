@@ -60,7 +60,7 @@
                 android:layout_weight="1"
                 android:ellipsize="marquee"
                 android:singleLine="true"
-                android:text="@string/alpha_settings_title"
+                android:text="@string/about_phone_rom_title"
                 android:textAppearance="?android:attr/textAppearanceListItem"
                 android:textColor="?android:attr/textColorPrimary"
                 android:textDirection="locale" />
@@ -71,7 +71,7 @@
                 android:layout_weight="1"
                 android:ellipsize="marquee"
                 android:singleLine="true"
-                android:text="@string/alpha_settings_summary"
+                android:text="@string/about_phone_rom_summary"
                 style="@style/PreferenceSummaryTextStyle"
                 android:textColor="?android:attr/textColorPrimary" />
         </LinearLayout>

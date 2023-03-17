@@ -114,15 +114,7 @@
         settings:highlightableMenuKey="@string/menu_key_security"
         settings:controller="com.android.settings.security.TopLevelSecurityEntryPreferenceController"/>
 
-    <com.android.settings.widget.HomepagePreference
-        android:icon="@drawable/ic_settings_safety_center"
-        android:key="top_level_safety_center"
-        android:order="-60"
-        android:title="@string/safety_center_title"
-        android:summary="@string/safety_center_summary"
-        settings:highlightableMenuKey="@string/menu_key_safety_center"
-        settings:controller="com.android.settings.safetycenter.TopLevelSafetyCenterEntryPreferenceController"/>
-
+   
     <com.android.settings.widget.HomepagePreference
         android:fragment="com.android.settings.privacy.PrivacyDashboardFragment"
         android:icon="@drawable/ic_settings_privacy"
@@ -140,7 +132,6 @@
         android:icon="@drawable/ic_settings_emergency"
         android:order="-40"
         android:fragment="com.android.settings.emergency.EmergencyDashboardFragment"
-        settings:isPreferenceVisible="@bool/config_show_emergency_settings"
         settings:highlightableMenuKey="@string/menu_key_emergency"/>
 
     <com.android.settings.widget.HomepagePreference
