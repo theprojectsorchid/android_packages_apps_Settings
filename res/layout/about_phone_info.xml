@@ -100,8 +100,8 @@
 
         <com.google.android.material.card.MaterialCardView
             android:id="@+id/phone_image"
-            android:layout_width="110dp"
-            android:layout_height="205dp"
+            android:layout_width="130dp"
+            android:layout_height="215dp"
             android:layout_marginTop="33.0dip"
             android:layout_marginBottom="36.0dip"
             android:layout_marginStart="30.0dp"

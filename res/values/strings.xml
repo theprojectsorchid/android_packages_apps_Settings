@@ -13663,7 +13663,7 @@
 
 
     <!-- About phone edit -->
-    <string name="about_phone_rom_title">powered by OrchidOs</string>
+    <string name="about_phone_rom_title">Powered by OrchidOs</string>
     <string name="about_phone_rom_summary">Powered by ANDROID</string>
     <string name="about_phone_rom_device_uptime">Device Uptime</string>
     <string name="model_name2">Network identifiers</string>
@@ -13673,8 +13673,8 @@
     <string name="device_name_option">Change Device Name</string>
     <string name="device_and_android_version">Device Details</string>
     <string name="model_information">Device Hardware</string>
-    <string name="firmware_version2">Android 12.1 version</string>
-    <string name="device_statistics">Device statistics</string>
+    <string name="firmware_version2">Android system</string>
+    <string name="device_statistics">Device Uptime</string>
     <string name="about_settings_device">About Device</string>
 
 
