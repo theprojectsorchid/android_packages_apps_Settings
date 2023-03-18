@@ -18,7 +18,7 @@
 <PreferenceScreen
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:settings="http://schemas.android.com/apk/res-auto"
-    android:title="@string/firmware_version"
+    android:title="@string/about_us_firmware_version"
     settings:keywords="@string/keywords_android_version">
  
  
@@ -48,22 +48,6 @@
     </PreferenceCategory>
 
     <PreferenceCategory
-        android:key="firmware_source"
-        android:title="@string/firmware_source_code" >
-
-    <Preference
-        android:title="@string/get_our_source_code"
-        android:summary="@string/get_our_source_code_summary"
-        android:icon="@drawable/ic_developers">
-        <intent
-            android:action="android.intent.action.VIEW"
-            android:data="https://t.me/teammodmiirequests" />
-    </Preference>
-</PreferenceCategory>
-
-
-
-    <PreferenceCategory
         android:key="firmware_group"
         android:title="@string/firmware_source_code" >
 
@@ -77,9 +61,6 @@
     </Preference>
 </PreferenceCategory>
 
-        <com.android.settingslib.widget.LayoutPreference
-        android:key="firmware_settings_footer"
-        android:layout="@layout/firmware_settings_footer_animation" />
         
     <!-- Arrow logo -->
     <!--<com.android.settingslib.widget.LayoutPreference
