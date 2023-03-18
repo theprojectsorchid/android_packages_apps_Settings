@@ -13679,16 +13679,17 @@
 
 
     <!-- firmware edit -->
-    <string name="firmware_bubble_setting_description">powered by OrchidOs Device Uptime Device Uptime Powered by ANDROID powered by OrchidOs Device Uptime  powered by OrchidOs Device Uptime</string>
-    <string name="firmware_about_us_info">get info about us</string>
-    <string name="firmware_about_us_info_summary">get more info</string>
-    <string name="firmware_source_code">base source code</string>
-    <string name="get_our_source_code">check source code</string>
+    <string name="firmware_bubble_setting_description">Rom Name is A free and open-source operating system for various devices, based on the Android mobile platform. Major thanks to  Arrow Os. Further improvements and optimizations have been contibuted by the community. Thank you all developers, designers and testers</string>
+    <string name="firmware_about_us_info">Our Website</string>
+    <string name="firmware_about_us_info_summary">get more info about us</string>
+    <string name="firmware_source_code">System source code</string>
+    <string name="get_our_source_code">Our system source code</string>
     <string name="get_our_source_code_summary">get the source</string>
     <string name="firmware_group_summary">software support</string>
 
     <string name="firmware_group_info">support Details</string>
-    <string name="firmware_about_info">support Details</string>
+    <string name="firmware_about_info">Our website</string>
+    <string name="about_us_firmware_version">About Us</string>
 
 
 
