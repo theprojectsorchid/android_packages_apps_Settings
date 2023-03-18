@@ -112,7 +112,7 @@
             settings:enableCopying="true"/>-->
 
         <!-- Model & hardware -->
-        <Preference
+        <!--<Preference
             android:key="device_model"
             android:order="31"
             android:title="@string/model_information"
@@ -123,7 +123,7 @@
             android:selectable="false"
 			android:visibility="invisible"
             settings:keywords="@string/keywords_model_and_hardware"
-            settings:controller="com.android.settings.deviceinfo.HardwareInfoPreferenceController"/>
+            settings:controller="com.android.settings.deviceinfo.HardwareInfoPreferenceController"/>-->
 
         <!-- IMEI -->
         <!--<com.android.settings.deviceinfo.PhoneNumberSummaryPreference
@@ -145,17 +145,22 @@
     </PreferenceCategory>
 
     <PreferenceCategory
-        android:title="@string/device_statistics">
+        android:title="@string/device_firmware_about">
 
         <!-- Android version -->
         <Preference
             android:key="firmware_version"
             android:order="42"    
             android:selectable="true"
-            android:title="@string/firmware_version2"
+            android:title="@string/about_us_device"
             android:fragment="com.android.settings.deviceinfo.firmwareversion.FirmwareVersionSettings"
             settings:controller="com.android.settings.deviceinfo.firmwareversion.FirmwareVersionPreferenceController"/>
-
+    </PreferenceCategory>
+    
+    
+    <PreferenceCategory
+        android:title="@string/device_statistics">
+        
         <!--IP address -->
        <!-- <Preference
             android:key="wifi_ip_address"
