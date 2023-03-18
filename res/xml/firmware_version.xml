@@ -18,10 +18,17 @@
 <PreferenceScreen
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:settings="http://schemas.android.com/apk/res-auto"
-    android:title="@string/firmware_version"
+    android:title=" "
     settings:keywords="@string/keywords_android_version">
  
  
+   <!-- Header -->
+  <PreferenceCategory
+        android:title="About Us"
+        android:order="-997"
+        android:layout="@layout/settings_title_header">
+  </PreferenceCategory>
+
      <!-- Firmware information -->
 
         <com.android.settingslib.widget.LayoutPreference
@@ -35,41 +42,23 @@
 
      <PreferenceCategory
               android:key="firmware_about"
+     	      android:layout="@layout/custom_preference_category2"       
               android:title="@string/firmware_about_info" >     
        
         <Preference
             android:title="@string/firmware_about_us_info"
             android:summary="@string/firmware_about_us_info_summary"
+            settings:layout="@layout/xd_pref_card_top"           
             android:icon="@drawable/ic_website">
         <intent
             android:action="android.intent.action.VIEW"
             android:data="https://github.com/theorchidproject" />
         </Preference>
-    </PreferenceCategory>
-
-    <PreferenceCategory
-        android:key="firmware_source"
-        android:title="@string/firmware_source_code" >
-
-    <Preference
-        android:title="@string/get_our_source_code"
-        android:summary="@string/get_our_source_code_summary"
-        android:icon="@drawable/ic_developers">
-        <intent
-            android:action="android.intent.action.VIEW"
-            android:data="https://t.me/teammodmiirequests" />
-    </Preference>
-</PreferenceCategory>
-
-
-
-    <PreferenceCategory
-        android:key="firmware_group"
-        android:title="@string/firmware_source_code" >
 
     <Preference
         android:title="@string/firmware_group_info"
         android:summary="@string/firmware_group_summary"
+        settings:layout="@layout/xd_pref_card_bot"
         android:icon="@drawable/ic_telegram">
         <intent
             android:action="android.intent.action.VIEW"
@@ -77,9 +66,6 @@
     </Preference>
 </PreferenceCategory>
 
-        <com.android.settingslib.widget.LayoutPreference
-        android:key="firmware_settings_footer"
-        android:layout="@layout/firmware_settings_footer_animation" />
         
     <!-- Arrow logo -->
     <!--<com.android.settingslib.widget.LayoutPreference
