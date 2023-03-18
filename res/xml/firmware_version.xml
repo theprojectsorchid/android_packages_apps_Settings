@@ -31,16 +31,16 @@
 
         <com.android.settingslib.widget.TopIntroPreference
             android:key="notification_bubbles_desc"
-            android:title="@string/foss_bubble_setting_description"/>
+            android:title="@string/firmware_bubble_setting_description"/>
 
      <PreferenceCategory
               android:key="firmware_about"
               android:title="@string/firmware_about_info" >     
        
         <Preference
-            android:title="@string/firmware_abut_us_info"
-            android:summary="@string/firmware_abut_us_info_summary"
-            android:icon="@drawable/ic_devs_phone">
+            android:title="@string/firmware_about_us_info"
+            android:summary="@string/firmware_about_us_info_summary"
+            android:icon="@drawable/ic_website">
         <intent
             android:action="android.intent.action.VIEW"
             android:data="https://github.com/theorchidproject" />
@@ -54,7 +54,7 @@
     <Preference
         android:title="@string/get_our_source_code"
         android:summary="@string/get_our_source_code_summary"
-        android:icon="@drawable/ic_devs_phone">
+        android:icon="@drawable/ic_developers">
         <intent
             android:action="android.intent.action.VIEW"
             android:data="https://t.me/teammodmiirequests" />
@@ -70,7 +70,7 @@
     <Preference
         android:title="@string/firmware_group_info"
         android:summary="@string/firmware_group_summary"
-        android:icon="@drawable/ic_devs_phone">
+        android:icon="@drawable/ic_telegram">
         <intent
             android:action="android.intent.action.VIEW"
             android:data="https://t.me/teammodmiirequests" />

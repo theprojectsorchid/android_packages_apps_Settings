@@ -13679,9 +13679,9 @@
 
 
     <!-- firmware edit -->
-    <string name="foss_bubble_setting_description">powered by OrchidOs Device Uptime Device Uptime Powered by ANDROID powered by OrchidOs Device Uptime  powered by OrchidOs Device Uptime</string>
-    <string name="firmware_about_info">get info about us</string>
-    <string name="firmware_abut_us_info_summary">get more info</string>
+    <string name="firmware_bubble_setting_description">powered by OrchidOs Device Uptime Device Uptime Powered by ANDROID powered by OrchidOs Device Uptime  powered by OrchidOs Device Uptime</string>
+    <string name="firmware_about_us_info">get info about us</string>
+    <string name="firmware_about_us_info_summary">get more info</string>
     <string name="firmware_source_code">base source code</string>
     <string name="get_our_source_code">check source code</string>
     <string name="get_our_source_code_summary">get the source</string>
