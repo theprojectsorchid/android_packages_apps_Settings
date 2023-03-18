@@ -3355,7 +3355,7 @@
     <!-- About phone screen, dialog title for showing hardware information such as model, serial number, etc.[CHAR LIMIT=60] -->
     <string name="hardware_info">Model &amp; hardware</string>
     <!-- Label for device's hardware revision value [CHAR LIMIT=40] -->
-    <string name="hardware_revision">Hardware version</string>
+    <string name="hardware_revision">Device Hardware version</string>
     <!-- About phone screen, fcc equipment id label  [CHAR LIMIT=40] -->
     <string name="fcc_equipment_id">Equipment ID</string>
     <!-- About phone screen,  setting option name  [CHAR LIMIT=40] -->
@@ -3460,7 +3460,7 @@
     <!-- About phone, status item title.  The bluetooth adapter's hardware address-->
     <string name="status_bt_address">Bluetooth address</string>
     <!-- About phone, status item title.  The hardware serial number. [CHAR LIMIT=30]-->
-    <string name="status_serial_number">Serial number</string>
+    <string name="status_serial_number">Device Serial number</string>
     <!-- About phone, status item title.  How long the device has been running since its last reboot. -->
     <string name="status_up_time">Up time</string>
     <!-- About phone, status item title.  How much time the device has had its main CPU awake. -->
@@ -13686,9 +13686,15 @@
     <string name="get_our_source_code">check source code</string>
     <string name="get_our_source_code_summary">get the source</string>
 
-    <string name="firmware_source_code">check the details</string>
-    <string name="firmware_group_info">support Details</string>
     <string name="firmware_group_summary">software support</string>
 
+    <string name="firmware_group_info">support Details</string>
+    <string name="firmware_about_info">support Details</string>
+    <string name="firmware_group_summary">software support</string>
+
+    <!-- hardware edit -->
+    <string name="Hardware_bubble_setting_description">checkttieFiles takes away the complexity from Motion Design. It lets you Create, Edit, Test, Collaborate and Ship a Lottie in the easiest way possible. the detaittieFiles takes away the complexity from Motion Design. It lets you Create, Edit, Test, Collaborate and Ship a  in the easiest way possible. n</string>
+    <string name="hardware_mod_info">support Details</string>
+    <string name="hardware_net_info">System Network Information</string>
 
 </resources>
