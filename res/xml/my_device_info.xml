@@ -24,7 +24,8 @@
     <com.android.settingslib.widget.LayoutPreference
     android:key="syberia_info"
     android:layout="@layout/about_phone_info"
-    android:selectable="false" />
+    android:selectable="true"
+    android:fragment="com.android.settings.deviceinfo.hardwareinfo.HardwareInfoFragment" />
 
     <PreferenceCategory
         android:key="basic_info_category"
@@ -92,14 +93,14 @@
         android:title="@string/device_and_android_version">
 
         <!-- Radio info -->
-        <Preference
+        <!--<Preference
             android:title="@string/radio_info_title"
             android:key="radio_info_settings"
             android:order="6">
             <intent android:action="android.intent.action.MAIN"
                     android:targetPackage="com.android.phone"
                     android:targetClass="com.android.phone.settings.RadioInfo" />
-         </Preference>
+         </Preference>-->
 
         <!-- SIM status -->
         <!--<Preference
@@ -111,7 +112,7 @@
             settings:enableCopying="true"/>-->
 
         <!-- Model & hardware -->
-        <Preference
+        <!--<Preference
             android:key="device_model"
             android:order="31"
             android:title="@string/model_information"
@@ -119,8 +120,10 @@
             android:summary="@string/summary_placeholder"
             android:fragment="com.android.settings.deviceinfo.hardwareinfo.HardwareInfoFragment"
             settings:enableCopying="true"
+            android:selectable="false"
+			android:visibility="invisible"
             settings:keywords="@string/keywords_model_and_hardware"
-            settings:controller="com.android.settings.deviceinfo.HardwareInfoPreferenceController"/>
+            settings:controller="com.android.settings.deviceinfo.HardwareInfoPreferenceController"/>-->
 
         <!-- IMEI -->
         <!--<com.android.settings.deviceinfo.PhoneNumberSummaryPreference
@@ -132,19 +135,32 @@
             settings:enableCopying="true"
             settings:controller="com.android.settings.deviceinfo.imei.ImeiInfoPreferenceController"/>-->
 
-        <!-- Android version -->
+   <!-- About us  -->
         <Preference
             android:key="firmware_version"
-            android:order="42"
-            android:title="@string/firmware_version2"
-            android:layout="@layout/top_level_preference_android_version"
-            android:fragment="com.android.settings.deviceinfo.firmwareversion.FirmwareVersionSettings"
-            settings:controller="com.android.settings.deviceinfo.firmwareversion.FirmwareVersionPreferenceController"/>
+            android:order="40"    
+            android:selectable="false"
+            android:title="@string/firmware_About_us"
+            android:fragment="com.android.settings.deviceinfo.firmwareversion.FirmwareVersionSettings"/>
     </PreferenceCategory>
 
     <PreferenceCategory
-        android:title="@string/device_statistics">
+        android:title="@string/device_firmware_about">
 
+        <!-- Android version -->
+        <Preference
+            android:key="firmware_version"
+            android:order="42"    
+            android:selectable="true"
+            android:title="@string/about_us_device"
+            android:fragment="com.android.settings.deviceinfo.firmwareversion.FirmwareVersionSettings"
+            settings:controller="com.android.settings.deviceinfo.firmwareversion.FirmwareVersionPreferenceController"/>
+    </PreferenceCategory>
+    
+    
+    <PreferenceCategory
+        android:title="@string/device_statistics">
+        
         <!--IP address -->
        <!-- <Preference
             android:key="wifi_ip_address"
@@ -216,7 +232,6 @@
         <Preference
             android:key="build_number"
             android:order="53"
-            android:layout="@layout/top_level_preference_build_powered"
             android:title="@string/about_phone_rom_title"
             settings:enableCopying="true"
             settings:controller="com.android.settings.deviceinfo.BuildNumberPreferenceController"/>
