@@ -20,13 +20,23 @@
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:settings="http://schemas.android.com/apk/res-auto"
     android:key="gesture_navigation_settings_page"
-    android:title="@string/gesture_settings_activity_title"
+    android:title=" "
     settings:keywords="@string/keywords_gesture_navigation_settings">
 
 
     <com.android.settingslib.widget.LayoutPreference
         android:key="gesture_settings" 
+        android:order="-998"
         android:layout="@layout/gesture_settings_animation"/>
+
+
+                
+   <!-- Header -->
+  <PreferenceCategory
+        android:title="Gesture features"
+        android:order="-997"
+        android:layout="@layout/settings_title_header">
+  </PreferenceCategory>
 
     <PreferenceCategory
         android:key="assistant_gesture_category"

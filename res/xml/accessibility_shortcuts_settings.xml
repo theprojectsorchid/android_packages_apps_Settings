@@ -19,7 +19,17 @@
     xmlns:settings="http://schemas.android.com/apk/res-auto"
     android:key="accessibility_shortcuts_settings"
     android:persistent="false"
-    android:title="@string/accessibility_shortcuts_settings_title">
+    android:title=" ">
+
+  <!-- Header -->
+  <PreferenceCategory
+        android:title="Accessibility shortcuts"
+        android:order="-996"
+        android:layout="@layout/settings_title_header">
+  </PreferenceCategory>
+
+
+
 
     <Preference
         android:fragment="com.android.settings.accessibility.AccessibilityButtonFragment"

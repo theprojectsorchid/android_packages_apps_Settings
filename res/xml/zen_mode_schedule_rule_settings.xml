@@ -18,9 +18,25 @@
 <PreferenceScreen
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:settings="http://schemas.android.com/apk/res-auto"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
     android:key="zen_mode_schedule_rule_settings"
-    android:title="@string/zen_mode_automatic_rule_settings_page_title">
+    android:title=" ">
 
+
+    <com.android.settingslib.widget.IllustrationPreference
+        android:key="multiple_user_animation"
+        settings:searchable="false"
+        android:order="-999"
+        app:lottie_rawRes="@raw/multiple_user_animation"/>
+
+  
+   <!-- Header -->
+  <PreferenceCategory
+        android:title="Schedules"
+        android:order="-997"
+        android:layout="@layout/settings_title_header">
+  </PreferenceCategory>
+  
     <com.android.settingslib.widget.LayoutPreference
         android:key="pref_app_header"
         android:layout="@layout/settings_entity_header"
