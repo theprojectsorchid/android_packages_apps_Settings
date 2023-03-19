@@ -3347,7 +3347,7 @@
     <string name="system_update_settings_list_item_summary">""</string>
 
     <!-- About phone screen, status item label  [CHAR LIMIT=40] -->
-    <string name="firmware_version">Android version</string>
+    <string name="firmware_version">Android 12.1</string>
     <!-- About phone screen, status item label  [CHAR LIMIT=60] -->
     <string name="security_patch">Android security update</string>
     <!-- About phone screen, status item label  [CHAR LIMIT=40] -->
@@ -13673,12 +13673,14 @@
     <string name="device_name_option">Change Device Name</string>
     <string name="device_and_android_version">Android Software Detail</string>
     <string name="model_information">Device Hardware</string>
-    <string name="firmware_version2">Android Version</string>
+    <string name="firmware_version2">Android 12.1</string>
     <string name="device_statistics">Core System information</string>
     <string name="about_settings_device">About Device</string>
-    <string name="firmware_About_us">Android Version</string>
+    <string name="firmware_About_us">Android 12.1</string>
     <string name="device_firmware_about">About us</string>
     <string name="about_us_device">About Us</string>
+    <string name="device_firmware_software">Android 12.1</string>
+    <string name="device_firmware_software_summary">API 32</string>
 
     <!-- firmware edit -->
     <string name="firmware_bubble_setting_description">Rom Name is A free and open-source operating system for various devices, based on the Android mobile platform. Major thanks to  Arrow Os. Further improvements and optimizations have been contibuted by the community. Thank you all developers, designers and testers</string>
@@ -13699,6 +13701,7 @@
     <string name="hardware_net_info">System Network Information</string>
     <string name="hardware_id_info">System network identifiers</string>
     <string name="hardware_info_name">Device Details</string>
+    <string name="radio_info_summary">Device radio information</string>
 
     <!-- Display Customizations Fragment one and two-->
     <string name="display_customization_swipe_tap">Swipe and Tap Gestures</string>
