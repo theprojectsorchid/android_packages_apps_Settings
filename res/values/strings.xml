@@ -3347,7 +3347,7 @@
     <string name="system_update_settings_list_item_summary">""</string>
 
     <!-- About phone screen, status item label  [CHAR LIMIT=40] -->
-    <string name="firmware_version">Android version</string>
+    <string name="firmware_version">Android 12.1</string>
     <!-- About phone screen, status item label  [CHAR LIMIT=60] -->
     <string name="security_patch">Android security update</string>
     <!-- About phone screen, status item label  [CHAR LIMIT=40] -->
@@ -13673,10 +13673,10 @@
     <string name="device_name_option">Change Device Name</string>
     <string name="device_and_android_version">Android Software Detail</string>
     <string name="model_information">Device Hardware</string>
-    <string name="firmware_version2">Android Version</string>
+    <string name="firmware_version2">Android 12.1</string>
     <string name="device_statistics">Core System information</string>
     <string name="about_settings_device">About Device</string>
-    <string name="firmware_About_us">Android Version</string>
+    <string name="firmware_About_us">Android 12.1</string>
     <string name="device_firmware_about">About us</string>
     <string name="about_us_device">About Us</string>
 
