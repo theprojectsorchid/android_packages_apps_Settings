@@ -21,6 +21,14 @@
     android:title=" "
     settings:keywords="@string/keywords_model_and_hardware">
     
+
+
+    <com.android.settingslib.widget.LayoutPreference
+        android:key="welcome_animation"
+        android:order="-998"
+        android:layout="@layout/welcome_animation2"/>
+
+
    <!-- Header -->
   <PreferenceCategory
         android:title="Device Details"
@@ -103,7 +111,7 @@
         android:key="hardware_info_device_revision"
         android:title="@string/hardware_revision"
         android:summary="@string/summary_placeholder"
-        settings:layout="@layout/xd_pref_card_bot"              
+        settings:layout="@layout/xd_pref_card_mid2"              
         android:selectable="false"
         android:icon="@drawable/ic_dot_device_edit"       
         settings:controller="com.android.settings.deviceinfo.hardwareinfo.HardwareRevisionPreferenceController"
@@ -124,7 +132,7 @@
         android:summary="@string/summary_placeholder"
         android:selectable="false"
          android:icon="@drawable/ic_phone"  
-        settings:layout="@layout/xd_pref_card_top"       
+        settings:layout="@layout/xd_pref_card_mid2"       
         settings:controller="com.android.settings.deviceinfo.PhoneNumberPreferenceController"
         settings:enableCopying="true"/>
     
@@ -134,7 +142,7 @@
         android:title="@string/sim_status_title"
         settings:keywords="@string/keywords_sim_status"
         android:icon="@drawable/ic_sim_card"
-        settings:layout="@layout/xd_pref_card_top"       
+        settings:layout="@layout/xd_pref_card_mid2"       
         android:summary="@string/summary_placeholder"
         settings:enableCopying="true"/>
 
@@ -146,7 +154,7 @@
         settings:keywords="@string/keywords_imei_info"
         android:icon="@drawable/rr_imei_info_icon_2"
         settings:enableCopying="true"
-        settings:layout="@layout/xd_pref_card_bot"       
+        settings:layout="@layout/xd_pref_card_mid2"       
         settings:controller="com.android.settings.deviceinfo.imei.ImeiInfoPreferenceController"/>
 
     </PreferenceCategory>
@@ -161,8 +169,9 @@
  <!-- Radio info -->
         <Preference
             android:title="@string/radio_info_title"
-            settings:layout="@layout/xd_pref_card_top"
-            android:icon="@drawable/rr_imei_info_icon_2"           
+            settings:layout="@layout/xd_pref_card_top"        
+            android:icon="@drawable/rr_imei_info_icon_2"   
+            android:summary="@string/radio_info_summary"
             android:key="radio_info_settings">
             <intent android:action="android.intent.action.MAIN"
                     android:targetPackage="com.android.phone"
@@ -174,10 +183,9 @@
         android:key="wifi_ip_address"
         android:title="@string/wifi_ip_address"
         android:summary="@string/summary_placeholder"
-        settings:layout="@layout/xd_pref_card_top"        
+        settings:layout="@layout/xd_pref_card_mid"        
         android:icon="@drawable/ic_wifi_off"
-        settings:layout="@layout/xd_pref_card_mid"
-        android:selectable="false"
+        android:selectable="true"
         settings:enableCopying="true"/>
 
     <!-- Wi-Fi MAC address -->
@@ -195,7 +203,7 @@
         android:key="wifi_mac_address"
         android:title="@string/status_device_wifi_mac_address"
         android:summary="@string/summary_placeholder"
-        android:selectable="false"
+        android:selectable="true"
         settings:layout="@layout/xd_pref_card_mid"       
         android:icon="@drawable/ic_wifi_signal_2"
         settings:enableCopying="true"/>
@@ -206,11 +214,29 @@
         android:key="bt_address"
         android:title="@string/status_bt_address"
         android:summary="@string/summary_placeholder"
-        android:selectable="false"
-        settings:layout="@layout/xd_pref_card_bot"
+        android:selectable="true"
+        settings:layout="@layout/xd_pref_card_bot"        
         android:icon="@drawable/ic_bluetooth_disabled"
         settings:enableCopying="true"/>
 
     </PreferenceCategory>
+
+
+
+    <PreferenceCategory
+        android:key="reset_dashboard"
+        android:selectable="false"
+     	android:layout="@layout/custom_preference_category2"       
+        android:title="@string/reset_dashboard_title">
+
+    <Preference
+        android:key="reset_dashboard"
+        android:title="@string/reset_dashboard_title"
+        android:icon="@drawable/ic_restore"
+        settings:layout="@layout/xd_pref_card_mid2"              
+        android:fragment="com.android.settings.system.ResetDashboardFragment"
+        settings:controller="com.android.settings.system.ResetPreferenceController"/>
+
+     </PreferenceCategory>
 
 </PreferenceScreen>
