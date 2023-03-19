@@ -21,7 +21,14 @@
  <com.android.settingslib.widget.LayoutPreference
         android:key="connected_pref_animation"
         android:layout="@layout/connected_pref_animation"
-        android:order="-11"/>
+        android:order="-999"/>
+        
+   <!-- Header -->
+  <PreferenceCategory
+        android:title="More Connection options"
+        android:order="-997"
+        android:layout="@layout/settings_title_header">
+  </PreferenceCategory>
 
     <Preference
         android:fragment="com.android.settings.connecteddevice.BluetoothDashboardFragment"

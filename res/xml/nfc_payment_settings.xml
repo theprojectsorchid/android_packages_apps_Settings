@@ -17,13 +17,21 @@
 <PreferenceScreen
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:settings="http://schemas.android.com/apk/res-auto"
-    android:title="@string/nfc_payment_settings_title">
+    android:title=" ">
 
      <com.android.settingslib.widget.LayoutPreference
         android:key="nfc2_settings_animation"
-        android:order="-140"
+        android:order="-999"
         android:layout="@layout/nfc2_animation" />
         
+
+   <!-- Header -->
+  <PreferenceCategory
+        android:title="Nfc options"
+        android:order="-997"
+        android:layout="@layout/settings_title_header">
+  </PreferenceCategory>
+
     <com.android.settings.nfc.NfcPaymentPreference
         android:key="nfc_payment"
         android:title="@string/nfc_payment_default"

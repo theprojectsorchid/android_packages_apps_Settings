@@ -25,6 +25,13 @@
         android:order="-999"/>
 
 
+           <!-- Header -->
+  <PreferenceCategory
+        android:title="Special Access"
+        android:order="-996"
+        android:layout="@layout/settings_title_header">
+  </PreferenceCategory>
+        
     <Preference
         android:key="manage_external_storage"
         android:title="@string/manage_external_storage_title"

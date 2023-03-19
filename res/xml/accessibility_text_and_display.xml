@@ -19,12 +19,18 @@
     xmlns:settings="http://schemas.android.com/apk/res-auto"
     android:key="accessibility_text_and_display"
     android:persistent="false"
-    android:title="@string/accessibility_text_and_display_title">
+    android:title=" ">
     
     
   <com.android.settingslib.widget.LayoutPreference
         android:key="display_accessibility_animation"
         android:layout="@layout/display_accessibility_animation" />
+
+   <!-- Header -->
+  <PreferenceCategory
+        android:title="Accessibility Display"
+        android:layout="@layout/settings_title_header">
+  </PreferenceCategory>
 
     <Preference
         android:fragment="com.android.settings.display.ToggleFontSizePreferenceFragment"

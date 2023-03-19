@@ -16,12 +16,21 @@
 
 <PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
                   xmlns:settings="http://schemas.android.com/apk/res-auto"
-                  android:title="@string/configure_notification_settings">
+                  android:title=" ">
 
     <com.android.settingslib.widget.LayoutPreference
         android:key="configure_notification_settings_animation"
+                android:order="-998"
         android:layout="@layout/configure_notification_settings_animation" />
         
+        
+   <!-- Header -->
+  <PreferenceCategory
+        android:title="Notification settings"
+        android:order="-997"
+        android:layout="@layout/settings_title_header">
+  </PreferenceCategory>
+
     <PreferenceCategory
         android:key="general_notifications_category"
         android:title="@string/general_notification_header">

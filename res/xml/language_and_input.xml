@@ -18,12 +18,20 @@
 <PreferenceScreen
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:settings="http://schemas.android.com/apk/res-auto"
-    android:title="@string/language_settings">
+    android:title=" ">
 
     <com.android.settingslib.widget.LayoutPreference
         android:key="language_settings"
+        android:order="-999"
         android:layout="@layout/language_settings_animation" />
         
+   <!-- Header -->
+  <PreferenceCategory
+        android:title="Input features"
+        android:order="-997"
+        android:layout="@layout/settings_title_header">
+  </PreferenceCategory>
+
     <Preference
         android:key="phone_language"
         android:title="@string/phone_language"

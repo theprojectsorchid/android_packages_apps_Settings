@@ -17,13 +17,20 @@
 <PreferenceScreen
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:settings="http://schemas.android.com/apk/res-auto"
-    android:title="@string/tether_settings_title_all">
+    android:title=" ">
 
     <com.android.settingslib.widget.LayoutPreference
         android:key="hotspot_anim" 
         android:layout="@layout/hotspot_animation"
         android:order="-999" />
 
+   <!-- Header -->
+  <PreferenceCategory
+        android:title="Tether options"
+        android:order="-997"
+        android:layout="@layout/settings_title_header">
+  </PreferenceCategory>
+        
     <com.android.settingslib.widget.TopIntroPreference
         android:key="tether_prefs_top_intro"
         settings:searchable="false"/>

@@ -17,11 +17,20 @@
 <PreferenceScreen
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:settings="http://schemas.android.com/apk/res-auto"
-    android:title="@string/provider_network_settings_title">
+    android:title=" ">
 
   <com.android.settingslib.widget.LayoutPreference
         android:key="sim_animation" 
+        android:order="-997"
         android:layout="@layout/sim_animation"/>
+
+        
+   <!-- Header -->
+  <PreferenceCategory
+        android:title="Device Sim options"
+        android:order="-997"
+        android:layout="@layout/settings_title_header">
+  </PreferenceCategory>
 
     <PreferenceCategory
         android:key="provider_model_sim_category"

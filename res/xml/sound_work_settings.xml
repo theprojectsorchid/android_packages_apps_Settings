@@ -24,6 +24,13 @@
         android:layout="@layout/sound_animation"
         android:order="-999"/>
 
+           <!-- Header -->
+  <PreferenceCategory
+        android:title="Work Sounds"
+        android:order="-996"
+        android:layout="@layout/settings_title_header">
+  </PreferenceCategory>
+        
     <!-- Use the same sounds of the work profile -->
     <SwitchPreference
         android:key="work_use_personal_sounds"

@@ -18,11 +18,19 @@
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:settings="http://schemas.android.com/apk/res-auto"
     android:key="conversation_list"
-    android:title="@string/zen_mode_conversations_title">
+    android:title=" ">
 
  <com.android.settingslib.widget.LayoutPreference
         android:key="convo_animation"
+        android:order="-999"
         android:layout="@layout/convo_animation" />
+
+   <!-- Header -->
+  <PreferenceCategory
+        android:title="Conversation list"
+        android:order="-997"
+        android:layout="@layout/settings_title_header">
+  </PreferenceCategory>
 
     <com.android.settingslib.widget.LayoutPreference
         android:key="no_conversations"

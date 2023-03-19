@@ -17,15 +17,23 @@
 <PreferenceScreen
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:settings="http://schemas.android.com/apk/res-auto"
-    android:title="@string/battery_saver"
+    android:title=" "
     settings:keywords="@string/keywords_battery_saver">
 
 
  <com.android.settingslib.widget.LayoutPreference
         android:key="battery_saver_animation"
+        android:order="-999"
         android:layout="@layout/battery_saver_animation" />
 
-        
+                
+   <!-- Header -->
+  <PreferenceCategory
+        android:title="Battery saver"
+        android:order="-997"
+        android:layout="@layout/settings_title_header">
+  </PreferenceCategory>
+
     <com.android.settingslib.widget.MainSwitchPreference
         android:order="-100"
         android:key="battery_saver"

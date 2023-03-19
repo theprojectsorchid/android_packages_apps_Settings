@@ -19,12 +19,21 @@
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:settings="http://schemas.android.com/apk/res-auto"
     android:key="network_and_internet_screen"
-    android:title="@string/network_dashboard_title">
+    android:title=" ">
 
     <com.android.settingslib.widget.LayoutPreference
         android:key="wifi_anim" 
         android:layout="@layout/wifi_animation"
         android:order="-999" />
+
+   <!-- Header -->
+  <PreferenceCategory
+        android:title="Network and internet"
+        android:order="-997"
+        android:layout="@layout/settings_title_header">
+  </PreferenceCategory>
+
+
     <PreferenceCategory
         android:key="multi_network_header"
         android:title="@string/summary_placeholder"

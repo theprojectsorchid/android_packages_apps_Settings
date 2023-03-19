@@ -20,9 +20,17 @@
 
 
     <com.android.settingslib.widget.LayoutPreference
-        android:key="networking_animation"
+        android:key="networking_animation"        
+        android:order="-999"
         android:layout="@layout/networking_animation" />
         
+   <!-- Header -->
+  <PreferenceCategory
+        android:title="Mobile Networks"
+        android:order="-998"
+        android:layout="@layout/settings_title_header">
+  </PreferenceCategory>
+
     <com.android.settings.widget.SettingsMainSwitchPreference
         android:key="use_sim_switch"
         settings:controller="com.android.settings.network.telephony.MobileNetworkSwitchController"/>

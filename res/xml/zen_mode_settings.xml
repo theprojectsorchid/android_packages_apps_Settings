@@ -18,12 +18,19 @@
 <PreferenceScreen
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:settings="http://schemas.android.com/apk/res-auto"
-    android:title="@string/zen_mode_settings_title">
+    android:title=" ">
+
 
  <com.android.settingslib.widget.LayoutPreference
         android:key="dnd_animation"
         android:layout="@layout/dnd_animation" />
         
+   <!-- Header -->
+  <PreferenceCategory
+        android:title="Do Not Disturb"
+        android:layout="@layout/settings_title_header">
+  </PreferenceCategory>
+
     <!-- Turn on DND button -->
     <com.android.settingslib.widget.LayoutPreference
         android:key="zen_mode_toggle"

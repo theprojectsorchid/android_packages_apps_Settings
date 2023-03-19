@@ -22,10 +22,17 @@
 
     <com.android.settingslib.widget.LayoutPreference
         android:key="system_animation"
-        android:order="-400"
+        android:order="-999"
         android:layout="@layout/system_animation" 
         android:selectable="false"/>
 
+   <!-- Header -->
+  <PreferenceCategory
+        android:title="System options"
+        android:order="-997"
+        android:layout="@layout/settings_title_header">
+  </PreferenceCategory>
+        
     <Preference
         android:key="language_input_settings"
         android:title="@string/language_settings"

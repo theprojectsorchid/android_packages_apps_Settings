@@ -23,6 +23,14 @@
         android:key="bluetooth_pair_animation"
          android:order="-999"       
         android:layout="@layout/bluetooth_pair_animation" />
+                
+   <!-- Header -->
+  <PreferenceCategory
+        android:title="Bluetooth Pairing"
+        android:order="-997"
+        android:layout="@layout/settings_title_header">
+  </PreferenceCategory>
+
 
     <Preference
         android:key="bt_pair_rename_devices"

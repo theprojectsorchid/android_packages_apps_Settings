@@ -25,7 +25,13 @@
         android:key="account_animation"
         android:layout="@layout/account_animation"
         android:order="-999"/>
-        
+    <!-- Header -->
+  <PreferenceCategory
+        android:title="My Accounts"
+         android:order="-998"
+        android:layout="@layout/settings_title_header">
+  </PreferenceCategory>
+
     <PreferenceCategory
         android:key="passwords_category"
         android:order="10"

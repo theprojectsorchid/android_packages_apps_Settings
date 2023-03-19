@@ -19,12 +19,21 @@
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:settings="http://schemas.android.com/apk/res-auto"
     android:key="connected_devices_screen"
-    android:title="@string/connected_devices_dashboard_title">
+    android:title=" ">
 
     <com.android.settingslib.widget.LayoutPreference
         android:key="bluetooth_animation"
+        android:order="-999"
         android:layout="@layout/bluetooth_animation" />
         
+        
+   <!-- Header -->
+  <PreferenceCategory
+        android:title="Connected devices"
+        android:order="-997"
+        android:layout="@layout/settings_title_header">
+  </PreferenceCategory>
+
     <com.android.settings.slices.SlicePreference
         android:key="bt_nearby_slice"
         android:title="@string/summary_placeholder"

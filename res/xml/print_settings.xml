@@ -17,14 +17,21 @@
 <PreferenceScreen
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:settings="http://schemas.android.com/apk/res-auto"
-    android:title="@string/print_settings"
+    android:title=" "
     settings:keywords="@string/keywords_printing">
 
 
      <com.android.settingslib.widget.LayoutPreference
         android:key="print_settings_animation"
-        android:order="-140"
+        android:order="-999"
         android:layout="@layout/print_animation" />
+
+   <!-- Header -->
+  <PreferenceCategory
+        android:title="Print settings"
+        android:order="-996"
+        android:layout="@layout/settings_title_header">
+  </PreferenceCategory>
 
     <PreferenceCategory
         android:key="print_jobs_category"
