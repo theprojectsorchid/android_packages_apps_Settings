@@ -18,8 +18,14 @@
     xmlns:settings="http://schemas.android.com/apk/res-auto"
     android:key="accessibility_system_controls"
     android:persistent="false"
-    android:title="@string/accessibility_system_controls_title">
+    android:title=" ">
 
+   <!-- Header -->
+  <PreferenceCategory
+        android:title="System controls"
+        android:order="-997"
+        android:layout="@layout/settings_title_header">
+  </PreferenceCategory>
     <Preference
         android:fragment="com.android.settings.gestures.SystemNavigationGestureSettings"
         android:key="gesture_system_navigation_input_summary_accessibility"

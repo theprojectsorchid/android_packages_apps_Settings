@@ -15,7 +15,15 @@
 -->
 
 <PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
-        android:title="@string/imei_information_title">
+        android:title=" ">
+
+  
+   <!-- Header -->
+  <PreferenceCategory
+        android:title="Imei"
+        android:order="-997"
+        android:layout="@layout/settings_title_header">
+  </PreferenceCategory>
 
     <!-- This menu item is only for CDMA phone -->
     <Preference android:key="min_number"

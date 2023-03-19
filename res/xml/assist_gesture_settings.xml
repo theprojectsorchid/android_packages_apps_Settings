@@ -20,6 +20,13 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:title="@string/assist_gesture_title">
 
+   <!-- Header -->
+  <PreferenceCategory
+        android:title="Assist gesture"
+        android:order="-997"
+        android:layout="@layout/settings_title_header">
+  </PreferenceCategory>
+
     <com.android.settings.widget.VideoPreference
         android:key="gesture_assist_video"
         app:animation="@raw/gesture_assist"

@@ -18,7 +18,23 @@
 <PreferenceScreen
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:settings="http://schemas.android.com/apk/res-auto"
-    android:title="@string/gesture_preference_title">
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:title=" " >
+
+
+    <com.android.settingslib.widget.IllustrationPreference
+        android:key="gestures"
+        settings:searchable="false"
+        android:order="-999"
+        app:lottie_rawRes="@raw/lottie_system_nav_fully_gestural"/>
+
+  
+   <!-- Header -->
+  <PreferenceCategory
+        android:title="Gestures"
+        android:order="-998"
+        android:layout="@layout/settings_title_header">
+  </PreferenceCategory>
 
     <Preference
         android:key="gesture_assist_input_summary"

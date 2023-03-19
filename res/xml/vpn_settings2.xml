@@ -15,9 +15,16 @@
 -->
 
 <PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
-        android:title="@string/vpn_title">
+        android:title=" ">
 
      <com.android.settingslib.widget.LayoutPreference
         android:key="vpn_settings_animation"
         android:layout="@layout/vpn_settings_animation" />
+   <!-- Header -->
+  <PreferenceCategory
+        android:title="Vpn"
+        android:layout="@layout/settings_title_header">
+  </PreferenceCategory>
+
+
 </PreferenceScreen>
