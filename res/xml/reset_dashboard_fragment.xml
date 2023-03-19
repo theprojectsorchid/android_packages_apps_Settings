@@ -18,7 +18,22 @@
 <PreferenceScreen
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:settings="http://schemas.android.com/apk/res-auto"
-    android:title="@string/reset_dashboard_title">
+     xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:title=" ">
+
+
+    <com.android.settingslib.widget.IllustrationPreference
+        android:key="privacy"
+        settings:searchable="false"
+        android:order="-999"
+        app:lottie_rawRes="@raw/privacy"/> 
+
+   <!-- Header -->
+  <PreferenceCategory
+        android:title="reset options"
+        android:order="-996"
+        android:layout="@layout/settings_title_header">
+  </PreferenceCategory>
 
     <!-- Network reset -->
     <com.android.settingslib.RestrictedPreference

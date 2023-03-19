@@ -17,12 +17,18 @@
 <PreferenceScreen
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:settings="http://schemas.android.com/apk/res-auto"
-    android:title="@string/device_details_title">
+    android:title=" ">
 
     <com.android.settingslib.widget.LayoutPreference
         android:key="adb_device_header"
         android:layout="@layout/settings_entity_header"
         android:selectable="false" />
+
+           <!-- Header -->
+  <PreferenceCategory
+        android:title="Adb Features"
+        android:layout="@layout/settings_title_header">
+  </PreferenceCategory>
 
     <!-- Buttons -->
     <com.android.settingslib.widget.ActionButtonsPreference

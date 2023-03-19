@@ -26,6 +26,12 @@
         android:key="hotspot_anim" 
         android:layout="@layout/hotspot_animation"
         android:order="-999" />
+<!-- Header -->
+  <PreferenceCategory
+        android:title="Connection settings"
+         android:order="-999"
+        android:layout="@layout/settings_title_header">
+  </PreferenceCategory>
         
     <PreferenceCategory
         android:key="wifi_tether_settings_group"

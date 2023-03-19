@@ -18,7 +18,16 @@
 <PreferenceScreen
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:settings="http://schemas.android.com/apk/res-auto"
-    android:title="@string/storage_settings">
+    android:title=" ">
+
+    
+           <!-- Header -->
+  <PreferenceCategory
+        android:title="Storage Settings"
+        android:order="-996"
+        android:layout="@layout/settings_title_header">
+  </PreferenceCategory>
+        
     <com.android.settings.widget.CardPreference
         android:key="free_up_space"
         android:order="4"

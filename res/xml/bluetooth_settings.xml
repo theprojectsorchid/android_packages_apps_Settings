@@ -15,14 +15,25 @@
 -->
 
 <PreferenceScreen
-    xmlns:android="http://schemas.android.com/apk/res/android"
-    android:title="@string/bluetooth_settings">
+     xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:settings="http://schemas.android.com/apk/res-auto"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:title=" ">    
+    
+    
+    <com.android.settingslib.widget.IllustrationPreference
+        android:key="bluetooth_settings_animation"
+        settings:searchable="false"
+        android:order="-999"
+        app:lottie_rawRes="@raw/bluetooth"/>
 
     
-     <com.android.settingslib.widget.LayoutPreference
-        android:key="bluetooth_settings_animation"
-        android:order="-999"
-        android:layout="@layout/bluetooth_settings_animation" />
+   <!-- Header -->
+  <PreferenceCategory
+        android:title="Bluetooth settings"
+        android:order="-997"
+        android:layout="@layout/settings_title_header">
+  </PreferenceCategory>
 
     <Preference
         android:key="device_name" />

@@ -18,8 +18,8 @@
     android:layout_height="wrap_content"
     android:layout_marginBottom="10dp"
     android:gravity="center"
-    android:background="#364D71"
-    android:orientation="horizontal" >
+    android:background="@drawable\xd_pref_card_top"    
+	android:orientation="horizontal" >
 
     <com.airbnb.lottie.LottieAnimationView
         android:id="@+id/button_anim"
