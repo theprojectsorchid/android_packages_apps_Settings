@@ -21,6 +21,13 @@
     android:key="apps_screen"
     android:title="@string/apps_dashboard_title">
 
+
+   <!-- Header -->
+  <PreferenceCategory
+        android:title="Applications"
+        android:layout="@layout/settings_title_header">
+  </PreferenceCategory>
+
    <com.android.settingslib.widget.LayoutPreference
         android:key="aboutphone_animation"
         android:layout="@layout/aboutphone_animation"

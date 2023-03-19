@@ -29,6 +29,7 @@
 
     <PreferenceCategory
         android:key="paired_devices"
+        android:layout="@layout/custom_preference_category"
         android:title="@string/bluetooth_paired_device_title" />
 
     <PreferenceCategory>

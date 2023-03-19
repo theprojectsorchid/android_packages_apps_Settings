@@ -36,6 +36,7 @@
     <PreferenceCategory
         android:order="170"
         android:layout="@layout/preference_category_no_label"
+        android:layout="@layout/custom_preference_category"
         settings:allowDividerAbove="true"/>
     <com.android.settingslib.RestrictedPreference
         android:key="app_and_notif_cell_broadcast_settings"
