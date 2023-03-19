@@ -30,19 +30,19 @@
         android:fragment="com.android.settings.gestures.AssistGestureSettings"
         settings:controller="com.android.settings.gestures.AssistGestureSettingsPreferenceController" />
 
-    <Preference
+    <!--<Preference
         android:key="gesture_swipe_down_fingerprint_input_summary"
         android:title="@string/fingerprint_swipe_for_notifications_title"
         android:fragment="com.android.settings.gestures.SwipeToNotificationSettings"
         settings:searchable="false"
-        settings:controller="com.android.settings.gestures.SwipeToNotificationPreferenceController" />
+        settings:controller="com.android.settings.gestures.SwipeToNotificationPreferenceController" />-->
 
-    <Preference
+    <!--<Preference
         android:key="gesture_double_tap_power_input_summary"
         android:title="@string/double_tap_power_for_camera_title"
         android:fragment="com.android.settings.gestures.DoubleTapPowerSettings"
         settings:searchable="false"
-        settings:controller="com.android.settings.gestures.DoubleTapPowerPreferenceController" />
+        settings:controller="com.android.settings.gestures.DoubleTapPowerPreferenceController" />-->
 
     <Preference
         android:key="gesture_double_twist_input_summary"
@@ -58,25 +58,25 @@
         settings:controller="com.android.settings.gestures.SystemNavigationPreferenceController"
         settings:keywords="@string/keywords_system_navigation" />
 
-    <Preference
+    <!--<Preference
         android:key="gesture_one_handed"
         android:title="@string/one_handed_title"
         android:fragment="com.android.settings.gestures.OneHandedSettings"
-        settings:controller="com.android.settings.gestures.OneHandedEnablePreferenceController" />
+        settings:controller="com.android.settings.gestures.OneHandedEnablePreferenceController" />-->
 
-    <Preference
+    <!--<Preference
         android:key="gesture_tap_screen_input_summary"
         android:title="@string/ambient_display_tap_screen_title"
         android:fragment="com.android.settings.gestures.TapScreenGestureSettings"
         settings:searchable="false"
-        settings:controller="com.android.settings.gestures.TapScreenGesturePreferenceController" />
+        settings:controller="com.android.settings.gestures.TapScreenGesturePreferenceController" />-->
 
-    <Preference
+    <!--<Preference
         android:key="gesture_double_tap_screen_input_summary"
         android:title="@string/ambient_display_title"
         android:fragment="com.android.settings.gestures.DoubleTapScreenSettings"
         settings:searchable="false"
-        settings:controller="com.android.settings.gestures.DoubleTapScreenPreferenceController" />
+        settings:controller="com.android.settings.gestures.DoubleTapScreenPreferenceController" />-->
 
     <Preference
         android:key="gesture_pick_up_input_summary"
@@ -91,20 +91,20 @@
         android:fragment="com.android.settings.gestures.PowerMenuSettings"
         settings:controller="com.android.settings.gestures.PowerMenuPreferenceController" />
 
-    <Preference
+    <!--<Preference
         android:key="three_finger_gesture_summary"
         android:title="@string/three_finger_gesture"
         android:fragment="com.android.settings.gestures.SwipeToScreenshotGestureSettings"
-        settings:controller="com.android.settings.gestures.SwipeToScreenshotPreferenceController" />
+        settings:controller="com.android.settings.gestures.SwipeToScreenshotPreferenceController" />-->
 
-    <com.arrow.support.preferences.SystemSettingListPreference
+    <!--<com.arrow.support.preferences.SystemSettingListPreference
         android:key="torch_power_button_gesture"
         android:dialogTitle="@string/torch_power_button_gesture_title"
         android:title="@string/torch_power_button_gesture_title"
         android:summary="%s"
         android:entries="@array/torch_power_button_gesture_entries"
         android:entryValues="@array/torch_power_button_gesture_values"
-        android:defaultValue="0" />
+        android:defaultValue="0" />-->
 
     <com.android.settings.widget.PrimarySwitchPreference
         android:key="gesture_prevent_ringing_summary"
@@ -118,11 +118,11 @@
         android:summary="@string/global_actions_advanced_reboot_summary"
         android:defaultValue="false" />
 
-    <com.arrow.support.preferences.SystemSettingSwitchPreference
+    <!--<com.arrow.support.preferences.SystemSettingSwitchPreference
         android:key="double_tap_sleep_gesture"
         android:title="@string/double_tap_sleep_gesture_title"
         android:summary="@string/double_tap_sleep_gesture_summary"
-        android:defaultValue="false" />
+        android:defaultValue="false" />-->
 
     <com.arrow.support.preferences.SystemSettingSwitchPreference
         android:key="volume_button_music_control"
@@ -137,5 +137,12 @@
         android:summary="@string/volume_rocker_wake_summary"
         android:defaultValue="false"
         android:disableDependentsState="true" />
+
+        
+    <Preference
+        android:key="display_customization_swipe_tap"
+        android:title="@string/display_customization_swipe_tap"
+        android:fragment="com.android.settings.awaken.fragments.DisplayCustomizations"
+        android:summary="@string/swipe_tap_extra"/>
 
 </PreferenceScreen>
