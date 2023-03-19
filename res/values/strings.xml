@@ -13698,7 +13698,7 @@
     <!-- hardware edit -->
     <string name="Hardware_bubble_setting_description">Android smartphones come in various models with a range of hardware options such as screen size, processor, RAM, storage capacity. Sim status. Wi-Fi, Bluetooth and cellular connectivity identifier information should be handled with care</string>
     <string name="hardware_mod_info">Adb Details</string>
-    <string name="hardware_net_info">System Network Information</string>
+    <string name="hardware_net_info">Sim Network Information</string>
     <string name="hardware_id_info">System network identifiers</string>
     <string name="hardware_info_name">Device Details</string>
     <string name="radio_info_summary">Device radio information</string>
