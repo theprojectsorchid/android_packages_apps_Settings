@@ -149,6 +149,7 @@
             android:key="firmware_version"
             android:order="40"    
             android:selectable="false"
+            android:icon="@drawable/ic_settings_wireless"
             settings:layout="@layout/top_level_preference_mt_alone"                         
             android:title="@string/firmware_About_us"
             android:fragment="com.android.settings.deviceinfo.firmwareversion.FirmwareVersionSettings"/>
@@ -162,8 +163,9 @@
         <Preference
             android:key="firmware_version"
             android:order="42"           
-            settings:layout="@layout/top_level_preference_mt_alone"                         
+            settings:layout="@layout/xd_pref_card_mid2"                         
             android:selectable="true"
+            android:icon="@drawable/ic_settings_wireless"
             android:title="@string/about_us_device"
             android:fragment="com.android.settings.deviceinfo.firmwareversion.FirmwareVersionSettings"
             settings:controller="com.android.settings.deviceinfo.firmwareversion.FirmwareVersionPreferenceController"/>
@@ -215,7 +217,7 @@
             android:key="up_time"
             android:order="48"
             android:title="@string/status_up_time"
-            settings:layout="@layout/top_level_preference_mt_top"                         
+            settings:layout="@layout/xd_pref_card_mid2"                         
             android:summary="@string/summary_placeholder"
             android:selectable="false"/>
 
