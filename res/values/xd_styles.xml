@@ -44,7 +44,7 @@
         <item name="android:clipToPadding">false</item>
     </style>
 
- <style name="xd_pref_card_sin-accent">
+ <style name="xd_pref_card_sin-accent2">
         <item name="android:layout_marginTop">16dp</item>
         <item name="android:layout_marginBottom">4dp</item>
         <item name="android:layout_marginStart">16dp</item>
