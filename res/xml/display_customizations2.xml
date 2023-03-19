@@ -17,15 +17,15 @@
 <PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:settings="http://schemas.android.com/apk/res/com.android.settings"
     android:key="display_customizations2"
-    android:title=" ">
+    android:title="">
 
+
+   <!-- Header -->
+  <PreferenceCategory
+        android:title="Phone Button Options"
+        android:order="-997"
+        android:layout="@layout/settings_title_header">
+  </PreferenceCategory>
    
-     <PreferenceCategory
-        android:key="display_customization_title"
-        android:layout="@layout/custom_preference_category"
-        android:title="@string/fingerprint_swipe_for_notifications_title" />
-    <PreferenceCategory>
-
-    
  
 </PreferenceScreen>
