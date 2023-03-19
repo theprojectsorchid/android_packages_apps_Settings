@@ -140,7 +140,7 @@
         <Preference
             android:key="firmware_version"
             android:order="40"    
-            android:selectable="true"
+            android:selectable="false"
             android:title="@string/firmware_About_us"
             android:fragment="com.android.settings.deviceinfo.firmwareversion.FirmwareVersionSettings"/>
     </PreferenceCategory>
