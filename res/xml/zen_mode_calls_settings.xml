@@ -20,7 +20,24 @@
     xmlns:settings="http://schemas.android.com/apk/res-auto"
     android:key="zen_mode_calls_settings_page"
     settings:searchable="false"
-    android:title="@string/zen_mode_calls_title">
+     xmlns:app="http://schemas.android.com/apk/res-auto"    
+    android:title=" " >
+
+
+    <com.android.settingslib.widget.IllustrationPreference
+        android:key="powermenu1_animation"
+        settings:searchable="false"
+        android:order="-999"
+        app:lottie_rawRes="@raw/powermenu1"/>
+
+  
+   <!-- Header -->
+  <PreferenceCategory
+        android:title="Calls"
+        android:order="-997"
+        android:layout="@layout/settings_title_header">
+  </PreferenceCategory>
+
 
     <PreferenceCategory
         android:key="zen_mode_settings_category_calls"

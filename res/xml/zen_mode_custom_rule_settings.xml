@@ -18,7 +18,8 @@
 <PreferenceScreen
     xmlns:android="http://schemas.android.com/apk/res/android"
     android:key="zen_custom_rule_settings_page"
-    android:title="@string/zen_mode_custom_behavior_title">
+     xmlns:app="http://schemas.android.com/apk/res-auto">
+
 
     <PreferenceCategory
         android:key="zen_custom_rule_category">

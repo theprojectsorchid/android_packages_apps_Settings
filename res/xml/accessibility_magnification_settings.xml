@@ -16,8 +16,18 @@
 <PreferenceScreen
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:settings="http://schemas.android.com/apk/res-auto"
-    android:title="@string/accessibility_screen_magnification_title"
+    android:title=" "
     settings:searchable="false">
+
+
+    
+   <!-- Header -->
+  <PreferenceCategory
+        android:title="magnification"
+        android:order="-996"
+        android:layout="@layout/settings_title_header">
+  </PreferenceCategory>
+
     <Preference
         android:fragment="com.android.settings.accessibility.ToggleScreenMagnificationPreferenceFragment"
         android:key="screen_magnification_gestures_preference_screen"
