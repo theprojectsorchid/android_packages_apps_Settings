@@ -176,7 +176,6 @@
         android:summary="@string/summary_placeholder"
         settings:layout="@layout/xd_pref_card_top"        
         android:icon="@drawable/ic_wifi_off"
-        settings:layout="@layout/xd_pref_card_mid"
         android:selectable="false"
         settings:enableCopying="true"/>
 
