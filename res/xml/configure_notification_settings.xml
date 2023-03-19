@@ -36,7 +36,8 @@
   </PreferenceCategory>
 
     <PreferenceCategory
-        android:key="general_notifications_category"
+        android:key="general_notifications_category"        
+        android:layout="@layout/custom_preference_category2"
         android:title="@string/general_notification_header">
         <!-- See all apps button -->
         <Preference
@@ -63,7 +64,8 @@
     </PreferenceCategory>
 
     <PreferenceCategory
-        android:key="conversation_category"
+        android:key="conversation_category"        
+        android:layout="@layout/custom_preference_category2"
         android:title="@string/conversation_notifs_category">
         <Preference
             android:key="conversations"
@@ -85,6 +87,7 @@
 
     <PreferenceCategory
         android:key="configure_notifications_lock"
+        android:layout="@layout/custom_preference_category2"
         android:title="@string/lock_screen_notifications_title">
         <Preference
             android:key="notification_access"
@@ -127,6 +130,7 @@
 
     <PreferenceCategory
         android:key="advanced_section_header"
+                android:layout="@layout/custom_preference_category2"
         android:title="@string/advanced_section_header">
 
 	<com.arrow.support.preferences.SystemSettingSwitchPreference
