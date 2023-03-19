@@ -20,6 +20,10 @@
     xmlns:settings="http://schemas.android.com/apk/res-auto"
     android:title="@string/gesture_preference_title">
 
+    <com.android.settingslib.widget.LayoutPreference
+    android:key="syberia_info"
+    android:layout="@layout/about_elixir"/>
+
     <Preference
         android:key="gesture_assist_input_summary"
         android:title="@string/assist_gesture_title"
