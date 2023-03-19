@@ -21,6 +21,13 @@
     android:key="my_device_info_pref_screen"
     android:title="@string/about_settings_device">
 
+   <!-- Header -->
+  <PreferenceCategory
+        android:title="About Device"
+        android:order="-997"
+        android:layout="@layout/settings_title_header">
+  </PreferenceCategory>
+
     <com.android.settingslib.widget.LayoutPreference
     android:key="syberia_info"
     android:layout="@layout/about_phone_info"
@@ -29,6 +36,7 @@
 
     <PreferenceCategory
         android:key="basic_info_category"
+        android:layout="@layout/custom_preference_category2"
         android:selectable="false"
         android:title="@string/device_name_option">
 
@@ -36,7 +44,7 @@
         <com.android.settings.widget.ValidatedEditTextPreference
             android:key="device_name"
             android:order="1"
-            android:layout="@layout/top_level_preference_change_device_name"
+            settings:layout="@layout/xd_pref_card_mid2"              
             android:title="@string/my_device_info_device_name_preference_title"
             android:summary="@string/summary_placeholder"
             settings:controller="com.android.settings.deviceinfo.DeviceNamePreferenceController"
@@ -46,6 +54,7 @@
         <Preference
             android:key="branded_account"
             android:order="2"
+            settings:layout="@layout/top_level_preference_mt_alone"                         
             android:title="@string/my_device_info_account_preference_title"
             android:summary="@string/summary_placeholder"
             settings:enableCopying="true"
@@ -90,7 +99,6 @@
     <PreferenceCategory
         android:key="device_detail_category"
         android:layout="@layout/custom_preference_category2"
-        android:selectable="false"
         android:title="@string/device_and_android_version">
 
         <!-- Radio info -->
@@ -141,6 +149,7 @@
             android:key="firmware_version"
             android:order="40"    
             android:selectable="false"
+            settings:layout="@layout/top_level_preference_mt_alone"                         
             android:title="@string/firmware_About_us"
             android:fragment="com.android.settings.deviceinfo.firmwareversion.FirmwareVersionSettings"/>
     </PreferenceCategory>
@@ -152,8 +161,8 @@
         <!-- Android version -->
         <Preference
             android:key="firmware_version"
-            settings:layout="@layout/xd_pref_card_bot"
-            android:order="42"    
+            android:order="42"           
+            settings:layout="@layout/top_level_preference_mt_alone"                         
             android:selectable="true"
             android:title="@string/about_us_device"
             android:fragment="com.android.settings.deviceinfo.firmwareversion.FirmwareVersionSettings"
@@ -162,6 +171,7 @@
     
     
     <PreferenceCategory
+        android:layout="@layout/custom_preference_category2"
         android:title="@string/device_statistics">
         
         <!--IP address -->
@@ -205,7 +215,7 @@
             android:key="up_time"
             android:order="48"
             android:title="@string/status_up_time"
-            android:layout="@layout/top_level_preference_device_uptime"
+            settings:layout="@layout/top_level_preference_mt_top"                         
             android:summary="@string/summary_placeholder"
             android:selectable="false"/>
 
@@ -237,6 +247,7 @@
             android:order="53"
             android:title="@string/about_phone_rom_title"
             settings:enableCopying="true"
+            settings:layout="@layout/top_level_preference_build_powered"                         
             settings:controller="com.android.settings.deviceinfo.BuildNumberPreferenceController"/>
     </PreferenceCategory>
 
