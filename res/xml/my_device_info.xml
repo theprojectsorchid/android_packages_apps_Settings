@@ -44,6 +44,7 @@
         <com.android.settings.widget.ValidatedEditTextPreference
             android:key="device_name"
             android:order="1"
+            android:icon="@drawable/ic_settings_wireless"
             settings:layout="@layout/xd_pref_card_mid2"              
             android:title="@string/my_device_info_device_name_preference_title"
             android:summary="@string/summary_placeholder"
@@ -217,7 +218,8 @@
             android:key="up_time"
             android:order="48"
             android:title="@string/status_up_time"
-            settings:layout="@layout/xd_pref_card_mid2"                         
+            settings:layout="@layout/xd_pref_card_mid2"   
+            android:icon="@drawable/ic_settings_wireless"                      
             android:summary="@string/summary_placeholder"
             android:selectable="false"/>
 
