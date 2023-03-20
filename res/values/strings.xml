@@ -13679,6 +13679,8 @@
     <string name="firmware_About_us">Android 12.1</string>
     <string name="device_firmware_about">About us</string>
     <string name="about_us_device">About Us</string>
+    <string name="device_firmware_software">Android 12.1</string>
+    <string name="device_firmware_software_summary">API 32</string>
 
     <!-- firmware edit -->
     <string name="firmware_bubble_setting_description">Rom Name is A free and open-source operating system for various devices, based on the Android mobile platform. Major thanks to  Arrow Os. Further improvements and optimizations have been contibuted by the community. Thank you all developers, designers and testers</string>

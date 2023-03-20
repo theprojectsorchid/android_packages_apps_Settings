@@ -55,7 +55,7 @@
         <Preference
             android:key="branded_account"
             android:order="2"
-            settings:layout="@layout/top_level_preference_mt_alone"                         
+            settings:layout="@layout/xd_pref_card_mid2"                         
             android:title="@string/my_device_info_account_preference_title"
             android:summary="@string/summary_placeholder"
             settings:enableCopying="true"
@@ -151,8 +151,9 @@
             android:order="40"    
             android:selectable="false"
             android:icon="@drawable/ic_settings_wireless"
-            settings:layout="@layout/top_level_preference_mt_alone"                         
-            android:title="@string/firmware_About_us"
+            settings:layout="@layout/xd_pref_card_mid2"                         
+            android:title="@string/device_firmware_software"
+            android:summary="@string/device_firmware_software_summary"
             android:fragment="com.android.settings.deviceinfo.firmwareversion.FirmwareVersionSettings"/>
     </PreferenceCategory>
 
