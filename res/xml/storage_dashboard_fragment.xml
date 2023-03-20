@@ -18,13 +18,21 @@
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:settings="http://schemas.android.com/apk/res-auto"
     android:key="storage_dashboard_fragment"
-    android:title="@string/storage_settings"
+    android:title=" "
     settings:keywords="@string/keywords_storage">
     
     <com.android.settingslib.widget.LayoutPreference
-        android:key="storage_animation"
+        android:key="storage_settings_information"        
+        android:order="-998"
         android:layout="@layout/storage_animation" />
-		
+
+   <!-- Header -->
+  <PreferenceCategory
+        android:title="Device Storage"
+        android:order="-997"
+        android:layout="@layout/settings_title_header">
+  </PreferenceCategory>
+   
     <com.android.settingslib.widget.SettingsSpinnerPreference
         android:key="storage_spinner"
         android:order="1"
@@ -39,6 +47,7 @@
     <com.android.settings.widget.PrimarySwitchPreference
         android:fragment="com.android.settings.deletionhelper.AutomaticStorageManagerSettings"
         android:key="toggle_asm"
+        settings:layout="@layout/xd_pref_card_mid2"                     
         android:title="@string/automatic_storage_manager_preference_title"
         android:icon="@drawable/ic_storage"
         android:order="3"
@@ -53,51 +62,61 @@
     <Preference
         android:key="pref_public_storage"
         android:title="@string/storage_files"
+        settings:layout="@layout/xd_pref_card_top"                     
         android:icon="@drawable/ic_folder_vd_theme_24"
         android:order="100"/>
     <com.android.settings.deviceinfo.StorageItemPreference
         android:key="pref_images"
         android:title="@string/storage_images"
+        settings:layout="@layout/xd_pref_card_mid"                     
         android:icon="@drawable/ic_photo_library"
         android:order="101"/>
     <com.android.settings.deviceinfo.StorageItemPreference
         android:key="pref_videos"
         android:title="@string/storage_videos"
+        settings:layout="@layout/xd_pref_card_mid"                     
         android:icon="@drawable/ic_local_movies"
         android:order="102"/>
     <com.android.settings.deviceinfo.StorageItemPreference
         android:key="pref_audio"
         android:title="@string/storage_audio"
         android:icon="@drawable/ic_media_stream"
+        settings:layout="@layout/xd_pref_card_mid"                     
         android:order="103"/>
     <com.android.settings.deviceinfo.StorageItemPreference
         android:key="pref_apps"
         android:title="@string/storage_apps"
         android:icon="@drawable/ic_storage_apps"
+        settings:layout="@layout/xd_pref_card_mid"                     
         android:order="104"/>
     <com.android.settings.deviceinfo.StorageItemPreference
         android:key="pref_games"
         android:title="@string/storage_games"
+        settings:layout="@layout/xd_pref_card_mid"                     
         android:icon="@drawable/ic_videogame_vd_theme_24"
         android:order="105"/>
     <com.android.settings.deviceinfo.StorageItemPreference
         android:key="pref_documents_and_other"
         android:title="@string/storage_documents_and_other"
+        settings:layout="@layout/xd_pref_card_mid"                     
         android:icon="@drawable/ic_folder_vd_theme_24"
         android:order="106"/>
     <com.android.settings.deviceinfo.StorageItemPreference
         android:key="pref_system"
         android:title="@string/storage_system"
+        settings:layout="@layout/xd_pref_card_mid"                     
         android:icon="@drawable/ic_system_update"
         android:order="107"/>
     <com.android.settings.deviceinfo.StorageItemPreference
         android:key="pref_trash"
         android:title="@string/storage_trash"
+        settings:layout="@layout/xd_pref_card_bot"                     
         android:icon="@drawable/ic_trash_can"
         android:order="108"/>
     <!-- Preference order 100~200 are 'ONLY' for storage category preferences above. -->
     <PreferenceCategory
         android:key="pref_secondary_users"
         android:title="@string/storage_other_users"
+        settings:layout="@layout/xd_pref_card_mid2"                     
         android:order="201" />
 </PreferenceScreen>
