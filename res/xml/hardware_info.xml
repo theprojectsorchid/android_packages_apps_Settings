@@ -21,6 +21,14 @@
     android:title=" "
     settings:keywords="@string/keywords_model_and_hardware">
     
+
+
+    <com.android.settingslib.widget.LayoutPreference
+        android:key="welcome_animation"
+        android:order="-998"
+        android:layout="@layout/welcome_animation2"/>
+
+
    <!-- Header -->
   <PreferenceCategory
         android:title="Device Details"
@@ -161,7 +169,7 @@
  <!-- Radio info -->
         <Preference
             android:title="@string/radio_info_title"
-            settings:layout="@layout/xd_pref_card_mid2"        
+            settings:layout="@layout/xd_pref_card_top"        
             android:icon="@drawable/rr_imei_info_icon_2"   
             android:summary="@string/radio_info_summary"
             android:key="radio_info_settings">
@@ -175,7 +183,7 @@
         android:key="wifi_ip_address"
         android:title="@string/wifi_ip_address"
         android:summary="@string/summary_placeholder"
-        settings:layout="@layout/xd_pref_card_mid2"        
+        settings:layout="@layout/xd_pref_card_mid"        
         android:icon="@drawable/ic_wifi_off"
         android:selectable="true"
         settings:enableCopying="true"/>
@@ -185,7 +193,7 @@
         android:key="saved_accesspoints_wifi_mac_address"
         android:title="@string/status_wifi_mac_address"
         android:summary="@string/view_saved_network"
-        settings:layout="@layout/xd_pref_card_mid2"
+        settings:layout="@layout/xd_pref_card_mid"
         android:icon="@drawable/ic_wifi_signal_1"
         android:fragment="com.android.settings.wifi.savedaccesspoints2.SavedAccessPointsWifiSettings2"
         settings:enableCopying="true"/>
@@ -196,7 +204,7 @@
         android:title="@string/status_device_wifi_mac_address"
         android:summary="@string/summary_placeholder"
         android:selectable="true"
-        settings:layout="@layout/xd_pref_card_mid2"       
+        settings:layout="@layout/xd_pref_card_mid"       
         android:icon="@drawable/ic_wifi_signal_2"
         settings:enableCopying="true"/>
 
@@ -207,7 +215,7 @@
         android:title="@string/status_bt_address"
         android:summary="@string/summary_placeholder"
         android:selectable="true"
-        settings:layout="@layout/xd_pref_card_mid2"        
+        settings:layout="@layout/xd_pref_card_bot"        
         android:icon="@drawable/ic_bluetooth_disabled"
         settings:enableCopying="true"/>
 
