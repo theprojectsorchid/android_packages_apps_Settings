@@ -18,7 +18,12 @@
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:settings="http://schemas.android.com/apk/res-auto"
     android:key="system_dashboard_screen"
-    android:title=" ">
+    android:title="">
+    <com.android.settingslib.widget.LayoutPreference
+        android:key="system_animation"
+        android:order="-998"
+        android:layout="@layout/system_animation" 
+        android:selectable="false"/>
 
    <!-- Header -->
   <PreferenceCategory
@@ -26,12 +31,6 @@
         android:order="-997"
         android:layout="@layout/settings_title_header">
   </PreferenceCategory>
-
-    <com.android.settingslib.widget.LayoutPreference
-        android:key="system_animation"
-        android:order="-400"
-        android:layout="@layout/system_animation" 
-        android:selectable="false"/>
 
     <Preference
         android:key="language_input_settings"
@@ -57,7 +56,7 @@
         android:title="@string/date_and_time"
         android:icon="@drawable/ic_settings_date_time"
         android:order="-240"
-        settings:layout="@layout/xd_pref_card_mid"              
+        settings:layout="@layout/xd_pref_card_bot"              
         android:fragment="com.android.settings.datetime.DateTimeSettings"
         settings:controller="com.android.settings.datetime.DateTimePreferenceController"/>
 
@@ -89,7 +88,6 @@
         android:title="@string/reset_dashboard_title"
         android:icon="@drawable/ic_restore"
         android:order="-30"
-        settings:layout="@layout/xd_pref_card_mid2"              
         android:fragment="com.android.settings.system.ResetDashboardFragment"
         settings:controller="com.android.settings.system.ResetPreferenceController"/>
 
