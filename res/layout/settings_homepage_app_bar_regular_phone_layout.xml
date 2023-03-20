@@ -28,7 +28,7 @@
         android:layout_marginTop="@dimen/avatar_margin_top"
         android:layout_marginEnd="@dimen/avatar_margin_end"
         android:layout_gravity="end"
-        android:visibility="invisible"
+        android:visibility="visible"
         android:accessibilityTraversalAfter="@id/homepage_title"
         android:contentDescription="@string/search_bar_account_avatar_content_description"/>
 
