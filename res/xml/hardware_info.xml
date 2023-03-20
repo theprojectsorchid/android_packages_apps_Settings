@@ -162,7 +162,8 @@
         <Preference
             android:title="@string/radio_info_title"
             settings:layout="@layout/xd_pref_card_mid2"        
-            android:icon="@drawable/rr_imei_info_icon_2"           
+            android:icon="@drawable/rr_imei_info_icon_2"   
+            android:summary="@string/radio_info_summary"
             android:key="radio_info_settings">
             <intent android:action="android.intent.action.MAIN"
                     android:targetPackage="com.android.phone"
@@ -184,7 +185,7 @@
         android:key="saved_accesspoints_wifi_mac_address"
         android:title="@string/status_wifi_mac_address"
         android:summary="@string/view_saved_network"
-        settings:layout="@layout/xd_pref_card_mid"
+        settings:layout="@layout/xd_pref_card_mid2"
         android:icon="@drawable/ic_wifi_signal_1"
         android:fragment="com.android.settings.wifi.savedaccesspoints2.SavedAccessPointsWifiSettings2"
         settings:enableCopying="true"/>
@@ -195,7 +196,7 @@
         android:title="@string/status_device_wifi_mac_address"
         android:summary="@string/summary_placeholder"
         android:selectable="true"
-        settings:layout="@layout/xd_pref_card_mid"       
+        settings:layout="@layout/xd_pref_card_mid2"       
         android:icon="@drawable/ic_wifi_signal_2"
         settings:enableCopying="true"/>
 
