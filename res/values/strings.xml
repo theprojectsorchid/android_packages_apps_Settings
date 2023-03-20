@@ -13699,6 +13699,7 @@
     <string name="hardware_net_info">System Network Information</string>
     <string name="hardware_id_info">System network identifiers</string>
     <string name="hardware_info_name">Device Details</string>
+    <string name="radio_info_summary">Device radio information</string>
 
     <!-- Display Customizations Fragment one and two-->
     <string name="display_customization_swipe_tap">Swipe and Tap Gestures</string>
