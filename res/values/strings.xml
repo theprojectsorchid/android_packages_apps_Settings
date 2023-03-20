@@ -13709,4 +13709,8 @@
     
     <string name="display_customization_phone_buttons">Phone button actions</string>
     <string name="phone_buttons_extra">system phone button actions</string>
+
+
+    <string name="language_settings_summary">System language options</string>
+    <string name="gesture_system_summary">swipe tap and button settings</string>
 </resources>
