@@ -18,15 +18,25 @@
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:settings="http://schemas.android.com/apk/res-auto"
     android:key="location_settings"
-    android:title="@string/location_settings_title"
+    android:title=" "
     settings:keywords="@string/keywords_location">
 
     <com.android.settingslib.widget.LayoutPreference
         android:key="location_animation"
+        android:order="-998"
         android:layout="@layout/location_animation" />
+
+ 
+   <!-- Header -->
+  <PreferenceCategory
+        android:title="Location"
+        android:order="-997"
+        android:layout="@layout/settings_title_header">
+  </PreferenceCategory>
         
     <PreferenceCategory
         android:key="recent_location_access"
+        android:layout="@layout/custom_preference_category2"
         android:title="@string/location_category_recent_location_access"
         settings:controller=
             "com.android.settings.location.RecentLocationAccessPreferenceController"/>
@@ -35,6 +45,7 @@
         android:key="recent_location_access_see_all_button"
         android:title="@string/location_recent_location_access_see_all"
         android:icon="@drawable/ic_chevron_right_24dp"
+        settings:layout="@layout/xd_pref_card_bot"
         android:fragment="com.android.settings.location.RecentLocationAccessSeeAllFragment"
         settings:controller="com.android.settings.location.RecentLocationAccessSeeAllButtonPreferenceController"
         settings:searchable="false"/>
@@ -48,6 +59,7 @@
             android:enabled="false"
             android:key="managed_profile_location_switch"
             android:selectable="true"
+            settings:layout="@layout/xd_pref_card_bot"
             android:title="@string/managed_profile_location_switch_title"
             settings:controller="com.android.settings.location.LocationForWorkPreferenceController"
             settings:forWork="true"
@@ -56,6 +68,7 @@
         <!-- This preference category gets removed if new_recent_location_ui is disabled -->
         <Preference
             android:key="app_level_permissions"
+            settings:layout="@layout/xd_pref_card_mid2"
             android:title="@string/location_app_level_permissions"
             settings:controller="com.android.settings.location.AppLocationPermissionPreferenceController">
             <intent android:action="android.intent.action.MANAGE_PERMISSION_APPS">
@@ -67,6 +80,7 @@
         <Preference
             android:fragment="com.android.settings.location.LocationServices"
             android:key="location_services"
+            settings:layout="@layout/xd_pref_card_bot"
             android:title="@string/location_services_preference_title"
             settings:controller="com.android.settings.location.LocationServicesPreferenceController"/>
 
@@ -76,5 +90,6 @@
         android:title="@string/location_settings_footer_general"
         android:key="location_footer"
         settings:searchable="false"
+        settings:layout="@layout/xd_pref_card_bot"
         settings:controller="com.android.settings.location.LocationSettingsFooterPreferenceController"/>
 </PreferenceScreen>
