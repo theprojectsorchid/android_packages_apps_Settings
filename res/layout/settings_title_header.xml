@@ -17,6 +17,7 @@
     android:layout_height="wrap_content"
     android:gravity="center_horizontal"
     android:paddingBottom="32dp"
-    android:textColor="?android:attr/textColorPrimary"
-    android:textSize="45dp"
+    android:background="@drawable/security_card"
+    android:textColor="?android:attr/colorAccent"
+    android:textSize="35dp"
     android:fontFamily="evolvesans-bold" />
