@@ -13716,6 +13716,6 @@
 
     <string name="security_settings_more">Additional Settings</string>
 
-    <string name="security_card_title">below are lock screen settings for your device. Each time that you turn on your device or wake up the screen, you'll be asked to unlock your device, usually with a PIN, pattern or password. On some devices, you can unlock with your fingerprint.Note these secure settings are user dependant</string>
-
+    <string name="security_card_title">Below are lock screen settings for your device, note device security is user dependant when settings are enabled</string>
+    <string name="security_card_summary">note device security is user dependant when settings are enabled</string>
 </resources>
