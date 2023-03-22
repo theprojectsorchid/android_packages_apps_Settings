@@ -10,17 +10,6 @@
     android:paddingEnd="15dp"
     android:paddingStart="18dp">
 
-    <ImageView
-        android:id="@android:id/icon"
-        android:padding="1.5dp" 
-        android:layout_width="@dimen/dashboard_icon_size"
-        android:layout_height="@dimen/dashboard_icon_size"
-        app:layout_constraintHeight_max="@dimen/op_control_avatar_size3"
-        app:layout_constraintWidth_max="@dimen/op_control_avatar_size3"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
     <LinearLayout
 	android:layout_height="match_parent"
         android:layout_width="match_parent"
