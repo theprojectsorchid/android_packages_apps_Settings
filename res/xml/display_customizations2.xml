@@ -17,15 +17,173 @@
 <PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:settings="http://schemas.android.com/apk/res/com.android.settings"
     android:key="display_customizations2"
-    android:title="">
+    android:title=" ">
+
+    <com.android.settingslib.widget.LayoutPreference
+        android:key="welcome_animation"
+        android:order="-998"
+        android:layout="@layout/welcome_animation3"/>
 
 
    <!-- Header -->
   <PreferenceCategory
-        android:title="Phone Button Options"
+        android:title="Advanced Details"
         android:order="-997"
         android:layout="@layout/settings_title_header">
   </PreferenceCategory>
-   
+
+    <com.android.settingslib.widget.TopIntroPreference
+        android:key="hardware_bubbles_desc"
+        android:title="@string/Hardware_bubble_setting_description"/>
  
+    <PreferenceCategory
+        android:key="model_info_category"
+        android:layout="@layout/custom_preference_category2"
+        android:selectable="false"
+        android:title="@string/hardware_mod_info">
+
+    <!-- Model -->
+    <!--<Preference
+        android:key="hardware_info_device_model"
+        android:title="@string/model_info"
+        android:summary="@string/summary_placeholder"
+        android:icon="@drawable/ic_devices_other"
+        android:selectable="false"
+        settings:controller="com.android.settings.deviceinfo.hardwareinfo.DeviceModelPreferenceController"
+        settings:enableCopying="true"/>-->
+
+    <!-- Platform -->
+    <!--<Preference
+        android:key="hardware_info_platform"
+        android:title="@string/platform_revision"
+        android:summary="@string/summary_placeholder"
+        android:icon="@drawable/ic_phone"
+        android:selectable="false"
+        settings:controller="com.android.settings.deviceinfo.hardwareinfo.PlatformRevisionPreferenceController"
+        settings:enableCopying="true"/>-->
+
+    <!-- Total RAM -->
+    <!--<Preference
+        android:key="hardware_info_ram"
+        android:title="@string/total_ram"
+        android:summary="@string/summary_placeholder"
+        android:selectable="false"
+        android:icon="@drawable/ic_phone_info"
+        settings:controller="com.android.settings.deviceinfo.hardwareinfo.TotalRAMPreferenceController"
+        settings:enableCopying="true"/>-->
+
+    <!-- SerialNumber -->
+    <Preference
+        android:key="hardware_info_device_serial"
+        android:title="@string/status_serial_number"
+        android:summary="@string/summary_placeholder"
+        android:selectable="true"
+        android:icon="@drawable/rr_device_model_icon"
+        settings:controller="com.android.settings.deviceinfo.hardwareinfo.SerialNumberPreferenceController"
+        settings:enableCopying="true"/>
+
+    <!-- Hardware revision -->
+    <Preference
+        android:key="hardware_info_device_revision"
+        android:title="@string/hardware_revision"
+        android:summary="@string/summary_placeholder"
+        android:selectable="false"
+        android:icon="@drawable/ic_dot_device_edit"       
+        settings:controller="com.android.settings.deviceinfo.hardwareinfo.HardwareRevisionPreferenceController"
+        settings:enableCopying="true"/>
+
+    </PreferenceCategory>
+    <PreferenceCategory
+        android:key="basic_info_category"
+        android:selectable="false"
+        android:layout="@layout/custom_preference_category2"
+        android:title="@string/hardware_net_info">
+
+    <!-- Phone number -->
+    <Preference
+        android:key="phone_number"
+        android:title="@string/status_number"
+        android:summary="@string/summary_placeholder"
+        android:selectable="false"
+         android:icon="@drawable/ic_phone"  
+        settings:controller="com.android.settings.deviceinfo.PhoneNumberPreferenceController"
+        settings:enableCopying="true"/>
+    
+    <!-- SIM status -->
+    <Preference
+        android:key="sim_status"
+        android:title="@string/sim_status_title"
+        settings:keywords="@string/keywords_sim_status"
+        android:icon="@drawable/ic_sim_card"
+        android:summary="@string/summary_placeholder"
+        settings:enableCopying="true"/>
+
+    <!-- IMEI -->
+    <Preference
+        android:key="imei_info"
+        android:title="@string/status_imei"
+        android:summary="@string/summary_placeholder"
+        settings:keywords="@string/keywords_imei_info"
+        android:icon="@drawable/rr_imei_info_icon_2"
+        settings:enableCopying="true"
+        settings:controller="com.android.settings.deviceinfo.imei.ImeiInfoPreferenceController"/>
+
+    </PreferenceCategory>
+
+
+    <PreferenceCategory
+        android:key="identifiers_info_category"
+        android:selectable="false"
+     	android:layout="@layout/custom_preference_category2"       
+        android:title="@string/hardware_id_info">
+
+ <!-- Radio info -->
+        <Preference
+            android:title="@string/radio_info_title"
+            android:icon="@drawable/rr_imei_info_icon_2"   
+            android:summary="@string/radio_info_summary"
+            android:key="radio_info_settings">
+            <intent android:action="android.intent.action.MAIN"
+                    android:targetPackage="com.android.phone"
+                    android:targetClass="com.android.phone.settings.RadioInfo" />
+         </Preference>
+
+    <!--IP address -->
+    <Preference
+        android:key="wifi_ip_address"
+        android:title="@string/wifi_ip_address"
+        android:summary="@string/summary_placeholder"
+        android:icon="@drawable/ic_wifi_off"
+        android:selectable="true"
+        settings:enableCopying="true"/>
+
+    <!-- Wi-Fi MAC address -->
+    <Preference
+        android:key="saved_accesspoints_wifi_mac_address"
+        android:title="@string/status_wifi_mac_address"
+        android:summary="@string/view_saved_network"
+        android:icon="@drawable/ic_wifi_signal_1"
+        android:fragment="com.android.settings.wifi.savedaccesspoints2.SavedAccessPointsWifiSettings2"
+        settings:enableCopying="true"/>
+
+    <!-- Factory Wi-Fi MAC address -->
+    <Preference
+        android:key="wifi_mac_address"
+        android:title="@string/status_device_wifi_mac_address"
+        android:summary="@string/summary_placeholder"
+        android:selectable="true"
+        android:icon="@drawable/ic_wifi_signal_2"
+        settings:enableCopying="true"/>
+
+
+    <!-- Bluetooth address -->
+    <Preference
+        android:key="bt_address"
+        android:title="@string/status_bt_address"
+        android:summary="@string/summary_placeholder"
+        android:selectable="true"
+        android:icon="@drawable/ic_bluetooth_disabled"
+        settings:enableCopying="true"/>
+
+    </PreferenceCategory>
 </PreferenceScreen>
