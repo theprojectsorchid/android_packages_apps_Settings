@@ -45,7 +45,7 @@
         android:key="recent_location_access_see_all_button"
         android:title="@string/location_recent_location_access_see_all"
         android:icon="@drawable/ic_chevron_right_24dp"
-        settings:layout="@layout/xd_pref_card_bot"
+        settings:layout="@layout/xd_pref_card_top"
         android:fragment="com.android.settings.location.RecentLocationAccessSeeAllFragment"
         settings:controller="com.android.settings.location.RecentLocationAccessSeeAllButtonPreferenceController"
         settings:searchable="false"/>
@@ -68,7 +68,7 @@
         <!-- This preference category gets removed if new_recent_location_ui is disabled -->
         <Preference
             android:key="app_level_permissions"
-            settings:layout="@layout/xd_pref_card_mid2"
+            settings:layout="@layout/xd_pref_card_mid"
             android:title="@string/location_app_level_permissions"
             settings:controller="com.android.settings.location.AppLocationPermissionPreferenceController">
             <intent android:action="android.intent.action.MANAGE_PERMISSION_APPS">
@@ -85,11 +85,10 @@
             settings:controller="com.android.settings.location.LocationServicesPreferenceController"/>
 
     </PreferenceCategory>
-
+<!--
     <com.android.settingslib.widget.FooterPreference
         android:title="@string/location_settings_footer_general"
         android:key="location_footer"
         settings:searchable="false"
-        settings:layout="@layout/xd_pref_card_bot"
-        settings:controller="com.android.settings.location.LocationSettingsFooterPreferenceController"/>
+        settings:controller="com.android.settings.location.LocationSettingsFooterPreferenceController"/>-->
 </PreferenceScreen>
