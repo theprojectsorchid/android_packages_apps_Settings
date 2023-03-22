@@ -20,7 +20,7 @@ import android.os.Bundle;
 import com.android.settings.SettingsPreferenceFragment;
 import com.android.settings.R;
 
-public class DisplayCustomizations extends SettingsPreferenceFragment {
+public class DisplayCustomizations5 extends SettingsPreferenceFragment {
 
     private static final String TAG = "Display Customizations5";
 
