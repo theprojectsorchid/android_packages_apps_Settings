@@ -13717,5 +13717,9 @@
     <string name="security_settings_more">Additional Settings</string>
 
     <string name="security_card_title">Below are lock screen settings for your device, note device security is user dependant when settings are enabled</string>
-    <string name="security_card_summary">note device security is user dependant when settings are enabled</string>
+    <string name="security_card_summary">Note device security is user dependant when settings are enabled</string>
+    <string name="security_bubble_setting_description">Below are lock screen settings for your device, these options are device dependent including fingerprint, face unlock and other  pin and other biometric services</string>
+    <string name="security_bubble_setting_note">Note device security is user dependant when these settings are enabled</string>
+    <string name="security_bubble_setting_admin">device administration and encryption options </string>
+
 </resources>
