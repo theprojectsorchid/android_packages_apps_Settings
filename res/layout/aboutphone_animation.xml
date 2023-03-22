@@ -16,13 +16,15 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
+    android:layout_marginBottom="10dp"
     android:gravity="center"
+    android:background="#AF90D7"
     android:orientation="horizontal" >
 
     <com.airbnb.lottie.LottieAnimationView
-        android:id="@+id/aboutphone_lottie"
+        android:id="@+id/about_phone_lottie"
         android:layout_width="match_parent"
-        android:layout_height="170dp"
+        android:layout_height="300dp"
         android:layout_gravity="center"
         android:clickable="false"
         app:lottie_rawRes="@raw/aboutphone"
