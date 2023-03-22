@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+     Copyright (C) 2020 Wave-OS
+
+     Licensed under the Apache License, Version 2.0 (the "License");
+     you may not use this file except in compliance with the License.
+     You may obtain a copy of the License at
+
+          http://www.apache.org/licenses/LICENSE-2.0
+
+     Unless required by applicable law or agreed to in writing, software
+     distributed under the License is distributed on an "AS IS" BASIS,
+     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     See the License for the specific language governing permissions and
+     limitations under the License.
+-->
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:settings="http://schemas.android.com/apk/res/com.android.settings"
+    android:key="display_customizations3"
+    android:title=" ">
+
+    <com.android.settingslib.widget.LayoutPreference
+        android:key="welcome_animation"
+        android:order="-998"
+        android:layout="@layout/welcome_animation3"/>
+
+
+   <!-- Header -->
+  <PreferenceCategory
+        android:title="Software Details"
+        android:order="-997"
+        android:layout="@layout/settings_title_header">
+  </PreferenceCategory>
+
+    <!-- orchidosrom grid -->
+    <PreferenceScreen
+        android:key="HardwareGrid"
+        android:enabled="false"
+        android:order="-180"    
+        android:layout="@layout/Hardware_Grid"/>   
+
+
+    <Preference
+        android:key="xd_build_status"
+        android:title="@string/xd_build_status"
+        android:summary="@string/xd_summary_placeholder"
+        android:icon="@drawable/xd_build"
+        android:order="-170"    
+        settings:controller="com.android.settings.deviceinfo.firmwareversion.BuildMaintainerPreferenceController"
+        settings:layout="@layout/xd_pref_card_sin-accent2"/>
+
+</PreferenceScreen>
