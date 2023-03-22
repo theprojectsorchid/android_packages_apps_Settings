@@ -53,14 +53,6 @@
         android:key="security_category"
         android:title="@string/lock_settings_title">
 
-
-        <Preference
-            android:key="security_card"
-            settings:layout="@layout/security_card"
-            android:title="@string/security_card_title"
-            android:summary="@string/security_card_summary" />
-
-
         <com.android.settings.widget.GearPreference
             android:key="unlock_set_or_change"
             settings:layout="@layout/xd_pref_card_top"                     
@@ -88,6 +80,14 @@
             android:summary="@string/summary_placeholder"
            settings:layout="@layout/xd_pref_card_mid2"                     
             settings:keywords="@string/keywords_biometric_settings" />
+
+            
+        <Preference
+            android:key="security_card"
+            settings:layout="@layout/security_card"
+            android:title="@string/security_card_summary"
+            android:summary="@string/security_card_summary" />
+
     </PreferenceCategory>
 
     <PreferenceCategory
