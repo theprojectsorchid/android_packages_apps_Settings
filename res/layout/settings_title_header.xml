@@ -19,5 +19,5 @@
     android:paddingBottom="32dp"
     android:background="@drawable/security_card"
     android:textColor="?android:attr/colorAccent"
-    android:textSize="35dp"
+    android:textSize="20dp"
     android:fontFamily="evolvesans-bold" />
