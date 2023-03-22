@@ -41,6 +41,8 @@ import androidx.annotation.VisibleForTesting;
 import androidx.preference.Preference;
 import androidx.preference.PreferenceScreen;
 
+import com.android.settings.R;
+
 import com.android.settings.core.PreferenceControllerMixin;
 import com.android.settings.core.SettingsBaseActivity;
 import com.android.settingslib.core.AbstractPreferenceController;
@@ -127,6 +129,7 @@ public class BrightnessLevelPreferenceController extends AbstractPreferenceContr
     public void displayPreference(PreferenceScreen screen) {
         super.displayPreference(screen);
         mPreference = screen.findPreference(KEY_BRIGHTNESS);
+        mPreference.setLayoutResource(R.layout.xd_pref_card_top);
     }
 
     @Override
