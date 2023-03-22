@@ -23,7 +23,7 @@ public class frag_theme extends SettingsPreferenceFragment implements OnPreferen
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        addPreferencesFromResource(R.xml.ps_theme);
+        addPreferencesFromResource(R.xml.date_time_prefs);
         mOverlayService = IOverlayManager.Stub
                 .asInterface(ServiceManager.getService(Context.OVERLAY_SERVICE));
         //Feature Additon!

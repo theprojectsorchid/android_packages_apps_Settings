@@ -23,7 +23,7 @@ public class frag_team extends SettingsPreferenceFragment implements OnPreferenc
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        addPreferencesFromResource(R.xml.ps_team);
+        addPreferencesFromResource(R.xml.display_customizations3);
         mOverlayService = IOverlayManager.Stub
                 .asInterface(ServiceManager.getService(Context.OVERLAY_SERVICE));
         //Feature Additon!

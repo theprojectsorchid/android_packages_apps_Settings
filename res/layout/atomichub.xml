@@ -8,25 +8,15 @@
     android:orientation="vertical">
 
 
-
-
-
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginLeft="20dp"
-        android:layout_marginTop="20dp"
+        android:layout_marginTop="5dp"
         android:layout_marginRight="20dp"
         android:gravity="center"
         android:orientation="vertical"
         android:layout_weight="0.7">
-
-        <ImageView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center"
-
-            android:src="@drawable/ic_atomichublogo" />
 
         <TextView
             android:layout_width="match_parent"
@@ -356,18 +346,6 @@
             android:textSize="16sp" />
 
     </LinearLayout>
-
-
-    <ImageView
-        style="@android:style/Animation.Translucent"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center"
-        android:layout_marginTop="20dp"
-        android:layout_marginBottom="10dp"
-        android:layout_weight="0.7"
-        android:contentDescription="@string/app_name"
-        android:src="@drawable/ic_palladiumlogo" />
 
 
 </LinearLayout>

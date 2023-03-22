@@ -23,7 +23,7 @@ public class frag_ui extends SettingsPreferenceFragment implements OnPreferenceC
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        addPreferencesFromResource(R.xml.ps_ui);
+        addPreferencesFromResource(R.xml.display_customizations2);
         mOverlayService = IOverlayManager.Stub
                 .asInterface(ServiceManager.getService(Context.OVERLAY_SERVICE));
         //Feature Additon!
