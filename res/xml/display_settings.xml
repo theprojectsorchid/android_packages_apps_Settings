@@ -23,26 +23,54 @@
 
    <com.android.settingslib.widget.LayoutPreference
         android:key="display_animation"
+        android:order="-999"
         android:layout="@layout/display_animation" />
         
+   <!-- Header -->
+  <PreferenceCategory
+        android:title="Display Settings"
+        android:order="-998"
+        android:layout="@layout/settings_title_header">
+  </PreferenceCategory>
+
+    
     <PreferenceCategory
+        android:layout="@layout/custom_preference_category2"
         android:title="@string/category_name_brightness">
 
         <com.android.settingslib.RestrictedPreference
             android:key="brightness"
             android:title="@string/brightness"
+            settings:layout="@layout/xd_pref_card_top"              
             settings:keywords="@string/keywords_display_brightness_level"
             settings:useAdminDisabledSummary="true"
             settings:userRestriction="no_config_brightness"/>
 
         <com.android.settings.display.AutoBrightnessPreference
             android:key="auto_brightness_entry"
+            settings:layout="@layout/xd_pref_card_bot"              
             android:title="@string/auto_brightness_title"
             android:fragment="com.android.settings.display.AutoBrightnessSettings"
             settings:controller="com.android.settings.display.AutoBrightnessPreferenceController"/>
+   
+        <com.android.settings.display.darkmode.DarkModePreference
+            android:key="dark_ui_mode"
+            android:title="@string/dark_ui_mode"
+            settings:layout="@layout/xd_pref_card_mid"              
+            android:fragment="com.android.settings.display.darkmode.DarkModeSettingsFragment"
+            android:widgetLayout="@null"
+            settings:widgetLayout="@null"
+            settings:controller="com.android.settings.display.DarkUIPreferenceController"
+            settings:keywords="@string/keywords_dark_ui_mode"/>
+
+   
     </PreferenceCategory>
 
+
+
+
     <PreferenceCategory
+        android:layout="@layout/custom_preference_category2"
         android:title="@string/category_name_lock_display">
 
         <Preference
@@ -55,26 +83,20 @@
         <com.android.settingslib.RestrictedPreference
             android:key="screen_timeout"
             android:title="@string/screen_timeout"
+            settings:layout="@layout/xd_pref_card_mid2"              
             android:summary="@string/summary_placeholder"
             android:fragment="com.android.settings.display.ScreenTimeoutSettings"
             settings:controller="com.android.settings.display.ScreenTimeoutPreferenceController"/>
     </PreferenceCategory>
 
     <PreferenceCategory
+            android:layout="@layout/custom_preference_category2"
         android:title="@string/category_name_appearance">
-
-        <com.android.settings.display.darkmode.DarkModePreference
-            android:key="dark_ui_mode"
-            android:title="@string/dark_ui_mode"
-            android:fragment="com.android.settings.display.darkmode.DarkModeSettingsFragment"
-            android:widgetLayout="@null"
-            settings:widgetLayout="@null"
-            settings:controller="com.android.settings.display.DarkUIPreferenceController"
-            settings:keywords="@string/keywords_dark_ui_mode"/>
 
         <Preference
             android:key="font_size"
             android:title="@string/title_font_size"
+            settings:layout="@layout/xd_pref_card_top"              
             android:fragment="com.android.settings.display.ToggleFontSizePreferenceFragment"
             settings:controller="com.android.settings.display.FontSizePreferenceController"
             settings:keywords="@string/keywords_font_size"/>
@@ -82,16 +104,19 @@
         <com.android.settings.display.ScreenZoomPreference
             android:key="display_settings_screen_zoom"
             android:title="@string/screen_zoom_title"
+            settings:layout="@layout/xd_pref_card_bot"              
             android:fragment="com.android.settings.display.ScreenZoomSettings"
             settings:keywords="@string/keywords_display_size"/>
     </PreferenceCategory>
 
     <PreferenceCategory
+        android:layout="@layout/custom_preference_category2"
         android:title="@string/category_name_color">
 
         <com.android.settings.widget.PrimarySwitchPreference
             android:key="night_display"
             android:title="@string/night_display_title"
+            settings:layout="@layout/xd_pref_card_mid2"              
             android:fragment="com.android.settings.display.NightDisplaySettings"
             settings:controller="com.android.settings.display.NightDisplayPreferenceController"
             settings:keywords="@string/keywords_display_night_display"/>
@@ -99,23 +124,27 @@
         <Preference
             android:key="color_mode"
             android:title="@string/color_mode_title"
+            settings:layout="@layout/xd_pref_card_mid2"              
             android:fragment="com.android.settings.display.ColorModePreferenceFragment"
             settings:controller="com.android.settings.display.ColorModePreferenceController"
             settings:keywords="@string/keywords_color_mode"/>
     </PreferenceCategory>
 
     <PreferenceCategory
-        android:title="@string/category_name_display_controls">
+            android:layout="@layout/custom_preference_category2"
+            android:title="@string/category_name_display_controls">
 
         <SwitchPreference
             android:key="auto_rotate"
             android:title="@string/accelerometer_title"
             settings:keywords="@string/keywords_auto_rotate"
+            settings:layout="@layout/xd_pref_card_mid2"              
             settings:controller="com.android.settings.display.AutoRotatePreferenceController"/>
 
         <SwitchPreference
             android:key="display_white_balance"
             android:title="@string/display_white_balance_title"
+            settings:layout="@layout/xd_pref_card_mid2"              
             android:summary="@string/display_white_balance_summary"
             settings:controller="com.android.settings.display.DisplayWhiteBalancePreferenceController"/>
 
@@ -136,10 +165,10 @@
             android:title="@string/show_operator_name_title"
             android:summary="@string/show_operator_name_summary"/>
 
-        <Preference
+        <!--<Preference
             android:key="screensaver"
             android:title="@string/screensaver_settings_title"
-            android:fragment="com.android.settings.dream.DreamSettings"/>
+            android:fragment="com.android.settings.dream.DreamSettings"/>-->
 
         <SwitchPreference
             android:key="camera_gesture"
@@ -152,6 +181,7 @@
 
         <SwitchPreference
             android:key="tap_to_wake"
+            settings:layout="@layout/xd_pref_card_mid2"              
             android:title="@string/tap_to_wake"
             android:summary="@string/tap_to_wake_summary"/>
 
@@ -167,20 +197,22 @@
     </PreferenceCategory>
 
     <PreferenceCategory
-        android:title="@string/customization_category_title">
+            android:layout="@layout/custom_preference_category2"
+            android:title="@string/customization_category_title">
 
 	<Preference
             android:key="systemui_tuner_statusbar"
+            settings:layout="@layout/xd_pref_card_mid2"              
             android:title="@string/statusbar_items_title" >
             <intent android:action="android.intent.action.MAIN"
                 android:targetPackage="com.android.systemui"
                 android:targetClass="com.android.systemui.tuner.StatusbarItemsActivity" />
         </Preference>
 
-        <com.arrow.support.preferences.SystemSettingSwitchPreference
+        <!--<com.arrow.support.preferences.SystemSettingSwitchPreference
             android:key="qs_footer_data_usage"
             android:title="@string/qs_footer_datausage_title"
             android:summary="@string/qs_footer_datausage_summary"
-            android:defaultValue="false" />
+            android:defaultValue="false" />-->
     </PreferenceCategory>
 </PreferenceScreen>
