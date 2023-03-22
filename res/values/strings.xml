@@ -4535,7 +4535,7 @@
 
     <!-- Lock Pattern settings -->
     <!-- Security & location settings screen, header -->
-    <string name="lock_settings_title">Device security</string>
+    <string name="lock_settings_title">Lockscreen Settings</string>
     <!-- Security & location settings screen, setting option name -->
     <string name="lockpattern_change_lock_pattern_label">Change unlock pattern</string>
     <!-- Security & location settings screen, change unlock pattern screen instruction when the user chooses "Change unlock pattern".  We first ask the user toe nter the current pattern, and this is the message seen -->
@@ -13713,4 +13713,9 @@
 
     <string name="language_settings_summary">System language options</string>
     <string name="gesture_system_summary">swipe tap and button settings</string>
+
+    <string name="security_settings_more">Additional Settings</string>
+
+    <string name="security_card_title">below are lock screen settings for your device. Each time that you turn on your device or wake up the screen, you'll be asked to unlock your device, usually with a PIN, pattern or password. On some devices, you can unlock with your fingerprint.Note these secure settings are user dependant</string>
+
 </resources>
