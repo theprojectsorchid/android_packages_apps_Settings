@@ -25,8 +25,7 @@
         android:key="flexo_lottie_animation"
         android:layout="@layout/flexoos_card"
         android:selectable="true"
-        android:fragment="com.android.settings.deviceinfo.aboutphone.MyDeviceInfoFragment"
-  settings:controller="com.android.settings.deviceinfo.aboutphone.TopLevelAboutDevicePreferenceController"
+        android:fragment="com.android.settings.awaken.fragments.DisplayCustomizations"
         android:order="-190" />
 <!--
    <com.android.settingslib.widget.LayoutPreference

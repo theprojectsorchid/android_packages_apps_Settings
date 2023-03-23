@@ -31,29 +31,12 @@
 
    <!-- Header -->
   <PreferenceCategory
-        android:title="Device Details"
+        android:title="More Device Details"
         android:order="-997"
         android:layout="@layout/settings_title_header">
   </PreferenceCategory>
 
     
-    <!-- orchidosrom grid -->
-    <PreferenceScreen
-        android:key="HardwareGrid"
-        android:enabled="false"
-        android:order="-180"    
-        android:layout="@layout/Hardware_Grid"/>   
-
-
-    <Preference
-        android:key="xd_build_status"
-        android:title="@string/xd_build_status"
-        android:summary="@string/xd_summary_placeholder"
-        android:icon="@drawable/xd_build"
-        android:order="-170"    
-        settings:controller="com.android.settings.deviceinfo.firmwareversion.BuildMaintainerPreferenceController"
-        settings:layout="@layout/xd_pref_card_sin-accent2"/>
-
     <com.android.settingslib.widget.TopIntroPreference
         android:key="hardware_bubbles_desc"
         android:title="@string/Hardware_bubble_setting_description"/>

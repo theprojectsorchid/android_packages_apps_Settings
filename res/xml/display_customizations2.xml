@@ -18,14 +18,47 @@
     xmlns:settings="http://schemas.android.com/apk/res/com.android.settings"
     android:key="display_customizations2"
     android:title="">
-
-
    <!-- Header -->
   <PreferenceCategory
-        android:title="Phone Button Options"
+        android:title="About Us"
         android:order="-997"
         android:layout="@layout/settings_title_header">
   </PreferenceCategory>
-   
+
+     <!-- Firmware information -->
+
+        <com.android.settingslib.widget.LayoutPreference
+            android:key="firmware_android_category"
+            android:layout="@layout/firmware_settings_animation" />
+
+
+        <com.android.settingslib.widget.TopIntroPreference
+            android:key="notification_bubbles_desc"
+            android:title="@string/firmware_bubble_setting_description"/>
+
+     <PreferenceCategory
+              android:key="firmware_about"
+     	      android:layout="@layout/custom_preference_category2"       
+              android:title="@string/firmware_about_info" >     
+       
+        <Preference
+            android:title="@string/firmware_about_us_info"
+            android:summary="@string/firmware_about_us_info_summary"
+            android:icon="@drawable/ic_website">
+        <intent
+            android:action="android.intent.action.VIEW"
+            android:data="https://github.com/theorchidproject" />
+        </Preference>
+
+    <Preference
+        android:title="@string/firmware_group_info"
+        android:summary="@string/firmware_group_summary"
+        android:icon="@drawable/ic_telegram">
+        <intent
+            android:action="android.intent.action.VIEW"
+            android:data="https://t.me/teammodmiirequests" />
+    </Preference>
+</PreferenceCategory>
+
  
 </PreferenceScreen>
