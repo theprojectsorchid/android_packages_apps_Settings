@@ -115,6 +115,8 @@ public class PanelSlicesAdapter
     public class SliceRowViewHolder extends RecyclerView.ViewHolder
             implements DividerItemDecoration.DividedViewHolder {
 
+        private boolean mDividerAllowedAbove = false;
+
         @VisibleForTesting
         final SliceView sliceView;
         @VisibleForTesting
