@@ -293,20 +293,20 @@
     <style name="TextAppearance.Small" parent="@android:style/TextAppearance.DeviceDefault.Small"/>
     <style name="TextAppearance.Switch"
            parent="@android:style/TextAppearance.DeviceDefault.Widget.ActionBar.Title">
-        <item name="android:textSize">16sp</item>
+        <item name="android:textSize">2sp</item>
     </style>
 
     <style name="TextAppearance.CategoryTitle"
            parent="@*android:style/TextAppearance.DeviceDefault.Body2">
         <item name="android:textAllCaps">true</item>
-        <item name="android:textSize">11sp</item>
+        <item name="android:textSize">8sp</item>
         <!-- 0.8 Spacing, 0.8/11 = 0.072727273 -->
         <item name="android:letterSpacing">0.072727273</item>
     </style>
 
     <style name="TextAppearance.SuggestionTitle"
            parent="@*android:style/TextAppearance.DeviceDefault.Subhead">
-        <item name="android:textSize">16sp</item>
+        <item name="android:textSize">12sp</item>
     </style>
 
     <style name="TextAppearance.SuggestionSummary" parent="TextAppearance.Small">
