@@ -13649,4 +13649,13 @@
     <!-- Display Customizations Fragment 1 to 5 -->
     <string name="display_customization">custom page</string>
     
+    <!-- bluetooth recieved -->
+    <string name="bluetooth_show_files_received_via_bluetooth">bluetooth recieved</string>
+    
+    
+    <!-- Display Customizations Fragment 1 to 5 -->
+    <string name="usercard_summary">custom page</string>
+    
+    <!-- bluetooth recieved -->
+    <string name="wellbeing_title">bluetooth recieved</string>
 </resources>
