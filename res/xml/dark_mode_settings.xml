@@ -30,13 +30,14 @@
    <!-- Header -->
   <PreferenceCategory
         android:title="Dark mode"
-        android:order="-997"
+        android:order="-996"
         android:layout="@layout/settings_title_header">
   </PreferenceCategory>
 
 
           <com.android.settingslib.widget.TopIntroPreference
             android:key="dark_illustration_desc"
+            android:order="-995"
             android:title="@string/dark_ui_text"/>
             
 

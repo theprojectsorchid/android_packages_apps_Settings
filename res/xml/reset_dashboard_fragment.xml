@@ -18,7 +18,20 @@
 <PreferenceScreen
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:settings="http://schemas.android.com/apk/res-auto"
-    android:title="@string/reset_dashboard_title">
+    android:title=" ">
+
+
+    <com.android.settingslib.widget.LayoutPreference
+        android:key="privacy_animation"
+        android:order="-997"
+        android:layout="@layout/privacy_animation"/>
+
+   <!-- Header -->
+  <PreferenceCategory
+        android:title="reset options"
+        android:order="-996"
+        android:layout="@layout/settings_title_header">
+  </PreferenceCategory>
 
     <!-- Network reset -->
     <com.android.settingslib.RestrictedPreference

@@ -28,7 +28,7 @@
    <!-- Header -->
   <PreferenceCategory
         android:title="Device Sim options"
-        android:order="-997"
+        android:order="-996"
         android:layout="@layout/settings_title_header">
   </PreferenceCategory>
 

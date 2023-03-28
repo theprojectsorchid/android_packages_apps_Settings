@@ -18,7 +18,7 @@
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:settings="http://schemas.android.com/apk/res-auto"
     android:key="system_dashboard_screen"
-    android:title="@string/header_category_system">
+    android:title=" ">
 
     <com.android.settingslib.widget.LayoutPreference
         android:key="system_animation"

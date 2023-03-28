@@ -20,12 +20,13 @@
     android:key="user_settings_screen"
     android:title=" ">
 
-    <com.android.settingslib.widget.LayoutPreference
+    <com.android.settingslib.widget.IllustrationPreference
         android:key="multiple_user_animation"
-        android:layout="@layout/multiple_user_animation"
-        android:order="-999"/>
+        settings:searchable="false"
+        android:order="-999"
+        app:lottie_rawRes="@raw/multiple_user_animation"/>
 
-        
+  
    <!-- Header -->
   <PreferenceCategory
         android:title="multiple user options"
@@ -35,6 +36,7 @@
         
     <com.android.settingslib.widget.TopIntroPreference
         android:key="multiuser_top_intro"
+        android:order="-995"
         android:title="@string/user_settings_footer_text"
         settings:controller="com.android.settings.users.MultiUserTopIntroPreferenceController"/>
 

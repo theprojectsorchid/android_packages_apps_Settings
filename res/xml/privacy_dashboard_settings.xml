@@ -24,7 +24,7 @@
 
     <com.android.settingslib.widget.LayoutPreference
         android:key="privacy_animation"
-        android:order="-996"
+        android:order="-997"
         android:layout="@layout/privacy_animation"/>
 
    <!-- Header -->

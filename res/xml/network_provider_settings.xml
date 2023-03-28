@@ -22,12 +22,13 @@
 
 
        <com.android.settingslib.widget.LayoutPreference
-        android:key="network_internet_animation"
+        android:key="network_internet_animation"        
+        android:order="-998"
         android:layout="@layout/network_internet_animation" /> 
 
    <!-- Header -->
   <PreferenceCategory
-        android:title="Internet features"
+        android:title="Internet"
         android:order="-997"
         android:layout="@layout/settings_title_header">
   </PreferenceCategory>

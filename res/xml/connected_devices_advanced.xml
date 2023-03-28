@@ -16,7 +16,9 @@
 
 <PreferenceScreen
     xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:settings="http://schemas.android.com/apk/res-auto" >
+    xmlns:settings="http://schemas.android.com/apk/res-auto" 
+    android:title=" ">
+
  
  <com.android.settingslib.widget.LayoutPreference
         android:key="connected_pref_animation"
@@ -25,7 +27,7 @@
         
    <!-- Header -->
   <PreferenceCategory
-        android:title="More Connection options"
+        android:title="Advanced options"
         android:order="-997"
         android:layout="@layout/settings_title_header">
   </PreferenceCategory>
