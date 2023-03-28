@@ -16,13 +16,21 @@
 
 <PreferenceScreen
     xmlns:android="http://schemas.android.com/apk/res/android"
-    android:title="@string/battery_style_category_title"
+    android:title=" "
     xmlns:settings="http://schemas.android.com/apk/res/com.android.settings">
 
-  <com.android.settingslib.widget.LayoutPreference
+    <com.android.settingslib.widget.IllustrationPreference
         android:key="statusbar_battery_animation"
-        android:layout="@layout/statusbar_battery_animation"
-        android:order="-999"/>
+        settings:searchable="false"         
+        android:order="-999"       
+        app:lottie_rawRes="@raw/statusbar_battery"/>
+
+   <!-- Header -->
+  <PreferenceCategory
+        android:title="Statusbar settings"
+        android:order="-997"
+        android:layout="@layout/settings_title_header">
+  </PreferenceCategory>
 
 
     <!-- Status bar battery customizations -->

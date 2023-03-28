@@ -20,15 +20,17 @@
     android:key="accessibility_text_and_display"
     android:persistent="false"
     android:title=" ">
+        <com.android.settingslib.widget.IllustrationPreference
+        android:key="captions_preview"
+        android:persistent="false"
+        android:order="-999"
+        android:selectable="false"
+        settings:lottie_rawRes="@raw/display_accessibility"
+        settings:searchable="false" />
     
-    
-  <com.android.settingslib.widget.LayoutPreference
-        android:key="display_accessibility_animation"
-        android:layout="@layout/display_accessibility_animation" />
-
    <!-- Header -->
   <PreferenceCategory
-        android:title="Accessibility Display"
+        android:title="Display Extras"
         android:layout="@layout/settings_title_header">
   </PreferenceCategory>
 
