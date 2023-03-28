@@ -20,7 +20,22 @@
     xmlns:settings="http://schemas.android.com/apk/res-auto"
     android:key="zen_mode_messages_settings_page"
     settings:searchable="false"
-    android:title="@string/zen_mode_messages_title" >
+    android:title=" " >
+
+
+    <com.android.settingslib.widget.IllustrationPreference
+        android:key="multiple_user_animation"
+        settings:searchable="false"
+        android:order="-999"
+        app:lottie_rawRes="@raw/multiple_user_animation"/>
+
+  
+   <!-- Header -->
+  <PreferenceCategory
+        android:title="Message"
+        android:order="-997"
+        android:layout="@layout/settings_title_header">
+  </PreferenceCategory>
 
     <PreferenceCategory
         android:key="zen_mode_settings_category_messages"

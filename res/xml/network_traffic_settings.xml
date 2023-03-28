@@ -15,14 +15,27 @@
      limitations under the License.
 -->
 <PreferenceScreen
-    android:title="@string/network_traffic_title"
+    android:title=" "
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:settings="http://schemas.android.com/apk/res/com.android.settings">
 
+   <com.android.settingslib.widget.LayoutPreference
+        android:key="data_saver_animation"
+        android:order="-999"
+        android:layout="@layout/data_saver_animation" />
+
     <com.arrow.support.preferences.SystemSettingMainSwitchPreference
         android:key="network_traffic_state"
+        android:order="-997"
         android:title="@string/network_traffic_state_title"
         android:defaultValue="false" />
+
+  <!-- Header -->
+  <PreferenceCategory
+        android:title="Network traffic"
+        android:order="-996"
+        android:layout="@layout/settings_title_header">
+  </PreferenceCategory>
 
     <PreferenceCategory
         android:title="@string/network_options_title">

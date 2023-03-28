@@ -18,8 +18,23 @@
 <PreferenceScreen
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:settings="http://schemas.android.com/apk/res-auto"
-    android:title="@string/zen_mode_restrict_notifications_title">
+    android:title=" ">
 
+
+    <com.android.settingslib.widget.IllustrationPreference
+        android:key="multiple_user_animation"
+        settings:searchable="false"
+        android:order="-999"
+        app:lottie_rawRes="@raw/multiple_user_animation"/>
+
+  
+   <!-- Header -->
+  <PreferenceCategory
+        android:title="Hide notifications"
+        android:order="-997"
+        android:layout="@layout/settings_title_header">
+  </PreferenceCategory>
+  
     <PreferenceCategory
         android:key="restrict_category"
         android:title="@string/zen_mode_restrict_notifications_category">
