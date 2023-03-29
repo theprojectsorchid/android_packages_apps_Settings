@@ -16,21 +16,5 @@
   -->
 
 <PreferenceScreen
-    xmlns:android="http://schemas.android.com/apk/res/android"    
-    xmlns:settings="http://schemas.android.com/apk/res-auto"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    android:title=" " />
-
-    
-        <com.android.settingslib.widget.IllustrationPreference
-            android:key="battery_animation"
-            settings:searchable="false"
-            android:order="-999"
-            app:lottie_rawRes="@raw/battery_animation"/>
-
-   <!-- Header -->
-  <PreferenceCategory
-        android:title="Vibrate for calls"
-        android:order="-997"
-        android:layout="@layout/settings_title_header">
-  </PreferenceCategory>
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:title="@string/vibrate_when_ringing_title" />

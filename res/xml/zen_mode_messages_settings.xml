@@ -19,6 +19,7 @@
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:settings="http://schemas.android.com/apk/res-auto"
     android:key="zen_mode_messages_settings_page"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
     settings:searchable="false"
     android:title=" " >
 
