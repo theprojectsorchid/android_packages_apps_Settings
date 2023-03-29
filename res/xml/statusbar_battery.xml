@@ -15,7 +15,8 @@
 -->
 
 <PreferenceScreen
-    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:android="http://schemas.android.com/apk/res/android"    
+     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:title=" "
     xmlns:settings="http://schemas.android.com/apk/res/com.android.settings">
 

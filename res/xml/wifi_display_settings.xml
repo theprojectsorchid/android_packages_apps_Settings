@@ -17,9 +17,9 @@
 <PreferenceScreen
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:settings="http://schemas.android.com/apk/res-auto"
+    xmlns:app="http://schemas.android.com/apk/res-auto"    
     android:title=" "
     settings:keywords="@string/keywords_display_cast_screen">
-    android:title=" " >
 
 
     <com.android.settingslib.widget.IllustrationPreference
