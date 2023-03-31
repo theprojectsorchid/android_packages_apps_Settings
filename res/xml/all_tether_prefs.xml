@@ -19,7 +19,7 @@
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:settings="http://schemas.android.com/apk/res-auto"
     android:key="all_tether_prefs_screen"
-    android:title="@string/tether_settings_title_all"
+    android:title=" "
     settings:searchable="false">
 
     <com.android.settingslib.widget.LayoutPreference
@@ -28,8 +28,8 @@
         android:order="-999" />
 <!-- Header -->
   <PreferenceCategory
-        android:title="Connection settings"
-         android:order="-999"
+        android:title="Hotspot"
+         android:order="-998"
         android:layout="@layout/settings_title_header">
   </PreferenceCategory>
         

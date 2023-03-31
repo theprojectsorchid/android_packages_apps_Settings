@@ -19,22 +19,22 @@
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:settings="http://schemas.android.com/apk/res-auto"
     android:key="apps_screen"
-    android:title=" ">
+    android:title=" "
+    xmlns:app="http://schemas.android.com/apk/res-auto">
 
 
-   <com.android.settingslib.widget.LayoutPreference
-        android:key="aboutphone_animation"
-        android:layout="@layout/aboutphone_animation"
-        android:order="-999"/>
-
+    <com.android.settingslib.widget.IllustrationPreference
+        android:key="aboutphone"
+        settings:searchable="false"
+        android:order="-999"
+        app:lottie_rawRes="@raw/aboutphone"/> 
         
    <!-- Header -->
   <PreferenceCategory
         android:title="Applications"
-        android:order="-998"
+        android:order="-997"
         android:layout="@layout/settings_title_header">
   </PreferenceCategory>
-
         
     <Preference
         android:key="all_app_infos"

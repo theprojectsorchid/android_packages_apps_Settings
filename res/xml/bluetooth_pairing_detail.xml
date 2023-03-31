@@ -29,7 +29,7 @@
 
    <!-- Header -->
   <PreferenceCategory
-        android:title="Bluetooth Pairing"
+        android:title="Pairing"
         android:order="-997"
         android:layout="@layout/settings_title_header">
   </PreferenceCategory>

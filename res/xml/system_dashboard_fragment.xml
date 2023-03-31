@@ -31,7 +31,7 @@
 
    <!-- Header -->
   <PreferenceCategory
-        android:title="System options"
+        android:title="System"
         android:order="-997"
         android:layout="@layout/settings_title_header">
   </PreferenceCategory>

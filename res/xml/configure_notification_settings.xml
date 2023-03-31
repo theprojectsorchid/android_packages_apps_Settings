@@ -30,7 +30,7 @@
         
    <!-- Header -->
   <PreferenceCategory
-        android:title="Notification settings"
+        android:title="Notifications"
         android:order="-997"
         android:layout="@layout/settings_title_header">
   </PreferenceCategory>

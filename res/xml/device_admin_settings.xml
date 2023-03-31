@@ -24,12 +24,6 @@
     settings:controller="com.android.settings.applications.specialaccess.deviceadmin.DeviceAdminListPreferenceController">
 
 
-           <!-- Header -->
-  <PreferenceCategory
-        android:title="Device admin"
-        android:order="-996"
-        android:layout="@layout/settings_title_header">
-  </PreferenceCategory>
 
     <com.android.settingslib.widget.FooterPreference
         android:key="device_admin_footer"
