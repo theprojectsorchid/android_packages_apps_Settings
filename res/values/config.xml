@@ -304,7 +304,7 @@
     <bool name="config_show_regulatory_info">false</bool>
 
     <!-- Whether to show a preference item for mobile plan -->
-    <bool name="config_show_mobile_plan">true</bool>
+    <bool name="config_show_mobile_plan">false</bool>
 
     <!-- Whether none security option is hide or not  (country specific). -->
     <bool name="config_hide_none_security_option">false</bool>
@@ -369,7 +369,7 @@
     <bool name="config_show_encryption_and_credentials_encryption_status">true</bool>
 
     <!-- Whether premium_sms should be shown or not. -->
-    <bool name="config_show_premium_sms">true</bool>
+    <bool name="config_show_premium_sms">false</bool>
 
     <!-- Whether data_saver should be shown or not. -->
     <bool name="config_show_data_saver">true</bool>
@@ -426,7 +426,7 @@
     <bool name="config_show_reset_dashboard">true</bool>
 
     <!-- Whether system_update_settings should be shown or not. -->
-    <bool name="config_show_system_update_settings">true</bool>
+    <bool name="config_show_system_update_settings">false</bool>
 
     <!-- Whether device_model should be shown or not. -->
     <bool name="config_show_device_model">true</bool>
@@ -493,13 +493,13 @@
     <bool name="config_show_smooth_display">false</bool>
 
     <!-- Whether to show emergency gesture in Settings -->
-    <bool name="config_show_emergency_gesture_settings">true</bool>
+    <bool name="config_show_emergency_gesture_settings">false</bool>
 
     <!-- Optional package name if another 1p app wants to take over the emergency gesture settings UI -->
     <string name="emergency_gesture_settings_package"></string>
 
     <!-- Whether to show the Preference for Adaptive connectivity -->
-    <bool name="config_show_adaptive_connectivity">false</bool>
+    <bool name="config_show_adaptive_connectivity">true</bool>
 
     <!-- Authority of advanced device battery prediction -->
     <string name="config_battery_prediction_authority" translatable="false"></string>

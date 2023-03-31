@@ -13662,5 +13662,24 @@
     <string name="about_user">Owner Info</string>
     <string name="userpref_summary">Personal Information about current user</string>
     <string name="user_title">User Info</string>
+    
+    
+    
+    
+    
+    <!-- User card base -->
+    <string name="about_user_base">My Details</string>
+    <string name="about_user_summary_base">My accounts, multiple user and emergancy settings</string>
+
+
+    <!-- About phone edit -->
+    <string name="about_phone_rom_title">powered by OrchidOs</string>
+    <string name="about_phone_rom_summary">Powered by ANDROID</string>
+    <string name="about_phone_rom_device_uptime">Device Uptime</string>
+    <string name="firmware_version2">Android 12.1</string>
+    <string name="model_name2">Network identifiers</string>
+    <string name="model_summary2">wifi bluetooth mac ids</string>
+    <string name="change_device_name">Change device name</string>
+
 
 </resources>
