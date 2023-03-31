@@ -13709,4 +13709,7 @@
     <string name="hardware_id_info">System network identifiers</string>
     <string name="hardware_info_name">Device Details</string>
 
+    <string name="about_us_device">About us</string>
+    <string name="radio_info_summary">radio Details</string>
+
 </resources>
