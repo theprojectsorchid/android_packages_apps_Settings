@@ -18,23 +18,7 @@
 <PreferenceScreen
     xmlns:android="http://schemas.android.com/apk/res/android"
     android:key="zen_custom_rule_settings_page"
-     xmlns:app="http://schemas.android.com/apk/res-auto"    
-    android:title=" " >
-
-
-    <com.android.settingslib.widget.IllustrationPreference
-        android:key="powermenu1_animation"
-        settings:searchable="false"
-        android:order="-999"
-        app:lottie_rawRes="@raw/powermenu1"/>
-
-  
-   <!-- Header -->
-  <PreferenceCategory
-        android:title="Custom rule settings"
-        android:order="-997"
-        android:layout="@layout/settings_title_header">
-  </PreferenceCategory>
+     xmlns:app="http://schemas.android.com/apk/res-auto">
 
 
     <PreferenceCategory

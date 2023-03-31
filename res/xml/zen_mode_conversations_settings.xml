@@ -18,26 +18,10 @@
     android:key="zen_mode_conversations_settings"
      xmlns:app="http://schemas.android.com/apk/res-auto"    
     android:title=" " >
-
-
-    <com.android.settingslib.widget.IllustrationPreference
-        android:key="powermenu1_animation"
-        settings:searchable="false"
-        android:order="-999"
-        app:lottie_rawRes="@raw/convo"/>
-
-  
-   <!-- Header -->
-  <PreferenceCategory
-        android:title="Conversations"
-        android:order="-997"
-        android:layout="@layout/settings_title_header">
-  </PreferenceCategory>
-
-    <!-- Conversations -->
     <PreferenceCategory
         android:key="zen_mode_conversations_radio_buttons"
         android:title="@string/zen_mode_conversations_section_title">
+        <!-- TODO: add preference with chat images here (b/151845457) -->
 
         <!-- Senders image -->
         <com.android.settingslib.widget.LayoutPreference
