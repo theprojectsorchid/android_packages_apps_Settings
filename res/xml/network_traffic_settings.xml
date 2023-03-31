@@ -25,7 +25,7 @@
         android:key="sim_animation"
         settings:searchable="false"
         android:order="-999"
-        app:lottie_rawRes="@raw/sim"/>
+        app:lottie_rawRes="@raw/sim_animation"/>
 
 
 
