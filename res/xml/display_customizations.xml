@@ -44,7 +44,7 @@
     
 
     <com.android.settingslib.widget.IllustrationPreference
-        android:key="sounds"
+        android:key="welcome2"
         settings:searchable="false"
         android:order="-999"
         app:lottie_rawRes="@raw/welcome2"/> 
@@ -200,6 +200,12 @@
         android:fragment="com.android.settings.system.ResetDashboardFragment"
         settings:controller="com.android.settings.system.ResetPreferenceController"/>
 
+    <com.arrow.support.preferences.SecureSettingSwitchPreference
+        android:key="advanced_reboot"
+        android:title="@string/global_actions_advanced_reboot_title"
+        android:summary="@string/global_actions_advanced_reboot_summary"
+        android:defaultValue="false" />
+        
      </PreferenceCategory>
 
 </PreferenceScreen>
