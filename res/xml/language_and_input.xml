@@ -16,15 +16,19 @@
   -->
 
 <PreferenceScreen
-    xmlns:android="http://schemas.android.com/apk/res/android"
+     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:settings="http://schemas.android.com/apk/res-auto"
-    android:title=" ">
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:title=" " >
 
-    <com.android.settingslib.widget.LayoutPreference
-        android:key="language_settings"
+
+    <com.android.settingslib.widget.IllustrationPreference
+        android:key="lang"
+        settings:searchable="false"
         android:order="-999"
-        android:layout="@layout/language_settings_animation" />
-        
+        app:lottie_rawRes="@raw/language_settings"/>
+
+  
    <!-- Header -->
   <PreferenceCategory
         android:title="Input features"

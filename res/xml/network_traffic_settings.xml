@@ -15,14 +15,19 @@
      limitations under the License.
 -->
 <PreferenceScreen
-    android:title=" "
     xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:settings="http://schemas.android.com/apk/res/com.android.settings">
+    xmlns:settings="http://schemas.android.com/apk/res-auto"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:title=" " >
 
-   <com.android.settingslib.widget.LayoutPreference
-        android:key="data_saver_animation"
+
+    <com.android.settingslib.widget.IllustrationPreference
+        android:key="sim_animation"
+        settings:searchable="false"
         android:order="-999"
-        android:layout="@layout/data_saver_animation" />
+        app:lottie_rawRes="@raw/sim"/>
+
+
 
     <com.arrow.support.preferences.SystemSettingMainSwitchPreference
         android:key="network_traffic_state"
@@ -30,12 +35,6 @@
         android:title="@string/network_traffic_state_title"
         android:defaultValue="false" />
 
-  <!-- Header -->
-  <PreferenceCategory
-        android:title="Network traffic"
-        android:order="-996"
-        android:layout="@layout/settings_title_header">
-  </PreferenceCategory>
 
     <PreferenceCategory
         android:title="@string/network_options_title">

@@ -18,16 +18,20 @@
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:settings="http://schemas.android.com/apk/res-auto"
     android:key="conversation_list"
+     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:title=" ">
 
- <com.android.settingslib.widget.LayoutPreference
-        android:key="convo_animation"
+ 
+    <com.android.settingslib.widget.IllustrationPreference
+        android:key="convo_list"
+        settings:searchable="false"
         android:order="-999"
-        android:layout="@layout/convo_animation" />
+        app:lottie_rawRes="@raw/convo"/>
 
+  
    <!-- Header -->
   <PreferenceCategory
-        android:title="Conversation list"
+        android:title="Conversations"
         android:order="-997"
         android:layout="@layout/settings_title_header">
   </PreferenceCategory>

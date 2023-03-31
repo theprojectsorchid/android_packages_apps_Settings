@@ -14,17 +14,18 @@
 <PreferenceScreen
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:settings="http://schemas.android.com/apk/res-auto"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:key="accessibility_settings_screen"
     android:persistent="false"
     android:title=" ">
 
+    <com.android.settingslib.widget.IllustrationPreference
+        android:key="accessibility"
+        settings:searchable="false"
+        android:order="-999"
+        app:lottie_rawRes="@raw/accessibility"/>
 
-    <com.android.settingslib.widget.LayoutPreference
-        android:key="accesibility_animation"
-        android:layout="@layout/accessibility_animation"
-        android:order="-999"/>
-
-        
+ 
    <!-- Header -->
   <PreferenceCategory
         android:title="Accessibility"

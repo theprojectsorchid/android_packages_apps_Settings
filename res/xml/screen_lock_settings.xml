@@ -18,16 +18,19 @@
 <PreferenceScreen
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:settings="http://schemas.android.com/apk/res-auto"
-    android:key="security_settings_password_sub_screen"
+    android:key="security_settings_password_sub_screen"     
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:title=" "
     settings:searchable="false">
 
 
 
-     <com.android.settingslib.widget.LayoutPreference
+    <com.android.settingslib.widget.IllustrationPreference
         android:key="screenlock_animation"
-        android:order="-997"
-        android:layout="@layout/screenlock_animation" />   
+        settings:searchable="false"
+        android:order="-999"
+        app:lottie_rawRes="@raw/screenlock_animation"/> 
+
    <!-- Header -->
   <PreferenceCategory
         android:title="Screen lock"

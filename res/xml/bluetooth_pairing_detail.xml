@@ -15,15 +15,18 @@
 -->
 
 <PreferenceScreen
-    xmlns:android="http://schemas.android.com/apk/res/android"
+     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:settings="http://schemas.android.com/apk/res-auto"
-    android:title=" ">
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:title=" ">    
+    
+    
+    <com.android.settingslib.widget.IllustrationPreference
+        android:key="bluetooth"
+        settings:searchable="false"
+        android:order="-999"
+        app:lottie_rawRes="@raw/bluetooth"/>
 
-     <com.android.settingslib.widget.LayoutPreference
-        android:key="bluetooth_pair_animation"
-         android:order="-999"       
-        android:layout="@layout/bluetooth_pair_animation" />
-                
    <!-- Header -->
   <PreferenceCategory
         android:title="Bluetooth Pairing"

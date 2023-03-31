@@ -18,15 +18,16 @@
 <PreferenceScreen
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:settings="http://schemas.android.com/apk/res-auto"
-    android:key="privacy_dashboard_page"
+    android:key="privacy_dashboard_page"   
+     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:title=" ">
 
 
-    <com.android.settingslib.widget.LayoutPreference
-        android:key="privacy_animation"
-        android:order="-997"
-        android:layout="@layout/privacy_animation"/>
-
+    <com.android.settingslib.widget.IllustrationPreference
+        android:key="privacy"
+        settings:searchable="false"
+        android:order="-999"
+        app:lottie_rawRes="@raw/privacy"/> 
    <!-- Header -->
   <PreferenceCategory
         android:title="Privacy"

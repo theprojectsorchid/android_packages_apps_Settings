@@ -17,15 +17,16 @@
 <PreferenceScreen
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:settings="http://schemas.android.com/apk/res-auto"
-    android:title=" "
+    android:title=" "    
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     settings:keywords="@string/keywords_printing">
 
 
-     <com.android.settingslib.widget.LayoutPreference
-        android:key="print_settings_animation"
+    <com.android.settingslib.widget.IllustrationPreference
+        android:key="printing"
+        settings:searchable="false"
         android:order="-999"
-        android:layout="@layout/print_animation" />
-
+        app:lottie_rawRes="@raw/printing"/> 
    <!-- Header -->
   <PreferenceCategory
         android:title="Print settings"

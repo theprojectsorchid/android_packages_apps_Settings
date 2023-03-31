@@ -18,13 +18,15 @@
         xmlns:android="http://schemas.android.com/apk/res/android"
         xmlns:settings="http://schemas.android.com/apk/res-auto"
         android:title=" "
+            xmlns:app="http://schemas.android.com/apk/res-auto"
         settings:keywords="@string/keywords_wifi">
 
 
-       <com.android.settingslib.widget.LayoutPreference
-        android:key="network_internet_animation"        
-        android:order="-998"
-        android:layout="@layout/network_internet_animation" /> 
+    <com.android.settingslib.widget.IllustrationPreference
+        android:key="network_internet"
+        settings:searchable="false"
+        android:order="-999"
+        app:lottie_rawRes="@raw/network_internet"/> 
 
    <!-- Header -->
   <PreferenceCategory

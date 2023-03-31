@@ -18,7 +18,7 @@
 <PreferenceScreen
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:settings="http://schemas.android.com/apk/res-auto"
-        xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:title=" " >
 
 
@@ -28,16 +28,11 @@
         android:order="-999"
         app:lottie_rawRes="@raw/multiple_user_animation"/>
 
-  
-   <!-- Header -->
-  <PreferenceCategory
-        android:title="Wifi tether"
-        android:order="-997"
-        android:layout="@layout/settings_title_header">
   </PreferenceCategory>
     <com.android.settings.wifi.tether.WifiTetherSsidPreference
         android:key="wifi_tether_network_name"
         android:title="@string/wifi_hotspot_name_title"
+        android:order="-997"
         android:summary="@string/summary_placeholder"/>
 
     <ListPreference

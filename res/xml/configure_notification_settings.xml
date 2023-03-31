@@ -14,15 +14,19 @@
      limitations under the License.
 -->
 
-<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
-                  xmlns:settings="http://schemas.android.com/apk/res-auto"
-                  android:title=" ">
-
-    <com.android.settingslib.widget.LayoutPreference
+<PreferenceScreen   
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:settings="http://schemas.android.com/apk/res-auto"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:title=" ">    
+    
+    
+    <com.android.settingslib.widget.IllustrationPreference
         android:key="configure_notification_settings_animation"
-                android:order="-998"
-        android:layout="@layout/configure_notification_settings_animation" />
-        
+        settings:searchable="false"
+        android:order="-999"
+        app:lottie_rawRes="@raw/configure_notification_settings"/>
+
         
    <!-- Header -->
   <PreferenceCategory
