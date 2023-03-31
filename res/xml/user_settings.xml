@@ -27,13 +27,6 @@
         android:order="-999"
         app:lottie_rawRes="@raw/multiple_user_animation"/>
 
-  
-   <!-- Header -->
-  <PreferenceCategory
-        android:title="multiple user options"
-        android:order="-997"
-        android:layout="@layout/settings_title_header">
-  </PreferenceCategory>
         
     <com.android.settingslib.widget.TopIntroPreference
         android:key="multiuser_top_intro"

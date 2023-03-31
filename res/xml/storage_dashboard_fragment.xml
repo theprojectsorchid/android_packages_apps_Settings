@@ -19,13 +19,15 @@
     xmlns:settings="http://schemas.android.com/apk/res-auto"
     android:key="storage_dashboard_fragment"
     android:title=" "
-    settings:keywords="@string/keywords_storage">
-    
-    <com.android.settingslib.widget.LayoutPreference
-        android:key="storage_animation"        
-        android:order="-999"
-        android:layout="@layout/storage_animation" />
+    settings:keywords="@string/keywords_storage"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
 
+
+    <com.android.settingslib.widget.IllustrationPreference
+        android:key="storage_animation"
+        settings:searchable="false"
+        android:order="-999"
+        app:lottie_rawRes="@raw/storage"/> 
         
    <!-- Header -->
   <PreferenceCategory

@@ -14,7 +14,8 @@
      limitations under the License.
 -->
 
-<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+<PreferenceScreen 
+                xmlns:android="http://schemas.android.com/apk/res/android"
                   xmlns:settings="http://schemas.android.com/apk/res-auto"
                   android:key="wifi_calling_settings"
                       xmlns:app="http://schemas.android.com/apk/res-auto"
@@ -22,10 +23,10 @@
 
 
     <com.android.settingslib.widget.IllustrationPreference
-        android:key="multiple_user_animation"
+        android:key="wifi_animation"
         settings:searchable="false"
         android:order="-999"
-        app:lottie_rawRes="@raw/multiple_user_animation"/>
+        app:lottie_rawRes="@raw/wifi"/>
 
   
    <!-- Header -->

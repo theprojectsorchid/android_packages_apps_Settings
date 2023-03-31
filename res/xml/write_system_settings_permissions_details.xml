@@ -22,10 +22,10 @@
 
 
     <com.android.settingslib.widget.IllustrationPreference
-        android:key="multiple_user_animation"
+        android:key="powermenu1_animation"
         settings:searchable="false"
         android:order="-999"
-        app:lottie_rawRes="@raw/multiple_user_animation"/>
+        app:lottie_rawRes="@raw/powermenu1"/>
 
   
    <!-- Header -->

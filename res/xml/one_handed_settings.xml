@@ -30,7 +30,7 @@
 
    <!-- Header -->
   <PreferenceCategory
-        android:title="Onehand mode"
+        android:title="One hand mode"
         android:order="-997"
         android:layout="@layout/settings_title_header">
   </PreferenceCategory>

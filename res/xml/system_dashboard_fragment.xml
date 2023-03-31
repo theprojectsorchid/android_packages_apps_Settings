@@ -18,13 +18,16 @@
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:settings="http://schemas.android.com/apk/res-auto"
     android:key="system_dashboard_screen"
-    android:title=" ">
+    android:title=" "
+    xmlns:app="http://schemas.android.com/apk/res-auto">
 
-    <com.android.settingslib.widget.LayoutPreference
+
+    <com.android.settingslib.widget.IllustrationPreference
         android:key="system_animation"
+        settings:searchable="false"
         android:order="-999"
-        android:layout="@layout/system_animation" 
-        android:selectable="false"/>
+        app:lottie_rawRes="@raw/system"/> 
+
 
    <!-- Header -->
   <PreferenceCategory
