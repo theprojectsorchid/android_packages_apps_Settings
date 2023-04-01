@@ -36,6 +36,7 @@
     <Preference
         android:icon="@drawable/ic_build_acc"
         android:key="build_number"
+         android:visibility="gone"        
         android:summary="@string/summary_placeholder"
         android:title="@string/build_number"
         settings:controller="com.android.settings.deviceinfo.BuildNumberPreferenceController"
@@ -48,6 +49,7 @@
         android:key="device_model"
         android:summary="@string/model_summary"
         android:title="@string/model_name"
+        android:visibility="gone" 
         settings:controller="com.android.settings.deviceinfo.HardwareInfoPreferenceController"
         settings:enableCopying="true"
         settings:keywords="@string/keywords_model_and_hardware"/>
@@ -57,6 +59,7 @@
         android:fragment="com.android.settings.deviceinfo.firmwareversion.FirmwareVersionSettings"
         android:icon="@drawable/ic_android_acc"
         android:key="firmware_version"
+        android:visibility="gone" 
         android:summary="@string/summary_placeholder"
         android:title="@string/firmware_version"
         settings:controller="com.android.settings.deviceinfo.firmwareversion.FirmwareVersionPreferenceController" />
@@ -67,6 +70,7 @@
         android:icon="@drawable/ic_uptime"
         android:key="up_time"
         android:selectable="false"
+        android:visibility="gone" 
         android:summary="@string/summary_placeholder"
         android:title="@string/status_up_time"/>
 
@@ -75,6 +79,7 @@
         android:fragment="com.android.settings.LegalSettings"
         android:icon="@drawable/ic_doc"
         android:key="legal_container"
+        android:visibility="gone" 
         android:summary="@string/legal_summary"
         android:title="@string/legal_information"/>
 
