@@ -17,7 +17,25 @@
 <PreferenceScreen
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:settings="http://schemas.android.com/apk/res-auto"
-    android:title="@string/date_time_set_timezone">
+    android:title=" "  
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+    <com.android.settingslib.widget.IllustrationPreference
+        android:key="welcome_animation"
+        settings:searchable="false"
+        android:order="-999"
+        app:lottie_rawRes="@raw/welcome4"/> 
+
+
+   <!-- Header -->
+  <PreferenceCategory
+        android:title="time settings"
+        android:order="-997"
+        android:layout="@layout/settings_title_header">
+  </PreferenceCategory>
+        
+
 
     <PreferenceCategory
         android:key="time_zone_region_preference_category">

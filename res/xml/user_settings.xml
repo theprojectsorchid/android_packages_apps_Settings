@@ -17,16 +17,20 @@
 <PreferenceScreen
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:settings="http://schemas.android.com/apk/res-auto"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:key="user_settings_screen"
-    android:title="@string/user_settings_title">
+    android:title=" ">
 
-    <com.android.settingslib.widget.LayoutPreference
+    <com.android.settingslib.widget.IllustrationPreference
         android:key="multiple_user_animation"
-        android:layout="@layout/multiple_user_animation"
-        android:order="-999"/>
+        settings:searchable="false"
+        android:order="-999"
+        app:lottie_rawRes="@raw/multiple_user_animation"/>
+
         
     <com.android.settingslib.widget.TopIntroPreference
         android:key="multiuser_top_intro"
+        android:order="-995"
         android:title="@string/user_settings_footer_text"
         settings:controller="com.android.settings.users.MultiUserTopIntroPreferenceController"/>
 

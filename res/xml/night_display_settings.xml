@@ -17,14 +17,24 @@
 <PreferenceScreen
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:settings="http://schemas.android.com/apk/res-auto"
-    android:title="@string/night_display_title"
+    android:title=" "    
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     settings:keywords="@string/keywords_display_night_display">
 
 
- <com.android.settingslib.widget.LayoutPreference
+    <com.android.settingslib.widget.IllustrationPreference
         android:key="night_light_animation"
-        android:layout="@layout/night_light_animation" />
-        
+        settings:searchable="false"
+        android:order="-999"
+        app:lottie_rawRes="@raw/night_light"/>
+
+   <!-- Header -->
+  <PreferenceCategory
+        android:title="Night Light"
+        android:order="-997"
+        android:layout="@layout/settings_title_header">
+  </PreferenceCategory>
+
     <com.android.settingslib.widget.TopIntroPreference
         android:key="night_display_top_intro"
         android:title="@string/night_display_text"

@@ -17,11 +17,23 @@
 <PreferenceScreen
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:settings="http://schemas.android.com/apk/res-auto"
-    android:title="@string/provider_network_settings_title">
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:title=" " >
 
-  <com.android.settingslib.widget.LayoutPreference
-        android:key="sim_animation" 
-        android:layout="@layout/sim_animation"/>
+
+    <com.android.settingslib.widget.IllustrationPreference
+        android:key="sim_animation"
+        settings:searchable="false"
+        android:order="-999"
+        app:lottie_rawRes="@raw/sim_animation"/>
+
+  
+   <!-- Header -->
+  <PreferenceCategory
+        android:title="Sim"
+        android:order="-998"
+        android:layout="@layout/settings_title_header">
+  </PreferenceCategory>
 
     <PreferenceCategory
         android:key="provider_model_sim_category"
