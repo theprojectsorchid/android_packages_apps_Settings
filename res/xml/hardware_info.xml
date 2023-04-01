@@ -66,7 +66,7 @@
         settings:controller="com.android.settings.deviceinfo.hardwareinfo.HardwareRevisionPreferenceController"
         settings:enableCopying="true"/>
 
-     </PreferenceCategory>
+
 
     <PreferenceCategory
         android:key="basic_info_category"

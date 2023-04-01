@@ -51,7 +51,6 @@ android_library {
 
     
 
-    aaptflags: ["--extra-packages com.epic"],
 
     static_libs: [
         "androidx-constraintlayout_constraintlayout",
@@ -87,7 +86,7 @@ android_library {
         "res",
         "Atomichub/res",
     ],
-    aaptflags: ["--extra-packages com.palladium.atomichub"],
+    aaptflags: ["--extra-packages com.palladium.atomichub","--extra-packages com.epic"], 
     libs: [
         "telephony-common",
         "ims-common",
