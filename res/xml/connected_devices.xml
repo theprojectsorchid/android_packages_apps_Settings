@@ -18,13 +18,26 @@
 <PreferenceScreen
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:settings="http://schemas.android.com/apk/res-auto"
-    android:key="connected_devices_screen"
-    android:title="@string/connected_devices_dashboard_title">
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:title=" " >
 
-    <com.android.settingslib.widget.LayoutPreference
-        android:key="bluetooth_animation"
-        android:layout="@layout/bluetooth_animation" />
-        
+
+    <com.android.settingslib.widget.IllustrationPreference
+        android:key="connected_devices"
+        settings:searchable="false"
+        android:order="-999"
+        app:lottie_rawRes="@raw/connected_devices"/>
+
+  
+   <!-- Header -->
+  <PreferenceCategory
+        android:title="Connected devices"
+        android:order="-998"
+        android:layout="@layout/settings_title_header">
+  </PreferenceCategory>
+
+
+
     <com.android.settings.slices.SlicePreference
         android:key="bt_nearby_slice"
         android:title="@string/summary_placeholder"

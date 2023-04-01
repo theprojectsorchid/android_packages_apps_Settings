@@ -18,7 +18,14 @@
     xmlns:settings="http://schemas.android.com/apk/res-auto"
     android:key="accessibility_tap_assistance"
     android:persistent="false"
-    android:title="@string/accessibility_tap_assistance_title">
+    android:title=" ">
+
+   <!-- Header -->
+  <PreferenceCategory
+        android:title="Tap assistance"
+        android:order="-997"
+        android:layout="@layout/settings_title_header">
+  </PreferenceCategory>
 
     <ListPreference
         android:entries="@array/long_press_timeout_selector_list_titles"

@@ -16,14 +16,26 @@
   -->
 
 <PreferenceScreen
-    xmlns:android="http://schemas.android.com/apk/res/android"
+     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:settings="http://schemas.android.com/apk/res-auto"
-    android:title="@string/language_settings">
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:title=" " >
 
-    <com.android.settingslib.widget.LayoutPreference
-        android:key="language_settings"
-        android:layout="@layout/language_settings_animation" />
-        
+
+    <com.android.settingslib.widget.IllustrationPreference
+        android:key="lang"
+        settings:searchable="false"
+        android:order="-999"
+        app:lottie_rawRes="@raw/language_settings"/>
+
+  
+   <!-- Header -->
+  <PreferenceCategory
+        android:title="Input features"
+        android:order="-997"
+        android:layout="@layout/settings_title_header">
+  </PreferenceCategory>
+
     <Preference
         android:key="phone_language"
         android:title="@string/phone_language"
