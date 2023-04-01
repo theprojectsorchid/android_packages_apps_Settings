@@ -15,16 +15,24 @@
 -->
 
 <PreferenceScreen
-    xmlns:android="http://schemas.android.com/apk/res/android"
+     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:settings="http://schemas.android.com/apk/res-auto"
-    android:title="@string/special_access">
+    android:title=" "
+        xmlns:app="http://schemas.android.com/apk/res-auto">
+    
+    <com.android.settingslib.widget.IllustrationPreference
+        android:key="powermenu1"
+        settings:searchable="false"
+        android:order="-999"
+        app:lottie_rawRes="@raw/powermenu1"/> 
 
-   <com.android.settingslib.widget.LayoutPreference
-        android:key="anim_ui_animation"
-        android:layout="@layout/anim_ui_animation"
-        android:order="-999"/>
-
-
+           <!-- Header -->
+  <PreferenceCategory
+        android:title="Special Access"
+        android:order="-996"
+        android:layout="@layout/settings_title_header">
+  </PreferenceCategory>
+        
     <Preference
         android:key="manage_external_storage"
         android:title="@string/manage_external_storage_title"

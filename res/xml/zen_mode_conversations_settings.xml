@@ -16,11 +16,12 @@
 <PreferenceScreen
     xmlns:android="http://schemas.android.com/apk/res/android"
     android:key="zen_mode_conversations_settings"
-    android:title="@string/zen_mode_conversations_title">
-    <!-- Conversations -->
+     xmlns:app="http://schemas.android.com/apk/res-auto"    
+    android:title=" " >
     <PreferenceCategory
         android:key="zen_mode_conversations_radio_buttons"
         android:title="@string/zen_mode_conversations_section_title">
+        <!-- TODO: add preference with chat images here (b/151845457) -->
 
         <!-- Senders image -->
         <com.android.settingslib.widget.LayoutPreference

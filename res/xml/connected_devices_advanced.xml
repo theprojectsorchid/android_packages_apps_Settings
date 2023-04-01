@@ -16,12 +16,24 @@
 
 <PreferenceScreen
     xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:settings="http://schemas.android.com/apk/res-auto" >
- 
- <com.android.settingslib.widget.LayoutPreference
+    xmlns:settings="http://schemas.android.com/apk/res-auto"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:title=" ">    
+    
+    
+    <com.android.settingslib.widget.IllustrationPreference
         android:key="connected_pref_animation"
-        android:layout="@layout/connected_pref_animation"
-        android:order="-11"/>
+        settings:searchable="false"
+        android:order="-999"
+        app:lottie_rawRes="@raw/connected_pref"/>
+
+        
+   <!-- Header -->
+  <PreferenceCategory
+        android:title="Advanced options"
+        android:order="-997"
+        android:layout="@layout/settings_title_header">
+  </PreferenceCategory>
 
     <Preference
         android:fragment="com.android.settings.connecteddevice.BluetoothDashboardFragment"
