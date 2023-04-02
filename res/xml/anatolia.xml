@@ -16,10 +16,38 @@
 <PreferenceScreen
         xmlns:android="http://schemas.android.com/apk/res/android"
         xmlns:settings="http://schemas.android.com/apk/res/com.android.settings"
-        android:title="@string/anatolia_settings_title">
-		
+        android:title=" ">
+
+       <Preference
+        android:key="xd_build_status"
+        android:title="@string/xd_build_status"
+        android:summary="@string/xd_summary_placeholder"
+        android:icon="@drawable/xd_build"
+        android:order="-190"    
+        settings:controller="com.android.settings.deviceinfo.firmwareversion.BuildMaintainerPreferenceController"
+        settings:layout="@layout/xd_pref_card_sin-accent2"/>
+     
+		 <!-- orchidosrom grid -->
+    <PreferenceScreen
+        android:key="HardwareGrid"
+        android:enabled="false"
+        android:order="-180"    
+        android:layout="@layout/Hardware_grid"/>   
+
+   <!-- Header -->
+  <PreferenceCategory
+        android:title="System Info"
+        android:order="-170"
+        android:layout="@layout/settings_title_header">
+  </PreferenceCategory>
+      
+        <com.android.settingslib.widget.TopIntroPreference
+            android:key="systeminfo_bubbles_desc"
+            android:order="-160"
+            android:title="@string/systeminfopage_bubble_setting_description"/>
+
 		<!-- Device details -->
-        <PreferenceScreen
+        <Preference
             android:key="Device_details_category"
             android:title="@string/Device_details_title"
             android:summary="@string/Device_details_summary"
@@ -27,7 +55,7 @@
             android:icon="@drawable/ic_anatolia_statusbar" />
 
         <!-- About us -->
-        <PreferenceScreen
+        <Preference
             android:key="Aboutus_category"
             android:title="@string/aboutus_title"
             android:summary="@string/aboutus_summary"
@@ -35,60 +63,12 @@
             android:icon="@drawable/ic_anatolia_buttons" />
 			
 		<!-- reset page -->
-        <PreferenceScreen
-            android:key="resetpage_category"
-            android:title="@string/resetpage_title"
-            android:summary="@string/resetpage_summary"
-   	        android:fragment="com.epic.fragments.LockScreenSettings"
-   	        android:icon="@drawable/ic_anatolia_lockscreen" />	
-		
-		<!-- Notifications -->
-        <PreferenceScreen
-            android:key="notifications_category"
-            android:title="@string/notifications_title"
-            android:summary="@string/notifications_summary"
-            android:fragment="com.epic.fragments.NotificationSettings"
-            android:icon="@drawable/ic_anatolia_notifications" />
-
-        <!-- Gestures -->
-        <PreferenceScreen
-            android:key="gestures_category"
-            android:title="@string/gestures_title"
-            android:summary="@string/gestures_summary"
-	        android:fragment="com.epic.fragments.GestureSettings"
-            android:icon="@drawable/ic_anatolia_gestures" />
-       
-        <!-- Navigation bar -->
-        <PreferenceScreen
-            android:key="navigationbar_category"
-            android:title="@string/navbar_title"
-            android:summary="@string/navbar_summary"
-            android:fragment="com.epic.fragments.NavbarSettings"
-            android:icon="@drawable/ic_anatolia_navbar" />
-
-        <!-- Power menu -->
-        <PreferenceScreen
-            android:key="powermenu_category"
-            android:title="@string/powermenu_title"
-            android:summary="@string/powermenu_summary"
-            android:fragment="com.epic.fragments.PowerMenuSettings"
-            android:icon="@drawable/ic_anatolia_powermenu" />
-
-        <!-- Quick settings -->
-        <PreferenceScreen
-            android:key="quicksettings_category"
-            android:title="@string/quicksettings_title"
-            android:summary="@string/quicksettings_summary"
-            android:fragment="com.epic.fragments.QuickSettings"
-            android:icon="@drawable/ic_anatolia_quicksettings" />        
-
-        <!-- Extras -->
-        <PreferenceScreen
-            android:key="extras_category"
-            android:title="@string/extras_title"
-            android:summary="@string/extras_summary"
-            android:fragment="com.epic.fragments.ExtraSettings"
-            android:icon="@drawable/ic_anatolia_extras" />
+        <Preference
+        android:key="reset_dashboard"
+        android:title="@string/reset_dashboard_title"
+        android:icon="@drawable/ic_restore"
+        android:fragment="com.android.settings.system.ResetDashboardFragment"
+        settings:controller="com.android.settings.system.ResetPreferenceController"/>
 
 
 </PreferenceScreen>
