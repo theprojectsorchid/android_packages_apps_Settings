@@ -18,22 +18,28 @@
 <PreferenceScreen
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:settings="http://schemas.android.com/apk/res-auto"
-     xmlns:app="http://schemas.android.com/apk/res-auto"
-    android:title=" ">
-
-
+	 xmlns:app="http://schemas.android.com/apk/res-auto"
+     android:title=" ">
+    
+    
     <com.android.settingslib.widget.IllustrationPreference
-        android:key="privacy"
+        android:key="reset_anim"
         settings:searchable="false"
         android:order="-999"
-        app:lottie_rawRes="@raw/privacy"/> 
+        app:lottie_rawRes="@raw/reset"/>
 
+  
    <!-- Header -->
   <PreferenceCategory
         android:title="reset options"
-        android:order="-996"
+        android:order="-998"
         android:layout="@layout/settings_title_header">
   </PreferenceCategory>
+      
+        <com.android.settingslib.widget.TopIntroPreference
+            android:key="reset_bubbles_desc"
+            android:order="-997"
+            android:title="@string/resetpage_bubble_setting_description"/>
 
     <!-- Network reset -->
     <com.android.settingslib.RestrictedPreference
