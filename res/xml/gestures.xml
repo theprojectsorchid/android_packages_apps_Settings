@@ -28,7 +28,7 @@
   
    <!-- Header -->
   <PreferenceCategory
-        android:title="Gestures"
+        android:title="System navigation"
         android:order="-998"
         android:layout="@layout/settings_title_header">
   </PreferenceCategory>
