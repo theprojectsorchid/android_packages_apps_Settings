@@ -188,6 +188,12 @@
                 android:targetPackage="com.android.systemui"
                 android:targetClass="com.android.systemui.tuner.StatusbarItemsActivity" />
         </Preference>
+        
+    <Preference
+        android:key="language_input_settings"
+        android:title="@string/language_settings"
+        android:icon="@drawable/ic_settings_language"
+        android:fragment="com.epic.fragments.ExtraSettings"/>
 
         <com.arrow.support.preferences.SystemSettingSwitchPreference
             android:key="qs_footer_data_usage"
