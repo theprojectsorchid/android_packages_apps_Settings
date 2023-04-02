@@ -19,7 +19,7 @@
      xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:settings="http://schemas.android.com/apk/res-auto"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    android:title=" " >
+    android:title=" ">
 
 
     <com.android.settingslib.widget.IllustrationPreference
@@ -36,14 +36,20 @@
         android:layout="@layout/settings_title_header">
   </PreferenceCategory>
 
+    <PreferenceCategory
+        android:key="phone_language_cat"
+        android:layout="@layout/custom_preference_category2"
+        android:title="@string/phone_language">
     <Preference
         android:key="phone_language"
         android:title="@string/phone_language"
         android:icon="@drawable/ic_translate_24dp"
         android:fragment="com.android.settings.localepicker.LocaleListEditor" />
+    </PreferenceCategory>
 
     <PreferenceCategory
         android:key="keyboards_category"
+        android:layout="@layout/custom_preference_category2"
         android:title="@string/keyboard_and_input_methods_category">
         <Preference
             android:key="virtual_keyboard_pref"
@@ -59,6 +65,7 @@
 
     <PreferenceCategory
         android:key="input_assistance_category"
+        android:layout="@layout/custom_preference_category2"
         android:title="@string/input_assistance">
         <!-- Spell checker preference title, summary and fragment will be set programmatically. -->
         <!-- Note: Mark this as persistent="false" to remove unnecessarily saved shared preference.
@@ -80,6 +87,7 @@
 
     <PreferenceCategory
         android:key="pointer_and_tts_category"
+        android:layout="@layout/custom_preference_category2"
         android:layout="@layout/preference_category_no_label">
 
         <com.android.settings.PointerSpeedPreference
