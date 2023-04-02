@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="15.0dip" android:layout_marginTop="20.0dip" android:layout_marginRight="15.0dip">
+        <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:background="@drawable/mt_preference_background_alone" android:paddingLeft="10.0dip" android:paddingTop="15.0dip" android:paddingRight="10.0dip" android:paddingBottom="10.0dip" android:layout_width="0.0dip" android:layout_height="135.0dip" android:layout_marginRight="10.0dip" android:layout_weight="5.0">
+            <TextView android:textSize="16.0sp" android:textStyle="bold" android:textColor="?android:attr/colorAccent" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="ROM Name" />
+            <TextView android:textSize="13.0sp" android:textStyle="bold" android:textColor="?android:attr/colorAccent" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:text="AndroidOS" />
+            <TextView android:background="?android:colorAccent" android:padding="8.0dip" android:layout_width="28.0dip" android:layout_height="2.0dip" android:layout_margin="6.0dip" />
+            <TextView android:textSize="16.0sp" android:textStyle="bold" android:textColor="?android:attr/colorAccent" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="3.0dip" android:text="Developed by" />
+            <TextView android:textSize="13.0sp" android:textStyle="bold" android:textColor="?android:attr/colorAccent" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:text="ProjectOrchid" android:translationY="2.0dip" />
+        </LinearLayout>
+        <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:background="@drawable/mt_preference_background_alone" android:paddingLeft="10.0dip" android:paddingTop="15.0dip" android:paddingRight="10.0dip" android:paddingBottom="10.0dip" android:layout_width="0.0dip" android:layout_height="135.0dip" android:layout_marginLeft="10.0dip" android:layout_weight="5.0">
+            <TextView android:textSize="16.0sp" android:textStyle="bold" android:textColor="?android:attr/colorAccent" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="System Service" />
+            <TextView android:textSize="13.0sp" android:textStyle="bold" android:textColor="?android:attr/colorAccent" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:text="GApps Minimal" />
+            <TextView android:background="?android:colorAccent" android:padding="8.0dip" android:layout_width="28.0dip" android:layout_height="2.0dip" android:layout_margin="6.0dip" />
+            <TextView android:textSize="16.0sp" android:textStyle="bold" android:textColor="?android:attr/colorAccent" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="3.0dip" android:text="Vendor Status" />
+            <TextView android:textSize="13.0sp" android:textStyle="bold" android:textColor="?android:attr/colorAccent" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:text="Up to date" android:translationY="2.0dip" />
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="15.0dip" android:layout_marginTop="20.0dip" android:layout_marginRight="15.0dip">
+        <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:background="@drawable/mt_preference_background_alone" android:paddingLeft="10.0dip" android:paddingTop="15.0dip" android:paddingRight="10.0dip" android:paddingBottom="10.0dip" android:layout_width="0.0dip" android:layout_height="135.0dip" android:layout_marginRight="10.0dip" android:layout_weight="5.0">
+            <TextView android:textSize="16.0sp" android:textStyle="bold" android:textColor="?android:attr/colorAccent" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Rom Version" />
+            <TextView android:textSize="13.0sp" android:textStyle="bold" android:textColor="?android:attr/colorAccent" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:text="vDessertorchid" />
+            <TextView android:background="?android:colorAccent" android:padding="8.0dip" android:layout_width="28.0dip" android:layout_height="2.0dip" android:layout_margin="6.0dip" />
+            <TextView android:textSize="16.0sp" android:textStyle="bold" android:textColor="?android:attr/colorAccent" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="3.0dip" android:text="Android Version" />
+            <TextView android:textSize="13.0sp" android:textStyle="bold" android:textColor="?android:attr/colorAccent" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:text="A13.1" android:translationY="2.0dip" />
+        </LinearLayout>
+        <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:background="@drawable/mt_preference_background_alone" android:paddingLeft="10.0dip" android:paddingTop="15.0dip" android:paddingRight="10.0dip" android:paddingBottom="10.0dip" android:layout_width="0.0dip" android:layout_height="135.0dip" android:layout_marginLeft="10.0dip" android:layout_weight="5.0">
+            <TextView android:textSize="16.0sp" android:textStyle="bold" android:textColor="?android:attr/colorAccent" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="BUILD DATE" />
+            <TextView android:textSize="13.0sp" android:textStyle="bold" android:textColor="?android:attr/colorAccent" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:text="02 04 2023" />
+            <TextView android:background="?android:colorAccent" android:padding="8.0dip" android:layout_width="28.0dip" android:layout_height="2.0dip" android:layout_margin="6.0dip" />
+            <TextView android:textSize="16.0sp" android:textStyle="bold" android:textColor="?android:attr/colorAccent" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="3.0dip" android:text="Security Patch" />
+            <TextView android:textSize="13.0sp" android:textStyle="bold" android:textColor="?android:attr/colorAccent" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:text="05 01 2023" android:translationY="2.0dip" />
+        </LinearLayout>
+    </LinearLayout>
+<LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="15.0dip">
+		<TextView android:textSize="13.0sp" android:textStyle="bold" android:textColor="?android:colorAccent" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Rom tagline" />
+		<TextView android:textSize="13.0sp" android:textColor="#00000000" android:background="?android:colorAccent" android:layout_width="fill_parent" android:layout_height="3.0dip" android:layout_marginLeft="10.0dip" />
+	</LinearLayout>
+</LinearLayout>

@@ -73,5 +73,8 @@
     <string name="resetpage_title">Reset Options</string>
     <string name="resetpage_summary">system reset options</string>
     <string name="resetpage_bubble_setting_description">Below are reset options Note Reset is a very interesting option especially when your device is ma-functioning  your phone performs better, becomes faster, super smooth with more free space on memory and better breathing space. Beare that all data will be erased if not backed-up, accounts  and other information will also be deleted.</string>
+    
+    <!-- Anatolia edit -->
+    <string name="systeminfopage_bubble_setting_description">Below are reset options Note Reset is a very interesting option especially when your device is ma-functioning  your phone performs better, becomes faster, super smooth with more free space on memory and better breathing space. Beare that all data will be erased if not backed-up, accounts  and other information will also be deleted.</string>
 
 </resources>
