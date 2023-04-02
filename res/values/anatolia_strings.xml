@@ -39,11 +39,25 @@
     <string name="quicksettings_summary">Quick settings options</string>
     <string name="statusbar_summary">Status bar customizations</string>
     <string name="extras_summary">Some extra options</string>
+    <string name="Device_details_summary">system Device details</string>
+    <string name="Device_details_title">Device details</string>
 
     <!-- General strings -->
     <string name="ok">OK</string>
     <string name="reset">Reset</string>
     <string name="cancel">Cancel</string>
     <string name="save">Save</string>
+
+    <!-- statusbar convert device details strings -->
+    <string name="systeminfo_title">System info</string>
+    <string name="systeminfo_sum">powered by Sysinfo</string>
+    <string name="devwidget_summary">powered by developer widget</string>
+    <string name="devwidget_title">Device widget</string>
+    <string name="devicedetails_bubble_setting_description">Below you will find the options to see indepth device hardware and sowftware details this includes network identifires</string>
+    
+    <!-- radio info device details strings -->
+    <string name="radio_info_title">Radio info</string>
+    <string name="radio_info_summary">device Radio information</string>
+
 
 </resources>
