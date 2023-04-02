@@ -24,7 +24,8 @@
     <PreferenceScreen
         android:key="flexo_lottie_animation"
         android:layout="@layout/flexoos_card"
-        android:selectable="false"
+        android:selectable="true"
+        android:fragment="com.epic.Anatolia"
         android:order="-190" />
 <!--
    <com.android.settingslib.widget.LayoutPreference
@@ -63,14 +64,6 @@
         settings:highlightableMenuKey="@string/menu_key_connected_devices"
         settings:controller="com.android.settings.connecteddevice.TopLevelConnectedDevicesPreferenceController"/>
 		
-	<com.android.settings.widget.HomepagePreference
-        android:fragment="com.epic.Anatolia"
-        android:icon="@drawable/ic_settings_anatolia"
-        android:key="top_level_anatolia"
-        android:order="-135"
-        android:title="@string/anatolia_settings_title"
-        android:summary="@string/anatolia_settings_summary" />	
-
     <com.android.settings.widget.HomepagePreference
         android:fragment="com.android.settings.applications.AppDashboardFragment"
         android:icon="@drawable/ic_apps"
