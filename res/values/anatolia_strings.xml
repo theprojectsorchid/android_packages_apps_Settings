@@ -59,5 +59,15 @@
     <string name="radio_info_title">Radio info</string>
     <string name="radio_info_summary">device Radio information</string>
 
+    <!--  buttons convert aboutus strings -->
+     <!-- firmware edit -->
+    <string name="aboutus_title">About Us</string>
+    <string name="aboutus_summary">about us page</string>
+    <string name="aboutus_bubble_setting_description">Rom Name is A free and open-source operating system for various devices, based on the Android mobile platform. Major thanks to  Arrow Os. Further improvements and optimizations have been contibuted by the community. Thank you all developers, designers and testers</string>
+    <string name="about_us_info">Our Website</string>
+    <string name="about_us_info_summary">get more info about us</string>
+    <string name="aboutus_link_summary">Customer chat group</string>
+    <string name="aboutus_link_title">Customer support</string>
+
 
 </resources>
