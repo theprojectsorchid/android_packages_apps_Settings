@@ -26,11 +26,11 @@
             android:fragment="com.epic.fragments.StatusBarSettings"
             android:icon="@drawable/ic_anatolia_statusbar" />
 
-        <!-- Buttons -->
+        <!-- About us -->
         <PreferenceScreen
-            android:key="buttonsettings_category"
-            android:title="@string/buttons_title"
-            android:summary="@string/buttons_summary"
+            android:key="Aboutus_category"
+            android:title="@string/aboutus_title"
+            android:summary="@string/aboutus_summary"
             android:fragment="com.epic.fragments.ButtonSettings"
             android:icon="@drawable/ic_anatolia_buttons" />
 			
