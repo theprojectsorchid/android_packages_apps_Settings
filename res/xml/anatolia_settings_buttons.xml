@@ -24,7 +24,7 @@
         android:key="aboutus_anim"
         settings:searchable="false"
         android:order="-999"
-        app:lottie_rawRes="@raw/about_us"/>
+        app:lottie_rawRes="@raw/aboutus_settings"/>
 
   
    <!-- Header -->
