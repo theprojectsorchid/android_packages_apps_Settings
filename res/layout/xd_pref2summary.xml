@@ -58,6 +58,18 @@
             android:singleLine="true"
             style="@style/xd_text_primary" />
 
+        <TextView
+            android:id="@android:id/summary"
+            android:textSize="15sp"
+            android:textColor="?android:attr/colorAccent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@android:id/title"
+            android:layout_alignStart="@android:id/title"
+            android:maxLines="10"
+            android:layout_marginTop="2dp"
+            style="@style/xd_text_secondary" />
+
     </RelativeLayout>
 
     <!-- Preference should place its actual preference widget here. -->

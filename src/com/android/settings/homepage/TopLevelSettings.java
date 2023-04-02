@@ -219,7 +219,7 @@ public class TopLevelSettings extends DashboardFragment implements
                 preference.setLayoutResource(R.layout.xd_pref_card_bot);
             }
             if (key.equals("top_level_accounts")){
-                preference.setLayoutResource(R.layout.xd_pref_card_bot);
+                preference.setLayoutResource(R.layout.xd_pref_card_mid2);
             }
             if (key.equals("top_level_octavi_lab")){
                 preference.setLayoutResource(R.layout.xd_pref_card_top);
@@ -228,7 +228,7 @@ public class TopLevelSettings extends DashboardFragment implements
                 preference.setLayoutResource(R.layout.xd_pref_card_bot);
             }
             if (key.equals("top_level_battery")){
-                preference.setLayoutResource(R.layout.xd_pref_card_top);
+                preference.setLayoutResource(R.layout.xd_pref_card_topsummary);
             }
             if (key.equals("top_level_display")){
                 preference.setLayoutResource(R.layout.xd_pref_card_mid);
@@ -240,13 +240,13 @@ public class TopLevelSettings extends DashboardFragment implements
                 preference.setLayoutResource(R.layout.xd_pref_card_top);
             }
             if (key.equals("top_level_storage")){
-                preference.setLayoutResource(R.layout.xd_pref_card_bot);
+                preference.setLayoutResource(R.layout.xd_pref_card_botsummary);
             }
             if (key.equals("top_level_notifications")){
                 preference.setLayoutResource(R.layout.xd_pref_card_bot);
             }
             if (key.equals("top_level_location")){
-                preference.setLayoutResource(R.layout.xd_pref_card_mid);
+                preference.setLayoutResource(R.layout.xd_pref_card_botsummary);
             }
             if (key.equals("top_level_accessibility")){
                 preference.setLayoutResource(R.layout.xd_pref_card_mid2);
@@ -273,22 +273,22 @@ public class TopLevelSettings extends DashboardFragment implements
                 preference.setLayoutResource(R.layout.xd_pref_card_top);
             }
             if (key.equals("dashboard_tile_pref_com.google.android.gms.app.settings.GoogleSettingsIALink")){
-                preference.setLayoutResource(R.layout.xd_pref_card_bot);
+                preference.setLayoutResource(R.layout.xd_pref_card_botsummary);
             }
 	        if (key.equals("top_level_google")){
-                preference.setLayoutResource(R.layout.xd_pref_card_mid2);
+                preference.setLayoutResource(R.layout.xd_pref_card_botsummary);
             }
 	        if (key.equals("top_level_google")){
-                preference.setLayoutResource(R.layout.xd_pref_card_mid2);
+                preference.setLayoutResource(R.layout.xd_pref_card_botsummary);
             }
 	        if (key.equals("dashboard_tile_pref_com.google.android.apps.wellbeing.home.TopLevelSettingsActivity")){
-                preference.setLayoutResource(R.layout.xd_pref_card_mid2);
+                preference.setLayoutResource(R.layout.xd_pref_card_top);
             }
 	        if (key.equals("top_level_wellbeing")){
-                preference.setLayoutResource(R.layout.xd_pref_card_mid2);
+                preference.setLayoutResource(R.layout.xd_pref_card_top);
             }
             if (key.equals("top_level_userinfo")){
-                preference.setLayoutResource(R.layout.xd_pref_card_mid2);
+                preference.setLayoutResource(R.layout.xd_pref_card_mid2summary);
             }   
 	}
     }
