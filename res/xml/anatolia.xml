@@ -16,8 +16,30 @@
 <PreferenceScreen
         xmlns:android="http://schemas.android.com/apk/res/android"
         xmlns:settings="http://schemas.android.com/apk/res/com.android.settings"
-        android:title="@string/anatolia_settings_title">
-		
+        android:title=" ">
+		 <!-- orchidosrom grid -->
+    <PreferenceScreen
+        android:key="HardwareGrid"
+        android:enabled="false"
+        android:order="-180"    
+        android:layout="@layout/Hardware_Grid"/>   
+
+   <!-- Header -->
+  <PreferenceCategory
+        android:title="System Info"
+        android:order="-170"
+        android:layout="@layout/settings_title_header">
+  </PreferenceCategory>
+      
+    <Preference
+        android:key="xd_build_status"
+        android:title="@string/xd_build_status"
+        android:summary="@string/xd_summary_placeholder"
+        android:icon="@drawable/xd_build"
+        android:order="-160"    
+        settings:controller="com.android.settings.deviceinfo.firmwareversion.BuildMaintainerPreferenceController"
+        settings:layout="@layout/xd_pref_card_sin-accent2"/>
+
 		<!-- Device details -->
         <PreferenceScreen
             android:key="Device_details_category"
@@ -90,5 +112,15 @@
             android:fragment="com.epic.fragments.ExtraSettings"
             android:icon="@drawable/ic_anatolia_extras" />
 
+
+  <!-- test -->
+        <PreferenceScreen
+        android:fragment="com.android.settings.deviceinfo.aboutphone.MyDeviceInfoFragment"
+        android:icon="@drawable/ic_phone_info"
+        android:key="top_level_about_device"
+        android:order="20"
+        android:title="@string/about_settings"
+        android:summary="@string/summary_placeholder"
+        settings:controller="com.android.settings.deviceinfo.aboutphone.TopLevelAboutDevicePreferenceController"/>
 
 </PreferenceScreen>
