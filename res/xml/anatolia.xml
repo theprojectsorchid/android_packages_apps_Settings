@@ -18,11 +18,11 @@
         xmlns:settings="http://schemas.android.com/apk/res/com.android.settings"
         android:title="@string/anatolia_settings_title">
 		
-		<!-- Status bar -->
+		<!-- Device details -->
         <PreferenceScreen
-            android:key="statusbar_category"
-            android:title="@string/statusbar_title"
-            android:summary="@string/statusbar_summary"
+            android:key="Device_details_category"
+            android:title="@string/Device_details_title"
+            android:summary="@string/Device_details_summary"
             android:fragment="com.epic.fragments.StatusBarSettings"
             android:icon="@drawable/ic_anatolia_statusbar" />
 
