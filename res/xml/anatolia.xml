@@ -22,7 +22,7 @@
         android:key="HardwareGrid"
         android:enabled="false"
         android:order="-180"    
-        android:layout="@layout/Hardware_Grid"/>   
+        android:layout="@layout/Hardware_grid"/>   
 
    <!-- Header -->
   <PreferenceCategory
