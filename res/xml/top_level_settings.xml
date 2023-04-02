@@ -188,8 +188,8 @@
         settings:controller="com.android.settings.accounts.TopLevelAccountEntryPreferenceController"/>
 
     <com.android.settings.widget.HomepagePreference
-        android:fragment="com.android.settings.system.SystemDashboardFragment"
-        android:icon="@drawable/ic_settings_system_dashboard_white"
+        android:fragment="com.android.settings.gestures.GestureSettings"
+        settings:controller="com.android.settings.gestures.GesturesSettingPreferenceController"        android:icon="@drawable/ic_settings_system_dashboard_white"
         android:key="top_level_system"
         android:order="10"
         android:title="@string/header_category_system"
