@@ -180,14 +180,13 @@
 
     <PreferenceCategory
         android:title="@string/customization_category_title">
+     
+    <Preference
+        android:key="language_input_settings"
+        android:title="@string/language_settings"
+        android:icon="@drawable/ic_settings_language"
+        android:fragment="com.epic.fragments.GestureSettings"/>
 
-	<Preference
-            android:key="systemui_tuner_statusbar"
-            android:title="@string/statusbar_items_title" >
-            <intent android:action="android.intent.action.MAIN"
-                android:targetPackage="com.android.systemui"
-                android:targetClass="com.android.systemui.tuner.StatusbarItemsActivity" />
-        </Preference>
         
     <Preference
         android:key="language_input_settings"
@@ -195,10 +194,6 @@
         android:icon="@drawable/ic_settings_language"
         android:fragment="com.epic.fragments.ExtraSettings"/>
 
-        <com.arrow.support.preferences.SystemSettingSwitchPreference
-            android:key="qs_footer_data_usage"
-            android:title="@string/qs_footer_datausage_title"
-            android:summary="@string/qs_footer_datausage_summary"
-            android:defaultValue="false" />
+    
     </PreferenceCategory>
 </PreferenceScreen>
