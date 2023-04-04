@@ -197,7 +197,7 @@
         android:summary="@string/system_dashboard_summary"
         settings:highlightableMenuKey="@string/menu_key_system"/>
 
-    <com.android.settings.widget.HomepagePreference
+    <!--<com.android.settings.widget.HomepagePreference
         android:fragment="com.android.settings.deviceinfo.aboutphone.MyDeviceInfoFragment"
         android:icon="@drawable/ic_phone_info"
         android:key="top_level_about_device"
@@ -205,7 +205,7 @@
         android:title="@string/about_settings"
         android:summary="@string/summary_placeholder"
         settings:highlightableMenuKey="@string/menu_key_about_device"
-        settings:controller="com.android.settings.deviceinfo.aboutphone.TopLevelAboutDevicePreferenceController"/>
+        settings:controller="com.android.settings.deviceinfo.aboutphone.TopLevelAboutDevicePreferenceController"/>-->
 
     <com.android.settings.widget.HomepagePreference
         android:icon="@drawable/ic_help"
