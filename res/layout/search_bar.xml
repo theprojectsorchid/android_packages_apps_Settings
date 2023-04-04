@@ -32,17 +32,17 @@
             android:layout_width="match_parent"
             android:layout_height="@dimen/search_bar_height"
             android:paddingStart="4dp"
-            android:background="@drawable/search_bar_selected_background"
+            android:background="@drawable/xd_pref_card_mid2"
             android:contentInsetStartWithNavigation="@dimen/search_bar_content_inset"
-            android:navigationIcon="@drawable/ic_homepage_search">
+            android:navigationIcon="@drawable/empty_logo">
             <TextView
                 android:id="@+id/search_action_bar_title"
                 style="@style/TextAppearance.SearchBar"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:paddingStart="-4dp"
-                android:layout_gravity="start"
-                android:text="@string/search_menu"/>
+                android:layout_gravity="center"
+                android:text="@string/lets_search"/>
         </Toolbar>
     </com.google.android.material.card.MaterialCardView>
 
