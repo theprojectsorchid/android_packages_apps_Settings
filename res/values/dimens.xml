@@ -121,9 +121,9 @@
 
     <!-- Search bar -->
     <dimen name="search_bar_margin">16dp</dimen>
-    <dimen name="search_bar_height">52dp</dimen>
-    <dimen name="search_bar_text_size">20sp</dimen>
-    <dimen name="search_bar_corner_radius">28dp</dimen>
+    <dimen name="search_bar_height">62dp</dimen>
+    <dimen name="search_bar_text_size">24sp</dimen>
+    <dimen name="search_bar_corner_radius">24dp</dimen>
     <dimen name="search_bar_content_inset">56dp</dimen>
 
     <!-- Avatar -->
@@ -475,6 +475,11 @@
      <dimen name="dashboard_icon_size">42dp</dimen>
      <dimen name="top_pref_start">60dp</dimen>
      <dimen name="card_radius">12dp</dimen>
-     
+         <!-- Dashboard image tile size -->
+    <dimen name="dashboard_tile_image_size">36dp</dimen>
+
+    <!-- Dashboard foreground image size -->
+    <dimen name="dashboard_tile_foreground_image_size">24dp</dimen>
+
 
 </resources>
