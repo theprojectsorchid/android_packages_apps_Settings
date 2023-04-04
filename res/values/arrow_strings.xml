@@ -241,4 +241,7 @@
     
     <string name="usercard_summary">Tap for more info</string>
 
+    <!-- search bar -->
+    <string name="lets_search">Lets search</string>
+    
 </resources>
