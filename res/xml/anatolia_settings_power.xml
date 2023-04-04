@@ -16,6 +16,35 @@
 <PreferenceScreen
         xmlns:android="http://schemas.android.com/apk/res/android"
         xmlns:settings="http://schemas.android.com/apk/res/com.android.settings"
-	android:title="@string/powermenu_title">
+	 xmlns:app="http://schemas.android.com/apk/res-auto"
+     android:title=" ">
+    
+    
+    <com.android.settingslib.widget.IllustrationPreference
+        android:key="onthegomode_anim"
+        settings:searchable="false"
+        android:order="-999"
+        app:lottie_rawRes="@raw/onthegomode"/>
+
+  
+   <!-- Header -->
+  <PreferenceCategory
+        android:title="On the Go mode"
+        android:order="-998"
+        android:layout="@layout/settings_title_header">
+  </PreferenceCategory>
+      
+        <com.android.settingslib.widget.TopIntroPreference
+            android:key="onthegomode_bubbles_desc"
+            android:order="-997"
+            android:title="@string/onthegomode_bubble_setting_description"/>
+
+     <Preference
+            android:key="onthegomode"
+            android:title="@string/onthegomode_title"
+            android:icon="@drawable/ic_settings_language"
+            android:fragment="com.android.settings.display.ToggleFontSizePreferenceFragment"
+            settings:controller="com.android.settings.display.FontSizePreferenceController"
+            settings:keywords="@string/keywords_font_size"/>
 
 </PreferenceScreen>
