@@ -193,7 +193,14 @@
         android:title="@string/language_settings"
         android:icon="@drawable/ic_settings_language"
         android:fragment="com.epic.fragments.ExtraSettings"/>
+ 
+  
+    <Preference
+        android:key="onthegomode_settings"
+        android:title="@string/onthegomode_title"
+        android:summary="@string/onthegomode_summary"
+        android:icon="@drawable/ic_settings_language"
+        android:fragment="com.epic.fragments.PowerMenuSettings"/>
 
-    
     </PreferenceCategory>
 </PreferenceScreen>
