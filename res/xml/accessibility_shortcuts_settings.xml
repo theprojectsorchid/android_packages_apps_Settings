@@ -29,8 +29,6 @@
   </PreferenceCategory>
 
 
-
-
     <Preference
         android:fragment="com.android.settings.accessibility.AccessibilityButtonFragment"
         android:key="accessibility_button_preference"
