@@ -19,8 +19,24 @@
     xmlns:settings="http://schemas.android.com/apk/res-auto"
     android:key="magnification_mode_screen"
     android:persistent="false"
-    android:title="@string/accessibility_magnification_service_settings_title"
-    settings:searchable="false">
+    settings:searchable="false"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:title=" ">    
+    
+    
+    <com.android.settingslib.widget.IllustrationPreference
+        android:key="configure_notification_settings_animation"
+        settings:searchable="false"
+        android:order="-999"
+        app:lottie_rawRes="@raw/configure_notification_settings"/>
+
+        
+   <!-- Header -->
+  <PreferenceCategory
+        android:title="Magnification"
+        android:order="-997"
+        android:layout="@layout/settings_title_header">
+  </PreferenceCategory>
 
     <Preference
         android:key="magnification_mode"
