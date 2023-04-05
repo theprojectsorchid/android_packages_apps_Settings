@@ -219,7 +219,7 @@ public class TopLevelSettings extends DashboardFragment implements
                 preference.setLayoutResource(R.layout.xd_pref_card_bot);
             }
             if (key.equals("top_level_accounts")){
-                preference.setLayoutResource(R.layout.xd_pref_card_bot);
+                preference.setLayoutResource(R.layout.xd_pref_card_mid2);
             }
             if (key.equals("top_level_octavi_lab")){
                 preference.setLayoutResource(R.layout.xd_pref_card_top);
@@ -246,7 +246,7 @@ public class TopLevelSettings extends DashboardFragment implements
                 preference.setLayoutResource(R.layout.xd_pref_card_bot);
             }
             if (key.equals("top_level_location")){
-                preference.setLayoutResource(R.layout.xd_pref_card_midsummary);
+                preference.setLayoutResource(R.layout.xd_pref_card_botsummary);
             }
             if (key.equals("top_level_accessibility")){
                 preference.setLayoutResource(R.layout.xd_pref_card_mid2);
