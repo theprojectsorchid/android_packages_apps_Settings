@@ -29,6 +29,7 @@
 
     <PreferenceCategory
         android:key="color_balance_category"
+        android:layout="@layout/custom_preference_category2"
         android:title="@string/color_mode_balance_category"
         android:order="100">
 
