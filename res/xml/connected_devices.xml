@@ -46,16 +46,19 @@
 
     <PreferenceCategory
         android:key="available_device_list"
+         android:layout="@layout/custom_preference_category2"       
         android:title="@string/connected_device_media_device_title"
         settings:controller="com.android.settings.connecteddevice.AvailableMediaDeviceGroupController"/>
 
     <PreferenceCategory
         android:key="connected_device_list"
+         android:layout="@layout/custom_preference_category2"       
         android:title="@string/connected_device_other_device_title"
         settings:controller="com.android.settings.connecteddevice.ConnectedDeviceGroupController"/>
 
     <PreferenceCategory
         android:key="saved_tws_device_list"
+         android:layout="@layout/custom_preference_category2"       
         android:title="@string/connected_tws_device_saved_title"
         settings:controller="com.android.settings.connecteddevice.SavedTwsDeviceGroupController"/>
 
@@ -72,6 +75,7 @@
 
     <PreferenceCategory
         android:key="previously_connected_devices"
+         android:layout="@layout/custom_preference_category2"       
         android:title="@string/connected_device_previously_connected_title"
         settings:controller="com.android.settings.connecteddevice.PreviouslyConnectedDevicePreferenceController">
 
