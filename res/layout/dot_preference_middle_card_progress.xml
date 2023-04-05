@@ -76,7 +76,7 @@
                         android:paddingStart="12dp"
                         android:singleLine="true"
                         android:textAppearance="@*android:style/TextAppearance.DeviceDefault.Subhead"
-                        android:textColor="?android:attr/textColorPrimary"/>
+                        android:textColor="?android:attr/colorAccent"/>
                     <!-- Preference should place its actual preference widget here. -->
                     <LinearLayout
                         android:id="@*android:id/widget_frame"
@@ -112,7 +112,7 @@
                         android:singleLine="true"
                         android:textAlignment="viewStart"
                         android:textAppearance="@*android:style/TextAppearance.DeviceDefault.Body1"
-                        android:textColor="?android:attr/textColorSecondary"
+                        android:textColor="?android:attr/colorAccent"
                         android:visibility="gone" />
 
                 </LinearLayout>
