@@ -36,7 +36,7 @@
     <bool name="config_allow_edit_carrier_enabled" translatable="false">false</bool>
 
     <!-- When true enable color temperature setting. -->
-    <bool name="config_enableColorTemperature">false</bool>
+    <bool name="config_enableColorTemperature">true</bool>
 
     <!-- Whether to show Camera laser sensor switch in Developer Options -->
     <bool name="config_show_camera_laser_sensor">false</bool>
@@ -63,7 +63,7 @@
     <string name="gesture_double_twist_sensor_vendor" translatable="false"></string>
 
     <!-- When true enable gesture setting. -->
-    <bool name="config_gesture_settings_enabled">false</bool>
+    <bool name="config_gesture_settings_enabled">true</bool>
 
     <!-- If the Storage Manager settings are enabled. -->
     <bool name="config_storage_manager_settings_enabled">false</bool>
@@ -213,10 +213,10 @@
     <bool name="config_show_avatar_in_homepage">false</bool>
 
     <!-- Whether or not emergency info tile should display in device info page -->
-    <bool name="config_show_emergency_info_in_device_info">true</bool>
+    <bool name="config_show_emergency_info_in_device_info">false</bool>
 
     <!-- Whether or not branded account info tile should display in device info page -->
-    <bool name="config_show_branded_account_in_device_info">true</bool>
+    <bool name="config_show_branded_account_in_device_info">false</bool>
 
     <!-- Whether or not device header widget tile should display in device info page -->
     <bool name="config_show_device_header_in_device_info">true</bool>
@@ -270,7 +270,7 @@
     <string name="config_face_enroll" translatable="false"></string>
 
     <!-- Whether to show the "less secure" info section on the face enroll intro screen -->
-    <bool name="config_face_intro_show_less_secure">false</bool>
+    <bool name="config_face_intro_show_less_secure">true</bool>
 
     <!-- Whether to show the "require eyes" info section on the face enroll intro screen -->
     <bool name="config_face_intro_show_require_eyes">true</bool>
@@ -304,7 +304,7 @@
     <bool name="config_show_regulatory_info">false</bool>
 
     <!-- Whether to show a preference item for mobile plan -->
-    <bool name="config_show_mobile_plan">true</bool>
+    <bool name="config_show_mobile_plan">false</bool>
 
     <!-- Whether none security option is hide or not  (country specific). -->
     <bool name="config_hide_none_security_option">false</bool>
@@ -327,7 +327,7 @@
     <bool name="config_show_private_dns_settings">true</bool>
 
     <!-- Whether memory from app_info_settings is available or not. -->
-    <bool name="config_show_app_info_settings_memory">false</bool>
+    <bool name="config_show_app_info_settings_memory">true</bool>
 
     <!-- Whether battery from app_info_settings is available or not. -->
     <bool name="config_show_app_info_settings_battery">true</bool>
@@ -369,7 +369,7 @@
     <bool name="config_show_encryption_and_credentials_encryption_status">true</bool>
 
     <!-- Whether premium_sms should be shown or not. -->
-    <bool name="config_show_premium_sms">true</bool>
+    <bool name="config_show_premium_sms">false</bool>
 
     <!-- Whether data_saver should be shown or not. -->
     <bool name="config_show_data_saver">true</bool>
@@ -426,7 +426,7 @@
     <bool name="config_show_reset_dashboard">true</bool>
 
     <!-- Whether system_update_settings should be shown or not. -->
-    <bool name="config_show_system_update_settings">true</bool>
+    <bool name="config_show_system_update_settings">false</bool>
 
     <!-- Whether device_model should be shown or not. -->
     <bool name="config_show_device_model">true</bool>
@@ -493,13 +493,13 @@
     <bool name="config_show_smooth_display">false</bool>
 
     <!-- Whether to show emergency gesture in Settings -->
-    <bool name="config_show_emergency_gesture_settings">true</bool>
+    <bool name="config_show_emergency_gesture_settings">false</bool>
 
     <!-- Optional package name if another 1p app wants to take over the emergency gesture settings UI -->
     <string name="emergency_gesture_settings_package"></string>
 
     <!-- Whether to show the Preference for Adaptive connectivity -->
-    <bool name="config_show_adaptive_connectivity">false</bool>
+    <bool name="config_show_adaptive_connectivity">true</bool>
 
     <!-- Authority of advanced device battery prediction -->
     <string name="config_battery_prediction_authority" translatable="false"></string>
