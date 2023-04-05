@@ -20,7 +20,7 @@
             android:topLeftRadius="@dimen/xd_pref_card_radius"
             android:topRightRadius="@dimen/xd_pref_card_radius"
             android:bottomLeftRadius="@dimen/xd_pref_card_radius"
-            android:bottomRightRadius="@dimen/xd_pref_card_radius"
+            android:bottomRightRadius="@dimen/xd_pref_card_radius"/>
         <solid android:color="@*android:color/primary_device_default_light" />
     </shape>
 </inset>
