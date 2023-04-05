@@ -34,12 +34,6 @@
         android:layout="@layout/settings_title_header">
   </PreferenceCategory>
         
-    <!-- security_settings_status.xml -->
-    <PreferenceCategory
-        android:order="-10"
-        android:key="security_status"
-        android:title="@string/security_status_title" />
-
     <PreferenceCategory
         android:order="1"
         android:key="dashboard_tile_placeholder" />
@@ -47,8 +41,15 @@
     <!-- security section -->
     <PreferenceCategory
         android:order="10"
-        android:key="security_category"
+        android:key="security_category"            
+        android:layout="@layout/custom_preference_category2"
         android:title="@string/lock_settings_title">
+        <Preference
+            android:key="lockscreen_from_display_settings"
+            android:title="@string/lockscreen_settings_title"
+            android:fragment="com.android.settings.security.LockscreenDashboardFragment"
+            settings:keywords="@string/keywords_ambient_display_screen"
+            settings:controller="com.android.settings.security.screenlock.LockScreenPreferenceController"/>
 
         <com.android.settings.widget.GearPreference
             android:key="unlock_set_or_change"
@@ -77,8 +78,9 @@
 
     <PreferenceCategory
         android:order="40"
+        android:title="@string/manage_device_admin"
         android:key="security_settings_device_admin_category"
-        android:layout="@layout/preference_category_no_label">
+        android:layout="@layout/custom_preference_category2">
 
         <Preference
             android:key="manage_device_admin"
@@ -145,6 +147,7 @@
     <!-- work profile security section -->
     <PreferenceCategory
         android:order="100"
+                android:layout="@layout/custom_preference_category2"
         android:key="security_category_profile"
         android:title="@string/lock_settings_profile_title">
 
