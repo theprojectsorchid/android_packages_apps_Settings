@@ -18,7 +18,7 @@
     xmlns:settings="http://schemas.android.com/apk/res-auto"
     android:key="accessibility_tap_assistance"
     android:persistent="false"
-    android:title="@string/accessibility_tap_assistance_title">
+    android:title=" ">
 
    <!-- Header -->
   <PreferenceCategory
