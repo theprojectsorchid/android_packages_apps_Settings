@@ -38,6 +38,7 @@
   </PreferenceCategory>
         
     <PreferenceCategory
+            android:layout="@layout/custom_preference_category2"
         android:title="@string/category_name_brightness">
 
         <com.android.settingslib.RestrictedPreference
@@ -55,14 +56,15 @@
     </PreferenceCategory>
 
     <PreferenceCategory
-        android:title="@string/category_name_lock_display">
+            android:layout="@layout/custom_preference_category2"
+        android:title="@string/screen_timeout">
 
-        <Preference
+       <!-- <Preference
             android:key="lockscreen_from_display_settings"
             android:title="@string/lockscreen_settings_title"
             android:fragment="com.android.settings.security.LockscreenDashboardFragment"
             settings:keywords="@string/keywords_ambient_display_screen"
-            settings:controller="com.android.settings.security.screenlock.LockScreenPreferenceController"/>
+            settings:controller="com.android.settings.security.screenlock.LockScreenPreferenceController"/>-->
 
         <com.android.settingslib.RestrictedPreference
             android:key="screen_timeout"
@@ -73,6 +75,7 @@
     </PreferenceCategory>
 
     <PreferenceCategory
+            android:layout="@layout/custom_preference_category2"
         android:title="@string/category_name_appearance">
 
         <com.android.settings.display.darkmode.DarkModePreference
@@ -99,6 +102,7 @@
     </PreferenceCategory>
 
     <PreferenceCategory
+            android:layout="@layout/custom_preference_category2"
         android:title="@string/category_name_color">
 
         <com.android.settings.widget.PrimarySwitchPreference
@@ -117,6 +121,7 @@
     </PreferenceCategory>
 
     <PreferenceCategory
+            android:layout="@layout/custom_preference_category2"
         android:title="@string/category_name_display_controls">
 
         <SwitchPreference
@@ -179,8 +184,13 @@
     </PreferenceCategory>
 
     <PreferenceCategory
+            android:layout="@layout/custom_preference_category2"
         android:title="@string/customization_category_title">
      
+        <com.android.settingslib.widget.TopIntroPreference
+            android:key="onthegomode_bubbles_desc"
+            android:title="@string/onthegomode_bubble_setting_description"/>
+
     <Preference
         android:key="language_input_settings"
         android:title="@string/language_settings"

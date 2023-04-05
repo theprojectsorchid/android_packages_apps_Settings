@@ -53,6 +53,7 @@
 
     <PreferenceCategory
         android:key="battery_light_cat"
+         android:layout="@layout/custom_preference_category2"       
         android:title="@string/battery_light_cat"
         android:dependency="battery_light_enabled">
         <com.arrow.support.colorpicker.ColorPickerPreference
