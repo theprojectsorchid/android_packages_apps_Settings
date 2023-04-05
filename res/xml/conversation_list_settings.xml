@@ -44,6 +44,7 @@
 
     <PreferenceCategory
         android:key="important_conversations"
+        android:layout="@layout/custom_preference_category2"
         android:title="@string/important_conversations"
         settings:isPreferenceVisible="false" >
         <!-- Important conversations added here -->
@@ -56,11 +57,13 @@
     <PreferenceCategory
         android:title="@string/other_conversations"
         android:key="other_conversations"
+        android:layout="@layout/custom_preference_category2"
         settings:isPreferenceVisible="false" />
 
     <!-- Recent conversations added here -->
     <PreferenceCategory
         android:title="@string/recent_conversations"
+        android:layout="@layout/custom_preference_category2"
         android:key="recent_conversations"
         settings:isPreferenceVisible="false"/>
 

@@ -30,7 +30,7 @@
 
    <!-- Header -->
   <PreferenceCategory
-        android:title="System"
+        android:title="Date and time"
         android:order="-997"
         android:layout="@layout/settings_title_header">
   </PreferenceCategory>
@@ -55,6 +55,7 @@
 
     <PreferenceCategory
         android:key="timezone_preference_category"
+                android:layout="@layout/custom_preference_category2"
         android:title="@string/date_time_set_timezone_title">
 
         <com.android.settingslib.RestrictedSwitchPreference
@@ -81,6 +82,7 @@
 
     <PreferenceCategory
         android:key="time_format_preference_category"
+                android:layout="@layout/custom_preference_category2"
         android:title="@string/time_format_category_title"
         settings:keywords="@string/keywords_time_format">
         <SwitchPreference

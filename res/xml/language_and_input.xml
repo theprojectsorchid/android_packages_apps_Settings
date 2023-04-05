@@ -87,8 +87,7 @@
 
     <PreferenceCategory
         android:key="pointer_and_tts_category"
-        android:layout="@layout/custom_preference_category2"
-        android:layout="@layout/preference_category_no_label">
+        android:layout="@layout/custom_preference_category2">
 
         <com.android.settings.PointerSpeedPreference
             android:key="pointer_speed"
