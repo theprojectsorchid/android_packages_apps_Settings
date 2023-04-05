@@ -17,7 +17,14 @@
 <PreferenceScreen
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:settings="http://schemas.android.com/apk/res-auto"
-    android:title="@string/storage_label">
+       android:title=" ">
+
+   <!-- Header -->
+  <PreferenceCategory
+        android:title="App Storage"
+        android:order="-999"
+        android:layout="@layout/settings_title_header">
+  </PreferenceCategory>
 
     <com.android.settingslib.widget.ActionButtonsPreference
         android:key="header_view" />
@@ -35,7 +42,8 @@
         android:layout="@layout/single_button_panel" />
 
     <PreferenceCategory
-        android:key="storage_category"
+        android:key="storage_category"        
+        android:layout="@layout/custom_preference_category2"
         android:title="@string/app_info_storage_title">
 
         <Preference
