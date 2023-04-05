@@ -179,23 +179,24 @@
         settings:highlightableMenuKey="@string/menu_key_emergency"/>
 -->
     <com.android.settings.widget.HomepagePreference
-        android:fragment="com.android.settings.accounts.AccountDashboardFragment"
-        android:icon="@drawable/ic_settings_accounts"
+        android:fragment="com.android.settings.gestures.GestureSettings"
         android:key="top_level_accounts"
         android:order="-10"
-        android:title="@string/account_dashboard_title"
+        android:title="@string/system_navigation_title"
         android:summary="@string/summary_placeholder"
         settings:highlightableMenuKey="@string/menu_key_accounts"
-        settings:controller="com.android.settings.accounts.TopLevelAccountEntryPreferenceController"/>
+        settings:controller="com.android.settings.gestures.GesturesSettingPreferenceController"        
+        android:icon="@drawable/ic_settings_system_dashboard_white"/>
 
-    <com.android.settings.widget.HomepagePreference
+    <!--<com.android.settings.widget.HomepagePreference
         android:fragment="com.android.settings.gestures.GestureSettings"
-        settings:controller="com.android.settings.gestures.GesturesSettingPreferenceController"        android:icon="@drawable/ic_settings_system_dashboard_white"
+        settings:controller="com.android.settings.gestures.GesturesSettingPreferenceController"        
+        android:icon="@drawable/ic_phone_info"
         android:key="top_level_system"
         android:order="10"
         android:title="@string/header_category_system"
         android:summary="@string/system_dashboard_summary"
-        settings:highlightableMenuKey="@string/menu_key_system"/>
+        settings:highlightableMenuKey="@string/menu_key_system"/>-->
 
     <!--<com.android.settings.widget.HomepagePreference
         android:fragment="com.android.settings.deviceinfo.aboutphone.MyDeviceInfoFragment"
