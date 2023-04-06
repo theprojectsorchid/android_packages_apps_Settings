@@ -32,9 +32,9 @@
             android:layout_width="match_parent"
             android:layout_height="@dimen/search_bar_height"
             android:paddingStart="4dp"
-            android:background="@drawable/xd_pref_card_mid2"
+            android:background="@drawable/search_bar_selected_background"
             android:contentInsetStartWithNavigation="@dimen/search_bar_content_inset"
-            android:navigationIcon="@drawable/empty_logo">
+            android:navigationIcon="@drawable/ic_homepage_search">
             <TextView
                 android:id="@+id/search_action_bar_title"
                 style="@style/TextAppearance.SearchBar"
