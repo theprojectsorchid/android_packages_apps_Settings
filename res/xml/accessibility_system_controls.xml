@@ -38,6 +38,7 @@
         android:fragment="com.android.settings.gestures.OneHandedSettings"
         android:key="gesture_system_navigation_one_handed_accessibility"
         android:persistent="false"
+        android:icon="@drawable/rr_cutout_icon"
         android:title="@string/one_handed_title"
         settings:searchable="false"
         settings:controller="com.android.settings.gestures.OneHandedEnablePreferenceController"/>
@@ -45,12 +46,14 @@
     <SwitchPreference
         android:key="toggle_power_button_ends_call_preference"
         android:persistent="false"
+        android:icon="@drawable/rr_custom_icon"
         android:title="@string/accessibility_power_button_ends_call_prerefence_title"
         settings:controller="com.android.settings.accessibility.PowerButtonEndsCallPreferenceController"/>
 
     <SwitchPreference
         android:key="toggle_lock_screen_rotation_preference"
         android:persistent="false"
+        android:icon="@drawable/rr_dashboard_icon"
         android:title="@string/accelerometer_title"
         settings:controller="com.android.settings.accessibility.LockScreenRotationPreferenceController"/>
 </PreferenceScreen>

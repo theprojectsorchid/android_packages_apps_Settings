@@ -28,22 +28,17 @@
         android:order="-999"
         app:lottie_rawRes="@raw/night_light"/>
 
-   <!-- Header -->
-  <PreferenceCategory
-        android:title="Night Light"
-        android:order="-997"
-        android:layout="@layout/settings_title_header">
-  </PreferenceCategory>
+     <com.android.settingslib.widget.MainSwitchPreference
+        android:key="night_display_activated"
+        android:order="-998"
+        android:title="@string/night_light_main_switch_title"
+        settings:controller="com.android.settings.display.NightDisplayActivationPreferenceController"/>
 
     <com.android.settingslib.widget.TopIntroPreference
         android:key="night_display_top_intro"
+        android:order="-997"
         android:title="@string/night_display_text"
         settings:controller="com.android.settings.display.NightDisplayTopIntroPreferenceController"/>
-
-    <com.android.settingslib.widget.MainSwitchPreference
-        android:key="night_display_activated"
-        android:title="@string/night_light_main_switch_title"
-        settings:controller="com.android.settings.display.NightDisplayActivationPreferenceController"/>
 
     <com.android.settingslib.widget.BannerMessagePreference
         android:key="dark_ui_location_off"
@@ -52,6 +47,7 @@
 
     <DropDownPreference
         android:key="night_display_auto_mode"
+        android:icon="@drawable/rr_duration_icon"
         android:title="@string/night_display_auto_mode_title"
         android:summary="%s"
         settings:allowDividerAbove="true"
@@ -59,16 +55,19 @@
 
     <Preference
         android:key="night_display_start_time"
+        android:icon="@drawable/rr_clock_icon"
         android:title="@string/night_display_start_time_title"
         settings:controller="com.android.settings.display.NightDisplayCustomStartTimePreferenceController"/>
 
     <Preference
         android:key="night_display_end_time"
+        android:icon="@drawable/rr_clock_position_icon"
         android:title="@string/night_display_end_time_title"
         settings:controller="com.android.settings.display.NightDisplayCustomEndTimePreferenceController"/>
 
     <com.android.settings.widget.SeekBarPreference
         android:key="night_display_temperature"
+        android:icon="@drawable/rr_temperature_icon"
         android:title="@string/night_display_temperature_title"
         settings:keywords="@string/keywords_display_night_display"
         settings:controller="com.android.settings.display.NightDisplayIntensityPreferenceController"
