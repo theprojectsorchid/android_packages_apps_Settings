@@ -27,17 +27,17 @@
             android:order="-997"
             app:lottie_rawRes="@raw/darkmode"/>
 
-          <com.android.settingslib.widget.TopIntroPreference
+    <com.android.settingslib.widget.MainSwitchPreference
+        android:key="dark_ui_activated"
+        android:order="-996"
+        android:title="@string/dark_theme_main_switch_title"
+        settings:controller="com.android.settings.display.darkmode.DarkModeActivationPreferenceController"/>
+    
+     <com.android.settingslib.widget.TopIntroPreference
             android:key="dark_illustration_desc"
             android:order="-995"
             android:title="@string/dark_ui_text"/>
             
-
-    <com.android.settingslib.widget.MainSwitchPreference
-        android:key="dark_ui_activated"
-        android:title="@string/dark_theme_main_switch_title"
-        settings:controller="com.android.settings.display.darkmode.DarkModeActivationPreferenceController"/>
-
     <com.arrow.support.preferences.SecureSettingSwitchPreference
         android:key="system_black_theme"
         android:title="@string/system_black_theme_title"
