@@ -25,12 +25,7 @@
     <com.android.settings.fuelgauge.BatteryHistoryPreference
             android:order="-999"
         android:key="battery_graph"/>
-   <!-- Header -->
-  <PreferenceCategory
-        android:title="Advanced battery"
-        android:order="-996"
-        android:layout="@layout/settings_title_header">
-  </PreferenceCategory>
+  
 
     <PreferenceCategory
         android:key="app_list"/>

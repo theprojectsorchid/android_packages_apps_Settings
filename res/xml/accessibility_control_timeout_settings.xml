@@ -35,7 +35,7 @@
     <com.android.settingslib.widget.RadioButtonPreference
         android:key="accessibility_control_timeout_default"
         android:title="@string/accessibility_timeout_default"
-        settings:allowDividerAbove="true"
+        settings:allowDividerAbove="false"
         android:persistent="false" />
 
     <com.android.settingslib.widget.RadioButtonPreference

@@ -41,8 +41,7 @@
     <com.android.settings.slices.SlicePreference
         android:key="bt_nearby_slice"
         android:title="@string/summary_placeholder"
-        settings:controller="com.android.settings.slices.SlicePreferenceController"
-        settings:allowDividerBelow="true"/>
+        settings:controller="com.android.settings.slices.SlicePreferenceController"/>
 
     <PreferenceCategory
         android:key="available_device_list"
@@ -91,9 +90,10 @@
     <Preference
         android:key="connection_preferences"
         android:title="@string/connected_device_connections_title"
+        android:icon="@drawable/ic_settings_connection_preferences"
         android:summary="@string/summary_placeholder"
         android:fragment="com.android.settings.connecteddevice.AdvancedConnectedDeviceDashboardFragment"
-        settings:allowDividerAbove="true"
+        settings:allowDividerAbove="false"
         settings:controller="com.android.settings.connecteddevice.AdvancedConnectedDeviceController"/>
 
     <com.android.settingslib.widget.FooterPreference
