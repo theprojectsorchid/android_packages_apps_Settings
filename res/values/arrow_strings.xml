@@ -252,7 +252,7 @@
     <string name="input_display_settings_bubble_setting_description">The below settings enable you to change the device language, keyboard settings, screen font and display sizes to your liking</string>
     <string name="system_display_controls">System display controls</string>
     <string name="display_customization_category_title">Additional display features</string>
-    <string name="display_customisation_bubble_setting_description"The following features allow you to enhance you device user experience they have been included to enable you to stay mobile</string>
+    <string name="display_customisation_bubble_setting_description">The following features allow you to enhance you device user experience they have been included to enable you to stay mobile</string>
     <string name="statusbar_qs_settings">Statusbar and Qs </string>
  
   <!--Pref userinfo Settings UI -->

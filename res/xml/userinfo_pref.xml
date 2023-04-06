@@ -51,8 +51,4 @@
             android:title="@string/emergency_settings_title"
             android:fragment="com.android.settings.emergency.EmergencyDashboardFragment"/>
         
-    <com.android.settingslib.widget.LayoutPreference
-        android:key="firmware_settings_footer"
-        android:order="50"
-        android:layout="@layout/firmware_settings_footer_animation" />
 </PreferenceScreen>
