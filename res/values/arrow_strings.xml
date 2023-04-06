@@ -243,5 +243,16 @@
 
     <!-- search bar -->
     <string name="lets_search">Lets search</string>
-    
+
+
+    <!-- Display Settings UI -->
+    <string name="dispaly_main_settings">Main Screen settings</string>
+    <string name="display_screen_timming">Screensaver and timeout settings</string>
+    <string name="input_display_settings">Input settings</string>
+    <string name="input_display_settings_bubble_setting_description">The below settings enable you to change the device language, keyboard settings, screen font and display sizes to you liking</string>
+    <string name="system_display_controls">System display controls</string>
+    <string name="display_customization_category_title">additional_display features</string>
+    <string name="display_customisation_bubble_setting_description">the following features allow you to enhance you device user experience they have been included to enable u to stay mobile</string>
+    <string name="statusbar_qs_settings">Statusbar and Qs </string>
+
 </resources>
