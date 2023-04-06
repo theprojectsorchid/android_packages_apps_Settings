@@ -16,9 +16,8 @@
 <PreferenceScreen
         xmlns:android="http://schemas.android.com/apk/res/android"
         xmlns:settings="http://schemas.android.com/apk/res/com.android.settings"
-	 xmlns:app="http://schemas.android.com/apk/res-auto"
-     android:title=" ">
-    
+	   xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:title=" ">
     
     <com.android.settingslib.widget.IllustrationPreference
         android:key="onthegomode_anim"
@@ -26,7 +25,6 @@
         android:order="-999"
         app:lottie_rawRes="@raw/onthegomode"/>
 
-  
    <!-- Header -->
   <PreferenceCategory
         android:title="On the Go mode"
