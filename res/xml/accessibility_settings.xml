@@ -58,8 +58,7 @@
             android:persistent="false"
             android:title="@string/accessibility_text_and_display_title"
             settings:searchable="true"/>
-<!--
-        <com.android.settings.display.darkmode.DarkModePreference
+       <!-- <com.android.settings.display.darkmode.DarkModePreference
             android:key="dark_ui_mode_accessibility"
             android:icon="@drawable/ic_dark_ui"
             android:title="@string/dark_ui_mode"
@@ -68,7 +67,7 @@
             android:widgetLayout="@null"
             settings:widgetLayout="@null"
             settings:controller="com.android.settings.display.DarkUIPreferenceController"
-            settings:searchable="false"/>
+            settings:searchable="false"/>-->
 -->
 
         <Preference
