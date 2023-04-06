@@ -53,7 +53,7 @@
     
      <Preference
         android:key="systeminfo"
-        android:icon="@drawable/ic_settings_system_dashboard_acc"
+         android:icon="@drawable/rr_virtual_icon"
         android:summary="@string/systeminfo_sum"
         android:title="@string/systeminfo_title">
         <intent
@@ -62,14 +62,5 @@
             android:targetPackage="com.kieronquinn.app.taptap" />
     </Preference>
 
-        <Preference
-        android:key="devwidget"
-        android:icon="@drawable/ic_settings_system_dashboard_acc"
-        android:summary="@string/devwidget_summary"
-        android:title="@string/devwidget_title">
-        <intent
-            android:action="android.intent.action.MAIN"
-            android:targetClass="com.kieronquinn.app.taptap.ui.activities.MainActivity"
-            android:targetPackage="com.kieronquinn.app.taptap" />
-    </Preference>
+
 </PreferenceScreen>

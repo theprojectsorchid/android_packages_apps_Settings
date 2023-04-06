@@ -28,13 +28,6 @@
         android:order="-999"
         app:lottie_rawRes="@raw/lottie_one_hand_mode"/>
 
-   <!-- Header -->
-  <PreferenceCategory
-        android:title="One hand mode"
-        android:order="-997"
-        android:layout="@layout/settings_title_header">
-  </PreferenceCategory>
-
     <com.android.settingslib.widget.MainSwitchPreference
         android:key="gesture_one_handed_mode_enabled_main_switch"
         android:title="@string/one_handed_mode_enabled"
@@ -46,7 +39,8 @@
         android:title="@string/one_handed_mode_intro_text"/>
 
     <PreferenceCategory
-        android:key="gesture_one_handed_mode_swipe_down"
+        android:key="gesture_one_handed_mode_swipe_down"       
+         android:layout="@layout/custom_preference_category2"
         android:title="@string/one_handed_mode_swipe_down_category"
         settings:controller="com.android.settings.gestures.OneHandedPreferenceCategoryController">
 

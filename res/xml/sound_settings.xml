@@ -112,6 +112,7 @@
     <!-- Link ringtone and notification volumes -->
     <com.arrow.support.preferences.SecureSettingSwitchPreference
         android:key="volume_link_notification"
+        android:icon="@drawable/ic_link_notif"
         android:title="@string/volume_link_notification_title"
         android:defaultValue="true"
         android:order="-138"
@@ -128,6 +129,7 @@
     <com.android.settingslib.RestrictedPreference
         android:key="zen_mode"
         android:title="@string/zen_mode_settings_title"
+        android:icon="@drawable/ic_do_not_disturb2"
         android:fragment="com.android.settings.notification.zen.ZenModeSettings"
         android:order="-130"       
          android:visibility="gone"
@@ -138,6 +140,7 @@
     <!-- Phone ringtone -->
     <com.android.settings.DefaultRingtonePreference
         android:key="phone_ringtone"
+        android:icon="@drawable/rr_call_vol_icon"
         android:title="@string/ringtone_title"
         android:dialogTitle="@string/ringtone_title"
         android:summary="@string/summary_placeholder"
@@ -157,6 +160,7 @@
     <!-- Live Caption -110 and Now Playing -105-->
     <Preference
         android:key="media_controls_summary"
+        android:icon="@drawable/ic_settings_headset"
         android:title="@string/media_controls_title"
         android:fragment="com.android.settings.sound.MediaControlsSettings"
         android:order="-100"
@@ -166,6 +170,7 @@
     <!-- Also vibrate for calls -->
     <Preference
         android:fragment="com.android.settings.sound.VibrateForCallsPreferenceFragment"
+        android:icon="@drawable/ic_vibrate"
         android:key="vibrate_for_calls"
         android:title="@string/vibrate_when_ringing_title"
         android:order="-90"
@@ -196,6 +201,7 @@
 
     <com.android.settings.widget.PrimarySwitchPreference
         android:key="gesture_prevent_ringing_sound"
+		android:icon="@drawable/rr_misc_ui_icon"
         android:title="@string/gesture_prevent_ringing_sound_title"
         android:order="-80"
         android:fragment="com.android.settings.gestures.PreventRingingGestureSettings"
@@ -204,6 +210,7 @@
     <!-- Default notification ringtone -->
     <com.android.settings.DefaultRingtonePreference
         android:key="notification_ringtone"
+        android:icon="@drawable/ic_sms_ringtone"
         android:title="@string/notification_ringtone_title"
         android:dialogTitle="@string/notification_ringtone_title"
         android:summary="@string/summary_placeholder"
@@ -213,6 +220,7 @@
     <!-- Default alarm ringtone -->
     <com.android.settings.DefaultRingtonePreference
         android:key="alarm_ringtone"
+        android:icon="@drawable/ic_audio_alarm"
         android:title="@string/alarm_ringtone_title"
         android:dialogTitle="@string/alarm_ringtone_title"
         android:summary="@string/summary_placeholder"
@@ -229,12 +237,14 @@
 
     <!-- Dial pad tones -->
     <SwitchPreference
+    	android:icon="@drawable/ic_dialpad"
         android:key="dial_pad_tones"
         android:title="@string/dial_pad_tones_title"
         android:order="-50"/>
 
     <!-- Screen locking sounds -->
     <SwitchPreference
+		android:icon="@drawable/ic_screenlock"
         android:key="screen_locking_sounds"
         android:title="@string/screen_locking_sounds_title"
         android:order="-45"/>
@@ -242,6 +252,7 @@
     <!-- Charging sounds -->
     <SwitchPreference
         android:key="charging_sounds"
+        android:icon="@drawable/ic_charging_sounds"
         android:title="@string/charging_sounds_title"
         android:order="-40"/>
 
@@ -253,6 +264,7 @@
 
     <!-- Touch sounds -->
     <SwitchPreference
+    		android:icon="@drawable/rr_media_icon"
         android:key="touch_sounds"
         android:title="@string/touch_sounds_title"
         android:order="-30"/>
@@ -266,6 +278,7 @@
     <!-- Vibrate on touch -->
     <SwitchPreference
         android:key="vibrate_on_touch"
+      	android:icon="@drawable/rr_vibration_icon"
         android:title="@string/vibrate_on_touch_title"
         android:summary="@string/vibrate_on_touch_summary"
         settings:keywords="@string/keywords_vibrate_on_touch"

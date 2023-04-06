@@ -36,6 +36,7 @@
     <Preference
         android:fragment="com.android.settings.accessibility.RingVibrationPreferenceFragment"
         android:key="ring_vibration_preference_screen"
+            android:icon="@drawable/rr_imei_info_icon"
         android:title="@string/accessibility_ring_vibration_title"
         settings:keywords="@string/keywords_ring_vibration"
         app:controller="com.android.settings.accessibility.RingVibrationIntensityPreferenceController" />
@@ -43,6 +44,7 @@
     <Preference
         android:fragment="com.android.settings.accessibility.NotificationVibrationPreferenceFragment"
         android:key="notification_vibration_preference_screen"
+            android:icon="@drawable/rr_intensity_icon"
         android:title="@string/accessibility_notification_vibration_title"
         settings:keywords="@string/keywords_notification_vibration"
         app:controller="com.android.settings.accessibility.NotificationVibrationIntensityPreferenceController" />
@@ -50,6 +52,7 @@
     <Preference
         android:fragment="com.android.settings.accessibility.TouchVibrationPreferenceFragment"
         android:key="touch_vibration_preference_screen"
+            android:icon="@drawable/rr_inverse_icon"
         android:title="@string/accessibility_touch_vibration_title"
         settings:keywords="@string/keywords_touch_vibration"
         app:controller="com.android.settings.accessibility.HapticFeedbackIntensityPreferenceController" />

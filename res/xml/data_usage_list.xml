@@ -24,11 +24,13 @@
 
         <Preference
             android:key="operator_warning"
+            android:icon="@drawable/rr_ab_icon"
             android:summary="@string/operator_warning"
             android:selectable="false" />
 
         <Preference
-            android:key="non_carrier_data_usage_warning"
+            android:key="non_carrier_data_usage_warning"       
+            android:icon="@drawable/rr_account_icon"
             android:summary="@string/non_carrier_data_usage_warning"
             android:selectable="false" />
 

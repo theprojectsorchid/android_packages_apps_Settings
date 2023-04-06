@@ -19,16 +19,12 @@
     xmlns:settings="http://schemas.android.com/apk/res-auto"
     android:title=" ">
 
-   <com.android.settingslib.widget.LayoutPreference
-        android:key="data_saver_animation"
-        android:order="-999"
-        android:layout="@layout/data_saver_animation" />
-
     <Preference
         android:key="unrestricted_access"
         android:title="@string/unrestricted_data_saver"
         android:summary="@string/summary_two_lines_placeholder"
         android:order="-998"
+         android:icon="@drawable/rr_bt_icon"
         android:fragment="com.android.settings.datausage.UnrestrictedDataAccess"
         settings:searchable="false"
         settings:controller="com.android.settings.applications.specialaccess.DataSaverController" />

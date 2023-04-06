@@ -41,23 +41,23 @@
 
         <com.android.settingslib.RestrictedPreference
             android:key="brightness"
+			android:icon="@drawable/ic_brightness_display"
             android:title="@string/brightness"
-            android:icon="@drawable/ic_settings_language"
             settings:keywords="@string/keywords_display_brightness_level"
             settings:useAdminDisabledSummary="true"
             settings:userRestriction="no_config_brightness"/>
 
         <com.android.settings.display.AutoBrightnessPreference
             android:key="auto_brightness_entry"
-            android:icon="@drawable/ic_settings_language"
-            android:title="@string/auto_brightness_title"
+			android:icon="@drawable/ic_settings_adaptive_brightness"
+			android:title="@string/auto_brightness_title"
             android:fragment="com.android.settings.display.AutoBrightnessSettings"
             settings:controller="com.android.settings.display.AutoBrightnessPreferenceController"/>
         
         <com.android.settings.display.darkmode.DarkModePreference
             android:key="dark_ui_mode"
             android:title="@string/dark_ui_mode"
-            android:icon="@drawable/ic_settings_language"
+            android:icon="@drawable/ic_lockscreen_settings_title"
             android:fragment="com.android.settings.display.darkmode.DarkModeSettingsFragment"
             android:widgetLayout="@null"
             settings:widgetLayout="@null"
@@ -66,7 +66,7 @@
 
         <com.android.settings.widget.PrimarySwitchPreference
             android:key="night_display"
-            android:icon="@drawable/ic_settings_language"
+            android:icon="@drawable/ic_settings_dark"
             android:title="@string/night_display_title"
             android:fragment="com.android.settings.display.NightDisplaySettings"
             settings:controller="com.android.settings.display.NightDisplayPreferenceController"
@@ -80,19 +80,20 @@
 
        <!-- <Preference
             android:key="lockscreen_from_display_settings"
+            android:icon="@drawable/ic_lockscreen_settings_title"
             android:title="@string/lockscreen_settings_title"
             android:fragment="com.android.settings.security.LockscreenDashboardFragment"
             settings:keywords="@string/keywords_ambient_display_screen"
             settings:controller="com.android.settings.security.screenlock.LockScreenPreferenceController"/>-->
         <Preference
             android:key="screensaver"
-            android:icon="@drawable/ic_settings_language"
+			android:icon="@drawable/ic_screensaver_settings"            
             android:title="@string/screensaver_settings_title"
             android:fragment="com.android.settings.dream.DreamSettings"/>
 
         <com.android.settingslib.RestrictedPreference
             android:key="screen_timeout"
-            android:icon="@drawable/ic_settings_language"
+            android:icon="@drawable/ic_screen_timeout"
             android:title="@string/screen_timeout"
             android:summary="@string/summary_placeholder"
             android:fragment="com.android.settings.display.ScreenTimeoutSettings"
@@ -115,15 +116,16 @@
  
         <Preference
             android:key="font_size"
+            android:icon="@drawable/ic_title_font_size"
             android:title="@string/title_font_size"
-            android:icon="@drawable/ic_settings_language"
             android:fragment="com.android.settings.display.ToggleFontSizePreferenceFragment"
             settings:controller="com.android.settings.display.FontSizePreferenceController"
             settings:keywords="@string/keywords_font_size"/>
 
         <com.android.settings.display.ScreenZoomPreference
+            android:icon="@drawable/ic_screen_zoom_title"       
             android:key="display_settings_screen_zoom"
-            android:icon="@drawable/ic_settings_language"
+            android:icon="@drawable/ic_monet_engine_title"            
             android:title="@string/screen_zoom_title"
             android:fragment="com.android.settings.display.ScreenZoomSettings"
             settings:keywords="@string/keywords_display_size"/>
@@ -131,8 +133,8 @@
 
         <Preference
             android:key="color_mode"
-            android:icon="@drawable/ic_settings_language"
             android:title="@string/color_mode_title"
+            android:icon="@drawable/ic_settings_colormode"
             android:fragment="com.android.settings.display.ColorModePreferenceFragment"
             settings:controller="com.android.settings.display.ColorModePreferenceController"
             settings:keywords="@string/keywords_color_mode"/>
@@ -147,27 +149,28 @@
 
         <SwitchPreference
             android:key="auto_rotate"
-            android:icon="@drawable/ic_settings_language"
+			android:icon="@drawable/rr_auto_rotate_icon"
             android:title="@string/accelerometer_title"
             settings:keywords="@string/keywords_auto_rotate"
             settings:controller="com.android.settings.display.AutoRotatePreferenceController"/>
 
         <SwitchPreference
             android:key="display_white_balance"
+            android:icon="@drawable/ic_refresh"            
             android:title="@string/display_white_balance_title"
             android:summary="@string/display_white_balance_summary"
             settings:controller="com.android.settings.display.DisplayWhiteBalancePreferenceController"/>
 
         <ListPreference
     	    android:key="min_refresh_rate"
-            android:icon="@drawable/ic_settings_language"
             android:title="@string/min_refresh_rate_title"
+             android:icon="@drawable/ic_refresh"                       
             android:summary="@string/summary_placeholder"
             settings:controller="com.android.settings.display.MinRefreshRatePreferenceController" />
 
     <ListPreference
             android:key="peak_refresh_rate"
-            android:icon="@drawable/ic_settings_language"
+             android:icon="@drawable/ic_refresh"                       
             android:title="@string/max_refresh_rate_title"
             android:summary="@string/summary_placeholder"
             settings:controller="com.android.settings.display.PeakRefreshRatePreferenceController"/>
@@ -189,6 +192,7 @@
 
         <!--<SwitchPreference
             android:key="tap_to_wake"
+			android:icon="@drawable/ic_taptowake_settings"            
             android:title="@string/tap_to_wake"
             android:summary="@string/tap_to_wake_summary"/>-->
 
@@ -205,14 +209,14 @@
     <Preference
         android:key="statusbar_qs_settings"
         android:title="@string/statusbar_qs_settings"
-        android:icon="@drawable/ic_settings_language"
+        android:icon="@drawable/rr_display_icon"
         android:fragment="com.epic.fragments.GestureSettings"/>
   
     <Preference
         android:key="onthegomode_settings"
         android:title="@string/onthegomode_title"
         android:summary="@string/onthegomode_summary"
-        android:icon="@drawable/ic_settings_language"
+        android:icon="@drawable/ic_settings_night_mode"            
         android:fragment="com.epic.fragments.PowerMenuSettings"/>
 
     
@@ -220,7 +224,7 @@
         android:key="screen_pinning_settings"
         android:title="@string/screen_pinning_title"
         android:summary="@string/summary_placeholder"
-        android:icon="@drawable/ic_settings_language"
+        android:icon="@drawable/ic_theme_customization_icon_pack_title"            
         android:fragment="com.android.settings.security.ScreenPinningSettings"
         settings:keywords="@string/keywords_app_pinning" />
     </PreferenceCategory>

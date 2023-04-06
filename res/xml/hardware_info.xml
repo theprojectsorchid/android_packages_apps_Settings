@@ -90,12 +90,14 @@
 
     <PreferenceCategory
         android:key="basic_info_category"
-        android:selectable="false"
+        android:selectable="false"        
+        android:layout="@layout/custom_preference_category2"
         android:title="@string/net_info">
 
         <!-- Phone number -->
         <Preference
             android:key="phone_number"
+            android:icon="@drawable/ic_settings_quick_gestures"
             android:title="@string/status_number"
             android:summary="@string/summary_placeholder"
             android:selectable="false"
@@ -105,6 +107,7 @@
         <!-- SIM status -->
         <Preference
             android:key="sim_status"
+         android:icon="@drawable/ic_settings_quick_gestures"           
             android:title="@string/sim_status_title"
             settings:keywords="@string/keywords_sim_status"
             android:summary="@string/summary_placeholder"
@@ -113,6 +116,7 @@
         <!-- IMEI -->
         <Preference
             android:key="imei_info"
+        android:icon="@drawable/ic_settings_quick_gestures"
             android:title="@string/status_imei"
             android:summary="@string/summary_placeholder"
             settings:keywords="@string/keywords_imei_info"
@@ -124,12 +128,14 @@
 
     <PreferenceCategory
         android:key="identifiers_info_category"
-        android:selectable="false"
+        android:selectable="false"       
+        android:layout="@layout/custom_preference_category2"
         android:title="@string/id_info">
 
         <Preference
             android:title="@string/radio_info_title"
             android:key="radio_info_settings"
+         android:icon="@drawable/ic_settings_quick_gestures"           
             android:summary="@string/radio_info_summary" >
             <intent android:action="android.intent.action.MAIN"
                     android:targetPackage="com.android.phone"
@@ -139,6 +145,7 @@
         <!--IP address -->
         <Preference
             android:key="wifi_ip_address"
+         android:icon="@drawable/ic_settings_quick_gestures"           
             android:title="@string/wifi_ip_address"
             android:summary="@string/summary_placeholder"
             android:selectable="false"
@@ -148,6 +155,7 @@
         <Preference
             android:key="saved_accesspoints_wifi_mac_address"
             android:title="@string/status_wifi_mac_address"
+         android:icon="@drawable/ic_settings_quick_gestures"           
             android:summary="@string/view_saved_network"
             android:fragment="com.android.settings.wifi.savedaccesspoints2.SavedAccessPointsWifiSettings2"
             settings:enableCopying="false"/>
@@ -158,12 +166,14 @@
             android:title="@string/status_device_wifi_mac_address"
             android:summary="@string/summary_placeholder"
             android:selectable="false"
+         android:icon="@drawable/ic_settings_quick_gestures"           
             settings:enableCopying="true"/>
 
 
         <!-- Bluetooth address -->
         <Preference
             android:key="bt_address"
+         android:icon="@drawable/ic_settings_quick_gestures"           
             android:title="@string/status_bt_address"
             android:summary="@string/summary_placeholder"
             android:selectable="false"
