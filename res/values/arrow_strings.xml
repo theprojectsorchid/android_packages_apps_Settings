@@ -254,5 +254,11 @@
     <string name="display_customization_category_title">additional_display features</string>
     <string name="display_customisation_bubble_setting_description">the following features allow you to enhance you device user experience they have been included to enable u to stay mobile</string>
     <string name="statusbar_qs_settings">Statusbar and Qs </string>
+ 
+  <!--Pref userinfo Settings UI -->
+    <string name="userinfo_bubble_setting_description">Welcome to My details here you can log into and access your accounts, access emergency details and manage multiuser spaces</string>
+    <string name="multiuser_settings_title">Multiuser settings</string>
+    <string name="accounts_settings_title">My Account settings</string>
+    <string name="emergency_settings_title">Emergency settings</string>
 
 </resources>
