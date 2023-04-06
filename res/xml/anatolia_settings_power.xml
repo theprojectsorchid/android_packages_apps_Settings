@@ -34,9 +34,11 @@
       
         <com.android.settingslib.widget.TopIntroPreference
             android:key="onthegomode_bubbles_desc"
-            android:order="-997"
+            android:order="-997"        
+            android:selectable="true"
+        android:fragment="com.android.settings.awaken.fragments.DisplayCustomizations"
             android:title="@string/onthegomode_bubble_setting_description"/>
-
+    
      <Preference
             android:key="onthegomode"
             android:title="@string/onthegomode_title"
@@ -44,5 +46,6 @@
             android:fragment="com.android.settings.display.ToggleFontSizePreferenceFragment"
             settings:controller="com.android.settings.display.FontSizePreferenceController"
             settings:keywords="@string/keywords_font_size"/>
+
 
 </PreferenceScreen>
