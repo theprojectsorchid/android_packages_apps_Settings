@@ -25,13 +25,6 @@
         android:order="-999"
         app:lottie_rawRes="@raw/toplevel_bottom"/>
 
-  
-   <!-- Header -->
-  <PreferenceCategory
-        android:title="Statusbar and QS"
-        android:order="-998"
-        android:layout="@layout/settings_title_header">
-  </PreferenceCategory>
   <com.android.settingslib.widget.TopIntroPreference
             android:key="statusbar_qs_bubbles_desc"
             android:order="-997"
