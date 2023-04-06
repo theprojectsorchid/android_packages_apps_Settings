@@ -37,7 +37,8 @@
 
     <SwitchPreference
         android:key="toggle_primary_mono"
-        android:persistent="false"
+        android:persistent="false"            
+        android:icon="@drawable/ic_audio_media"
         android:summary="@string/accessibility_toggle_primary_mono_summary"
         android:title="@string/accessibility_toggle_primary_mono_title"
         settings:controller="com.android.settings.accessibility.PrimaryMonoPreferenceController"/>

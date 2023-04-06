@@ -69,6 +69,7 @@
         <!-- This preference category gets removed if new_recent_location_ui is disabled -->
         <Preference
             android:key="app_level_permissions"
+            android:icon="@drawable/ic_app_level_permissions"
             android:title="@string/location_app_level_permissions"
             settings:controller="com.android.settings.location.AppLocationPermissionPreferenceController">
             <intent android:action="android.intent.action.MANAGE_PERMISSION_APPS">
@@ -79,6 +80,7 @@
 
         <Preference
             android:fragment="com.android.settings.location.LocationServices"
+			android:icon="@drawable/ic_location_scanning"
             android:key="location_services"
             android:title="@string/location_services_preference_title"
             settings:controller="com.android.settings.location.LocationServicesPreferenceController"/>

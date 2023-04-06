@@ -51,6 +51,7 @@
             android:key="Device_details_category"
             android:title="@string/Device_details_title"
             android:summary="@string/Device_details_summary"
+            android:icon="@drawable/rr_tuner_parcts_activity_icon"
             android:fragment="com.epic.fragments.StatusBarSettings"
             android:icon="@drawable/ic_anatolia_statusbar" />
 
@@ -59,6 +60,7 @@
             android:key="Aboutus_category"
             android:title="@string/aboutus_title"
             android:summary="@string/aboutus_summary"
+            android:icon="@drawable/rr_about_icon"
             android:fragment="com.epic.fragments.ButtonSettings"
             android:icon="@drawable/ic_anatolia_buttons" />
 			

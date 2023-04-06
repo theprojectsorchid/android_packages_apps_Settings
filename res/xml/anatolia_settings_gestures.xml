@@ -32,7 +32,7 @@
 
           <Preference
             android:key="systemui_tuner_statusbar"
-            android:icon="@drawable/ic_settings_language"
+            android:icon="@drawable/ic_build_acc"
             android:title="@string/statusbar_items_title" >
             <intent android:action="android.intent.action.MAIN"
                 android:targetPackage="com.android.systemui"
@@ -48,14 +48,14 @@
 
     <Preference
         android:key="battery_settings"
-        android:icon="@drawable/ic_settings_language"
+        android:icon="@drawable/ic_system_update"
         android:fragment="com.android.settings.arrow.StatusBarBattery"
         android:title="@string/battery_style_title"
         android:summary="@string/battery_style_summary" />
 
         <com.arrow.support.preferences.SystemSettingSwitchPreference
             android:key="qs_footer_data_usage"
-            android:icon="@drawable/ic_settings_language"
+            android:icon="@drawable/ic_doc"
             android:title="@string/qs_footer_datausage_title"
             android:summary="@string/qs_footer_datausage_summary"
             android:defaultValue="false" />
