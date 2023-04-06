@@ -16,9 +16,9 @@
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
 
     <!-- xd. Build card -->
-    <string name="xd_build_status">Your device officially supported!</string>
+    <string name="xd_build_status">Your device is officially supported!</string>
     <string name="xd_build_maintained_summary">Maintained by %s</string>
     <string name="xd_build_unmaintained_summary">This build is maintained officially</string>
-    <string name="xd_summary_placeholder">CERTIFIED</string>
+    <string name="xd_summary_placeholder">Privacy CERTIFIED</string>
 
 </resources>

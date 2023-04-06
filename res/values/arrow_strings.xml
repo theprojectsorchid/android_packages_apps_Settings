@@ -252,11 +252,23 @@
     <string name="input_display_settings_bubble_setting_description">The below settings enable you to change the device language, keyboard settings, screen font and display sizes to your liking</string>
     <string name="system_display_controls">System display controls</string>
     <string name="display_customization_category_title">Additional display features</string>
-    <string name="display_customisation_bubble_setting_description"The following features allow you to enhance you device user experience they have been included to enable you to stay mobile</string>
+    <string name="display_customisation_bubble_setting_description">The following features allow you to enhance you device user experience they have been included to enable you to stay mobile</string>
     <string name="statusbar_qs_settings">Statusbar and Qs </string>
+ 
+  <!--Pref userinfo Settings UI -->
+    <string name="userinfo_bubble_setting_description">Welcome to My details here you can log into and access your accounts, access emergency details and manage multiuser spaces</string>
+    <string name="multiuser_settings_title">Multiuser settings</string>
+    <string name="accounts_settings_title">My Account settings</string>
+    <string name="emergency_settings_title">Emergency settings</string>
 
     <!--Pref userinfo Settings UI -->
     <string name="statusbar_qs_bubble_setting_description">Welcome to Statusbar and QS settings please enjoy the additional features</string>
  
-statusbar_qs_bubble_setting_description
+    <!-- Battery health -->
+    <string name="current_battery_capacity">Current battery capacity</string>
+    <string name="designed_battery_capacity">Designed battery capacity</string>
+    <string name="battery_charge_cycles">Charge cycles completed</string>
+
+    <!-- Battery temperature -->
+    <string name="battery_temperature">Battery temperature</string>
 </resources>
