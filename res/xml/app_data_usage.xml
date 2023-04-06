@@ -38,18 +38,21 @@
             android:key="total_usage"
             android:title="@string/total_size_label"
             android:selectable="false"
+            android:icon="@drawable/rr_vendor_icon"
             android:layout="@layout/horizontal_preference" />
 
         <Preference
             android:key="foreground_usage"
             android:title="@string/data_usage_label_foreground"
-            android:selectable="false"
+            android:selectable="false"            
+            android:icon="@drawable/rr_visual_icon"
             android:layout="@layout/horizontal_preference" />
 
         <Preference
             android:key="background_usage"
             android:title="@string/data_usage_label_background"
-            android:selectable="false"
+            android:selectable="false"            
+            android:icon="@drawable/rr_volte2_icon"
             android:layout="@layout/horizontal_preference" />
 
     </PreferenceCategory>

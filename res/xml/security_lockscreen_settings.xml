@@ -17,7 +17,21 @@
 <PreferenceScreen
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:settings="http://schemas.android.com/apk/res-auto"
-    android:title="@string/lockscreen_settings_title">
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:title=" " >
+
+
+    <com.android.settingslib.widget.IllustrationPreference
+        android:key="gestures"
+        settings:searchable="false"
+        android:order="-999"
+        app:lottie_rawRes="@raw/lottie_system_nav_fully_gestural"/>
+   <!-- Header -->
+  <PreferenceCategory
+        android:title="Lockscree settings"
+        android:order="-998"
+        android:layout="@layout/settings_title_header">
+  </PreferenceCategory>
 
     <PreferenceCategory
         android:key="lockscreen_what_to_show"
@@ -25,23 +39,27 @@
         <com.android.settings.RestrictedListPreference
             android:key="security_setting_lock_screen_notif"
             android:title="@string/lock_screen_notifications_title"
+            android:icon="@drawable/rr_lock_icon"
             android:summary="@string/summary_placeholder"
             settings:keywords="@string/keywords_lock_screen_notif"/>
 
         <SwitchPreference
             android:key="security_dispaly_lockscreen_bypass"
             android:title="@string/lockscreen_bypass_title"
+            android:icon="@drawable/rr_advanced_icon"
             android:summary="@string/lockscreen_bypass_summary"
             settings:searchable="false"
             settings:controller="com.android.settings.biometrics.face.FaceSettingsLockscreenBypassPreferenceController" />
 
         <com.android.settingslib.RestrictedSwitchPreference
             android:key="security_lockscreen_add_users_when_locked"
+            android:icon="@drawable/rr_add_icon"
             android:title="@string/user_add_on_lockscreen_menu"
             settings:controller="com.android.settings.users.AddUserWhenLockedPreferenceController" />
 
         <com.android.settingslib.RestrictedPreference
             android:key="owner_info_settings"
+            android:icon="@drawable/rr_info_icon"
             android:title="@string/owner_info_settings_title"
             android:summary="@string/owner_info_settings_summary" />
 
@@ -89,6 +107,7 @@
 
         <com.android.settingslib.RestrictedSwitchPreference
             android:key="ambient_display_always_on"
+            android:icon="@drawable/rr_autoenable_icon"
             android:title="@string/doze_always_on_title"
             android:summary="@string/doze_always_on_summary"
             settings:controller="com.android.settings.display.AmbientDisplayAlwaysOnPreferenceController"
@@ -96,6 +115,7 @@
 
         <Preference
             android:key="ambient_display_tap"
+            android:icon="@drawable/rr_tap_icon"
             android:title="@string/ambient_display_tap_screen_title"
             android:fragment="com.android.settings.gestures.TapScreenGestureSettings"
             settings:searchable="false"
@@ -103,6 +123,7 @@
 
         <Preference
             android:key="ambient_display_double_tap"
+            android:icon="@drawable/rr_doubletap_icon"
             android:title="@string/ambient_display_title"
             android:fragment="com.android.settings.gestures.DoubleTapScreenSettings"
             settings:searchable="false"
@@ -110,6 +131,7 @@
 
         <Preference
             android:key="ambient_display_pick_up"
+            android:icon="@drawable/rr_lift_icon"
             android:title="@string/ambient_display_pickup_title"
             android:fragment="com.android.settings.gestures.PickupGestureSettings"
             settings:searchable="false"
@@ -118,6 +140,7 @@
         <SwitchPreference
             android:key="ambient_display_notification"
             android:title="@string/doze_title"
+            android:icon="@drawable/rr_notif_icon"
             android:summary="@string/doze_summary"
             settings:controller="com.android.settings.display.AmbientDisplayNotificationsPreferenceController" />
 
@@ -149,6 +172,7 @@
 
         <com.android.settings.RestrictedListPreference
             android:key="security_setting_lock_screen_notif_work"
+            android:icon="@drawable/rr_security_icon"
             android:title="@string/locked_work_profile_notification_title"
             android:summary="@string/summary_placeholder"
             settings:searchable="false"/>
