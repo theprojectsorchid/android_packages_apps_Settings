@@ -13,8 +13,8 @@
 -->
 
 <PreferenceScreen 
-   xmlns:android="http://schemas.android.com/apk/res/android"
-   xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:settings="http://schemas.android.com/apk/res-auto"
     android:title=" " >
         
@@ -26,25 +26,29 @@
 
 
         <com.android.settingslib.widget.TopIntroPreference
-            android:key="onthegomode_bubbles_desc"
-            android:title="@string/onthegomode_bubble_setting_description"/>
+            android:key="userinfo_bubbles_desc"
+            android:order="20"
+            android:title="@string/userinfo_bubble_setting_description"/>
 
     <Preference
             android:key="multiuser"
-            android:title="@string/screensaver_settings_title"
+            android:order="30"
+            android:title="@string/multiuser_settings_title"
             settings:layout="@layout/xd_pref_card_top"           
             android:fragment="com.android.settings.users.UserSettings"/>
     
     <Preference
             android:key="accounts"
+            android:order="40"
             settings:layout="@layout/xd_pref_card_mid"           
-            android:title="@string/screensaver_settings_title"
+            android:title="@string/accounts_settings_title"
             android:fragment="com.android.settings.accounts.AccountDashboardFragment"/>
 
     <Preference
             android:key="emergency"
+            android:order="50"
             settings:layout="@layout/xd_pref_card_bot"           
-            android:title="@string/screensaver_settings_title"
+            android:title="@string/emergency_settings_title"
             android:fragment="com.android.settings.emergency.EmergencyDashboardFragment"/>
 
 </PreferenceScreen>
