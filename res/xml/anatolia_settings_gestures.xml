@@ -17,8 +17,7 @@
         xmlns:android="http://schemas.android.com/apk/res/android"
         xmlns:settings="http://schemas.android.com/apk/res/com.android.settings"
 	    xmlns:app="http://schemas.android.com/apk/res-auto"
-    android:title=" " >
-
+       android:title=" " >
 
     <com.android.settingslib.widget.IllustrationPreference
         android:key="StatusbarQs"
@@ -26,36 +25,39 @@
         android:order="-999"
         app:lottie_rawRes="@raw/toplevel_bottom"/>
 
-  
-   <!-- Header -->
-  <PreferenceCategory
-        android:title="Statusbar and QS"
-        android:order="-998"
-        android:layout="@layout/settings_title_header">
-  </PreferenceCategory>
+  <com.android.settingslib.widget.TopIntroPreference
+            android:key="statusbar_qs_bubbles_desc"
+            android:order="-997"
+            android:title="@string/statusbar_qs_bubble_setting_description"/>
 
           <Preference
             android:key="systemui_tuner_statusbar"
+            android:icon="@drawable/ic_settings_language"
             android:title="@string/statusbar_items_title" >
             <intent android:action="android.intent.action.MAIN"
                 android:targetPackage="com.android.systemui"
                 android:targetClass="com.android.systemui.tuner.StatusbarItemsActivity" />
         </Preference>
 
-        
      <Preference
         android:key="network_traffic_settings"
         android:icon="@drawable/ic_settings_network_traffic"
         android:title="@string/network_traffic_title"
         android:summary="@string/network_traffic_summary"
-        android:order="25"
         android:fragment="com.android.settings.arrow.NetworkTrafficSettings"/>
+
+    <Preference
+        android:key="battery_settings"
+        android:icon="@drawable/ic_settings_language"
+        android:fragment="com.android.settings.arrow.StatusBarBattery"
+        android:title="@string/battery_style_title"
+        android:summary="@string/battery_style_summary" />
 
         <com.arrow.support.preferences.SystemSettingSwitchPreference
             android:key="qs_footer_data_usage"
+            android:icon="@drawable/ic_settings_language"
             android:title="@string/qs_footer_datausage_title"
             android:summary="@string/qs_footer_datausage_summary"
             android:defaultValue="false" />
-
 
 </PreferenceScreen>
