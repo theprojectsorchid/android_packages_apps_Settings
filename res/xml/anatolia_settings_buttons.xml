@@ -43,6 +43,7 @@
  
         <Preference
             android:title="@string/about_us_info"
+                        android:icon="@drawable/ic_gvisual"
             android:summary="@string/about_us_info_summary" >
         <intent
             android:action="android.intent.action.VIEW"
@@ -51,6 +52,7 @@
 
     <Preference
         android:title="@string/aboutus_link_title"
+                    android:icon="@drawable/ic_inc_ring"
         android:summary="@string/aboutus_link_summary" >
         <intent
             android:action="android.intent.action.VIEW"

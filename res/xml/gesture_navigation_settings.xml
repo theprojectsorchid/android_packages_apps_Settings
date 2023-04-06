@@ -20,15 +20,13 @@
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:settings="http://schemas.android.com/apk/res-auto"
     android:key="gesture_navigation_settings_page"
-    android:title=" "
-    settings:keywords="@string/keywords_gesture_navigation_settings">
+     xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:title=" ">
 
-
-    <com.android.settingslib.widget.LayoutPreference
-        android:key="gesture_settings" 
-        android:order="-998"
-        android:layout="@layout/gesture_settings_animation"/>
-
+    <com.android.settingslib.widget.IllustrationPreference
+        android:key="gesture_double_tap_power_video"
+        settings:searchable="false"
+        app:lottie_rawRes="@drawable/quickly_open_camera"/>
 
                 
    <!-- Header -->
@@ -40,10 +38,12 @@
 
     <PreferenceCategory
         android:key="assistant_gesture_category"
+        android:layout="@layout/custom_preference_category2"
         android:persistent="false"
         android:title="@string/assistant_gesture_category_title">
 
         <SwitchPreference
+            android:icon="@drawable/ic_settings_quick_gestures"
             android:key="assistant_gesture_corner_swipe"
             android:title="@string/assistant_corner_gesture_title"
             android:summary="@string/assistant_corner_gesture_summary"
@@ -54,6 +54,7 @@
 
     <PreferenceCategory
         android:key="back_sensitivity_category"
+        android:layout="@layout/custom_preference_category2"
         android:persistent="false"
         android:title="@string/back_sensitivity_dialog_title">
 
@@ -76,6 +77,7 @@
 
     <com.arrow.support.preferences.SecureSettingSwitchPreference
         android:key="navigation_bar_hint"
+        android:icon="@drawable/ic_settings_quick_gestures"
         android:title="@string/show_navbar_gesture_bar_title"
         android:summary="@string/show_navbar_gesture_bar_summary"
         android:defaultValue="true" />

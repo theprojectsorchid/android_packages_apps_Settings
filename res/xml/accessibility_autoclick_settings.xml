@@ -56,7 +56,7 @@
         android:layout="@layout/accessibility_autoclick_custom_seekbar"
         android:selectable="false"
         android:visibility="gone"
-        settings:allowDividerBelow="true"
+        settings:allowDividerBelow="false"
         settings:controller="com.android.settings.accessibility.ToggleAutoclickCustomSeekbarController" />
 
     <com.android.settings.accessibility.AccessibilityFooterPreference

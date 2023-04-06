@@ -27,10 +27,6 @@
         settings:searchable="false"
         android:order="-999"
         app:lottie_rawRes="@raw/dnd"/>
-
- <com.android.settingslib.widget.LayoutPreference
-        android:key="dnd_animation"
-        android:layout="@layout/dnd_animation" />
         
    <!-- Header -->
   <PreferenceCategory
@@ -53,12 +49,14 @@
         <!-- People -->
         <Preference
             android:key="zen_mode_behavior_people"
+            android:icon="@drawable/rr_user_icon"           
             android:title="@string/zen_category_people"
             android:fragment="com.android.settings.notification.zen.ZenModePeopleSettings" />
 
         <!-- Apps -->
         <Preference
             android:key="zen_mode_behavior_apps"
+            android:icon="@drawable/rr_app_icon"           
             android:title="@string/zen_category_apps"
             android:summary=" "
             android:fragment="com.android.settings.notification.zen.ZenModeBypassingAppsSettings" />
@@ -66,6 +64,7 @@
         <!-- All sounds -->
         <Preference
             android:key="zen_sound_vibration_settings"
+            android:icon="@drawable/rr_sound_icon"           
             android:title="@string/zen_category_exceptions"
             android:fragment="com.android.settings.notification.zen.ZenModeSoundVibrationSettings" />
     </PreferenceCategory>
@@ -93,6 +92,7 @@
         <!-- What to block (effects) -->
         <Preference
             android:key="zen_mode_block_effects_settings"
+            android:icon="@drawable/rr_user_icon"           
             android:title="@string/zen_mode_restrict_notifications_title"
             android:fragment="com.android.settings.notification.zen.ZenModeRestrictNotificationsSettings" />
     </PreferenceCategory>

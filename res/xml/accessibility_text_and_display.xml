@@ -81,18 +81,21 @@
     <SwitchPreference
         android:key="toggle_disable_animations"
         android:persistent="false"
+        android:icon="@drawable/rr_doze_icon"
         android:title="@string/accessibility_disable_animations"
         settings:controller="com.android.settings.accessibility.DisableAnimationsPreferenceController"/>
 
     <SwitchPreference
         android:key="toggle_large_pointer_icon"
         android:persistent="false"
+         android:icon="@drawable/rr_dismiss_icon"
         android:title="@string/accessibility_toggle_large_pointer_icon_title"
         settings:controller="com.android.settings.accessibility.LargePointerIconPreferenceController"/>
 
     <SwitchPreference
         android:key="toggle_high_text_contrast_preference"
-        android:persistent="false"
+        android:persistent="false"            
+        android:icon="@drawable/rr_dismiss_color_icon"
         android:title="@string/accessibility_toggle_high_text_contrast_preference_title"
         settings:controller="com.android.settings.accessibility.HighTextContrastPreferenceController"/>
 
