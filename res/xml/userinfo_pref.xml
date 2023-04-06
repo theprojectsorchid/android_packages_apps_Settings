@@ -25,7 +25,7 @@
         android:order="10" />
 
 
-        <com.android.settingslib.widget.TopIntroPreference
+    <com.android.settingslib.widget.TopIntroPreference
             android:key="userinfo_bubbles_desc"
             android:order="20"
             android:title="@string/userinfo_bubble_setting_description"/>
@@ -50,5 +50,9 @@
             settings:layout="@layout/xd_pref_card_bot"           
             android:title="@string/emergency_settings_title"
             android:fragment="com.android.settings.emergency.EmergencyDashboardFragment"/>
-
+        
+    <com.android.settingslib.widget.LayoutPreference
+        android:key="firmware_settings_footer"
+        android:order="50"
+        android:layout="@layout/firmware_settings_footer_animation" />
 </PreferenceScreen>
