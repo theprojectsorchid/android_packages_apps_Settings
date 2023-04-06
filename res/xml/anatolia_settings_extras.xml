@@ -27,13 +27,6 @@
         app:lottie_rawRes="@raw/language_settings"/>
 
   
-   <!-- Header -->
-  <PreferenceCategory
-        android:title="Input features"
-        android:order="-997"
-        android:layout="@layout/settings_title_header">
-  </PreferenceCategory>
-
     <Preference
         android:key="phone_language"
         android:title="@string/phone_language"
@@ -42,14 +35,17 @@
 
     <PreferenceCategory
         android:key="keyboards_category"
-        android:title="@string/keyboard_and_input_methods_category">
+        android:title="@string/keyboard_and_input_methods_category"
+        android:layout="@layout/custom_preference_category2">
         <Preference
             android:key="virtual_keyboard_pref"
+            android:icon="@drawable/ic_translate_24dp"
             android:title="@string/virtual_keyboard_category"
             android:fragment="com.android.settings.inputmethod.VirtualKeyboardFragment"
             settings:keywords="@string/keywords_virtual_keyboard"/>
         <Preference
             android:key="physical_keyboard_pref"
+            android:icon="@drawable/ic_translate_24dp"
             android:title="@string/physical_keyboard_title"
             android:summary="@string/summary_placeholder"
             android:fragment="com.android.settings.inputmethod.PhysicalKeyboardFragment"/>
@@ -57,7 +53,8 @@
 
     <PreferenceCategory
         android:key="input_assistance_category"
-        android:title="@string/input_assistance">
+        android:title="@string/input_assistance"
+        android:layout="@layout/custom_preference_category2">
         <!-- Spell checker preference title, summary and fragment will be set programmatically. -->
         <!-- Note: Mark this as persistent="false" to remove unnecessarily saved shared preference.
              See: InputMethodAndSubtypeUtil.removeUnnecessaryNonPersistentPreference. -->
@@ -65,28 +62,33 @@
             android:key="spellcheckers_settings"
             android:title="@string/spellcheckers_settings_title"
             android:persistent="false"
+            android:icon="@drawable/ic_translate_24dp"
             android:fragment="com.android.settings.inputmethod.SpellCheckersSettings" />
 
         <!-- User dictionary preference title and fragment will be set programmatically. -->
         <Preference
             android:key="key_user_dictionary_settings"
             android:title="@string/user_dict_settings_title"
+            android:icon="@drawable/ic_translate_24dp"
             android:summary="@string/user_dict_settings_summary"
             android:fragment="com.android.settings.inputmethod.UserDictionaryList"
             settings:controller="com.android.settings.language.UserDictionaryPreferenceController" />
     </PreferenceCategory>
 
     <PreferenceCategory
-        android:key="pointer_and_tts_category"
-        android:layout="@layout/preference_category_no_label">
+        android:key="pointer_and_tts_category"            
+        android:title="@string/pointer_speed"
+        android:layout="@layout/custom_preference_category2">
 
         <com.android.settings.PointerSpeedPreference
             android:key="pointer_speed"
+         android:icon="@drawable/ic_translate_24dp"           
             android:title="@string/pointer_speed"
             android:dialogTitle="@string/pointer_speed" />
 
         <Preference
             android:key="tts_settings_summary"
+        android:icon="@drawable/ic_translate_24dp"
             android:title="@string/tts_settings_title"
             android:fragment="com.android.settings.tts.TextToSpeechSettings"
             settings:searchable="false"/>
@@ -95,6 +97,7 @@
 
     <SwitchPreference
         android:key="vibrate_input_devices"
+        android:icon="@drawable/ic_translate_24dp"
         android:title="@string/vibrate_input_devices"
         android:summary="@string/vibrate_input_devices_summary"
         settings:controller="com.android.settings.inputmethod.GameControllerPreferenceController" />
