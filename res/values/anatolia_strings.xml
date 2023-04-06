@@ -79,7 +79,17 @@
 
     <!-- onthe go mode -->
     <string name="onthegomode_title">On the Go mode</string>
+     <string name="onthegomode_more">click here for more details</string>
     <string name="onthegomode_summary">mobile display options</string>
+     <string name="onthegomode_bubble_setting_description1">On-The-Go-Mode  this feature allows you to be mobile while using your mobile</string>
     <string name="onthegomode_bubble_setting_description">On-The-Go-Mode uses transparency and camera data to keep you aware of where you are walking. This mode aims to keep you as safe as possible should you attempt to walk and text. It uses transparency and your camera to keep you aware of your surroundings. In addition, On-The-Go-Mode enables the camera feed and underlays it on screen. it will then seem as if your phone screen is almost invisible that helps when your walking in a park at night anf you dont have to move your phone in couple of steps.</string>
+    <string name="onthegomode_bubble_setting_description2">Warning you still need to pay attention to your surroundings</string>
+   
+   <!-- TapTap mode -->
+    <string name="taptapmode_title">Taptap</string>
+     <string name="taptapmode_more">click here for more details</string>
+    <string name="taptapmode_summary">Extra tap functions</string>
+     <string name="taptapmode_bubble_setting_description">Tap, Tap provides over 50 actions that can be run from double or triple taps on the back of your device</string>
+    <string name="taptapmode_bubble_setting_description1">The gesture can also be fully controlled, to only run under certain conditions, or run different actions in different scenarios; such as only when an app is running, the screen is off, or when listening to music..many more options are available</string>
 
 </resources>
