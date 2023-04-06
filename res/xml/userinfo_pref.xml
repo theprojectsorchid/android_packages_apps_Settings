@@ -33,6 +33,7 @@
     <Preference
             android:key="multiuser"
             android:order="30"
+         android:icon="@drawable/ic_translate_24dp"           
             android:title="@string/multiuser_settings_title"
             settings:layout="@layout/xd_pref_card_top"           
             android:fragment="com.android.settings.users.UserSettings"/>
@@ -40,6 +41,7 @@
     <Preference
             android:key="accounts"
             android:order="40"
+        android:icon="@drawable/ic_translate_24dp"
             settings:layout="@layout/xd_pref_card_mid"           
             android:title="@string/accounts_settings_title"
             android:fragment="com.android.settings.accounts.AccountDashboardFragment"/>
@@ -47,6 +49,7 @@
     <Preference
             android:key="emergency"
             android:order="50"
+            android:icon="@drawable/ic_translate_24dp"
             settings:layout="@layout/xd_pref_card_bot"           
             android:title="@string/emergency_settings_title"
             android:fragment="com.android.settings.emergency.EmergencyDashboardFragment"/>
