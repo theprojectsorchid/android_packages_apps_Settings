@@ -63,7 +63,7 @@
             android:layout_width="match_parent"
             android:paddingStart="12dp"
             android:paddingEnd="12dp"
-            android:layout_height="338dp"/>
+            android:layout_height="538dp"/>
     </LinearLayout>
 
 </LinearLayout>
