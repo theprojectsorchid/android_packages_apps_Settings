@@ -247,12 +247,12 @@
 
     <!-- Display Settings UI -->
     <string name="dispaly_main_settings">Main Screen settings</string>
-    <string name="display_screen_timming">Screensaver and timeout settings</string>
-    <string name="input_display_settings">Input settings</string>
-    <string name="input_display_settings_bubble_setting_description">The below settings enable you to change the device language, keyboard settings, screen font and display sizes to you liking</string>
+    <string name="display_screen_timming">Screensaver and timeout</string>
+    <string name="input_display_settings">Display Input settings</string>
+    <string name="input_display_settings_bubble_setting_description">The below settings enable you to change the device language, keyboard settings, screen font and display sizes to your liking</string>
     <string name="system_display_controls">System display controls</string>
-    <string name="display_customization_category_title">additional_display features</string>
-    <string name="display_customisation_bubble_setting_description">the following features allow you to enhance you device user experience they have been included to enable u to stay mobile</string>
+    <string name="display_customization_category_title">Additional display features</string>
+    <string name="display_customisation_bubble_setting_description"The following features allow you to enhance you device user experience they have been included to enable you to stay mobile</string>
     <string name="statusbar_qs_settings">Statusbar and Qs </string>
  
   <!--Pref userinfo Settings UI -->
@@ -261,4 +261,8 @@
     <string name="accounts_settings_title">My Account settings</string>
     <string name="emergency_settings_title">Emergency settings</string>
 
+    <!--Pref userinfo Settings UI -->
+    <string name="statusbar_qs_bubble_setting_description">Welcome to Statusbar and QS settings please enjoy the additional features</string>
+ 
+statusbar_qs_bubble_setting_description
 </resources>
