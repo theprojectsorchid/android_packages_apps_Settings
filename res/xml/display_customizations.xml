@@ -36,6 +36,6 @@
         <com.android.settingslib.widget.TopIntroPreference
             android:key="onthegomode_bubbles_desc"
             android:order="-997"        
-            android:title="@string/onthegomode_bubble_setting_description"/>
+            android:title="@string/onthegomode_bubble_setting_description2"/>
     
 </PreferenceScreen>
