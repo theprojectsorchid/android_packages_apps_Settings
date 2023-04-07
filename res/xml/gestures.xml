@@ -75,6 +75,7 @@
     <Preference
         android:key="gesture_one_handed"
         android:title="@string/one_handed_title"
+                android:icon="@drawable/rr_buttons_icon"
         android:fragment="com.android.settings.gestures.OneHandedSettings"
         settings:controller="com.android.settings.gestures.OneHandedEnablePreferenceController" />
 
@@ -121,6 +122,7 @@
         android:dialogTitle="@string/torch_power_button_gesture_title"
         android:title="@string/torch_power_button_gesture_title"
         android:summary="%s"
+                android:icon="@drawable/rr_buttons_icon"
         android:entries="@array/torch_power_button_gesture_entries"
         android:entryValues="@array/torch_power_button_gesture_values"
         android:defaultValue="0" />
@@ -165,10 +167,10 @@
          
     <Preference
         android:key="display_customization"
-        android:title="@string/display_customization"
+        android:title="@string/taptapmode_title"
         android:icon="@drawable/rr_dictionary_icon"
-        android:fragment="com.android.settings.awaken.fragments.DisplayCustomizations"
-        android:summary="@string/display_customization"/>   
+        android:fragment="com.epic.fragments.QuickSettings"            
+        android:summary="@string/taptapmode_summary"/>   
          
 
 </PreferenceScreen>
