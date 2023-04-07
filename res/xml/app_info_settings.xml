@@ -32,18 +32,20 @@
         android:selectable="false"
         android:order="-9999" />
 
-    <com.android.settingslib.widget.ActionButtonsPreference
-        android:key="action_buttons"
-        android:order="-9998" />
-
     <com.android.settingslib.widget.LayoutPreference
         android:key="app_info_animation"
         android:layout="@layout/app_info_animation"
-        android:order="-9997"/>   
+        android:order="-9998"/>   
+
+    <com.android.settingslib.widget.ActionButtonsPreference
+        android:key="action_buttons"
+        android:order="-9997" />
+  
 
     <Preference
         android:key="app_settings_link"
-        android:title="@string/app_settings_link"
+        android:title="@string/app_settings_link"            
+        android:icon="@drawable/rr_dictionary_icon"
         settings:controller="com.android.settings.applications.appinfo.AppSettingPreferenceController" />
 
     <Preference
@@ -61,7 +63,8 @@
         settings:controller="com.android.settings.applications.appinfo.AppPermissionPreferenceController" />
 
     <Preference
-        android:key="storage_settings"
+        android:key="storage_settings"        
+        android:icon="@drawable/rr_task_open_icon"
         android:title="@string/storage_settings_for_app"
         android:summary="@string/summary_placeholder"
         settings:controller="com.android.settings.applications.appinfo.AppStoragePreferenceController" />
@@ -73,64 +76,75 @@
         settings:controller="com.android.settings.applications.appinfo.InstantAppDomainsPreferenceController" />
 
     <Preference
-        android:key="data_settings"
+        android:key="data_settings"        
+        android:icon="@drawable/rr_swipe_down_icon"
         android:title="@string/data_usage_app_summary_title"
         android:summary="@string/summary_placeholder"
         settings:controller="com.android.settings.applications.appinfo.AppDataUsagePreferenceController" />
 
     <Preference
-        android:key="extra_app_info_settings"
+        android:key="extra_app_info_settings"        
+        android:icon="@drawable/rr_system_icon"
         android:title="@string/extra_app_info_label"
         android:summary="@string/extra_app_info_summary"
         settings:controller="com.android.settings.applications.appinfo.ExtraAppInfoPreferenceController" />
 
     <Preference
-        android:key="time_spent_in_app"
+        android:key="time_spent_in_app"        
+        android:icon="@drawable/rr_task_behind_icon"
         android:title="@string/time_spent_in_app_pref_title"
         android:summary="@string/summary_placeholder"
         settings:controller="com.android.settings.applications.appinfo.TimeSpentInAppPreferenceController" />
 
     <Preference
-        android:key="battery"
+        android:key="battery"        
+        android:icon="@drawable/rr_switch_icon"
         android:title="@string/power_usage_summary_title"
         android:summary="@string/summary_placeholder" />
 
     <Preference
-        android:key="preferred_settings"
+        android:key="preferred_settings"        
+        android:icon="@drawable/rr_tap_icon"
         android:title="@string/launch_by_default"
         android:summary="@string/summary_placeholder"
         android:selectable="true"
         settings:controller="com.android.settings.applications.appinfo.AppOpenByDefaultPreferenceController" />
 
     <Preference
-        android:key="memory"
+        android:key="memory"       
+         android:icon="@drawable/rr_ticker_icon"
         android:title="@string/memory_settings_title"
         android:summary="@string/summary_placeholder"
         android:enabled="false" />
 
     <!-- Default apps shortcuts -->
     <Preference
-        android:key="default_home"
+        android:key="default_home"       
+         android:icon="@drawable/rr_vendor_icon"
         android:title="@string/home_app"
         android:summary="@string/summary_placeholder" />
 
     <Preference
-        android:key="default_browser"
+        android:key="default_browser"       
+         android:icon="@drawable/rr_reset3_icon"
         android:title="@string/default_browser_title"
         android:summary="@string/summary_placeholder" />
 
     <Preference
-        android:key="default_phone_app"
+        android:key="default_phone_app"        
+        android:icon="@drawable/rr_ringer_icon"
         android:title="@string/default_phone_title"
         android:summary="@string/default_phone_title" />
 
     <Preference
-        android:key="default_emergency_app"
+        android:key="default_emergency_app"       
+         android:icon="@drawable/rr_saftey_info_icon"
         android:title="@string/default_emergency_app"
         android:summary="@string/summary_placeholder" />
 
     <Preference
-        android:key="default_sms_app"
+        android:key="default_sms_app"       
+         android:icon="@drawable/rr_roaming_icon"
         android:title="@string/sms_application_title"
         android:summary="@string/summary_placeholder" />
 
@@ -155,36 +169,42 @@
 
         <Preference
             android:key="system_alert_window"
-            android:title="@string/draw_overlay"
+            android:title="@string/draw_overlay"        
+            android:icon="@drawable/rr_rows_icon"
             android:summary="@string/summary_placeholder"
             settings:controller="com.android.settings.applications.appinfo.DrawOverlayDetailPreferenceController" />
 
         <Preference
-            android:key="write_settings_apps"
+            android:key="write_settings_apps"        
+            android:icon="@drawable/rr_restart_ui_icon"
             android:title="@string/write_settings"
             android:summary="@string/summary_placeholder"
             settings:controller="com.android.settings.applications.appinfo.WriteSystemSettingsPreferenceController" />
 
         <Preference
-            android:key="picture_in_picture"
+            android:key="picture_in_picture"        
+            android:icon="@drawable/rr_right_icon"
             android:title="@string/picture_in_picture_app_detail_title"
             android:summary="@string/summary_placeholder"
             settings:controller="com.android.settings.applications.specialaccess.pictureinpicture.PictureInPictureDetailPreferenceController" />
 
         <Preference
-            android:key="install_other_apps"
+            android:key="install_other_apps"        
+            android:icon="@drawable/rr_wb_icon"
             android:title="@string/install_other_apps"
             android:summary="@string/summary_placeholder"
             settings:controller="com.android.settings.applications.appinfo.ExternalSourceDetailPreferenceController" />
 
         <Preference
-            android:key="interact_across_profiles"
+            android:key="interact_across_profiles"       
+             android:icon="@drawable/rr_reverse_icon"
             android:title="@string/interact_across_profiles_title"
             android:summary="@string/summary_placeholder"
             settings:controller="com.android.settings.applications.specialaccess.interactacrossprofiles.InteractAcrossProfilesDetailsPreferenceController" />
 
         <Preference
-            android:key="alarms_and_reminders"
+            android:key="alarms_and_reminders"        
+            android:icon="@drawable/rr_reset_icon"
             android:title="@string/alarms_and_reminders_title"
             android:summary="@string/summary_placeholder"
             settings:controller="com.android.settings.applications.appinfo.AlarmsAndRemindersDetailPreferenceController" />

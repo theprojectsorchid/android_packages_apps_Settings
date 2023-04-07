@@ -20,11 +20,12 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:settings="http://schemas.android.com/apk/res/com.android.settings">
 
+
     <com.android.settingslib.widget.IllustrationPreference
-        android:key="gesture_prevent_ringing_video"
+        android:key="battery_saver_animation"
         settings:searchable="false"
         android:order="-999"
-        app:lottie_rawRes="@raw/lottie_prevent_ringing"/>
+        app:lottie_rawRes="@raw/battery_saver"/>
 
   
    <!-- Header -->
@@ -35,19 +36,21 @@
   </PreferenceCategory>
   
     <com.arrow.support.preferences.SystemSettingSwitchPreference
-        android:key="battery_light_enabled"
+        android:key="battery_light_enabled"        
+        android:icon="@drawable/rr_battery_plus_icon"
         android:title="@string/battery_light_enable"
         android:defaultValue="true"/>
 
     <com.arrow.support.preferences.SystemSettingSwitchPreference
-        android:key="battery_light_allow_on_dnd"
+        android:key="battery_light_allow_on_dnd"       
+         android:icon="@drawable/rr_battery3_icon"
         android:title="@string/battery_light_allow_on_dnd_title"
         android:dependency="battery_light_enabled"
         android:defaultValue="false" />
 
     <com.arrow.support.preferences.SystemSettingSwitchPreference
         android:key="battery_light_low_blinking"           
-         android:icon="@drawable/rr_dictionary_icon"
+         android:icon="@drawable/rr_battery_icon"
         android:title="@string/battery_light_low_blinking_title"
         android:dependency="battery_light_enabled"
         android:defaultValue="false" />
@@ -67,21 +70,21 @@
             android:key="battery_light_medium_color"
             android:title="@string/battery_light_medium_color"
             ledPreview="true"
-                        android:icon="@drawable/rr_dictionary_icon"
+        android:icon="@drawable/rr_battery_style"
             defaultColorValue="0xFFFFFF00" />
 
         <com.arrow.support.colorpicker.ColorPickerPreference
             android:key="battery_light_full_color"
             android:title="@string/battery_light_full_color"
             ledPreview="true"
-                        android:icon="@drawable/rr_dictionary_icon"
+                        android:icon="@drawable/rr_battery_style_icon"
             defaultColorValue="0xFF00FF00" />
 
         <com.arrow.support.colorpicker.ColorPickerPreference
             android:key="battery_light_reallyfull_color"
             android:title="@string/battery_light_reallyfull_color"
             ledPreview="true"
-                        android:icon="@drawable/rr_dictionary_icon"
+                        android:icon="@drawable/rr_battery_saver_icon"
             defaultColorValue="0xFF00FF00" />
     </PreferenceCategory>
 
