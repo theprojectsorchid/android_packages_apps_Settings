@@ -306,7 +306,7 @@
 
     <style name="TextAppearance.SuggestionTitle"
            parent="@*android:style/TextAppearance.DeviceDefault.Subhead">
-        <item name="android:textSize">12sp</item>
+        <item name="android:textSize">1sp</item>
     </style>
 
     <style name="TextAppearance.SuggestionSummary" parent="TextAppearance.Small">
@@ -527,7 +527,7 @@
     </style>
 
     <style name="Widget.SliceView.Settings">
-        <item name="titleSize">@*android:dimen/text_size_subhead_material</item>
+        <item name="titleSize">10sp</item>
         <item name="rowStyle">@style/SliceRow.Settings</item>
     </style>
 
@@ -537,7 +537,7 @@
     </style>
 
     <style name="Widget.SliceView.Panel">
-        <item name="titleSize">16sp</item>
+        <item name="titleSize">10sp</item>
         <item name="rowStyle">@style/SliceRow</item>
         <item name="android:background">@*android:color/primary_device_default_light</item>
     </style>
@@ -586,10 +586,10 @@
         <!-- 8dp end padding for the end item -->
         <item name="endItemEndPadding">8dp</item>
 
-        <item name="titleSize">20sp</item>
+        <item name="titleSize">10sp</item>
         <!-- Align text with slider -->
-        <item name="titleStartPadding">11dp</item>
-        <item name="subContentStartPadding">11dp</item>
+        <item name="titleStartPadding">16dp</item>
+        <item name="subContentStartPadding">16dp</item>
 
         <!-- Padding for indeterminate progress bar -->
         <item name="progressBarStartPadding">12dp</item>
@@ -663,7 +663,7 @@
 
     <style name="TextAppearance.Tab" parent="@android:style/TextAppearance.DeviceDefault.Medium">
         <item name="android:textAllCaps">false</item>
-        <item name="android:textSize">14sp</item>
+        <item name="android:textSize">12sp</item>
         <item name="android:fontFamily">@*android:string/config_headlineFontFamilyMedium</item>
     </style>
 
@@ -928,11 +928,11 @@
     </style>
 
  <style name="TextAppearance.HomepagePreferenceTitle" parent="@android:style/TextAppearance.DeviceDefault">
-        <item name="android:textSize">20sp</item>
+        <item name="android:textSize">0sp</item>
     </style>
 
     <style name="ExpandedAppBar" parent="@android:style/TextAppearance.Medium">
-        <item name="android:textSize">20sp</item>
+        <item name="android:textSize">0sp</item>
     </style>
 
     
