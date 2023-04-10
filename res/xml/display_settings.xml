@@ -125,7 +125,6 @@
         <com.android.settings.display.ScreenZoomPreference
             android:icon="@drawable/ic_screen_zoom_title"       
             android:key="display_settings_screen_zoom"
-            android:icon="@drawable/ic_monet_engine_title"            
             android:title="@string/screen_zoom_title"
             android:fragment="com.android.settings.display.ScreenZoomSettings"
             settings:keywords="@string/keywords_display_size"/>

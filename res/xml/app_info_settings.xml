@@ -138,7 +138,7 @@
 
     <Preference
         android:key="default_emergency_app"       
-         android:icon="@drawable/rr_saftey_info_icon"
+        android:icon="@drawable/rr_custom_icon"
         android:title="@string/default_emergency_app"
         android:summary="@string/summary_placeholder" />
 
