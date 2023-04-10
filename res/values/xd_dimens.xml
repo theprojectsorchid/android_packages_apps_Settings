@@ -24,7 +24,7 @@
     <dimen name="rdnt_pref_vert">5.5dp</dimen>
     <dimen name="rdnt_card_radius">22dp</dimen>
     <dimen name="stroke_widthAboutUI">1dp</dimen>
-    <dimen name="stroke_widthAboutUI">1dp</dimen>
+
 
     <!-- xd. Preference Card --> 
 	<dimen name="xd_pref_card_radius">22dp</dimen>
