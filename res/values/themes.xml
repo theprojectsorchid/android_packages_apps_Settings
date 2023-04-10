@@ -198,6 +198,8 @@
     <style name="Theme.BluetoothPermission" parent="@style/Theme.AlertDialog">
         <item name="android:windowNoTitle">true</item>
     </style>
+    
+    <style name="SettingsCategoryPreference" parent="Preference.Category.Material" />
 
     <style name="Theme.Settings.HomeBase" parent="Theme.Settings.NoActionBar">
         <item name="colorPrimary">@*android:color/primary_device_default_settings_light</item>
