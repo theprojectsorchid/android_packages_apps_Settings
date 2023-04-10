@@ -82,12 +82,12 @@
         android:summary="@string/battery_percentage_description"
         settings:controller="com.android.settings.display.BatteryPercentagePreferenceController" />-->
 
-    <Preference
+    <!--<Preference
         android:key="battery_settings"
         android:fragment="com.android.settings.arrow.StatusBarBattery"
           android:icon="@drawable/ic_batt_light"      
         android:title="@string/battery_style_title"
-        android:summary="@string/battery_style_summary" />
+        android:summary="@string/battery_style_summary" />-->
 
     <Preference
         android:key="battery_charging_light"
@@ -95,6 +95,16 @@
         android:fragment="com.android.settings.arrow.BatteryLightSettings"
         android:title="@string/battery_light_settings"
         android:summary="@string/battery_light_summary" />
+
+    <com.android.settings.fuelgauge.PowerGaugePreference
+        android:key="designed_battery_capacity"
+        android:title="@string/designed_battery_capacity"
+        android:selectable="false" />
+
+    <com.android.settings.fuelgauge.PowerGaugePreference
+        android:key="current_battery_capacity"
+        android:title="@string/current_battery_capacity"
+        android:selectable="false" />
 
     <com.android.settingslib.widget.FooterPreference
         android:key="power_usage_footer"
