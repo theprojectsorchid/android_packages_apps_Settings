@@ -5635,7 +5635,7 @@
     <string name="daltonizer_mode_tritanomaly_summary">Blue-yellow</string>
 
     <!-- Title for the accessibility preference of the Extra Dim/Reduce Brightness feature that dims your screen. [CHAR LIMIT=NONE] -->
-    <string name="reduce_bright_colors_preference_title">Extra dim</string>
+    <string name="reduce_bright_colors_preference_title">Extra dim options</string>
     <!-- Title for the activation switch of the Reduce Brightness feature. [CHAR LIMIT=NONE] -->
     <string name="reduce_bright_colors_switch_title">Make screen extra dim</string>
     <!-- Title for accessibility shortcut preference for Reduce Brightness. [CHAR LIMIT=60] -->
