@@ -88,6 +88,14 @@
           android:icon="@drawable/ic_batt_light"      
         android:title="@string/battery_style_title"
         android:summary="@string/battery_style_summary" />-->
+    
+    <!-- System Manager Services -->
+    <Preference
+        android:key="system_manager_settings"
+        android:icon="@drawable/ic_battery_temperature"
+        android:title="@string/system_manager_services_title"
+        android:summary="@string/system_manager_services_summary"
+        android:fragment="com.rising.settings.fragments.misc.SystemManagerSettings"/> 
 
 
     <Preference
