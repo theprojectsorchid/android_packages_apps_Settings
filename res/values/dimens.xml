@@ -396,7 +396,7 @@
     <dimen name="abc_slice_large_height">1800dp</dimen>
 
     <!-- System navigation settings illustration height -->
-    <dimen name="system_navigation_illustration_height">320dp</dimen>
+    <dimen name="system_navigation_illustration_height">300dp</dimen>
 
     <dimen name="back_gesture_indicator_width">60dp</dimen>
 
