@@ -340,7 +340,7 @@
     <style name="TextAppearance.HomepageCardTitle"
            parent="@*android:style/TextAppearance.DeviceDefault.Subhead">
         <item name="android:fontFamily">@*android:string/config_headlineFontFamilyMedium</item>
-        <item name="android:textSize">16sp</item>
+        <item name="android:textSize">4sp</item>
     </style>
 
     <style name="TextAppearance.ConditionCardSummary"

@@ -121,8 +121,8 @@
 
     <!-- Search bar -->
     <dimen name="search_bar_margin">16dp</dimen>
-    <dimen name="search_bar_height">62dp</dimen>
-    <dimen name="search_bar_text_size">24sp</dimen>
+    <dimen name="search_bar_height">48dp</dimen>
+    <dimen name="search_bar_text_size">20sp</dimen>
     <dimen name="search_bar_corner_radius">24dp</dimen>
     <dimen name="search_bar_content_inset">56dp</dimen>
 
@@ -132,8 +132,8 @@
     <dimen name="avatar_margin_end">24dp</dimen>
 
     <!-- Homepage title -->
-    <dimen name="homepage_title_margin_bottom">8dp</dimen>
-    <dimen name="homepage_title_margin_horizontal">24dp</dimen>
+    <dimen name="homepage_title_margin_bottom">2dp</dimen>
+    <dimen name="homepage_title_margin_horizontal">16dp</dimen>
 
     <!-- Homepage menu entry -->
     <dimen name="homepage_menu_entry_padding_horizontal">16dp</dimen>
