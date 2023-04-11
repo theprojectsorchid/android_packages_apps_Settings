@@ -107,5 +107,6 @@
         android:title="@string/system_footer"
         android:key="location_footer"
         settings:searchable="false"
+        android:visibility="gone"       
         settings:controller="com.android.settings.location.LocationSettingsFooterPreferenceController"/>
 </PreferenceScreen>
