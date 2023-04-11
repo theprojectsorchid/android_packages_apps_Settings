@@ -111,7 +111,7 @@
         <item name="android:textSize">14sp</item>
         <item name="android:textAlignment">viewStart</item>
         <item name="android:textAppearance">@*android:style/TextAppearance.DeviceDefault.Body1</item>
-        <item name="android:textColor">?android:attr/textColorSecondary</item>
+        <item name="android:textColor">?android:attr/colorAccent</item>
     </style>
 
     <style name="wifi_item_warning">
@@ -227,7 +227,7 @@
         <item name="android:singleLine">true</item>
         <item name="android:textAlignment">viewStart</item>
         <item name="android:minHeight">@dimen/min_tap_target_size</item>
-        <item name="android:textColorHint">?android:attr/textColorSecondary</item>
+        <item name="android:textColorHint">?android:attr/colorAccent</item>
     </style>
 
     <style name="vpn_warning">
@@ -244,7 +244,7 @@
 
     <style name="vpn_app_management_version_summary">
         <item name="android:textAppearance">?android:attr/textAppearanceListItemSecondary</item>
-        <item name="android:textColor">?android:attr/textColorSecondary</item>
+        <item name="android:textColor">?android:attr/colorAccent</item>
     </style>
 
     <style name="screen_size_imageview_style">
@@ -333,7 +333,7 @@
         <item name="android:layout_gravity">center</item>
         <item name="android:fontFamily">@*android:string/config_headlineFontFamily</item>
         <item name="android:textSize">@dimen/search_bar_text_size</item>
-        <item name="android:textColor">?android:attr/textColorPrimary</item>
+        <item name="android:textColor">?android:attr/colorAccent</item>
         <item name="android:singleLine">true</item>
     </style>
 
@@ -345,7 +345,7 @@
 
     <style name="TextAppearance.ConditionCardSummary"
            parent="@*android:style/TextAppearance.DeviceDefault.Body1">
-        <item name="android:textColor">?android:attr/textColorSecondary</item>
+        <item name="android:textColor">?android:attr/colorAccent</item>
     </style>
 
     <style name="TextAppearance.ZenOnboardingButton">
@@ -688,7 +688,7 @@
         <item name="android:layout_height">wrap_content</item>
         <item name="android:gravity">center</item>
         <item name="android:textSize">20sp</item>
-        <item name="android:textColor">?android:attr/textColorPrimary</item>
+        <item name="android:textColor">?android:attr/colorAccent</item>
         <item name="android:fontFamily">@*android:string/config_headlineFontFamilyMedium</item>
     </style>
 
@@ -758,7 +758,7 @@
         <item name="android:layout_height">wrap_content</item>
         <item name="android:gravity">center</item>
         <item name="android:textSize">20sp</item>
-        <item name="android:textColor">?android:attr/textColorPrimary</item>
+        <item name="android:textColor">?android:attr/colorAccent</item>
         <item name="android:fontFamily">@*android:string/config_headlineFontFamilyMedium</item>
         <item name="android:paddingTop">36dp</item>
         <item name="android:paddingBottom">16dp</item>
@@ -894,7 +894,7 @@
     <style name="AppAuthenticationPolicyText">
         <item name="android:maxLines">1</item>
         <item name="android:textSize">20sp</item>
-        <item name="android:textColor">?android:attr/textColorPrimary</item>
+        <item name="android:textColor">?android:attr/colorAccent</item>
     </style>
 
     <style name="AppAuthenticationPolicyNumberOfUrisText">
