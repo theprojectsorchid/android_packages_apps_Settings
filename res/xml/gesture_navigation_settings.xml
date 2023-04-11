@@ -54,7 +54,7 @@
 
     <PreferenceCategory
         android:key="back_sensitivity_category"
-        android:layout="@layout/custom_preference_category2"
+        android:layout="@layout/custom_preference_category3"
         android:persistent="false"
         android:title="@string/back_sensitivity_dialog_title">
 
