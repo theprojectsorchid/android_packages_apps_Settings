@@ -40,18 +40,20 @@
 
     <PreferenceCategory
         android:key="gesture_one_handed_mode_swipe_down"       
-         android:layout="@layout/custom_preference_category2"
+         android:layout="@layout/custom_preference_category3"
         android:title="@string/one_handed_mode_swipe_down_category"
         settings:controller="com.android.settings.gestures.OneHandedPreferenceCategoryController">
 
         <com.android.settingslib.widget.RadioButtonPreference
             android:key="gesture_one_handed_action_pull_screen_down"
+            android:icon="@drawable/ic_media_stream"
             android:title="@string/one_handed_action_pull_down_screen_title"
             android:summary="@string/one_handed_action_pull_down_screen_summary"
             settings:controller="com.android.settings.gestures.OneHandedActionPullDownPrefController"/>
 
         <com.android.settingslib.widget.RadioButtonPreference
             android:key="gesture_one_handed_action_show_notification"
+            android:icon="@drawable/ic_media_stream"
             android:title="@string/one_handed_action_show_notification_title"
             android:summary="@string/one_handed_action_show_notification_summary"
             settings:controller="com.android.settings.gestures.OneHandedActionShowNotificationPrefController"/>
