@@ -16,17 +16,23 @@
 <PreferenceScreen
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:settings="http://schemas.android.com/apk/res-auto"
-    android:title="@string/app_launch_open_domain_urls_title">
+    android:title=" ">
 
-    <PreferenceCategory
+   <!-- Header -->
+  <PreferenceCategory
+        android:title="App Links"
+        android:order="-997"
         android:key="supported_links_radio_group"
-        android:title="@string/app_link_open_always">
-    </PreferenceCategory>
+        android:layout="@layout/settings_title_header">
+  </PreferenceCategory>
+  
 
     <com.android.settingslib.widget.FooterPreference
         android:key="supported_links_footer"
+        android:icon="@drawable/ic_media_stream"
         android:title="@string/open_supported_links_footer"
         android:selectable="false"
+         android:visibility="gone"       
         settings:searchable="false"/>
 
 </PreferenceScreen>
