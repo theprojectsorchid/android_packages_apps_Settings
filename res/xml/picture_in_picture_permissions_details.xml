@@ -23,6 +23,7 @@
         android:title="@string/picture_in_picture_app_detail_switch"/>
 
     <com.android.settingslib.widget.FooterPreference
+        android:visibility="invisible"
         android:title="@string/picture_in_picture_app_detail_summary"
         android:selectable="false"/>
 
