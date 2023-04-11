@@ -37,7 +37,7 @@
         android:textAlignment="viewStart"
         android:textAppearance="@*android:style/TextAppearance.DeviceDefault.Subhead"
         android:textColor="?android:attr/colorAccent"
-        android:textSize="36sp"/>
+        android:textSize="45sp"/>
 
     <TextView
         android:id="@android:id/summary"
@@ -50,7 +50,7 @@
     <ProgressBar
         android:id="@android:id/progress"
         android:layout_width="match_parent"
-        android:layout_height="8dp"
+        android:layout_height="70dp"
         android:layout_marginTop="16dp"
         android:layout_marginBottom="8dp"
         android:visibility="gone"
