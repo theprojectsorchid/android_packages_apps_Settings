@@ -44,6 +44,7 @@
 
     <com.android.settingslib.widget.FooterPreference
         android:key="power_menu_power_volume_up_hint"
+        android:visibility="gone"
         android:title="@string/power_menu_power_volume_up_hint"
         android:selectable="false"
         settings:searchable="false"/>
