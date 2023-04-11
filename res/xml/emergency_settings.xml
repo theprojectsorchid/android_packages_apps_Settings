@@ -38,12 +38,12 @@
         android:layout="@layout/settings_title_header">
   </PreferenceCategory>
 
-    <com.android.settingslib.widget.LayoutPreference
+    <!--<com.android.settingslib.widget.LayoutPreference
         android:key="more_emergency_settings"
         android:layout="@layout/more_settings_button"
         android:order="0"
         android:selectable="false"
-        settings:controller="com.android.settings.emergency.MoreSettingsPreferenceController" />
+        settings:controller="com.android.settings.emergency.MoreSettingsPreferenceController" />-->
     <Preference
         android:key="gesture_emergency_summary"
         android:title="@string/emergency_gesture_screen_title"
