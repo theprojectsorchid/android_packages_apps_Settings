@@ -54,7 +54,7 @@
 
     <PreferenceCategory
         android:key="back_sensitivity_category"
-        android:layout="@layout/custom_preference_category2"
+        android:layout="@layout/custom_preference_category3"
         android:persistent="false"
         android:title="@string/back_sensitivity_dialog_title">
 
@@ -71,7 +71,7 @@
             android:key="gesture_right_back_sensitivity"
             android:title="@string/right_edge"
             android:max="2"
-            android:layout="@layout/dot_preference_top_card_progress"           
+            settings:layout="@layout/dot_preference_bottom_card_progress"           
             android:selectable="true"
             settings:textStart="@string/low_label"
             settings:textEnd="@string/high_label"/>
