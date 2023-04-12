@@ -33,21 +33,24 @@
 
    <!-- Header -->
   <PreferenceCategory
-        android:title="Screen lock"
+        android:title="Screen lock options"
         android:order="-996"
         android:layout="@layout/settings_title_header">
   </PreferenceCategory>
     <!-- available in pattern -->
     <SwitchPreference
         android:key="visiblepattern"
+        android:icon="@drawable/rr_app_pref_icon"
         android:title="@string/lockpattern_settings_enable_visible_pattern_title" />
 
     <SwitchPreference
         android:key="visible_error_pattern"
+                android:icon="@drawable/rr_app_pref_icon"
         android:title="@string/lockpattern_settings_enable_error_path_title"/>
 
     <SwitchPreference
         android:key="visibledots"
+                android:icon="@drawable/rr_app_pref_icon"
         android:title="@string/lockpattern_settings_enable_dots_title"/>
 
     <!-- available in pin/pattern/password -->
@@ -61,6 +64,7 @@
     <!-- available in pin/pattern/password -->
     <SwitchPreference
         android:key="power_button_instantly_locks"
+        android:icon="@drawable/rr_app_pref_icon"
         android:title="@string/lockpattern_settings_enable_power_button_instantly_locks" />
 
     <!-- Fp wake unlock -->

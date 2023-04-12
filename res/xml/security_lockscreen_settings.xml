@@ -28,13 +28,14 @@
         app:lottie_rawRes="@raw/lottie_system_nav_fully_gestural"/>
    <!-- Header -->
   <PreferenceCategory
-        android:title="Lockscree settings"
+        android:title="Lockscreen settings"
         android:order="-998"
         android:layout="@layout/settings_title_header">
   </PreferenceCategory>
 
     <PreferenceCategory
         android:key="lockscreen_what_to_show"
+        android:layout="@layout/custom_preference_category2"
         android:title="@string/lockscreen_settings_what_to_show_category">
         <com.android.settings.RestrictedListPreference
             android:key="security_setting_lock_screen_notif"
@@ -65,30 +66,35 @@
 
         <SwitchPreference
             android:key="lockscreen_privacy_wallet_switch"
+            android:icon="@drawable/rr_lock_icon"
             android:title="@string/lockscreen_privacy_wallet_setting_toggle"
             android:summary="@string/lockscreen_privacy_wallet_summary"
             settings:controller="com.android.settings.display.WalletPrivacyPreferenceController" />
 
         <SwitchPreference
             android:key="lockscreen_privacy_controls_switch"
+            android:icon="@drawable/rr_privacy_icon"
             android:title="@string/lockscreen_privacy_controls_setting_toggle"
             android:summary="@string/lockscreen_privacy_controls_summary"
             settings:controller="com.android.settings.display.ControlsPrivacyPreferenceController" />
 
         <SwitchPreference
             android:key="lockscreen_double_line_clock_switch"
+            android:icon="@drawable/rr_clock_icon"
             android:title="@string/lockscreen_double_line_clock_setting_toggle"
             android:summary="@string/lockscreen_double_line_clock_summary"
             settings:controller="com.android.settings.display.LockscreenClockPreferenceController" />
 
         <com.arrow.support.preferences.SystemSettingSwitchPreference
             android:key="enable_ripple_effect"
+            android:icon="@drawable/ic_phone"
             android:title="@string/enable_fingerprint_ripple_effect_title"
             android:summary="@string/enable_fingerprint_ripple_effect_summary"
             android:defaultValue="true" />
 
         <com.arrow.support.preferences.SecureSettingSwitchPreference
             android:key="power_menu_hide_on_secure"
+            android:icon="@drawable/ic_menu_reset"
             android:title="@string/power_menu_hide_on_secure_title"
             android:summary="@string/power_menu_hide_on_secure_summary"
             android:defaultValue="false" />
@@ -96,11 +102,13 @@
 
     <PreferenceCategory
         android:key="ambient_display_category_when_to_show"
+        android:layout="@layout/custom_preference_category2"
         android:title="@string/ambient_display_category_triggers"
         android:order="1000">
 
        <com.arrow.support.preferences.SystemSettingSwitchPreference
             android:key="proximity_on_wake"
+            android:icon="@drawable/rr_wake_icon"
             android:title="@string/proximity_wake_title"
             android:summary="@string/proximity_wake_summary"
             android:defaultValue="false" />
@@ -157,6 +165,7 @@
 
         <com.arrow.support.preferences.SystemSettingSwitchPreference
             android:key="double_tap_sleep_lockscreen"
+            android:icon="@drawable/rr_tap_icon"
             android:title="@string/double_tap_sleep_lockscreen_title"
             android:defaultValue="false" />
 
