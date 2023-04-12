@@ -170,6 +170,7 @@
     <!-- Clipboard access notifications -->
     <SwitchPreference
         android:key="show_clip_access_notification"
+         android:icon="@drawable/rr_misc_icon"
         android:title="@string/show_clip_access_notification"
         android:summary="@string/show_clip_access_notification_summary"
         settings:controller="com.android.settings.privacy.ShowClipAccessNotificationPreferenceController"/>

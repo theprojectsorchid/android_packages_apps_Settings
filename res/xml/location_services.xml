@@ -41,12 +41,14 @@
 
         <com.android.settingslib.RestrictedPreference
             android:fragment="com.android.settings.location.WifiScanningFragment"
+ 			android:icon="@drawable/ic_location_scanning"          
             android:key="location_services_wifi_scanning"
             android:title="@string/location_scanning_wifi_always_scanning_title"
             settings:controller="com.android.settings.location.LocationServicesWifiScanningPreferenceController"/>
 
         <com.android.settingslib.RestrictedPreference
             android:fragment="com.android.settings.location.BluetoothScanningFragment"
+			android:icon="@drawable/ic_location_scanning"
             android:key="location_services_bluetooth_scanning"
             android:title="@string/location_scanning_bluetooth_always_scanning_title"
             settings:controller="com.android.settings.location.LocationServicesBluetoothScanningPreferenceController"/>
