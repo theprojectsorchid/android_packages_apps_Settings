@@ -60,6 +60,7 @@
     <Preference
         android:key="erase_euicc_data"
         android:title="@string/reset_esim_title"
+         android:icon="@drawable/rr_app_pref_icon"
         settings:controller="com.android.settings.network.EraseEuiccDataController" />
 
     <!-- Factory reset -->

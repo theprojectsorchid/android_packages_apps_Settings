@@ -35,7 +35,7 @@
   </PreferenceCategory>
         
     <PreferenceCategory
-        android:order="1"
+        android:order="95"
         android:key="dashboard_tile_placeholder" />
 
     <!-- security section -->
@@ -47,6 +47,7 @@
         <Preference
             android:key="lockscreen_from_display_settings"
             android:title="@string/lockscreen_settings_title"
+            android:icon="@drawable/rr_misc_icon"
             android:fragment="com.android.settings.security.LockscreenDashboardFragment"
             settings:keywords="@string/keywords_ambient_display_screen"
             settings:controller="com.android.settings.security.screenlock.LockScreenPreferenceController"/>

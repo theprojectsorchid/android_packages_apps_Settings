@@ -61,6 +61,7 @@
         android:title="@string/media_output_title"
         android:dialogTitle="@string/media_output_title"
         android:order="-175"
+        android:icon="@drawable/ic_media_stream"
         settings:searchable="false"
         settings:controller="com.android.settings.sound.MediaOutputPreferenceController"/>
 
@@ -79,6 +80,7 @@
         android:title="@string/take_call_on_title"
         android:dialogTitle="@string/take_call_on_title"
         android:order="-165"
+        android:icon="@drawable/ic_media_stream"
         settings:searchable="false"
         settings:controller="com.android.settings.sound.HandsFreeProfileOutputPreferenceController"/>
 
@@ -121,6 +123,8 @@
     <!-- Volume panel to left -->
     <com.arrow.support.preferences.SystemSettingSwitchPreference
         android:key="volume_panel_on_left"
+        android:icon="@drawable/ic_audio_alarm"
+        android:order="-135"
         android:title="@string/volume_panel_on_left_title"
         android:summary="@string/volume_panel_on_left_summary" />
 
@@ -132,7 +136,6 @@
         android:icon="@drawable/ic_do_not_disturb2"
         android:fragment="com.android.settings.notification.zen.ZenModeSettings"
         android:order="-130"       
-         android:visibility="gone"
         settings:useAdminDisabledSummary="true"
         settings:keywords="@string/keywords_sounds_and_notifications_interruptions"
         settings:controller="com.android.settings.notification.zen.ZenModePreferenceController"/>
@@ -179,11 +182,12 @@
 
     
      <Preference
-            android:key="taptapmode"
-            android:title="@string/taptapmode_more"
+            android:key="incallvibe"
+            android:title="@string/incall_vibration_category"
             android:icon="@drawable/rr_assist_icon"
+            android:order="-85"
             android:fragment="com.android.settings.awaken.fragments.DisplayCustomizations3"
-             settings:keywords="@string/keywords_font_size"/>
+            settings:keywords="@string/keywords_font_size"/>
 
  
     <!-- Incall vibration options -->
@@ -219,7 +223,7 @@
     <!-- Default notification ringtone -->
     <com.android.settings.DefaultRingtonePreference
         android:key="notification_ringtone"
-        android:icon="@drawable/ic_sms_ringtone"
+        android:icon="@drawable/ic_settings_sound"
         android:title="@string/notification_ringtone_title"
         android:dialogTitle="@string/notification_ringtone_title"
         android:summary="@string/summary_placeholder"
@@ -240,20 +244,21 @@
     <!-- Spatial audio -->
     <SwitchPreference
         android:key="spatial_audio"
+        android:icon="@drawable/ic_audio_alarm"
         android:title="@string/spatial_audio_title"
         android:order="-55"
         settings:controller="com.android.settings.notification.SpatialAudioPreferenceController"/>
 
     <!-- Dial pad tones -->
     <SwitchPreference
-    	android:icon="@drawable/ic_dialpad"
+        android:icon="@drawable/ic_settings_phone_idle"
         android:key="dial_pad_tones"
         android:title="@string/dial_pad_tones_title"
         android:order="-50"/>
 
     <!-- Screen locking sounds -->
     <SwitchPreference
-		android:icon="@drawable/ic_screenlock"
+        android:icon="@drawable/ic_lock"
         android:key="screen_locking_sounds"
         android:title="@string/screen_locking_sounds_title"
         android:order="-45"/>
@@ -281,6 +286,7 @@
     <!-- Show vibrate icon in status bar -->
     <SwitchPreference
         android:key="vibrate_icon"
+        android:icon="@drawable/ic_do_not_disturb2"
         android:title="@string/vibrate_icon_title"
         android:order="-27"/>
 
@@ -316,6 +322,7 @@
     <!-- Screenshot sound -->
     <SwitchPreference
         android:key="screenshot_shutter_sound"
+        android:icon="@drawable/ic_do_not_disturb2"
         android:title="@string/screenshot_shutter_sound_title" />
 
     <Preference
