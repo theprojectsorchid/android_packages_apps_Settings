@@ -36,11 +36,16 @@
         android:layout="@layout/settings_title_header">
   </PreferenceCategory>
 
+    <PreferenceCategory
+        android:key="phone_language_cat"
+        android:layout="@layout/custom_preference_category2"
+        android:title="@string/phone_language">
     <Preference
         android:key="phone_language"
         android:title="@string/phone_language"
         android:icon="@drawable/ic_translate_24dp"
         android:fragment="com.android.settings.localepicker.LocaleListEditor" />
+    </PreferenceCategory>
 
     <PreferenceCategory
         android:key="keyboards_category"
