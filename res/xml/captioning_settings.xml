@@ -62,6 +62,7 @@
         android:persistent="false"
         android:selectable="false"
         settings:searchable="false"
+        android:visibility="invisible"       
         settings:controller="com.android.settings.accessibility.CaptionFooterPreferenceController"/>
 
 </PreferenceScreen>
