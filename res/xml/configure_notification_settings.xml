@@ -97,6 +97,7 @@
             android:key="notification_access"
             android:order="12"
             android:icon="@drawable/rr_misc_icon"
+            settings:isPreferenceVisible="true"
             android:title="@string/manage_notification_access_title"
             android:summary="@string/manage_notification_access_summary"
             android:fragment="com.android.settings.notification.NotificationAccessSettings"
@@ -105,6 +106,7 @@
         <com.android.settings.RestrictedListPreference
             android:key="lock_screen_notifications"
             android:order="13"
+            settings:isPreferenceVisible="false"
              android:icon="@drawable/rr_misc_icon"
             android:title="@string/lock_screen_notifs_title"
             android:singleLineTitle="false"
@@ -167,6 +169,7 @@
         />
         <com.android.settingslib.RestrictedPreference
             android:key="app_and_notif_cell_broadcast_settings"
+            settings:isPreferenceVisible="false"
             android:order="18"
             android:icon="@drawable/rr_misc_icon"
             android:title="@string/cell_broadcast_settings"
