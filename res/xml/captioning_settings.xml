@@ -46,12 +46,14 @@
         android:fragment="com.android.settings.accessibility.CaptionAppearanceFragment"
         android:key="captioning_caption_appearance"
         android:persistent="false"
+        android:icon="@drawable/ic_audio_media"
         android:title="@string/captioning_caption_appearance_title" />
 
     <Preference
         android:fragment="com.android.settings.accessibility.CaptionMoreOptionsFragment"
         android:key="captioning_more_options"
         android:persistent="false"
+        android:icon="@drawable/ic_audio_media"
         android:title="@string/captioning_more_options_title" />
 
     <com.android.settings.accessibility.AccessibilityFooterPreference
