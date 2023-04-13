@@ -97,20 +97,18 @@
             android:key="notification_access"
             android:order="12"
             android:icon="@drawable/rr_misc_icon"
-            settings:isPreferenceVisible="true"
             android:title="@string/manage_notification_access_title"
             android:summary="@string/manage_notification_access_summary"
             android:fragment="com.android.settings.notification.NotificationAccessSettings"
             settings:controller="com.android.settings.applications.specialaccess.notificationaccess.NotificationAccessController" />
         <!-- When device is locked -->
-        <!--<com.android.settings.RestrictedListPreference
+        <com.android.settings.RestrictedListPreference
             android:key="lock_screen_notifications"
             android:order="13"
-            settings:isPreferenceVisible="false"
-             android:icon="@drawable/rr_misc_icon"
+            android:icon="@drawable/rr_misc_icon"
             android:title="@string/lock_screen_notifs_title"
             android:singleLineTitle="false"
-            android:summary="@string/summary_placeholder" />-->
+            android:summary="@string/summary_placeholder" />
 
         <com.android.settingslib.RestrictedSwitchPreference
             android:key="lock_screen_redact"
@@ -167,7 +165,7 @@
             android:fragment="com.android.settings.notification.zen.ZenModeSettings"
             settings:controller="com.android.settings.notification.zen.ZenModePreferenceController"
         />
-        <!--<com.android.settingslib.RestrictedPreference
+        <com.android.settingslib.RestrictedPreference
             android:key="app_and_notif_cell_broadcast_settings"
             settings:isPreferenceVisible="false"
             android:order="18"
@@ -178,7 +176,7 @@
                 android:action="android.intent.action.MAIN"
                 android:targetPackage="@string/config_cell_broadcast_receiver_package"
                 android:targetClass="com.android.cellbroadcastreceiver.CellBroadcastSettings"/>
-        </com.android.settingslib.RestrictedPreference>-->
+        </com.android.settingslib.RestrictedPreference>
 
         <SwitchPreference
              android:key="silent_icons"
