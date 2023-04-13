@@ -90,6 +90,11 @@
         android:key="keyboards_category"        
         android:layout="@layout/custom_preference_category2"
         android:title="@string/date_and_time">
+
+    <com.android.settingslib.widget.TopIntroPreference
+        android:key="timeanddate_bubbles_desc"
+        android:title="@string/timeanddatesetting_description"/>
+   
     <Preference
         android:key="date_time_settings"
         android:title="@string/date_and_time"
@@ -99,9 +104,8 @@
     </PreferenceCategory>
 
     <com.android.settingslib.widget.FooterPreference
-        android:title="@string/location_settings_footer_general"
+        android:title="@string/system_footer"
         android:key="location_footer"
         settings:searchable="false"
-        android:visibility="gone"       
         settings:controller="com.android.settings.location.LocationSettingsFooterPreferenceController"/>
 </PreferenceScreen>
