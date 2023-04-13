@@ -240,7 +240,7 @@
     <color name="battery_usage_system_icon_color">?android:attr/textColorPrimary</color>
     <color name="card_bg">@android:color/system_neutral1_0</color>
     <color name="usercardbg">@*android:color/system_accent2_600</color>
-    <color name="toolbar_collapsed">@*android:color/system_neutral1_100</color>
+    <color name="toolbar_collapsed">#00000000</color>
 
 
 
