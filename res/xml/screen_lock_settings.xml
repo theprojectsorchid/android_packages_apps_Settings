@@ -33,14 +33,14 @@
 
    <!-- Header -->
   <PreferenceCategory
-        android:title="Screen lock"
+        android:title="Screen lock options"
         android:order="-996"
         android:layout="@layout/settings_title_header">
   </PreferenceCategory>
     <!-- available in pattern -->
     <SwitchPreference
         android:key="visiblepattern"
-                android:icon="@drawable/rr_app_pref_icon"
+        android:icon="@drawable/rr_app_pref_icon"
         android:title="@string/lockpattern_settings_enable_visible_pattern_title" />
 
     <SwitchPreference
