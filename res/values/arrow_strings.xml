@@ -271,4 +271,15 @@
 
     <!-- Battery temperature -->
     <string name="battery_temperature">Battery temperature</string>
+
+    
+  <!--in call vibration UI -->
+    <string name="incallvibe_bubble_setting_description">Welcome to incall vibration options</string>
+
+ <!--footer UI -->
+    <string name="system_footer">Powered by android</string>
+   
+    <!--footer UI -->
+    <string name="timeanddatesetting_description">Below are time and date settings for your locale</string>
+   
 </resources>
