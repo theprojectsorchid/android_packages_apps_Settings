@@ -244,10 +244,9 @@
     <color name="settings_accent_color">@color/oneplus_accent_color</color>
 
 
-    <color name="user_crd_bg">#f8f8f8</color>
+
 
     <color name="disabled_text_color">#66000000</color>
-    <color name="transparent">#00000000</color>
     <color name="wave_homepage_icon_background">@*android:color/system_neutral1_50</color>
 
     <!-- Icon tint color for battery usage system icon -->
@@ -263,7 +262,6 @@
     <color name="user_crd_bg2">#005CB4</color>
 
     <!-- Settings Homepage  -->
-    <color name="wave_homepage_icon_background">@*android:color/system_neutral1_50</color>
     <color name="wave_homepage_icon_about_device_color">#6971c7</color>
     <color name="wave_homepage_icon_accounts_color">#f1c542</color>
     <color name="wave_homepage_icon_app_color">#6a41b1</color>
@@ -317,11 +315,11 @@
     <color name="bottom_bar_divider_color">#1f000000</color>
     <color name="bottom_navigation_color">#FFFFFF</color>
     <color name="bottom_navigation_ripple">#1f000000</color>
-<color name="white">#FFFFFFFF</color>
+
     <color name="option_border_color">#1f000000</color>
     <color name="color_accent_alpha_end">#FFFFFF</color>
         <color name="color_accent_alpha_start">#FFFFFF</color>
 
-    <color name="bottom_navigation_ripple">#1f000000</color>
+
 
 </resources>

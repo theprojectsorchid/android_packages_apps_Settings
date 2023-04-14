@@ -459,21 +459,6 @@
     <dimen name="panel_slice_vertical_padding">8dp</dimen>
     <dimen name="panel_slice_Horizontal_padding">24dp</dimen>
 
-    <dimen name="settings_panel_title_margin_bottom">16dp</dimen>
-    <dimen name="settings_panel_width">@dimen/match_parent</dimen>
-
-    <!-- Panel slices dimensions -->
-    <dimen name="panel_slice_vertical_padding">12dp</dimen>
-    <dimen name="panel_slice_Horizontal_padding">24dp</dimen>
-
-
-    <dimen name="settings_panel_title_margin_bottom">16dp</dimen>
-    <dimen name="settings_panel_width">@dimen/match_parent</dimen>
-
-    <!-- Panel slices dimensions -->
-    <dimen name="panel_slice_vertical_padding">12dp</dimen>
-    <dimen name="panel_slice_Horizontal_padding">24dp</dimen>
-
 
     <!-- Text padding for EmptyTextSettings -->
     <dimen name="empty_text_padding">24dp</dimen>
@@ -578,6 +563,8 @@
      <dimen name="xd_pref_card_horizontal_padding">16dp</dimen>
      <dimen name="xd_pref_card_horizontal_padding-negative">-16dp</dimen>
          <dimen name="fingerprint_find_sensor_padding_top">16dp</dimen>
-
+         
+      <dimen name="dashboard_tile_foreground_image_size">16dp</dimen>   
+ 
 
 </resources>

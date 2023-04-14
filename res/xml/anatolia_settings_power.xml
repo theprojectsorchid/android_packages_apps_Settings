@@ -38,7 +38,6 @@
             android:title="@string/Device_details_title"/>
     
      <Preference
-            android:key="onthegomode"
             android:title="@string/onthegomode_title"
             android:icon="@drawable/rr_assist_icon"
             android:key="global_actions_onthego"

@@ -43,7 +43,6 @@
         android:key="wifi_tether"
         android:icon="@drawable/ic_wifi_off"
         android:title="@string/wifi_hotspot_checkbox_text"
-        android:icon="@drawable/ic_network"
         android:summary="@string/summary_placeholder"
         android:fragment="com.android.settings.wifi.tether.WifiTetherSettings"
         settings:allowDividerAbove="false"
