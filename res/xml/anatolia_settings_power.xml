@@ -37,14 +37,11 @@
             android:order="-997"        
             android:title="@string/onthegomode_bubble_setting_description1"/>
     
-     <Preference
-            android:key="onthegomode"
-            android:title="@string/onthegomode_title"
-            android:icon="@drawable/rr_assist_icon"
-            android:fragment="com.android.settings.display.ToggleFontSizePreferenceFragment"
-            settings:controller="com.android.settings.display.FontSizePreferenceController"
-            settings:keywords="@string/keywords_font_size"/>
-
+ <com.arrow.support.preferences.SystemSettingSwitchPreference
+        android:key="global_actions_onthego"
+                    android:order="-996"        
+        android:title="@string/global_actions_onthego_title"
+        android:defaultValue="false" />
      <Preference
             android:key="onthegomode"
             android:title="@string/onthegomode_more"
@@ -52,4 +49,9 @@
             android:fragment="com.android.settings.awaken.fragments.DisplayCustomizations"
             settings:keywords="@string/keywords_font_size"/>
 
+        <com.android.settingslib.widget.TopIntroPreference
+            android:key="onthegomode_bubbles_desc"
+            android:order="-995"        
+            android:title="@string/onthegomode_bubble_setting_description2"/>
+    
 </PreferenceScreen>
