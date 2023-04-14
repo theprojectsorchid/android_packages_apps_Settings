@@ -229,7 +229,13 @@
         android:icon="@drawable/ic_settings_night_mode"            
         android:fragment="com.epic.fragments.PowerMenuSettings"/>
 
-    
+         <Preference
+            android:key="taptapmode"
+            android:title="@string/taptapmode_more"
+            android:icon="@drawable/rr_assist_icon"
+            android:fragment="com.android.settings.awaken.fragments.DisplayCustomizations4"
+             settings:keywords="@string/keywords_font_size"/>
+
     <Preference
         android:key="screen_pinning_settings"
         android:title="@string/screen_pinning_title"
