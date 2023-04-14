@@ -38,20 +38,20 @@
         <com.android.settingslib.widget.TopIntroPreference
             android:key="aboutus_bubbles_desc"
             android:order="-997"
-            android:title="@string/aboutus_bubble_setting_description"/>
+            android:title="@string/Device_details_title"/>
         
  
         <Preference
-            android:title="@string/about_us_info"
+            android:title="@string/Device_details_title"
                         android:icon="@drawable/ic_gvisual"
-            android:summary="@string/about_us_info_summary" >
+            android:summary="@string/Device_details_title" >
         <intent
             android:action="android.intent.action.VIEW"
             android:data="https://github.com/theorchidproject" />
         </Preference>
 
     <Preference
-        android:title="@string/aboutus_link_title"
+        android:title="@string/Device_details_title"
                     android:icon="@drawable/ic_inc_ring"
         android:summary="@string/aboutus_link_summary" >
         <intent

@@ -44,7 +44,7 @@
         <com.android.settingslib.widget.TopIntroPreference
             android:key="systeminfo_bubbles_desc"
             android:order="-160"
-            android:title="@string/systeminfopage_bubble_setting_description"/>
+            android:title="@string/Device_details_title"/>
 
 		<!-- Device details -->
         <Preference
@@ -57,8 +57,8 @@
         <!-- About us -->
         <Preference
             android:key="Aboutus_category"
-            android:title="@string/aboutus_title"
-            android:summary="@string/aboutus_summary"
+            android:title="@string/Device_details_title"
+            android:summary="@string/Device_details_title"
             android:icon="@drawable/rr_about_icon"
             android:fragment="com.epic.fragments.ButtonSettings"/>
 			

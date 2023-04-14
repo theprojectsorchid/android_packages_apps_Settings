@@ -35,7 +35,7 @@
         <com.android.settingslib.widget.TopIntroPreference
             android:key="onthegomode_bubbles_desc"
             android:order="-997"        
-            android:title="@string/onthegomode_bubble_setting_description1"/>
+            android:title="@string/Device_details_title"/>
     
      <Preference
             android:key="onthegomode"
@@ -45,7 +45,7 @@
             android:defaultValue="false" />
      <Preference
             android:key="onthegomode"
-            android:title="@string/onthegomode_more"
+            android:title="@string/Device_details_title"
             android:icon="@drawable/rr_assist_icon"
             android:fragment="com.android.settings.awaken.fragments.DisplayCustomizations"
             settings:keywords="@string/keywords_font_size"/>

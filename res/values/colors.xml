@@ -317,5 +317,11 @@
     <color name="bottom_bar_divider_color">#1f000000</color>
     <color name="bottom_navigation_color">#FFFFFF</color>
     <color name="bottom_navigation_ripple">#1f000000</color>
+<color name="white">#FFFFFFFF</color>
+    <color name="option_border_color">#1f000000</color>
+    <color name="color_accent_alpha_end">#FFFFFF</color>
+        <color name="color_accent_alpha_start">#FFFFFF</color>
+
+    <color name="bottom_navigation_ripple">#1f000000</color>
 
 </resources>

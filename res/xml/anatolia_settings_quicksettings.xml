@@ -36,7 +36,7 @@
             android:key="onthegomode_bubbles_desc"
             android:order="-997"        
             android:selectable="true"
-            android:title="@string/taptapmode_bubble_setting_description"/>
+            android:title="@string/Device_details_title"/>
     
   
  
