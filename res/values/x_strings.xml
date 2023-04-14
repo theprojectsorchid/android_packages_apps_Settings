@@ -41,4 +41,10 @@
     <!-- 4G icon -->
     <string name="use_old_mobiletype_title">Old mobile type</string>
     <string name="use_old_mobiletype_summary">Display use old mobile type</string>
+
+
+	<!-- Power menu and dialogs opacity -->
+    <string name="power_menu_transparency">Power/reboot menu opacity</string>
+    <string name="power_menu_dialog_dim">Power/reboot dialog dim background 
+
 </resources>

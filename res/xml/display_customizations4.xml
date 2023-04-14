@@ -17,6 +17,34 @@
 <PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:settings="http://schemas.android.com/apk/res/com.android.settings"
     android:key="display_customizations4"
-    android:title=" ">
+    	 xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:title=" " >
+
+    <com.android.settingslib.widget.IllustrationPreference
+        android:key="powermenu"
+        settings:searchable="false"
+        android:order="-999"
+        app:lottie_rawRes="@raw/incall"/>
+
+  <com.android.settingslib.widget.TopIntroPreference
+            android:key="incall_bubbles_desc"
+            android:order="-997"
+            android:title="@string/incallvibe_bubble_setting_description"/>
+
+
+
+	<com.arrow.settings.preferences.SystemSettingSeekBarPreference
+            android:key="transparent_power_menu"
+            android:title="@string/power_menu_transparency"
+            android:max="100"
+            android:min="0"
+            android:defaultValue="100" />
+
+        <com.arrow.settings.preferences.SystemSettingSeekBarPreference
+            android:key="transparent_power_dialog_dim"
+            android:title="@string/power_menu_dialog_dim"
+            android:max="100"
+            android:min="0"
+            android:defaultValue="50" />
 
 </PreferenceScreen>
