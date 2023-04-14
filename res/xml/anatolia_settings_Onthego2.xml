@@ -18,7 +18,7 @@
         xmlns:settings="http://schemas.android.com/apk/res/com.android.settings"
 	   xmlns:app="http://schemas.android.com/apk/res-auto"
         android:title=" ">
-    
+   
     <com.android.settingslib.widget.IllustrationPreference
         android:key="onthegomode_anim"
         settings:searchable="false"
@@ -44,6 +44,7 @@
         android:title="@string/global_actions_onthego_title"
         android:defaultValue="false" />
 
+ 
         <com.android.settingslib.widget.TopIntroPreference
             android:key="onthegomode_bubbles_desc"
             android:order="-995"        
