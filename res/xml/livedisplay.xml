@@ -17,18 +17,13 @@
 -->
 <PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
         android:key="livedisplay"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    android:title=" "
-    settings:keywords="@string/keywords_display">
-
-
-   <!-- Header -->
+        android:title=" ">
+  <!-- Header -->
   <PreferenceCategory
         android:title="Live display"
         android:order="-997"
         android:layout="@layout/settings_title_header">
   </PreferenceCategory>
-
     <!-- Color mode preview -->
     <com.android.settingslib.widget.LayoutPreference
         android:key="color_mode_preview"
@@ -38,13 +33,11 @@
     <!-- Color profile -->
     <ListPreference
             android:key="live_display_color_profile"
-           android:icon="@drawable/ic_screensaver_settings"            
             android:title="@string/live_display_color_profile_title"
             android:persistent="false" />
 
     <ListPreference
             android:key="live_display"
-            android:icon="@drawable/ic_screensaver_settings"            
             android:title="@string/live_display_mode"
             android:persistent="false" />
 
