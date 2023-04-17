@@ -25,6 +25,7 @@
     <string name="hide_privacy_indicator_summary">Hide the floating privacy indicator displayed in the screen corner. Note that this does not affect the indicator in QS panel</string>
 
     <!-- LiveDisplay -->
+        <string name="live_display_title">Live Display mode</string>
     <string name="live_display_summary">Optimize your screen based on time of day and ambient conditions to improve readability and reduce eyestrain</string>
     <string name="live_display_mode">Display mode</string>
     <string name="live_display_color_temperature_title">Color temperature</string>
