@@ -155,6 +155,7 @@
         android:summary="@string/confirm_sim_deletion_description"
         settings:controller="com.android.settings.security.ConfirmSimDeletionPreferenceController"/>
 
+
     <!-- work profile security section -->
     <PreferenceCategory
         android:order="100"
