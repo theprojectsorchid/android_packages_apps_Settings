@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+     Copyright (C) 2022 xdroid & xyzprjkt
+     Licensed under the Apache License, Version 2.0 (the "License");
+     you may not use this file except in compliance with the License.
+     You may obtain a copy of the License at
+          http://www.apache.org/licenses/LICENSE-2.0
+     Unless required by applicable law or agreed to in writing, software
+     distributed under the License is distributed on an "AS IS" BASIS,
+     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     See the License for the specific language governing permissions and
+     limitations under the License.
+-->
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+
+    <!-- Dashboard -->
+    <string name="grimoire_summary">The Arcanery welcomes your presence.</string>
+    <string name="grimoire_title">Grimoire</string>
+    <string name="gestures_title">Gestures</string>
+    <string name="gestures_summary">Control your device with different gestures</string>
+    <string name="misc_title">Miscellaneous</string>
+    <string name="misc_summary">misc features </string>
+    <string name="interfaces_title">User interface</string>
+    <string name="interfaces_summary">Customize device appearance</string>
+    <string name="system_title">System</string>
+    <string name="system_summary">Customize device appearance</string>
+    <string name="interfaces_style_title">System</string>
+    <string name="interfaces_statusbar_title">Statusbar</string>
+    <string name="interfaces_battery_title">Battery</string>
+    <string name="buttons_title">Buttons</string>
+    <string name="buttons_summary">Customize device buttons</string>
+    <string name="quicksettings_title">Quick Settings</string>
+    <string name="quicksettings_summary">Customize quicksettings</string>
+    <string name="lockscreen_title">Lock Screen</string>
+    <string name="lockscreen_summary">Customize lockscreen appearance</string>
+    <string name="extras_title">Extras</string>
+    <string name="extras_summary">Additional Sorceries from the Arcanery</string>
+    <string name="extras_tools">Utilities</string>
+ <string name="theme_settings_title">Device Theming</string>
+    <string name="theme_settings_summary">Art is one\'s existence</string>
+    
+
+    <!-- Vivid theme -->
+    <string name="system_vivid_theme_title">Vivid Colors</string>
+    <string name="system_vivid_theme_summary">A more vibrant color implementation of the usual monet.</string>
+    
+    <!-- GMS switch -->
+    <string name="gms_category">GMS</string>
+    <string name="gms_enabled">Enable Google services</string>
+    <string name="gms_enabled_desc">Disable Google services may help extend the battery life, but third-party apps relying on GMS components will not work properly.</string>
+    <string name="gms_disable_alert_title">Notice</string>
+    <string name="gms_disable_alert_message">You are trying to disable Google services. Once you\'ve enabled these services, it\'s strongly not recommended to disable them again as this may lead to issues with your currently installed apps. Although this toggle doesn\'t touch any data, you\'ll still be automatically signed out of this device. Thus, make sure that "Find My Device" has been disabled before you proceed. And if necessary, disable 2-step verification on your Google account as well. Perform a factory reset yourself if you run into any issues. DO NOT SPAM FOR HELP.</string>
+    <string name="gms_disable_alert_positive_btn">OK, I agree</string>
+    <string name="gms_disable_alert_negative_btn">Cancel</string>
+
+       <string name="system_interface_category_title">System Interface</string>
+    
+    <!-- [CHAR_LIMIT=NONE] Developer Settings: Title of the settings category for theme overlays. -->
+    <string name="theme_customization_category">Theming</string>
+    
+    <!-- [CHAR_LIMIT=NONE] Developer Settings: Label for the option that turns off customizations for a given category.-->
+    <string name="theme_customization_device_default">Device default</string>
+    
+   
+    <!-- Custom settings dashboard style -->
+    <string name="settings_dashboard_style_title">System Settings Layout</string>
+    <string name="settings_dashboard_style_gms">Default</string>
+    <string name="settings_dashboard_style_aosp">Orchidlive Material</string>
+    <string name="settings_dashboard_style_oos11_gms">Orchid Material Plain</string>
+    <string name="settings_dashboard_style_oos11_microg">Sparkle</string>
+    <string name="settings_dashboard_style_oos12_gms">OOS Plain</string>
+    <string name="settings_dashboard_style_oos12_microg">Cactus Wave</string>
+    <string name="settings_layout_category_title">Settings UI interface</string>
+    <string name="settings_dashboard_style_mt">Orchidlive Material</string>
+
+</resources> 
