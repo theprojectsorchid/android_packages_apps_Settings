@@ -47,6 +47,8 @@
     <string name="reset_message">Reset all entries to default?</string>
     <string name="attention">Attention</string>
     <string name="reset">Reset</string>
+    <!-- Mine -->
+    <string name="crystal_homepage_summary">Where the colorful lights are coming from!</string>
 
     <!-- Crystal Mine -->
     <string name="crystal_homepage_title">Crystal Mine</string>
