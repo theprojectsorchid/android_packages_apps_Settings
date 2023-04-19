@@ -92,6 +92,7 @@
         <item>14400000</item>
         <!-- Do not translate. -->
         <item>28800000</item>
+    </string-array>
 
 	<!-- Sleep Mode -->
     <string-array name="sleep_mode_auto_mode_entries">
