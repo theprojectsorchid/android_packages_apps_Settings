@@ -324,4 +324,11 @@
 
     <!-- In-call notifications -->
     <string name="in_call_notifications_title">In-call notifications</string>
+    
+    
+        <string name="idlescar_bubble_setting_description">Scarlet settinsg you can adjust settings to get more from your device</string>
+    <string name="syberia_processor_title">rom name</string>
+    <string name="syberia_storage_code_title">device name</string>
+    <string name="syberia_battery_type_title"> </string>
+    <string name="syberia_screen_title"> </string>
 </resources>
