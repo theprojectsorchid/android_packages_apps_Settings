@@ -50,6 +50,12 @@
         app:controller="com.android.settings.sound.MediaControlsPreferenceController" />
 
     <SwitchPreference
+        android:key="media_controls_lockscreen"
+        android:title="@string/media_controls_lockscreen_title"
+        android:summary="@string/media_controls_lockscreen_description"
+        app:controller="com.android.settings.sound.MediaControlsLockScreenPreferenceController" />
+
+    <SwitchPreference
         android:key="media_controls_recommendations"
         android:icon="@drawable/rr_media_3_icon"
         android:title="@string/media_controls_recommendations_title"
@@ -64,4 +70,19 @@
         android:summary="@string/hide_squiggle_animation_summary"
         android:defaultValue="false" />
 
+    <com.arrow.support.preferences.SystemSettingSwitchPreference
+        android:key="volume_button_music_control"
+        android:icon="@drawable/rr_media_3_icon"
+        android:title="@string/volume_button_music_control_title"
+        android:summary="@string/volume_button_music_control_summary"
+        android:defaultValue="false"
+        android:dependency="volume_rocker_wake" />
+        
+    <com.arrow.support.preferences.SystemSettingSwitchPreference
+        android:key="volume_rocker_wake"
+        android:title="@string/volume_rocker_wake_title"
+        android:icon="@drawable/rr_wake_icon"
+        android:summary="@string/volume_rocker_wake_summary"
+        android:defaultValue="false"
+        android:disableDependentsState="true" />
 </PreferenceScreen>
