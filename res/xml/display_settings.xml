@@ -129,13 +129,6 @@
             android:fragment="com.android.settings.display.ToggleFontSizePreferenceFragment"
             settings:controller="com.android.settings.display.FontSizePreferenceController"
             settings:keywords="@string/keywords_font_size"/>
-  <Preference
-            android:key="screen_resolution"
-            android:title="@string/screen_resolution_title"
-             android:icon="@drawable/ic_screen_zoom"           
-            android:fragment="com.android.settings.display.ScreenResolutionFragment"
-            settings:keywords="@string/keywords_screen_resolution"
-            settings:controller="com.android.settings.display.ScreenResolutionController"/>
 
         <com.android.settings.display.ScreenZoomPreference
             android:key="display_settings_screen_zoom"
@@ -171,7 +164,6 @@
             android:summary="@string/display_rotation_summary"
             android:fragment="com.android.settings.preference.DisplayRotation"/>
 
-      
         <SwitchPreference
             android:key="display_white_balance"
             android:icon="@drawable/ic_refresh"            
