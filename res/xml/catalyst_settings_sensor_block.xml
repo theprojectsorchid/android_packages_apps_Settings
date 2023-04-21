@@ -60,8 +60,8 @@
     <com.android.settingslib.RestrictedSwitchPreference
         android:key="privacy_camera_toggle"
         android:icon="@drawable/ic_settings_camera"
-        android:title="@string/camera_toggle_title"
-        android:summary="@string/cam_toggle_description"
+        android:title="@string/app_permissions"
+        android:summary="@string/app_permissions"
         settings:controller="com.android.settings.privacy.CameraToggleController"/>
 
     <!-- Microphone toggle -->
