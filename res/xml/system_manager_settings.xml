@@ -16,11 +16,26 @@
 -->
 <PreferenceScreen
     xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:settings="http://schemas.android.com/apk/res/com.android.settings"
-    android:title="@string/system_manager_services_title" >
-                
+    xmlns:settings="http://schemas.android.com/apk/res-auto"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:title=" " >
+
+
+    <com.android.settingslib.widget.IllustrationPreference
+        android:key="systemmanager"
+        settings:searchable="false"
+        android:order="-999"
+        app:lottie_rawRes="@raw/systemmanager"/>
+    
+    <com.android.settingslib.widget.TopIntroPreference
+            android:key="systemmanager_bubbles_desc"
+            android:order="-997"        
+            android:title="@string/systemmanager_bubble_setting_description"/>
+    
+
+  
     <!-- System Manager Game Mode -->        
-     <com.rising.settings.preferences.SystemSettingListPreference
+     <com.arrow.support.preferences.SystemSettingListPreference
         android:key="system_manager_game_boost_level"
         android:icon="@drawable/ic_gaming"
         android:title="@string/system_manager_game_boost_level_title"
@@ -30,9 +45,9 @@
         android:summary="%s" />
 
     <!-- System Manager Power Mode -->        
-     <com.rising.settings.preferences.SystemSettingListPreference
+     <com.arrow.support.preferences.SystemSettingListPreference
         android:key="system_manager_runtime_power_mode"
-        android:icon="@drawable/ic_cog"
+        android:icon="@drawable/ic_power_optimize"
         android:title="@string/system_manager_runtime_power_mode_title"
         android:entries="@array/power_mode_entries"
         android:entryValues="@array/power_mode_values"
@@ -40,16 +55,16 @@
         android:summary="%s" />
 
     <!-- System Manager Aggressive Idle Mode -->
-    <com.rising.settings.preferences.SecureSettingSwitchPreference
+    <com.arrow.support.preferences.SecureSettingSwitchPreference
         android:key="system_manager_aggressive_idle_mode"
-        android:icon="@drawable/ic_battery_saver"
+        android:icon="@drawable/rr_battery_tweaks_icon"
         android:title="@string/system_manager_aggressive_idle_mode_title"
         android:summary="@string/system_manager_aggressive_idle_mode_summary"
         android:defaultValue="false" />
 
-     <com.rising.settings.preferences.SecureSettingListPreference
+     <com.arrow.support.preferences.SecureSettingListPreference
         android:key="system_manager_aggressive_idle_mode_ringer_mode"
-        android:icon="@drawable/ic_settings_sound"
+        android:icon="@drawable/rr_sound_icon"
         android:title="@string/system_manager_aggressive_idle_mode_ringer_title"
         android:entries="@array/system_manager_aggressive_idle_mode_ringer_entries"
         android:entryValues="@array/system_manager_aggressive_idle_mode_ringer_values"
@@ -58,36 +73,36 @@
         android:summary="%s" />
 
     <!-- System Manager Aggressive Idle Mode Wifi -->
-    <com.rising.settings.preferences.SecureSettingSwitchPreference
+    <com.arrow.support.preferences.SecureSettingSwitchPreference
         android:key="system_manager_aggressive_idle_mode_wifi_toggle"
-        android:icon="@drawable/ic_wifi"
+        android:icon="@drawable/ic_wifi_off"
         android:title="@string/system_manager_aggressive_idle_mode_wifi_toggle_title"
         android:summary="@string/system_manager_aggressive_idle_mode_wifi_toggle_summary"
         android:dependency="system_manager_aggressive_idle_mode"
         android:defaultValue="false" />
 
     <!-- System Manager Aggressive Idle Mode Bluetooth -->
-    <com.rising.settings.preferences.SecureSettingSwitchPreference
+    <com.arrow.support.preferences.SecureSettingSwitchPreference
         android:key="system_manager_aggressive_idle_mode_bluetooth_toggle"
-        android:icon="@drawable/ic_battery_bluetooth"
+        android:icon="@drawable/ic_bluetooth_disabled"
         android:title="@string/system_manager_aggressive_idle_mode_bluetooth_toggle_title"
         android:summary="@string/system_manager_aggressive_idle_mode_bluetooth_toggle_summary"
         android:dependency="system_manager_aggressive_idle_mode"
         android:defaultValue="false" />
 
     <!-- System Manager Aggressive Idle Mode Data -->
-    <com.rising.settings.preferences.SecureSettingSwitchPreference
+    <com.arrow.support.preferences.SecureSettingSwitchPreference
         android:key="system_manager_aggressive_idle_mode_cellular_toggle"
-        android:icon="@drawable/ic_data"
+        android:icon="@drawable/rr_data_usage_icon"
         android:title="@string/system_manager_aggressive_idle_mode_cellular_toggle_title"
         android:summary="@string/system_manager_aggressive_idle_mode_cellular_toggle_summary"
         android:dependency="system_manager_aggressive_idle_mode"
         android:defaultValue="false" />
 
     <!-- System Manager Aggressive Idle Mode GPS -->
-    <com.rising.settings.preferences.SecureSettingSwitchPreference
+    <com.arrow.support.preferences.SecureSettingSwitchPreference
         android:key="system_manager_aggressive_idle_mode_location_toggle"
-        android:icon="@drawable/ic_map_marker"
+        android:icon="@drawable/ic_location_scanning"
         android:title="@string/system_manager_aggressive_idle_mode_location_toggle_title"
         android:summary="@string/system_manager_aggressive_idle_mode_location_toggle_summary"
         android:dependency="system_manager_aggressive_idle_mode"
