@@ -20,20 +20,20 @@
         android:title=" ">
     
     <com.android.settingslib.widget.IllustrationPreference
-        android:key="onthegomode_anim"
+        android:key="taptap_anim"
         settings:searchable="false"
         android:order="-999"
-        app:lottie_rawRes="@raw/onthegomode"/>
+        app:lottie_rawRes="@raw/taptap"/>
 
    <!-- Header -->
   <PreferenceCategory
-        android:title="Tap Tap  options "
+        android:title="Tap Tap options "
         android:order="-998"
         android:layout="@layout/settings_title_header">
   </PreferenceCategory>
       
         <com.android.settingslib.widget.TopIntroPreference
-            android:key="onthegomode_bubbles_desc"
+            android:key="tap_bubbles_desc"
             android:order="-997"        
             android:selectable="true"
             android:title="@string/taptapmode_bubble_setting_description"/>
@@ -43,7 +43,7 @@
  <Preference
         android:key="tap_tap_gestures"
         android:icon="@drawable/ic_settings_quick_gestures"
-        android:title="@string/taptapmode_more">
+        android:title="@string/taptapmode_title">
         <intent
             android:action="android.intent.action.MAIN"
             android:targetClass="com.kieronquinn.app.taptap.ui.activities.MainActivity"
@@ -54,6 +54,7 @@
      <Preference
             android:key="taptapmode"
             android:title="@string/taptapmode_more"
+            android:summary="@string/taptapmode_summary"
             android:icon="@drawable/rr_assist_icon"
             android:fragment="com.android.settings.awaken.fragments.DisplayCustomizations2"
              settings:keywords="@string/keywords_font_size"/>
