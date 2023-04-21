@@ -15,22 +15,19 @@
 -->
 
 <PreferenceScreen
-    xmlns:android="http://schemas.android.com/apk/res/android"
+     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:settings="http://schemas.android.com/apk/res-auto"
-    android:title=" ">
-
-    <com.android.settingslib.widget.LayoutPreference
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:title=" ">    
+    
+    
+    <com.android.settingslib.widget.IllustrationPreference
         android:key="previously_connected_animation"
-        android:order="-997"
-        android:layout="@layout/previously_connected_animation" />
+        settings:searchable="false"
+        android:order="-999"
+        app:lottie_rawRes="@raw/previously_connected"/>
 
-   <!-- Header -->
-  <PreferenceCategory
-        android:title="Previously connected"
-        android:order="-996"
-        android:layout="@layout/settings_title_header">
-  </PreferenceCategory>
-
+  
     <PreferenceCategory
         android:key="saved_device_list"
         settings:controller="com.android.settings.connecteddevice.SavedDeviceGroupController"/>
