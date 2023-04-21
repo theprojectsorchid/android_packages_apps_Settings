@@ -37,5 +37,13 @@
         android:title="@string/media_controls_recommendations_title"
         android:summary="@string/media_controls_recommendations_description"
         app:controller="com.android.settings.sound.MediaControlsRecommendationController" />
+   
+   <!-- Squiggle animation -->
+    <com.arrow.support.preferences.SecureSettingSwitchPreference
+        android:key="hide_media_squiggle_animation"
+        android:icon="@drawable/ic_media_stream"
+        android:title="@string/hide_squiggle_animation_title"
+        android:summary="@string/hide_squiggle_animation_summary"
+        android:defaultValue="false" />
 
 </PreferenceScreen>
