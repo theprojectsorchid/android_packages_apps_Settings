@@ -49,12 +49,7 @@
         app:keywords="@string/keywords_media_controls"
         app:controller="com.android.settings.sound.MediaControlsPreferenceController" />
 
-    <SwitchPreference
-        android:key="media_controls_lockscreen"
-        android:title="@string/media_controls_lockscreen_title"
-        android:summary="@string/media_controls_lockscreen_description"
-        app:controller="com.android.settings.sound.MediaControlsLockScreenPreferenceController" />
-
+   
     <SwitchPreference
         android:key="media_controls_recommendations"
         android:icon="@drawable/rr_media_3_icon"
