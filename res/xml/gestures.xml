@@ -28,7 +28,7 @@
   
    <!-- Header -->
   <PreferenceCategory
-        android:title="System navigation"
+        android:title="Device navigation"
         android:order="-998"
         android:layout="@layout/settings_title_header">
   </PreferenceCategory>
@@ -67,7 +67,7 @@
     <Preference
         android:key="gesture_system_navigation_input_summary"
         android:title="@string/system_navigation_title"
-        android:icon="@drawable/rr_buttons_icon"
+        android:icon="@drawable/rr_systemui_icon"
         android:fragment="com.android.settings.gestures.SystemNavigationGestureSettings"
         settings:controller="com.android.settings.gestures.SystemNavigationPreferenceController"
         settings:keywords="@string/keywords_system_navigation" />
@@ -75,10 +75,17 @@
     <Preference
         android:key="gesture_one_handed"
         android:title="@string/one_handed_title"
-                android:icon="@drawable/rr_buttons_icon"
+        android:icon="@drawable/ic_hand_gesture"
         android:fragment="com.android.settings.gestures.OneHandedSettings"
         settings:controller="com.android.settings.gestures.OneHandedEnablePreferenceController" />
-
+    
+    <Preference
+        android:key="display_customization"
+        android:title="@string/taptapmode_title"
+        android:icon="@drawable/rr_dictionary_icon"
+        android:fragment="com.epic.fragments.QuickSettings"            
+        android:summary="@string/taptapmode_summary"/>   
+         
     <Preference
         android:key="gesture_tap_screen_input_summary"
         android:icon="@drawable/rr_tap_icon"
@@ -89,7 +96,7 @@
 
     <Preference
         android:key="gesture_double_tap_screen_input_summary"
-        android:icon="@drawable/rr_fp_anim_icon"
+        android:icon="@drawable/ic_taptowake_settings"
         android:title="@string/ambient_display_title"
         android:fragment="com.android.settings.gestures.DoubleTapScreenSettings"
         settings:searchable="false"
@@ -106,14 +113,14 @@
     <Preference
         android:key="gesture_power_menu_summary"
         android:title="@string/power_menu_setting_name"
-                    android:icon="@drawable/rr_manual_icon"
+        android:icon="@drawable/rr_manual_icon"
         android:fragment="com.android.settings.gestures.PowerMenuSettings"
         settings:controller="com.android.settings.gestures.PowerMenuPreferenceController" />
 
     <Preference
         android:key="three_finger_gesture_summary"
         android:title="@string/three_finger_gesture"
-        android:icon="@drawable/rr_misc_preview_icon"
+        android:icon="@drawable/ic_screenshot"
         android:fragment="com.android.settings.gestures.SwipeToScreenshotGestureSettings"
         settings:controller="com.android.settings.gestures.SwipeToScreenshotPreferenceController" />
 
@@ -122,7 +129,7 @@
         android:dialogTitle="@string/torch_power_button_gesture_title"
         android:title="@string/torch_power_button_gesture_title"
         android:summary="%s"
-                android:icon="@drawable/rr_buttons_icon"
+        android:icon="@drawable/rr_flashlight_icon"
         android:entries="@array/torch_power_button_gesture_entries"
         android:entryValues="@array/torch_power_button_gesture_values"
         android:defaultValue="0" />
@@ -136,24 +143,16 @@
 
     <com.arrow.support.preferences.SecureSettingSwitchPreference
         android:key="advanced_reboot"
-        android:icon="@drawable/rr_misc_icon_nav"
+        android:icon="@drawable/rr_restart_icon"
         android:title="@string/global_actions_advanced_reboot_title"
         android:summary="@string/global_actions_advanced_reboot_summary"
         android:defaultValue="false" />
 
     <com.arrow.support.preferences.SystemSettingSwitchPreference
         android:key="double_tap_sleep_gesture"
-      android:icon="@drawable/rr_misc_icon"
+        android:icon="@drawable/ic_double_tap"
         android:title="@string/double_tap_sleep_gesture_title"
         android:summary="@string/double_tap_sleep_gesture_summary"
         android:defaultValue="false" />
-
-    <Preference
-        android:key="display_customization"
-        android:title="@string/taptapmode_title"
-        android:icon="@drawable/rr_dictionary_icon"
-        android:fragment="com.epic.fragments.QuickSettings"            
-        android:summary="@string/taptapmode_summary"/>   
-         
 
 </PreferenceScreen>
