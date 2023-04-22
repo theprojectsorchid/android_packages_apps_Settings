@@ -40,16 +40,6 @@
             android:order="-997"
             android:title="@string/devicedetails_bubble_setting_description"/>
 
-    <!-- Model & hardware -->
-    <Preference
-        android:fragment="com.android.settings.deviceinfo.hardwareinfo.HardwareInfoFragment"
-        android:icon="@drawable/ic_settings_system_dashboard_acc"
-        android:key="device_model"
-        android:summary="@string/model_summary2"
-        android:title="@string/model_name2"
-        settings:controller="com.android.settings.deviceinfo.HardwareInfoPreferenceController"
-        settings:enableCopying="false"
-        settings:keywords="@string/keywords_model_and_hardware"/>
     
      <Preference
         android:key="systeminfo"
