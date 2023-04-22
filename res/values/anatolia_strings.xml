@@ -91,7 +91,6 @@
     <string name="taptapmode_summary">Extra tap functions</string>
         <string name="taptapmode_summary2">Further information</string>
      <string name="taptapmode_bubble_setting_description">Tap, Tap provides over 50 actions that can be run from double or triple taps on the back of your device</string>
-    <string name="taptapmode_bubble_setting_description1">The gesture can also be fully controlled, to only run under certain conditions, or run different actions in different scenarios; such as only when an app is running, the screen is off, or when listening to music..many more options are available</string>
     <string name="taptapmode_bubble_setting_description1">By enabling Tap Tap you open your device to gestures that can also be fully controlled, to only run under certain conditions, or run different actions in different scenarios; such as only when an app is running, the screen is off, or when listening to music..many more options are available</string>
     <string name="taptap_demo">Watch a demo</string>
     <string name="about_taptap_info_summary">click for video demo</string>
