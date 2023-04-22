@@ -98,5 +98,7 @@
    <!-- sqiggle mode -->
     <string name="hide_squiggle_animation_title">Tap tap</string>
      <string name="hide_squiggle_animation_summary">Hide Squiggle in media player</string>
+   <!-- andvancedsec -->
+    <string name="andvancedsec_title">Advanced Security page</string>
 
 </resources>
