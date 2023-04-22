@@ -44,13 +44,34 @@
      <Preference
         android:key="systeminfo"
          android:icon="@drawable/rr_virtual_icon"
+        android:summary="@string/systeminfo_sum1"
+        android:title="@string/systeminfo_title1">
+        <intent
+            android:action="android.intent.action.MAIN"
+            android:targetClass="com.evo.inware.ui.activities.SweetHomeActivity"
+            android:targetPackage="com.evo.inware" />
+    </Preference>
+
+  
+       <!--system info for microg this is fully foss -->
+     <!-- <Preference
+        android:key="systeminfo"
+         android:icon="@drawable/rr_virtual_icon"
         android:summary="@string/systeminfo_sum"
         android:title="@string/systeminfo_title">
         <intent
             android:action="android.intent.action.MAIN"
-            android:targetClass="com.kieronquinn.app.taptap.ui.activities.MainActivity"
-            android:targetPackage="com.kieronquinn.app.taptap" />
-    </Preference>
+            android:targetClass="com.example.sysinfo.ui.activities.SplashScreen"
+            android:targetPackage="com.kl3jvi.sysinfo" />
+    </Preference>-->
 
+			
+		<!-- reset page -->
+        <Preference
+        android:key="reset_dashboard"
+        android:title="@string/reset_dashboard_title"
+        android:icon="@drawable/ic_restore"
+        android:fragment="com.android.settings.system.ResetDashboardFragment"
+        settings:controller="com.android.settings.system.ResetPreferenceController"/>
 
 </PreferenceScreen>

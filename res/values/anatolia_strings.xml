@@ -103,4 +103,7 @@
    <!-- privacymode mode -->
     <string name="privacymode_title">privacy mode</string>
      <string name="privacymode_bubble_setting_description">privacy mode extra options</string>
+   <!-- inware mode -->
+    <string name="systeminfo_sum1">Device details</string>
+     <string name="systeminfo_title1">powered by inware</string>
 </resources>
