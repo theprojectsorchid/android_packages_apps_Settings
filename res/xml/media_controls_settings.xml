@@ -49,6 +49,7 @@
         app:keywords="@string/keywords_media_controls"
         app:controller="com.android.settings.sound.MediaControlsPreferenceController" />
 
+
     <SwitchPreference
         android:key="media_controls_recommendations"
         android:icon="@drawable/rr_media_3_icon"
@@ -56,4 +57,19 @@
         android:summary="@string/media_controls_recommendations_description"
         app:controller="com.android.settings.sound.MediaControlsRecommendationController" />
 
+    <com.arrow.support.preferences.SystemSettingSwitchPreference
+        android:key="volume_button_music_control"
+        android:icon="@drawable/rr_media_3_icon"
+        android:title="@string/volume_button_music_control_title"
+        android:summary="@string/volume_button_music_control_summary"
+        android:defaultValue="false"
+        android:dependency="volume_rocker_wake" />
+        
+    <com.arrow.support.preferences.SystemSettingSwitchPreference
+        android:key="volume_rocker_wake"
+        android:title="@string/volume_rocker_wake_title"
+        android:icon="@drawable/rr_wake_icon"
+        android:summary="@string/volume_rocker_wake_summary"
+        android:defaultValue="false"
+        android:disableDependentsState="true" />
 </PreferenceScreen>
