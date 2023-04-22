@@ -92,28 +92,28 @@
     </Preference>
     
     <!-- Camera toggle -->
-    <com.android.settingslib.RestrictedSwitchPreference
+    <!--<com.android.settingslib.RestrictedSwitchPreference
         android:key="privacy_camera_toggle"
         android:icon="@drawable/ic_settings_camera"
         android:title="@string/camera_toggle_title"
-        android:summary="@string/cam_toggle_description"
-        settings:controller="com.android.settings.privacy.CameraToggleController"/>
+        android:summary="@string/perm_toggle_description"
+        settings:controller="com.android.settings.privacy.CameraToggleController"/>-->
 
     <!-- Microphone toggle -->
-    <com.android.settingslib.RestrictedSwitchPreference
+    <!--<com.android.settingslib.RestrictedSwitchPreference
         android:key="privacy_mic_toggle"
         android:icon="@drawable/rr_mic_icon"
         android:title="@string/mic_toggle_title"
         android:summary="@string/mic_toggle_description"
-        settings:controller="com.android.settings.privacy.MicToggleController"/>
+        settings:controller="com.android.settings.privacy.MicToggleController"/>-->
     
     <!-- hide indicator toggle -->
-    <com.arrow.support.preferences.SecureSettingSwitchPreference
+    <!--<com.arrow.support.preferences.SecureSettingSwitchPreference
             android:key="hide_privacy_indicator"
             android:icon="@drawable/ic_manage_perms"
             android:title="@string/hide_privacy_indicator_title"
             android:summary="@string/hide_privacy_indicator_summary"
-            android:defaultValue="false"/>
+            android:defaultValue="false"/>-->
 
     <!-- Show passwords -->
     <SwitchPreference
@@ -137,7 +137,6 @@
         android:layout="@layout/preference_category_no_label"/>
 
     <PreferenceCategory
-        android:key="dashboard_tile_placeholder"/>
 
     <!-- Work profile settings are at the bottom with high order value to avoid users thinking that
          any of the above settings (including dynamic) are specific to the work profile. -->
@@ -176,17 +175,16 @@
     </com.android.settings.widget.PrimarySwitchPreference>
 
     <!-- Clipboard access notifications -->
-    <SwitchPreference
+    <!--<SwitchPreference
         android:key="show_clip_access_notification"
          android:icon="@drawable/rr_misc_icon"
         android:title="@string/show_clip_access_notification"
         android:summary="@string/show_clip_access_notification_summary"
-        settings:controller="com.android.settings.privacy.ShowClipAccessNotificationPreferenceController"/>
+        settings:controller="com.android.settings.privacy.ShowClipAccessNotificationPreferenceController"/>-->
     
-    <com.arrow.support.preferences.SecureSettingSwitchPreference
-        android:key="window_ignore_secure"
-        android:title="@string/ignore_window_secure_title"
-        android:summary="@string/ignore_window_secure_summary"
-        android:defaultValue="false"/>
-
+    <Preference
+        android:key="privacymode_title_settings"
+        android:title="@string/privacymode_title"
+        android:icon="@drawable/ic_settings_night_mode"           
+        android:fragment="com.epic.fragments.NavbarSettings" />
 </PreferenceScreen>

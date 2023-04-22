@@ -100,5 +100,7 @@
      <string name="hide_squiggle_animation_summary">Hide Squiggle in media player</string>
    <!-- andvancedsec -->
     <string name="andvancedsec_title">Advanced Security page</string>
-
+   <!-- privacymode mode -->
+    <string name="privacymode_title">privacy mode</string>
+     <string name="privacymode_bubble_setting_description">privacy mode extra options</string>
 </resources>
