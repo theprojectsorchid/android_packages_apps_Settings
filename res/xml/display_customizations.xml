@@ -20,22 +20,23 @@
      xmlns:app="http://schemas.android.com/apk/res-auto"
         android:title=" ">
     
-    <com.android.settingslib.widget.IllustrationPreference
-        android:key="onthegomode_anim"
-        settings:searchable="false"
-        android:order="-999"
-        app:lottie_rawRes="@raw/onthegomode"/>
+        <com.arrow.support.preferences.SystemSettingSwitchPreference
+            android:key="qs_footer_data_usage"
+            android:icon="@drawable/ic_doc"
+            android:title="@string/qs_footer_datausage_title"
+            android:summary="@string/qs_footer_datausage_summary"
+            android:defaultValue="false" />
 
- 
-        <com.android.settingslib.widget.TopIntroPreference
-            android:key="onthegomode_bubbles_desc"
-            android:order="-997"        
-            android:title="@string/onthegomode_bubble_setting_description"/>
-    
+     <Preference
+        android:key="systeminfo"
+         android:icon="@drawable/rr_virtual_icon"
+        android:summary="@string/systemdetails_sumgms"
+        android:title="@string/systemdetails_gms">
+        <intent
+            android:action="android.intent.action.MAIN"
+            android:targetClass="com.evo.inware.ui.activities.SweetHomeActivity"
+            android:targetPackage="com.evo.inware" />
+    </Preference>
 
-        <com.android.settingslib.widget.TopIntroPreference
-            android:key="onthegomode_bubbles_desc"
-            android:order="-997"        
-            android:title="@string/onthegomode_bubble_setting_description2"/>
-    
+
 </PreferenceScreen>
