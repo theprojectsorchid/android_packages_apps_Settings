@@ -53,11 +53,5 @@
         android:title="@string/battery_style_title"
         android:summary="@string/battery_style_summary" />
 
-        <com.arrow.support.preferences.SystemSettingSwitchPreference
-            android:key="qs_footer_data_usage"
-            android:icon="@drawable/ic_doc"
-            android:title="@string/qs_footer_datausage_title"
-            android:summary="@string/qs_footer_datausage_summary"
-            android:defaultValue="false" />
 
 </PreferenceScreen>
