@@ -40,11 +40,11 @@
  <com.arrow.support.preferences.SystemSettingSwitchPreference
         android:key="global_actions_onthego"
         android:title="@string/global_actions_onthego_title"
+        android:icon="@drawable/rr_assist_icon"
         android:defaultValue="false" />
      <Preference
             android:key="onthegomode"
             android:title="@string/onthegomode_more"
-            android:icon="@drawable/rr_assist_icon"
             android:fragment="com.android.settings.awaken.fragments.DisplayCustomizations"
             settings:keywords="@string/keywords_font_size"/>
 
