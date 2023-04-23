@@ -20,8 +20,8 @@
 
     <com.google.android.material.card.MaterialCardView
         android:id="@+id/phone_image"
-        android:layout_width="100dp"
-        android:layout_height="205dp"
+        android:layout_width="170dp"
+        android:layout_height="175dp"
         android:layout_marginTop="30.0dip"
         android:layout_marginBottom="36.0dip"
         android:layout_marginStart="30.0dp"
@@ -31,7 +31,7 @@
         app:strokeWidth="3dp">
 
     <com.android.utils.aboutWallpaperView
-        android:layout_width="match_parent"
+    android:layout_width="match_parent"
 	android:layout_height="match_parent"
 	android:scaleType="centerCrop"
 	android:gravity="center"
@@ -53,13 +53,7 @@
         android:layout_centerVertical="true"
         android:layout_toEndOf="@+id/phone_image">
 
-        <TextView
-            android:id="@+id/processor_title"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginBottom="4dp"
-            android:text="@string/syberia_processor_title"
-            style="@style/TextAppearance.SyberiaInfoTitle" />
+
 
         <TextView
             android:id="@+id/processor_message"
@@ -73,7 +67,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginBottom="4dp"
-            android:text="@string/syberia_storage_code_title"
+            android:text="@string/display_settings"
             style="@style/TextAppearance.SyberiaInfoTitle" />
 
         <TextView
@@ -88,7 +82,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginBottom="4dp"
-            android:text="@string/syberia_battery_type_title"
+            android:text="@string/style_suggestion_title"
             style="@style/TextAppearance.SyberiaInfoTitle" />
 
         <TextView
@@ -97,15 +91,7 @@
             android:layout_height="wrap_content"
             android:layout_marginBottom="14dp"
             style="@style/TextAppearance.SyberiaInfoSummary" />
-
-        <TextView
-            android:id="@+id/screen_title"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginBottom="4dp"
-            android:text="@string/syberia_screen_title"
-            style="@style/TextAppearance.SyberiaInfoTitle" />
-
+      
         <TextView
             android:id="@+id/screen_message"
             android:layout_width="match_parent"

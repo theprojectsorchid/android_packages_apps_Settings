@@ -25,14 +25,10 @@
         android:order="-999"
         app:lottie_rawRes="@raw/toplevel_bottom"/>
 
-  <com.android.settingslib.widget.TopIntroPreference
-            android:key="statusbar_qs_bubbles_desc"
-            android:order="-997"
-            android:title="@string/statusbar_qs_bubble_setting_description"/>
 
           <Preference
             android:key="systemui_tuner_statusbar"
-            android:icon="@drawable/ic_build_acc"
+            android:icon="@drawable/ic_screen_resolution_adjust"
             android:title="@string/statusbar_items_title" >
             <intent android:action="android.intent.action.MAIN"
                 android:targetPackage="com.android.systemui"
@@ -53,11 +49,5 @@
         android:title="@string/battery_style_title"
         android:summary="@string/battery_style_summary" />
 
-        <com.arrow.support.preferences.SystemSettingSwitchPreference
-            android:key="qs_footer_data_usage"
-            android:icon="@drawable/ic_doc"
-            android:title="@string/qs_footer_datausage_title"
-            android:summary="@string/qs_footer_datausage_summary"
-            android:defaultValue="false" />
 
 </PreferenceScreen>
