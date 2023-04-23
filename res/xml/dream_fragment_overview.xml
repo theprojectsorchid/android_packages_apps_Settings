@@ -19,14 +19,11 @@
     xmlns:settings="http://schemas.android.com/apk/res-auto"
     android:title=" "
     xmlns:app="http://schemas.android.com/apk/res-auto">
-
-
-    <com.android.settingslib.widget.LayoutPreference
-    android:key="syberia_info"
-    android:order="-997"
-    android:layout="@layout/about_phone_info"
-    android:selectable="false" />
-
+   <com.android.settingslib.widget.IllustrationPreference
+        android:key="display_animation"
+        settings:searchable="false"
+        android:order="-999"
+        app:lottie_rawRes="@raw/display"/>
    <!-- Header -->
   <PreferenceCategory
         android:title="Screensaver"

@@ -36,5 +36,6 @@
     <string name="quick_qs_brightness_slider_summary">Show a brightness slider in the quick qs panel</string>
 
     <string name="screentimeout_display_settings">Screen saver and timeout</string>
+        <string name="wallpaper_settings_summary">wallpaper and style settings</string>
 
 </resources> 
