@@ -226,13 +226,6 @@
     <SwitchPreference
         android:key="in_call_notifications"
         android:title="@string/in_call_notifications_title"/>
-       
-       <com.arrow.support.preference.SystemSettingIntListPreference
-        android:key="heads_up_notifications_threshold"
-        android:title="@string/hun_importance_title"
-        android:summary="%s"
-        android:entries="@array/hun_importance_entries"
-        android:entryValues="@array/hun_importance_values"
-        android:defaultValue="4" />
+   
     </PreferenceCategory>
 </PreferenceScreen>

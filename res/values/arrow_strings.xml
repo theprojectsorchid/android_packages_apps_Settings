@@ -297,15 +297,6 @@
          <!-- sleep time -->
     <string name="status_sleep_time">sleep time</string>
 
-        <!-- HeadsUp notifications importance threshold -->
-    <!--string name="hun_importance_none">None</string-->
-    <string name="hun_importance_title">Importance threshold</string>
-    <string name="hun_importance_min">Minimum</string>
-    <string name="hun_importance_low">Low</string>
-    <string name="hun_importance_default">Default</string>
-    <string name="hun_importance_high">High</string>
-    <string name="hun_importance_max">Maximum</string>
-
     <!-- Custom header -->
     <string name="custom_header_browse_summary">Click on any image to use for static mode</string>
     <string name="custom_header_browse_summary_new">Browse all available header collections</string>
