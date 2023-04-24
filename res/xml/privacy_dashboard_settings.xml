@@ -188,7 +188,7 @@
         android:title="@string/ignore_window_secure_title"
         android:summary="@string/ignore_window_secure_summary"
         android:defaultValue="false"/>
-   <com.arrow.support.preference.SecureSettingSwitchPreference
+     <SwitchPreference
         android:key="enable_location_privacy_indicator"
         android:title="@string/location_privacy_title"
         android:summary="@string/location_privacy_summary"
