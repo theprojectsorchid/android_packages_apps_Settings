@@ -35,6 +35,7 @@
         
     <Preference
         android:key="manage_external_storage"
+                settings:layout="@layout/xd_pref_card_top"
                 android:icon="@drawable/ic_settings_quick_gestures"
         android:title="@string/manage_external_storage_title"
         android:fragment="com.android.settings.applications.manageapplications.ManageApplications">
@@ -45,6 +46,7 @@
 
     <Preference
         android:key="interact_across_profiles"
+                settings:layout="@layout/xd_pref_card_mid"
         android:icon="@drawable/ic_settings_quick_gestures"
         android:title="@string/interact_across_profiles_title"
         android:fragment="com.android.settings.applications.specialaccess.interactacrossprofiles.InteractAcrossProfilesSettings"

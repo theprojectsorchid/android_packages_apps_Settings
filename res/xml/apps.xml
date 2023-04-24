@@ -32,7 +32,7 @@
    <!-- Header -->
   <PreferenceCategory
         android:title="Applications"
-        android:order="-997"
+        android:order="-998"
         android:layout="@layout/settings_title_header">
   </PreferenceCategory>
         
@@ -63,17 +63,30 @@
             settings:searchable="false">
         </Preference>
     </PreferenceCategory>
-
+        
     <PreferenceCategory
         android:key="general_category"
         android:title="@string/category_name_general"
-        android:order="-995"
-         android:layout="@layout/custom_preference_category2"       
+        android:order="89"
+        android:layout="@layout/custom_preference_category2"       
         android:visibility="gone"
         settings:searchable="false"/>
 
+    
+ <Preference
+        android:key="apps_timeline"
+        android:order="-995"
+        android:icon="@drawable/ic_settings_quick_gestures"
+        android:title="@string/apps_timeline_title">
+        <intent
+            android:action="android.intent.action.MAIN"
+            android:targetClass="timeline.lizimumu.com.t.MainActivity"
+            android:targetPackage="timeline.lizimumu.com.t" />
+ </Preference>
+
     <Preference
         android:key="default_apps"
+        android:layout="@layout/xd_pref_card_midsummary"
 		android:icon="@drawable/ic_default_apps"
         android:title="@string/app_default_dashboard_title"
         android:order="-994"
@@ -83,22 +96,19 @@
 
     <Preference
         android:key="game_settings"
+        android:icon="@drawable/rr_game_icon"
         android:title="@string/game_space_title"
         android:summary="@string/game_space_summary"
         android:order="-993"
         settings:controller="com.android.settings.applications.GameSettingsPreferenceController">
     </Preference>
 
-    <PreferenceCategory
-        android:key="dashboard_tile_placeholder"
-        android:order="10"/>
-
     <Preference
         android:key="hibernated_apps"
-		android:icon="@drawable/ic_default_apps"
+		android:icon="@drawable/rr_app_icon"
         android:title="@string/unused_apps"
         android:summary="@string/summary_placeholder"
-        android:order="15"
+        android:order="992"
         settings:keywords="app_hibernation_key"
         settings:controller="com.android.settings.applications.HibernatedAppsPreferenceController">
         <intent android:action="android.intent.action.MANAGE_UNUSED_APPS"/>
@@ -106,10 +116,14 @@
 
     <Preference
         android:key="special_access"
-        android:icon="@drawable/ic_special_access"
+        android:icon="@drawable/ic_seekbar_plus"
         android:fragment="com.android.settings.applications.specialaccess.SpecialAccessSettings"
         android:title="@string/special_access"
-        android:order="20"
+        android:order="991"
         settings:controller="com.android.settings.applications.SpecialAppAccessPreferenceController"/>
+        
+    <PreferenceCategory
+        android:key="dashboard_tile_placeholder"
+        android:order="10"/>
 
-</PreferenceScreen>
+ </PreferenceScreen>
