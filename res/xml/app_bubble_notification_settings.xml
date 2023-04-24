@@ -29,6 +29,7 @@
 
         <!-- Selected or excluded conversations get added here -->
         <PreferenceCategory
+            android:layout="@layout/custom_preference_category2"       
             android:title="@string/bubble_app_setting_selected_conversation_title"
             android:key="bubble_conversations"
             android:visibility="gone"
