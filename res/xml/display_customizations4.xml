@@ -39,11 +39,17 @@
 
         <SwitchPreference
             android:key="gms_switch"
-        android:defaultValue="false"
+            android:defaultValue="false"
             android:title="@string/gms_enabled"
             android:summary="@string/gms_enabled_desc"
             settings:controller="com.android.settings.applications.GmsSwitchPreferenceController"/>
 
     </PreferenceCategory>
+
+   <com.arrow.support.preferences.SystemSettingSwitchPreference
+            android:key="sensor_block"
+            android:title="@string/sensor_block_title"
+            android:summary="@string/sensor_block_summary"
+            android:defaultValue="false" />
 
 </PreferenceScreen>
