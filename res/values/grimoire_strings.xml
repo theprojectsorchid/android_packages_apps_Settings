@@ -38,4 +38,15 @@
     <string name="screentimeout_display_settings">Screen saver and timeout</string>
         <string name="wallpaper_settings_summary">wallpaper and style settings</string>
 
+    <string name="privacy_bubble_setting_description">Below are extra privacy settings</string>
+    <string name="privacyextra_title">Extra privacy</string>
+    <string name="privacyextra_summary">more privacy options</string>
+  <!-- Media artwork -->
+   <string name="media_categorytitle">Media artwork</string>
+    <string name="media_category">Media notification</string>
+    <string name="artwork_media_background_title">Artwork media background</string>
+    <string name="artwork_media_background_summary">Set media artwork as the notification media background</string>
+    <string name="artwork_media_background_enable_blur_title">Blur media media artwork background</string>
+    <string name="artwork_media_background_blur_radius_title">Blur amount for media artwork</string>
+    <string name="artwork_media_background_alpha_title">Transparency of media artwork</string>
 </resources> 
