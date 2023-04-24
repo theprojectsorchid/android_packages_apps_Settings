@@ -119,7 +119,7 @@
 
         <SwitchPreference
             android:key="gms_switch"
-            android:defaultValue="false"
+            android:defaultValue="true"
             android:title="@string/gms_enabled"
             android:summary="@string/gms_enabled_desc"
             settings:controller="com.android.settings.applications.GmsSwitchPreferenceController"/>
