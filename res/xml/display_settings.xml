@@ -150,6 +150,22 @@
             android:title="@string/screen_zoom_title"
             android:fragment="com.android.settings.display.ScreenZoomSettings"
             settings:keywords="@string/keywords_display_size"/>
+            
+        <Preference
+            android:key="display_cutout_force_fullscreen_settings"
+            android:title="@string/display_cutout_force_fullscreen_title"
+            android:summary="@string/display_cutout_force_fullscreen_summary"
+            android:fragment="com.android.settings.display.DisplayCutoutForceFullscreenSettings"
+            settings:controller="com.android.settings.display.DisplayCutoutForceFullscreenPreferenceController" />
+    
+    <Preference
+        android:key="screen_pinning_settings"
+        android:title="@string/screen_pinning_title"
+        android:summary="@string/summary_placeholder"
+        android:icon="@drawable/rr_screenshot_icon"            
+        android:fragment="com.android.settings.security.ScreenPinningSettings"
+        settings:keywords="@string/keywords_app_pinning" />
+        
     </PreferenceCategory>
 
     <PreferenceCategory
@@ -244,14 +260,6 @@
         android:icon="@drawable/ic_phone"            
         android:fragment="com.epic.fragments.PowerMenuSettings"/>
 
-    
-    <Preference
-        android:key="screen_pinning_settings"
-        android:title="@string/screen_pinning_title"
-        android:summary="@string/summary_placeholder"
-        android:icon="@drawable/rr_screenshot_icon"            
-        android:fragment="com.android.settings.security.ScreenPinningSettings"
-        settings:keywords="@string/keywords_app_pinning" />
     </PreferenceCategory>
 
      
