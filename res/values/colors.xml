@@ -243,6 +243,5 @@
     <color name="toolbar_collapsed">#00000000</color>
 
     <color name="rdnt_crd_bg">#f8f8f8</color>
-
-
+    <color name="cardborder">#f8f8f8</color>
 </resources>
