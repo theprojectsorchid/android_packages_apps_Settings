@@ -105,7 +105,4 @@
     <string name="location_privacy_title"> Show Location Privacy Indicator</string>
     <string name="location_privacy_summary">Enable - Disable location privacy indicator in qs and sb</string>
 
-    <!-- Notch: Full screen apps -->
-    <string name="display_cutout_force_fullscreen_title">Full screen apps</string>
-    <string name="display_cutout_force_fullscreen_summary">Force apps to ignore notch space</string>
 </resources>
