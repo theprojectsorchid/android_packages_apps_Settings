@@ -46,23 +46,15 @@
 
         <Preference
             android:key="bt_rename_device"
-            android:icon="@drawable/rr_bt_icon"
+                        android:icon="@drawable/rr_bt_icon"
             android:title="@string/bluetooth_device_name"
             android:summary="@string/summary_placeholder" />
 
         <Preference
             android:key="bt_received_files"
-            android:icon="@drawable/rr_bt_info_icon"
+                        android:icon="@drawable/rr_bt_info_icon"
             android:title="@string/bluetooth_show_received_files" />
- 
-  <androidx.preference.ListPreference
-        android:key="bluetooth_timeout"
-        android:title="@string/bluetooth_timeout"
-        android:icon="@drawable/ic_bluetooth_disabled"
-        android:summary="@string/summary_placeholder"
-        android:entries="@array/bluetooth_timeout_entries"
-        android:entryValues="@array/bluetooth_timeout_values"
-        settings:controller="com.android.settings.bluetooth.BluetoothTimeoutPreferenceController"/>
+
     </PreferenceCategory>
 
     <com.android.settingslib.widget.FooterPreference />
