@@ -38,4 +38,8 @@
     <string name="screentimeout_display_settings">Screen saver and timeout</string>
         <string name="wallpaper_settings_summary">wallpaper and style settings</string>
 
+    <string name="displaypage_settings_title">display settings</string>
+        <string name="displaypage_settings_summary">personalisation</string>
+        <string name="screen_main_settings">Screen options</string>
+
 </resources> 

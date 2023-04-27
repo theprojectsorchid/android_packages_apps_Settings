@@ -67,7 +67,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginBottom="4dp"
-            android:text="@string/wallpaper_settings_title"
+            android:text="@string/displaypage_settings_title"
             style="@style/TextAppearance.SyberiaInfoTitle" />
 
         <TextView
@@ -82,7 +82,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginBottom="4dp"
-            android:text="@string/wallpaper_settings_summary"
+            android:text="@string/displaypage_settings_summary"
             style="@style/TextAppearance.SyberiaInfoTitle" />
 
         <TextView
