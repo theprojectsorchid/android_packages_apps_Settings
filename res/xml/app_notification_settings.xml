@@ -19,12 +19,6 @@
         android:key="app_notifications"
         android:title=" ">
 
-   <!-- Header -->
-  <PreferenceCategory
-        android:title="App notifications"
-        android:order="-997"
-        android:layout="@layout/settings_title_header">
-  </PreferenceCategory>
 
     <com.android.settingslib.widget.LayoutPreference
         android:key="pref_app_header"
@@ -43,7 +37,7 @@
         android:key="conversations"
 		android:icon="@drawable/ic_sms_ringtone"
         android:visibility="gone"
-                android:layout="@layout/custom_preference_category2"
+        android:layout="@layout/custom_preference_category2"
         settings:allowDividerAbove="false"
         settings:allowDividerBelow="false">
     </PreferenceCategory>
@@ -59,6 +53,7 @@
         android:title="@string/notification_bubbles_title"
         android:icon="@drawable/ic_create_bubble"
         settings:allowDividerAbove="false"
+        android:layout="@layout/dot_preference_full_alone_card"
         settings:controller="com.android.settings.notification.app.BubbleSummaryPreferenceController">
     </Preference>
 
@@ -66,8 +61,8 @@
     <PreferenceCategory
         android:key="channels"
         android:layout="@layout/empty_view"
-        settings:allowDividerAbove="true"
-        settings:allowDividerBelow="true" />
+        settings:allowDividerAbove="false"
+        settings:allowDividerBelow="false" />
 
     <!-- Show badge -->
     <com.android.settingslib.RestrictedSwitchPreference
@@ -75,7 +70,7 @@
         android:title="@string/notification_badge_title"
         settings:useAdditionalSummary="true"
         android:order="1001"
-        settings:allowDividerAbove="true"
+        settings:allowDividerAbove="false"
         settings:restrictedSwitchSummary="@string/enabled_by_admin" />
 
     <!-- Importance toggle -->
@@ -98,6 +93,7 @@
         <Preference
             android:key="app_link"
             android:order="1003"
+              android:layout="@layout/dot_preference_full_alone_card"          
             android:icon="@drawable/ic_settings_24dp"
             android:title="@string/app_settings_link" />
 

@@ -166,12 +166,13 @@
     <PreferenceCategory
         android:key="app_hibernation_info"
         android:title="@string/unused_apps"
-        android:layout="@layout/dot_preference_category"
+        android:layout="@layout/custom_preference_category2"
         settings:controller=
             "com.android.settings.applications.appinfo.AppHibernationPreferenceCategoryController">
 
         <SwitchPreference
             android:key="hibernation_switch"
+            android:layout="@layout/dot_preference_full_alone_card"
             android:title="@string/unused_apps_switch"
             settings:controller=
                 "com.android.settings.applications.appinfo.HibernationSwitchPreferenceController" />
@@ -180,7 +181,7 @@
     <!-- Advanced apps settings -->
     <PreferenceCategory
         android:key="advanced_app_info"
-        android:layout="@layout/dot_preference_category"
+        android:layout="@layout/custom_preference_category2"
         android:title="@string/advanced_apps"
         settings:controller="com.android.settings.applications.appinfo.AdvancedAppInfoPreferenceCategoryController">
 
@@ -237,7 +238,7 @@
     <!-- App installer info -->
     <PreferenceCategory
         android:key="app_installer"
-        android:layout="@layout/dot_preference_category"
+        android:layout="@layout/custom_preference_category2"
         android:title="@string/app_install_details_group_title"
         settings:controller="com.android.settings.applications.appinfo.AppInstallerPreferenceCategoryController">
 

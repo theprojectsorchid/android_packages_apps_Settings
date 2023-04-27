@@ -19,13 +19,7 @@
     xmlns:settings="http://schemas.android.com/apk/res-auto"
        android:title=" ">
 
-   <!-- Header -->
-  <PreferenceCategory
-        android:title="App Storage"
-        android:order="-999"
-        android:layout="@layout/settings_title_header">
-  </PreferenceCategory>
-
+ 
     <com.android.settingslib.widget.ActionButtonsPreference
         android:key="header_view" />
 
@@ -48,7 +42,7 @@
 
         <Preference
             android:key="app_size"
-                    android:icon="@drawable/rr_sensor_icon"
+             android:icon="@drawable/rr_sensor_icon"
             android:title="@string/application_size_label"
             android:selectable="false"
             android:layout="@layout/horizontal_preference" />
@@ -62,14 +56,14 @@
 
         <Preference
             android:key="cache_size"
-                    android:icon="@drawable/rr_slim_icon"
+            android:icon="@drawable/rr_slim_icon"
             android:title="@string/cache_size_label"
             android:selectable="false"
             android:layout="@layout/horizontal_preference" />
 
         <Preference
             android:key="total_size"
-                    android:icon="@drawable/rr_shape2_icon"
+            android:icon="@drawable/rr_shape2_icon"
             android:title="@string/total_size_label"
             android:selectable="false"
             android:layout="@layout/horizontal_preference" />

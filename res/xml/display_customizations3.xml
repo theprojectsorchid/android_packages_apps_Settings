@@ -26,11 +26,6 @@
         android:order="-999"
         app:lottie_rawRes="@raw/incall"/>
 
-  <com.android.settingslib.widget.TopIntroPreference
-            android:key="incall_bubbles_desc"
-            android:order="-997"
-            android:title="@string/incallvibe_bubble_setting_description"/>
-
     <!-- Incall vibration options -->
     <PreferenceCategory
         android:key="incall_vib_options"

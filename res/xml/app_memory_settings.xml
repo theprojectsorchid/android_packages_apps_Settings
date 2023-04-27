@@ -17,14 +17,9 @@
 <PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
                   android:title=" ">
 
-   <!-- Header -->
-  <PreferenceCategory
-        android:title="Memory usage"
-        android:order="-997"
-        android:layout="@layout/settings_title_header">
-  </PreferenceCategory>
-
+ 
     <PreferenceCategory
+            android:layout="@layout/custom_preference_category2"
         android:title="@string/average_memory_use">
 
         <com.android.settings.SummaryPreference
@@ -34,18 +29,21 @@
         <Preference
             android:key="frequency"
             android:selectable="false"
+            android:icon="@drawable/ic_chevron_right_24dp"
             android:layout="@layout/horizontal_preference"
             android:title="@string/running_frequency" />
 
         <Preference
             android:key="max_usage"
             android:selectable="false"
+            android:icon="@drawable/ic_seekbar_plus"                       
             android:layout="@layout/horizontal_preference"
             android:title="@string/memory_maximum_usage" />
 
     </PreferenceCategory>
 
     <PreferenceCategory
+        android:layout="@layout/custom_preference_category2"
         android:key="processes"
         android:title="@string/memory_details" />
 
