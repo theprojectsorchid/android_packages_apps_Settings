@@ -32,11 +32,17 @@
     
    <!-- Header -->
   <PreferenceCategory
-        android:title="Display"
+        android:title="Wallpaper and styles"
         android:order="-996"
         android:layout="@layout/settings_title_header2">
   </PreferenceCategory>
 
+    <com.android.settingslib.RestrictedPreference
+        android:key="wallpaper"
+        android:title="@string/wallpaper_settings_title"
+        settings:keywords="@string/keywords_display_wallpaper"
+        settings:useAdminDisabledSummary="true"
+        settings:controller="com.android.settings.display.WallpaperPreferenceController">
 
     <PreferenceCategory
         android:layout="@layout/custom_preference_category2"
@@ -224,6 +230,11 @@
             android:icon="@drawable/ic_vr"
             android:title="@string/display_vr_pref_title"
             android:fragment="com.android.settings.display.VrDisplayPreferencePicker"/>
+    <Preference
+            android:key="bslider"
+            android:title="@string/qs_brightness_slider_title"
+            android:icon="@drawable/rr_brightness_slider_icon"
+            android:fragment="com.android.settings.awaken.fragments.DisplayCustomizations5" />    
 
     <Preference
         android:key="statusbar_qs_settings"
@@ -238,13 +249,5 @@
         android:icon="@drawable/ic_phone"            
         android:fragment="com.epic.fragments.PowerMenuSettings"/>
 
-    
-    <Preference
-        android:key="screen_pinning_settings"
-        android:title="@string/screen_pinning_title"
-        android:summary="@string/summary_placeholder"
-        android:icon="@drawable/rr_screenshot_icon"            
-        android:fragment="com.android.settings.security.ScreenPinningSettings"
-        settings:keywords="@string/keywords_app_pinning" />
     </PreferenceCategory>
 </PreferenceScreen>
