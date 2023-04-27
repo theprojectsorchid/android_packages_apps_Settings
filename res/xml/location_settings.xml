@@ -28,14 +28,6 @@
         android:order="-999"
         app:lottie_rawRes="@raw/location"/>
 
-  
-   <!-- Header -->
-  <PreferenceCategory
-        android:title="My location"
-        android:order="-997"
-        android:layout="@layout/settings_title_header">
-  </PreferenceCategory>
-
 
     <PreferenceCategory
         android:key="recent_location_access"        
@@ -85,22 +77,6 @@
             android:title="@string/location_services_preference_title"
             settings:controller="com.android.settings.location.LocationServicesPreferenceController"/>
 
-    </PreferenceCategory>
-    <PreferenceCategory
-        android:key="keyboards_category"        
-        android:layout="@layout/custom_preference_category2"
-        android:title="@string/date_and_time">
-
-    <com.android.settingslib.widget.TopIntroPreference
-        android:key="timeanddate_bubbles_desc"
-        android:title="@string/timeanddatesetting_description"/>
-   
-    <Preference
-        android:key="date_time_settings"
-        android:title="@string/date_and_time"
-        android:icon="@drawable/ic_settings_date_time"
-        android:fragment="com.android.settings.datetime.DateTimeSettings"
-        settings:controller="com.android.settings.datetime.DateTimePreferenceController"/>
     </PreferenceCategory>
 
     <com.android.settingslib.widget.FooterPreference
