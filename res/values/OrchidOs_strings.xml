@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+     Copyright (C) 2023 OrchidOs 
+
+     Licensed under the Apache License, Version 2.0 (the "License");
+     you may not use this file except in compliance with the License.
+     You may obtain a copy of the License at
+
+          http://www.apache.org/licenses/LICENSE-2.0
+
+     Unless required by applicable law or agreed to in writing, software
+     distributed under the License is distributed on an "AS IS" BASIS,
+     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     See the License for the specific language governing permissions and
+     limitations under the License.
+-->
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+
+  
+          <!-- system info page -->
+     <string name="systeminfopage_build">Your device is Officailly supported</string>
+     <string name="systeminfopage_bubble_setting_description">Below are options and further information about this software and device</string>
+     <string name="systeminfopage_device_details">System details</string>
+     <string name="systeminfopage_device_details_summary">further device details</string>
+     <string name="systeminfopage_aboutus_title">About Us</string>
+     <string name="systeminfopage_aboutus_summary">further information about us</string>
+
+          <!-- System details -->
+     <string name="systemdetails_bubble_setting_description">below are system detail options and reset configurations</string>
+     <string name="systemdetails_gms">System information</string>
+     <string name="systemdetails_sumgms">Powered by Inware</string>
+     <string name="systemdetails_mrg">System infomation</string>
+     <string name="systemdetails_summrg">Powered by Sysinfo</string>
+           
+            <!-- Reset options -->
+    <string name="resetpage_title">Reset Options</string>
+    <string name="resetpage_summary">system reset options</string>
+    <string name="resetpage_bubble_setting_description">Below are reset options. Using these options can make your phone perform better and smoother with more free memory space. Beaware that all data will be erased if not backed-up, accounts and other information will also be deleted.</string>
+    
+         <!-- aboutus -->
+    <string name="aboutus_title">About Us</string>
+    <string name="aboutus_summary">click to get to know us</string>
+    <string name="aboutus_bubble_setting_description">Rom Name is a operating system for various devices, based on the Android mobile platform. Major thanks to  Arrow Os. Further improvements and optimizations have been contibuted by the community. Thank you all developers, designers and testers</string>
+    <string name="about_us_info">Our Website</string>
+    <string name="about_us_info_summary">click for more info about us</string>
+    <string name="aboutus_link_summary">Customer support chat group</string>
+    <string name="aboutus_link_title">Customer support</string>
+     
+          <!-- Anatolia edit -->
+
+          <!-- onthe go mode -->
+
+          <!-- TapTap mode -->
+
+          <!-- Arcane Idle Manager -->
+
+          <!-- Location Privacy Indicator -->
+</resources>
