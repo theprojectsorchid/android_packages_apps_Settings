@@ -33,14 +33,17 @@
         android:order="-998"
         android:layout="@layout/settings_title_header">
   </PreferenceCategory>
-    
+     
+     <Preference
+        android:key="xd_build_status"
+        android:title="@string/systeminfopage_build"
+        android:summary="@string/xd_summary_placeholder"
+        android:icon="@drawable/ic_user"
+        android:order="-997"    
+        settings:controller="com.android.settings.deviceinfo.firmwareversion.BuildMaintainerPreferenceController"
+        settings:layout="@layout/xd_pref_card_sin-accent2"/>
+     
 
-        <com.android.settingslib.widget.TopIntroPreference
-            android:key="devicedetails_bubbles_desc"
-            android:order="-997"
-            android:title="@string/devicedetails_bubble_setting_description"/>
-
-    
      <Preference
         android:key="systeminfo"
          android:icon="@drawable/rr_virtual_icon"

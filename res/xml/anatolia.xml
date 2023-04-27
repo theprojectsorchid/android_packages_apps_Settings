@@ -17,52 +17,36 @@
         xmlns:android="http://schemas.android.com/apk/res/android"
         xmlns:settings="http://schemas.android.com/apk/res/com.android.settings"
         android:title=" ">
-
-       <Preference
+   
+   <Preference
         android:key="xd_build_status"
-        android:title="@string/xd_build_status"
+        android:title="@string/systeminfopage_build"
         android:summary="@string/xd_summary_placeholder"
-        android:icon="@drawable/xd_build"
-        android:order="-190"    
+        android:icon="@drawable/ic_user"
+        android:order="-999"    
         settings:controller="com.android.settings.deviceinfo.firmwareversion.BuildMaintainerPreferenceController"
         settings:layout="@layout/xd_pref_card_sin-accent2"/>
      
+
 		 <!-- orchidosrom grid -->
     <PreferenceScreen
         android:key="HardwareGrid"
         android:enabled="false"
-        android:order="-180"    
+        android:order="-997"    
         android:layout="@layout/Hardware_grid"/>   
+    
+    <Preference
+        android:key="systeminfo"
+         android:icon="@drawable/rr_virtual_icon"
+        android:title="@string/systemdetails_gms">
+        <intent
+            android:action="android.intent.action.MAIN"
+            android:targetClass="com.g00fy2.developerwidget.activities.widgetconfig.ConfigLauncherActivity"
+            android:targetPackage="com.g00fy2.developerwidget" />
+    </Preference>
 
-   <!-- Header -->
-  <PreferenceCategory
-        android:title="System Info"
-        android:order="-170"
-        android:layout="@layout/settings_title_header">
-  </PreferenceCategory>
-      
-        <com.android.settingslib.widget.TopIntroPreference
-            android:key="systeminfo_bubbles_desc"
-            android:order="-160"
-            android:title="@string/systeminfopage_bubble_setting_description"/>
 
-		<!-- Device details -->
-        <Preference
-            android:key="Device_details_category"
-            android:title="@string/Device_details_title"
-            android:summary="@string/Device_details_summary"
-            android:icon="@drawable/rr_tuner_parts_activity_icon"
-            android:fragment="com.epic.fragments.StatusBarSettings"/>
-
-        <!-- About us -->
-        <Preference
-            android:key="Aboutus_category"
-            android:title="@string/aboutus_title"
-            android:summary="@string/aboutus_summary"
-            android:icon="@drawable/rr_about_icon"
-            android:fragment="com.epic.fragments.ButtonSettings"/>
-			
-		<!-- reset page -->
+	<!-- reset page -->
         <Preference
         android:key="reset_dashboard"
         android:title="@string/reset_dashboard_title"
@@ -70,5 +54,5 @@
         android:fragment="com.android.settings.system.ResetDashboardFragment"
         settings:controller="com.android.settings.system.ResetPreferenceController"/>
 
-
+		
 </PreferenceScreen>
