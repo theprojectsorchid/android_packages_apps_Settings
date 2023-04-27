@@ -123,8 +123,6 @@ public class SimStatusPreferenceController extends
 
     @VisibleForTesting
     Preference createNewPreference(Context context) {
-        Preference pref = new Preference(context);
-        pref.setLayoutResource(R.layout.dot_preference_middle_card);
-        return pref;
+        return new Preference(context);
     }
 }
