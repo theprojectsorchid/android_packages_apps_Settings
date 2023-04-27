@@ -20,14 +20,12 @@
      android:title=" ">
     
     
-    <com.android.settingslib.widget.LayoutPreference
-     android:key="device_name"
+    <com.android.settingslib.widget.IllustrationPreference
+        android:key="devicedetails_anim"
+        settings:searchable="false"
         android:order="-999"
-        android:selectable="false"
-        android:layout="@layout/device_info_header"
-        settings:controller="com.android.settings.deviceinfo.DeviceNamePreferenceController"
-        settings:isPreferenceVisible="false" />
-        
+        app:lottie_rawRes="@raw/devicedetails"/>
+
   
    <!-- Header -->
   <PreferenceCategory
@@ -42,6 +40,7 @@
             android:order="-997"
             android:title="@string/devicedetails_bubble_setting_description"/>
 
+    
      <Preference
         android:key="systeminfo"
          android:icon="@drawable/rr_virtual_icon"
