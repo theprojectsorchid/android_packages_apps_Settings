@@ -38,4 +38,11 @@
             android:order="-997"        
             android:title="@string/onthegomode_bubble_setting_description2"/>
     
+  <Preference
+            android:key="bslider"
+            android:title="@string/qs_brightness_slider_title"
+            android:icon="@drawable/rr_brightness_slider_icon"
+            android:fragment="com.android.settings.awaken.fragments.DisplayCustomizations4"
+            settings:keywords="@string/keywords_display_brightness_level"/>    
+
 </PreferenceScreen>
