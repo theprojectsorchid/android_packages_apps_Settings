@@ -213,37 +213,37 @@ public class TopLevelSettings extends DashboardFragment implements
  	    String key = preference.getKey();
 
 	    if (key.equals("top_level_network")){
-	        preference.setLayoutResource(R.layout.OrchidOs_cardview);
+	        preference.setLayoutResource(R.layout.OrchidOs_cardview2);
 	    }
             if (key.equals("top_level_connected_devices")){
-                preference.setLayoutResource(R.layout.OrchidOs_cardview);
+                preference.setLayoutResource(R.layout.OrchidOs_cardview2);
             }
             if (key.equals("top_level_accounts")){
-                preference.setLayoutResource(R.layout.OrchidOs_cardview);
+                preference.setLayoutResource(R.layout.OrchidOs_cardview2);
             }
             if (key.equals("top_level_octavi_lab")){
                 preference.setLayoutResource(R.layout.OrchidOs_cardview);
             }
             if (key.equals("top_level_wallpaper")){
-                preference.setLayoutResource(R.layout.OrchidOs_cardview);
+                preference.setLayoutResource(R.layout.OrchidOs_cardview2);
             }
             if (key.equals("top_level_battery")){
                 preference.setLayoutResource(R.layout.OrchidOs_cardview);
             }
             if (key.equals("top_level_display")){
-                preference.setLayoutResource(R.layout.OrchidOs_cardview);
+                preference.setLayoutResource(R.layout.OrchidOs_cardview2);
             }
             if (key.equals("top_level_sound")){
                 preference.setLayoutResource(R.layout.OrchidOs_cardview);
             }
             if (key.equals("top_level_apps")){
-                preference.setLayoutResource(R.layout.OrchidOs_cardview);
+                preference.setLayoutResource(R.layout.OrchidOs_cardview2);
             }
             if (key.equals("top_level_storage")){
                 preference.setLayoutResource(R.layout.OrchidOs_cardview);
             }
             if (key.equals("top_level_notifications")){
-                preference.setLayoutResource(R.layout.OrchidOs_cardview);
+                preference.setLayoutResource(R.layout.OrchidOs_cardview2);
             }
             if (key.equals("top_level_location")){
                 preference.setLayoutResource(R.layout.OrchidOs_cardview);
@@ -252,7 +252,7 @@ public class TopLevelSettings extends DashboardFragment implements
                 preference.setLayoutResource(R.layout.OrchidOs_cardview);
             }
             if (key.equals("top_level_security")){
-                preference.setLayoutResource(R.layout.OrchidOs_cardview);
+                preference.setLayoutResource(R.layout.OrchidOs_cardview2);
             }
             if (key.equals("top_level_privacy")){
                 preference.setLayoutResource(R.layout.OrchidOs_cardview);
@@ -261,34 +261,34 @@ public class TopLevelSettings extends DashboardFragment implements
                 preference.setLayoutResource(R.layout.OrchidOs_cardview);
             }
             if (key.equals("top_level_system")){
-                preference.setLayoutResource(R.layout.OrchidOs_cardview);
+                preference.setLayoutResource(R.layout.OrchidOs_cardview2);
             }
             if (key.equals("top_level_about_device")){
-                preference.setLayoutResource(R.layout.OrchidOs_cardview);
+                preference.setLayoutResource(R.layout.OrchidOs_cardview2);
             }
             if (key.equals("top_level_usercard")){
                 preference.setLayoutResource(R.layout.usercard);
             }
             if (key.equals("dashboard_tile_pref_com.google.android.apps.wellbeing.settings.TopLevelSettingsActivity")){
-                preference.setLayoutResource(R.layout.xd_pref_card_top);
+                preference.setLayoutResource(R.layout.OrchidOs_cardview);
             }
             if (key.equals("dashboard_tile_pref_com.google.android.gms.app.settings.GoogleSettingsIALink")){
-                preference.setLayoutResource(R.layout.xd_pref_card_botsummary);
+                preference.setLayoutResource(R.layout.OrchidOs_cardview2);
             }
 	        if (key.equals("top_level_google")){
-                preference.setLayoutResource(R.layout.xd_pref_card_botsummary);
+                preference.setLayoutResource(R.layout.OrchidOs_cardview2);
             }
 	        if (key.equals("top_level_google")){
-                preference.setLayoutResource(R.layout.xd_pref_card_botsummary);
+                preference.setLayoutResource(R.layout.OrchidOs_cardview2);
             }
 	        if (key.equals("dashboard_tile_pref_com.google.android.apps.wellbeing.home.TopLevelSettingsActivity")){
-                preference.setLayoutResource(R.layout.xd_pref_card_top);
+                preference.setLayoutResource(R.layout.OrchidOs_cardview);
             }
 	        if (key.equals("top_level_wellbeing")){
-                preference.setLayoutResource(R.layout.xd_pref_card_top);
+                preference.setLayoutResource(R.layout.OrchidOs_cardview);
             }
             if (key.equals("top_level_userinfo")){
-                preference.setLayoutResource(R.layout.xd_pref_card_mid2summary);
+                preference.setLayoutResource(R.layout.OrchidOs_cardview3);
             }   
 	}
     }

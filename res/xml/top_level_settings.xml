@@ -116,8 +116,8 @@
         android:icon="@drawable/weather"
         android:key="top_level_display"
         android:order="-80"
-        android:title="@string/display_settings"
-        android:summary="@string/display_dashboard_summary"
+        android:title="@string/wallpaper_settings_title"
+        android:summary="@string/wallpaper_dashboard_summary"
         settings:highlightableMenuKey="@string/menu_key_display"
         settings:controller="com.android.settings.display.TopLevelDisplayPreferenceController"/>
 
@@ -125,10 +125,11 @@
         android:icon="@drawable/visual"
         android:key="top_level_wallpaper"
         android:order="-70"
-        android:title="@string/wallpaper_settings_title"
-        android:summary="@string/wallpaper_dashboard_summary"
+        android:title="@string/display_settings"
+        android:summary="@string/display_dashboard_summary"
         settings:highlightableMenuKey="@string/menu_key_wallpaper"
-        settings:controller="com.android.settings.display.TopLevelWallpaperPreferenceController"/>
+        settings:controller="com.android.settings.display.TopLevelDisplayPreferenceController"/>
+
 
     <com.android.settings.widget.HomepagePreference
         android:fragment="com.android.settings.accessibility.AccessibilitySettings"
