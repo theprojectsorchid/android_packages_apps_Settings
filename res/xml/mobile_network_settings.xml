@@ -64,7 +64,7 @@
             android:key="cdma_lte_data_service_key"
             android:title="@string/cdma_lte_data_service"
             settings:controller="com.android.settings.network.telephony.DataServiceSetupPreferenceController"
-            settings:allowDividerAbove="true"
+            settings:allowDividerAbove="false"
             settings:allowDividerBelow="false"/>
 
         <SwitchPreference
@@ -72,7 +72,7 @@
             android:title="@string/mobile_data_settings_title"
             android:summary="@string/mobile_data_settings_summary"
             settings:controller="com.android.settings.network.telephony.MobileDataPreferenceController"
-            settings:allowDividerAbove="true"/>
+            settings:allowDividerAbove="false"/>
 
         <com.android.settingslib.RestrictedSwitchPreference
             android:key="button_roaming_key"

@@ -56,7 +56,7 @@
         android:title="@string/calls_and_sms_category"
         android:order="20"
         settings:controller="com.android.settings.network.telephony.NetworkProviderWifiCallingPreferenceController"
-        settings:allowDividerAbove="true"
+        settings:allowDividerAbove="false"
         />
 
     <PreferenceCategory
@@ -64,6 +64,6 @@
         android:title="@string/backup_calling_settings_title"
         android:order="25"
         settings:controller="com.android.settings.network.telephony.NetworkProviderBackupCallingPreferenceController"
-        settings:allowDividerAbove="true"
+        settings:allowDividerAbove="false"
         />
 </PreferenceScreen>
