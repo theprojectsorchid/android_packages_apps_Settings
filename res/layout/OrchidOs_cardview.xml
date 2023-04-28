@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:layout_margin="16dp"
@@ -25,7 +26,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:textColor="?android:attr/colorAccent"
-                android:textSize="22sp"
+                android:textSize="20sp"
                 android:fontFamily="sans-serif-condensed" 
                 android:textStyle="bold" />
 
@@ -34,7 +35,7 @@
                 android:layout_height="3dp"
                 android:layout_marginVertical="5dp"
                 android:elevation="0dp"
-                app:cardBackgroundColor="#E6E6E6"
+                app:cardBackgroundColor="?android:attr/colorControlHighlight"
                 app:cardCornerRadius="2dp"
                 app:cardElevation="0dp" />
 
@@ -48,12 +49,14 @@
 
         </LinearLayout>
 
-        <ImageView
-            android:contentDescription="@null"
-            android:layout_gravity="end"
-            android:id="@android:id/icon"
-            android:layout_width="0dp"
+        <com.airbnb.lottie.LottieAnimationView
+            android:id="@+id/welcome_animation"
+            android:layout_width="90dp"
             android:layout_height="90dp"
-            android:layout_weight="1.25" />
+            android:layout_gravity="end"
+            android:clickable="false"
+            app:lottie_rawRes="@raw/gms"
+            app:lottie_loop="true"
+            app:lottie_autoPlay="true" />
     </LinearLayout>
 </FrameLayout>
