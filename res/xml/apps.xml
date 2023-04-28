@@ -83,22 +83,19 @@
 
     <Preference
         android:key="game_settings"
+        android:icon="@drawable/rr_game_icon"
         android:title="@string/game_space_title"
         android:summary="@string/game_space_summary"
         android:order="-993"
         settings:controller="com.android.settings.applications.GameSettingsPreferenceController">
     </Preference>
 
-    <PreferenceCategory
-        android:key="dashboard_tile_placeholder"
-        android:order="10"/>
-
     <Preference
         android:key="hibernated_apps"
-		android:icon="@drawable/ic_default_apps"
+		android:icon="@drawable/rr_app_icon"
         android:title="@string/unused_apps"
         android:summary="@string/summary_placeholder"
-        android:order="15"
+        android:order="992"
         settings:keywords="app_hibernation_key"
         settings:controller="com.android.settings.applications.HibernatedAppsPreferenceController">
         <intent android:action="android.intent.action.MANAGE_UNUSED_APPS"/>
@@ -106,15 +103,14 @@
 
     <Preference
         android:key="special_access"
-        android:icon="@drawable/ic_special_access"
+        android:icon="@drawable/ic_seekbar_plus"
         android:fragment="com.android.settings.applications.specialaccess.SpecialAccessSettings"
         android:title="@string/special_access"
-        android:order="20"
+        android:order="991"
         settings:controller="com.android.settings.applications.SpecialAppAccessPreferenceController"/>
- <Preference
-            android:key="bslider"
-            android:title="@string/qs_brightness_slider_title"
-            android:icon="@drawable/rr_brightness_slider_icon"
-            android:fragment="com.android.settings.awaken.fragments.DisplayCustomizations5"
-            settings:keywords="@string/keywords_display_brightness_level"/>    
-</PreferenceScreen>
+        
+    <PreferenceCategory
+        android:key="dashboard_tile_placeholder"
+        android:order="10"/>
+
+ </PreferenceScreen>
