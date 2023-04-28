@@ -25,13 +25,6 @@
         android:order="-999"    
         android:layout="@layout/Hardware_grid"/>   
 
-   <!-- Header -->
-  <PreferenceCategory
-        android:title="System Info"
-        android:order="-998"
-        android:layout="@layout/settings_title_header">
-  </PreferenceCategory>
-      
        <Preference
         android:key="xd_build_status"
         android:title="@string/systeminfopage_build"
@@ -41,11 +34,6 @@
         settings:controller="com.android.settings.deviceinfo.firmwareversion.BuildMaintainerPreferenceController"
         settings:layout="@layout/xd_pref_card_sin-accent2"/>
      
-        <com.android.settingslib.widget.TopIntroPreference
-            android:key="systeminfo_bubbles_desc"
-            android:order="-996"
-            android:title="@string/systeminfopage_bubble_setting_description"/>
-
 		<!-- Device details -->
         <Preference
             android:key="Device_details_category"
