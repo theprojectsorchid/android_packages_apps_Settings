@@ -28,13 +28,6 @@
         app:lottie_rawRes="@raw/sim_animation"/>
 
   
-   <!-- Header -->
-  <PreferenceCategory
-        android:title="Sim details"
-        android:order="-998"
-        android:layout="@layout/settings_title_header">
-  </PreferenceCategory>
-
     <PreferenceCategory
         android:key="provider_model_sim_category"
         android:layout="@layout/custom_preference_category2"
@@ -48,7 +41,7 @@
         android:order="25"
         settings:controller=
             "com.android.settings.network.NetworkProviderDownloadedSimsCategoryController"
-        settings:allowDividerAbove="true"/>
+        settings:allowDividerAbove="false"/>
 
     <com.android.settingslib.RestrictedPreference
         android:key="add_more"
@@ -69,7 +62,7 @@
     <!-- Model & hardware -->
     <Preference
         android:fragment="com.android.settings.deviceinfo.hardwareinfo.HardwareInfoFragment"
-        android:icon="@drawable/ic_settings_system_dashboard_acc"
+        android:icon="@drawable/ic_network"
         android:key="device_model"
         android:order="235"
         android:summary="@string/model_summary2"
