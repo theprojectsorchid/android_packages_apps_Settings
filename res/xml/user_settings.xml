@@ -24,7 +24,7 @@
     <com.android.settingslib.widget.IllustrationPreference
         android:key="multiple_user_animation"
         settings:searchable="false"
-        android:order="-999"
+        android:order="-994"
         app:lottie_rawRes="@raw/multiple_user_animation"/>
 
         
@@ -57,6 +57,6 @@
         android:title="@string/user_add_on_lockscreen_menu"
         android:singleLineTitle="false"
         android:order="105"
-        settings:allowDividerAbove="true"/>
+        settings:allowDividerAbove="false"/>
 
 </PreferenceScreen>
