@@ -44,12 +44,12 @@
      <Preference
         android:key="systeminfo"
          android:icon="@drawable/rr_virtual_icon"
-        android:summary="@string/systeminfo_sum"
-        android:title="@string/systeminfo_title">
+        android:summary="@string/systemdetails_sumgms"
+        android:title="@string/systemdetails_gms">
         <intent
             android:action="android.intent.action.MAIN"
-            android:targetClass="com.kieronquinn.app.taptap.ui.activities.MainActivity"
-            android:targetPackage="com.kieronquinn.app.taptap" />
+            android:targetClass="com.evo.inware.ui.activities.SweetHomeActivity"
+            android:targetPackage="com.evo.inware" />
     </Preference>
 
 
