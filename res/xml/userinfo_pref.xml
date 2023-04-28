@@ -54,4 +54,11 @@
             android:title="@string/emergency_settings_title"
             android:fragment="com.android.settings.emergency.EmergencyDashboardFragment"/>
         
+      
+    <com.android.settingslib.widget.IllustrationPreference
+        android:key="userinfo_anim"
+        settings:searchable="false"
+        android:order="60"
+        app:lottie_rawRes="@raw/userinfo_pref"/>
+  
 </PreferenceScreen>
