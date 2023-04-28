@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!--
-     Copyright 2021-2022 xdroid, xyzprjkt
+     Copyright 2021 xdroid, xyzprjkt
 
      Licensed under the Apache License, Version 2.0 (the "License");
      you may not use this file except in compliance with the License.
@@ -14,10 +14,15 @@
      See the License for the specific language governing permissions and
      limitations under the License.
 -->
-<resources>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/container"
+    style="@style/xd_pref_card_bot"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
 
-     <!-- xd. Framework -->
-     <color name="xd_pref_ripple">#1f000000</color>
-     <color name="xd_pref_card_color">@android:color/system_neutral1_10</color>
+    <include
+        layout="@layout/xd_pref_no-icn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
 
-</resources>
+</FrameLayout>
