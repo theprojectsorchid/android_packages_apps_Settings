@@ -23,15 +23,25 @@
         android:key="unrestricted_access"
         android:title="@string/unrestricted_data_saver"
         android:summary="@string/summary_two_lines_placeholder"
-        android:order="-998"
+        android:order="-999"
          android:icon="@drawable/rr_bt_icon"
         android:fragment="com.android.settings.datausage.UnrestrictedDataAccess"
         settings:searchable="false"
         settings:controller="com.android.settings.applications.specialaccess.DataSaverController" />
+    <Preference
+        android:fragment="com.android.settings.network.AdaptiveConnectivitySettings"
+        android:key="adaptive_connectivity"
+        android:order="-998"
+        android:icon="@drawable/ic_settings_private_dns"
+        android:title="@string/adaptive_connectivity_title"
+        android:summary="@string/summary_placeholder"
+        android:order="30"
+        settings:controller="com.android.settings.network.AdaptiveConnectivityPreferenceController"/>
 
     <com.android.settingslib.widget.FooterPreference
         android:key="data_saver_footer"
         android:order="-997"
+        isPreferenceVisible="false"
         android:title="@*android:string/data_saver_description"
         android:selectable="false"
         settings:searchable="false"/>
