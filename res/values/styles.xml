@@ -340,7 +340,7 @@
     <style name="TextAppearance.HomepageCardTitle"
            parent="@*android:style/TextAppearance.DeviceDefault.Subhead">
         <item name="android:fontFamily">@*android:string/config_headlineFontFamilyMedium</item>
-        <item name="android:textSize">4sp</item>
+        <item name="android:textSize">0sp</item>
     </style>
 
     <style name="TextAppearance.ConditionCardSummary"
@@ -359,7 +359,7 @@
     </style>
 
     <style name="TextAppearance.NotificationHistory" parent="@android:style/Theme.DeviceDefault.DayNight">
-        <item name="android:textSize">14sp</item>
+        <item name="android:textSize">18sp</item>
     </style>
 
     <style name="TextAppearance.NotificationHistory.AppName">
@@ -932,7 +932,7 @@
     </style>
 
     <style name="ExpandedAppBar" parent="@android:style/TextAppearance.Medium">
-        <item name="android:textSize">48sp</item>
+        <item name="android:textSize">20sp</item>
     </style>
 
     
