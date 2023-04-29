@@ -25,15 +25,8 @@
         android:key="battery_saver_animation"
         settings:searchable="false"
         android:order="-999"
-        app:lottie_rawRes="@raw/battery_saver"/>
+        app:lottie_rawRes="@raw/battery_light"/>
 
-  
-   <!-- Header -->
-  <PreferenceCategory
-        android:title="Battery light"
-        android:order="-997"
-        android:layout="@layout/settings_title_header">
-  </PreferenceCategory>
   
     <com.arrow.support.preferences.SystemSettingSwitchPreference
         android:key="battery_light_enabled"        
