@@ -25,18 +25,12 @@
         android:key="media controls_anim"
         settings:searchable="false"
         android:order="-999"
-        app:lottie_rawRes="@raw/lottie_adaptive_playback"/>
+        app:lottie_rawRes="@raw/media_play"/>
       
-        <com.android.settingslib.widget.TopIntroPreference
-            android:key="mediaconmode_bubbles_desc"
-            android:order="-997"        
-            android:title="@string/media_bubble_setting_description"/>
-
-
         
     <Preference
         android:key="gesture_adaptive_playback_summary"
-        android:icon="@drawable/rr_media_icon"
+        android:icon="@drawable/ic_audio_adjustment"
         android:title="@string/adaptive_playback_screen_title"
         android:fragment="com.android.settings.gestures.AdaptivePlaybackGestureSettings"
         settings:controller="com.android.settings.gestures.AdaptivePlaybackParentPreferenceController" />
@@ -52,7 +46,7 @@
 
     <SwitchPreference
         android:key="media_controls_recommendations"
-        android:icon="@drawable/rr_media_3_icon"
+        android:icon="@drawable/ic_audio_notifications"
         android:title="@string/media_controls_recommendations_title"
         android:summary="@string/media_controls_recommendations_description"
         app:controller="com.android.settings.sound.MediaControlsRecommendationController" />
@@ -68,7 +62,7 @@
     <com.arrow.support.preferences.SystemSettingSwitchPreference
         android:key="volume_rocker_wake"
         android:title="@string/volume_rocker_wake_title"
-        android:icon="@drawable/rr_wake_icon"
+        android:icon="@drawable/ic_audio_alarm"
         android:summary="@string/volume_rocker_wake_summary"
         android:defaultValue="false"
         android:disableDependentsState="true" />
