@@ -36,7 +36,7 @@
     <com.android.settings.nfc.NfcPaymentPreference
         android:key="nfc_payment"
         android:order="-999"
-                android:icon="/ic_nfc"
+        android:icon="@*android:drawable/ic_settings_bluetooth"
         android:title="@string/nfc_payment_default"
         android:dialogTitle="@string/nfc_payment_pay_with"
         android:widgetLayout="@layout/preference_widget_gear"
