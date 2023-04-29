@@ -45,6 +45,7 @@
                 android:layout_height="wrap_content"
                 android:fontFamily="sans-serif-condensed" 
                 android:textColor="?android:attr/textColorPrimary"
+                android:textStyle="bold"
                 android:textSize="14sp" />
 
         </LinearLayout>
