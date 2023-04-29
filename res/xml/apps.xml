@@ -74,7 +74,6 @@
 
     <Preference
         android:key="default_apps"
-        settings:layout="@layout/xd_pref_card_top"
 		android:icon="@drawable/ic_default_apps"
         android:title="@string/app_default_dashboard_title"
         android:order="-994"

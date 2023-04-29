@@ -32,11 +32,6 @@
         android:selectable="false"
         android:order="-9999" />
 
-    <com.android.settingslib.widget.LayoutPreference
-        android:key="app_info_animation"
-        android:layout="@layout/app_info_animation"
-        android:order="-9998"/>   
-
     <com.android.settingslib.widget.ActionButtonsPreference
         android:key="action_buttons"
         android:order="-9997" />
@@ -150,6 +145,7 @@
 
     <PreferenceCategory
         android:key="app_hibernation_info"
+        android:layout="@layout/custom_preference_category2"       
         android:title="@string/unused_apps"
         settings:controller=
             "com.android.settings.applications.appinfo.AppHibernationPreferenceCategoryController">
@@ -164,6 +160,8 @@
     <!-- Advanced apps settings -->
     <PreferenceCategory
         android:key="advanced_app_info"
+        android:layout="@layout/custom_preference_category2"       
+        android:layout="@layout/custom_preference_category2"       
         android:title="@string/advanced_apps"
         settings:controller="com.android.settings.applications.appinfo.AdvancedAppInfoPreferenceCategoryController">
 
@@ -214,11 +212,13 @@
     <!-- App installer info -->
     <PreferenceCategory
         android:key="app_installer"
+        android:layout="@layout/custom_preference_category2"       
         android:title="@string/app_install_details_group_title"
         settings:controller="com.android.settings.applications.appinfo.AppInstallerPreferenceCategoryController">
 
         <Preference
             android:key="app_info_store"
+            android:icon="@drawable/rr_google_play_icon"
             android:title="@string/app_install_details_title"
             settings:controller="com.android.settings.applications.appinfo.AppInstallerInfoPreferenceController" />
 
@@ -228,14 +228,16 @@
         android:key="app_version"
         android:selectable="false"
         android:order="9998"
+         android:icon="@drawable/rr_security_version_icon"       
         settings:controller="com.android.settings.applications.appinfo.AppVersionPreferenceController"
-        settings:allowDividerAbove="true"
+        settings:allowDividerAbove="false"
         settings:enableCopying="true"/>
 
     <Preference
         android:key="app_package_name"
         android:selectable="false"
         android:order="9999"
+        android:icon="@drawable/ic_package_verifier_enabled"
         settings:controller="com.android.settings.applications.appinfo.AppPackageNamePreferenceController"
         settings:enableCopying="true"/>
 
