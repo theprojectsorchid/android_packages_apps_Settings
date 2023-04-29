@@ -66,7 +66,7 @@
                     android:ellipsize="end"
                     android:maxLines="1"
                     android:textColor="?android:attr/textColorPrimary"
-                    android:textSize="2sp"
+                    android:textSize="0sp"
                     android:fontFamily="sans-serif-reqular"/>
 
                 <TextView
@@ -76,7 +76,7 @@
                     android:ellipsize="end"
                     android:maxLines="1"
                     android:textColor="?android:attr/textColorSecondary"
-                    android:textSize="2sp"
+                    android:textSize="0sp"
                     android:fontFamily="sans-serif-reqular" />
             </LinearLayout>
         </LinearLayout>
@@ -89,7 +89,7 @@
             android:layout_marginBottom="@dimen/settings_panel_title_margin_bottom"
             android:gravity="center"
             android:textColor="?android:attr/textColorPrimary"
-            android:textSize="24sp"
+            android:textSize="0sp"
             android:fontFamily="sans-serif-reqular"/>
 
         <ProgressBar
