@@ -29,8 +29,8 @@
     <com.android.settings.notification.app.ConversationPriorityPreference
         android:key="priority"
         android:title="@string/notification_conversation_important"
-        settings:allowDividerAbove="true"
-        settings:allowDividerBelow="true"/>
+        settings:allowDividerAbove="false"
+        settings:allowDividerBelow="false"/>
 
     <!-- bubbles -->
     <com.android.settingslib.RestrictedSwitchPreference
@@ -91,6 +91,6 @@
         android:icon="@drawable/ic_demote_conversation"
         android:title="@string/demote_conversation_title"
         android:summary="@string/demote_conversation_summary"
-        settings:allowDividerAbove="true"/>
+        settings:allowDividerAbove="false"/>
 
 </PreferenceScreen>
