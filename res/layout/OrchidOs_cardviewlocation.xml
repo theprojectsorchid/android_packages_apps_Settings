@@ -35,7 +35,7 @@
                 android:layout_height="3dp"
                 android:layout_marginVertical="5dp"
                 android:elevation="0dp"
-                app:cardBackgroundColor="?android:attr/colorControlHighlight"
+                app:cardBackgroundColor="@color/contextual_card_background"
                 app:cardCornerRadius="2dp"
                 app:cardElevation="0dp" />
 
@@ -45,6 +45,7 @@
                 android:layout_height="wrap_content"
                 android:fontFamily="sans-serif-condensed" 
                 android:textColor="?android:attr/textColorPrimary"
+                android:textStyle="bold"
                 android:textSize="14sp" />
 
         </LinearLayout>
