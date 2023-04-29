@@ -273,13 +273,13 @@ public class TopLevelSettings extends DashboardFragment implements
                 preference.setLayoutResource(R.layout.OrchidOs_cardviewwellbeing);
             }
             if (key.equals("dashboard_tile_pref_com.google.android.gms.app.settings.GoogleSettingsIALink")){
-                preference.setLayoutResource(R.layout.OrchidOs_cardview2gms);
+                preference.setLayoutResource(R.layout.OrchidOs_cardviewgms);
             }
 	        if (key.equals("top_level_google")){
-                preference.setLayoutResource(R.layout.OrchidOs_cardview2gms);
+                preference.setLayoutResource(R.layout.OrchidOs_cardviewgms);
             }
 	        if (key.equals("top_level_google")){
-                preference.setLayoutResource(R.layout.OrchidOs_cardview2gms);
+                preference.setLayoutResource(R.layout.OrchidOs_cardviewgms);
             }
 	        if (key.equals("dashboard_tile_pref_com.google.android.apps.wellbeing.home.TopLevelSettingsActivity")){
                 preference.setLayoutResource(R.layout.OrchidOs_cardviewwellbeing);
