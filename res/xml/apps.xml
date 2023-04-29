@@ -32,7 +32,7 @@
    <!-- Header -->
   <PreferenceCategory
         android:title="Applications"
-        android:order="-997"
+        android:order="-998"
         android:layout="@layout/settings_title_header">
   </PreferenceCategory>
         

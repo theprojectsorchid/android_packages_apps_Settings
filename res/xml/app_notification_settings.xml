@@ -19,12 +19,7 @@
         android:key="app_notifications"
         android:title=" ">
 
-   <!-- Header -->
-  <PreferenceCategory
-        android:title="App notifications"
-        android:order="-997"
-        android:layout="@layout/settings_title_header">
-  </PreferenceCategory>
+   
 
     <com.android.settingslib.widget.LayoutPreference
         android:key="pref_app_header"
@@ -32,6 +27,12 @@
 
     <com.android.settings.widget.SettingsMainSwitchPreference
         android:key="block" />
+
+   <!-- Header -->
+  <PreferenceCategory
+        android:title="App notifications"
+        android:layout="@layout/settings_title_header">
+  </PreferenceCategory>
 
     <com.android.settingslib.widget.FooterPreference
         android:key="block_desc" />
@@ -66,8 +67,8 @@
     <PreferenceCategory
         android:key="channels"
         android:layout="@layout/empty_view"
-        settings:allowDividerAbove="true"
-        settings:allowDividerBelow="true" />
+        settings:allowDividerAbove="false"
+        settings:allowDividerBelow="false" />
 
     <!-- Show badge -->
     <com.android.settingslib.RestrictedSwitchPreference
@@ -75,7 +76,7 @@
         android:title="@string/notification_badge_title"
         settings:useAdditionalSummary="true"
         android:order="1001"
-        settings:allowDividerAbove="true"
+        settings:allowDividerAbove="false"
         settings:restrictedSwitchSummary="@string/enabled_by_admin" />
 
     <!-- Importance toggle -->
