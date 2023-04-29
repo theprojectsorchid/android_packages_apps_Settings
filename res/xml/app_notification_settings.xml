@@ -41,7 +41,6 @@
         android:layout="@layout/custom_preference_category2"       
 		android:icon="@drawable/ic_sms_ringtone"
         android:visibility="gone"
-                android:layout="@layout/custom_preference_category2"
         settings:allowDividerAbove="false"
         settings:allowDividerBelow="false">
     </PreferenceCategory>
