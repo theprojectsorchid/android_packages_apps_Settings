@@ -25,7 +25,7 @@
         android:key="battery_saver_animation"
         settings:searchable="false"
         android:order="-999"
-        app:lottie_rawRes="@raw/battery_saver"/>
+        app:lottie_rawRes="@raw/battery_light"/>
 
   
     <com.arrow.support.preferences.SystemSettingSwitchPreference
