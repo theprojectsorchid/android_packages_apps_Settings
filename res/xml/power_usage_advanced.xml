@@ -26,14 +26,15 @@
         android:order="-999"
         android:key="battery_graph"/>
   
-    <Preference
-        android:key="sleep_time"
-        android:enabled="false"
-        android:order="-800"
-        android:shouldDisableView="false"
-        android:title="@string/status_sleep_time"
-        android:summary="@string/summary_placeholder"
-        android:persistent="false" />
+       <com.arrow.support.preferences.SystemSettingSwitchPreference
+        android:key="arcane_idle_manager"
+        android:order="-700"
+        settings:layout="@layout/top_level_preference_mt_alone"
+        android:title="@string/arcane_idle_manager_title"
+        android:icon="@drawable/ic_smart_charging"
+        android:summary="@string/arcane_idle_manager_summary"
+        android:defaultValue="false" />
+
     <PreferenceCategory
         android:order="-600"
         android:key="app_list"/>
@@ -43,6 +44,6 @@
         android:title="@string/battery_usage_screen_footer"
         android:selectable="false"
         android:order="-700"
-        android:visibility="invisible"
+        android:visibility="gone"
         settings:searchable="false"/>
 </PreferenceScreen>

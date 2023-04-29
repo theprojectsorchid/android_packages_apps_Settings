@@ -92,6 +92,7 @@
 
     <Preference
         android:key="high_power_apps"
+        android:icon="@drawable/rr_battery_style_percent_icon"
         android:title="@string/high_power_apps"
         android:summary="@string/battery_opt_summary">
         <intent android:action="android.settings.IGNORE_BATTERY_OPTIMIZATION_SETTINGS" />
