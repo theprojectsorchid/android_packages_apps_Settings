@@ -22,17 +22,17 @@
         <com.android.settingslib.widget.IllustrationPreference
             android:key="bubbles_illustration"
             settings:searchable="false"
-            android:order="-999"
+            android:order="-997"
             app:lottie_rawRes="@raw/lottie_bubbles"/>
 
         <com.android.settingslib.widget.TopIntroPreference
             android:key="notification_bubbles_desc"
-            android:order="-995"
+            android:order="-998"
             android:title="@string/notifications_bubble_setting_description"/>
 
         <com.android.settingslib.widget.MainSwitchPreference
             android:key="global_notification_bubbles"
-            android:order="-990"
+            android:order="-999"
             android:title="@string/notifications_bubble_setting_title"
             settings:controller="com.android.settings.notification.BubbleNotificationPreferenceController"/>
 
