@@ -65,7 +65,7 @@
         android:order="-998"
         android:key="battery_saver_footer_preference"
         android:selectable="false"
-        android:visibility="gone"
+        android:visibility="false"
         android:title="@*android:string/battery_saver_description"
         settings:searchable="false"/>
 

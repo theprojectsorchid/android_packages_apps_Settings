@@ -29,7 +29,6 @@
        <com.arrow.support.preferences.SystemSettingSwitchPreference
         android:key="arcane_idle_manager"
         android:order="-700"
-        settings:layout="@layout/top_level_preference_mt_alone"
         android:title="@string/arcane_idle_manager_title"
         android:icon="@drawable/ic_smart_charging"
         android:summary="@string/arcane_idle_manager_summary"
@@ -43,7 +42,7 @@
         android:key="battery_graph_footer"
         android:title="@string/battery_usage_screen_footer"
         android:selectable="false"
-        android:order="-700"
+        android:order="-500"
         android:visibility="gone"
         settings:searchable="false"/>
 </PreferenceScreen>
