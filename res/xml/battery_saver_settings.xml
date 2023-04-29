@@ -21,29 +21,23 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:title=" ">    
     
-    
-    <com.android.settingslib.widget.IllustrationPreference
-        android:key="battery_saver_animation"
-        settings:searchable="false"
-        android:order="-999"
-        app:lottie_rawRes="@raw/battery_saver"/>
-
-   <!-- Header -->
-  <PreferenceCategory
-        android:title="Battery saver"
-        android:order="-997"
-        android:layout="@layout/settings_title_header">
-  </PreferenceCategory>
-
     <com.android.settingslib.widget.MainSwitchPreference
-        android:order="-100"
+        android:order="-999"
         android:key="battery_saver"
         settings:controller="com.android.settings.fuelgauge.batterysaver.BatterySaverButtonPreferenceController"/>
 
+    <com.android.settingslib.widget.FooterPreference
+        android:order="-998"
+        android:key="battery_saver_footer_preference"
+        android:selectable="false"
+        android:visibility="visible"
+        android:title="@*android:string/battery_saver_description"
+        settings:searchable="false"/>
+        
     <Preference
         android:order="50"
         android:key="battery_saver_schedule"
-                    android:icon="@drawable/rr_dictionary_icon"
+        android:icon="@drawable/rr_dictionary_icon"
         android:fragment="com.android.settings.fuelgauge.batterysaver.BatterySaverScheduleSettings"
         android:title="@string/battery_saver_schedule_settings_title"
         settings:keywords="@string/keywords_battery_saver_schedule"
@@ -52,7 +46,7 @@
     <SwitchPreference
         android:order="80"
         android:key="battery_saver_sticky"
-                    android:icon="@drawable/rr_dictionary_icon"
+         android:icon="@drawable/rr_dictionary_icon"
         android:title="@string/battery_saver_sticky_title_new"
         android:summary="@string/summary_placeholder"
         settings:keywords="@string/keywords_battery_saver_sticky"
@@ -60,16 +54,39 @@
 
     <SwitchPreference
         android:key="battery_saver_rr_switch"
-                    android:icon="@drawable/rr_dictionary_icon"
+        android:order="90"
+        android:icon="@drawable/rr_dictionary_icon"
         android:title="@string/battery_saver_refresh_rate_title"
         android:summary="@string/battery_saver_refresh_rate_summary"
         settings:controller="com.android.settings.fuelgauge.batterysaver.BatterySaverRefreshRatePreferenceController" />
+       <com.arrow.support.preferences.SystemSettingSwitchPreference
+        android:key="arcane_idle_manager"
+        android:order="100"
+        android:title="@string/arcane_idle_manager_title"
+        android:icon="@drawable/ic_smart_charging"
+        android:summary="@string/arcane_idle_manager_summary"
+        android:defaultValue="false" />
+
+
+    <SwitchPreference
+        android:key="smart_battery"
+        android:order="110"
+        android:title="@string/smart_battery_title"
+        android:summary="@string/smart_battery_summary"
+        settings:controller="com.android.settings.fuelgauge.SmartBatteryPreferenceController"/>
 
     <com.android.settingslib.widget.FooterPreference
-        android:order="100"
-        android:key="battery_saver_footer_preference"
-        android:selectable="true"
-        android:title="@*android:string/battery_saver_description"
+        android:key="smart_battery_detail_footer"
+        android:order="120"
+        android:title="@string/smart_battery_footer"
+        android:selectable="false"
         settings:searchable="false"/>
+        
+    <SwitchPreference
+        android:key="auto_restriction"
+         android:order="130"       
+        android:title="@string/battery_auto_restriction_title"
+        android:summary="@string/battery_auto_restriction_summary"
+        settings:controller="com.android.settings.fuelgauge.AutoRestrictionPreferenceController"/>
 
 </PreferenceScreen>
