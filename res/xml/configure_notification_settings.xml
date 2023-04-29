@@ -78,15 +78,15 @@
             settings:controller="com.android.settings.notification.ConversationListSummaryPreferenceController"
             android:fragment="com.android.settings.notification.app.ConversationListSettings"
         />
-        <Preference
+       <!-- <Preference
             android:key="notification_bubbles"
             android:order="2"
-            android:icon="@drawable/rr_misc_icon"
+            android:icon="@drawable/ic_bubble_all"
             android:title="@string/notification_bubbles_title"
             android:summary="@string/notifications_bubble_setting_on_summary"
             settings:controller="com.android.settings.notification.BubbleSummaryNotificationPreferenceController"
             android:fragment="com.android.settings.notification.BubbleNotificationSettings"
-        />
+        />-->
     </PreferenceCategory>
 
     <PreferenceCategory
@@ -129,7 +129,7 @@
         <SwitchPreference
             android:key="notification_lockscreen_bypass"
             android:order="16"
-            android:icon="@drawable/rr_misc_icon"           
+            android:icon="@drawable/ic_smart_lock"           
             android:title="@string/lockscreen_bypass_title"
             android:summary="@string/lockscreen_bypass_summary"
             settings:searchable="false"
@@ -142,24 +142,12 @@
         android:layout="@layout/custom_preference_category2"
         android:title="@string/advanced_section_header">
 
-	<com.arrow.support.preferences.SystemSettingSwitchPreference
-            android:key="notification_sound_vib_screen_on"
-             android:icon="@drawable/rr_misc_icon"
-            android:title="@string/notification_sound_vib_screen_on_title"
-            android:summary="@string/notification_sound_vib_screen_on_summary"
-            android:defaultValue="true" />
 
-        <com.arrow.support.preferences.SystemSettingSwitchPreference
-            android:key="less_boring_heads_up"
-        android:icon="@drawable/ic_audio_ring_notif"
-            android:title="@string/less_boring_heads_up_title"
-            android:summary="@string/less_boring_heads_up_summary"
-            android:defaultValue="false" />
 
         <com.android.settingslib.RestrictedPreference
             android:key="zen_mode_notifications"
             android:order="17"
-        android:icon="@drawable/ic_system_vibrate"
+            android:icon="@drawable/ic_system_vibrate"
             android:title="@string/zen_mode_settings_title"
             settings:useAdminDisabledSummary="true"
             android:fragment="com.android.settings.notification.zen.ZenModeSettings"
@@ -167,9 +155,9 @@
         />
         <com.android.settingslib.RestrictedPreference
             android:key="app_and_notif_cell_broadcast_settings"
-            settings:isPreferenceVisible="true"
+            settings:isPreferenceVisible="false"
             android:order="18"
-            android:icon="@drawable/rr_misc_icon"
+            android:icon="@drawable/rr_error_icon"
             android:title="@string/cell_broadcast_settings"
             settings:useAdminDisabledSummary="true">
             <intent
@@ -181,50 +169,65 @@
         <SwitchPreference
              android:key="silent_icons"
              android:order="19"
-        android:icon="@drawable/ic_manage_perms"
+             android:icon="@drawable/ic_manage_perms"
              android:title="@string/silent_notifications_status_bar"
              settings:controller="com.android.settings.notification.SilentStatusBarPreferenceController"/>
 
         <SwitchPreference
             android:key="show_snooze_options"
             android:order="20"
-        android:icon="@drawable/ic_cell_broadcast_settings"
+            android:icon="@drawable/ic_cell_broadcast_settings"
             android:title="@string/snooze_options_title"
             settings:controller="com.android.settings.notification.SnoozeNotificationPreferenceController" />
 
         <!-- Notification badging -->
-        <SwitchPreference
+    <SwitchPreference
             android:key="notification_badging"
             android:order="21"
-        android:icon="@drawable/ic_special_access"
+            android:icon="@drawable/ic_special_access"
             android:title="@string/notification_badging_title"
             settings:controller="com.android.settings.notification.BadgingNotificationPreferenceController"/>
 
         <!-- Pulse notification light, on devices that support it -->
-        <SwitchPreference
+    <SwitchPreference
             android:key="notification_pulse"
             android:order="22"
-            android:icon="@drawable/rr_misc_icon"           
+         android:icon="@drawable/rr_virtual_icon"
             android:title="@string/notification_pulse_title"
             settings:controller="com.android.settings.notification.PulseNotificationPreferenceController"/>
 
-        <SwitchPreference
+    <SwitchPreference
             android:key="notification_assistant"
             android:order="23"
-            android:icon="@drawable/rr_misc_icon"           
+         android:icon="@drawable/rr_virtual_icon"
             android:title="@string/notification_assistant_title"
             android:summary="@string/notification_assistant_summary"
             settings:controller="com.android.settings.notification.NotificationAssistantPreferenceController"/>
 
-          <com.arrow.support.preferences.SystemSettingSwitchPreference
+    <com.arrow.support.preferences.SystemSettingSwitchPreference
             android:key="notification_headers"
+            android:icon="@drawable/ic_notifications_and_vibration"
             android:title="@string/notification_headers_title"
             android:summary="@string/notification_headers_summary"
             android:defaultValue="true" />
+	
+    <com.arrow.support.preferences.SystemSettingSwitchPreference
+            android:key="notification_sound_vib_screen_on"
+             android:icon="@drawable/ic_notifications_and_vibration"
+            android:title="@string/notification_sound_vib_screen_on_title"
+            android:summary="@string/notification_sound_vib_screen_on_summary"
+            android:defaultValue="true" />
 
-             <!-- In-call notifications -->
+    <com.arrow.support.preferences.SystemSettingSwitchPreference
+            android:key="less_boring_heads_up"
+            android:icon="@drawable/rr_headsup_enable_icon"
+            android:title="@string/less_boring_heads_up_title"
+            android:summary="@string/less_boring_heads_up_summary"
+            android:defaultValue="false" />
+    
     <SwitchPreference
         android:key="in_call_notifications"
+        android:icon="@drawable/ic_volume_ringer_vibrate"
         android:title="@string/in_call_notifications_title"/>
    
     </PreferenceCategory>
