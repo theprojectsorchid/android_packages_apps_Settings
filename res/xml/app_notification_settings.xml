@@ -28,11 +28,7 @@
     <com.android.settings.widget.SettingsMainSwitchPreference
         android:key="block" />
 
-   <!-- Header -->
-  <PreferenceCategory
-        android:title="App notifications"
-        android:layout="@layout/settings_title_header">
-  </PreferenceCategory>
+ 
 
     <com.android.settingslib.widget.FooterPreference
         android:key="block_desc" />
@@ -42,9 +38,9 @@
     <PreferenceCategory
         android:title="@string/conversations_category_title"
         android:key="conversations"
+        android:layout="@layout/custom_preference_category2"       
 		android:icon="@drawable/ic_sms_ringtone"
         android:visibility="gone"
-                android:layout="@layout/custom_preference_category2"
         settings:allowDividerAbove="false"
         settings:allowDividerBelow="false">
     </PreferenceCategory>
