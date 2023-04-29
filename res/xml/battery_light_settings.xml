@@ -28,13 +28,6 @@
         app:lottie_rawRes="@raw/battery_saver"/>
 
   
-   <!-- Header -->
-  <PreferenceCategory
-        android:title="Battery light"
-        android:order="-997"
-        android:layout="@layout/settings_title_header">
-  </PreferenceCategory>
-  
     <com.arrow.support.preferences.SystemSettingSwitchPreference
         android:key="battery_light_enabled"        
         android:icon="@drawable/rr_battery_plus_icon"
