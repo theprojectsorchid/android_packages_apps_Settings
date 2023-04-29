@@ -161,7 +161,6 @@
     <PreferenceCategory
         android:key="advanced_app_info"
         android:layout="@layout/custom_preference_category2"       
-        android:layout="@layout/custom_preference_category2"       
         android:title="@string/advanced_apps"
         settings:controller="com.android.settings.applications.appinfo.AdvancedAppInfoPreferenceCategoryController">
 
