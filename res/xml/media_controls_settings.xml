@@ -66,13 +66,4 @@
         android:summary="@string/volume_rocker_wake_summary"
         android:defaultValue="false"
         android:disableDependentsState="true" />
- 
-
-        <com.arrow.support.preferences.SecureSettingSwitchPreference
-            android:key="lockscreen_visualizer_enabled"
-            android:title="@string/lockscreen_visualizer_enable"
-            android:summary="@string/lockscreen_visualizer_enable_summary"
-            android:defaultValue="false" />
-
-
 </PreferenceScreen>
