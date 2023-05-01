@@ -16,7 +16,17 @@
 
 <PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
         xmlns:settings="http://schemas.android.com/apk/res-auto"
-        android:title="@string/sim_lock_settings">
+        xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:settings="http://schemas.android.com/apk/res-auto"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:title=" " >
+
+
+    <com.android.settingslib.widget.IllustrationPreference
+        android:key="lockscreensettings"
+        settings:searchable="false"
+        android:order="-999"
+        app:lottie_rawRes="@raw/lockscreen"/>
 
     <SwitchPreference
             android:key="sim_toggle"
