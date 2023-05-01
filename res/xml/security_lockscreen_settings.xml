@@ -22,10 +22,10 @@
 
 
     <com.android.settingslib.widget.IllustrationPreference
-        android:key="gestures"
+        android:key="lockscreensettings"
         settings:searchable="false"
         android:order="-999"
-        app:lottie_rawRes="@raw/lottie_system_nav_fully_gestural"/>
+        app:lottie_rawRes="@raw/lockscreen"/>
    <!-- Header -->
   <PreferenceCategory
         android:title="Lockscreen settings"
@@ -160,6 +160,7 @@
 
     <PreferenceCategory
         android:key="lockscreen_tweaks_category"
+        android:layout="@layout/custom_preference_category2"
         android:title="@string/lockscreen_tweaks_category_title"
         android:order="1001">
 
@@ -176,6 +177,7 @@
     <PreferenceCategory
         android:key="security_setting_lock_screen_notif_work_header"
         android:title="@string/profile_section_header"
+        android:layout="@layout/custom_preference_category2"
         android:order="1002"
         settings:searchable="false">
 
