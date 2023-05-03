@@ -113,4 +113,12 @@
         android:key="dashboard_tile_placeholder"
         android:order="10"/>
 
- </PreferenceScreen>
+        <SwitchPreference
+            android:key="gms_switch"
+            android:defaultValue="true"
+            android:title="@string/gms_enabled"
+            settings:controller="com.android.settings.applications.GmsSwitchPreferenceController"/>
+
+
+</PreferenceScreen>
+
