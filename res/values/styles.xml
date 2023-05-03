@@ -293,13 +293,13 @@
     <style name="TextAppearance.Small" parent="@android:style/TextAppearance.DeviceDefault.Small"/>
     <style name="TextAppearance.Switch"
            parent="@android:style/TextAppearance.DeviceDefault.Widget.ActionBar.Title">
-        <item name="android:textSize">2sp</item>
+        <item name="android:textSize">1sp</item>
     </style>
 
     <style name="TextAppearance.CategoryTitle"
            parent="@*android:style/TextAppearance.DeviceDefault.Body2">
         <item name="android:textAllCaps">true</item>
-        <item name="android:textSize">8sp</item>
+        <item name="android:textSize">1sp</item>
         <!-- 0.8 Spacing, 0.8/11 = 0.072727273 -->
         <item name="android:letterSpacing">0.072727273</item>
     </style>
@@ -539,7 +539,7 @@
     <style name="Widget.SliceView.Panel">
         <item name="titleSize">16sp</item>
         <item name="rowStyle">@style/SliceRow</item>
-        <item name="android:background">@*android:color/primary_device_default_light</item>
+        <item name="android:background">?android:attr/colorBackgroundFloating</item>
     </style>
 
     <style name="Widget.SliceView.Panel.Slider">
@@ -928,11 +928,11 @@
     </style>
 
  <style name="TextAppearance.HomepagePreferenceTitle" parent="@android:style/TextAppearance.DeviceDefault">
-        <item name="android:textSize">20sp</item>
+        <item name="android:textSize">5sp</item>
     </style>
 
     <style name="ExpandedAppBar" parent="@android:style/TextAppearance.Medium">
-        <item name="android:textSize">20sp</item>
+        <item name="android:textSize">5sp</item>
     </style>
 
     
