@@ -22,8 +22,7 @@
         xmlns:app="http://schemas.android.com/apk/res-auto"
     settings:keywords="@string/keywords_sounds">
 
-        <Preference android:layout="@layout/about_header_wave" />
-
+    
     
     <com.android.settingslib.widget.IllustrationPreference
         android:key="sounds"
