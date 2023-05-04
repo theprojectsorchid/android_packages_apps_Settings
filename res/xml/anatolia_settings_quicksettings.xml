@@ -23,7 +23,7 @@
         android:key="taptap_anim"
         settings:searchable="false"
         android:order="-999"
-        app:lottie_rawRes="@raw/taptap"/>
+        app:lottie_rawRes="@raw/doubletap"/>
 
    <!-- Header -->
   <PreferenceCategory
@@ -38,8 +38,12 @@
             android:selectable="true"
             android:title="@string/taptapmode_bubble_setting_description"/>
     
-  
- 
+     <com.android.settingslib.widget.TopIntroPreference
+            android:key="taptap_bubbles_desc"
+            android:order="-996"        
+            android:title="@string/taptapmode_bubble_setting_description1"/>
+    
+    
  <Preference
         android:key="tap_tap_gestures"
         android:icon="@drawable/ic_settings_quick_gestures"
@@ -50,14 +54,15 @@
             android:targetPackage="com.kieronquinn.app.taptap" />
  </Preference>
 
-    
-     <Preference
-            android:key="taptapmode"
-            android:title="@string/taptapmode_more"
-            android:summary="@string/taptapmode_summary"
-            android:icon="@drawable/rr_assist_icon"
-            android:fragment="com.android.settings.awaken.fragments.DisplayCustomizations2"
-             settings:keywords="@string/keywords_font_size"/>
+
+        <Preference
+            android:title="@string/taptap_demo"
+            android:icon="@drawable/ic_gvisual"
+            android:summary="@string/about_taptap_info_summary" >
+        <intent
+            android:action="android.intent.action.VIEW"
+            android:data="https://www.youtube.com/watch?v=69KwlwlUnwE" />
+        </Preference>
 
  
 </PreferenceScreen>
