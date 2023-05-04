@@ -37,6 +37,7 @@
 
     <PreferenceCategory
         android:key="provider_model_downloaded_sim_category"
+        android:layout="@layout/custom_preference_category2"
         android:title="@string/downloaded_sim_category_title"
         android:order="25"
         settings:controller=
@@ -59,15 +60,5 @@
     </com.android.settingslib.RestrictedPreference>
 
     
-    <!-- Model & hardware -->
-    <Preference
-        android:fragment="com.android.settings.deviceinfo.hardwareinfo.HardwareInfoFragment"
-        android:icon="@drawable/ic_network"
-        android:key="device_model"
-        android:order="235"
-        android:summary="@string/model_summary2"
-        android:title="@string/model_name2"
-        settings:controller="com.android.settings.deviceinfo.HardwareInfoPreferenceController"
-        settings:enableCopying="false"
-        settings:keywords="@string/keywords_model_and_hardware"/>
+  
 </PreferenceScreen>
