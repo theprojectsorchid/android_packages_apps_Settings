@@ -20,14 +20,6 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"    
     android:title=" " >
 
-
-    <com.android.settingslib.widget.IllustrationPreference
-        android:key="powermenu1_animation"
-        settings:searchable="false"
-        android:order="-999"
-        app:lottie_rawRes="@raw/powermenu1"/>
-
-  
    
     <com.android.settings.widget.FilterTouchesSwitchPreference
         android:key="app_ops_settings_switch"
