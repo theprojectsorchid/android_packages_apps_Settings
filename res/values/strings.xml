@@ -14,11 +14,6 @@
      limitations under the License.
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
-   
-
-    <string name="data_monitor_app_summary">Enhanched Data Monitor</string>
-    <string name="data_monitor_app">Data Monitor</string>
-
     <!-- Strings for Dialog yes button -->
     <string name="yes">"Yes"</string>
     <!-- Strings for Dialog no button -->
@@ -274,6 +269,7 @@
     <!-- Strings for asking to the user whether to allow an app to enable bluetooth and discovery mode. [CHAR LIMIT=NONE] -->
     <string name="bluetooth_ask_enablement_and_lasting_discovery_no_name" product="tablet">An app wants to turn on Bluetooth and make your tablet visible to other devices. You can change this later in Bluetooth settings.</string>
     <!-- Strings for asking to the user whether to allow an app to enable bluetooth and discovery mode. [CHAR LIMIT=NONE] -->
+    <string name="bluetooth_ask_enablement_and_lasting_discovery_no_name" product="default">An app wants to turn on Bluetooth and make your phone visible to other devices. You can change this later in Bluetooth settings.</string>
 
     <!-- Strings for msg to display to user while bluetooth is turning on [CHAR LIMIT=60] -->
     <string name="bluetooth_turning_on">"Turning Bluetooth on\u2026"</string>
@@ -13680,5 +13676,9 @@
     <string name="model_summary2">wifi bluetooth mac ids</string>
     <string name="change_device_name">Change device name</string>
 
+
+
+    <string name="data_monitor_app_summary">Enhanched Data Monitor</string>
+    <string name="data_monitor_app">Data Monitor</string>
 
 </resources>

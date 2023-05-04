@@ -22,20 +22,13 @@
     <com.android.settingslib.widget.IllustrationPreference
         android:key="network"
         settings:searchable="false"
-        android:order="-999"
+        android:order="-997"
         app:lottie_rawRes="@raw/network"/>
 
 
-        
-   <!-- Header -->
-  <PreferenceCategory
-        android:title="Mobile Networks"
-        android:order="-998"
-        android:layout="@layout/settings_title_header">
-  </PreferenceCategory>
-
     <com.android.settings.widget.SettingsMainSwitchPreference
         android:key="use_sim_switch"
+        android:order="-999"
         settings:controller="com.android.settings.network.telephony.MobileNetworkSwitchController"/>
 
     <PreferenceCategory
@@ -53,7 +46,7 @@
             android:key="calls_preference"
             android:title="@string/calls_preference"
             settings:controller="com.android.settings.network.telephony.CallsDefaultSubscriptionController"
-            settings:allowDividerAbove="true"/>
+            settings:allowDividerAbove="false"/>
 
         <ListPreference
             android:key="sms_preference"
@@ -177,6 +170,7 @@
 
         <PreferenceCategory
             android:key="calling_category"
+            android:layout="@layout/custom_preference_category2"
             android:title="@string/call_category"
             settings:controller="com.android.settings.network.telephony.CallingPreferenceCategoryController">
 
@@ -228,6 +222,7 @@
 
         <PreferenceCategory
             android:key="network_operators_category_key"
+            android:layout="@layout/custom_preference_category2"
             android:title="@string/network_operator_category"
             settings:controller="com.android.settings.network.telephony.NetworkPreferenceCategoryController">
 
@@ -247,7 +242,7 @@
             android:key="telephony_apn_key"
             android:persistent="false"
             android:title="@string/mobile_network_apn_title"
-            settings:allowDividerAbove="true"
+            settings:allowDividerAbove="false"
             settings:controller="com.android.settings.network.telephony.ApnPreferenceController"/>
 
         <Preference
@@ -282,7 +277,7 @@
         android:key="disable_sim_explanation"
         android:title="@string/mobile_network_disable_sim_explanation"
         android:selectable="false"
-        settings:allowDividerAbove="true"
+        settings:allowDividerAbove="false"
         settings:searchable="false"
         settings:controller="com.android.settings.network.telephony.DisableSimFooterPreferenceController"/>
 
@@ -290,7 +285,7 @@
         android:key="no_5g_in_dsds_explanation"
         android:title="@string/no_5g_in_dsds_text"
         android:selectable="false"
-        settings:allowDividerAbove="true"
+        settings:allowDividerAbove="false"
         settings:searchable="false"
         settings:controller="com.android.settings.network.telephony.NrDisabledInDsdsFooterPreferenceController"/>
 </PreferenceScreen>
