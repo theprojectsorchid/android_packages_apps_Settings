@@ -24,23 +24,18 @@
         android:enabled="false"
         android:order="-999"    
         android:layout="@layout/Hardware_grid"/>   
+    
+    <Preference
+        android:key="systeminfo"
+         android:icon="@drawable/rr_virtual_icon"
+        android:summary="@string/systemdetails_sumgms"
+        android:title="@string/systemdetails_gms">
+        <intent
+            android:action="android.intent.action.MAIN"
+            android:targetClass="com.evo.inware.ui.activities.SweetHomeActivity"
+            android:targetPackage="com.evo.inware" />
+    </Preference>
 
-       <Preference
-        android:key="xd_build_status"
-        android:title="@string/systeminfopage_build"
-        android:summary="@string/xd_summary_placeholder"
-        android:icon="@drawable/ic_user"
-        android:order="-997"    
-        settings:controller="com.android.settings.deviceinfo.firmwareversion.BuildMaintainerPreferenceController"
-        settings:layout="@layout/xd_pref_card_sin-accent2"/>
-     
-		<!-- Device details -->
-        <Preference
-            android:key="Device_details_category"
-            android:title="@string/systeminfopage_device_details"
-            android:summary="@string/systeminfopage_device_details_summary"
-            android:icon="@drawable/rr_tuner_parts_activity_icon"
-            android:fragment="com.epic.fragments.StatusBarSettings"/>
 
         <!-- About us -->
         <Preference
