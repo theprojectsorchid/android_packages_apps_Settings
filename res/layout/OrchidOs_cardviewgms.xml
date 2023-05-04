@@ -35,7 +35,7 @@
                 android:layout_height="3dp"
                 android:layout_marginVertical="5dp"
                 android:elevation="0dp"
-                app:cardBackgroundColor="?android:attr/colorControlHighlight"
+                android:background="@drawable/mt_preference_background_alone"
                 app:cardCornerRadius="2dp"
                 app:cardElevation="0dp" />
 
@@ -51,8 +51,8 @@
 
         <com.airbnb.lottie.LottieAnimationView
             android:id="@+id/welcome_animation"
-            android:layout_width="76dp"
-            android:layout_height="72dp"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
             android:layout_gravity="end"
             android:clickable="false"
             app:lottie_rawRes="@raw/topgms"
