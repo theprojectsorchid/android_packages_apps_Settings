@@ -48,7 +48,7 @@
     <Preference
         android:key="configure_wifi_settings"
         android:title="@string/wifi_configure_settings_preference_title"
-        settings:allowDividerAbove="true"
+        settings:allowDividerAbove="false"
         android:fragment="com.android.settings.wifi.ConfigureWifiSettings"/>
 
     <Preference

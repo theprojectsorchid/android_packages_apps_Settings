@@ -50,6 +50,7 @@
         android:selectable="false"
         android:layout="@layout/airplane_mode_message_preference"
         settings:allowDividerBelow="false"/>
+        android:layout="@layout/custom_preference_category2"
 
     <Preference
         android:key="connected_ethernet_network"
@@ -66,6 +67,7 @@
     <com.android.settingslib.RestrictedSwitchPreference
         android:key="main_toggle_wifi"
         android:title="@string/wifi"
+        android:icon="@drawable/ic_settings_wireless"
         settings:keywords="@string/keywords_wifi"
         settings:allowDividerAbove="false"/>
 
@@ -83,17 +85,20 @@
 
     <Preference
         android:key="configure_network_settings"
+        android:icon="@drawable/ic_wifi_tethering"
         android:title="@string/network_and_internet_preferences_title"
         settings:allowDividerAbove="false"
         android:fragment="com.android.settings.wifi.ConfigureWifiSettings"/>
 
     <Preference
         android:key="saved_networks"
+        android:icon="@drawable/ic_settings_private_dns"
         android:title="@string/wifi_saved_access_points_label"
         android:fragment="com.android.settings.wifi.savedaccesspoints2.SavedAccessPointsWifiSettings2"/>
 
     <com.android.settings.datausage.DataUsagePreference
         android:key="non_carrier_data_usage"
+        android:icon="@drawable/ic_settings_mobile_plan"
         android:title="@string/non_carrier_data_usage"/>
 
     <com.android.settingslib.widget.FooterPreference

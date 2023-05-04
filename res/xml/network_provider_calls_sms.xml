@@ -28,13 +28,6 @@
         app:lottie_rawRes="@raw/call_sms"/>
 
   
-   <!-- Header -->
-  <PreferenceCategory
-        android:title="Calls and Sms"
-        android:order="-998"
-        android:layout="@layout/settings_title_header">
-  </PreferenceCategory>
-
     <ListPreference
         android:key="provider_model_calls_preference"
         android:title="@string/calls_preference_title"
@@ -53,6 +46,7 @@
 
     <PreferenceCategory
         android:key="provider_model_calling_category"
+        android:layout="@layout/custom_preference_category2"
         android:title="@string/calls_and_sms_category"
         android:order="20"
         settings:controller="com.android.settings.network.telephony.NetworkProviderWifiCallingPreferenceController"
@@ -61,6 +55,7 @@
 
     <PreferenceCategory
         android:key="provider_model_backup_calling_category"
+        android:layout="@layout/custom_preference_category2"
         android:title="@string/backup_calling_settings_title"
         android:order="25"
         settings:controller="com.android.settings.network.telephony.NetworkProviderBackupCallingPreferenceController"
