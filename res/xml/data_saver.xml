@@ -15,9 +15,12 @@
 -->
 
 <PreferenceScreen
-    xmlns:android="http://schemas.android.com/apk/res/android"
+   xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:settings="http://schemas.android.com/apk/res-auto"
-    android:title=" ">
+    android:key="apps_screen"
+    android:title=" "
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
 
     <Preference
         android:key="unrestricted_access"
