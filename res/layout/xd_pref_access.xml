@@ -32,13 +32,13 @@
         android:paddingTop="4dp"
         android:paddingBottom="4dp">
 
-        <com.airbnb.lottie.LottieAnimationView
+          <com.airbnb.lottie.LottieAnimationView
             android:id="@+id/welcome_animation"
-            android:layout_width="60dp"
-            android:layout_height="60dp"
-            android:layout_gravity="end"
+            android:layout_width="56dp"
+            android:layout_height="56dp"
+            android:layout_gravity="center"
             android:clickable="false"
-            app:lottie_rawRes="@raw/topapps"
+            app:lottie_rawRes="@raw/topaccess"
             app:lottie_loop="true"
             app:lottie_autoPlay="true" />
     </LinearLayout>
@@ -54,7 +54,7 @@
         <TextView
             android:id="@android:id/title"
             android:textSize="16sp"
-            android:textColor="@android:color/system_neutral1_50"
+            android:textColor="?android:attr/colorAccent"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:ellipsize="marquee"
@@ -64,7 +64,7 @@
         <TextView
             android:id="@android:id/summary"
             android:textSize="14sp"
-            android:textColor="@android:color/system_neutral1_100"
+            android:textColor="?android:attr/textColorSecondary"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_below="@android:id/title"
