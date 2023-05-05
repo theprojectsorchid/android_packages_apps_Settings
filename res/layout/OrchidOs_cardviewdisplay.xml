@@ -1,62 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/container"
+    style="@style/xd_pref_card_bot"
     android:layout_width="match_parent"
-    android:layout_height="wrap_content"
-    android:layout_margin="16dp"
-    android:background="@drawable/tab"
-    android:elevation="0dp">
+    android:layout_height="wrap_content">
 
-    <LinearLayout
-        android:orientation="horizontal"
+    <include
+        layout="@layout/xd_pref_display"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content">
+        android:layout_height="wrap_content" />
 
-        <LinearLayout
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center"
-            android:layout_marginStart="16dp"
-            android:layout_weight="2"
-            android:orientation="vertical">
-
-            <TextView
-                android:id="@android:id/title"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:textColor="?android:attr/colorAccent"
-                android:textSize="20sp"
-                android:fontFamily="sans-serif-condensed" 
-                android:textStyle="bold" />
-
-            <androidx.cardview.widget.CardView
-                android:layout_width="96dp"
-                android:layout_height="3dp"
-                android:layout_marginVertical="5dp"
-                android:elevation="0dp"
-                app:cardBackgroundColor="?android:attr/colorControlHighlight"
-                app:cardCornerRadius="2dp"
-                app:cardElevation="0dp" />
-
-            <TextView
-                android:id="@android:id/summary"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:fontFamily="sans-serif-condensed" 
-                android:textColor="?android:attr/textColorPrimary"
-                android:textSize="14sp" />
-
-        </LinearLayout>
-
-        <com.airbnb.lottie.LottieAnimationView
-            android:id="@+id/welcome_animation"
-            android:layout_width="85dp"
-            android:layout_height="85dp"
-            android:layout_gravity="end"
-            android:clickable="false"
-            app:lottie_rawRes="@raw/topdisplay"
-            app:lottie_loop="true"
-            app:lottie_autoPlay="true" />
-    </LinearLayout>
 </FrameLayout>
