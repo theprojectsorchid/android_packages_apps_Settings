@@ -24,8 +24,7 @@
     <PreferenceScreen
         android:key="flexo_lottie_animation"
         android:layout="@layout/flexoos_card"
-        android:selectable="true"
-        android:fragment="com.epic.Anatolia"
+        android:selectable="false"
         android:order="-190" />
 <!--
    <com.android.settingslib.widget.LayoutPreference
@@ -122,13 +121,14 @@
         settings:controller="com.android.settings.display.TopLevelDisplayPreferenceController"/>
 
     <com.android.settings.widget.RestrictedHomepagePreference
-        android:icon="@drawable/visual"
+        android:fragment="com.android.settings.gestures.GestureSettings"
         android:key="top_level_wallpaper"
         android:order="-70"
-        android:title="@string/wallpaper_settings_title"
-        android:summary="@string/wallpaper_dashboard_summary"
+        android:title="@string/system_navigation_title"
+        android:summary="@string/summary_placeholder"
         settings:highlightableMenuKey="@string/menu_key_wallpaper"
-        settings:controller="com.android.settings.display.TopLevelWallpaperPreferenceController"/>
+        settings:controller="com.android.settings.gestures.GesturesSettingPreferenceController"        
+        android:icon="@drawable/gesture"/>
 
     <com.android.settings.widget.HomepagePreference
         android:fragment="com.android.settings.accessibility.AccessibilitySettings"
@@ -179,13 +179,12 @@
         settings:highlightableMenuKey="@string/menu_key_emergency"/>
 -->
     <com.android.settings.widget.HomepagePreference
-        android:fragment="com.android.settings.gestures.GestureSettings"
+        android:fragment="com.epic.Anatolia"        
         android:key="top_level_accounts"
         android:order="-10"
-        android:title="@string/system_navigation_title"
-        android:summary="@string/summary_placeholder"
+        android:title="@string/about_settings"
+        android:summary="@string/system_dashboard_summary"
         settings:highlightableMenuKey="@string/menu_key_accounts"
-        settings:controller="com.android.settings.gestures.GesturesSettingPreferenceController"        
         android:icon="@drawable/gesture"/>
 
     <!--<com.android.settings.widget.HomepagePreference
