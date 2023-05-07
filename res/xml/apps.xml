@@ -63,20 +63,23 @@
             settings:searchable="false">
         </Preference>
     </PreferenceCategory>
-
-    <PreferenceCategory
-        android:key="general_category"
-        android:title="@string/category_name_general"
-        android:order="-995"
-         android:layout="@layout/custom_preference_category2"       
-        android:visibility="gone"
-        settings:searchable="false"/>
+    
+ <Preference
+        android:key="apps_timeline"
+        android:order="90"
+        android:icon="@drawable/ic_settings_quick_gestures"
+        android:title="@string/apps_timeline_title">
+        <intent
+            android:action="android.intent.action.MAIN"
+            android:targetClass="timeline.lizimumu.com.t.MainActivity"
+            android:targetPackage="timeline.lizimumu.com.t" />
+ </Preference>
 
     <Preference
         android:key="default_apps"
 		android:icon="@drawable/ic_default_apps"
         android:title="@string/app_default_dashboard_title"
-        android:order="-994"
+        android:order="92"
         settings:controller="com.android.settings.applications.DefaultAppsPreferenceController">
         <intent android:action="android.settings.MANAGE_DEFAULT_APPS_SETTINGS"/>
     </Preference>
@@ -86,7 +89,7 @@
         android:icon="@drawable/rr_game_icon"
         android:title="@string/game_space_title"
         android:summary="@string/game_space_summary"
-        android:order="-993"
+        android:order="93"
         settings:controller="com.android.settings.applications.GameSettingsPreferenceController">
     </Preference>
 
@@ -95,7 +98,7 @@
 		android:icon="@drawable/rr_app_icon"
         android:title="@string/unused_apps"
         android:summary="@string/summary_placeholder"
-        android:order="992"
+        android:order="94"
         settings:keywords="app_hibernation_key"
         settings:controller="com.android.settings.applications.HibernatedAppsPreferenceController">
         <intent android:action="android.intent.action.MANAGE_UNUSED_APPS"/>
@@ -106,11 +109,20 @@
         android:icon="@drawable/ic_seekbar_plus"
         android:fragment="com.android.settings.applications.specialaccess.SpecialAccessSettings"
         android:title="@string/special_access"
-        android:order="991"
+        android:order="95"
         settings:controller="com.android.settings.applications.SpecialAppAccessPreferenceController"/>
         
     <PreferenceCategory
+        android:key="general_category"
+        android:title="@string/category_name_general"
+        android:order="-995"
+         android:layout="@layout/custom_preference_category2"       
+        android:visibility="gone"
+        settings:searchable="false"/>
+
+    
+    <PreferenceCategory
         android:key="dashboard_tile_placeholder"
-        android:order="10"/>
+        android:order="200"/>
 
  </PreferenceScreen>
