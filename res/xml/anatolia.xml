@@ -17,6 +17,16 @@
         xmlns:android="http://schemas.android.com/apk/res/android"
         xmlns:settings="http://schemas.android.com/apk/res/com.android.settings"
         android:title=" ">
+   
+   <Preference
+        android:key="xd_build_status"
+        android:title="@string/systeminfopage_build"
+        android:summary="@string/xd_summary_placeholder"
+        android:icon="@drawable/ic_user"
+        android:order="-997"    
+        settings:controller="com.android.settings.deviceinfo.firmwareversion.BuildMaintainerPreferenceController"
+        settings:layout="@layout/xd_pref_card_sin-accent2"/>
+     
 
 		 <!-- orchidosrom grid -->
     <PreferenceScreen
@@ -37,12 +47,13 @@
     </Preference>
 
 
-        <!-- About us -->
+	<!-- reset page -->
         <Preference
-            android:key="Aboutus_category"
-            android:title="@string/systeminfopage_aboutus_title"
-            android:summary="@string/systeminfopage_aboutus_summary"
-            android:icon="@drawable/rr_about_icon"
-            android:fragment="com.epic.fragments.ButtonSettings"/>
+        android:key="reset_dashboard"
+        android:title="@string/reset_dashboard_title"
+        android:icon="@drawable/ic_restore"
+        android:fragment="com.android.settings.system.ResetDashboardFragment"
+        settings:controller="com.android.settings.system.ResetPreferenceController"/>
+
 		
 </PreferenceScreen>
