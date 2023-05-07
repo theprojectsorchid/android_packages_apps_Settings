@@ -42,6 +42,7 @@
         android:title="@string/wallpaper_settings_title"
         settings:keywords="@string/keywords_display_wallpaper"
         settings:useAdminDisabledSummary="true"
+        settings:layout="@layout/xd_pref_card_noicon"
         settings:controller="com.android.settings.display.WallpaperPreferenceController"/>
 
     <PreferenceCategory
