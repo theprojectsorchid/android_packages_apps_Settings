@@ -22,13 +22,5 @@
     android:title="@string/unrestricted_data_saver"
     settings:controller="com.android.settings.datausage.UnrestrictedDataAccessPreferenceController"
     settings:searchable="false">
-    
-   <!-- Header -->
-  <PreferenceCategory
-        android:title="Unrestricted data"
-        android:order="-10000"
-        android:layout="@layout/settings_title_header">
-  </PreferenceCategory>
-
-
+ 
 </PreferenceScreen>
