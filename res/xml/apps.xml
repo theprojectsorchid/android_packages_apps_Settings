@@ -64,14 +64,6 @@
         </Preference>
     </PreferenceCategory>
 
-    <PreferenceCategory
-        android:key="general_category"
-        android:title="@string/category_name_general"
-        android:order="-995"
-         android:layout="@layout/custom_preference_category2"       
-        android:visibility="gone"
-        settings:searchable="false"/>
-
     <Preference
         android:key="default_apps"
 		android:icon="@drawable/ic_default_apps"
@@ -109,6 +101,15 @@
         android:order="991"
         settings:controller="com.android.settings.applications.SpecialAppAccessPreferenceController"/>
         
+    <PreferenceCategory
+        android:key="general_category"
+        android:title="@string/category_name_general"
+        android:order="-995"
+         android:layout="@layout/custom_preference_category2"       
+        android:visibility="gone"
+        settings:searchable="false"/>
+
+    
     <PreferenceCategory
         android:key="dashboard_tile_placeholder"
         android:order="10"/>
