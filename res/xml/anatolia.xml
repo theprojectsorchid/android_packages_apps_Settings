@@ -23,7 +23,7 @@
         android:title="@string/systeminfopage_build"
         android:summary="@string/xd_summary_placeholder"
         android:icon="@drawable/ic_user"
-        android:order="-997"    
+        android:order="-999"    
         settings:controller="com.android.settings.deviceinfo.firmwareversion.BuildMaintainerPreferenceController"
         settings:layout="@layout/xd_pref_card_sin-accent2"/>
      
@@ -32,7 +32,7 @@
     <PreferenceScreen
         android:key="HardwareGrid"
         android:enabled="false"
-        android:order="-999"    
+        android:order="-997"    
         android:layout="@layout/Hardware_grid"/>   
     
     <Preference
