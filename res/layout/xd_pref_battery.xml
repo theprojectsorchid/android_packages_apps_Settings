@@ -34,8 +34,8 @@
 
         <com.airbnb.lottie.LottieAnimationView
             android:id="@+id/welcome_animation"
-            android:layout_width="60dp"
-            android:layout_height="60dp"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
             android:layout_gravity="center"
             android:clickable="false"
             app:lottie_rawRes="@raw/topbattery"
@@ -71,7 +71,7 @@
             android:layout_alignStart="@android:id/title"
             android:maxLines="10"
             android:layout_marginTop="2dp"
-            style="@style/xd_text_secondary" />
+            style="@style/xd_text_primary" />
 
     </RelativeLayout>
 
