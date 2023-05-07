@@ -79,20 +79,26 @@
             android:summary="@string/summary_placeholder"
             settings:keywords="@string/keywords_biometric_settings" />
     </PreferenceCategory>
-
+  <Preference
+            android:key="admin_manage"
+            android:order="40"
+            android:title="@string/manage_device_admin"
+            android:icon="@drawable/rr_brightness_slider_icon"
+            android:fragment="com.epic.fragments.LockScreenSettings" />    
+  
     <PreferenceCategory
         android:order="40"
         android:title="@string/manage_device_admin"
         android:key="security_settings_device_admin_category"
         android:layout="@layout/custom_preference_category2">
 
-        <Preference
+        <!--<Preference
             android:key="manage_device_admin"
             android:icon="@drawable/ic_device_administrators"
             android:title="@string/manage_device_admin"
             android:summary="@string/summary_placeholder"
             android:fragment="com.android.settings.applications.specialaccess.deviceadmin.DeviceAdminSettings"
-            settings:controller="com.android.settings.enterprise.ManageDeviceAdminPreferenceController" />
+            settings:controller="com.android.settings.enterprise.ManageDeviceAdminPreferenceController" />-->
 
         <Preference
             android:key="enterprise_privacy"
@@ -121,23 +127,23 @@
 
     </Preference>
 
-    <Preference
+    <!--<Preference
         android:order="60"
         android:key="encryption_and_credential"
         android:icon="@drawable/ic_encryption_and_credential"
         android:title="@string/encryption_and_credential_settings_title"
         android:summary="@string/encryption_and_credential_settings_summary"
-        android:fragment="com.android.settings.security.EncryptionAndCredential" />
+        android:fragment="com.android.settings.security.EncryptionAndCredential" />-->
 
-    <Preference
+    <!--<Preference
         android:order="70"
         android:key="manage_trust_agents"
         android:icon="@drawable/ic_manage_trust_agents"
         android:title="@string/manage_trust_agents"
         android:summary="@string/summary_placeholder"
-        android:fragment="com.android.settings.security.trustagent.TrustAgentSettings" />
+        android:fragment="com.android.settings.security.trustagent.TrustAgentSettings" />-->
 
-    <Preference
+    <!--<Preference
         android:order="80"
         android:key="screen_pinning_settings"
         android:icon="@drawable/ic_screen_pinning_settings"
@@ -145,7 +151,7 @@
         android:visibility="invisible"
         android:summary="@string/summary_placeholder"
         android:fragment="com.android.settings.security.ScreenPinningSettings"
-        settings:keywords="@string/keywords_app_pinning" />
+        settings:keywords="@string/keywords_app_pinning" />-->
 
     <SwitchPreference
         android:order="90"
