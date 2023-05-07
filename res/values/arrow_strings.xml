@@ -15,6 +15,20 @@
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
 
+ 
+ 
+    <string name="gpt_tit">System GPT</string>
+    <string name="gpt_sum">chat gpt settings</string>
+
+
+    <string name="dualwall_tit">Dual wallpaper</string>
+    <string name="dualwall_sum">set dual wallpapers</string>
+
+
+    <string name="displayscreen_settings">Display screen settings</string>
+    <string name="qstiles_tit">Qstiles settings</string>
+
+
     <!-- Font style / Icon pack -->
     <string name="theme_customization_font_title">Font style</string>
     <string name="theme_customization_font_summary">Set system font style</string>
@@ -327,6 +341,10 @@
     <string name="status_bar_custom_header_shadow_summary">For better visibility on bright images</string>
     <string name="status_bar_custom_header_shadow_title">Header image shadow</string>
     <string name="unit_percent">\u0025</string>
+    <string name="extraprivacy_level">Privacy controls</string>
+    <string name="ltemode_title">System cleaner</string>
+    <string name="ltemode_summary">powered by lte</string>
+    <string name="apps_timeline_title">app timeline</string>
 
 
     <!-- vpn page strings -->
@@ -338,5 +356,8 @@
     <string name="wifiinfo_title">Wifi Info</string>
     <string name="proxys_title">Proxy Services</string>
     <string name="proxys_sum_title">Vpn, private Dns and ad-blocking config</string>
-
+    <!-- convo and bubbles strings -->
+    <string name="conversations_category_title2">Conversations and Bubbles</string>
+    <!-- system idle strings -->
+    <string name="system_idle_manager_title">System idle manage</string>
 </resources>
