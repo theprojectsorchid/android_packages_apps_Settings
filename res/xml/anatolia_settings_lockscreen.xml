@@ -14,8 +14,53 @@
      limitations under the License.
 -->
 <PreferenceScreen
-        xmlns:android="http://schemas.android.com/apk/res/android"
-        xmlns:settings="http://schemas.android.com/apk/res/com.android.settings"
-        android:title="@string/lockscreen_title">
-    
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:settings="http://schemas.android.com/apk/res-auto"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:title=" ">
+
+    <com.android.settingslib.widget.IllustrationPreference
+        android:key="security"
+        settings:searchable="false"
+        android:order="-999"
+        app:lottie_rawRes="@raw/welcome5"/> 
+        
+       <!-- Header -->
+  <PreferenceCategory
+        android:title="Admin Settings"
+        android:order="-996"
+        android:layout="@layout/settings_title_header">
+  </PreferenceCategory>
+
+    <Preference
+            android:key="manage_device_admin"
+            android:icon="@drawable/ic_device_administrators"
+            android:title="@string/manage_device_admin"
+            android:summary="@string/summary_placeholder"
+            android:fragment="com.android.settings.applications.specialaccess.deviceadmin.DeviceAdminSettings"
+            settings:controller="com.android.settings.enterprise.ManageDeviceAdminPreferenceController" />
+
+     <Preference
+        android:key="encryption_and_credential"
+        android:icon="@drawable/ic_encryption_and_credential"
+        android:title="@string/encryption_and_credential_settings_title"
+        android:summary="@string/encryption_and_credential_settings_summary"
+        android:fragment="com.android.settings.security.EncryptionAndCredential" />
+
+    <Preference
+        android:key="manage_trust_agents"
+        android:icon="@drawable/ic_manage_trust_agents"
+        android:title="@string/manage_trust_agents"
+        android:summary="@string/summary_placeholder"
+        android:fragment="com.android.settings.security.trustagent.TrustAgentSettings" />
+
+    <Preference
+        android:key="screen_pinning_settings"
+        android:icon="@drawable/ic_screen_pinning_settings"
+        android:title="@string/screen_pinning_title"
+        android:visibility="invisible"
+        android:summary="@string/summary_placeholder"
+        android:fragment="com.android.settings.security.ScreenPinningSettings"
+        settings:keywords="@string/keywords_app_pinning" />
+
 </PreferenceScreen>
