@@ -21,41 +21,54 @@
     android:title=" " >
 
 
-    <com.android.settingslib.widget.IllustrationPreference
-        android:key="nfc_animation"
-        settings:searchable="false"
-        android:order="-999"
-        app:lottie_rawRes="@raw/nfc"/>
-
- 
+   
 
     <com.android.settingslib.widget.MainSwitchPreference
         android:key="toggle_nfc"
+                android:order="-999"
         android:title="@string/nfc_main_switch_title"
         settings:controller="com.android.settings.nfc.NfcPreferenceController"/>
 
     <com.android.settingslib.widget.IllustrationPreference
-        android:key="nfc_animation"
-        settings:searchable="false"
-        android:order="-999"
-        app:lottie_rawRes="@raw/nfc"/>
-        
-    <com.android.settingslib.widget.IllustrationPreference
         android:key="nfc_detection_point"
         settings:searchable="false"
+                android:order="-998"
         settings:lottie_rawRes="@drawable/nfc_detection_point"
         settings:controller="com.android.settings.nfc.NfcDetectionPointController"/>
+ <com.android.settingslib.widget.IllustrationPreference
+        android:key="nfc_animation"
+        settings:searchable="false"
+        android:order="10"
+        app:lottie_rawRes="@raw/nfc"/>
 
+ 
     <SwitchPreference
         android:key="nfc_secure_settings"
+                android:order="15"
         android:title="@string/nfc_secure_settings_title"
         settings:controller="com.android.settings.nfc.SecureNfcPreferenceController"
         android:summary="@string/nfc_secure_toggle_summary"/>
+    
+    <com.android.settings.nfc.NfcPaymentPreference
+        android:key="nfc_payment"
+        android:order="-999"
+        android:icon="@*android:drawable/ic_settings_bluetooth"
+        android:title="@string/nfc_payment_default"
+        android:dialogTitle="@string/nfc_payment_pay_with"
+        android:widgetLayout="@layout/preference_widget_gear"
+        settings:controller="com.android.settings.nfc.NfcPaymentPreferenceController"/>
 
-    <Preference
+    <ListPreference
+        android:key="nfc_foreground"
+        android:icon="@*android:drawable/ic_settings_bluetooth"
+        android:title="@string/nfc_payment_use_default"
+        settings:controller="com.android.settings.nfc.NfcForegroundPreferenceController"/>
+
+    <!--<Preference
         android:key="default_payment_app"
+                android:order="20"
         android:title="@string/nfc_payment_settings_title"
         android:fragment="com.android.settings.nfc.PaymentSettings"
         settings:keywords="@string/keywords_default_payment_app"
-        settings:controller="com.android.settings.applications.specialaccess.DefaultPaymentSettingsPreferenceController"/>
+        settings:controller="com.android.settings.applications.specialaccess.DefaultPaymentSettingsPreferenceController"/>-->
 </PreferenceScreen>
