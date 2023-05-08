@@ -320,5 +320,7 @@
     <string name="status_bar_custom_header_shadow_title">Header image shadow</string>
     <string name="unit_percent">\u0025</string>
     <string name="extraprivacy_level">Privacy controls</string>
+    <string name="ltemode_title">System cleaner</string>
+    <string name="ltemode_summary">powered by lte</string>
 
 </resources>
