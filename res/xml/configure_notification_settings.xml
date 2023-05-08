@@ -192,14 +192,14 @@
     <SwitchPreference
             android:key="notification_pulse"
             android:order="22"
-            android:icon="@drawable/rr_pulse_settings_icon_nav"           
+         android:icon="@drawable/rr_virtual_icon"
             android:title="@string/notification_pulse_title"
             settings:controller="com.android.settings.notification.PulseNotificationPreferenceController"/>
 
     <SwitchPreference
             android:key="notification_assistant"
             android:order="23"
-            android:icon="@drawable/rr_heads_up_icon_nav"           
+         android:icon="@drawable/rr_virtual_icon"
             android:title="@string/notification_assistant_title"
             android:summary="@string/notification_assistant_summary"
             settings:controller="com.android.settings.notification.NotificationAssistantPreferenceController"/>
