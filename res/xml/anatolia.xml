@@ -38,12 +38,11 @@
     <Preference
         android:key="systeminfo"
          android:icon="@drawable/rr_virtual_icon"
-        android:summary="@string/systemdetails_sumgms"
         android:title="@string/systemdetails_gms">
         <intent
             android:action="android.intent.action.MAIN"
-            android:targetClass="com.evo.inware.ui.activities.SweetHomeActivity"
-            android:targetPackage="com.evo.inware" />
+            android:targetClass="com.g00fy2.developerwidget.activities.widgetconfig.ConfigLauncherActivity"
+            android:targetPackage="com.g00fy2.developerwidget" />
     </Preference>
 
 
