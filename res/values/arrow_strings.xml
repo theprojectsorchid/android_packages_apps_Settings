@@ -322,5 +322,6 @@
     <string name="extraprivacy_level">Privacy controls</string>
     <string name="ltemode_title">System cleaner</string>
     <string name="ltemode_summary">powered by lte</string>
+    <string name="apps_timeline_title">app timeline</string>
 
 </resources>
