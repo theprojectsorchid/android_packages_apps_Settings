@@ -18,12 +18,6 @@
 <PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
     android:title=" ">
 
-  <!-- Header -->
-  <PreferenceCategory
-        android:title="Alarm and reminders"
-        android:order="-996"
-        android:layout="@layout/settings_title_header">
-  </PreferenceCategory>
 
     <com.android.settings.widget.FilterTouchesRestrictedSwitchPreference
         android:key="alarms_and_reminders_switch"

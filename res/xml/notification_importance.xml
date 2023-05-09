@@ -15,7 +15,7 @@
 -->
 
 <PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
-        android:title="@string/notification_importance_title">
+        android:title=" ">
 
         <com.android.settingslib.widget.RadioButtonPreference
             android:key="importance_high"
