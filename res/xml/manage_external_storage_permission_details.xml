@@ -18,7 +18,7 @@
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:settings="http://schemas.android.com/apk/res-auto"
     android:key="manage_external_storage_permission_details"
-    android:title="@string/manage_external_storage_title">
+    android:title=" ">
 
     <com.android.settings.widget.FilterTouchesSwitchPreference
         android:key="app_ops_settings_switch"
