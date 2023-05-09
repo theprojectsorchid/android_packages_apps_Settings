@@ -18,7 +18,7 @@
 <PreferenceScreen
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:settings="http://schemas.android.com/apk/res-auto"
-    android:title="@string/captioning_more_options_title" >
+    android:title=" " >
 
     <com.android.settings.accessibility.LocalePreference
         android:key="captioning_locale"

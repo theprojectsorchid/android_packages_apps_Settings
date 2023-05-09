@@ -20,13 +20,6 @@
     android:persistent="false"
     android:title=" ">
 
-   <!-- Header -->
-  <PreferenceCategory
-        android:title="Tap assistance"
-        android:order="-997"
-        android:layout="@layout/settings_title_header">
-  </PreferenceCategory>
-
     <ListPreference
         android:entries="@array/long_press_timeout_selector_list_titles"
         android:entryValues="@array/long_press_timeout_selector_values"
