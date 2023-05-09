@@ -150,6 +150,12 @@
         android:title="@string/input_display_settings">
 
         
+     <Preference
+            android:key="advqs"
+            android:title="@string/qs_brightness_slider_title"
+            android:icon="@drawable/rr_brightness_slider_icon"
+            android:fragment="com.android.settings.awaken.fragments.DisplayCustomizations2" /> 
+             
         <!--<com.android.settings.display.ScreenZoomPreference
             android:key="display_settings_screen_zoom"
             android:icon="@drawable/ic_screen_resolution_adjust"
