@@ -26,6 +26,15 @@
             android:title="@string/qs_footer_datausage_title"
             android:summary="@string/qs_footer_datausage_summary"
             android:defaultValue="false" />
+      <com.arrow.support.preferences.SystemSettingSeekBarPreference
+            android:key="qs_transparency"
+            android:title="@string/qs_transparency_title"
+            android:summary="@string/qs_transparency_summary"
+            android:defaultValue="10"
+            settings:interval="1"
+            settings:units="@string/unit_percent"
+            android:max="10"         
+            android:min="1" />
 
      <Preference
         android:key="systeminfo"
@@ -34,8 +43,8 @@
         android:title="@string/systemdetails_gms">
         <intent
             android:action="android.intent.action.MAIN"
-            android:targetClass="com.evo.inware.ui.activities.SweetHomeActivity"
-            android:targetPackage="com.evo.inware" />
+            android:targetClass="com.asdoi.quicksettings.SettingsActivity"
+            android:targetPackage="com.asdoi.quicktiles" />
     </Preference>
 
 
