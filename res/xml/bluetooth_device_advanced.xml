@@ -16,7 +16,7 @@
 
 <PreferenceScreen
         xmlns:android="http://schemas.android.com/apk/res/android"
-        android:title="@string/bluetooth_device_advanced_title">
+        android:title=" ">
 
     <PreferenceCategory
             android:key="profile_container"

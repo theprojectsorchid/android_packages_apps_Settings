@@ -17,6 +17,6 @@
 <PreferenceScreen
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:settings="http://schemas.android.com/apk/res-auto"
-    android:title="@string/location_category_recent_location_access"
+    android:title=" "
     settings:searchable="false">
 </PreferenceScreen>
