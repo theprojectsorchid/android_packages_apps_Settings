@@ -19,12 +19,6 @@
     android:title=" ">
 
 
-           <!-- Header -->
-  <PreferenceCategory
-        android:title="Display over apps"
-        android:order="-996"
-        android:layout="@layout/settings_title_header">
-  </PreferenceCategory>
 
     <com.android.settings.widget.FilterTouchesSwitchPreference
         android:key="app_ops_settings_switch"
