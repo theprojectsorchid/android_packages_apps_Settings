@@ -19,13 +19,5 @@
     android:key="display_customizations2"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:title=" ">
-       <com.arrow.support.preferences.SystemSettingSeekBarPreference
-            android:key="qs_transparency"
-            android:title="@string/qs_transparency_title"
-            android:summary="@string/qs_transparency_summary"
-            android:defaultValue="10"
-            settings:interval="1"
-            settings:units="@string/unit_percent"
-            android:max="10"         
-            android:min="1" />
+ 
 </PreferenceScreen>
