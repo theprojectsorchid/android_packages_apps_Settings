@@ -21,12 +21,6 @@
     android:title=" "
     android:persistent="false" >
 
-   <!-- Header -->
-  <PreferenceCategory
-        android:title="Control timeout"
-        android:order="-997"
-        android:layout="@layout/settings_title_header">
-  </PreferenceCategory>
 
     <com.android.settingslib.widget.IllustrationPreference
         android:key="accessibility_control_timeout_banner"

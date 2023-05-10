@@ -27,13 +27,6 @@
         android:order="-999"
         app:lottie_rawRes="@raw/sound"/>
 
-  
-   <!-- Header -->
-  <PreferenceCategory
-        android:title="Audio adjust"
-        android:order="-998"
-        android:layout="@layout/settings_title_header">
-  </PreferenceCategory>
 
     <SwitchPreference
         android:key="toggle_primary_mono"
