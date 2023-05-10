@@ -21,39 +21,37 @@
     android:title=" " >
 
 
-    <com.android.settingslib.widget.IllustrationPreference
-        android:key="nfc_animation"
-        settings:searchable="false"
-        android:order="-999"
-        app:lottie_rawRes="@raw/nfc"/>
-
- 
+   
 
     <com.android.settingslib.widget.MainSwitchPreference
         android:key="toggle_nfc"
+                android:order="-999"
         android:title="@string/nfc_main_switch_title"
         settings:controller="com.android.settings.nfc.NfcPreferenceController"/>
 
     <com.android.settingslib.widget.IllustrationPreference
-        android:key="nfc_animation"
-        settings:searchable="false"
-        android:order="-999"
-        app:lottie_rawRes="@raw/nfc"/>
-        
-    <com.android.settingslib.widget.IllustrationPreference
         android:key="nfc_detection_point"
         settings:searchable="false"
+                android:order="-998"
         settings:lottie_rawRes="@drawable/nfc_detection_point"
         settings:controller="com.android.settings.nfc.NfcDetectionPointController"/>
+ <com.android.settingslib.widget.IllustrationPreference
+        android:key="nfc_animation"
+        settings:searchable="false"
+        android:order="10"
+        app:lottie_rawRes="@raw/nfc"/>
 
+ 
     <SwitchPreference
         android:key="nfc_secure_settings"
+                android:order="15"
         android:title="@string/nfc_secure_settings_title"
         settings:controller="com.android.settings.nfc.SecureNfcPreferenceController"
         android:summary="@string/nfc_secure_toggle_summary"/>
 
     <Preference
         android:key="default_payment_app"
+                android:order="20"
         android:title="@string/nfc_payment_settings_title"
         android:fragment="com.android.settings.nfc.PaymentSettings"
         settings:keywords="@string/keywords_default_payment_app"
