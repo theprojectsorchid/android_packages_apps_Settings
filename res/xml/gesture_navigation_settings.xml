@@ -72,6 +72,12 @@
         android:persistent="false"
         android:title="@string/back_sensitivity_dialog_title">
 
+    <com.android.settingslib.widget.FooterPreference
+        android:key="gesture_navigation_settings_footer"
+        android:title="@string/back_sensitivity_dialog_message"
+        android:selectable="false"
+        settings:searchable="false"/>
+        
         <com.android.settings.widget.LabeledSeekBarPreference
             android:key="gesture_left_back_sensitivity"
             android:title="@string/left_edge"
@@ -91,20 +97,4 @@
             settings:textEnd="@string/high_label"/>
     </PreferenceCategory>
 
-    <com.arrow.support.preferences.SecureSettingSwitchPreference
-        android:key="navigation_bar_hint"
-        android:icon="@drawable/ic_settings_quick_gestures"
-        android:title="@string/show_navbar_gesture_bar_title"
-        android:summary="@string/show_navbar_gesture_bar_summary"
-        android:defaultValue="true" />
-        <SwitchPreference
-            android:key="immersive_navigation"
-            android:title="@string/immersive_navigation_title"
-            android:summary="@string/immersive_navigation_summary" />
-
-    <com.android.settingslib.widget.FooterPreference
-        android:key="gesture_navigation_settings_footer"
-        android:title="@string/back_sensitivity_dialog_message"
-        android:selectable="false"
-        settings:searchable="false"/>
 </PreferenceScreen>
