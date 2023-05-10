@@ -20,34 +20,4 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:title=" ">
  
-       <com.android.settings.display.ScreenZoomPreference
-            android:key="display_settings_screen_zoom"
-            android:icon="@drawable/ic_screen_resolution_adjust"
-            android:title="@string/screen_zoom_title"
-            android:fragment="com.android.settings.display.ScreenZoomSettings"
-            settings:keywords="@string/keywords_display_size"/>
-        
-        <ListPreference
-    	    android:key="min_refresh_rate"
-            android:title="@string/min_refresh_rate_title"
-             android:icon="@drawable/ic_seekbar_minus"                       
-            android:summary="@string/summary_placeholder"
-            settings:controller="com.android.settings.display.MinRefreshRatePreferenceController" />
-
-        <ListPreference
-            android:key="peak_refresh_rate"
-             android:icon="@drawable/ic_seekbar_plus"                       
-            android:title="@string/max_refresh_rate_title"
-            android:summary="@string/summary_placeholder"
-            settings:controller="com.android.settings.display.PeakRefreshRatePreferenceController"/>
-
-
-     <Preference
-        android:key="picture_in_picture"
-        android:icon="@drawable/empty_logo"
-        android:title="@string/picture_in_picture_title"
-        android:fragment="com.android.settings.applications.specialaccess.pictureinpicture.PictureInPictureSettings"
-        settings:keywords="@string/picture_in_picture_keywords"
-        settings:controller="com.android.settings.applications.specialaccess.pictureinpicture.PictureInPictureController" />
-
 </PreferenceScreen>

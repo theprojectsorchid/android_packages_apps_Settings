@@ -97,7 +97,7 @@
 
     <SwitchPreference
         android:key="vibrate_input_devices"
-            android:icon="@drawable/rr_vibration_icon_nav"
+             android:icon="@drawable/ic_seekbar_plus"                       
         android:title="@string/vibrate_input_devices"
         android:summary="@string/vibrate_input_devices_summary"
         settings:controller="com.android.settings.inputmethod.GameControllerPreferenceController" />

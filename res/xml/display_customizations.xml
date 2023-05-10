@@ -17,8 +17,16 @@
 <PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:settings="http://schemas.android.com/apk/res/com.android.settings"
     android:key="display_customizations"
-     xmlns:app="http://schemas.android.com/apk/res-auto"
-        android:title=" ">
+         xmlns:app="http://schemas.android.com/apk/res-auto"
+     android:title=" ">
+
+
+     <com.android.settingslib.widget.IllustrationPreference
+        android:key="anim_statusbar"
+        settings:searchable="false"
+        android:order="-999"
+        app:lottie_rawRes="@raw/anim_statusbar"/>
+
     
         <com.arrow.support.preferences.SystemSettingSwitchPreference
             android:key="qs_footer_data_usage"
@@ -26,6 +34,7 @@
             android:title="@string/qs_footer_datausage_title"
             android:summary="@string/qs_footer_datausage_summary"
             android:defaultValue="false" />
+      
       <com.arrow.support.preferences.SystemSettingSeekBarPreference
             android:key="qs_transparency"
             android:title="@string/qs_transparency_title"

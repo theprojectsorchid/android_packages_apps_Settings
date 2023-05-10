@@ -36,12 +36,7 @@
         android:layout="@layout/settings_title_header">
   </PreferenceCategory>
     
-   <!-- Header -->
-  <PreferenceCategory
-        android:title="Wallpaper"
-        android:order="-995"
-        android:layout="@layout/settings_title_header2">
-  </PreferenceCategory>
+ 
 
     <com.android.settingslib.RestrictedPreference
         android:key="wallpaper"
@@ -135,8 +130,8 @@
      <Preference
             android:key="advqs"
             android:title="@string/qs_brightness_slider_title"
-            android:icon="@drawable/rr_brightness_slider_icon"
-            android:fragment="com.android.settings.awaken.fragments.DisplayCustomizations2" /> 
+            android:icon="@drawable/rr_brightness_slider_icon"  
+            android:fragment="com.epic.fragments.NavbarSettings" /> 
              
         <!--<com.android.settings.display.ScreenZoomPreference
             android:key="display_settings_screen_zoom"

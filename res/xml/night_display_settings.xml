@@ -25,18 +25,18 @@
     <com.android.settingslib.widget.IllustrationPreference
         android:key="night_light_animation"
         settings:searchable="false"
-        android:order="-999"
+        android:order="-997"
         app:lottie_rawRes="@raw/night_light"/>
 
      <com.android.settingslib.widget.MainSwitchPreference
         android:key="night_display_activated"
-        android:order="-998"
+        android:order="-999"
         android:title="@string/night_light_main_switch_title"
         settings:controller="com.android.settings.display.NightDisplayActivationPreferenceController"/>
 
     <com.android.settingslib.widget.TopIntroPreference
         android:key="night_display_top_intro"
-        android:order="-997"
+        android:order="-998"
         android:title="@string/night_display_text"
         settings:controller="com.android.settings.display.NightDisplayTopIntroPreferenceController"/>
 
