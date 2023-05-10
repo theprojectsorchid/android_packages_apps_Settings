@@ -96,7 +96,7 @@
     <Preference
         android:key="time_spent_in_app"        
         android:icon="@drawable/rr_task_behind_icon"
-        android:layout="@layout/xd_pref_card_mid2"
+        settings:layout="@layout/xd_pref_card_mid2"
         android:title="@string/time_spent_in_app_pref_title"
         android:summary="@string/summary_placeholder"
         settings:controller="com.android.settings.applications.appinfo.TimeSpentInAppPreferenceController" />
