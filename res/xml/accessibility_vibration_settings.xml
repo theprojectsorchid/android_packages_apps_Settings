@@ -27,11 +27,6 @@
         android:order="-999"
         app:lottie_rawRes="@raw/accessibility"/>
 
-   <!-- Header -->
-  <PreferenceCategory
-        android:title="Vibration Strength"
-        android:layout="@layout/settings_title_header">
-  </PreferenceCategory>
 
     <Preference
         android:fragment="com.android.settings.accessibility.RingVibrationPreferenceFragment"
