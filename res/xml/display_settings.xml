@@ -40,6 +40,7 @@
 
     <com.android.settingslib.RestrictedPreference
         android:key="wallpaper"
+                    android:icon="@drawable/ic_settings_adaptive_brightness"
         android:title="@string/wallpaper_settings_title"
         settings:keywords="@string/keywords_display_wallpaper"
         settings:useAdminDisabledSummary="true"
