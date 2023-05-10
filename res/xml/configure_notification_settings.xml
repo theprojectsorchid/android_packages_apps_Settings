@@ -78,7 +78,7 @@
             settings:controller="com.android.settings.notification.ConversationListSummaryPreferenceController"
             android:fragment="com.android.settings.notification.app.ConversationListSettings"
         />
-        <Preference
+       <!-- <Preference
             android:key="notification_bubbles"
             android:order="2"
             android:icon="@drawable/ic_bubble_all"
@@ -86,7 +86,7 @@
             android:summary="@string/notifications_bubble_setting_on_summary"
             settings:controller="com.android.settings.notification.BubbleSummaryNotificationPreferenceController"
             android:fragment="com.android.settings.notification.BubbleNotificationSettings"
-        />
+        />-->
     </PreferenceCategory>
 
     <PreferenceCategory

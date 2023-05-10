@@ -21,12 +21,24 @@
      xmlns:app="http://schemas.android.com/apk/res-auto"
     android:title=" ">
 
+   
+        <com.android.settingslib.widget.MainSwitchPreference
+            android:key="global_notification_bubbles"
+            android:order="-999"
+            android:title="@string/notifications_bubble_setting_title"
+            settings:controller="com.android.settings.notification.BubbleNotificationPreferenceController"/>
  
-    <com.android.settingslib.widget.IllustrationPreference
+  <com.android.settingslib.widget.TopIntroPreference
+            android:key="notification_bubbles_desc"
+            android:order="-998"
+            android:title="@string/notifications_bubble_setting_description"/>
+
+ 
+   <!-- <com.android.settingslib.widget.IllustrationPreference
         android:key="convo_list"
         settings:searchable="false"
         android:order="-999"
-        app:lottie_rawRes="@raw/convo"/>
+        app:lottie_rawRes="@raw/convo"/>-->
 
   
    <!-- Header -->
