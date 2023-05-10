@@ -39,6 +39,7 @@
         android:key="battery_header"
         android:title="@string/summary_placeholder"
         android:selectable="false"
+                android:order="-996"
         settings:controller="com.android.settings.fuelgauge.BatteryHeaderPreferenceController" />
 
     <com.android.settingslib.widget.LayoutPreference
@@ -67,13 +68,13 @@
         settings:keywords="@string/keywords_battery_saver"
         settings:controller="com.android.settings.fuelgauge.BatterySaverController" />
 
-    <Preference
+    <!--<Preference
         android:fragment="com.android.settings.fuelgauge.SmartBatterySettings"
         android:icon="@drawable/ic_power_optimize"
         android:key="smart_battery_manager"
         android:title="@string/smart_battery_manager_title"
         settings:controller="com.android.settings.fuelgauge.batterytip.BatteryManagerPreferenceController"
-        settings:keywords="@string/keywords_battery_adaptive_preferences" />
+        settings:keywords="@string/keywords_battery_adaptive_preferences" />-->
 
     <!--<SwitchPreference
         android:key="battery_percentage"
@@ -109,6 +110,7 @@
     <com.android.settingslib.widget.FooterPreference
         android:key="power_usage_footer"
         android:visibility="gone"
+        android:order="-995"
         android:title="@string/battery_footer_summary"
         android:selectable="false"
         settings:searchable="false" />

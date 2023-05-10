@@ -26,6 +26,8 @@
         android:order="-999"
         android:key="battery_graph"/>
   
+
+
     <PreferenceCategory
         android:order="-600"
         android:key="app_list"/>
