@@ -24,7 +24,7 @@
         android:key="unrestricted_access"
         android:title="@string/unrestricted_data_saver"
         android:summary="@string/summary_two_lines_placeholder"
-        android:order="20"
+        android:order="-996"
          android:icon="@drawable/rr_bt_icon"
         android:fragment="com.android.settings.datausage.UnrestrictedDataAccess"
         settings:searchable="false"
@@ -32,14 +32,15 @@
     <Preference
         android:fragment="com.android.settings.network.AdaptiveConnectivitySettings"
         android:key="adaptive_connectivity"
+        android:order="-997"
         android:icon="@drawable/ic_settings_private_dns"
         android:title="@string/adaptive_connectivity_title"
         android:summary="@string/summary_placeholder"
-        android:order="30"
+
         settings:controller="com.android.settings.network.AdaptiveConnectivityPreferenceController"/>
 <Preference
         android:key="data_monitor_app"
-        android:order="40"
+        android:order="-995"
         android:icon="@drawable/ic_settings_quick_gestures"
         android:summary="@string/data_monitor_app_summary"
         android:title="@string/data_monitor_app">
@@ -50,12 +51,6 @@
  </Preference>
 
     
-    <com.android.settingslib.widget.IllustrationPreference
-        android:key="datasaver"
-        settings:searchable="false"
-        android:order="-997"
-        app:lottie_rawRes="@raw/data_sava"/>
-
     <com.android.settingslib.widget.FooterPreference
         android:key="data_saver_footer"
         android:order="-998"
