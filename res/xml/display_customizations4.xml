@@ -54,6 +54,7 @@
      <SwitchPreference
         android:key="enable_location_privacy_indicator"
         android:title="@string/location_privacy_title"
+ 			android:icon="@drawable/ic_location_scanning"          
         android:summary="@string/location_privacy_summary"
         android:defaultValue="true" />
  
@@ -61,25 +62,16 @@
     <!-- Clipboard access notifications -->
     <SwitchPreference
         android:key="show_clip_access_notification"
+        android:icon="@drawable/ic_show_password"
         android:title="@string/show_clip_access_notification"
         android:summary="@string/show_clip_access_notification_summary"
         settings:controller="com.android.settings.privacy.ShowClipAccessNotificationPreferenceController"/>
     
-    <com.android.settingslib.widget.TopIntroPreference
-            android:key="window_secure_bubbles_desc"
-            android:order="-996"        
-            android:title="@string/ignore_window_secure_summary"/>
 
     <com.arrow.support.preferences.SecureSettingSwitchPreference
         android:key="window_ignore_secure"
+        android:icon="@drawable/rr_app_pref_icon"
         android:title="@string/ignore_window_secure_title"
         android:defaultValue="false"/>
 
-     <Preference
-            android:key="advqs"
-            android:title="@string/qs_brightness_slider_title"
-            android:icon="@drawable/rr_brightness_slider_icon"
-            android:fragment="com.android.settings.awaken.fragments.DisplayCustomizations2" />    
-    
-     
 </PreferenceScreen>
