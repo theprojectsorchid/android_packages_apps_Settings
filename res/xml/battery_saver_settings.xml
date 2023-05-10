@@ -26,6 +26,14 @@
         android:key="battery_saver"
         settings:controller="com.android.settings.fuelgauge.batterysaver.BatterySaverButtonPreferenceController"/>
 
+    <com.android.settingslib.widget.FooterPreference
+        android:order="-998"
+        android:key="battery_saver_footer_preference"
+        android:selectable="false"
+        android:visibility="visible"
+        android:title="@*android:string/battery_saver_description"
+        settings:searchable="false"/>
+        
     <Preference
         android:order="50"
         android:key="battery_saver_schedule"
@@ -59,13 +67,6 @@
         android:summary="@string/arcane_idle_manager_summary"
         android:defaultValue="false" />
 
-    <com.android.settingslib.widget.FooterPreference
-        android:order="-998"
-        android:key="battery_saver_footer_preference"
-        android:selectable="false"
-        android:visibility="visible"
-        android:title="@*android:string/battery_saver_description"
-        settings:searchable="false"/>
 
     <SwitchPreference
         android:key="smart_battery"
@@ -74,17 +75,18 @@
         android:summary="@string/smart_battery_summary"
         settings:controller="com.android.settings.fuelgauge.SmartBatteryPreferenceController"/>
 
+    <com.android.settingslib.widget.FooterPreference
+        android:key="smart_battery_detail_footer"
+        android:order="120"
+        android:title="@string/smart_battery_footer"
+        android:selectable="false"
+        settings:searchable="false"/>
+        
     <SwitchPreference
         android:key="auto_restriction"
-         android:order="120"       
+         android:order="130"       
         android:title="@string/battery_auto_restriction_title"
         android:summary="@string/battery_auto_restriction_summary"
         settings:controller="com.android.settings.fuelgauge.AutoRestrictionPreferenceController"/>
 
-    <com.android.settingslib.widget.FooterPreference
-        android:key="smart_battery_detail_footer"
-        android:order="130"
-        android:title="@string/smart_battery_footer"
-        android:selectable="false"
-        settings:searchable="false"/>
 </PreferenceScreen>

@@ -26,15 +26,6 @@
         android:order="-999"
         app:lottie_rawRes="@raw/incall"/>
 
-  <com.android.settingslib.widget.TopIntroPreference
-            android:key="incall_bubbles_desc"
-            android:order="-997"
-            android:title="@string/incallvibe_bubble_setting_description"/>
-
-    <PreferenceCategory
-        android:key="quick_settings_brighness_category"
-        android:title="@string/qs_brightness_slider_category">
-
         <com.arrow.support.preferences.SecureSettingSwitchPreference
             android:key="qs_show_brightness"
             android:title="@string/qs_brightness_slider_title"
@@ -62,13 +53,5 @@
             android:defaultValue="true"
             android:dependency="qs_show_brightness" />
 
-    </PreferenceCategory>
-
-    <com.arrow.support.preferences.SystemSettingSwitchPreference
-        android:key="arcane_idle_manager"
-        android:title="@string/arcane_idle_manager_title"
-        settings:iconSpaceReserved="false"
-        android:summary="@string/arcane_idle_manager_summary"
-        android:defaultValue="false" />
 
 </PreferenceScreen>

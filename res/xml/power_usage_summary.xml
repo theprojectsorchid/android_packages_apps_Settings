@@ -39,7 +39,7 @@
         android:key="battery_header"
         android:title="@string/summary_placeholder"
         android:selectable="false"
-                android:order="996"
+                android:order="-996"
         settings:controller="com.android.settings.fuelgauge.BatteryHeaderPreferenceController" />
 
     <com.android.settingslib.widget.LayoutPreference
@@ -110,7 +110,7 @@
     <com.android.settingslib.widget.FooterPreference
         android:key="power_usage_footer"
         android:visibility="gone"
-        android:order="995"
+        android:order="-995"
         android:title="@string/battery_footer_summary"
         android:selectable="false"
         settings:searchable="false" />
