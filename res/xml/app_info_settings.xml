@@ -78,7 +78,6 @@
     <Preference
         android:key="data_settings"        
         android:icon="@drawable/rr_swipe_down_icon"
-        android:key="data_settings"
         android:layout="@layout/xd_pref_card_botsummary"
         android:title="@string/data_usage_app_summary_title"
         android:summary="@string/summary_placeholder"
