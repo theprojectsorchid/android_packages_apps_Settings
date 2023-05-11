@@ -15,11 +15,7 @@
 package com.android.settings.datausage;
 
 import static android.net.NetworkPolicyManager.POLICY_REJECT_METERED_BACKGROUND;
-import static android.net.NetworkPolicyManager.POLICY_REJECT_CELLULAR;
-import static android.net.NetworkPolicyManager.POLICY_REJECT_VPN;
-import static android.net.NetworkPolicyManager.POLICY_REJECT_WIFI;
 
-import android.Manifest;
 import android.app.Activity;
 import android.app.settings.SettingsEnums;
 import android.content.Context;
@@ -27,8 +23,6 @@ import android.content.Intent;
 import android.content.pm.ApplicationInfo;
 import android.content.pm.PackageManager;
 import android.graphics.drawable.Drawable;
-import android.net.ConnectivitySettingsManager;
-import android.net.NetworkPolicyManager;
 import android.net.NetworkTemplate;
 import android.os.Bundle;
 import android.os.UserHandle;
@@ -60,7 +54,6 @@ import com.android.settingslib.net.UidDetailProvider;
 
 import java.util.ArrayList;
 import java.util.List;
-import java.util.Set;
 
 public class AppDataUsage extends DataUsageBaseFragment implements OnPreferenceChangeListener,
         DataSaverBackend.Listener {
@@ -76,11 +69,7 @@ public class AppDataUsage extends DataUsageBaseFragment implements OnPreferenceC
     private static final String KEY_FOREGROUND_USAGE = "foreground_usage";
     private static final String KEY_BACKGROUND_USAGE = "background_usage";
     private static final String KEY_APP_SETTINGS = "app_settings";
-    private static final String KEY_RESTRICT_ALL = "restrict_all";
     private static final String KEY_RESTRICT_BACKGROUND = "restrict_background";
-    private static final String KEY_RESTRICT_CELLULAR = "restrict_cellular";
-    private static final String KEY_RESTRICT_VPN = "restrict_vpn";
-    private static final String KEY_RESTRICT_WIFI = "restrict_wifi";
     private static final String KEY_APP_LIST = "app_list";
     private static final String KEY_CYCLE = "cycle";
     private static final String KEY_UNRESTRICTED_DATA = "unrestricted_data_saver";
@@ -94,11 +83,7 @@ public class AppDataUsage extends DataUsageBaseFragment implements OnPreferenceC
     private Preference mForegroundUsage;
     private Preference mBackgroundUsage;
     private Preference mAppSettings;
-    private RestrictedSwitchPreference mRestrictAll;
     private RestrictedSwitchPreference mRestrictBackground;
-    private RestrictedSwitchPreference mRestrictCellular;
-    private RestrictedSwitchPreference mRestrictVpn;
-    private RestrictedSwitchPreference mRestrictWifi;
     private PreferenceCategory mAppList;
 
     private Drawable mIcon;
@@ -170,11 +155,7 @@ public class AppDataUsage extends DataUsageBaseFragment implements OnPreferenceC
                 mIcon = uidDetail.icon;
                 mLabel = uidDetail.label;
                 removePreference(KEY_UNRESTRICTED_DATA);
-                removePreference(KEY_RESTRICT_ALL);
                 removePreference(KEY_RESTRICT_BACKGROUND);
-                removePreference(KEY_RESTRICT_CELLULAR);
-                removePreference(KEY_RESTRICT_VPN);
-                removePreference(KEY_RESTRICT_WIFI);
             } else {
                 if (mPackages.size() != 0) {
                     try {
@@ -186,16 +167,8 @@ public class AppDataUsage extends DataUsageBaseFragment implements OnPreferenceC
                     } catch (PackageManager.NameNotFoundException e) {
                     }
                 }
-                mRestrictAll = findPreference(KEY_RESTRICT_ALL);
-                mRestrictAll.setOnPreferenceChangeListener(this);
                 mRestrictBackground = findPreference(KEY_RESTRICT_BACKGROUND);
                 mRestrictBackground.setOnPreferenceChangeListener(this);
-                mRestrictCellular = findPreference(KEY_RESTRICT_CELLULAR);
-                mRestrictCellular.setOnPreferenceChangeListener(this);
-                mRestrictVpn = findPreference(KEY_RESTRICT_VPN);
-                mRestrictVpn.setOnPreferenceChangeListener(this);
-                mRestrictWifi = findPreference(KEY_RESTRICT_WIFI);
-                mRestrictWifi.setOnPreferenceChangeListener(this);
                 mUnrestrictedData = findPreference(KEY_UNRESTRICTED_DATA);
                 mUnrestrictedData.setOnPreferenceChangeListener(this);
             }
@@ -235,11 +208,7 @@ public class AppDataUsage extends DataUsageBaseFragment implements OnPreferenceC
 
             removePreference(KEY_UNRESTRICTED_DATA);
             removePreference(KEY_APP_SETTINGS);
-            removePreference(KEY_RESTRICT_ALL);
             removePreference(KEY_RESTRICT_BACKGROUND);
-            removePreference(KEY_RESTRICT_CELLULAR);
-            removePreference(KEY_RESTRICT_VPN);
-            removePreference(KEY_RESTRICT_WIFI);
             removePreference(KEY_APP_LIST);
         }
     }
@@ -267,29 +236,6 @@ public class AppDataUsage extends DataUsageBaseFragment implements OnPreferenceC
     public boolean onPreferenceChange(Preference preference, Object newValue) {
         if (preference == mRestrictBackground) {
             mDataSaverBackend.setIsDenylisted(mAppItem.key, mPackageName, !(Boolean) newValue);
-            updatePrefs();
-            return true;
-        } else if (preference == mRestrictAll) {
-            Set<Integer> uids =
-                    ConnectivitySettingsManager.getUidsAllowedOnRestrictedNetworks(mContext);
-            if (!(Boolean) newValue) {
-                uids.remove(mAppItem.key);
-            } else {
-                uids.add(mAppItem.key);
-            }
-            ConnectivitySettingsManager.setUidsAllowedOnRestrictedNetworks(mContext, uids);
-            updatePrefs();
-            return true;
-        } else if (preference == mRestrictCellular) {
-            setAppRestrictCellular(!(Boolean) newValue);
-            updatePrefs();
-            return true;
-        } else if (preference == mRestrictVpn) {
-            setAppRestrictVpn(!(Boolean) newValue);
-            updatePrefs();
-            return true;
-        } else if (preference == mRestrictWifi) {
-            setAppRestrictWifi(!(Boolean) newValue);
             updatePrefs();
             return true;
         } else if (preference == mUnrestrictedData) {
@@ -322,9 +268,7 @@ public class AppDataUsage extends DataUsageBaseFragment implements OnPreferenceC
 
     @VisibleForTesting
     void updatePrefs() {
-        updatePrefs(getAppRestrictBackground(), getUnrestrictData(), getAppRestrictAll(),
-                getAppRestrictCellular(), getAppRestrictVpn(), getAppRestrictWifi(),
-                hasInternetPermission());
+        updatePrefs(getAppRestrictBackground(), getUnrestrictData());
     }
 
     @VisibleForTesting
@@ -332,74 +276,21 @@ public class AppDataUsage extends DataUsageBaseFragment implements OnPreferenceC
         return new UidDetailProvider(mContext);
     }
 
-    private void initCycle() {
-        mCycle = findPreference(KEY_CYCLE);
-        mCycleAdapter = new CycleAdapter(mContext, mCycle, mCycleListener);
-        if (mCycles != null) {
-            // If coming from a page like DataUsageList where already has a selected cycle, display
-            // that before loading to reduce flicker.
-            mCycleAdapter.setInitialCycleList(mCycles, mSelectedCycle);
-            mCycle.setHasCycles(true);
-        }
-    }
-
-    /**
-     * Sets back the preference list's animator if the loading is finished.
-     *
-     * The preference list's animator was temporarily removed before loading in onResume().
-     * When need to update the preference visibility in this page after the loading, adding the
-     * animator back to keeping the usual animations.
-     */
-    private void setBackPreferenceListAnimatorIfLoaded() {
-        if (mIsLoading) {
-            return;
-        }
-        RecyclerView recyclerView = getListView();
-        if (recyclerView.getItemAnimator() == null) {
-            recyclerView.setItemAnimator(new DefaultItemAnimator());
-        }
-    }
-
-    private void updatePrefs(boolean restrictBackground, boolean unrestrictData,
-            boolean restrictAll, boolean restrictCellular, boolean restrictVpn,
-            boolean restrictWifi, boolean hasInternetPermission) {
-        if (!isSimHardwareVisible(mContext)) {
-            return;
-        }
-        setBackPreferenceListAnimatorIfLoaded();
+    private void updatePrefs(boolean restrictBackground, boolean unrestrictData) {
         final EnforcedAdmin admin = RestrictedLockUtilsInternal.checkIfMeteredDataRestricted(
                 mContext, mPackageName, UserHandle.getUserId(mAppItem.key));
-        if (mRestrictAll != null) {
-            mRestrictAll.setEnabled(hasInternetPermission);
-            mRestrictAll.setChecked(!restrictAll);
-        }
         if (mRestrictBackground != null) {
+            mRestrictBackground.setChecked(!restrictBackground);
             mRestrictBackground.setDisabledByAdmin(admin);
-            mRestrictBackground.setEnabled(hasInternetPermission &&
-                    !mRestrictBackground.isDisabledByAdmin() && !restrictAll &&
-                    !restrictCellular);
-            mRestrictBackground.setChecked(!restrictBackground && !restrictAll &&
-                    !restrictCellular);
-        }
-        if (mRestrictCellular != null) {
-            mRestrictCellular.setEnabled(hasInternetPermission && !restrictAll);
-            mRestrictCellular.setChecked(!restrictAll && !restrictCellular);
-        }
-        if (mRestrictVpn != null) {
-            mRestrictVpn.setEnabled(hasInternetPermission && !restrictAll);
-            mRestrictVpn.setChecked(!restrictAll && !restrictVpn);
-        }
-        if (mRestrictWifi != null) {
-            mRestrictWifi.setEnabled(hasInternetPermission && !restrictAll);
-            mRestrictWifi.setChecked(!restrictAll && !restrictWifi);
         }
         if (mUnrestrictedData != null) {
-            mUnrestrictedData.setDisabledByAdmin(admin);
-            mUnrestrictedData.setEnabled(hasInternetPermission &&
-                    !mUnrestrictedData.isDisabledByAdmin() && !restrictBackground && !restrictAll &&
-                    !restrictCellular);
-            mUnrestrictedData.setChecked(unrestrictData && !restrictBackground && !restrictAll &&
-                    !restrictCellular);
+            if (restrictBackground) {
+                mUnrestrictedData.setVisible(false);
+            } else {
+                mUnrestrictedData.setVisible(true);
+                mUnrestrictedData.setChecked(unrestrictData);
+                mUnrestrictedData.setDisabledByAdmin(admin);
+            }
         }
     }
 
@@ -432,24 +323,9 @@ public class AppDataUsage extends DataUsageBaseFragment implements OnPreferenceC
     }
 
     private boolean getAppRestrictBackground() {
-        return getAppRestriction(POLICY_REJECT_METERED_BACKGROUND);
-    }
-
-    private boolean getAppRestrictCellular() {
-        return getAppRestriction(POLICY_REJECT_CELLULAR);
-    }
-
-    private boolean getAppRestrictVpn() {
-        return getAppRestriction(POLICY_REJECT_VPN);
-    }
-
-    private boolean getAppRestrictWifi() {
-        return getAppRestriction(POLICY_REJECT_WIFI);
-    }
-
-    private boolean getAppRestrictAll() {
-        return !ConnectivitySettingsManager.getUidsAllowedOnRestrictedNetworks(mContext)
-                .contains(mAppItem.key);
+        final int uid = mAppItem.key;
+        final int uidPolicy = services.mPolicyManager.getUidPolicy(uid);
+        return (uidPolicy & POLICY_REJECT_METERED_BACKGROUND) != 0;
     }
 
     private boolean getUnrestrictData() {
@@ -459,40 +335,10 @@ public class AppDataUsage extends DataUsageBaseFragment implements OnPreferenceC
         return false;
     }
 
-    private boolean getAppRestriction(int policy) {
-        final int uid = mAppItem.key;
-        final int uidPolicy = services.mPolicyManager.getUidPolicy(uid);
-        return (uidPolicy & policy) != 0;
-    }
+    @Override
+    public void onViewCreated(View view, Bundle savedInstanceState) {
+        super.onViewCreated(view, savedInstanceState);
 
-    private boolean hasInternetPermission() {
-        return mPackageManager.checkPermission(Manifest.permission.INTERNET, mPackageName)
-                == PackageManager.PERMISSION_GRANTED;
-    }
-
-    private void setAppRestrictCellular(boolean restrict) {
-        setAppRestriction(POLICY_REJECT_CELLULAR, restrict);
-    }
-
-    private void setAppRestrictVpn(boolean restrict) {
-        setAppRestriction(POLICY_REJECT_VPN, restrict);
-    }
-
-    private void setAppRestrictWifi(boolean restrict) {
-        setAppRestriction(POLICY_REJECT_WIFI, restrict);
-    }
-
-    private void setAppRestriction(int policy, boolean restrict) {
-        final int uid = mAppItem.key;
-        if (restrict) {
-            services.mPolicyManager.addUidPolicy(uid, policy);
-        } else {
-            services.mPolicyManager.removeUidPolicy(uid, policy);
-        }
-    }
-
-    @VisibleForTesting
-    void addEntityHeader() {
         String pkg = mPackages.size() != 0 ? mPackages.valueAt(0) : null;
         int uid = 0;
         if (pkg != null) {
@@ -620,18 +466,14 @@ public class AppDataUsage extends DataUsageBaseFragment implements OnPreferenceC
     @Override
     public void onAllowlistStatusChanged(int uid, boolean isAllowlisted) {
         if (mAppItem.uids.get(uid, false)) {
-            updatePrefs(getAppRestrictBackground(), isAllowlisted, getAppRestrictAll(),
-                    getAppRestrictCellular(), getAppRestrictVpn(), getAppRestrictWifi(),
-                    hasInternetPermission());
+            updatePrefs(getAppRestrictBackground(), isAllowlisted);
         }
     }
 
     @Override
     public void onDenylistStatusChanged(int uid, boolean isDenylisted) {
         if (mAppItem.uids.get(uid, false)) {
-            updatePrefs(isDenylisted, getUnrestrictData(), getAppRestrictAll(),
-                    getAppRestrictCellular(), getAppRestrictVpn(), getAppRestrictWifi(),
-                    hasInternetPermission());
+            updatePrefs(isDenylisted, getUnrestrictData());
         }
     }
 }
