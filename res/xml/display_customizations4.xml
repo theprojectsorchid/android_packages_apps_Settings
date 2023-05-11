@@ -75,7 +75,7 @@
         android:defaultValue="false"/>
 <com.arrow.support.preferences.SystemSettingSeekBarPreference
         android:key="qs_header_image"
-        android:icon="@drawable/ic_header"
+        android:icon="@drawable/rr_mic_icon"
         android:title="@string/qs_header_image_title"
         android:defaultValue="0"
         settings:interval="1"
