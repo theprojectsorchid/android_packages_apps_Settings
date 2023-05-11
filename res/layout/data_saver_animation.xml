@@ -27,7 +27,7 @@
         android:layout_height="160dp"
         android:layout_gravity="center"
         android:clickable="false"
-        app:lottie_rawRes="@raw/data_saver"
+        app:lottie_rawRes="@raw/data_sava"
         app:lottie_loop="true"
         app:lottie_autoPlay="true" />
 
