@@ -73,12 +73,5 @@
         android:icon="@drawable/rr_app_pref_icon"
         android:title="@string/ignore_window_secure_title"
         android:defaultValue="false"/>
-<com.arrow.support.preferences.SystemSettingSeekBarPreference
-        android:key="qs_header_image"
-        android:icon="@drawable/rr_mic_icon"
-        android:title="@string/qs_header_image_title"
-        android:defaultValue="0"
-        settings:interval="1"
-        android:max="11"
-        android:min="0" />
+
 </PreferenceScreen>
