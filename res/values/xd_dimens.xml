@@ -25,6 +25,9 @@
     <dimen name="rdnt_card_radius">22dp</dimen>
     <dimen name="stroke_widthAboutUI">1dp</dimen>
 
+     <dimen name="xd_pref_card_horizontal_padding">16dp</dimen>
+     <dimen name="xd_pref_card_horizontal_padding-negative">-16dp</dimen>
+
 
     <!-- xd. Preference Card --> 
 	<dimen name="xd_pref_card_radius">22dp</dimen>

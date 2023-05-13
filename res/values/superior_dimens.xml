@@ -16,7 +16,7 @@
 <resources>
 
     <!-- circle avatar size dimensions-->
-    <dimen name="circle_avatar_size">40dp</dimen>
+    <dimen name="circle_avatar_size">50dp</dimen>
 
         <!-- size dimensions-->
      <dimen name="superior_radius">28dp</dimen>
