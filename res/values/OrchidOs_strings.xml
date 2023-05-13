@@ -16,10 +16,6 @@
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
 
-    <!-- Nusantara Clear theme -->
-    <string name="nusantara_clear_theme_title">Nusantara clear theme</string>
-    <string name="nusantara_clear_theme_summary">Use nusantara clear as base of theme</string>
-
   
           <!-- system info page -->
      <string name="systeminfopage_build">Your device is Officailly supported</string>
