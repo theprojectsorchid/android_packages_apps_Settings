@@ -391,7 +391,8 @@ public class MainClear extends InstrumentedFragment implements OnGlobalLayoutLis
         }
         ContentResolver cr = context.getContentResolver();
         return Settings.Global.getInt(cr, Settings.Global.EUICC_PROVISIONED, 0) != 0
-                || DevelopmentSettingsEnabler.isDevelopmentSettingsEnabled(context);
+                || Settings.Global.getInt(
+                cr, Settings.Global.DEVELOPMENT_SETTINGS_ENABLED, 1) != 0;
     }
 
     @VisibleForTesting

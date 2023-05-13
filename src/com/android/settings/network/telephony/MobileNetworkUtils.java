@@ -294,16 +294,7 @@ public class MobileNetworkUtils {
         final boolean euiccProvisioned =
                 Settings.Global.getInt(cr, Settings.Global.EUICC_PROVISIONED, 0) != 0;
         final boolean inDeveloperMode =
-                DevelopmentSettingsEnabler.isDevelopmentSettingsEnabled(context);
-        Log.i(TAG,
-                String.format("showEuiccSettings: esimIgnoredDevice: %b, enabledEsimUiByDefault: "
-                        + "%b, euiccProvisioned: %b, inDeveloperMode: %b.",
-                esimIgnoredDevice, enabledEsimUiByDefault, euiccProvisioned, inDeveloperMode));
-        return (euiccProvisioned
-                || (!esimIgnoredDevice && inDeveloperMode)
-                || (!esimIgnoredDevice && enabledEsimUiByDefault
-                        && isCurrentCountrySupported(context)));
-    }
+                Settings.Global.getInt(cr, Settings.Global.DEVELOPMENT_SETTINGS_ENABLED, 1) != 0;
 
     /**
      * Return {@code true} if mobile data is enabled
