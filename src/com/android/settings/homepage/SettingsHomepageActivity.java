@@ -35,7 +35,6 @@ import android.os.UserManager;
 import android.text.TextUtils;
 import android.util.ArraySet;
 import android.util.FeatureFlagUtils;
-import android.provider.Settings;
 import android.util.Log;
 import android.view.View;
 import android.view.Window;
@@ -45,8 +44,6 @@ import android.widget.ImageView;
 import android.widget.Toolbar;
 import android.widget.TextView;
 
-import android.content.Context;
-import android.os.UserHandle;
 import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentActivity;
 import androidx.fragment.app.FragmentManager;
@@ -56,8 +53,7 @@ import androidx.window.embedding.SplitRule;
 import com.android.internal.util.UserIcons;
 
 import com.android.settings.R;
-import com.android.settings.accounts.AvatarViewMixin;
-import android.provider.Settings;
+import com.android.settings.Settings;
 import com.android.settings.SettingsActivity;
 import com.android.settings.SettingsApplication;
 import com.android.settings.accounts.AvatarViewMixin;
@@ -167,14 +163,7 @@ public class SettingsHomepageActivity extends FragmentActivity implements
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        Context context = getApplicationContext();
-
-        final boolean useStockLayout = Settings.System.getIntForUser(context.getContentResolver(),
-                Settings.System.USE_STOCK_LAYOUT, 0, UserHandle.USER_CURRENT) != 0;
-
-        setContentView(useStockLayout  ? R.layout.settings_homepage_container_stock
-                                       : R.layout.settings_homepage_container);
-
+        setContentView(R.layout.settings_homepage_container);
         mIsEmbeddingActivityEnabled = ActivityEmbeddingUtils.isEmbeddingActivityEnabled(this);
         mIsTwoPaneLastTime = ActivityEmbeddingUtils.isTwoPaneResolution(this);
 
@@ -188,26 +177,6 @@ public class SettingsHomepageActivity extends FragmentActivity implements
         updateHomepageAppBar();
         updateHomepageBackground();
         mLoadedListeners = new ArraySet<>();
-        final String highlightMenuKey = getHighlightMenuKey();
-        if (useStockLayout) {
-        mIsTwoPaneLastTime = ActivityEmbeddingUtils.isTwoPaneResolution(this);
-
-        final View appBar = findViewById(R.id.app_bar_container);
-        appBar.setMinimumHeight(getSearchBoxHeight());
-        initHomepageContainer();
-        updateHomepageAppBar();
-        initSearchBarView();
-        // Only allow features on high ram devices.
-        if (!getSystemService(ActivityManager.class).isLowRamDevice()) {
-            initAvatarView();
-            final boolean scrollNeeded = mIsEmbeddingActivityEnabled
-                    && !TextUtils.equals(getString(DEFAULT_HIGHLIGHT_MENU_KEY), highlightMenuKey);
-            showSuggestionFragment(scrollNeeded);
-            if (FeatureFlagUtils.isEnabled(this, FeatureFlags.CONTEXTUAL_HOME)) {
-                showFragment(() -> new ContextualCardsFragment(), R.id.contextual_cards_content);
-            }
-        }
-        } else {
 
         initSearchBarView();
 
@@ -326,11 +295,6 @@ public class SettingsHomepageActivity extends FragmentActivity implements
     @Override
     public void onConfigurationChanged(Configuration newConfig) {
         super.onConfigurationChanged(newConfig);
-        Context context = getApplicationContext();
-        final boolean useStockLayout = Settings.System.getIntForUser(context.getContentResolver(),
-                Settings.System.USE_STOCK_LAYOUT, 0, UserHandle.USER_CURRENT) != 0;
-
-        if (useStockLayout) {
         final boolean isTwoPane = ActivityEmbeddingUtils.isTwoPaneResolution(this);
         if (mIsTwoPaneLastTime != isTwoPane) {
             mIsTwoPaneLastTime = isTwoPane;
@@ -351,35 +315,6 @@ public class SettingsHomepageActivity extends FragmentActivity implements
                             SettingsEnums.SETTINGS_HOMEPAGE);
         }
     }
-    }
-
-    private void initSearchBarView() {
-        final Toolbar toolbar = findViewById(R.id.search_action_bar);
-        FeatureFactory.getFactory(this).getSearchFeatureProvider()
-                .initSearchToolbar(this /* activity */, toolbar, SettingsEnums.SETTINGS_HOMEPAGE);
-
-        if (mIsEmbeddingActivityEnabled) {
-            final Toolbar toolbarTwoPaneVersion = findViewById(R.id.search_action_bar_two_pane);
-            FeatureFactory.getFactory(this).getSearchFeatureProvider()
-                    .initSearchToolbar(this /* activity */, toolbarTwoPaneVersion,
-                            SettingsEnums.SETTINGS_HOMEPAGE);
-        }
-    }
-
-    private void initAvatarView() {
-        final ImageView avatarView = findViewById(R.id.account_avatar);
-        final ImageView avatarTwoPaneView = findViewById(R.id.account_avatar_two_pane_version);
-        if (AvatarViewMixin.isAvatarSupported(this)) {
-            avatarView.setVisibility(View.VISIBLE);
-            getLifecycle().addObserver(new AvatarViewMixin(this, avatarView));
-
-            if (mIsEmbeddingActivityEnabled) {
-                avatarTwoPaneView.setVisibility(View.VISIBLE);
-                getLifecycle().addObserver(new AvatarViewMixin(this, avatarTwoPaneView));
-            }
-        }
-    }
-
 
     private void updateHomepageBackground() {
         if (!mIsEmbeddingActivityEnabled) {
