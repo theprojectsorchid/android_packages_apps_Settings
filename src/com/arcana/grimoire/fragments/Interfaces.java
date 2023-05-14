@@ -50,12 +50,13 @@ import com.android.settingslib.search.SearchIndexable;
 import java.util.Locale;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
+import com.android.internal.util.arrow.ArrowUtils;
 
-import com.epic.support.preferences.CustomSeekBarPreference;
-import com.epic.support.preferences.SystemSettingSwitchPreference;
-import com.epic.support.preferences.SystemSettingSeekBarPreference;
-import com.epic.support.preferences.SystemSettingListPreference;
-import com.android.internal.util.arcana.ArcanaUtils;
+import com.arrow.support.preferences.CustomSeekBarPreference;
+import com.arrow.support.preferences.SystemSettingSwitchPreference;
+import com.arrow.support.preferences.SystemSettingSeekBarPreference;
+import com.arrow.support.preferences.SystemSettingListPreference;
+
 
 @SearchIndexable(forTarget = SearchIndexable.ALL & ~SearchIndexable.ARC)
 public class Interfaces extends SettingsPreferenceFragment implements OnPreferenceChangeListener {
