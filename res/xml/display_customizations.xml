@@ -55,13 +55,11 @@
             android:targetClass="com.asdoi.quicksettings.SettingsActivity"
             android:targetPackage="com.asdoi.quicktiles" />
     </Preference>
-  <com.arrow.support.preferences.SystemSettingListPreference
-            android:key="settings_dashboard_gms"
-            android:title="@string/systemdetails_sumgms"
-            android:entries="@array/settings_dashboard_style_entries"
-            android:entryValues="@array/settings_dashboard_style_values"
-            android:summary="%s"
-            android:defaultValue="0" />
-            
+    <com.android.settings.widget.HomepagePreference
+        android:fragment="com.arcana.grimoire.fragments.Interfaces"
+        android:key="system_dash"
+        android:order="-86"
+        android:title="@string/qs_footer_datausage_summary"
+        android:summary="@string/systemdetails_gms"/>
 
 </PreferenceScreen>
