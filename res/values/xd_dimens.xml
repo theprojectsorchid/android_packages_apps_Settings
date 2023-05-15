@@ -47,6 +47,11 @@
     <dimen name="two_target_min_width">72dp</dimen>
 
 
+     <dimen name="epic_preference_category_padding_top">16dp</dimen>
+   <dimen name="epic_preference_category_height">56dp</dimen>
+     <dimen name="epic_preference_category_line_margin_start">16dp</dimen>
+
+
      <!-- xd. Dashboard -->
      <dimen name="xd_dashboard_header_height">225dp</dimen>
 
@@ -54,6 +59,8 @@
      <dimen name="xd_about_phone_ill_height">275dp</dimen>
      <dimen name="xd_about_phone_ill_width">125dp</dimen>
 
-
+     <dimen name="dot_pref_horizontal_padding">16dp</dimen>
+     <dimen name="dot_radius">16dp</dimen>
+     <dimen name="dot_radius_merge">16dp</dimen>
 
 </resources>

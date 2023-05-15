@@ -323,5 +323,10 @@
     <string name="ltemode_title">System cleaner</string>
     <string name="ltemode_summary">powered by lte</string>
     <string name="apps_timeline_title">app timeline</string>
-
+        <string name="theme_settings_title">app timeline</string>
+  <string name="animations_title">powered by lte</string>
+    <string name="themes_title">app timeline</string>
+        <string name="theme_settings_summary">app timeline</string>
+                <string name="core_system">app timeline</string>
+                 <string name="core_system_summary">app timeline</string>       
 </resources>
