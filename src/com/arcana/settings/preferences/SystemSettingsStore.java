@@ -1,4 +1,3 @@
-
 /*
  * Copyright (C) 2017 AICP
  *
@@ -15,7 +14,7 @@
  * limitations under the License.
  */
 
-package com.arcana.settings.preferences;
+package com.dirtyunicorns.support.preferences;
 
 import android.content.ContentResolver;
 import android.preference.PreferenceDataStore;
