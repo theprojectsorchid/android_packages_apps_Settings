@@ -14,14 +14,14 @@
  * limitations under the License.
  */
 
-package com.abc.support.preferences;
+package com.arcana.settings.preferences;
 
 import android.content.Context;
 import android.util.AttributeSet;
 
 import androidx.preference.PreferenceCategory;
 
-import com.abc.support.R;
+import com.android.settings.R;
 
 public class CustomPreferenceCategory extends PreferenceCategory {
 

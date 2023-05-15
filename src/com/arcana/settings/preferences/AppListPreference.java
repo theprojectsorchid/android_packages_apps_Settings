@@ -14,13 +14,13 @@
  * limitations under the License.
  */
 
-package com.srx.support.preferences;
+package com.arcana.settings.preferences;
 
 import android.content.Context;
 import androidx.preference.Preference;
 import android.util.AttributeSet;
 
-import com.srx.support.R;
+import com.android.settings.R;
 
 public class AppListPreference extends Preference {
 

@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package com.dirtyunicorns.support.preferences;
+package com.arcana.settings.preferences;
 
 import android.content.ContentResolver;
 import android.preference.PreferenceDataStore;

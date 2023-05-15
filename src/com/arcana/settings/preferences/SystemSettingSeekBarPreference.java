@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package com.srx.support.preferences;
+package com.arcana.settings.preferences;
 
 import android.content.Context;
 import android.util.AttributeSet;
