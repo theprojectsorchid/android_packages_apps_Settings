@@ -54,7 +54,7 @@
         android:icon="@drawable/ic_calls_sms"
         android:order="-20"
         android:summary="@string/summary_placeholder"
-        settings:allowDividerBelow="true"
+        settings:allowDividerBelow="false"
         settings:keywords="@string/calls_and_sms"
         settings:useAdminDisabledSummary="true" />
 

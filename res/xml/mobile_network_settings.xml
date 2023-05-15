@@ -270,7 +270,7 @@
         android:key="erase_sim"
         android:persistent="false"
         android:title="@string/mobile_network_erase_sim"
-        settings:allowDividerBelow="true"
+        settings:allowDividerBelow="false"
         settings:controller="com.android.settings.network.telephony.DeleteSimProfilePreferenceController"/>
 
     <com.android.settingslib.widget.FooterPreference

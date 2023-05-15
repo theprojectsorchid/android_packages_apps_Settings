@@ -43,7 +43,7 @@
     <PreferenceCategory
         android:key="adb_pairing_methods_category"
         android:layout="@layout/preference_category_no_label"
-        settings:allowDividerAbove="true">
+        settings:allowDividerAbove="false">
         <!-- qrcode scanner -->
         <Preference
             android:key="adb_pair_method_qrcode_pref"
@@ -62,7 +62,7 @@
     <PreferenceCategory
         android:key="adb_paired_devices_category"
         android:title="@string/adb_paired_devices_title"
-        settings:allowDividerAbove="true"/>
+        settings:allowDividerAbove="false"/>
 
     <!-- Off message: Shown only in the off state -->
     <PreferenceCategory

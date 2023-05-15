@@ -34,13 +34,17 @@
         android:layout="@layout/settings_title_header">
   </PreferenceCategory>
 
+ <com.android.settingslib.widget.LayoutPreference
+        android:key="dnd_animation"
+        android:layout="@layout/dnd_animation" />
+
     <!-- Turn on DND button -->
     <com.android.settingslib.widget.LayoutPreference
         android:key="zen_mode_toggle"
         android:title="@string/zen_mode_settings_title"
         android:selectable="false"
         android:layout="@layout/zen_mode_settings_button"
-        settings:allowDividerBelow="true"
+        settings:allowDividerBelow="false"
         settings:keywords="@string/keywords_zen_mode_settings"/>
 
     <PreferenceCategory
