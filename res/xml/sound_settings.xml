@@ -42,7 +42,7 @@
         android:key="remote_media_group"
         android:title=""
         android:order="-185"
-        settings:allowDividerBelow="true"
+        settings:allowDividerBelow="false"
         settings:controller="com.android.settings.notification.RemoteVolumeGroupController">
     </PreferenceCategory>
 

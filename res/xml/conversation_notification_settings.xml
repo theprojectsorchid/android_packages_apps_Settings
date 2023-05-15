@@ -23,7 +23,7 @@
     <com.android.settingslib.widget.LayoutPreference
         android:key="pref_app_header"
         android:layout="@layout/settings_entity_header"
-        settings:allowDividerBelow="true"/>
+        settings:allowDividerBelow="false"/>
 
     <!-- important conversation -->
     <com.android.settings.notification.app.ConversationPriorityPreference
