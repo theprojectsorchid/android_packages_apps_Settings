@@ -100,6 +100,16 @@
         android:key="non_carrier_data_usage"
         android:icon="@drawable/ic_settings_mobile_plan"
         android:title="@string/non_carrier_data_usage"/>
+    
+ <Preference
+        android:key="wifiinfo_page"
+        android:icon="@drawable/ic_settings_quick_gestures"
+        android:title="@string/wifiinfo_title">
+        <intent
+            android:action="android.intent.action.MAIN"
+            android:targetClass="com.truelgpro.wifiinfo.MainActivity"
+            android:targetPackage="com.truelgpro.wifiinfo" />
+ </Preference>
 
     <com.android.settingslib.widget.FooterPreference
         android:key="wifi_status_message_footer"

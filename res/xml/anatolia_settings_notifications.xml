@@ -24,12 +24,19 @@
         android:key="wifi_anim"
         settings:searchable="false"
         android:order="-999"
-        app:lottie_rawRes="@raw/wifi"/>
-       
+        app:lottie_rawRes="@raw/vpn_settings"/>
+    
+     <com.android.settingslib.widget.TopIntroPreference
+            android:key="taptap_bubbles_desc"
+            android:order="-996"        
+            android:title="@string/vpn_settings_bubble_setting_description1"/>
+
         <Preference
             android:key="rethink_app"
             android:order="10"
-            android:title="@string/statusbar_items_title" >
+            android:summary="@string/summary_rethink_app"
+            android:icon="@drawable/ic_devices_home"
+            android:title="@string/rethink_app" >
             <intent android:action="android.intent.action.MAIN"
                 android:targetPackage="com.celzero.bravedns"
                 android:targetClass="com.celzero.bravedns.ui.HomeScreenActivity" />
@@ -58,7 +65,9 @@
         <Preference
             android:key="addaway_app"
             android:order="25"
-            android:title="@string/statusbar_items_title" >
+            android:summary="@string/summary_addaway_app"
+            android:icon="@drawable/ic_device_status"
+            android:title="@string/addaway_app" >
             <intent android:action="android.intent.action.MAIN"
                 android:targetPackage="org.adaway"
                 android:targetClass="org.adaway.ui.home.HomeActivity" />
