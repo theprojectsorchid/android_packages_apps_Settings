@@ -1228,6 +1228,6 @@ public final class Utils extends com.android.settingslib.Utils {
      */
     @ColorInt
     public static int getHomepageIconColorHighlight(Context context) {
-        return getColorAttrDefaultColor(context, android.R.attr.colorAccent);
+        return getColorAttrDefaultColor(context, android.R.attr.textColorSecondaryInverse);
     }
 }

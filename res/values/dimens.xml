@@ -121,9 +121,9 @@
 
     <!-- Search bar -->
     <dimen name="search_bar_margin">16dp</dimen>
-    <dimen name="search_bar_height">42dp</dimen>
-    <dimen name="search_bar_text_size">13sp</dimen>
-    <dimen name="search_bar_corner_radius">28dp</dimen>
+    <dimen name="search_bar_height">48dp</dimen>
+    <dimen name="search_bar_text_size">20sp</dimen>
+    <dimen name="search_bar_corner_radius">24dp</dimen>
     <dimen name="search_bar_content_inset">56dp</dimen>
 
     <!-- Avatar -->
@@ -482,20 +482,4 @@
     <dimen name="dashboard_tile_foreground_image_size">24dp</dimen>
 
 
-    <!-- App list preference -->
-    <dimen name="app_list_margin_start">72dp</dimen>
-    <dimen name="app_list_margin_end">16dp</dimen>
-
-  
-    
-    <!-- Card Layout OOS 12-->
-    <dimen name="card_margin_start_oos12">0.0dp</dimen>
-    <dimen name="card_margin_end_oos12">0.0dp</dimen>
-    <dimen name="card_height_oos12">65.0dp</dimen>
-    
-    <!-- ripple radius-->
-    <dimen name="card_radius_oos12">0dp</dimen>
-    
-    <dimen name="default_margin">16dp</dimen>
-    <dimen name="default_padding">16dp</dimen>
 </resources>

@@ -44,18 +44,7 @@ android_library {
         "SettingsLib-search-defaults",
     ],
 
-    srcs: [
-        "src/**/*.java",
-        "Fireworks/src/**/*.java",
-    ],
-
-    aaptflags: ["--extra-packages com.spark.settings",
-                "--extra-packages github.com.st235.lib_expandablebottombar",],
-
-    resource_dirs: [
-        "res",
-        "Fireworks/res",
-    ],
+    srcs: ["src/**/*.java"],
 
     aaptflags: ["--extra-packages com.epic"],
 
@@ -88,12 +77,6 @@ android_library {
         "lottie",
         "windowExtLib",
         "VendorSupport-preference",
-        "expandable-bottombar",
-        "androidx.navigation_navigation-common-ktx",
-        "androidx.navigation_navigation-fragment-ktx",
-        "androidx.navigation_navigation-runtime-ktx",
-        "androidx.navigation_navigation-ui-ktx",
-        "kotlin-stdlib",
     ],
 
     libs: [
@@ -162,10 +145,4 @@ filegroup {
 filegroup {
     name: "Settings_manifest",
     srcs: ["AndroidManifest.xml"],
-}
-
-android_library_import {
-    name: "expandable-bottombar",
-    aars: ["libs/lib-expandablebottombar-release.aar"],
-    sdk_version: "current",
 }
