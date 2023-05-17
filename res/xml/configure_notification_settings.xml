@@ -73,7 +73,7 @@
             android:key="conversations"
             android:order="1"
             android:icon="@drawable/ic_sms_ringtone"
-            android:title="@string/conversations_category_title"
+            android:title="@string/conversations_category_title2"
             android:summary=" "
             settings:controller="com.android.settings.notification.ConversationListSummaryPreferenceController"
             android:fragment="com.android.settings.notification.app.ConversationListSettings"
