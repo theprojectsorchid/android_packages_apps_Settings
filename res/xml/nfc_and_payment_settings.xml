@@ -51,7 +51,7 @@
     
     <com.android.settings.nfc.NfcPaymentPreference
         android:key="nfc_payment"
-        android:order="-999"
+        android:order="-30"
         android:icon="@*android:drawable/ic_settings_bluetooth"
         android:title="@string/nfc_payment_default"
         android:dialogTitle="@string/nfc_payment_pay_with"
@@ -60,6 +60,7 @@
 
     <ListPreference
         android:key="nfc_foreground"
+        android:order="-40"
         android:icon="@*android:drawable/ic_settings_bluetooth"
         android:title="@string/nfc_payment_use_default"
         settings:controller="com.android.settings.nfc.NfcForegroundPreferenceController"/>
