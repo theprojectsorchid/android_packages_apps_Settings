@@ -25,14 +25,8 @@
         android:key="media controls_anim"
         settings:searchable="false"
         android:order="-999"
-        app:lottie_rawRes="@raw/lottie_adaptive_playback"/>
+        app:lottie_rawRes="@raw/media_play"/>
       
-        <com.android.settingslib.widget.TopIntroPreference
-            android:key="mediaconmode_bubbles_desc"
-            android:order="-997"        
-            android:title="@string/media_bubble_setting_description"/>
-
-
         
     <Preference
         android:key="gesture_adaptive_playback_summary"

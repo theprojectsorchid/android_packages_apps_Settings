@@ -26,33 +26,19 @@
         android:order="-999"
         app:lottie_rawRes="@raw/incall"/>
 
-  <com.android.settingslib.widget.TopIntroPreference
-            android:key="incall_bubbles_desc"
-            android:order="-997"
-            android:title="@string/incallvibe_bubble_setting_description"/>
-
-    <!-- Incall vibration options -->
-    <PreferenceCategory
-        android:key="incall_vib_options"
-        android:layout="@layout/custom_preference_category2"
-        android:title="@string/incall_vibration_category" >
 
         <com.arrow.support.preferences.SystemSettingSwitchPreference
             android:key="vibrate_on_connect"
-             android:icon="@drawable/ic_phone_info"
             android:title="@string/incall_vibrate_connect_title"
             android:defaultValue="false" />
 
         <com.arrow.support.preferences.SystemSettingSwitchPreference
             android:key="vibrate_on_callwaiting"
-            android:icon="@drawable/ic_volume_ringer_vibrate"
             android:title="@string/incall_vibrate_call_wait_title"
             android:defaultValue="false" />
 
         <com.arrow.support.preferences.SystemSettingSwitchPreference
             android:key="vibrate_on_disconnect"
-            android:icon="@drawable/ic_vibration"
             android:title="@string/incall_vibrate_disconnect_title"
             android:defaultValue="false" />
-    </PreferenceCategory>
 </PreferenceScreen>
