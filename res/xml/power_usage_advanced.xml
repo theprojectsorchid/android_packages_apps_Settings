@@ -36,7 +36,7 @@
         android:key="battery_graph_footer"
         android:title="@string/battery_usage_screen_footer"
         android:selectable="false"
-        android:order="-998"
+        android:order="-500"
         android:visibility="gone"
         settings:searchable="false"/>
 </PreferenceScreen>
