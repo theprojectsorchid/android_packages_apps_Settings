@@ -117,8 +117,8 @@
         android:fragment="com.android.settings.datausage.DataSaverSummary"/>
     <Preference
         android:key="vpn_settings"
-        android:title="@string/vpn_settings_title"
-        android:summary="@string/data_saver_title"
+        android:title="@string/proxys_title"
+        android:summary="@string/proxys_sum_title"
         android:icon="@drawable/ic_phone"            
         android:fragment="com.epic.fragments.NotificationSettings" />
 
