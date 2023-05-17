@@ -258,7 +258,7 @@
 
     <!-- Screen locking sounds -->
     <SwitchPreference
-        android:icon="@drawable/ic_lock"
+        android:icon="@drawable/ic_device_status"
         android:key="screen_locking_sounds"
         android:title="@string/screen_locking_sounds_title"
         android:order="-45"/>
@@ -266,7 +266,7 @@
     <!-- Charging sounds -->
     <SwitchPreference
         android:key="charging_sounds"
-        android:icon="@drawable/ic_charging_sounds"
+        android:icon="@drawable/ic_find_device_enabled"
         android:title="@string/charging_sounds_title"
         android:order="-40"/>
 

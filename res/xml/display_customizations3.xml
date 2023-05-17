@@ -27,12 +27,6 @@
         app:lottie_rawRes="@raw/incall"/>
 
 
-    <!-- Incall vibration options -->
-    <PreferenceCategory
-        android:key="incall_vib_options"
-        android:layout="@layout/custom_preference_category2"
-        android:title="@string/incall_vibration_category" >
-
         <com.arrow.support.preferences.SystemSettingSwitchPreference
             android:key="vibrate_on_connect"
              android:icon="@drawable/ic_phone_info"
@@ -47,8 +41,7 @@
 
         <com.arrow.support.preferences.SystemSettingSwitchPreference
             android:key="vibrate_on_disconnect"
-            android:icon="@drawable/ic_vibration"
+            android:icon="@drawable/ic_settings_private_dns"
             android:title="@string/incall_vibrate_disconnect_title"
             android:defaultValue="false" />
-    </PreferenceCategory>
 </PreferenceScreen>
