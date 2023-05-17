@@ -336,5 +336,6 @@
     <string name="proxys_sum_title">Vpn, private Dns and ad-blocking config</string>
     <!-- convo and bubbles strings -->
     <string name="conversations_category_title2">Conversations and Bubbles</string>
-
+    <!-- system idle strings -->
+    <string name="system_idle_manager_title">System idle manage</string>
 </resources>
