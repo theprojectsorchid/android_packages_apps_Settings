@@ -27,14 +27,6 @@
         android:order="-999"
         app:lottie_rawRes="@raw/connected_pref"/>
 
-        
-   <!-- Header -->
-  <PreferenceCategory
-        android:title="Prefrences"
-        android:order="-997"
-        android:layout="@layout/settings_title_header">
-  </PreferenceCategory>
-
     <Preference
         android:fragment="com.android.settings.connecteddevice.BluetoothDashboardFragment"
         android:key="bluetooth_switchbar_screen"
