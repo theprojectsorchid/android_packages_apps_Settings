@@ -57,6 +57,6 @@
         android:title="@string/user_add_on_lockscreen_menu"
         android:singleLineTitle="false"
         android:order="105"
-        settings:allowDividerAbove="true"/>
+        settings:allowDividerAbove="false"/>
 
 </PreferenceScreen>
