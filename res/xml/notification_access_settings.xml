@@ -24,10 +24,12 @@
     settings:controller="com.android.settings.applications.specialaccess.notificationaccess.NotificationAccessScreenPreferenceController">
 
     <PreferenceCategory
+          android:layout="@layout/custom_preference_category2"
         android:key="allowed"
         android:title="@string/notification_listener_allowed"/>
 
     <PreferenceCategory
+          android:layout="@layout/custom_preference_category2"
         android:key="not_allowed"
         android:title="@string/notification_listener_not_allowed"/>
 </PreferenceScreen>

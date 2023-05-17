@@ -34,19 +34,13 @@
             android:title="@string/notifications_bubble_setting_description"/>
 
  
-   <!-- <com.android.settingslib.widget.IllustrationPreference
+   <com.android.settingslib.widget.IllustrationPreference
         android:key="convo_list"
         settings:searchable="false"
         android:order="-999"
-        app:lottie_rawRes="@raw/convo"/>-->
+        app:lottie_rawRes="@raw/convo"/>
 
   
-   <!-- Header -->
-  <PreferenceCategory
-        android:title="Conversations"
-        android:order="-997"
-        android:layout="@layout/settings_title_header">
-  </PreferenceCategory>
 
     <com.android.settingslib.widget.LayoutPreference
         android:key="no_conversations"
