@@ -21,12 +21,12 @@
         android:key="top_level_settings">
 
     <!-- FlexoOS logo about Us-->
-    <PreferenceScreen
+ <!--   <PreferenceScreen
         android:key="flexo_lottie_animation"
         android:layout="@layout/flexoos_card"
         android:selectable="true"
         android:fragment="com.epic.fragments.ButtonSettings"
-        android:order="-190" />
+        android:order="-190" />-->
         
 <!--
    <com.android.settingslib.widget.LayoutPreference
@@ -42,14 +42,14 @@
         android:key="top_level_userinfo"
 	    android:title="@string/about_user_base"
         android:summary="@string/about_user_summary_base"
-        android:order="-160" />
+        android:order="-140" />
 
 
    <com.android.settings.widget.HomepagePreference
         android:fragment="com.android.settings.network.NetworkDashboardFragment"
         android:icon="@drawable/statusbar"
         android:key="top_level_network"
-        android:order="-150"
+        android:order="-160"
         android:title="@string/network_dashboard_title"
         android:summary="@string/summary_placeholder"
         settings:highlightableMenuKey="@string/menu_key_network"
@@ -59,7 +59,7 @@
         android:fragment="com.android.settings.connecteddevice.ConnectedDeviceDashboardFragment"
         android:icon="@drawable/nav"
         android:key="top_level_connected_devices"
-        android:order="-140"
+        android:order="-150"
         android:title="@string/connected_devices_dashboard_title"
         android:summary="@string/connected_devices_dashboard_default_summary"
         settings:highlightableMenuKey="@string/menu_key_connected_devices"
