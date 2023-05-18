@@ -18,15 +18,22 @@
         xmlns:settings="http://schemas.android.com/apk/res/com.android.settings"
         android:title=" ">
    
-   <Preference
+ <!--     <Preference
         android:key="xd_build_status"
         android:title="@string/systeminfopage_build"
         android:summary="@string/xd_summary_placeholder"
         android:icon="@drawable/ic_user"
         android:order="-999"    
         settings:controller="com.android.settings.deviceinfo.firmwareversion.BuildMaintainerPreferenceController"
-        settings:layout="@layout/xd_pref_card_sin-accent2"/>
-     
+        settings:layout="@layout/xd_pref_card_sin-accent2"/>-->
+
+         <!-- FlexoOS logo about Us-->
+  <PreferenceScreen
+        android:key="flexo_lottie_animation"
+        android:layout="@layout/flexoos_card"
+        android:selectable="true"
+        android:fragment="com.epic.fragments.ButtonSettings"
+        android:order="-999" />
 
 		 <!-- orchidosrom grid -->
     <PreferenceScreen
