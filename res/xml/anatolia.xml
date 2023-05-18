@@ -33,7 +33,7 @@
         android:layout="@layout/flexoos_card"
         android:selectable="true"
         android:fragment="com.epic.fragments.ButtonSettings"
-        android:order="-190" />
+        android:order="-999" />
 
 		 <!-- orchidosrom grid -->
     <PreferenceScreen
