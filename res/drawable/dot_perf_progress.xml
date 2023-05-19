@@ -4,7 +4,7 @@
     <item android:id="@android:id/background">
         <shape android:tint="?android:attr/colorAccent" >
             <solid android:color="#33FFFFFF"/>
-            <size android:height="18dp"/>
+            <size android:height="40dp"/>
             <corners android:radius="@dimen/dot_pref_radius" />
         </shape>
     </item>
@@ -12,7 +12,7 @@
         <scale android:scaleWidth="100%">
             <shape android:tint="?android:attr/colorAccent" >
                 <solid android:color="#99FFFFFF"/>
-                <size android:height="18dp"/>
+                <size android:height="40dp"/>
                 <corners android:radius="@dimen/dot_pref_radius" />
             </shape>
         </scale>
