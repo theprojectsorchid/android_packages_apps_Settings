@@ -326,7 +326,7 @@
 
 
     <!-- vpn page strings -->
-    <string name="vpn_settings_bubble_setting_description1">Using the below options help to encrypt your data through proxies. Not even your ISP will know what you're doing online. Allowing you to be anonymous and also Block advertisements</string>
+    <string name="vpn_settings_bubble_setting_description1">Using the below options help to encrypt your data through proxies. Not even your ISP will know what youre doing online. Allowing you to be anonymous and also Block advertisements</string>
     <string name="summary_rethink_app">Powered by Rethinkdns</string>
     <string name="rethink_app">System Vpn"</string>
     <string name="summary_addaway_app">add blockking software</string>
