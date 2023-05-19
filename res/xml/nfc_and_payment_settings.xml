@@ -38,7 +38,7 @@
  <com.android.settingslib.widget.IllustrationPreference
         android:key="nfc_animation"
         settings:searchable="false"
-        android:order="10"
+        android:order="997"
         app:lottie_rawRes="@raw/nfc"/>
 
  
