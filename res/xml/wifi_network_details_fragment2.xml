@@ -54,7 +54,7 @@
 
     <Preference
         android:key="security"
-        android:icon="@drawable/ic_security_lock_24dp"
+        android:icon="@drawable/ic_frequency_antenna"
         android:title="@string/wifi_security"
         android:selectable="false"/>
 

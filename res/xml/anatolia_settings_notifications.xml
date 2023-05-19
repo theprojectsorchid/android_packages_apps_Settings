@@ -35,7 +35,7 @@
             android:key="rethink_app"
             android:order="10"
             android:summary="@string/summary_rethink_app"
-            android:icon="@drawable/ic_devices_home"
+        android:icon="@drawable/ic_do_not_disturb2"
             android:title="@string/rethink_app" >
             <intent android:action="android.intent.action.MAIN"
                 android:targetPackage="com.celzero.bravedns"
@@ -66,7 +66,7 @@
             android:key="addaway_app"
             android:order="25"
             android:summary="@string/summary_addaway_app"
-            android:icon="@drawable/ic_device_status"
+        android:icon="@drawable/ic_do_not_disturb2"
             android:title="@string/addaway_app" >
             <intent android:action="android.intent.action.MAIN"
                 android:targetPackage="org.adaway"
