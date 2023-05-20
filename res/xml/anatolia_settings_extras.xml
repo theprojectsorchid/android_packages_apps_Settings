@@ -133,13 +133,11 @@
           android:key="use_stock_layout"
           android:icon="@drawable/ic_user"
           android:title="@string/settings_home_style_title"
-          android:summary="@string/settings_home_style_summary"
           android:defaultValue="false" />
        
     <!-- Settings style -->
     <com.arrow.support.preferences.SystemSettingListPreference
          android:key="settings_dashboard_style"
-         android:icon="@drawable/ic_cog"
          android:title="@string/settings_dashboard_style_title"
          android:entries="@array/settings_dashboard_style_entries"
          android:entryValues="@array/settings_dashboard_style_values"
