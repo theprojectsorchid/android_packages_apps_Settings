@@ -56,20 +56,25 @@
             android:targetPackage="com.asdoi.quicktiles" />
     </Preference>
 
-    <com.arrow.support.preferences.SystemSettingSwitchPreference
+<PreferenceCategory
+        android:title="@string/top_level_settings_title">
+
+    <com.creative.settings.preferences.SystemSettingSwitchPreference
           android:key="use_stock_layout"
+          android:icon="@drawable/ic_shapes"
           android:title="@string/settings_home_style_title"
           android:summary="@string/settings_home_style_summary"
           android:defaultValue="false" />
 
     <!-- Settings style -->
-    <com.arrow.support.preferences.SystemSettingListPreference
+    <com.creative.settings.preferences.SystemSettingListPreference
          android:key="settings_dashboard_style"
+         android:icon="@drawable/ic_cog"
          android:title="@string/settings_dashboard_style_title"
          android:entries="@array/settings_dashboard_style_entries"
          android:entryValues="@array/settings_dashboard_style_values"
          android:summary="%s"
          android:defaultValue="0" />
 
-
+      </PreferenceCategory>
 </PreferenceScreen>
