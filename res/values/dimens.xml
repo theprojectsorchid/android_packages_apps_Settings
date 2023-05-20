@@ -127,7 +127,7 @@
     <dimen name="search_bar_content_inset">56dp</dimen>
 
     <!-- Avatar -->
-    <dimen name="avatar_length">48dp</dimen>
+    <dimen name="avatar_length">64dp</dimen>
     <dimen name="avatar_margin_top">56dp</dimen>
     <dimen name="avatar_margin_end">24dp</dimen>
 
@@ -138,6 +138,22 @@
     <!-- Homepage menu entry -->
     <dimen name="homepage_menu_entry_padding_horizontal">16dp</dimen>
     <dimen name="homepage_menu_entry_corner_radius">28dp</dimen>
+    <!-- Homepage -->
+    <!-- avatar_length + avatar_margin_top -->
+    <dimen name="homepage_title_margin_top">0dp</dimen>
+    <dimen name="homepage_padding_horizontal_two_pane">24dp</dimen>
+    <dimen name="homepage_preference_corner_radius">28dp</dimen>
+    <dimen name="homepage_preference_min_height">88sp</dimen>
+    <dimen name="homepage_preference_icon_padding_start">32dp</dimen>
+    <dimen name="homepage_preference_icon_padding_start_two_pane">8dp</dimen>
+    <dimen name="homepage_preference_text_padding_start">20dp</dimen>
+    <dimen name="homepage_preference_text_padding_start_two_pane">24dp</dimen>
+    <dimen name="homepage_app_bar_corner_radius">32dp</dimen>
+    <dimen name="homepage_app_bar_padding_two_pane">6dp</dimen>
+    <!-- bottom: search_bar_margin - homepage_app_bar_padding_two_pane -->
+    <dimen name="homepage_app_bar_margin_bottom_two_pane">10dp</dimen>
+    <!-- horizontal: homepage_padding_horizontal_two_pane - homepage_app_bar_padding_two_pane -->
+    <dimen name="homepage_app_bar_margin_horizontal_two_pane">18dp</dimen>
 
     <!-- Dimensions for Wifi Assistant Card -->
     <dimen name="wifi_assistant_padding_top_bottom">16dp</dimen>
@@ -482,4 +498,27 @@
     <dimen name="dashboard_tile_foreground_image_size">24dp</dimen>
 
 
+ 
+    <!-- Card Layout OOS -->
+    
+    <dimen name="card_margin_rui_start">38.0dp</dimen>
+    <dimen name="card_margin_rui_end">24.0dp</dimen>
+    <dimen name="card_height_rui">75.0dp</dimen>
+    <dimen name="card_height_round">75.0dp</dimen>
+    <dimen name="card_radius_wave">22dp</dimen>
+    <dimen name="card_radius">12dp</dimen>
+    <dimen name="top_card_radius">12dp</dimen>
+    <dimen name="mid_card_radius">12dp</dimen>
+    <dimen name="bot_card_radius">12dp</dimen>
+    <dimen name="pref_top_card_bottom_margin">10dp</dimen>
+    <dimen name="pref_mid_card_bottom_margin">10dp</dimen>
+    <dimen name="pref_bot_card_bottom_margin">10dp</dimen>
+    <dimen name="top_pref_start">60dp</dimen>
+    <dimen name="card_height_oos">70.0dp</dimen>
+
+    <dimen name="card_margin_start_aqua">20dp</dimen>
+    <dimen name="card_margin_end_aqua">20dp</dimen>
+
+    <dimen name="default_margin">16dp</dimen>
+    <dimen name="default_padding">16dp</dimen>
 </resources>
