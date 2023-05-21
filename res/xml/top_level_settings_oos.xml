@@ -20,7 +20,14 @@
     xmlns:settings="http://schemas.android.com/apk/res-auto"
     android:key="top_level_settings"
     android:title="Settings">
-
+  <!-- FlexoOS logo about Us-->
+  <PreferenceScreen
+        android:key="flexo_lottie_animation"
+        android:layout="@layout/flexoos_card"
+        android:selectable="true"
+        android:fragment="com.epic.fragments.ButtonSettings"
+        android:order="-190" />
+        
     <com.android.settings.widget.HomepagePreference
         android:fragment="com.android.settings.deviceinfo.aboutphone.MyDeviceInfoFragment"
         android:icon="@drawable/ic_rui_homepage_about"
