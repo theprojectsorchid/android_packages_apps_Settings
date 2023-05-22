@@ -44,16 +44,9 @@ android_library {
         "SettingsLib-search-defaults",
     ],
 
-    srcs: ["src/**/*.java",
-           "Mine/src/**/*.java",
-    ],
+    srcs: ["src/**/*.java"],
 
-    aaptflags: ["--extra-packages com.crystal.mine","--extra-packages com.epic"],
-
-    resource_dirs: ["res",
-                    "Mine/res"
-    ],
-
+    aaptflags: ["--extra-packages com.epic"],
 
     static_libs: [
         "androidx-constraintlayout_constraintlayout",
