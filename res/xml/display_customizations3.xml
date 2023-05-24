@@ -29,19 +29,16 @@
 
         <com.arrow.support.preferences.SystemSettingSwitchPreference
             android:key="vibrate_on_connect"
-             android:icon="@drawable/ic_phone_info"
             android:title="@string/incall_vibrate_connect_title"
             android:defaultValue="false" />
 
         <com.arrow.support.preferences.SystemSettingSwitchPreference
             android:key="vibrate_on_callwaiting"
-            android:icon="@drawable/ic_volume_ringer_vibrate"
             android:title="@string/incall_vibrate_call_wait_title"
             android:defaultValue="false" />
 
         <com.arrow.support.preferences.SystemSettingSwitchPreference
             android:key="vibrate_on_disconnect"
-            android:icon="@drawable/ic_settings_private_dns"
             android:title="@string/incall_vibrate_disconnect_title"
             android:defaultValue="false" />
 </PreferenceScreen>
