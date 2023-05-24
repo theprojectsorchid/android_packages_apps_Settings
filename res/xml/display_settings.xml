@@ -37,18 +37,77 @@
   </PreferenceCategory>
     
  
+    <PreferenceCategory
+        android:layout="@layout/custom_preference_category2"
+        android:title="@string/screen_wallpaper_main_settings">
 
     <com.android.settingslib.RestrictedPreference
         android:key="wallpaper"
-                    android:icon="@drawable/ic_settings_adaptive_brightness"
-        android:title="@string/wallpaper_settings_title"
+        android:icon="@drawable/ic_screen_resolution_adjust"
+        android:title="@string/wallpaper_settings_title2"
+        android:summary="@string/wallpaper_settings_summary"
         settings:keywords="@string/keywords_display_wallpaper"
         settings:useAdminDisabledSummary="true"
         settings:controller="com.android.settings.display.WallpaperPreferenceController"/>
+          
+    <Preference
+        android:key="dualwallpaper"
+        android:summary="@string/dualwall_sum"
+        android:icon="@drawable/ic_screen_resolution_adjust"
+        android:title="@string/dualwall_tit">
+        <intent
+            android:action="android.intent.action.MAIN"
+            android:targetClass="de.dlyt.yanndroid.dualwallpaper.ui.activity.MainActivity"
+            android:targetPackage="de.dlyt.yanndroid.dualwallpaper" />
+    </Preference>
+    
+     <Preference
+            android:key="systemfonts"
+            android:title="@string/displayscreen_settingsf0nts"
+            android:icon="@drawable/ic_fonts"
+            android:fragment="com.android.settings.awaken.fragments.DisplayCustomizations2" />
+        </PreferenceCategory>
+
+
+ 
+    <PreferenceCategory
+        android:layout="@layout/custom_preference_category2"
+        android:title="@string/displayscreen_settings">
+
+     <Preference
+            android:key="display_screen_setting"
+            android:title="@string/display_screen_settings"
+            android:summary="@string/display_screen_settings_summary"
+            android:icon="@drawable/ic_smart_lock"
+            android:fragment="com.epic.fragments.NavbarSettings" /> 
+                  
+     <Preference
+            android:key="Qs_settings"
+            android:title="@string/Qs_settings_page"
+            android:summary="@string/Qs_settings_page_summary"
+            android:icon="@drawable/rr_display_icon"
+            android:fragment="com.epic.fragments.GestureSettings" /> 
+
+      <Preference
+        android:key="statusbar_settings"
+        android:title="@string/statusbar_settings_page"
+        android:icon="@drawable/rr_user_icon"           
+        android:summary="@string/statusbar_settings_page_summary"
+        android:fragment="com.epic.fragments.StatusBarSettings" />
+
+
+        <SwitchPreference
+            android:key="auto_rotate"
+			android:icon="@drawable/rr_auto_rotate_icon"
+            android:title="@string/accelerometer_title"
+            settings:keywords="@string/keywords_auto_rotate"
+            settings:controller="com.android.settings.display.AutoRotatePreferenceController"/>
+    </PreferenceCategory>
 
     <PreferenceCategory
         android:layout="@layout/custom_preference_category2"
-        android:title="@string/dispaly_main_settings">
+        android:title="@string/screen_lighting_main_settings">
+
 
         <com.android.settingslib.RestrictedPreference
             android:key="brightness"
@@ -58,10 +117,17 @@
             settings:useAdminDisabledSummary="true"
             settings:userRestriction="no_config_brightness"/>
     
+     <Preference
+            android:key="qs_brightness_slider_category"
+            android:title="@string/qs_brightness_slider_category"
+            android:icon="@drawable/ic_screen_resolution_adjust"
+            android:fragment="com.android.settings.awaken.fragments.DisplayCustomizations" />
+
         <com.android.settings.display.AutoBrightnessPreference
             android:key="auto_brightness_entry"
             android:icon="@drawable/ic_settings_sleep_standby_optimization"
-            android:title="@string/auto_brightness_title"
+            android:title="@string/add_auto_brightness_title"
+            android:summary="@string/add_auto_brightness_title_summary"
             android:fragment="com.android.settings.display.AutoBrightnessSettings"
             settings:controller="com.android.settings.display.AutoBrightnessPreferenceController"/>
         
@@ -83,7 +149,6 @@
             settings:controller="com.android.settings.display.NightDisplayPreferenceController"
             settings:keywords="@string/keywords_display_night_display"/>
 
-
     </PreferenceCategory>
 
     <PreferenceCategory
@@ -95,7 +160,6 @@
             android:visibility="gone"
             android:title="@string/lockscreen_settings_title"
             android:fragment="com.android.settings.security.LockscreenDashboardFragment"
-            settings:keywords="@string/keywords_ambient_display_screen"
             settings:controller="com.android.settings.security.screenlock.LockScreenPreferenceController"/>-->
         
        <Preference
@@ -111,29 +175,7 @@
             android:fragment="com.android.settings.datetime.DateTimeSettings"
             settings:controller="com.android.settings.datetime.DateTimePreferenceController"/>
 
-         
-        <Preference
-            android:key="font_size"
-            android:icon="@drawable/ic_fonts"
-            android:title="@string/title_font_size"
-            android:fragment="com.android.settings.display.ToggleFontSizePreferenceFragment"
-            settings:controller="com.android.settings.display.FontSizePreferenceController"
-            settings:keywords="@string/keywords_font_size"/>
-   
-    </PreferenceCategory>
-
-
-  <PreferenceCategory
-        android:layout="@layout/custom_preference_category2"
-        android:title="@string/input_display_settings">
-
         
-     <Preference
-            android:key="advqs"
-            android:title="@string/qs_brightness_slider_title"
-            android:icon="@drawable/rr_brightness_slider_icon"  
-            android:fragment="com.epic.fragments.NavbarSettings" /> 
-             
         <!--<com.android.settings.display.ScreenZoomPreference
             android:key="display_settings_screen_zoom"
             android:icon="@drawable/ic_screen_resolution_adjust"
@@ -141,19 +183,19 @@
             android:fragment="com.android.settings.display.ScreenZoomSettings"
             settings:keywords="@string/keywords_display_size"/>-->
         
-          <!--<ListPreference
+          <ListPreference
     	    android:key="min_refresh_rate"
             android:title="@string/min_refresh_rate_title"
              android:icon="@drawable/ic_seekbar_minus"                       
             android:summary="@string/summary_placeholder"
-            settings:controller="com.android.settings.display.MinRefreshRatePreferenceController" />-->
+            settings:controller="com.android.settings.display.MinRefreshRatePreferenceController" />
 
-          <!--<ListPreference
+          <ListPreference
             android:key="peak_refresh_rate"
              android:icon="@drawable/ic_seekbar_plus"                       
             android:title="@string/max_refresh_rate_title"
             android:summary="@string/summary_placeholder"
-            settings:controller="com.android.settings.display.PeakRefreshRatePreferenceController"/>-->
+            settings:controller="com.android.settings.display.PeakRefreshRatePreferenceController"/>
 
          <Preference
             android:key="color_mode"
@@ -166,35 +208,13 @@
     
         <Preference
             android:key="screensaver"
-			android:icon="@drawable/ic_screensaver"            
+			android:icon="@drawable/ic_settings_colormode"            
             android:title="@string/screensaver_settings_title"
             android:fragment="com.android.settings.dream.DreamSettings"/>
-
-        <SwitchPreference
-            android:key="auto_rotate"
-			android:icon="@drawable/rr_auto_rotate_icon"
-            android:title="@string/accelerometer_title"
-            settings:keywords="@string/keywords_auto_rotate"
-            settings:controller="com.android.settings.display.AutoRotatePreferenceController"/>
+    
     </PreferenceCategory>
     
-    <PreferenceCategory
-        android:layout="@layout/custom_preference_category2"
-        android:title="@string/statusbar_qs_settings">
-    <Preference
-        android:key="statusbar_settings"
-        android:title="@string/statusbar_qs_settings"
-        android:icon="@drawable/rr_display_icon"
-        android:fragment="com.epic.fragments.GestureSettings"/>
-
-     <Preference
-            android:key="advqs"
-            android:title="@string/qs_brightness_slider_title"
-            android:icon="@drawable/rr_brightness_slider_icon"
-            android:fragment="com.android.settings.awaken.fragments.DisplayCustomizations" />    
-    </PreferenceCategory>
-
-     
+  
        <!-- <com.android.settingslib.RestrictedPreference
             android:key="screen_timeout"
             android:icon="@drawable/ic_screen_timeout"
@@ -208,14 +228,7 @@
     <PreferenceCategory
         android:layout="@layout/custom_preference_category2"
         android:title="@string/display_customization_category_title">
-     
-    <Preference
-        android:key="onthegomode_settings"
-        android:title="@string/onthegomode_title"
-        android:summary="@string/onthegomode_summary"
-        android:icon="@drawable/ic_phone"            
-        android:fragment="com.epic.fragments.PowerMenuSettings"/>
-
+ 
         <SwitchPreference
             android:key="display_white_balance"
             android:icon="@drawable/ic_refresh"            

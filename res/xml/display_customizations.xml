@@ -21,40 +21,5 @@
      android:title=" ">
 
 
-     <com.android.settingslib.widget.IllustrationPreference
-        android:key="anim_statusbar"
-        settings:searchable="false"
-        android:order="-999"
-        app:lottie_rawRes="@raw/anim_statusbar"/>
-
     
-        <com.arrow.support.preferences.SystemSettingSwitchPreference
-            android:key="qs_footer_data_usage"
-            android:icon="@drawable/ic_doc"
-            android:title="@string/qs_footer_datausage_title"
-            android:summary="@string/qs_footer_datausage_summary"
-            android:defaultValue="false" />
-      
-      <com.arrow.support.preferences.SystemSettingSeekBarPreference
-            android:key="qs_transparency"
-            android:title="@string/qs_transparency_title"
-            android:summary="@string/qs_transparency_summary"
-            android:defaultValue="10"
-            settings:interval="1"
-            settings:units="@string/unit_percent"
-            android:max="10"         
-            android:min="1" />
-
-     <Preference
-        android:key="systeminfo"
-         android:icon="@drawable/rr_virtual_icon"
-        android:summary="@string/systemdetails_sumgms"
-        android:title="@string/systemdetails_gms">
-        <intent
-            android:action="android.intent.action.MAIN"
-            android:targetClass="com.asdoi.quicksettings.SettingsActivity"
-            android:targetPackage="com.asdoi.quicktiles" />
-    </Preference>
-
-
 </PreferenceScreen>

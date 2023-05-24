@@ -20,4 +20,31 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:title=" ">
  
+    <com.android.settingslib.widget.IllustrationPreference
+        android:key="statusbarbright"
+        settings:searchable="false"
+        settings:lottie_rawRes="@raw/shape"/>
+
+            
+              <!-- Font style -->
+        <Preference
+            android:key="android.theme.customization.fonts"
+            android:icon="@drawable/ic_fonts"
+            android:title="@string/theme_customization_font_title"
+            android:summary="@string/theme_customization_font_summary"
+            android:fragment="com.android.settings.lineage.fragments.FontsPicker"/>
+
+        <!-- Icon pack -->
+        <Preference
+            android:key="android.theme.customization.icon_pack"
+            android:icon="@drawable/ic_device_administrators"
+            android:title="@string/theme_customization_icon_pack_title"
+            android:summary="@string/theme_customization_icon_pack_summary"
+            android:fragment="com.android.settings.lineage.fragments.StatusbarIcons"/>
+        <Preference
+            android:key="android.theme.customization.adaptive_icon_shape"
+            android:title="@string/theme_customization_icon_shape_title"
+                    android:icon="@drawable/rr_display_icon"
+            android:summary="@string/theme_customization_icon_shape_summary"
+            android:fragment="com.android.settings.lineage.fragments.IconShapes"/>
 </PreferenceScreen>

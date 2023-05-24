@@ -19,35 +19,89 @@
 	    xmlns:app="http://schemas.android.com/apk/res-auto"
        android:title=" " >
 
-    <com.android.settingslib.widget.IllustrationPreference
-        android:key="StatusbarQs"
+        <com.android.settingslib.widget.IllustrationPreference
+        android:key="qsswttings"
         settings:searchable="false"
         android:order="-999"
-        app:lottie_rawRes="@raw/toplevel_bottom"/>
+        app:lottie_rawRes="@raw/Qstiles"/>
+  
+    <PreferenceCategory
+        android:layout="@layout/custom_preference_category2"
+        android:order="-990"        
+        android:title="@string/system_qs_settings">
+
+    <com.android.settingslib.widget.TopIntroPreference
+            android:key="tap_bubbles_desc"
+            android:order="10"        
+            android:selectable="true"
+            android:title="@string/QSheaders_bubble_setting_description"/>
+
+   <com.arrow.support.preferences.SystemSettingSeekBarPreference
+            android:key="qs_header_image"
+            android:title="@string/qs_header_image_title"
+            android:summary="@string/qs_header_extra"
+            android:defaultValue="0"
+            android:order="15"        
+            settings:interval="1"
+            android:max="39"
+            android:min="1" />
+
+      <com.arrow.support.preferences.SystemSettingSeekBarPreference
+            android:key="qs_transparency"
+            android:title="@string/qs_transparency_title"
+            android:summary="@string/qs_transparency_summary_more"
+            android:defaultValue="10"
+            settings:interval="1"
+            android:order="20"        
+            settings:units="@string/unit_percent"
+            android:max="10"         
+            android:min="1" />
+    </PreferenceCategory>
 
 
-          <Preference
-            android:key="systemui_tuner_statusbar"
-            android:icon="@drawable/ic_screen_resolution_adjust"
-            android:title="@string/statusbar_items_title" >
-            <intent android:action="android.intent.action.MAIN"
-                android:targetPackage="com.android.systemui"
-                android:targetClass="com.android.systemui.tuner.StatusbarItemsActivity" />
-        </Preference>
+        <com.android.settingslib.widget.TopIntroPreference
+            android:key="tap_bubbles_desc"
+            android:order="-997"        
+            android:selectable="true"
+            android:title="@string/qssettings_bubble_setting_description"/>
 
      <Preference
-        android:key="network_traffic_settings"
-        android:icon="@drawable/ic_settings_network_traffic"
-        android:title="@string/network_traffic_title"
-        android:summary="@string/network_traffic_summary"
-        android:fragment="com.android.settings.arrow.NetworkTrafficSettings"/>
+        android:key="systeminfo"
+        android:order="50"        
+        android:icon="@drawable/rr_virtual_icon"
+        android:title="@string/qstiles_tit">
+        <intent
+            android:action="android.intent.action.MAIN"
+            android:targetClass="com.asdoi.quicksettings.SettingsActivity"
+            android:targetPackage="com.asdoi.quicktiles" />
+    </Preference>
 
-    <Preference
-        android:key="battery_settings"
-        android:icon="@drawable/ic_system_update"
-        android:fragment="com.android.settings.arrow.StatusBarBattery"
-        android:title="@string/battery_style_title"
-        android:summary="@string/battery_style_summary" />
 
+        <com.arrow.support.preferences.SystemSettingSwitchPreference
+            android:key="qs_footer_data_usage"
+            android:icon="@drawable/ic_doc"
+            android:title="@string/qs_footer_datausage_title"
+            android:summary="@string/qs_footer_datausage_summary"
+            android:defaultValue="false" />
+
+
+        <com.arrow.support.preferences.SystemSettingListPreference
+            android:key="qs_battery_style"
+            android:order="85"     
+            android:icon="@drawable/rr_assist_icon"
+            android:title="@string/status_bar_battery_style_title"
+            android:entries="@array/qs_battery_style_entries"
+            android:entryValues="@array/qs_battery_style_values"
+            android:defaultValue="-1" />
+
+        <com.arrow.support.preferences.SystemSettingListPreference
+            android:key="qs_show_battery_percent"
+            android:order="90"        
+            android:icon="@drawable/ic_device_administrators"
+            android:title="@string/qs_battery_percent_title"
+            android:entries="@array/status_bar_battery_percent_entries"
+            android:entryValues="@array/status_bar_battery_percent_values"
+            android:defaultValue="2" />
+    
 
 </PreferenceScreen>
