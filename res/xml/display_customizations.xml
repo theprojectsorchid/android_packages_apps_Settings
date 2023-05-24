@@ -39,12 +39,19 @@
             android:key="qs_transparency"
             android:title="@string/qs_transparency_title"
             android:summary="@string/qs_transparency_summary"
-            android:defaultValue="10"
-            settings:interval="1"
+            android:defaultValue="100"
+            settings:interval="5"
             settings:units="@string/unit_percent"
             android:max="10"         
-            android:min="1" />
+            android:min="5" />
 
+   <com.arrow.support.preferences.SystemSettingSeekBarPreference
+            android:key="qs_header_image"
+            android:title="@string/qs_header_image_title"
+            android:defaultValue="0"
+            settings:interval="1"
+            android:max="99"
+            android:min="0" />
      <Preference
         android:key="systeminfo"
          android:icon="@drawable/rr_virtual_icon"
