@@ -35,14 +35,14 @@
             android:fragment="com.android.settings.display.ScreenZoomSettings"
             settings:keywords="@string/keywords_display_size"/>
         
-       <com.arrow.support.preferences.SecureSettingListPreference
+    <com.android.settingslib.RestrictedSwitchPreference
     	    android:key="min_refresh_rate"
             android:title="@string/min_refresh_rate_title"
              android:icon="@drawable/ic_seekbar_minus"                       
             android:summary="@string/summary_placeholder"
             settings:controller="com.android.settings.display.MinRefreshRatePreferenceController" />
 
-       <com.arrow.support.preferences.SecureSettingListPreference
+    <com.android.settingslib.RestrictedSwitchPreference
             android:key="peak_refresh_rate"
              android:icon="@drawable/ic_seekbar_plus"                       
             android:title="@string/max_refresh_rate_title"
