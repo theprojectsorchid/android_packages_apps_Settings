@@ -17,13 +17,8 @@
         xmlns:android="http://schemas.android.com/apk/res/android"
         xmlns:settings="http://schemas.android.com/apk/res/com.android.settings"
         android:title=" ">
-   <com.arrow.support.preferences.SystemSettingSeekBarPreference
-            android:key="qs_header_image"
-            android:title="@string/qs_header_image_title"
-            android:defaultValue="0"
-            settings:interval="1"
-            android:max="11"
-            android:min="0" />
+
+
  <!--     <Preference
         android:key="xd_build_status"
         android:title="@string/systeminfopage_build"
