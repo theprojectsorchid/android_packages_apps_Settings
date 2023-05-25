@@ -107,11 +107,6 @@
         android:summary="@string/battery_light_summary" />
 
 
-    <com.android.settings.fuelgauge.PowerGaugePreference
-        android:key="battery_temp"
-        android:title="@string/battery_temp"
-        android:selectable="false" />
-
     <com.android.settingslib.widget.FooterPreference
         android:key="power_usage_footer"
         android:visibility="gone"
