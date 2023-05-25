@@ -39,6 +39,7 @@
   <com.android.settings.widget.PrimarySwitchPreference
             android:key="reduce_bright_colors_preference"
             android:icon="@drawable/ic_dc_dimming"
+            android:order="-997"
             android:title="@string/reduce_bright_colors_preference_title"
             settings:keywords="@string/keywords_reduce_bright_colors"
             android:persistent="false"

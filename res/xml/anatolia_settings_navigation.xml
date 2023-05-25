@@ -24,9 +24,20 @@
         android:key="anim_statusbar"
         settings:searchable="false"
         android:order="-999"
-        app:lottie_rawRes="@raw/anim_statusbar"/>
+        app:lottie_rawRes="@raw/anim_displayscreen"/>
 
-
+        <Preference
+            android:key="font_size"
+            android:icon="@drawable/ic_fonts"
+            android:title="@string/title_font_size"
+            android:fragment="com.android.settings.display.ToggleFontSizePreferenceFragment"
+            settings:controller="com.android.settings.display.FontSizePreferenceController"
+            settings:keywords="@string/keywords_font_size"/>
+   
+        <ListPreference
+            android:key="android.theme.customization.font"
+            android:icon="@drawable/ic_fonts"
+            android:title="@string/theme_customization_font_title"/>
 
        <com.android.settings.display.ScreenZoomPreference
             android:key="display_settings_screen_zoom"
@@ -34,28 +45,20 @@
             android:title="@string/screen_zoom_title"
             android:fragment="com.android.settings.display.ScreenZoomSettings"
             settings:keywords="@string/keywords_display_size"/>
-        
-    <ListPreference
-    	    android:key="min_refresh_rate"
-            android:title="@string/min_refresh_rate_title"
-             android:icon="@drawable/ic_seekbar_minus"                       
-            android:summary="@string/summary_placeholder"
-            settings:controller="com.android.settings.display.MinRefreshRatePreferenceController" />
-
-    <ListPreference
-            android:key="peak_refresh_rate"
-             android:icon="@drawable/ic_seekbar_plus"                       
-            android:title="@string/max_refresh_rate_title"
-            android:summary="@string/summary_placeholder"
-            settings:controller="com.android.settings.display.PeakRefreshRatePreferenceController"/>
-
-
+      
      <Preference
         android:key="picture_in_picture"
-        android:icon="@drawable/empty_logo"
+        android:icon="@drawable/rr_display_icon"
         android:title="@string/picture_in_picture_title"
         android:fragment="com.android.settings.applications.specialaccess.pictureinpicture.PictureInPictureSettings"
         settings:keywords="@string/picture_in_picture_keywords"
         settings:controller="com.android.settings.applications.specialaccess.pictureinpicture.PictureInPictureController" />
+
+        <Preference
+            android:key="onthegomode_settings"
+            android:title="@string/onthegomode_title"
+            android:summary="@string/onthegomode_summary"
+            android:icon="@drawable/ic_phone"            
+            android:fragment="com.epic.fragments.PowerMenuSettings"/>
 
 </PreferenceScreen>

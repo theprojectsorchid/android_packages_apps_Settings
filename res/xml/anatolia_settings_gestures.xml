@@ -23,17 +23,20 @@
         android:key="StatusbarQs"
         settings:searchable="false"
         android:order="-999"
-        app:lottie_rawRes="@raw/toplevel_bottom"/>
+        app:lottie_rawRes="@raw/Qstiles"/>
 
+    <PreferenceCategory
+        android:layout="@layout/custom_preference_category2"
+        android:title="@string/statusbar_systmem_settings">
 
-          <Preference
+      <Preference
             android:key="systemui_tuner_statusbar"
             android:icon="@drawable/ic_screen_resolution_adjust"
             android:title="@string/statusbar_items_title" >
             <intent android:action="android.intent.action.MAIN"
                 android:targetPackage="com.android.systemui"
                 android:targetClass="com.android.systemui.tuner.StatusbarItemsActivity" />
-        </Preference>
+      </Preference>
 
      <Preference
         android:key="network_traffic_settings"
@@ -48,6 +51,51 @@
         android:fragment="com.android.settings.arrow.StatusBarBattery"
         android:title="@string/battery_style_title"
         android:summary="@string/battery_style_summary" />
+      
+      </PreferenceCategory>
+  
+    <PreferenceCategory
+        android:layout="@layout/custom_preference_category2"
+        android:title="@string/system_qs_settings">
+
+     <Preference
+        android:key="systeminfo"
+         android:icon="@drawable/rr_virtual_icon"
+        android:summary="@string/systemdetails_sumgms"
+        android:title="@string/systemdetails_gms">
+        <intent
+            android:action="android.intent.action.MAIN"
+            android:targetClass="com.asdoi.quicksettings.SettingsActivity"
+            android:targetPackage="com.asdoi.quicktiles" />
+    </Preference>
+
+
+        <com.arrow.support.preferences.SystemSettingSwitchPreference
+            android:key="qs_footer_data_usage"
+            android:icon="@drawable/ic_doc"
+            android:title="@string/qs_footer_datausage_title"
+            android:summary="@string/qs_footer_datausage_summary"
+            android:defaultValue="false" />
+      
+      <com.arrow.support.preferences.SystemSettingSeekBarPreference
+            android:key="qs_transparency"
+            android:title="@string/qs_transparency_title"
+            android:summary="@string/qs_transparency_summary_more"
+            android:defaultValue="10"
+            settings:interval="1"
+            settings:units="@string/unit_percent"
+            android:max="10"         
+            android:min="1" />
+
+   <com.arrow.support.preferences.SystemSettingSeekBarPreference
+            android:key="qs_header_image"
+            android:title="@string/qs_header_image_title"
+            android:summary="@string/qs_header_extra"
+            android:defaultValue="0"
+            settings:interval="1"
+            android:max="99"
+            android:min="1" />
+    </PreferenceCategory>
 
 
 </PreferenceScreen>
