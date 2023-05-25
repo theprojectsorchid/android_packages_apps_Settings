@@ -22,5 +22,9 @@
 
 
 
+ <com.android.settingslib.widget.LayoutPreference
+    android:key="syberia_info"
+    android:order="-997"
+    android:layout="@layout/OrchidOs_info_about" />
 
 </PreferenceScreen>
