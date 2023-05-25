@@ -46,7 +46,21 @@
     <string name="aboutus_link_summary">Customer support chat group</string>
     <string name="aboutus_link_title">Customer support</string>
      
-          <!-- Anatolia edit -->
+          <!-- display edit -->
+    <string name="wallpaper_settings_summary">Customise wallpapers, system accents and icons</string>
+    <string name="display_screen_settings">Screen settings</string>
+    <string name="display_screen_settings_summary">Configure screen settings</string>
+    <string name="screen_lighting_main_settings">Screen Lighting Options</string>
+    <string name="add_auto_brightness_title">Additional brightness config</string>
+    <string name="add_auto_brightness_title_summary">Extar dim, Adaptive brightness and slider configuration</string>
+    <string name="statusbar_qs_settings_summary">Statusbar, QS tiles and Headers</string>
+          <!-- Display Anatolia gestures converted for QS settings edit -->
+    <string name="statusbar_systmem_settings">Statusbar settings</string>
+    <string name="system_qs_settings">Qstiles Extra</string>
+    <string name="qs_transparency_summary_more">Change level of transparency of QS header</string>
+    <string name="qs_header_extra">Change your header image</string>
+    <string name="screen_wallpaper_main_settings">Wallpaper and Display</string>
+
 
           <!-- onthe go mode -->
 
