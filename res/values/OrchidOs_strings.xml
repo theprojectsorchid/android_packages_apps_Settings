@@ -53,6 +53,8 @@
     <string name="screen_lighting_main_settings">Screen Lighting Options</string>
     <string name="add_auto_brightness_title">Additional brightness</string>
     <string name="add_auto_brightness_title_summary">Extra dim, Adaptive brightness and slider configuration</string>
+    <string name="add_auto_brightness_title">Additional brightness config</string>
+    <string name="add_auto_brightness_title_summary">Extar dim, Adaptive brightness and slider configuration</string>
     <string name="statusbar_qs_settings_summary">Statusbar, QS tiles and Headers</string>
           <!-- Display Anatolia gestures converted for QS settings edit -->
     <string name="statusbar_systmem_settings">Statusbar settings</string>
@@ -67,7 +69,8 @@
      <string name="QSheaders_bubble_setting_description">Below you can change the Header background that is shown within the QS sreen</string>
 
           <!-- Display Anatolia statusbar converted for QS settings edit -->
-
+     <string name="statusbar_settings_page">StatusBar Settings</string>
+    <string name="statusbar_settings_page_summary">Configure StatusBar Settings</string>
 
           <!-- onthe go mode -->
 
