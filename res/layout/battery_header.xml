@@ -38,7 +38,8 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="12dp"
             android:textAppearance="@style/TextAppearance.EntityHeaderTitle"
-            android:textSize="58sp" />
+            android:textStyle="bold"
+            android:textSize="70sp" />
 
         <TextView
             android:id="@+id/summary1"
