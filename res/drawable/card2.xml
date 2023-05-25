@@ -12,10 +12,10 @@
         <shape
             android:padding="10dp"
             android:shape="rectangle">
-    <corners android:radius="22dp" />
+    <corners android:radius="28dp" />
             <stroke
                 android:width="5dp"
-                android:color="@color/card_bg" />
+                android:color="?android:attr/colorControlHighlight" />
         </shape>
 
     </item>

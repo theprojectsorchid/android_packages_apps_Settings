@@ -4,7 +4,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="160dp"
+    android:layout_height="80dp"
     android:background="@drawable/card2"
     android:layout_marginStart="20dp"
     android:layout_marginEnd="20dp"
@@ -22,10 +22,10 @@
 
 <com.google.android.material.card.MaterialCardView
         android:id="@+id/phone_image"
-        android:layout_width="100dp"
-        android:layout_height="130dp"
-        android:layout_marginTop="25dp"
-        android:layout_marginBottom="25dp"
+        android:layout_width="80dp"
+        android:layout_height="70dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="5dp"
         app:cardElevation="5dp"
         app:cardCornerRadius="18dp"
         app:strokeColor="?android:attr/textColorPrimary"
@@ -41,7 +41,7 @@
             android:orientation="vertical" />
 
         <ImageView
-            android:layout_width="50dp"
+            android:layout_width="15dp"
             android:layout_height="match_parent"
             android:layout_gravity="center"
             android:src="@drawable/empty_logo" />
@@ -51,10 +51,9 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:gravity="end"
+        android:gravity="center"
         android:orientation="vertical"
-        app:layout_constraintTop_toBottomOf="@+id/temp"
-        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_toRightOf="@+id/temp"
         android:layout_marginEnd="10dp"
         android:layout_marginTop="1dp">
 
@@ -66,8 +65,9 @@
             android:gravity="center"
             android:text="Android Os"
             android:textStyle="bold"
+            android:fontFamily="sans-serif-condensed"
             android:textColor="?android:attr/colorAccent"
-            android:textSize="40dp" />
+            android:textSize="20dp" />
     </LinearLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

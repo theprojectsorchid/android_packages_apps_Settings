@@ -21,13 +21,19 @@
         android:key="top_level_settings">
 
     <!-- FlexoOS logo about Us-->
- <!--   <PreferenceScreen
+ <PreferenceScreen
         android:key="flexo_lottie_animation"
-        android:layout="@layout/flexoos_card"
+        android:layout="@layout/OrchidOs_info_about"
         android:selectable="true"
-        android:fragment="com.epic.fragments.ButtonSettings"
-        android:order="-190" />-->
+        android:fragment="com.epic.Anatolia"        
+        android:order="-190" />
         
+
+ <com.android.settingslib.widget.LayoutPreference
+    android:key="syberia_info"
+    android:order="-997"
+    android:layout="@layout/OrchidOs_info_about" />
+
 <!--
    <com.android.settingslib.widget.LayoutPreference
             android:layout="@layout/usercard_blank"
