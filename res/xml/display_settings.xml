@@ -51,18 +51,25 @@
         settings:controller="com.android.settings.display.WallpaperPreferenceController"/>
      
      <Preference
-            android:key="advqs"
+            android:key="display_screen_setting"
             android:title="@string/display_screen_settings"
             android:summary="@string/display_screen_settings_summary"
-            android:icon="@drawable/rr_display_icon"
+            android:icon="@drawable/ic_smart_lock"
             android:fragment="com.epic.fragments.NavbarSettings" /> 
-             
+                  
+     <Preference
+            android:key="Qs_settings"
+            android:title="@string/Qs_settings_page"
+            android:summary="@string/Qs_settings_page_summary"
+            android:icon="@drawable/rr_display_icon"
+            android:fragment="com.epic.fragments.GestureSettings" /> 
+
       <Preference
         android:key="statusbar_settings"
-        android:title="@string/statusbar_qs_settings"
-        android:icon="@drawable/rr_display_icon"
-        android:summary="@string/statusbar_qs_settings_summary"
-        android:fragment="com.epic.fragments.GestureSettings"/>
+        android:title="@string/statusbar_settings_page"
+        android:icon="@drawable/ic_screen_timeout"
+        android:summary="@string/statusbar_settings_page_summary"
+        android:fragment="com.epic.fragments.StatusBarSettings" />
 
 
         <SwitchPreference
@@ -171,7 +178,7 @@
     
         <Preference
             android:key="screensaver"
-			android:icon="@drawable/ic_screensaver"            
+			android:icon="@drawable/ic_settings_colormode"            
             android:title="@string/screensaver_settings_title"
             android:fragment="com.android.settings.dream.DreamSettings"/>
     
