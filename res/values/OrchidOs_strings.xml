@@ -67,7 +67,8 @@
      <string name="QSheaders_bubble_setting_description">Below you can change the Header background that is shown within the QS sreen</string>
 
           <!-- Display Anatolia statusbar converted for QS settings edit -->
-
+     <string name="statusbar_settings_page">StatusBar Settings</string>
+    <string name="statusbar_settings_page_summary">Configure StatusBar Settings</string>
 
           <!-- onthe go mode -->
 
