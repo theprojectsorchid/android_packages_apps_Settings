@@ -15,15 +15,15 @@
         android:id="@id/temp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:gravity="center_horizontal"
+        android:gravity="start"
         android:orientation="vertical"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintTop_toTopOf="parent">
 
 <com.google.android.material.card.MaterialCardView
         android:id="@+id/phone_image"
-        android:layout_width="80dp"
-        android:layout_height="70dp"
+        android:layout_width="45dp"
+        android:layout_height="62dp"
         android:layout_marginTop="5dp"
         android:layout_marginBottom="5dp"
         app:cardElevation="5dp"
@@ -51,10 +51,10 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:gravity="center"
+        android:gravity="end"
         android:orientation="vertical"
         android:layout_toRightOf="@+id/temp"
-        android:layout_marginEnd="10dp"
+        android:layout_marginEnd="20dp"
         android:layout_marginTop="1dp">
 
         <TextView
@@ -65,9 +65,9 @@
             android:gravity="center"
             android:text="Android Os"
             android:textStyle="bold"
-            android:fontFamily="sans-serif-condensed"
+            android:fontFamily="sans-serif"
             android:textColor="?android:attr/colorAccent"
-            android:textSize="20dp" />
+            android:textSize="17dp" />
     </LinearLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
