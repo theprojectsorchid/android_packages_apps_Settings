@@ -29,11 +29,6 @@
         android:order="-190" />
         
 
- <com.android.settingslib.widget.LayoutPreference
-    android:key="syberia_info"
-    android:order="-997"
-    android:layout="@layout/OrchidOs_info_about" />
-
 <!--
    <com.android.settingslib.widget.LayoutPreference
             android:layout="@layout/usercard_blank"
