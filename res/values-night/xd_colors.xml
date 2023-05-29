@@ -21,7 +21,4 @@
 
     <color name="settings_panel_background_color">@android:color/white</color>
 
-    <color name="homepage_crdroid_background">#00bcd4</color>
-
-    <color name="option_border_default">#5f6368</color>
 </resources>
