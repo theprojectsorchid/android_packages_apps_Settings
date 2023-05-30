@@ -26,6 +26,13 @@
         android:order="-999"
         app:lottie_rawRes="@raw/anim_displayscreen"/>
 
+       <com.android.settings.display.ScreenZoomPreference
+            android:key="display_settings_screen_zoom"
+            android:icon="@drawable/ic_screen_resolution_adjust"
+            android:title="@string/screen_zoom_title"
+            android:fragment="com.android.settings.display.ScreenZoomSettings"
+            settings:keywords="@string/keywords_display_size"/>
+            
         <Preference
             android:key="font_size"
             android:icon="@drawable/ic_fonts"
@@ -34,18 +41,29 @@
             settings:controller="com.android.settings.display.FontSizePreferenceController"
             settings:keywords="@string/keywords_font_size"/>
    
-        <ListPreference
-            android:key="android.theme.customization.font"
-            android:icon="@drawable/ic_fonts"
-            android:title="@string/theme_customization_font_title"/>
 
-       <com.android.settings.display.ScreenZoomPreference
-            android:key="display_settings_screen_zoom"
-            android:icon="@drawable/ic_screen_resolution_adjust"
-            android:title="@string/screen_zoom_title"
-            android:fragment="com.android.settings.display.ScreenZoomSettings"
-            settings:keywords="@string/keywords_display_size"/>
-      
+              <!-- Font style -->
+        <Preference
+            android:key="android.theme.customization.fonts"
+            android:title="@string/theme_customization_font_title"
+            android:summary="@string/theme_customization_font_summary"
+            android:fragment="com.android.settings.lineage.fragments.FontsPicker"/>
+
+        <!-- Icon pack -->
+        <Preference
+            android:key="android.theme.customization.icon_pack"
+            android:title="@string/theme_customization_icon_pack_title"
+            android:summary="@string/theme_customization_icon_pack_summary"
+            android:fragment="com.android.settings.lineage.fragments.StatusbarIcons"/>
+
+        <!-- Adaptive icon pack -->
+        <Preference
+            android:key="android.theme.customization.adaptive_icon_shape"
+            android:title="@string/theme_customization_icon_shape_title"
+            android:summary="@string/theme_customization_icon_shape_summary"
+            android:fragment="com.android.settings.lineage.fragments.IconShapes"/>
+
+    
      <Preference
         android:key="picture_in_picture"
         android:icon="@drawable/rr_display_icon"

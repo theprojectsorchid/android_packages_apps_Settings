@@ -949,7 +949,12 @@
         <item name="android:textSize">16.0sp</item>
         <item name="android:fontFamily">@*android:string/config_headlineFontFamilyMedium</item>
     </style>
-
+ <style name="OptionTitleTextAppearance" parent="@android:style/TextAppearance.DeviceDefault.Widget.ActionBar.Title">
+        <item name="android:textAlignment">center</item>
+        <item name="android:textSize">15sp</item>
+        <item name="android:lineHeight">15sp</item>
+        <item name="android:textColor">?android:attr/textColorSecondary</item>
+    </style>
     <style name="xd_pref_card_top">
         <item name="android:layout_marginBottom">1dp</item>
         <item name="android:layout_marginStart">16dp</item>
