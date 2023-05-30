@@ -64,6 +64,12 @@
             android:max="10"         
             android:min="1" />
 
+      
+    <com.android.settingslib.widget.TopIntroPreference
+            android:key="tap_bubbles_desc"
+            android:order="-997"        
+            android:selectable="true"
+            android:title="@string/QSheaders_bubble_setting_description"/>
 
    <com.arrow.support.preferences.SystemSettingSeekBarPreference
             android:key="qs_header_image"
@@ -76,8 +82,9 @@
     </PreferenceCategory>
 
       
-    <com.android.settingslib.widget.TopIntroPreference
+        <com.android.settingslib.widget.TopIntroPreference
             android:key="tap_bubbles_desc"
+            android:order="-997"        
             android:selectable="true"
             android:title="@string/batteryqs_bubble_setting_description"/>
 
@@ -103,17 +110,6 @@
             android:defaultValue="2" />
 
     </PreferenceCategory>
-       
-      
-    <com.android.settingslib.widget.TopIntroPreference
-            android:key="tap_bubbles_desc"
-            android:order="-997"        
-            android:selectable="true"
-            android:title="@string/QSheaders_bubble_setting_description"/>
-            
-        <PreferenceScreen
-        android:fragment="org.aospextended.extensions.BatteryBar"
-        android:key="batterybar"
-        android:title="@string/battery_bar_title"/>
+    
 
 </PreferenceScreen>
