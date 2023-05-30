@@ -106,7 +106,7 @@ public class FontsPicker extends SettingsPreferenceFragment {
 
     @Override
     public int getMetricsCategory() {
-        return MetricsEvent.EXTENDED;
+        return MetricsEvent.CUSTOM_SETTINGS;
     }
 
     @Override
