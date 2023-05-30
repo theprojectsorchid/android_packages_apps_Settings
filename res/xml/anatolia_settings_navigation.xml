@@ -26,6 +26,13 @@
         android:order="-999"
         app:lottie_rawRes="@raw/anim_displayscreen"/>
 
+       <com.android.settings.display.ScreenZoomPreference
+            android:key="display_settings_screen_zoom"
+            android:icon="@drawable/ic_screen_resolution_adjust"
+            android:title="@string/screen_zoom_title"
+            android:fragment="com.android.settings.display.ScreenZoomSettings"
+            settings:keywords="@string/keywords_display_size"/>
+            
         <Preference
             android:key="font_size"
             android:icon="@drawable/ic_fonts"
