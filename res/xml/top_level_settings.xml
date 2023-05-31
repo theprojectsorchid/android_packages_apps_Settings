@@ -20,14 +20,7 @@
         xmlns:settings="http://schemas.android.com/apk/res-auto"
         android:key="top_level_settings">
 
-    <!-- FlexoOS logo about Us-->
- <PreferenceScreen
-        android:key="flexo_lottie_animation"
-        android:layout="@layout/OrchidOs_info_about"
-        android:selectable="true"
-        android:fragment="com.epic.Anatolia"        
-        android:order="-190" />
-        
+
 
 <!--
    <com.android.settingslib.widget.LayoutPreference
