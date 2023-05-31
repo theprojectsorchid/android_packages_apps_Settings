@@ -15,6 +15,15 @@
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
 
+ 
+    <string name="dualwall_tit">Dual wallpaper</string>
+    <string name="dualwall_sum">set dual wallpapers</string>
+
+
+    <string name="displayscreen_settings">Display screen settings</string>
+    <string name="qstiles_tit">Qstiles settings</string>
+
+
     <!-- Font style / Icon pack -->
     <string name="theme_customization_font_title">Font style</string>
     <string name="theme_customization_font_summary">Set system font style</string>
