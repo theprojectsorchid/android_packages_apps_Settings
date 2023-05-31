@@ -61,6 +61,14 @@
             android:targetClass="de.dlyt.yanndroid.dualwallpaper.ui.activity.MainActivity"
             android:targetPackage="de.dlyt.yanndroid.dualwallpaper" />
     </Preference>
+        </PreferenceCategory>
+
+
+ 
+    <PreferenceCategory
+        android:layout="@layout/custom_preference_category2"
+        android:title="@string/displayscreen_settings">
+
      <Preference
             android:key="display_screen_setting"
             android:title="@string/display_screen_settings"
@@ -78,7 +86,7 @@
       <Preference
         android:key="statusbar_settings"
         android:title="@string/statusbar_settings_page"
-        android:icon="@drawable/ic_screen_timeout"
+        android:icon="@drawable/rr_user_icon"           
         android:summary="@string/statusbar_settings_page_summary"
         android:fragment="com.epic.fragments.StatusBarSettings" />
 

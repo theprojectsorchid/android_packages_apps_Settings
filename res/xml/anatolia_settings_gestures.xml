@@ -58,22 +58,18 @@
             android:min="1" />
     </PreferenceCategory>
 
-    <PreferenceCategory
-        android:layout="@layout/custom_preference_category2"
-        android:order="40"        
-        android:title="@string/system_qs_settings">
 
         <com.android.settingslib.widget.TopIntroPreference
             android:key="tap_bubbles_desc"
             android:order="45"        
             android:selectable="true"
             android:title="@string/qssettings_bubble_setting_description"/>
+
      <Preference
         android:key="systeminfo"
         android:order="50"        
         android:icon="@drawable/rr_virtual_icon"
-        android:summary="@string/systemdetails_sumgms"
-        android:title="@string/systemdetails_gms">
+        android:title="@string/qstiles_tit">
         <intent
             android:action="android.intent.action.MAIN"
             android:targetClass="com.asdoi.quicksettings.SettingsActivity"
@@ -87,37 +83,25 @@
             android:title="@string/qs_footer_datausage_title"
             android:summary="@string/qs_footer_datausage_summary"
             android:defaultValue="false" />
-    </PreferenceCategory>
 
-       <!-- QS panel battery customizations -->
-    <PreferenceCategory
-        android:layout="@layout/custom_preference_category2"
-         android:order="70"        
-        android:title="@string/qs_battery_category_title">
 
-     <com.android.settingslib.widget.TopIntroPreference
-            android:key="tap_bubbles_desc"
-            android:order="80"        
-            android:selectable="true"
-            android:title="@string/batteryqs_bubble_setting_description"/>
         <com.arrow.support.preferences.SystemSettingListPreference
             android:key="qs_battery_style"
-            android:order="85"        
+            android:order="85"     
+            android:icon="@drawable/rr_assist_icon"
             android:title="@string/status_bar_battery_style_title"
             android:entries="@array/qs_battery_style_entries"
-            android:icon="@drawable/ic_settings_quick_gestures"
             android:entryValues="@array/qs_battery_style_values"
             android:defaultValue="-1" />
 
         <com.arrow.support.preferences.SystemSettingListPreference
             android:key="qs_show_battery_percent"
             android:order="90"        
-            android:icon="@drawable/ic_settings_quick_gestures"
+            android:icon="@drawable/ic_device_administrators"
             android:title="@string/qs_battery_percent_title"
             android:entries="@array/status_bar_battery_percent_entries"
             android:entryValues="@array/status_bar_battery_percent_values"
             android:defaultValue="2" />
-    </PreferenceCategory>
     
 
 </PreferenceScreen>

@@ -24,7 +24,7 @@
         android:key="auto_brightness"
         android:icon="@drawable/rr_brightness_slider_auto_icon"
         android:title="@string/adaptive_brightness_main_switch_title"
-        android:order="10"
+        android:order="-999"
         settings:keywords="@string/keywords_display_auto_brightness"
         settings:userRestriction="no_config_brightness"
         settings:controller="com.android.settings.display.AutoBrightnessDetailPreferenceController"/>
@@ -32,7 +32,7 @@
 
     <com.android.settingslib.widget.FooterPreference
         android:key="auto_brightness_footer"
-        android:order="20"
+        android:order="-998"
         android:title="@string/auto_brightness_description"
         android:selectable="false"
         settings:searchable="false" />
