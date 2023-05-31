@@ -73,6 +73,20 @@
             android:summary="@string/user_dict_settings_summary"
             android:fragment="com.android.settings.inputmethod.UserDictionaryList"
             settings:controller="com.android.settings.language.UserDictionaryPreferenceController" />
+
+                    
+    <Preference
+        android:key="gpt"
+        android:order="50"        
+        android:summary="@string/gpt_sum"
+        android:icon="@drawable/rr_media_icon"
+        android:title="@string/gpt_tit">
+        <intent
+            android:action="android.intent.action.MAIN"
+            android:targetClass="com.shashank.anywheregpt.ui.activities.MainActivity"
+            android:targetPackage="com.shashank.anywheregpt" />
+    </Preference>
+
     </PreferenceCategory>
 
     <PreferenceCategory
