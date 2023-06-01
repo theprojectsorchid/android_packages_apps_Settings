@@ -65,13 +65,12 @@
  <Preference
         android:key="lte_cleaner"
         android:order="5"
-        android:icon="@drawable/ic_settings_quick_gestures"
-        android:summary="@string/ltemode_summary"
+        android:icon="@drawable/ic_storage_apps"
         android:title="@string/ltemode_title">
         <intent
             android:action="android.intent.action.MAIN"
-            android:targetClass="theredspy15.ltecleanerfoss.controllers.MainActivity"
-            android:targetPackage="theredspy15.ltecleanerfoss" />
+            android:targetClass="com.d4rk.cleaner.plus.MainActivity"
+            android:targetPackage="com.d4rk.cleaner.plus" />
  </Preference>
    
     <!-- Preference order 100~200 are 'ONLY' for storage category preferences below. -->
