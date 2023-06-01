@@ -13,9 +13,17 @@
 -->
 
 <PreferenceScreen
-    xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:settings="http://schemas.android.com/apk/res/com.android.settings"
-    android:title="@string/sensor_block_title">
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:settings="http://schemas.android.com/apk/res/com.android.settings"
+         xmlns:app="http://schemas.android.com/apk/res-auto"
+     android:title=" ">
+
+
+     <com.android.settingslib.widget.IllustrationPreference
+        android:key="sensor_block"
+        settings:searchable="false"
+        android:order="-999"
+        app:lottie_rawRes="@raw/sensor_block"/>
 
     <!-- Master switch -->
     <com.arrow.support.preferences.SystemSettingSwitchPreference
@@ -27,6 +35,7 @@
     <!-- App picker activity for sensor block -->
     <PreferenceCategory
         android:title="@string/sensor_block_app_picker_title"
+                android:layout="@layout/custom_preference_category2"
         android:dependency="sensor_block"
         android:key="sensor_block_applications">
 
