@@ -61,6 +61,12 @@
             android:targetClass="de.dlyt.yanndroid.dualwallpaper.ui.activity.MainActivity"
             android:targetPackage="de.dlyt.yanndroid.dualwallpaper" />
     </Preference>
+    
+     <Preference
+            android:key="systemfonts"
+            android:title="@string/systemfonts_category"
+            android:icon="@drawable/ic_fonts"
+            android:fragment="com.android.settings.awaken.fragments.DisplayCustomizations2" />
         </PreferenceCategory>
 
 
@@ -112,6 +118,12 @@
             settings:useAdminDisabledSummary="true"
             settings:userRestriction="no_config_brightness"/>
     
+     <Preference
+            android:key="qs_brightness_slider_category"
+            android:title="@string/qs_brightness_slider_category"
+            android:icon="@drawable/ic_dc_dimming"
+            android:fragment="com.android.settings.awaken.fragments.DisplayCustomizations" />
+
         <com.android.settings.display.AutoBrightnessPreference
             android:key="auto_brightness_entry"
             android:icon="@drawable/ic_settings_sleep_standby_optimization"
