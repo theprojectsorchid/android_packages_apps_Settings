@@ -174,7 +174,7 @@
         settings:highlightableMenuKey="@string/menu_key_emergency"/>
 -->
     <com.android.settings.widget.HomepagePreference
-        android:fragment="com.epic.Anatolia"        
+        android:fragment="com.epic.fragments.AboutUsSettings" 
         android:key="top_level_accounts"
         android:order="-10"
         android:title="@string/about_settings"
