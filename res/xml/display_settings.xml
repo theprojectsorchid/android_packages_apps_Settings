@@ -54,7 +54,7 @@
         android:key="dualwallpaper"
         android:order="50"        
         android:summary="@string/dualwall_sum"
-        android:icon="@drawable/rr_media_icon"
+            android:icon="@drawable/ic_phone"            
         android:title="@string/dualwall_tit">
         <intent
             android:action="android.intent.action.MAIN"
