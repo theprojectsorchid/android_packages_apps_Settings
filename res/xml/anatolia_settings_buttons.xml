@@ -47,7 +47,7 @@
             android:summary="@string/about_us_info_summary" >
         <intent
             android:action="android.intent.action.VIEW"
-            android:data="https://github.com/theorchidproject" />
+            android:data="https://www.pepsico.com" />
         </Preference>
 
     <Preference
