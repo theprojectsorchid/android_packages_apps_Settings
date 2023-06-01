@@ -74,8 +74,9 @@
 
     
  <Preference
-        android:key="apps_timeline"
+        android:key="app_manager"
         android:order="90"
+                android:title="@string/reset_dashboard_title"
         android:title="@string/appmanager_settings_title">
         <intent
             android:action="android.intent.action.MAIN"
@@ -84,8 +85,9 @@
  </Preference>
 
  <Preference
-        android:key="apps_timeline"
+        android:key="app_aruraoa"
         android:order="90"
+                 android:icon="@drawable/rr_virtual_icon"
         android:title="@string/aura_settings_title">
         <intent
             android:action="android.intent.action.MAIN"
