@@ -110,13 +110,6 @@
 
 
    
-    <!-- Sensor Block -->
-    <Preference
-        android:key="sensor_block_settings"
-        android:title="@string/sensor_block_title"
-        android:summary="@string/sensor_block_summary"
-        android:fragment="com.android.settings.privacy.SensorBlockSettings"/>
-
     <!-- Privacy Service -->
     <PreferenceCategory
         android:key="privacy_services"
@@ -165,7 +158,23 @@
             android:title="@string/extraprivacy_level"
             android:icon="@drawable/rr_brightness_slider_icon"
             android:fragment="com.android.settings.awaken.fragments.DisplayCustomizations4" />    
- 
+  
+    <!-- Sensor Block -->
+    <Preference
+        android:key="sensor_block_settings"
+                android:icon="@drawable/ic_manage_perms"
+        android:title="@string/sensor_block_title"
+        android:summary="@string/sensor_block_summary"
+        android:fragment="com.android.settings.privacy.SensorBlockSettings"/>
+ <Preference
+        android:key="wifiinfo_page"
+		android:icon="@drawable/ic_default_apps"
+        android:title="@string/gms_enabled">
+        <intent
+            android:action="android.intent.action.MAIN"
+            android:targetClass="org.microg.gms.ui.SettingsActivity"
+            android:targetPackage="com.google.android.gms" />
+ </Preference>
     <!-- Clipboard access notifications -->
     <!--<SwitchPreference
         android:key="show_clip_access_notification"
