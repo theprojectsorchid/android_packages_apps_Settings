@@ -103,12 +103,12 @@
     
  <Preference
         android:key="wifiinfo_page"
-        android:icon="@drawable/ic_settings_quick_gestures"
+        android:icon="@drawable/ic_settings_wireless"
         android:title="@string/wifiinfo_title">
         <intent
             android:action="android.intent.action.MAIN"
-            android:targetClass="com.truelgpro.wifiinfo.MainActivity"
-            android:targetPackage="com.truelgpro.wifiinfo" />
+            android:targetClass="com.truemlgpro.wifiinfo.MainActivity"
+            android:targetPackage="com.truemlgpro.wifiinfo" />
  </Preference>
 
     <com.android.settingslib.widget.FooterPreference
