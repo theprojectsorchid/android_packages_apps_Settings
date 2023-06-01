@@ -75,19 +75,28 @@
     
  <Preference
         android:key="apps_timeline"
-        android:order="-995"
-        android:icon="@drawable/ic_settings_quick_gestures"
-        android:title="@string/apps_timeline_title">
+        android:order="90"
+        android:title="@string/appmanager_settings_title">
         <intent
             android:action="android.intent.action.MAIN"
-            android:targetClass="timeline.lizimumu.com.t.MainActivity"
-            android:targetPackage="timeline.lizimumu.com.t" />
+            android:targetClass="io.github.muntashirakon.AppMannager.settings.SettingsActivity"
+            android:targetPackage="io.github.muntashirakon.AppMannager" />
+ </Preference>
+
+ <Preference
+        android:key="apps_timeline"
+        android:order="90"
+        android:title="@string/aura_settings_title">
+        <intent
+            android:action="android.intent.action.MAIN"
+            android:targetClass="com.aurora.services.view.ui.activities.AuroraActivity"
+            android:targetPackage="com.aurora.services" />
  </Preference>
 
     <Preference
         android:key="default_apps"
         android:layout="@layout/xd_pref_card_midsummary"
-		android:icon="@drawable/ic_default_apps"
+	android:icon="@drawable/ic_default_apps"
         android:title="@string/app_default_dashboard_title"
         android:order="92"
         settings:controller="com.android.settings.applications.DefaultAppsPreferenceController">
@@ -105,7 +114,7 @@
 
     <Preference
         android:key="hibernated_apps"
-		android:icon="@drawable/rr_app_icon"
+	android:icon="@drawable/rr_app_icon"
         android:title="@string/unused_apps"
         android:summary="@string/summary_placeholder"
         android:order="94"
@@ -122,14 +131,6 @@
         android:order="95"
         settings:controller="com.android.settings.applications.SpecialAppAccessPreferenceController"/>
         
-    <PreferenceCategory
-        android:key="general_category"
-        android:title="@string/category_name_general"
-        android:order="-995"
-         android:layout="@layout/custom_preference_category2"       
-        android:visibility="gone"
-        settings:searchable="false"/>
-
     
     <PreferenceCategory
         android:key="dashboard_tile_placeholder"
