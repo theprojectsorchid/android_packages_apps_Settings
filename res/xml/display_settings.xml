@@ -66,7 +66,7 @@
             android:key="systemfonts"
             android:title="@string/systemfonts_category"
             android:icon="@drawable/ic_fonts"
-            android:fragment="com.android.settings.awaken.fragments.DisplayCustomizations2" />
+            android:fragment="com.epic.Anatolia" />
         </PreferenceCategory>
 
 

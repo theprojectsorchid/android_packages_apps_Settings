@@ -20,14 +20,11 @@
         xmlns:settings="http://schemas.android.com/apk/res-auto"
         android:key="top_level_settings">
 
-	
-    <com.android.settingslib.widget.LayoutPreference
+    <com.android.settingslib.widget.IllustrationPreference
         android:key="welcome_animation"
-        android:layout="@layout/welcome_animation"
-        android:selectable="true"
-        android:order="-180" />
-
-
+        settings:searchable="false"
+        android:order="-999"
+        app:lottie_rawRes="@raw/welcome"/>
 <!--
    <com.android.settingslib.widget.LayoutPreference
             android:layout="@layout/usercard_blank"
@@ -181,7 +178,7 @@
         settings:highlightableMenuKey="@string/menu_key_emergency"/>
 -->
     <com.android.settings.widget.HomepagePreference
-        android:fragment="com.epic.Anatolia"        
+        android:fragment="com.android.settings.awaken.fragments.DisplayCustomizations2" 
         android:key="top_level_accounts"
         android:order="-10"
         android:title="@string/about_settings"
