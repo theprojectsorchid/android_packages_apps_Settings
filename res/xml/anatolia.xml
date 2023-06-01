@@ -49,9 +49,4 @@
 
  
 
-		   <Preference
-            android:key="advqs"
-            android:title="@string/qs_brightness_slider_title"
-            android:icon="@drawable/rr_brightness_slider_icon"
-            android:fragment="com.android.settings.awaken.fragments.DisplayCustomizations" /> 
 </PreferenceScreen>
