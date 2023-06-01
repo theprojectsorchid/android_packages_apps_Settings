@@ -16,6 +16,11 @@
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
 
  
+ 
+    <string name="gpt_tit">System GPT</string>
+    <string name="gpt_sum">chat gpt settings</string>
+
+
     <string name="dualwall_tit">Dual wallpaper</string>
     <string name="dualwall_sum">set dual wallpapers</string>
 
