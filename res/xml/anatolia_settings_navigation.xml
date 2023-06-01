@@ -26,10 +26,7 @@
         android:order="-999"
         app:lottie_rawRes="@raw/anim_displayscreen"/>
 
-    <PreferenceCategory
-        android:layout="@layout/custom_preference_category2"
-        android:title="@string/display_screen_settings">
-        
+  
        <com.android.settings.display.ScreenZoomPreference
             android:key="display_settings_screen_zoom"
             android:icon="@drawable/ic_screen_resolution_adjust"
@@ -60,6 +57,5 @@
             android:summary="@string/onthegomode_summary"
             android:icon="@drawable/ic_phone"            
             android:fragment="com.epic.fragments.PowerMenuSettings"/>
-    </PreferenceCategory>
 
 </PreferenceScreen>
