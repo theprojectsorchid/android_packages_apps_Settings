@@ -76,6 +76,7 @@
  <Preference
         android:key="app_manager"
         android:order="90"
+                    android:icon="@drawable/ic_screen_resolution_adjust"
         android:title="@string/appmanager_settings_title">
         <intent
             android:action="android.intent.action.MAIN"
