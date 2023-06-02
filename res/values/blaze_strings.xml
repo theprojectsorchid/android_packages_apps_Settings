@@ -84,4 +84,7 @@
     <string name="dashboard_random4">PepsiOS</string>
     <string name="dashboard_random5">A rocket chip.</string>
     <string name="dashboard_random6">OK and a packet of crisps</string>
+
+    <string name="displayscreen_settingsf0nts">Fonts and Icons</string>
+    <string name="wallpaper_settings_title2">wallpapers</string>
 </resources>
