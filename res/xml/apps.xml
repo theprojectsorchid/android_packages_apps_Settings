@@ -76,7 +76,6 @@
  <Preference
         android:key="app_manager"
         android:order="90"
-                android:title="@string/reset_dashboard_title"
         android:title="@string/appmanager_settings_title">
         <intent
             android:action="android.intent.action.MAIN"
