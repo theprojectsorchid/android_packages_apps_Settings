@@ -20,48 +20,5 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:title=" ">
 
-<!--     <Preference
-        android:key="xd_build_status"
-        android:title="@string/systeminfopage_build"
-        android:summary="@string/xd_summary_placeholder"
-        android:icon="@drawable/ic_user"
-        android:order="-999"    
-        settings:controller="com.android.settings.deviceinfo.firmwareversion.BuildMaintainerPreferenceController"
-        settings:layout="@layout/xd_pref_card_sin-accent2"/>-->
-
-         <!-- FlexoOS logo about Us-->
-  <PreferenceScreen
-        android:key="flexo_lottie_animation"
-        android:layout="@layout/flexoos_card"
-        android:selectable="true"
-        android:fragment="com.epic.fragments.ButtonSettings"
-        android:order="-999" />
-
-		 <!-- orchidosrom grid -->
-    <PreferenceScreen
-        android:key="HardwareGrid"
-        android:enabled="false"
-        android:order="-997"    
-        android:layout="@layout/Hardware_grid"/>   
-    
-    <Preference
-        android:key="systeminfo"
-         android:icon="@drawable/rr_virtual_icon"
-        android:title="@string/systemdetails_gms">
-        <intent
-            android:action="android.intent.action.MAIN"
-            android:targetClass="dev.sebaubuntu.athena.MainActivity"
-            android:targetPackage="dev.sebaubuntu.athena.dev" />
-    </Preference>
-
-
-	<!-- reset page -->
-        <Preference
-        android:key="reset_dashboard"
-        android:title="@string/reset_dashboard_title"
-        android:icon="@drawable/ic_restore"
-        android:fragment="com.android.settings.system.ResetDashboardFragment"
-        settings:controller="com.android.settings.system.ResetPreferenceController"/>
-
 
 </PreferenceScreen>
