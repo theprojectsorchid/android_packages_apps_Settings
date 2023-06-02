@@ -18,13 +18,9 @@
 <PreferenceScreen
         xmlns:android="http://schemas.android.com/apk/res/android"
         xmlns:settings="http://schemas.android.com/apk/res-auto"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
         android:key="top_level_settings">
 
-    <com.android.settingslib.widget.IllustrationPreference
-        android:key="welcome_animation"
-        settings:searchable="false"
-        android:order="-999"
-        app:lottie_rawRes="@raw/welcome"/>
 <!--
    <com.android.settingslib.widget.LayoutPreference
             android:layout="@layout/usercard_blank"
