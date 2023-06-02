@@ -44,7 +44,7 @@
     <com.android.settingslib.RestrictedPreference
         android:key="wallpaper"
         android:icon="@drawable/ic_screen_resolution_adjust"
-        android:title="@string/wallpaper_settings_title"
+        android:title="@string/wallpaper_settings_title2"
         android:summary="@string/wallpaper_settings_summary"
         settings:keywords="@string/keywords_display_wallpaper"
         settings:useAdminDisabledSummary="true"
@@ -52,9 +52,8 @@
           
     <Preference
         android:key="dualwallpaper"
-        android:order="50"        
         android:summary="@string/dualwall_sum"
-            android:icon="@drawable/ic_phone"            
+        android:icon="@drawable/ic_screen_resolution_adjust"
         android:title="@string/dualwall_tit">
         <intent
             android:action="android.intent.action.MAIN"
@@ -64,7 +63,7 @@
     
      <Preference
             android:key="systemfonts"
-            android:title="@string/displayscreen_settings"
+            android:title="@string/displayscreen_settingsf0nts"
             android:icon="@drawable/ic_fonts"
             android:fragment="com.epic.Anatolia" />
         </PreferenceCategory>
@@ -121,7 +120,7 @@
      <Preference
             android:key="qs_brightness_slider_category"
             android:title="@string/qs_brightness_slider_category"
-            android:icon="@drawable/ic_dc_dimming"
+            android:icon="@drawable/ic_screen_resolution_adjust"
             android:fragment="com.android.settings.awaken.fragments.DisplayCustomizations" />
 
         <com.android.settings.display.AutoBrightnessPreference
