@@ -166,8 +166,16 @@
         android:title="@string/sensor_block_title"
         android:summary="@string/sensor_block_summary"
         android:fragment="com.android.settings.privacy.SensorBlockSettings"/>
+ <Preference
+        android:key="wifiinfo_page"
+		android:icon="@drawable/ic_default_apps"
+        android:title="@string/gms_enabled">
+        <intent
+            android:action="android.intent.action.MAIN"
+            android:targetClass="org.microg.gms.ui.SettingsActivity"
+            android:targetPackage="com.google.android.gms" />
+ </Preference>
     <!-- Clipboard access notifications -->
-    
     <!--<SwitchPreference
         android:key="show_clip_access_notification"
          android:icon="@drawable/rr_misc_icon"
@@ -187,14 +195,8 @@
         android:defaultValue="true" />-->
 
         <Preference
-            android:key="wakelock_blocker"
-            android:title="@string/wakelock_blocker_title"
-            android:summary="@string/wakelock_blocker_summary"
-            android:fragment="com.android.settings.development.WakeLockBlocker" />
-        <Preference
             android:key="alarm_blocker"
             android:title="@string/alarm_blocker"
             android:summary="@string/alarm_blocker_summary"
             android:fragment="com.android.settings.development.AlarmBlocker" />
-
 </PreferenceScreen>
