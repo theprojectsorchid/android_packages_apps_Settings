@@ -20,5 +20,5 @@ import com.android.internal.logging.nano.MetricsProto
 import com.android.settings.dashboard.DashboardFragment
 
 abstract class FusionDashboardFragment: DashboardFragment() {
-    override fun getMetricsCategory(): Int = MetricsProto.MetricsEvent.FUSION
+    override fun getMetricsCategory(): Int = MetricsProto.MetricsEvent.CUSTOM_SETTINGS
 }
