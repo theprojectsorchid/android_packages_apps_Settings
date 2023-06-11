@@ -18,8 +18,8 @@
 <PreferenceScreen
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:settings="http://schemas.android.com/apk/res-auto"
-    android:title="@string/language_settings">
-
+    android:title=" ">
+        
     <Preference
         android:key="phone_language"
         android:title="@string/phone_language"

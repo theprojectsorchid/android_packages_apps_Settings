@@ -20,6 +20,12 @@
     android:key="network_provider_and_internet_screen"
     android:title="@string/network_dashboard_title">
 
+  <com.android.settingslib.widget.LayoutPreference
+        android:key="wifi_anim" 
+        android:layout="@layout/wifi_animation"
+        android:order="-999"/>
+
+        
     <com.android.settingslib.RestrictedPreference
         android:fragment="com.android.settings.network.NetworkProviderSettings"
         android:key="internet_settings"

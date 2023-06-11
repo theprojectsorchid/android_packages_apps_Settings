@@ -17,7 +17,8 @@
 <PreferenceScreen
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:settings="http://schemas.android.com/apk/res-auto"
-    android:title="@string/bluetooth_pairing_pref_title">
+    android:title=" ">
+        
 
     <Preference
         android:key="bt_pair_rename_devices"

@@ -16,8 +16,8 @@
 
 <PreferenceScreen
     xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:settings="http://schemas.android.com/apk/res-auto"
-    android:title="@string/connected_device_connections_title">
+    xmlns:settings="http://schemas.android.com/apk/res-auto" 
+    android:title=" ">
 
     <Preference
         android:fragment="com.android.settings.connecteddevice.BluetoothDashboardFragment"

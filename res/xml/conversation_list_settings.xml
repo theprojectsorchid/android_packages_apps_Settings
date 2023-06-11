@@ -18,7 +18,8 @@
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:settings="http://schemas.android.com/apk/res-auto"
     android:key="conversation_list"
-    android:title="@string/zen_mode_conversations_title">
+    android:title=" ">
+
 
     <com.android.settingslib.widget.LayoutPreference
         android:key="no_conversations"

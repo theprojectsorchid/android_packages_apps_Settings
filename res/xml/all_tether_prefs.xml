@@ -19,7 +19,7 @@
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:settings="http://schemas.android.com/apk/res-auto"
     android:key="all_tether_prefs_screen"
-    android:title="@string/tether_settings_title_all"
+    android:title=" "
     settings:searchable="false">
 
     <PreferenceCategory

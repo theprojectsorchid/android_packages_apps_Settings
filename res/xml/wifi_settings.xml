@@ -20,6 +20,7 @@
         android:title="@string/wifi_settings"
         settings:keywords="@string/keywords_wifi">
 
+   
     <com.android.settings.wifi.LinkablePreference
         android:key="wifi_status_message"/>
 

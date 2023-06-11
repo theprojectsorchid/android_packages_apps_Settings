@@ -19,8 +19,9 @@
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:settings="http://schemas.android.com/apk/res-auto"
     android:key="security_dashboard_page"
-    android:title="@string/security_settings_title">
+    android:title=" ">
 
+        
     <!-- security_settings_status.xml -->
     <PreferenceCategory
         android:order="-10"

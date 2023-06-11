@@ -20,8 +20,9 @@
     xmlns:settings="http://schemas.android.com/apk/res-auto"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:persistent="false"
-    android:title="@string/one_handed_title">
-
+    android:title=" ">
+     
+        
     <com.android.settingslib.widget.IllustrationPreference
         android:key="one_handed_header"
         settings:searchable="false"

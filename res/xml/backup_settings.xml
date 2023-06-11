@@ -17,7 +17,8 @@
 
 <PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:settings="http://schemas.android.com/apk/res-auto"
-    android:title="@string/privacy_settings_title">
+    android:title=" ">
+
 
     <!-- Backup settings provided by the backup transport or the default settings -->
     <Preference

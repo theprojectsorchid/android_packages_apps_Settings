@@ -16,7 +16,9 @@
 
 <PreferenceScreen
     xmlns:android="http://schemas.android.com/apk/res/android"
-    android:title="@string/sound_work_settings">
+    xmlns:settings="http://schemas.android.com/apk/res-auto"
+    android:title=" ">
+
 
     <!-- Use the same sounds of the work profile -->
     <SwitchPreference

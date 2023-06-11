@@ -1,12 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!-- Copyright (C) 2009 The Android Open Source Project
-
      Licensed under the Apache License, Version 2.0 (the "License");
      you may not use this file except in compliance with the License.
      You may obtain a copy of the License at
-
           http://www.apache.org/licenses/LICENSE-2.0
-
      Unless required by applicable law or agreed to in writing, software
      distributed under the License is distributed on an "AS IS" BASIS,
      WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
@@ -19,7 +16,9 @@
     xmlns:settings="http://schemas.android.com/apk/res-auto"
     android:key="accessibility_settings_screen"
     android:persistent="false"
-    android:title="@string/accessibility_settings">
+    android:title=" ">
+
+
 
     <PreferenceCategory
         android:key="user_installed_services_category"
@@ -43,25 +42,18 @@
             android:persistent="false"
             android:title="@string/accessibility_text_and_display_title"
             settings:searchable="true"/>
-
-        <com.android.settings.widget.PrimarySwitchPreference
-            android:fragment="com.android.settings.accessibility.ToggleReduceBrightColorsPreferenceFragment"
-            android:key="reduce_bright_colors_preference"
-            android:icon="@drawable/ic_reduce_bright_colors"
-            android:persistent="false"
-            android:title="@string/reduce_bright_colors_preference_title"
-            settings:keywords="@string/keywords_reduce_bright_colors"
-            settings:controller="com.android.settings.accessibility.ReduceBrightColorsPreferenceController"/>
-
+<!--
         <com.android.settings.display.darkmode.DarkModePreference
             android:key="dark_ui_mode_accessibility"
             android:icon="@drawable/ic_dark_ui"
             android:title="@string/dark_ui_mode"
+            android:visibility="invisible"
             android:fragment="com.android.settings.display.darkmode.DarkModeSettingsFragment"
             android:widgetLayout="@null"
             settings:widgetLayout="@null"
             settings:controller="com.android.settings.display.DarkUIPreferenceController"
             settings:searchable="false"/>
+-->
 
         <Preference
             android:fragment="com.android.settings.accessibility.MagnificationPreferenceFragment"
@@ -86,14 +78,15 @@
             android:persistent="false"
             android:title="@string/accessibility_tap_assistance_title"
             settings:searchable="true"/>
-
+<!--
         <Preference
             android:fragment="com.android.settings.accessibility.SystemControlsFragment"
             android:key="system_controls_preference_screen"
+            android:visibility="invisible"
             android:icon="@drawable/ic_system_controls"
             android:title="@string/accessibility_system_controls_title"
             settings:searchable="true"/>
-
+-->
         <Preference
             android:fragment="com.android.settings.accessibility.VibrationSettings"
             android:key="vibration_preference_screen"

@@ -18,8 +18,10 @@
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:settings="http://schemas.android.com/apk/res-auto"
     android:key="provider_model_calls_and_sms_screen"
-    android:title="@string/calls_and_sms">
+    android:title=" ">
 
+        
+        
     <ListPreference
         android:key="provider_model_calls_preference"
         android:title="@string/calls_preference_title"

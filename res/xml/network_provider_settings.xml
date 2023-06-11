@@ -17,8 +17,9 @@
 <PreferenceScreen
         xmlns:android="http://schemas.android.com/apk/res/android"
         xmlns:settings="http://schemas.android.com/apk/res-auto"
-        android:title="@string/provider_internet_settings"
+        android:title=" "
         settings:keywords="@string/keywords_wifi">
+ 
 
     <!-- Resetting your internet description -->
     <com.android.settingslib.widget.LayoutPreference

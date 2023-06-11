@@ -17,7 +17,8 @@
 <PreferenceScreen
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:settings="http://schemas.android.com/apk/res-auto"
-    android:title="@string/tether_settings_title_all">
+    android:title=" ">
+
 
     <com.android.settingslib.widget.TopIntroPreference
         android:key="tether_prefs_top_intro"
