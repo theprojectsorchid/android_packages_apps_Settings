@@ -40,10 +40,10 @@
             android:key="qs_header_image"
             android:title="@string/qs_header_image_title"
             android:summary="@string/qs_header_extra"
-            android:defaultValue="0"
+            android:defaultValue="57"
             android:order="15"        
             settings:interval="1"
-            android:max="39"
+            android:max="70"
             android:min="1" />
 
       <com.arrow.support.preferences.SystemSettingSeekBarPreference
@@ -54,8 +54,8 @@
             settings:interval="1"
             android:order="20"        
             settings:units="@string/unit_percent"
-            android:max="10"         
-            android:min="1" />
+            android:max="100"         
+            android:min="5" />
     </PreferenceCategory>
 
 
