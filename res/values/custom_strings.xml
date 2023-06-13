@@ -24,4 +24,8 @@
         <!-- app_info -->
  <string name="app_info_install_time">Installed: %1$s</string>
     <string name="app_info_update_time">Updated: %1$s</string>
+
+
+        <!-- anatolia -->
+ <string name="anatolia_settings_title">Settings</string>
 </resources>

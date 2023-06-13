@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Copyright (C)  2022 EpicROM-AOSP
+
+     Licensed under the Apache License, Version 2.0 (the "License");
+     you may not use this file except in compliance with the License.
+     You may obtain a copy of the License at
+
+          http://www.apache.org/licenses/LICENSE-2.0
+
+     Unless required by applicable law or agreed to in writing, software
+     distributed under the License is distributed on an "AS IS" BASIS,
+     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     See the License for the specific language governing permissions and
+     limitations under the License.
+-->
+<PreferenceScreen
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:settings="http://schemas.android.com/apk/res/com.android.settings"
+        android:title="@string/anatolia_settings_title">
+		
+		<!-- Status bar -->
+        <PreferenceScreen
+            android:key="statusbar_category"
+            android:title="@string/statusbar_title"
+            android:summary="@string/statusbar_summary"
+            android:fragment="com.epic.fragments.StatusBarSettings"
+            android:icon="@drawable/ic_anatolia_statusbar" />
+
+        <!-- Buttons -->
+        <PreferenceScreen
+            android:key="buttonsettings_category"
+            android:title="@string/buttons_title"
+            android:summary="@string/buttons_summary"
+            android:fragment="com.epic.fragments.ButtonSettings"
+            android:icon="@drawable/ic_anatolia_buttons" />
+			
+		<!-- Lock screen -->
+        <PreferenceScreen
+            android:key="lockscreen_category"
+            android:title="@string/lockscreen_title"
+            android:summary="@string/lockscreen_summary"
+   	        android:fragment="com.epic.fragments.LockScreenSettings"
+   	        android:icon="@drawable/ic_anatolia_lockscreen" />	
+		
+		<!-- Notifications -->
+        <PreferenceScreen
+            android:key="notifications_category"
+            android:title="@string/notifications_title"
+            android:summary="@string/notifications_summary"
+            android:fragment="com.epic.fragments.NotificationSettings"
+            android:icon="@drawable/ic_anatolia_notifications" />
+
+        <!-- Gestures -->
+        <PreferenceScreen
+            android:key="gestures_category"
+            android:title="@string/gestures_title"
+            android:summary="@string/gestures_summary"
+	        android:fragment="com.epic.fragments.GestureSettings"
+            android:icon="@drawable/ic_anatolia_gestures" />
+       
+        <!-- Navigation bar -->
+        <PreferenceScreen
+            android:key="navigationbar_category"
+            android:title="@string/navbar_title"
+            android:summary="@string/navbar_summary"
+            android:fragment="com.epic.fragments.NavbarSettings"
+            android:icon="@drawable/ic_anatolia_navbar" />
+
+        <!-- Power menu -->
+        <PreferenceScreen
+            android:key="powermenu_category"
+            android:title="@string/powermenu_title"
+            android:summary="@string/powermenu_summary"
+            android:fragment="com.epic.fragments.PowerMenuSettings"
+            android:icon="@drawable/ic_anatolia_powermenu" />
+
+        <!-- Quick settings -->
+        <PreferenceScreen
+            android:key="quicksettings_category"
+            android:title="@string/quicksettings_title"
+            android:summary="@string/quicksettings_summary"
+            android:fragment="com.epic.fragments.QuickSettings"
+            android:icon="@drawable/ic_anatolia_quicksettings" />        
+
+        <!-- Extras -->
+        <PreferenceScreen
+            android:key="extras_category"
+            android:title="@string/extras_title"
+            android:summary="@string/extras_summary"
+            android:fragment="com.epic.fragments.ExtraSettings"
+            android:icon="@drawable/ic_anatolia_extras" />
+    <Preference
+        android:fragment="com.android.settings.deviceinfo.hardwareinfo.HardwareInfoFragment"
+        android:icon="@drawable/ic_settings_system_dashboard_acc"
+        android:key="device_model"
+        android:summary="@string/model_summary"
+        android:title="@string/model_name"
+        settings:controller="com.android.settings.deviceinfo.HardwareInfoPreferenceController"
+        settings:enableCopying="true"
+        settings:keywords="@string/keywords_model_and_hardware"/>
+
+
+        <PreferenceScreen
+        android:fragment="com.android.settings.deviceinfo.aboutphone.MyDeviceInfoFragment"
+        android:icon="@drawable/ic_phone_info"
+        android:key="top_level_about_device"
+        android:order="20"
+        android:title="@string/about_settings"
+        android:summary="@string/summary_placeholder" />
+
+</PreferenceScreen>

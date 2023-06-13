@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Copyright (C)  2022 EpicROM-AOSP
+
+     Licensed under the Apache License, Version 2.0 (the "License");
+     you may not use this file except in compliance with the License.
+     You may obtain a copy of the License at
+
+          http://www.apache.org/licenses/LICENSE-2.0
+
+     Unless required by applicable law or agreed to in writing, software
+     distributed under the License is distributed on an "AS IS" BASIS,
+     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     See the License for the specific language governing permissions and
+     limitations under the License.
+-->
+<PreferenceScreen
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:settings="http://schemas.android.com/apk/res-auto"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:title=" ">
+
+    <com.android.settingslib.widget.IllustrationPreference
+        android:key="security"
+        settings:searchable="false"
+        android:order="-999"
+        app:lottie_rawRes="@raw/welcome5"/> 
+        
+       <!-- Header -->
+  <PreferenceCategory
+        android:title="Admin Settings"
+        android:order="-996"
+        android:layout="@layout/settings_title_header">
+  </PreferenceCategory>
+
+    <Preference
+            android:key="manage_device_admin"
+            android:title="@string/manage_device_admin"
+            android:summary="@string/summary_placeholder"
+            android:fragment="com.android.settings.applications.specialaccess.deviceadmin.DeviceAdminSettings"
+            settings:controller="com.android.settings.enterprise.ManageDeviceAdminPreferenceController" />
+
+     <Preference
+        android:key="encryption_and_credential"
+        android:title="@string/encryption_and_credential_settings_title"
+        android:summary="@string/encryption_and_credential_settings_summary"
+        android:fragment="com.android.settings.security.EncryptionAndCredential" />
+
+    <Preference
+        android:key="manage_trust_agents"
+        android:title="@string/manage_trust_agents"
+        android:summary="@string/summary_placeholder"
+        android:fragment="com.android.settings.security.trustagent.TrustAgentSettings" />
+
+</PreferenceScreen>

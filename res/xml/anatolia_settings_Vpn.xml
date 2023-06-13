@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Copyright (C)  2022 EpicROM-AOSP
+
+    Licensed under the Apache License, Version 2.0 (the "License");
+    you may not use this file except in compliance with the License.
+    You may obtain a copy of the License at
+
+        http://www.apache.org/licenses/LICENSE-2.0
+
+    Unless required by applicable law or agreed to in writing, software
+    distributed under the License is distributed on an "AS IS" BASIS,
+    WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+    See the License for the specific language governing permissions and
+    limitations under the License.
+-->
+<PreferenceScreen
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:settings="http://schemas.android.com/apk/res-auto"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:title=" " >
+
+
+    <com.android.settingslib.widget.IllustrationPreference
+        android:key="wifi_anim"
+        settings:searchable="false"
+        android:order="-999"
+        app:lottie_rawRes="@raw/vpn_settings"/>
+    
+     <com.android.settingslib.widget.TopIntroPreference
+            android:key="taptap_bubbles_desc"
+            android:order="-996"        
+            android:title="@string/vpn_settings_bubble_setting_description1"/>
+
+        <Preference
+            android:key="rethink_app"
+            android:order="10"
+            android:summary="@string/summary_rethink_app"
+            android:title="@string/rethink_app" >
+            <intent android:action="android.intent.action.MAIN"
+                android:targetPackage="com.celzero.bravedns"
+                android:targetClass="com.celzero.bravedns.ui.HomeScreenActivity" />
+        </Preference>
+        
+    <com.android.settings.vpn2.VpnInfoPreference
+        android:fragment="com.android.settings.vpn2.VpnSettings"
+        android:key="vpn_settings"
+        android:title="@string/vpn_settings_title"
+        android:order="15"
+        android:summary="@string/summary_placeholder"
+        settings:userRestriction="no_config_vpn"
+        settings:useAdminDisabledSummary="true" />
+
+    <com.android.settings.network.PrivateDnsModeDialogPreference
+        android:key="private_dns_settings"
+        android:title="@string/select_private_dns_configuration_title"
+        android:order="20"
+        android:dialogTitle="@string/select_private_dns_configuration_dialog_title"
+        android:dialogLayout="@layout/private_dns_mode_dialog"
+        android:positiveButtonText="@string/save"
+        android:negativeButtonText="@android:string/cancel" />
+
+        <Preference
+            android:key="addaway_app"
+            android:order="25"
+            android:summary="@string/summary_addaway_app"
+            android:title="@string/addaway_app" >
+            <intent android:action="android.intent.action.MAIN"
+                android:targetPackage="org.adaway"
+                android:targetClass="org.adaway.ui.home.HomeActivity" />
+        </Preference>
+</PreferenceScreen>

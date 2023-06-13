@@ -4283,5 +4283,18 @@
         </receiver>
 
         <!-- This is the longest AndroidManifest.xml ever. -->
+
+        <!-- EpicROM-AOSP -->
+        <activity android:name=".Settings$AnatoliaSettingsActivity"
+                  android:label="@string/anatolia_settings_title"
+                  android:icon="@drawable/ic_homepage_anatolia"
+                  android:exported="true">
+            <intent-filter android:priority="1">
+                  <action android:name="android.intent.action.ANATOLİA_SETTINGS" />
+                  <category android:name="com.android.settings.DEFAULT" />
+            </intent-filter>
+            <meta-data android:name="com.android.settings.FRAGMENT_CLASS"
+                  android:value="com.epic.Anatolia"/>
+        </activity>
     </application>
 </manifest>
