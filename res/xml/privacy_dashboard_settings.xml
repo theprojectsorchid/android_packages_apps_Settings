@@ -74,7 +74,6 @@
     <!-- Permissions usage -->
     <Preference
         android:key="privacy_permissions_usage"
-        android:icon="@drawable/rr_privacy_icon"
         android:title="@string/permissions_usage_title"
         android:summary="@string/permissions_usage_summary"
         settings:searchable="false"
@@ -85,7 +84,6 @@
     <!-- App permissions -->
     <Preference
         android:key="privacy_manage_perms"
-        android:icon="@drawable/ic_manage_perms"
         android:title="@string/app_permissions"
         android:summary="@string/runtime_permissions_summary_control_app_access"
         settings:searchable="false">
@@ -156,19 +154,16 @@
      <Preference
             android:key="advqs"
             android:title="@string/extraprivacy_level"
-            android:icon="@drawable/rr_brightness_slider_icon"
             android:fragment="com.android.settings.awaken.fragments.DisplayCustomizations4" />    
   
     <!-- Sensor Block -->
     <Preference
         android:key="sensor_block_settings"
-                android:icon="@drawable/ic_manage_perms"
         android:title="@string/sensor_block_title"
         android:summary="@string/sensor_block_summary"
         android:fragment="com.android.settings.privacy.SensorBlockSettings"/>
  <Preference
         android:key="wifiinfo_page"
-		android:icon="@drawable/ic_default_apps"
         android:title="@string/gms_enabled">
         <intent
             android:action="android.intent.action.MAIN"
@@ -197,6 +192,5 @@
     <PreferenceScreen
         android:key="privacy_grid"
         android:enabled="true"
-        android:order="-997"    
         android:layout="@layout/privacy_grid"/>  
 </PreferenceScreen>
