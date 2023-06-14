@@ -25,7 +25,7 @@ import android.provider.Settings;
 import android.text.TextUtils;
 
 import com.android.settingslib.search.SearchIndexableResources;
-import com.android.settingslib.search.SearchIndexableResourcesMobile;
+
 
 /**
  * FeatureProvider for the refactored search code.
@@ -56,9 +56,6 @@ public class SearchFeatureProviderImpl implements SearchFeatureProvider {
 
     @Override
     public SearchIndexableResources getSearchIndexableResources() {
-        if (mSearchIndexableResources == null) {
-            mSearchIndexableResources = new SearchIndexableResourcesMobile();
-        }
         return mSearchIndexableResources;
     }
 
