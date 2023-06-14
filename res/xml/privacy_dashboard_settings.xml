@@ -193,5 +193,10 @@
         android:title="@string/location_privacy_title"
         android:summary="@string/location_privacy_summary"
         android:defaultValue="true" />-->
-
+		 <!-- orchidosrom grid -->
+    <PreferenceScreen
+        android:key="privacy_grid"
+        android:enabled="true"
+        android:order="-997"    
+        android:layout="@layout/privacy_grid"/>  
 </PreferenceScreen>
