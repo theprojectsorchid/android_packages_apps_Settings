@@ -8,8 +8,10 @@
         android:id="@+id/DisplayCustomizations4"
         android:name="com.android.settings.awaken.fragments.DisplayCustomizations4"
         android:layout_width="0dp"
+        android:background="@drawable/mt_preference_background_alone"
         android:layout_height="wrap_content"
         android:layout_row="0"
+        android:textColor="?android:attr/colorAccent"
         android:title="@string/extraprivacy_level"
         android:layout_column="0"
         android:layout_columnWeight="1"
@@ -17,10 +19,12 @@
 
     <fragment
         android:id="@+id/SensorBlockSettings"
+        android:background="@drawable/mt_preference_background_alone"
         android:name="com.android.settings.privacy.SensorBlockSettings"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_row="0"
+        android:textColor="?android:attr/colorAccent"
         android:title="@string/sensor_block_title"
         android:summary="@string/sensor_block_summary"
         android:layout_column="1"
@@ -29,10 +33,12 @@
 
     <fragment
         android:id="@+id/ResetNetwork"
+        android:background="@drawable/mt_preference_background_alone"
         android:name="com.android.settings.ResetNetwork"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_row="1"
+        android:textColor="?android:attr/colorAccent"
         android:title="@string/reset_network_title"
         android:summary="@string/sensor_block_summary"
         android:layout_column="0"
@@ -41,11 +47,13 @@
 
     <fragment
         android:id="@+id/localepicker"
+        android:background="@drawable/mt_preference_background_alone"
         android:name="com.android.settings.localepicker.LocaleListEditor"
         android:layout_width="0dp"
         android:title="@string/phone_language"
         android:layout_height="wrap_content"
         android:layout_row="1"
+        android:textColor="?android:attr/colorAccent"
         android:layout_column="1"
         android:layout_columnWeight="1"
         android:clickable="true" />
